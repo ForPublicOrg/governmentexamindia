@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
   { href: "/exams", label: "All exams" },
@@ -33,6 +34,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="header-actions">
+          <ThemeToggle />
           <Link className="header-search" href="/exams" aria-label="Search all exams">
             <span aria-hidden="true">⌕</span>
             <span>Search</span>

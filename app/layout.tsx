@@ -5,6 +5,20 @@ import "./globals.css";
 
 const siteUrl = "https://governmentexamindia.com";
 
+const themeBootstrap = `
+  (function () {
+    try {
+      var saved = localStorage.getItem("theme");
+      var dark = saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      var theme = dark ? "dark" : "light";
+      document.documentElement.classList.toggle("dark", dark);
+      document.documentElement.style.colorScheme = theme;
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", dark ? "#0b141b" : "#f7f5ef");
+    } catch (_) {}
+  })();
+`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -58,13 +72,14 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#f7f5ef",
-  colorScheme: "light",
+  colorScheme: "light dark",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-IN">
+    <html lang="en-IN" suppressHydrationWarning>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>
