@@ -2458,6 +2458,31 @@
     ]
   },
   {
+    "id": "lahdc-leh-ssrb",
+    "name": "Leh Autonomous Hill Development - Subordinate Services Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "LA"
+    ],
+    "allowedHosts": [
+      "lahdssrb.in",
+      "www.lahdssrb.in",
+      "ladakh.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "lahdc-leh-ssrb-1",
+        "url": "https://www.lahdssrb.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "lahdc-leh-ssrb-2",
+        "url": "https://ladakh.gov.in/dssrb-leh/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "lic",
     "name": "Life Insurance Corporation of India",
     "level": "Central",
@@ -3955,7 +3980,8 @@
     "level": "Central",
     "allowedHosts": [
       "www.sci.gov.in",
-      "sci.gov.in"
+      "sci.gov.in",
+      "cdnbbsr.s3waas.gov.in"
     ],
     "watchUrls": [
       {

@@ -225,7 +225,13 @@ export const exams: Exam[] = [
       "Use the revised vacancy and postponement notices, not saved copies of the original schedule.",
     ],
     selectionStages: ["Preliminary exam", "Main written exam", "Interview", "Final result"],
-    syllabus: ["General Studies preliminary paper followed by the main examination scheme in the official advertisement."],
+    syllabus: [
+      "Preliminary examination — one General Studies paper, all questions objective and multiple-choice, of 150 marks in two hours. Five options (A, B, C, D, E) are given for each question; option E must be marked when a candidate does not wish to answer, and one-third of a mark is deducted both for each wrong answer and for each question on which no option at all is marked.",
+      "The preliminary paper carries questions on General Science; current events of national and international importance; the history of India and the principal features of the history of Bihar; General Geography, the principal geographical divisions of Bihar and its important rivers; the polity and economy of India; the principal changes in Bihar's economy after independence; India's national movement and Bihar's contribution to it; and general mental ability.",
+      "Passing the preliminary examination is compulsory, with minimum qualifying marks of 40% for the General category, 36.5% for Backward Class, 34% for Extremely Backward Class and 32% for Scheduled Caste, Scheduled Tribe, women and Divyang candidates. It is only a screening test, and candidates equal to ten times the notified vacancies are selected for the main examination.",
+      "Main (written) examination, compulsory papers: General Hindi (subject code 01) 100 marks in 3 hours — 30% is compulsory but the marks are not counted for merit; General Studies Paper I (code 02) 300 marks in 3 hours; General Studies Paper II (code 03) 300 marks in 3 hours; and Essay (code 38) 300 marks in 3 hours.",
+      "Main examination, optional subject: one subject must be chosen from the list in the advertisement — Agriculture, Animal Husbandry & Veterinary Science, Anthropology, Botany, Chemistry, Civil Engineering, Commerce & Accountancy, Economics, Electrical Engineering, Geography, Geology, History, Labour & Social Welfare, Law, Management, Mathematics, Mechanical Engineering, Philosophy, Physics, Political Science & International Relations, Psychology, Public Administration, Sociology, Statistics, Zoology, and the Hindi, English, Urdu, Bangla, Sanskrit, Persian, Arabic, Pali and Maithili language-and-literature papers. It carries 100 marks in 100 objective/MCQ questions over 2 hours; the minimum marks fixed by the State Government must be obtained but are not counted for merit.",
+    ],
     officialLinks: [
       { label: "BPSC official notice board", url: "https://bpsc.bihar.gov.in/whats-new/", type: "notice" },
       { label: "BPSC exam calendar", url: "https://bpsc.bihar.gov.in/exam-calendar-2/", type: "calendar" },
@@ -367,7 +373,8 @@ export const exams: Exam[] = [
     summary: "Graduate-level combined competitive recruitment to Bihar subordinate government posts through BSSC.",
     vacancyLabel: "Not announced",
     vacancyNote: "BSSC's notice board does not carry a consolidated vacancy figure for advertisement 05/25 in the notices reviewed here.",
-    age: "As prescribed in advertisement 05/25; see the official notification for exact limits.",
+    age:
+      "Per the detailed advertisement for 05/25 (clause 1, उम्र सीमा), age is computed as on 01.08.2025; a candidate who held the government-prescribed maximum age and the prescribed educational qualification as on 01.08.2022 also remains eligible, under General Administration Department letter no. 212 dated 23.01.2006. Under Personnel & Administrative Reforms Department (now General Administration Department) resolution no. 294 dated 07.01.2016 the minimum age is 21 years for every category and the maximum age is: Unreserved (male) 37 years; Backward Class and Extremely Backward Class (male and female) 40 years; Unreserved (female) 40 years; Scheduled Caste and Scheduled Tribe (male and female) 42 years; Divyang candidates of every category get 10 years over and above the category maximum. Only the date of birth entered in the Matriculation or equivalent certificate is accepted. Bihar government servants keep the existing 5 years' relaxation in the maximum age fixed for regular appointment, but may sit only if they have not used up their five permitted attempts; ex-servicemen get 3 years plus a period equal to their defence service provided their actual age on the date of application does not exceed 53 years, and ex-servicemen and commissioned officers (including ECOs/SFCOs) with at least 5 years' continuous service get up to 5 years' relaxation. Corrigendum memo no. 3926/आ० dated 27.09.2025 adds that duly engaged contractual employees get a relaxation in the maximum age limit equal to the period served on contract.",
     qualification: "Graduate; see advertisement 05/25 for post-specific requirements.",
     fee: "See advertisement 05/25 for the category-wise application fee.",
     pay: "Post-specific Bihar pay levels; see advertisement 05/25.",
@@ -377,10 +384,26 @@ export const exams: Exam[] = [
       { label: "Latest corrigendum", date: "2025-11-21", displayDate: "21 Nov 2025", state: "current" },
     ],
     eligibility: [
-      "Confirm education, age, Bihar domicile and category rules in advertisement 05/25.",
+      "The advertisement covers graduate-level vacancies requisitioned through the General Administration Department, Bihar: Assistant Branch Officer and Planning Assistant (Pay Level 7), Junior Statistical Assistant (Level 7), Data Entry Operator Grade-C (Level 6) and Auditor under the Directorate of Audit, Finance Department and under the Co-operation Department (Level 5).",
+      "Minimum educational qualification is a degree from a recognised university. Junior Statistical Assistant requires a graduate degree in Mathematics, Economics, Commerce or Statistics. Data Entry Operator Grade-C requires graduation plus PGDCA or BCA/B.Sc. (IT) or equivalent from a recognised institution, and in the light of Finance Department letter no. 10110 dated 10.11.2023 candidates holding B.Tech. (Computer Science & Engineering), B.E. (Computer Science & Engineering) or B.Tech. (Information Technology) may also apply.",
+      "Auditor (Directorate of Audit, Finance Department) requires a graduate degree in Commerce, Economics, Statistics or Mathematics, and in the light of Finance Department letter no. 692 dated 01.11.2023 those subjects need not have been the main subject at graduation. Auditor (Co-operative Societies, Co-operation Department) requires a graduate degree passed with Mathematics, or a Commerce graduation.",
+      "Reservation on the basis of caste and gender (clause 5) is available only to candidates whose permanent residence is in Bihar, that is, who are natives of Bihar; candidates residing outside Bihar get no reservation benefit. The permanent address given in the online application is what counts as permanent residence for reservation, and a permanent residence certificate must be produced. A candidate who does not claim reservation in the marked column of the online form gets no reservation benefit.",
+      "Scheduled Caste and Scheduled Tribe candidates must upload a caste certificate and a permanent residence/domicile certificate when applying for the main examination; Backward Class and Extremely Backward Class candidates must upload a creamy-layer-free certificate issued by the state-notified circle officer or revenue officer of their permanent residence circle together with a permanent residence certificate issued by the notified circle officer of that circle.",
+      "Minimum qualifying marks for both the preliminary and the main examination (clause 3), under General Administration Department resolution no. 2374 dated 16.07.2007: Unreserved 40 per cent, Backward Class 36.5 per cent, Extremely Backward Class 34 per cent, Scheduled Caste/Scheduled Tribe 32 per cent, women 32 per cent and Divyang candidates of every category 32 per cent.",
     ],
     selectionStages: ["Written examination", "Document verification", "Final result"],
-    syllabus: ["Use the official advertisement 05/25 syllabus and scheme published by BSSC."],
+    syllabus: [
+      "Nature of the examination (clause 2) — objective. Under the Bihar Staff Selection Commission Examination Conduct Rules 2010 a preliminary examination is held when more than 40,000 applications are received, and it may be conducted in more than one shift, in which case the result is prepared using a normalisation process. Candidates equal to five times the category-wise available vacancies are selected through the preliminary examination for the main examination, for which a separate advertisement is published.",
+      "Preliminary examination — a single General Knowledge paper with three sections: (क) General Studies, (ख) General Science and Mathematics, and (ग) Mental Ability Test (Comprehension/Logic/Reasoning/Mental Ability). Questions are objective and multiple-choice, 150 in number, with 4 marks for each correct answer and 1 mark deducted for each wrong answer; the duration is 2 hours 15 minutes. The medium is Hindi/English, and where the Hindi and English question papers differ the English question prevails.",
+      "Section (क) General Studies — questions test the candidate's general awareness of his or her surroundings and its application in society, and include matters of close observation of current and everyday events and a scientific attitude towards them, of the kind any educated person is expected to know; questions may be asked specifically about Bihar, India and its neighbouring countries.",
+      "Section (क)(i) Current affairs — scientific progress, national and international awards, Indian languages, book, script, capital, currency, sport and sportspersons, and important events.",
+      "Section (क)(ii) India and its neighbouring countries — history of the neighbouring countries, history of India, culture, geography, economic scenario, the freedom movement, the principal features of Indian agriculture and natural resources, the Constitution of India and the polity, the country's political system, panchayati raj, community development, the five-year plans, and Bihar's contribution to the national movement.",
+      "Section (ख) General Science and Mathematics, generally of matriculation standard — (i) General Science: Physics, Chemistry, Biology and Geography; (ii) Mathematics: questions on the number system, computation of whole numbers, decimals and fractions, relationship between numbers, fundamental arithmetical operations, percentage, ratio and proportion, average, interest, and profit and loss.",
+      "Section (ग) Mental Ability Test — both verbal and non-verbal questions, covering as far as possible analogy, similarities and differences, space visualisation, problem solving, analysis, visual memory, discrimination, observation, relationship concepts, arithmetical reasoning, arithmetical number series, and coding and decoding.",
+      "The preliminary examination is held with books: under clause 12 of the Examination Conduct Rules 2010 a candidate may carry three books, one for each section — General Studies, Mathematics and General Science — and only NCERT/B.S.E.B./I.C.S.E. and other board text books are permitted. Guides, photocopies of books, handwritten paper, notes and electronic devices may not be taken into the examination hall, the candidate must write his or her name and roll number on the books carried, and exchanging books during the examination is completely prohibited.",
+      "Main examination — two papers: (क) Hindi, which is qualifying, so that only a candidate scoring 30 per cent or more in it has the second paper evaluated; and (ख) the main paper covering (क) General Studies, (ख) General Science and Mathematics and (ग) Mental Ability Test (Comprehension/Logic/Reasoning/Mental Ability).",
+      "Tie-break — where candidates score equal marks the older candidate by date of birth is placed higher in the merit list, and where both marks and age are the same candidates are placed in the ascending English alphabetical order (A to Z) of their names.",
+    ],
     officialLinks: [
       { label: "BSSC official notice board", url: "https://bssc.bihar.gov.in/NoticeBoard.htm", type: "notice" },
     ],
@@ -515,7 +538,8 @@ export const exams: Exam[] = [
     summary: "Jharkhand's combined competitive recruitment to state civil and allied services.",
     vacancyLabel: "Not announced",
     vacancyNote: "JPSC has not published a vacancy count for advertisement 01/2026 in the notices reviewed here.",
-    age: "As prescribed in advertisement 01/2026; see the official notification for exact limits.",
+    age:
+      "Per advertisement 01/2026 dated 29 Jan 2026, clause 4, both the maximum and the minimum age are computed as on 1 August 2026. A candidate must have completed the minimum age of 21 years. Upper age limit (clause 5): Unreserved 35 years; Extremely Backward Classes (Annexure-I) and Backward Classes (Annexure-II) 37 years; Female candidates of the Unreserved, EBC (Annexure-I), BC (Annexure-II) and Economically Weaker Section categories 38 years; Scheduled Tribes and Scheduled Castes (male and female) 40 years; Economically Weaker Section 35 years, per Personnel, Administrative Reforms & Rajbhasha Department resolution memo no. 03 dated 02.01.2026. Persons with Benchmark Disability get a relaxation of 10 years and ex-servicemen of 5 years in their respective category, and a candidate who has rendered at least three years of regular service under the Government of Jharkhand is granted 5 years' relaxation in the upper age limit.",
     qualification: "Graduate; see advertisement 01/2026 for post-specific requirements.",
     fee: "See advertisement 01/2026 for the category-wise application fee.",
     pay: "Post-specific Jharkhand pay levels; see advertisement 01/2026.",
@@ -524,7 +548,11 @@ export const exams: Exam[] = [
       { label: "Main examination press release", date: "2026-07-14", displayDate: "14 Jul 2026", state: "current", note: "JPSC also issued a related press release on 9 Jul 2026." },
     ],
     eligibility: [
-      "Confirm education, age, Jharkhand domicile and category rules in advertisement 01/2026.",
+      "Online applications are invited from qualified Indian citizens; the examination is conducted under The Jharkhand Combined Civil Services Examination Rules, 2021, the 1st Amendment Rules, 2021 and the 2nd Amendment Rules, 2023 (advertisement 01/2026 dated 29 Jan 2026).",
+      "A candidate must hold a degree of any of the Universities incorporated by an Act of the Central or State Legislature in India, or of other educational institutions established by an Act of Parliament or declared to be deemed a University under Section 3 of the University Grants Commission Act, 1956, or of a Foreign University approved by the Central Government from time to time, or possess an equivalent qualification (clause 3).",
+      "There is no limitation on the number of attempts if a candidate is eligible otherwise (clause 6).",
+      "Reservation is available only to permanent residents of Jharkhand, who must submit a local resident certificate issued in the prescribed form by the State's competent authority under State Government letter no. 1754 dated 25.02.2019; certificates issued for educational purposes are not accepted for determining the reservation category, and women of every category must submit the prescribed local residence certificate to claim horizontal reservation (clause 7).",
+      "A candidate belonging to the EBC (Annexure-I), BC (Annexure-II), Female, SC, ST or EWS category who is also covered by another clause such as Persons with Benchmark Disability, ex-servicemen or clause 6(ii)(b) of the Rules, 2021 is eligible for cumulative age relaxation under both categories; PwBD candidates are considered eligible for appointment only if found to satisfy the physical and medical standards prescribed for the service or post.",
     ],
     selectionStages: ["Preliminary examination", "Main examination", "Interview", "Final result"],
     syllabus: ["Use the official advertisement 01/2026 syllabus and scheme published by JPSC."],
@@ -575,7 +603,8 @@ export const exams: Exam[] = [
     summary: "Recruitment of Forest Range Officers for Jharkhand through the state Public Service Commission.",
     vacancyLabel: "Not announced",
     vacancyNote: "JPSC has not published a vacancy count for advertisement 04/2024 in the notices reviewed here.",
-    age: "As prescribed in advertisement 04/2024; see the official notification for exact limits.",
+    age:
+      "Per advertisement 04/2024, clause 7, the reference date for age is 1 August 2024. The minimum age is 21 years. The maximum age, under Personnel, Administrative Reforms and Rajbhasha Department (Government of Jharkhand) resolution no. 29 dated 04.01.2021, is: Unreserved 35 years; Extremely Backward Classes (Annexure-I) and Backward Classes (Annexure-II) 37 years; Female candidates of the Unreserved, EBC (Annexure-I) and BC (Annexure-II) categories 38 years; Scheduled Tribes and Scheduled Castes (male and female) 40 years; Economically Weaker Section 35 years. Ex-servicemen get a relaxation of 5 years in their respective category.",
     qualification: "Graduate in a relevant discipline as prescribed in advertisement 04/2024; see the official notification for the exact degree list.",
     fee: "See advertisement 04/2024 for the category-wise application fee.",
     pay: "Post-specific Jharkhand pay level for Forest Range Officer; see advertisement 04/2024.",
@@ -584,7 +613,12 @@ export const exams: Exam[] = [
       { label: "Press release on advertisement 04/2024", date: "2026-07-14", displayDate: "14 Jul 2026", state: "current" },
     ],
     eligibility: [
-      "Confirm education, age and category rules for Forest Range Officer in advertisement 04/2024.",
+      "Online applications are invited from qualified Indian citizens against the requisition received under Jharkhand Forest, Environment & Climate Change Department letter no. 1480 dated 22.04.2024 (advertisement 04/2024).",
+      "A candidate must hold a Bachelor's degree with at least one of the subjects Agriculture, Agricultural Engineering, Animal Husbandry and Veterinary Science, Forestry, Botany, Chemistry, Geology, Mathematics, Physics, Statistics, Zoology or Environmental Science, or Honours in a related subject, or an Engineering degree in Civil, Mechanical or Chemical from any recognised university (clause 6(a)).",
+      "Physical standards under clause 6(b): minimum height 152.5 cm for Scheduled Tribe men and 163 cm for men of other categories; 145 cm for Scheduled Tribe women and 150 cm for women of other categories; chest for men 79 cm unexpanded with 5 cm expansion.",
+      "Physical test under clause 6(b): men must walk 25 km in 4 hours and women 14 km in 4 hours.",
+      "A candidate must be in good health and free from any physical disability that would obstruct the efficient discharge of duties as a member of the Jharkhand Forest Range Officer service cadre; candidates with colour blindness, night blindness or flat foot are treated as ineligible for this post.",
+      "Horizontal reservation for Divyangjan in appointments to this cadre has been exempted for this recruitment only, under Women, Child Development and Social Security Department letter no. 2132 dated 28.07.2023 read with clause 5(kha)(ii) of Personnel Department resolution no. 2249 dated 03.04.2018.",
     ],
     selectionStages: ["Main examination", "Interview", "Final result"],
     syllabus: ["Use the official advertisement 04/2024 syllabus and scheme published by JPSC."],
@@ -1047,7 +1081,8 @@ export const exams: Exam[] = [
     summary: "Recruitment of Assistant Horticulture Officers for Odisha through the state Public Service Commission.",
     vacancyLabel: "Not announced",
     vacancyNote: "OPSC's advertisement 06 of 2026-27 does not carry a vacancy count in the notice reviewed here.",
-    age: "As prescribed in advertisement 06 of 2026-27; see the official notification for exact limits and relaxations.",
+    age:
+      "Per advertisement 06 of 2026-27, clause 3: a candidate must have attained 21 years and must not be above 42 years on the 1st day of January 2026, that is, must not have been born earlier than 2 January 1984 and not later than 1 January 2005. The upper age limit is relaxed by 5 years for Scheduled Castes, Scheduled Tribes, women and ex-servicemen and by 10 years for Persons with Disabilities whose permanent disability is 40% or more, with a cumulative relaxation of 15 years for Persons with Disabilities belonging to SC or ST. A candidate covered by more than one category gets only the single most beneficial relaxation, and save as provided the age limits cannot be relaxed. Only the date of birth entered in the High School Certificate or equivalent certificate issued by the concerned Board or Council is accepted by the Commission.",
     qualification: "Graduate qualification in Horticulture or an allied subject as prescribed in advertisement 06 of 2026-27; see the official notification for the exact degree list.",
     fee: "See advertisement 06 of 2026-27 for the category-wise application fee.",
     pay: "Post-specific Odisha pay level as prescribed in advertisement 06 of 2026-27.",
@@ -1059,10 +1094,28 @@ export const exams: Exam[] = [
       { label: "Written examination", date: "2026-09-27", displayDate: "27 Sep 2026 (tentative)", state: "tentative" },
     ],
     eligibility: [
-      "Confirm education, age and category rules for Assistant Horticulture Officer in advertisement 06 of 2026-27.",
+      "Recruitment is to Class-II (Group-B) posts of the Odisha Horticulture Service under the Department of Agriculture & Farmers' Empowerment, conducted under the Odisha Horticulture Service (Methods of Recruitment and Conditions of Service) Rules, 2014 and its amendments.",
+      "A candidate must possess a Bachelor of Science Degree in Horticulture [B.Sc. (Horticulture)] or Agriculture [B.Sc. (Agriculture)] from any University or Institution recognised by any State Government or the Government of India; the advertisement states that no other equivalent qualification will be accepted.",
+      "The candidate must be a citizen of India (clause 9, Other Eligibility Conditions).",
+      "The candidate must be of sound mental and physical health with active habits and free from any physical defect likely to affect his or her efficiency in service; this requirement does not apply to physically handicapped candidates.",
+      "The candidate must be able to read, write and speak Odia and must have passed the Middle School Examination with Odia as a language subject, or Matriculation or an equivalent examination with Odia as the medium of examination in a non-language subject, or Odia as a language subject in the final examination of Class VII, or a test in Odia of Middle English School standard conducted by the School & Mass Education Department of the Government of Odisha or the Board of Secondary Education, Odisha.",
+      "Persons with Disabilities must upload a Permanent Disability Certificate; a certificate showing temporary disability is not accepted and the application is liable to be rejected.",
     ],
     selectionStages: ["Written examination", "Document verification", "Final result"],
-    syllabus: ["Use the official advertisement 06 of 2026-27 syllabus and scheme published by OPSC."],
+    syllabus: [
+      "Paper-I, Agro meteorology: Agro climate zones of India & Odisha, Agro-ecology for horticultural crops, Weather & climate, Crop-Weather relationship, Weather forecasting, Climate change, Vulnerability and risks, Climate resilience and Climate smart practices.",
+      "Paper-I, Soil and nutrition: Soils of Odisha, problematic soils and their management; Essential plant nutrients & crop growth; Manures and fertilizers, integrated nutrient management for horticultural crops, nutrient use efficiency.",
+      "Paper-I, Water management: Water resources of Odisha, Irrigation development, Soil-plant-water relation, Water requirement and irrigation efficiency, Irrigation scheduling, methods of irrigation; Micro-irrigation (Drip and Sprinkler) and fertigation, Water use efficiency & Water productivity, Irrigation water quality, stress management, Drainage.",
+      "Paper-I, Weed management; Dry land farming; Integrated Farming System; and Seed Technology (seed quality, seed dormancy, seed production, certification and storage).",
+      "Paper-I, Plant Protection: Important insect pests, diseases and nematodes of Horticultural crops and their management; Biological control and Integrated Pest Management of Horticulture crops.",
+      "Paper-I, Agril. Economics and Agril. Statistics, and Related Subjects covering tillage and tillage implements, farm machineries and equipment for Horticulture, crop growth & development, use of PGRs, cropping patterns and crop rotation, crop diversification, organic farming & certification, protected cultivation, wasteland management, biotic & abiotic stress management, schemes on Horticulture, apiculture, mushroom cultivation, composting and vermicompost, and digital initiatives of the State Government.",
+      "Paper-II, Plant propagation and nursery management in Horticulture: methods of propagation, propagation structures and media, nursery act, registration and accreditation, hi-tech nurseries, and insect, pest and disease management of nursery plants.",
+      "Paper-II, Fruit crops: commercial fruit crops Mango, Banana, Citrus, Pine-apple, Guava, Papaya, Sapota, Ber, Pomegranate, Litchi and Custard apple; niche crops Aonla, Jamun, Ber & Jackfruit; exotic crops Passion fruit, Avocado, Dragon fruit & Strawberry.",
+      "Paper-II, Plantation crops: Coconut, Areca nut, Cashew nut, Oil palm, Palmyra palm, Date palm, Cocoa, Coffee & Tea, including post-harvest grading, processing, packaging, value addition and marketing.",
+      "Paper-II, Vegetable crops: tropical, subtropical, temperate, under-exploited and perennial vegetable crops covering solanaceous vegetables, major cucurbits, pod vegetables, okra, cole crops, bulb crops, root crops, leafy vegetables, tree vegetables and tropical tuber crops.",
+      "Paper-II, Spices, Condiments, Medicinal and Aromatic Plants: Betel Vine, Black Pepper, Cardamom, Ginger, Turmeric, Curry Leaf, Coriander, Fenugreek, Fennel, Cumin, Periwinkle, Rauwolfia, Occium, Kewda, Aloe vera and Lemon grass.",
+      "Paper-II, Ornamental Horticulture: history, types and styles of gardens and parks, principles of landscaping, garden features, ornamental plants, flower arrangements, bonsai, urban horticulture and bio-aesthete planning; commercial flower crops Rose, Marigold, Chrysanthemum, Gladiolus, Jasmine, Crossandra, Dahlia and Tuberose; protected cultivation of Rose, Orchid, Carnation, Anthurium & Gerbera; lawn and its maintenance. Questions in both papers are of Bachelor's Degree standard and their distribution among topics is decided by the Commission.",
+    ],
     sourceTitle: "OPSC Assistant Horticulture Officer advertisement 06 of 2026-27",
     sourceUrl: "https://opsc.gov.in/public/opsc/default.aspx",
     sourcePublished: "Advertisement notice 4200/PSC dated 18 Jul 2026",
@@ -1457,7 +1510,8 @@ export const exams: Exam[] = [
     vacancyLabel: "Not announced",
     vacancyNote:
       "The Commission publishes class-level and subject-wise vacancy lists received from the West Bengal Board of Secondary Education for each counselling phase rather than one consolidated figure; use the vacancy PDF for your class level and subject.",
-    age: "As prescribed in the 2nd SLST (AT) 2025 notification; the Commission's counselling and verification notices reviewed here do not restate age limits.",
+    age:
+      "The Commission's counselling and verification notices reviewed here do not restate age limits, but the recruitment runs under the West Bengal School Service Commission (Selection for Appointment to the Posts of Assistant Teachers) Rules, 2025, notified by School Education Department Notification No. 764-SE/S/10M-03/2025 dated 29 May 2025 and hosted by the Commission. Rule 3(iv) fixes the age limit at a minimum of 21 years and a maximum of 40 years as on 1st January of the year of advertisement, with the upper age limit relaxable as per State Government norms for Scheduled Castes/Scheduled Tribes, OBC and Physically Handicapped candidates. The Rules add that age relaxation in connection with the fresh selection process for Assistant Teachers for Classes IX, X, XI and XII, commenced pursuant to the Supreme Court's judgment and order in Civil Appeal No. 4800 of 2024 dated 3 April 2025 read with the order dated 17 April 2025 in M.A. No. 709 of 2025, is to be given in accordance with the directions contained therein.",
     qualification:
       "Subject- and class-level specific under the 2nd SLST (AT) 2025 notification; the Commission's notices reviewed here list subjects such as History, Geography, Mathematics, Hindi, Urdu, Telugu, Nepali and Bengali for Class Level IX-X and postgraduate subjects for Class Level XI-XII, but do not restate the qualification.",
     fee: "See the 2nd SLST (AT) 2025 notification for the category-wise application fee; it is not restated in the notices reviewed here.",
@@ -1637,7 +1691,8 @@ export const exams: Exam[] = [
     summary: "One of Bihar's largest constable recruitment drives, now in its post-result confirmation stage through the Central Selection Board of Constable.",
     vacancyLabel: "Not announced",
     vacancyNote: "CSBC's notice board does not carry a consolidated vacancy figure for Advt. 01/2025 in the notices reviewed here; use the original detailed advertisement for the official category-wise total.",
-    age: "As prescribed in advertisement 01/2025; see the official notification for exact limits and category relaxations.",
+    age:
+      "Per advertisement 01/2025, clause (iv), age is computed from the date of birth recorded in the Matriculation or equivalent certificate. Category-wise limits on the cut-off date: Unreserved minimum 18 and maximum 25 years; Backward Class and Extremely Backward Class men 18 to 27 (a 2-year relaxation); Backward Class and Extremely Backward Class women 18 to 28 (a 3-year relaxation); Scheduled Caste and Scheduled Tribe men and women and transgender candidates 18 to 30 (a 5-year relaxation). Home Guards of every reservation category get a further 5 years' relaxation in the prescribed maximum age limit. The advertisement fixes 1 August 2025 as the cut-off date for the minimum age and 1 August 2023 for the maximum age (because the earlier advertisement 01/2023 used a cut-off of 1 August 2022), under General Administration Department letter no. 3/M-90/2005 ka-212 dated 23 Jan 2006; the cut-off for educational qualification and for caste and residence certificates is 18 April 2025, the last date for submission of applications.",
     qualification: "Matriculation (10th pass) is the standard minimum for Bihar Police Constable (General Duty); confirm the exact requirement in advertisement 01/2025.",
     fee: "See advertisement 01/2025 for the category-wise application fee.",
     pay: "Bihar Police constable pay level as prescribed in the recruitment rules; see the official notification.",
@@ -1700,7 +1755,8 @@ export const exams: Exam[] = [
     summary: "Direct recruitment of Police Sub-Inspectors for Bihar's Special Branch through the Bihar Police Sub-Ordinate Service Commission.",
     vacancyLabel: "Not announced",
     vacancyNote: "BPSSC's notice board does not carry a vacancy figure for Advt. 09/2026 in the notices reviewed here; use the detailed advertisement PDF for the official total.",
-    age: "As prescribed in advertisement 09/2026; see the official notification for exact limits and category relaxations.",
+    age:
+      "Per advertisement 09/2026, clause 9 fixes 1 August 2025 as the cut-off date for age, educational qualification, other eligibility and experience, and clause 4.4 computes age from the date of birth in the Matriculation or equivalent certificate. Minimum age 20 years for every category. Maximum age: Unreserved (General) men 37 years and Unreserved (General) women 40 years; Backward Class and Extremely Backward Class men and women 40 years; Scheduled Caste and Scheduled Tribe men and women 42 years. Bihar government servants who have completed at least three years of regular service get 5 years' relaxation in the upper age limit for moving to a higher pay-scale service or cadre, and ex-servicemen appointed to civil posts get 3 years plus a period equal to the service spent in the defence forces, provided their actual age on the cut-off date does not exceed 57 years.",
     qualification: "Bachelor's degree is the standard minimum for Bihar Police Sub-Inspector; confirm the exact requirement in advertisement 09/2026.",
     fee: "See advertisement 09/2026 for the category-wise application fee.",
     pay: "Bihar Police Sub-Inspector pay level as prescribed in the recruitment rules; see the official notification.",
@@ -1709,10 +1765,20 @@ export const exams: Exam[] = [
       { label: "Online application opened", date: "2026-07-08", displayDate: "8 Jul 2026", state: "completed" },
     ],
     eligibility: [
-      "Confirm education, age, domicile and category-certificate requirements in advertisement 09/2026 before applying.",
+      "Indian citizens, both men and women, may apply (clause 4.1 of advertisement 09/2026).",
+      "The educational qualification is a graduate degree or its equivalent, held as on 1 August 2025 (clause 4.2).",
+      "Physical standards (clause 4.5) — minimum height 165 cm for Unreserved (General) and Backward Class men, 160 cm for Extremely Backward Class, Scheduled Caste and Scheduled Tribe men, and 155 cm for women of all categories; chest, measured for men only, 81 cm unexpanded and 86 cm expanded for Unreserved, Backward Class and Extremely Backward Class men and 79 cm / 84 cm for Scheduled Caste and Scheduled Tribe men, with a compulsory minimum expansion of 5 cm; minimum weight 48 kg for women of all categories. No marks are awarded for physical standards, but candidates who do not meet them are declared unsuccessful.",
+      "Reservation of every kind — including the 35% horizontal reservation for women and the 2% horizontal reservation for grandchildren of Bihar's freedom fighters — is available only to persons domiciled in Bihar; reserved-category candidates of other States are counted as unreserved, must apply declaring themselves unreserved, and are otherwise treated as ineligible (clause 8).",
+      "Every selected candidate undergoes a medical examination before appointment in which eyesight, colour blindness, hearing, stammering, flat foot and knock knee are checked; a stammering or stuttering defect makes a candidate ineligible for selection, as does a criminal case pending in court or a conviction (clause 11).",
     ],
     selectionStages: ["Preliminary examination", "Main examination", "Physical Efficiency Test", "Final result"],
-    syllabus: ["Use the official advertisement 09/2026 syllabus and examination scheme published by BPSSC."],
+    syllabus: [
+      "Preliminary examination (clause 5(a)(ii)) — one objective, multiple-choice paper of 200 marks with 100 questions in 2 hours, 2 marks for each correct answer, carrying questions on English, General Knowledge, Hindi language knowledge, reasoning ability and current affairs.",
+      "Candidates scoring less than 30% in the preliminary examination are not considered for the main examination; up to ten times the vacancies are selected category-wise on merit, and where the paper runs in more than one shift the marks are normalised by the Equi-Percentile Method.",
+      "Main examination Paper I — objective and multiple-choice, 200 marks in 180 minutes: General studies & current affairs 50 marks, Mathematics and Quantitative aptitude 40 marks, Reasoning and analytical ability 40 marks, English Language 20 marks, Hindi Language 20 marks and General Knowledge of Bihar 30 marks; 1 mark for each correct answer with 0.25 mark deducted for each wrong answer.",
+      "Main examination Paper II — subjective written, 50 marks in 60 minutes: Hindi essay 15 marks, English essay 15 marks, English Precis 10 marks and Hindi-to-English translation 10 marks.",
+      "A minimum of 30% marks in both main papers is compulsory; three times the vacancies are then selected category-wise on merit for the physical stage, at which the height, chest and weight standards of clause 4.5 are verified and no marks are awarded.",
+    ],
     officialLinks: [
       { label: "BPSSC official website", url: "https://bpssc.bihar.gov.in/", type: "website" },
     ],
@@ -1758,7 +1824,8 @@ export const exams: Exam[] = [
     vacancyLabel: "Not announced",
     vacancyNote:
       "WBPRB's recruitment page for this drive carries stage notices rather than a consolidated vacancy figure; use the original 2024 advertisement linked from that page for the official total.",
-    age: "As prescribed in the original 2024 advertisement; WBPRB's stage notices reviewed here do not restate age limits.",
+    age:
+      "Per clause 4(b) of WBPRB's 'Information to Applicants for submission of application for Recruitment to the post of Constables in West Bengal Police – 2024', the applicant must not be less than 18 years and not more than 30 years as on 01/01/2024. The upper age limit is relaxed by 5 years for Scheduled Castes and Scheduled Tribes candidates, by 3 years for Other Backward Classes-A and Other Backward Classes-B candidates, by 3 years for Third Gender persons and by 5 years for Civic Volunteers/Village Police Volunteers, and is also relaxable for NVF/Home Guards personnel serving in West Bengal Police only as per existing Government Rules. For ex-servicemen it is relaxed by the total number of years of completed service, subject to a maximum age of 40 years. Only the date of birth recorded in the Madhyamik or equivalent admit card/certificate is accepted as valid proof of age.",
     qualification:
       "As prescribed in the original 2024 advertisement; WBPRB's stage notices reviewed here do not restate the qualification.",
     fee: "See the original 2024 advertisement for the category-wise application fee; applications for this cycle closed in 2024.",
@@ -1853,7 +1920,8 @@ export const exams: Exam[] = [
     vacancyLabel: "Not announced",
     vacancyNote:
       "WBPRB issued a notice on the revised vacancy position for this recruitment on 15 Mar 2024; the consolidated figure is in that notice on the Board's recruitment page rather than in the later stage notices.",
-    age: "As prescribed in the original 2024 advertisement; WBPRB's stage notices reviewed here do not restate age limits.",
+    age:
+      "Per clause 4(B) of WBPRB's 'Information to Applicants for submission of application for Recruitment to the posts of Sub-Inspector of Police (Unarmed & Armed Branch) in West Bengal Police – 2024', the applicant must not be below 20 years and not more than 30 years as on 01.01.2024. The upper age limit is relaxable by 5 years for Scheduled Castes and Scheduled Tribes candidates, by 3 years for Other Backward Classes-A and Other Backward Classes-B candidates and by 3 years for Transgender persons. For departmental candidates of West Bengal Police holding the requisite qualification the upper age limit is 35 years, further relaxed by 5 years for Scheduled Caste and Scheduled Tribe, 3 years for Other Backward Classes-A and B and 3 years for Transgender candidates; no departmental candidate may appear in the competitive examination for direct recruitment more than three times taken together. Only the date of birth recorded in the Madhyamik or equivalent admit card/certificate is accepted as valid proof of age.",
     qualification:
       "As prescribed in the original 2024 advertisement; WBPRB's stage notices reviewed here do not restate the qualification.",
     fee: "See the original 2024 advertisement for the category-wise application fee; applications for this cycle closed in 2024.",
@@ -2120,7 +2188,8 @@ export const exams: Exam[] = [
     vacancyLabel: "Not announced",
     vacancyNote:
       "OSSC's advertisement-section notices for Advertisement No. 5751/OSSC reviewed here do not carry a vacancy figure; use the detailed advertisement on the Commission's site for the post-wise and category-wise break-up.",
-    age: "As prescribed in Advertisement No. 5751/OSSC dated 12.12.2025; the notices reviewed here do not restate age limits or relaxations.",
+    age:
+      "Per the detailed advertisement, Advertisement No. 5751/OSSC dated 12.12.2025, clause 3(c): minimum age as on 01.01.2025 is 21 years and maximum age as on 01.01.2025 is 42 years. The upper age limit is relaxable by 5 years for candidates belonging to SEBC, SC, ST and all women candidates, by 10 years for candidates belonging to the PwD category, and by the total period of service rendered in defence service in the case of ex-servicemen. PwD candidates in the ST and SC categories are entitled to a cumulative age relaxation of ten years over and above the normal relaxation specified for the category. A candidate who comes under more than one category is eligible for only one benefit of age relaxation, whichever is most beneficial. To be eligible, candidates not enjoying any relaxation of the upper age limit must not have been born earlier than 2nd January 1983 and not later than 1st January 2004.",
     qualification:
       "Graduate level; the exact degree and any post-specific requirement are in Advertisement No. 5751/OSSC, which the notices reviewed here do not restate.",
     fee: "See Advertisement No. 5751/OSSC for the examination fee and the categories exempted from it; the notices reviewed here do not restate it.",
@@ -2296,7 +2365,8 @@ export const exams: Exam[] = [
     vacancyLabel: "Not announced",
     vacancyNote:
       "BSPHCL's Recruitment News page shows only stage notices for E.N.N. 05/2024; the employment-notice PDF that carries the vacancy break-up is served through a postback link that could not be retrieved, so no figure is asserted here.",
-    age: "As prescribed in employment notice E.N.N. 05/2024; the stage notices reviewed here do not restate age limits or relaxations.",
+    age:
+      "Per employment notice E.N.N. 05/2024 dated 6 Mar 2024 (clause 4.0), age is reckoned as on 31 March 2024: minimum 18 years for every category; maximum 37 years for Unreserved (General), 42 years for Scheduled Caste, 42 years for Scheduled Tribe, 40 years for Extremely Backward Class, 40 years for Backward Class and 40 years for Unreserved women. Divyang (physically handicapped) candidates get a further 10 years in the maximum age limit, and land losers or land-displaced persons whose land was acquired by the erstwhile Bihar State Electricity Board a further 5 years, on production of the certificates the notice prescribes. For candidates domiciled in other States the maximum age limit prescribed for Unreserved candidates applies.",
     qualification:
       "As prescribed in employment notice E.N.N. 05/2024; the stage notices reviewed here do not restate the trade certificate or education requirement, and the education levels tagged on this record are not a substitute for that notice.",
     fee: "See employment notice E.N.N. 05/2024 for the category-wise application fee; applications for this cycle have closed.",

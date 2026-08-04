@@ -1523,7 +1523,18 @@ export const exams: Exam[] = [
     ],
     selectionStages: ["Phase-I Preliminary Examination", "Phase-II Main Examination", "Regional Language Test", "Document verification"],
     syllabus: [
-      "Phase-I and Phase-II follow the standard insurance-sector objective examination pattern; see the detailed advertisement for section-wise marks and duration.",
+      "Phase-I Preliminary Examination — objective multiple-choice online test of 100 marks over 60 minutes in three separately timed sections, per para 6 of the detailed advertisement.",
+      "Preliminary — English Language: 30 questions, 30 marks, 20 minutes, English medium.",
+      "Preliminary — Reasoning Ability: 35 questions, 35 marks, 20 minutes, English/Hindi.",
+      "Preliminary — Quantitative Aptitude: 35 questions, 35 marks, 20 minutes, English/Hindi.",
+      "Phase-II Main Examination — objective multiple-choice online test of 200 marks over 120 minutes in five separately timed sections.",
+      "Main — Test of Reasoning: 40 questions, 40 marks, 30 minutes, English/Hindi.",
+      "Main — Test of English Language: 40 questions, 40 marks, 30 minutes, English medium.",
+      "Main — Test of Numerical Ability: 40 questions, 40 marks, 30 minutes, English/Hindi.",
+      "Main — Test of General Awareness: 40 questions, 40 marks, 15 minutes, English/Hindi.",
+      "Main — Test of Computer Knowledge: 40 questions, 40 marks, 15 minutes, English/Hindi.",
+      "Questions in every test except the test of English Language are made available in English and Hindi; one fourth of the marks assigned to a question is deducted for each wrong answer in both the Preliminary and Main examinations.",
+      "The Regional Language Test held after the Main Examination carries no separate marks and is only qualifying in nature; the Company reserves the right to modify the structure of the examination.",
     ],
     officialLinks: [
       {
@@ -1663,7 +1674,8 @@ export const exams: Exam[] = [
     summary: "Direct recruitment to the post of Social Security Assistant (SSA) in the Employees' Provident Fund Organisation.",
     vacancyLabel: "Not stated in the records reviewed",
     vacancyNote: "See EPFO's 2023 Social Security Assistant notification for the vacancy count; this review did not source that figure.",
-    age: "As prescribed in the 2023 notification.",
+    age:
+      "Between 18 and 27 years as on the closing date of the online application form, per Chapter 4 of EPFO Advertisement No. A-12024/3/2021-EXAM/188 dated 24 Mar 2023, which fixes the online registration window as 27 Mar 2023 to 26 Apr 2023. Upper-age relaxation is 5 years for SC/ST and 3 years for OBC-NCL; up to 40 years for Government servants (45 years SC/ST, 43 years OBC-NCL); 3, 6 and 8 years respectively for Ex-Servicemen in the General, OBC-NCL and SC/ST categories; and 10, 13 and 15 years respectively for Persons with Benchmark Disability in those categories.",
     qualification: "As prescribed in the 2023 notification.",
     fee: "See the 2023 official notification",
     pay: "See the 2023 official notification",
@@ -1675,7 +1687,12 @@ export const exams: Exam[] = [
       { label: "Corrigendum to posting category and ranks", date: "2026-06-23", displayDate: "23 Jun 2026", state: "completed" },
     ],
     eligibility: [
-      "See EPFO's 2023 Social Security Assistant notification for the eligibility conditions that applied to this cycle.",
+      "A Bachelor's Degree from a recognised university as on the closing date for online registration of applications; candidates awaiting the result of the final examination of the prescribed essential qualification are told not to apply, per Chapter 3 of Advertisement No. A-12024/3/2021-EXAM/188 dated 24 Mar 2023.",
+      "A typing speed of 35 words per minute in English or 30 words per minute in Hindi on computer — 10,500 or 9,000 key depressions per hour on an average of five key depressions per word for data entry work, with ten minutes allowed.",
+      "Age between 18 and 27 years as on the closing date of the online application form, with the category-wise relaxations set out in Chapter 4 of the advertisement.",
+      "Nationality — a citizen of India, or a subject of Nepal or Bhutan, or a Tibetan refugee who came to India before 1 Jan 1962 intending to settle permanently, or a person of Indian origin who migrated from Pakistan, Burma, Sri Lanka, Kenya, Uganda, the United Republic of Tanzania, Zambia, Malawi, Zaire, Ethiopia or Vietnam intending to settle permanently; candidates other than Indian citizens need a certificate of eligibility issued by the Government of India before an offer of appointment.",
+      "Vertical reservation applies for SC, ST, OBC-NCL and EWS as shown in the advertisement's region-wise vacancy table, with caste and EWS certificates produced in the prescribed Annexure formats at document verification and community/EWS status reckoned as on the closing date for online registration.",
+      "Only one application may be submitted for the post; where more than one application form is received from the same candidate, only the last one submitted is taken into account.",
     ],
     selectionStages: ["Direct Recruitment Examination", "Final result", "Posting and allotment"],
     syllabus: [

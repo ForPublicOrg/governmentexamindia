@@ -5,7 +5,10 @@ export const authorities: Authority[] = [
     id: "supreme-court-india",
     name: "Supreme Court of India",
     level: "Central",
-    allowedHosts: ["www.sci.gov.in", "sci.gov.in"],
+    // cdnbbsr.s3waas.gov.in is the NIC S3WaaS platform that stores and serves the
+    // document uploads of www.sci.gov.in; the Supreme Court's own judicial-clerkship
+    // page links its advertisements and notices directly from that bucket.
+    allowedHosts: ["www.sci.gov.in", "sci.gov.in", "cdnbbsr.s3waas.gov.in"],
     watchUrls: ["https://www.sci.gov.in/recruitments/"],
   },
   {
@@ -232,6 +235,14 @@ export const exams: Exam[] = [
       { label: "Answer-key objection notice", date: "2026-03-07", displayDate: "After 7 Mar 2026 exam", state: "completed" },
       { label: "Interview preference / interview", displayDate: "Exact candidate date awaited in call letter", state: "current" },
     ],
+    eligibility: [
+      "Advertisement No. F.21(LC)/2026-SC(RC) dated 20 January 2026 requires the candidate to be a Law Graduate before taking up the assignment, holding a Bachelor Degree in Law (including an Integrated Degree Course in Law) from any School/College/University/Institution established by law in India and recognised by the Bar Council of India for enrolment as an Advocate.",
+      "A candidate studying in the fifth year of the Five-Year Integrated Law Course, or the third year of the Three-Year Law Course after graduation in any stream, may also apply, subject to furnishing proof of acquiring the law qualification before taking up the assignment.",
+      "The candidate must have research and analytical skills, writing abilities, and knowledge of computers, including retrieval of desired information from search engines/processes such as e-SCR, Manupatra, SCC Online, LexisNexis and Westlaw.",
+      "The candidate must not be below the age of 20 years and not above the age of 32 years as on 7 February 2026, the closing date for online applications.",
+      "The engagement is a full-time assignment, purely contractual in nature; a Law Clerk may not accept any other assignment and may not practise as an Advocate in any court of law during the assignment term.",
+      "Candidates are admitted to the written tests on the basis of the information furnished in the application form; if any information is false or any eligibility condition is not fulfilled, the candidature is cancelled.",
+    ],
     selectionStages: ["Part I objective questions", "Part II subjective written examination", "Interview", "Engagement panel"],
     syllabus: ["Law, comprehension and research/writing components under the 2026 advertisement and listed relevant judgments."],
     officialLinks: [
@@ -281,6 +292,14 @@ export const exams: Exam[] = [
       { label: "Preliminary examination", date: "2026-07-26", displayDate: "26 Jul 2026", state: "completed" },
       { label: "Result / mains", displayDate: "Exact official date awaited", state: "current" },
     ],
+    eligibility: [
+      "The advertisement issued on 1 July 2026 under the Delhi Higher Judicial Service Rules, 1970 (as amended up to date) requires the candidate to be a citizen of India.",
+      "In the case of an Advocate, the candidate must have been continuously practising for not less than seven years as on the last date of receipt of applications, i.e. 15 July 2026.",
+      "In the case of a Judicial Officer, the candidate must have already completed seven years in the Bar before he or she was recruited into the subordinate judicial service, or must have seven years' combined experience as a Judicial Officer and an Advocate as on 15 July 2026.",
+      "A person who has been or who is in judicial service must have a combined experience of seven years or more as an advocate or a Judicial Officer as on the last date of receipt of the application.",
+      "The candidate must have attained the age of 35 years and must not have attained the age of 45 years on the last date of receipt of application.",
+      "Admission at the Preliminary, Mains and Viva-voce stages is purely provisional and eligibility is examined at the subsequent stages; if a candidate is found not to fulfil any eligibility condition, the candidature stands cancelled without notice or further reference.",
+    ],
     selectionStages: ["Objective preliminary examination", "Written mains examination", "Viva-voce", "Medical/antecedent verification and appointment"],
     syllabus: ["Law and general-knowledge components in the official DHJS 2026 instructions and syllabus."],
     officialLinks: [
@@ -325,6 +344,14 @@ export const exams: Exam[] = [
       { label: "Stage-II notices", date: "2026-05-15", displayDate: "Latest listed notice 15 May 2026", state: "completed" },
       { label: "Next stage / result", displayDate: "Exact official date awaited", state: "current" },
     ],
+    eligibility: [
+      "The Vacancy Notice for the Junior Judicial Assistant/Restorer (Open) Examination-2026 invites online applications from persons who are citizens of India or subjects of Nepal, as per instructions issued by the Government of India from time to time.",
+      "The essential qualification, as on 23 February 2026, is a Graduate from a recognized University with a typing speed of not less than 35 words per minute on computer; the final result must have been declared on or before the closing date for receipt of online applications.",
+      "The candidate's age must not be below 18 years and not over 32 years as on 1 January 2026 — that is, born not earlier than 2 January 1994 and not later than 1 January 2008 — with the date of birth taken from the Matriculation/Secondary Examination certificate only.",
+      "Permissible relaxation beyond the upper age limit is 5 years for SC/ST, 3 years for OBC-NCL, 10 years for PwBD (General/EWS), 13 years for PwBD (OBC), 15 years for PwBD (SC/ST) and 3 years for Ex-Servicemen after deducting the military service rendered.",
+      "There is no upper age limit for persons in regular service in this Court who fulfil the requisite educational qualification; that relaxation does not extend to candidates working in other Government departments, public sector undertakings or the Delhi District Courts.",
+      "Reservation is 15 per cent for Scheduled Castes, 7.5 per cent for Scheduled Tribes, 27 per cent for Other Backward Classes (Non-Creamy Layer), 10 per cent for Economically Weaker Sections and 4 per cent for persons with benchmark disability on a horizontal basis, with 23 February 2026 as the cut-off date for holding the relevant certificates.",
+    ],
     selectionStages: ["Stage-I preliminary CBT", "Stage-II descriptive mains", "Typing test/interview or later stage under the advertisement", "Document verification"],
     syllabus: ["Language, general aptitude and court-establishment examination components in the JJA/Restorer 2026 scheme."],
     officialLinks: [{ label: "Official Delhi High Court job openings", url: "https://www.delhihighcourt.nic.in/web/job-openings", type: "result" }],
@@ -364,6 +391,13 @@ export const exams: Exam[] = [
       { label: "Advertisement", date: "2026-06-01", displayDate: "1 Jun 2026", state: "completed" },
       { label: "Applications closed", date: "2026-06-21", displayDate: "21 Jun 2026", state: "completed" },
       { label: "Examination", displayDate: "Exact official date awaited", state: "current" },
+    ],
+    eligibility: [
+      "Advertisement No. 02/Review Officer/Assistant Review Officer/Computer Assistant/2026, dated 1 June 2026, fixes the age band at 21 to 35 years as on 1 July 2026 for Review Officer and Assistant Review Officer, and 18 to 35 years as on 1 July 2026 for Computer Assistant.",
+      "The minimum essential qualification for all three posts is a Bachelor's Degree of a University established by law in India, or a qualification recognized as equivalent thereto.",
+      "The candidate must also hold a Diploma/Degree in Computer Science from a recognized Institution/University established by law in India, or an 'O' Level Certificate awarded by NIELET/DOEACC Society, or a 'CCC' Certificate in Computer Science from a recognized institute established by law in India.",
+      "Knowledge of Data Entry, Word Processing and Computer Operation is required, together with a minimum typing speed of 25 words per minute in English typing on computer.",
+      "Vertical reservation for S.C., S.T., O.B.C. and E.W.S. of Uttar Pradesh and horizontal reservation as per the 1976 Rules apply, and the maximum age limit for S.C., S.T. and other category candidates of Uttar Pradesh is enhanced as per those Rules.",
     ],
     selectionStages: ["Written/computer-based examination", "Computer/typing stage where prescribed", "Document verification and final selection"],
     syllabus: ["Post-wise examination scheme and computer/typing standard in the official advertisement."],
@@ -408,6 +442,13 @@ export const exams: Exam[] = [
       { label: "Applications closed", date: "2026-06-05", displayDate: "5 Jun 2026", state: "completed" },
       { label: "Examination / result", displayDate: "Exact official date awaited", state: "current" },
     ],
+    eligibility: [
+      "Notice No. 27/S & A Cell/2026 dated 20 May 2026 opens the Limited Departmental Competitive Examination of U.P. Higher Judicial Service, 2023 to serving judicial officers only; there is no direct-from-Bar route in this stream.",
+      "An officer must have at least seven years' service in the Uttar Pradesh Nyayik Sewa as on 31 December 2024.",
+      "The officer must also have not less than three years' continuous satisfactory service in the cadre of Civil Judge (Senior Division) as on 31 December 2024.",
+      "A list containing the names of the eligible officers is attached to the Notice; only officer-candidates whose names appear in that list may fill up the online application form.",
+      "Applications were accepted only through online mode from 25 May 2026, with 5 June 2026 as the last date, after reading the 'Instructions' and 'How to Apply' published on the High Court's website.",
+    ],
     selectionStages: ["Limited departmental competitive written examination", "Assessment under the U.P. HJS rules", "Select list and appointment/promotion"],
     syllabus: ["Pattern and syllabus published by the High Court on 21 May 2026."],
     officialLinks: [{ label: "Official recruitment diary", url: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7&page=3", type: "notice" }],
@@ -450,6 +491,14 @@ export const exams: Exam[] = [
       { label: "Upload/print access closed", date: "2026-06-01", displayDate: "1 Jun 2026", state: "completed" },
       { label: "Examination", displayDate: "Exact official date awaited", state: "current" },
     ],
+    eligibility: [
+      "Advertisement No. BSJS/1/2026, issued under the Bihar Superior Judicial Service Rules, 1951 as amended up to date, invites online applications from eligible Advocates and Judicial Officers, and states that eligibility for appointment will be seen at the time of application.",
+      "An applicant who has completed 7 years or more of continuous practice as an Advocate/Pleader, including Government Pleaders and Public Prosecutors, on the date of application is eligible, subject to giving a declaration of appearance in at least 24 cases per year in the last three years preceding the year of advertisement, which is 2025-26.",
+      "A Judicial Officer who had already completed seven years or more of continuous practice as an Advocate/Pleader before being recruited into the subordinate judicial service, reckoned on the date of application, is also eligible.",
+      "A person who has been or who is in judicial service and has a combined experience of seven years or more as an Advocate or a Judicial Officer in continuity on the date of application is eligible under Article 233 of the Constitution; Prosecution officers/Assistant Prosecution officers are treated as Advocates following Civil Appeal No. 561 of 2013, Deepak Agarwal v. Keshav Kaushik.",
+      "The applicant must be of the age of 35 years and below the age of 50 years as on the date of application.",
+      "Reservation on the basis of caste or economic status is given only to permanent residents of Bihar; SC/ST/BC/EBC and EWS candidates of other States must apply under the Unreserved category, and there is 35 per cent horizontal reservation for women who are permanent residents of Bihar and 1 per cent for orthopaedically disabled candidates who are permanent residents of Bihar.",
+    ],
     selectionStages: ["Preliminary/screening stage if prescribed", "Written examination", "Viva-voce", "Verification and appointment"],
     syllabus: ["Substantive/procedural law and other papers prescribed in Advertisement BSJS/1/2026."],
     officialLinks: [
@@ -491,6 +540,14 @@ export const exams: Exam[] = [
     qualification: "Law degree, language/practice and other conditions under the Gujarat Civil Judge advertisement.",
     timeline: [
       { label: "Main written examination", date: "2025-10-12", displayDate: "12 Oct 2025", state: "completed" },
+    ],
+    eligibility: [
+      "Advertisement No. RC/0719/2024-25, issued under the Gujarat State Judicial Service Rules, 2005 as amended from time to time, requires a prospective candidate to possess a Degree in Law from a University recognized by law in India.",
+      "The candidate must be practicing as an Advocate in Courts of Civil and/or Criminal Jurisdiction on the last date fixed for submission of the online application; candidates who passed the Degree in Law from the academic year 2009-2010 onwards must also have passed the All India Bar Examination to be termed a Practicing Advocate.",
+      "Alternatively, a candidate working on the last date fixed for receipt of applications in the Courts or the listed Allied Departments — the High Court of Gujarat or any court subordinate to it, the Office of the Government Pleader at the High Court, the Office of the Government Pleader at the City Civil Court, Ahmedabad, and the Legal Section of the Legal Department, Sachivalaya — is eligible.",
+      "The candidate must pass the vernacular (Gujarati) language proficiency test, unless he or she cleared the Secondary (SSC) or Higher Secondary (HSC) examination with the subject of Gujarati; a single subject of Gujarati passed from an Open School/Board does not give that exemption.",
+      "The candidate must possess certificate(s) certifying basic knowledge of Computer Application/Operation.",
+      "As on the last date fixed for submission of the online application, a General Category candidate must not have crossed 35 years and a Scheduled Caste, Scheduled Tribe, SEBC, PwBD or EWS candidate must not have completed 38 years; employees of Courts or Allied Departments get a relaxation of up to 5 years or the length of service put in, whichever is less, subject to an overall upper limit of 40 years.",
     ],
     selectionStages: ["Preliminary examination", "Main written examination", "Viva-voce", "Select list / appointment"],
     syllabus: ["Civil/criminal law, language and other papers in the official Civil Judge recruitment scheme."],
@@ -653,6 +710,14 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued (HCRB/CJR-09/2026)", date: "2026-04-16", displayDate: "16 Apr 2026", state: "completed" },
       { label: "Application window and examination", displayDate: "Exact application-close and exam dates awaited on the official notification", state: "current" },
+    ],
+    eligibility: [
+      "Notification No. HCRB/CJR-9/2026 dated 16 April 2026, issued under the Karnataka Judicial Service (Recruitment) Rules, 2004 as amended, requires the candidate to be a holder of a degree in law granted by a University established by law in India.",
+      "As on the last date fixed for receipt of applications (15 May 2026) the candidate must be practicing as an advocate in the Supreme Court of India or High Courts or District and Trial Courts in the country and must have so practiced continuously for a period of not less than three years; alternatively, the candidate must be working as a Public Prosecutor / Assistant Public Prosecutor / Government Counsel in full-time employment of the Central Government or a State Government and must have so worked for not less than three years.",
+      "The candidate must not have completed 45 years of age if belonging to the Scheduled Castes, Scheduled Tribes or Category-I of the Other Backward Classes, 43 years if belonging to Category II(A), II(B), III(A) or III(B) of the Other Backward Classes, and 40 years in the case of any other candidate; the maximum age limit is relaxed by three years for ex-servicemen.",
+      "The candidate must furnish a certificate of practice stating the length of continuous practice, issued by the Principal Judicial Officer of the court where the candidate practises or by an advocate of that court of at least ten years' standing duly endorsed as prescribed, or, for practice before the Supreme Court or a High Court, endorsed by an officer designated for the purpose.",
+      "No person is eligible for appointment unless he or she is a citizen of India; the notification disqualifies a person compulsorily retired, removed or dismissed from judicial or government service, convicted of an offence involving moral turpitude, permanently debarred or disqualified by the High Court or a Public Service Commission or removed from its roll by any Bar Council, penalised by the Bar Council or a disciplinary authority, influencing the recruiting authority, or of bigamous marital status.",
+      "A selected candidate is on probation for two years, must undergo compulsory training of not less than one year before presiding over a court, and must pass the Kannada Language Examination conducted by the Karnataka Public Service Commission under the Karnataka Civil Services (Services and Kannada Language Examinations) Rules, 1974.",
     ],
     selectionStages: ["Preliminary examination", "Main written examination", "Viva-voce", "Select list and appointment"],
     syllabus: ["Civil, criminal and other law papers under the Karnataka Civil Judge recruitment scheme in Notification HCRB/CJR-09/2026."],
@@ -1247,7 +1312,13 @@ export const exams: Exam[] = [
       "Preparation of the panel for contractual appointment",
     ],
     syllabus: [
-      "The tests are directed at translating judgments from English into Bengali; the detailed scheme is in Advertisement No. 4081-RG dated 13 June 2025 and is not repeated in the follow-up notifications cited here.",
+      "Advertisement No. 4081-RG dated 13 June 2025 states that the Written Examination shall be based on the following subjects — English Grammar.",
+      "Precis Writing",
+      "Para-phrasing",
+      "Translation",
+      "Legal Language",
+      "Phase-I: Written Test — a test of language with ability to translate from English to Bengali (20 marks).",
+      "Phase-II: Computer proficiency test (10 marks) and Interview/Viva-voce (10 marks); the candidate must secure minimum qualifying marks of 50 per cent in total (20 of 40 marks) and 40 per cent on average in each of the three tests — interview 4 marks, test of language 8 marks and test of computer 4 marks — for final selection in the merit list.",
     ],
     officialLinks: [
       {
@@ -1625,6 +1696,13 @@ export const exams: Exam[] = [
       { label: "Examination advertisement and eligible-candidates list", date: "2026-02-13", displayDate: "13 Feb 2026", state: "completed" },
       { label: "Examination / result", displayDate: "Exact official date awaited", state: "current" },
     ],
+    eligibility: [
+      "Advertisement No. 16/Exam/Suit/2025 dated 13 February 2026 is issued under Rule 5(1)(a) of the Madhya Pradesh Higher Judicial Service (Recruitment & Conditions of Service) Rules, 2017 for one post of District Judge (Entry Level).",
+      "The method of recruitment and appointment stated in the advertisement is promotion from amongst Civil Judges (Senior Division) on the basis of merit-cum-seniority and passing the suitability test; this cycle has no direct-from-Bar route.",
+      "Eligibility is confined to those Civil Judges (Senior Division) of Madhya Pradesh whose names figure in the list annexed to the advertisement, in which three officers are shown as eligible.",
+      "Eligible officers had to submit the online application form on or before 27 February 2026; a candidate who has not applied for the examination is treated as 'unwilling' to appear in it.",
+      "The advertisement disqualifies a candidate, and permits departmental action for misconduct, where the officer takes or attempts to take any favour at any stage of the examination, is impersonated, submits any forged document, conceals material information or provides false information, uses or attempts improper or illegal means, harasses or threatens examination staff, or disobeys examination directions; canvassing in any form is likewise a disqualification.",
+    ],
     selectionStages: ["Suitability Test / Limited Competitive Examination", "Assessment under the M.P.H.J.S. Rules, 2017", "Select list and appointment"],
     syllabus: ["Pattern prescribed under the M.P.H.J.S. (Recruitment & Conditions of Service) Rules, 2017 for the District Judge (Entry Level) examination."],
     officialLinks: [{ label: "High Court of Madhya Pradesh recruitment results", url: "https://mphc.gov.in/recruitment-results", type: "notice" }],
@@ -1986,6 +2064,14 @@ export const exams: Exam[] = [
       { label: "Recruitment notice issued", date: "2026-02-13", displayDate: "13 Feb 2026", state: "completed" },
       { label: "Main written examination / result", displayDate: "Exact official date awaited", state: "current" },
     ],
+    eligibility: [
+      "Advertisement No. HC.XXXVII-49/2025/258/R. Cell dated 20 August 2025, under which this Grade-I cycle is being run, invites applications from practicing Advocates and requires a candidate to be a citizen of India as defined in Articles 5 and 6 of the Constitution of India.",
+      "The candidate must be a holder of a Degree in Law from a recognized University.",
+      "The candidate must be practicing as an Advocate in Courts of Civil and Criminal jurisdiction on the last date fixed for receipt of applications (14 September 2025) and must have been so practicing for a continuous period of not less than 7 years as on that date, providing a certificate of continuous practice issued by the competent authority at the time of online application and document verification.",
+      "The candidate must be a practicing advocate also at the time of appointment, in terms of the Supreme Court's judgment in Dheeraj Mor v. High Court of Delhi, reported in (2020) 7 SCC 407.",
+      "Age as on the last date fixed for receipt of applications: minimum 35 years for every category, with a maximum of 45 years for Unreserved candidates and 48 years for SC/ST(P)/ST(H); the upper age limit is relaxable by 10 years for persons with disabilities belonging only to the Locomotor Disability category.",
+      "No person is eligible for appointment unless he is a citizen of India, and a person dismissed from service by any High Court, Government or statutory or local authority, convicted of an offence involving moral turpitude, permanently debarred or disqualified by the High Court or a Public Service Commission, influencing the recruiting authority, or having more than one wife living (or, for a woman, married to a man having another wife living), is disqualified.",
+    ],
     selectionStages: ["Written examination", "Interview/viva-voce", "Select list and appointment"],
     syllabus: ["Law and procedure papers under the Assam Judicial Service Grade-I 2026 recruitment scheme."],
     officialLinks: [
@@ -2035,6 +2121,13 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Main examination / interview schedule notice", date: "2026-06-25", displayDate: "25 Jun 2026", state: "completed" },
       { label: "Interview / viva-voce and result", displayDate: "Exact interview dates awaited on the call-letter portal", state: "current" },
+    ],
+    eligibility: [
+      "Advertisement No. HC.XXXVII-30/2025/37/R. Cell dated 7 February 2025, under which this Grade-III cycle is being run, requires a candidate to be a citizen of India as defined in Articles 5 and 6 of the Constitution of India.",
+      "The candidate must be a holder of a Degree in Law granted by a recognized University established by law in India; the advertisement prescribes no minimum period of practice at the Bar for Grade-III.",
+      "The candidate must not have completed, as on the last date fixed for receipt of applications (3 March 2025), 43 years of age in the case of candidates belonging to Scheduled Castes or Scheduled Tribes and 38 years of age in the case of others.",
+      "Candidates seeking relaxation under the PwBD category must be from the Locomotor Disabled category only.",
+      "Detailed scrutiny of the applications is made only after the result of the main written examination is declared, so candidature remains subject to the information furnished in the online application form being true and correct and to fulfilment of the criteria in the advertisement.",
     ],
     selectionStages: ["Written examination", "Interview/viva-voce", "Select list and appointment"],
     syllabus: ["Law and procedure papers under the Assam Judicial Service Grade-III 2026 recruitment scheme."],

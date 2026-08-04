@@ -700,7 +700,8 @@ export const exams: Exam[] = [
     qualification:
       "Graduation from a recognised university, together with four years of regular service as on 1 January of the examination year in the rank of Sub-Inspector (GD) or Inspector (GD) in CISF, including the period of basic training.",
     fee: "The examination notice does not prescribe a fee; follow the instructions on the official notice.",
-    pay: "See the official notification",
+    pay:
+      "The Rules notified by the Ministry of Home Affairs in the Gazette of India on 3 Dec 2025 do not state a pay scale or pay-matrix level for the post; they cover only the vacancies, eligibility, scheme of examination (Appendix-I) and physical and medical standards (Appendix-II). No pay figure is asserted here.",
     timeline: [
       { label: "Notice and Rules published", date: "2025-12-03", displayDate: "3 Dec 2025", state: "completed" },
       { label: "Applications closed", date: "2025-12-23", displayDate: "23 Dec 2025, 6 PM", state: "completed" },
