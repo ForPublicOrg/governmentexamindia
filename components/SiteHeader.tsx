@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -15,9 +16,16 @@ export function SiteHeader() {
       <div className="tricolour-rule" aria-hidden="true" />
       <div className="header-inner page-shell">
         <Link href="/" prefetch={false} className="brand" aria-label="Government Exam India home">
-          <span className="brand-mark" aria-hidden="true">
-            GE
-          </span>
+          {/* Same file the browser uses as the favicon, so the two never drift. */}
+          <Image
+            className="brand-mark"
+            src="/favicon.svg"
+            alt=""
+            width={41}
+            height={41}
+            priority
+            unoptimized
+          />
           <span className="brand-copy">
             <strong>Government Exam India</strong>
             <span>Exams · Seats · Timelines</span>

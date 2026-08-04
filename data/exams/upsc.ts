@@ -23,9 +23,28 @@ function activeUpscExam(value: {
   education: Exam["education"];
   nextAction: string;
   summary: string;
+  /** The exam's own page under upsc.gov.in/examinations/..., confirmed to exist. */
+  examPageUrl: string;
+  keywords?: string[];
+  /**
+   * Optional standing-scheme detail. These stay on a `listed` record because the
+   * cycle's own dated notice is the source: the published scheme of examination,
+   * eligibility conditions and fee are stable facts, while the record still makes
+   * no claim about vacancies or remaining stage dates. Each string names the
+   * notice it comes from.
+   */
+  age?: string;
+  qualification?: string;
+  fee?: string;
+  pay?: string;
+  eligibility?: string[];
+  selectionStages?: string[];
+  syllabus?: string[];
 }) {
+  const { examPageUrl, keywords, ...rest } = value;
   return listedExam({
-    ...value,
+    ...rest,
+    keywords,
     organisation: "Union Public Service Commission",
     governmentLevel: "Central",
     jurisdiction: "All India",
@@ -39,13 +58,14 @@ function activeUpscExam(value: {
     },
     timeline: [{ label: "Next official update", displayDate: "Not announced", state: "current" }],
     officialLinks: [
+      { label: "Official examination page", url: examPageUrl, type: "notice" },
       { label: "UPSC active examinations", url: "https://www.upsc.gov.in/examinations/active-exams", type: "website" },
       { label: "UPSC notification archive", url: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives", type: "notice" },
     ],
     sourceTitle: "UPSC active examinations — 2026 cycle listing",
     sourceUrl: "https://www.upsc.gov.in/examinations/active-exams",
     sourcePublished: "Active list checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 15:00 IST",
+    lastVerified: "4 Aug 2026, 17:30 IST",
   });
 }
 
@@ -109,6 +129,22 @@ export const exams: Exam[] = [
     sourcePublished: "Timetable uploaded 10 Jul 2026",
     lastVerified: "4 Aug 2026, 11:10 IST",
     changeLog: [{ date: "2026-07-10", displayDate: "10 Jul 2026", text: "UPSC uploaded the 2026 mains timetable." }],
+    keywords: [
+      "IAS mains",
+      "IPS mains",
+      "IFS mains",
+      "IRS mains",
+      "Group A and Group B central services",
+      "संघ लोक सेवा आयोग",
+      "सिविल सेवा मुख्य परीक्षा",
+      "UPSC mains",
+      "civil services exam",
+      "UPSC CSE mains",
+      "Indian Administrative Service",
+      "Indian Police Service",
+      "Indian Foreign Service",
+      "optional subject paper",
+    ],
     featured: true,
   }),
   exam({
@@ -166,6 +202,20 @@ export const exams: Exam[] = [
     sourceUrl: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives",
     sourcePublished: "Notice 20 May 2026; archive deadline updated to 11 Jun 2026",
     lastVerified: "4 Aug 2026, 11:10 IST",
+    keywords: [
+      "Indian Military Academy",
+      "Indian Naval Academy",
+      "Air Force Academy",
+      "Officers Training Academy",
+      "SSB interview",
+      "संयुक्त रक्षा सेवा परीक्षा",
+      "CDS 2 exam",
+      "combined defense services",
+      "OTA Chennai",
+      "IMA Dehradun",
+      "army officer entry",
+      "short service commission exam",
+    ],
   }),
   exam({
     slug: "upsc-nda-na-ii-2026",
@@ -222,6 +272,19 @@ export const exams: Exam[] = [
     sourceUrl: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives",
     sourcePublished: "Notice 20 May 2026; archive deadline updated to 11 Jun 2026",
     lastVerified: "4 Aug 2026, 11:10 IST",
+    keywords: [
+      "National Defence Academy",
+      "Naval Academy Ezhimala",
+      "Khadakwasla",
+      "10+2 defence entry",
+      "राष्ट्रीय रक्षा अकादमी",
+      "एनडीए परीक्षा",
+      "NDA 2 exam",
+      "N.D.A. entrance",
+      "after 12th army navy air force",
+      "10+2 Cadet Entry Scheme",
+      "General Ability Test",
+    ],
     featured: true,
   }),
   activeUpscExam({
@@ -234,6 +297,43 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     nextAction: "Track the written result after the 2 Aug examination",
     summary: "Recruitment examination for medical officer posts in central health services and participating organisations.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Medical%20Services%20Examination%2C%202026",
+    keywords: [
+      "Central Health Service",
+      "CHS doctor recruitment",
+      "railway medical officer",
+      "medical officer post",
+      "संयुक्त चिकित्सा सेवा परीक्षा",
+      "CMSE",
+      "UPSC CMS exam",
+      "combined medical service exam",
+      "MBBS government job",
+      "Assistant Divisional Medical Officer",
+      "NDMC medical officer",
+      "MCD medical officer",
+    ],
+    age:
+      "Under the CMS 2026 notice (Examination Notice No. 9/2026-CMS), a candidate must not have attained 32 years as on 1 Aug 2026, i.e. born not earlier than 2 Aug 1994; for Medical Officer Grade in the General Duty Medical Officers sub-cadre of the Central Health Service the upper limit is 35 years.",
+    qualification:
+      "Passed the written and practical parts of the final MBBS examination, as prescribed in the CMS 2026 notice; candidates who have appeared or are yet to appear at the final MBBS may apply provisionally.",
+    fee: "₹200 under the CMS 2026 notice; female, SC, ST and PwBD candidates are exempt.",
+    pay: "Group A Junior Scale, Pay Matrix Level 10 (₹56,100–₹1,77,500) plus Non-Practising Allowance, as stated in the CMS 2026 notice.",
+    eligibility: [
+      "Nationality: an Indian citizen, or a subject of Nepal or Bhutan, or a Tibetan refugee who came to India before 1 Jan 1962, or a person of Indian origin who migrated from the countries listed in para 3(I) of the CMS 2026 notice with a certificate of eligibility.",
+      "Upper-age relaxation under the CMS 2026 notice: up to 5 years for SC/ST, 3 years for OBC, 3 years for disabled defence services personnel, 5 years for ex-servicemen and ECOs/SSCOs, and 10 years for Persons with Benchmark Disability.",
+      "Recruitment covers Category I — Medical Officers Grade in the General Duty Medical Officers sub-cadre of the Central Health Service — and Category II — Assistant Divisional Medical Officer in the Railways, General Duty Medical Officer in the New Delhi Municipal Council and General Duty Medical Officer Grade II in the Municipal Corporation of Delhi.",
+      "A candidate may apply for any one or more of the services/posts listed in the notice; eligibility is verified against originals only after qualifying for the Personality Test.",
+    ],
+    selectionStages: [
+      "Part I — written examination of two objective papers, 500 marks in total",
+      "Part II — Personality Test, 100 marks",
+      "Document verification and appointment formalities — plan published in the CMS 2026 scheme of examination",
+    ],
+    syllabus: [
+      "Paper I (250 marks, two hours, 120 questions): General Medicine — 96 questions — and Paediatrics — 24 questions.",
+      "Paper II (250 marks, two hours, 120 questions): Surgery, Gynaecology & Obstetrics and Preventive & Social Medicine, 40 questions from each part.",
+      "One-third of the marks assigned to a question is deducted for a wrong answer; unattempted questions carry no penalty — CMS 2026 scheme of examination.",
+    ],
   }),
   activeUpscExam({
     slug: "upsc-capf-assistant-commandant-2026",
@@ -245,6 +345,43 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     nextAction: "Track the written result and physical-stage notice",
     summary: "Officer recruitment for Assistant Commandant posts in the central armed police forces.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026",
+    keywords: [
+      "BSF Assistant Commandant",
+      "CRPF Assistant Commandant",
+      "CISF Assistant Commandant",
+      "ITBP Assistant Commandant",
+      "SSB Assistant Commandant",
+      "Sashastra Seema Bal",
+      "केंद्रीय सशस्त्र पुलिस बल",
+      "सहायक कमांडेंट परीक्षा",
+      "CAPF exam",
+      "CPF AC exam",
+      "UPSC assistant commandant",
+      "paramilitary officer exam",
+    ],
+    age:
+      "Under the CAPF (ACs) 2026 notice (20 Feb 2026), a candidate must have attained 20 years and must not have attained 25 years as on 1 Aug 2026, i.e. born not earlier than 2 Aug 2001 and not later than 1 Aug 2006.",
+    qualification:
+      "A Bachelor's degree from a university incorporated by an Act of the Central or State Legislature, or an equivalent qualification, as prescribed in the CAPF (ACs) 2026 notice; candidates awaiting a result may apply and must produce proof before the physical tests.",
+    fee: "₹200 under the CAPF (ACs) 2026 notice; female, SC and ST candidates are exempt.",
+    eligibility: [
+      "Both male and female candidates are eligible for the Assistant Commandant post — CAPF (ACs) 2026 notice, para 4(II).",
+      "Recruitment is to the Border Security Force, Central Reserve Police Force, Central Industrial Security Force, Indo-Tibetan Border Police and Sashastra Seema Bal, under rules published by the Ministry of Home Affairs.",
+      "Upper-age relaxation under the notice: up to 5 years for SC/ST, 3 years for OBC, and up to 5 years for civilian central government servants and ex-servicemen.",
+      "Candidates must meet the physical and medical standards set out in Appendix-V of the notice; these are tested after the written examination.",
+    ],
+    selectionStages: [
+      "Written examination — Paper I (250 marks) and Paper II (200 marks)",
+      "Physical Standards Test and Physical Efficiency Test",
+      "Interview/Personality Test — 150 marks",
+      "Medical Standards Test — stage order fixed by the CAPF (ACs) 2026 notice",
+    ],
+    syllabus: [
+      "Paper I — General Ability and Intelligence (250 marks, objective): general mental ability, general science, current events of national and international importance, Indian polity and economy, history of India, and Indian and world geography.",
+      "Paper II — General Studies, Essay and Comprehension (200 marks): Part A essay in Hindi or English (80 marks); Part B comprehension, précis writing and other language skills in English only (120 marks).",
+      "Paper I is evaluated first and Paper II is evaluated only for candidates who obtain the minimum qualifying marks in Paper I.",
+    ],
   }),
   activeUpscExam({
     slug: "upsc-ies-iss-2026",
@@ -254,8 +391,44 @@ export const exams: Exam[] = [
     sector: "Economics and statistics",
     examTypes: ["Specialist & Professional"],
     education: ["Postgraduate"],
-    nextAction: "Track the written result and interview schedule",
+    nextAction: "Track the interview schedule after the 4 Aug written result",
     summary: "Specialist recruitment to the Indian Economic Service and Indian Statistical Service.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026",
+    keywords: [
+      "Indian Economic Service",
+      "Indian Statistical Service",
+      "economic officer recruitment",
+      "statistical officer recruitment",
+      "भारतीय आर्थिक सेवा",
+      "भारतीय सांख्यिकी सेवा",
+      "IES ISS exam",
+      "UPSC IES ISS",
+      "economics postgraduate government job",
+      "statistics government job",
+      "Junior Time Scale economist",
+    ],
+    age:
+      "Under the IES/ISS 2026 notice (11 Feb 2026), a candidate must have attained 21 years and must not have attained 30 years as on 1 Aug 2026, i.e. born not earlier than 2 Aug 1996 and not later than 1 Aug 2005.",
+    qualification:
+      "Indian Economic Service — a postgraduate degree in Economics, Applied Economics, Business Economics or Econometrics. Indian Statistical Service — a Bachelor's degree with Statistics, Mathematical Statistics or Applied Statistics as a subject, or a Master's degree in one of those subjects. Requirements are from the IES/ISS 2026 notice.",
+    fee: "₹200 under the IES/ISS 2026 notice; female, SC, ST and PwBD candidates are exempt.",
+    pay: "Appointment is to the Junior Time Scale of the Indian Economic Service or the Indian Statistical Service, as stated in the IES/ISS 2026 notice.",
+    eligibility: [
+      "Recruitment is to the Junior Time Scale of the Indian Economic Service and the Indian Statistical Service — IES/ISS 2026 notice, para 2(a).",
+      "The two services carry different degree requirements, so a candidate applies for the service whose qualification they hold.",
+      "Upper-age relaxation under the notice: up to 5 years for SC/ST and up to 3 years for OBC candidates, with the further relaxations listed there.",
+      "Candidates awaiting a qualifying-examination result may apply and must produce proof of passing before the Interview/Personality Test.",
+    ],
+    selectionStages: [
+      "Part I — written examination of six papers, 1000 marks in total",
+      "Part II — viva voce, 200 marks",
+      "Final merit from the written and viva voce marks — scheme published in the IES/ISS 2026 notice",
+    ],
+    syllabus: [
+      "Indian Economic Service papers: General English, General Studies, General Economics I, General Economics II, General Economics III and Indian Economics.",
+      "Indian Statistical Service papers: General English, General Studies, Statistics I and Statistics II (objective) and Statistics III and Statistics IV (descriptive).",
+      "General English and General Studies are common to both services and are subjective papers; the notice sets them at graduate standard.",
+    ],
   }),
   activeUpscExam({
     slug: "upsc-engineering-services-2026",
@@ -265,8 +438,45 @@ export const exams: Exam[] = [
     sector: "Engineering services",
     examTypes: ["Technical & Trades", "Specialist & Professional"],
     education: ["Professional degree"],
-    nextAction: "Track the mains result and personality-test notice",
+    nextAction: "Track the personality-test notice after the 24 Jul mains result",
     summary: "Recruitment to civil, mechanical, electrical and electronics engineering services of the Union.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Main%29%20Examination%2C%202026",
+    keywords: [
+      "Indian Engineering Service",
+      "civil engineering service exam",
+      "mechanical engineering service exam",
+      "electrical and electronics engineering service",
+      "अभियांत्रिकी सेवा परीक्षा",
+      "ESE exam",
+      "IES engineering exam",
+      "UPSC ESE mains",
+      "Indian Railway Management Service",
+      "Central Water Engineering Service",
+      "Border Roads Engineering Service",
+      "B.Tech government job",
+    ],
+    age:
+      "Under the ESE 2026 notice (26 Sep 2025), a candidate must have attained 21 years and must not have attained 30 years as on 1 Jan 2026, i.e. born not earlier than 2 Jan 1996 and not later than 1 Jan 2005; the upper limit is relaxable to 35 years for the categories of government servants listed in the notice.",
+    qualification:
+      "A degree in Engineering from a recognised university, or Sections A and B of the Institution of Engineers (India) examinations, or one of the other equivalents listed in the ESE 2026 notice. Indian Naval Armament Service (Electronics posts) and Indian Radio Regulatory Service also accept an M.Sc. with Wireless Communication, Electronics, Radio Physics or Radio Engineering.",
+    fee: "₹200 under the ESE 2026 notice; female, SC, ST and PwBD candidates are exempt.",
+    eligibility: [
+      "Recruitment runs under four categories — Civil Engineering, Mechanical Engineering, Electrical Engineering, and Electronics & Telecommunication Engineering — to Group A and Group B services of the Union, per the ESE 2026 notice.",
+      "Participating services include the Central Engineering Service, Central Water Engineering Service, Survey of India Group A Service, Border Roads Engineering Service, Indian Railway Management Service and the Indian Skill Development Service.",
+      "Candidates awaiting the qualifying degree result may apply and must produce proof of passing before the Personality Test.",
+      "The examination is held under Rules published by the Ministry of Communications, Department of Telecommunications in the Gazette of India Extraordinary dated 26 Sep 2025.",
+    ],
+    selectionStages: [
+      "Stage I — Preliminary examination, two objective papers, 500 marks",
+      "Stage II — Main examination, two conventional papers, 600 marks",
+      "Stage III — Personality Test, 200 marks",
+      "Final ranking counts marks from all three stages — ESE 2026 plan of examination",
+    ],
+    syllabus: [
+      "Stage I Paper I — General Studies and Engineering Aptitude, 200 marks, two hours.",
+      "Stage I Paper II — the candidate's engineering discipline, 300 marks; one-third of a question's marks is deducted for a wrong answer.",
+      "Stage II — two conventional discipline-specific papers of 300 marks each, three hours each; conventional papers must be answered in English.",
+    ],
   }),
   activeUpscExam({
     slug: "upsc-combined-geo-scientist-2026",
@@ -276,8 +486,44 @@ export const exams: Exam[] = [
     sector: "Geoscience",
     examTypes: ["Specialist & Professional"],
     education: ["Postgraduate", "Professional degree"],
-    nextAction: "Track the mains result and interview notice",
+    nextAction: "Track the interview notice after the 20 Jul mains result",
     summary: "Specialist recruitment for geology, geophysics, chemistry and hydrogeology posts in central services.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026",
+    keywords: [
+      "Geological Survey of India recruitment",
+      "geologist exam",
+      "geophysicist exam",
+      "hydrogeologist exam",
+      "संयुक्त भू-वैज्ञानिक परीक्षा",
+      "Combined Geoscientist",
+      "CGSE exam",
+      "UPSC geologist exam",
+      "Central Ground Water Board recruitment",
+      "Scientist B geophysics",
+      "M.Sc geology government job",
+    ],
+    age:
+      "Under the Combined Geo-Scientist 2026 notice (3 Sep 2025), a candidate must have attained 21 years and must not have attained 32 years as on 1 Jan 2026, i.e. born not earlier than 2 Jan 1994 and not later than 1 Jan 2005; each post also carries its own age check.",
+    qualification:
+      "Post-specific Master's degrees under the Combined Geo-Scientist 2026 notice: Geological Science, Geology or an allied subject for Geologist; Physics, Applied Physics or Geophysics for Geophysicist; Chemistry, Applied Chemistry or Analytical Chemistry for Chemist; and Geology, Applied Geology, Marine Geology or Hydrogeology for Scientist B (Hydrogeology).",
+    fee: "₹200 under the Combined Geo-Scientist 2026 notice; female, SC, ST and PwBD candidates are exempt.",
+    eligibility: [
+      "Category I posts are in the Geological Survey of India under the Ministry of Mines — Geologist, Geophysicist and Chemist, all Group A.",
+      "Category II posts are in the Central Ground Water Board — Scientist B in Hydrogeology, Chemical and Geophysics streams, and the Group B Assistant Hydrogeologist, Assistant Chemist and Assistant Geophysicist posts.",
+      "Each stream carries its own Master's-degree requirement, so a candidate applies for the stream whose qualification they hold.",
+      "Age relaxations for SC/ST, OBC and the other categories are set out in the notice; the Commission may relax qualifications in writing for otherwise well-qualified candidates.",
+    ],
+    selectionStages: [
+      "Stage I — Preliminary examination, two objective papers, 400 marks",
+      "Stage II — Main examination, three descriptive papers, 600 marks",
+      "Stage III — Personality Test/Interview, 200 marks",
+      "Marks from both Stage I and Stage II count towards the final merit — Combined Geo-Scientist 2026 plan of examination",
+    ],
+    syllabus: [
+      "Stage I Paper I — General Studies, 100 marks, two hours, common to every stream.",
+      "Stage I Paper II — the candidate's stream: Geology/Hydrogeology, Geophysics or Chemistry, 300 marks, two hours.",
+      "Stage II — three stream papers of 200 marks each, three hours each; the Hydrogeology stream takes Geology in Papers I and II and Hydrogeology in Paper III.",
+    ],
   }),
   activeUpscExam({
     slug: "upsc-indian-forest-service-2026",
@@ -289,6 +535,41 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     nextAction: "Track the forest-service mains stage after the common prelims",
     summary: "Recruitment to the Indian Forest Service through the common Civil Services preliminary examination and a separate mains process.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Preliminary%29%20Examination%2C%202026",
+    keywords: [
+      "Indian Forest Service",
+      "IFS forest officer",
+      "forest service prelims",
+      "भारतीय वन सेवा",
+      "वन सेवा परीक्षा",
+      "IFoS mains",
+      "forest ranger officer exam",
+      "UPSC forest exam",
+      "Assistant Conservator of Forests",
+      "forestry government job",
+    ],
+    age:
+      "Under the Indian Forest Service Examination 2026 notice (4 Feb 2026), a candidate must have attained 21 years and must not have attained 32 years as on 1 Aug 2026, i.e. born not earlier than 2 Aug 1994 and not later than 1 Aug 2005.",
+    qualification:
+      "A Bachelor's degree with at least one of Animal Husbandry & Veterinary Science, Botany, Chemistry, Geology, Mathematics, Physics, Statistics or Zoology, or a Bachelor's degree in Agriculture, Forestry or Engineering, per the Indian Forest Service Examination 2026 notice.",
+    fee: "₹100 for the preliminary stage under the IFoS 2026 notice, plus a further ₹200 from candidates admitted to the mains; female, SC, ST and PwBD candidates are exempt from both.",
+    eligibility: [
+      "Screening is through the common Civil Services (Preliminary) Examination; only candidates declared qualified by the Commission proceed to the Indian Forest Service (Main) Examination.",
+      "Six attempts are permitted, nine for OBC candidates, and there is no attempt limit for SC/ST candidates — IFoS 2026 notice, para (iv).",
+      "Candidates must be physically fit against the standards in Appendix-III of the Indian Forest Service Examination Rules 2026, published in the Gazette of India on 4 Feb 2026.",
+      "Candidates awaiting a qualifying-examination result may apply and must produce proof of passing before the Interview/Personality Test.",
+    ],
+    selectionStages: [
+      "Civil Services (Preliminary) Examination — two objective papers, 400 marks, used as a screening test only",
+      "Indian Forest Service (Main) Examination — six written papers",
+      "Interview/Personality Test — 300 marks",
+      "Final merit is decided by the mains and interview marks; preliminary marks are not counted",
+    ],
+    syllabus: [
+      "Mains Paper I — General English, 300 marks; Paper II — General Knowledge, 300 marks.",
+      "Mains Papers III to VI — two optional subjects chosen from the notice's list, each subject carrying two papers of 200 marks.",
+      "Optional subjects include Agriculture, Agricultural Engineering, Animal Husbandry & Veterinary Science, Botany, Chemistry, Chemical Engineering, Civil Engineering, Forestry, Geology and Mathematics, among the others listed in the notice.",
+    ],
   }),
   activeUpscExam({
     slug: "upsc-cds-i-2026",
@@ -300,6 +581,44 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     nextAction: "Track SSB and final-result notices after the written result",
     summary: "The first 2026 officer-entry cycle for IMA, INA, Air Force Academy and Officers’ Training Academy courses.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28I%29%2C%202026",
+    keywords: [
+      "Indian Military Academy",
+      "Indian Naval Academy",
+      "Air Force Academy",
+      "Officers Training Academy",
+      "SSB interview",
+      "संयुक्त रक्षा सेवा परीक्षा",
+      "CDS 1 exam",
+      "combined defense services",
+      "OTA Chennai",
+      "IMA Dehradun",
+      "army officer entry",
+      "short service commission exam",
+    ],
+    age:
+      "Course-specific windows under the CDS (I) 2026 notice (10 Dec 2025): unmarried male candidates born 2 Jan 2003–1 Jan 2008 for IMA and the Indian Naval Academy; 20–24 years as on 1 Jan 2027 for the Air Force Academy (born 2 Jan 2003–1 Jan 2007), relaxable to 26 for holders of a current DGCA Commercial Pilot Licence; born 2 Jan 2002–1 Jan 2008 for both Officers' Training Academy courses.",
+    qualification:
+      "IMA and Officers' Training Academy — a degree of a recognised university. Indian Naval Academy — a degree in Engineering. Air Force Academy — a degree of a recognised university with Physics and Mathematics at 10+2, or a degree in Engineering. Requirements are from the CDS (I) 2026 notice.",
+    fee: "₹200 under the CDS (I) 2026 notice; female, SC and ST candidates are exempt.",
+    pay: "Stipend during training and pay on commission follow the academy and commissioned-rank rules described in the notice.",
+    eligibility: [
+      "Only unmarried candidates are eligible for the IMA, Indian Naval Academy and Officers' Training Academy courses; the Air Force Academy allows married candidates aged 25 or above on the conditions in the notice.",
+      "Candidates applying for the Officers' Training Academy alongside IMA, the Indian Naval Academy or the Air Force Academy must place OTA as their last preference, and Air Force Academy applicants must place AFA first.",
+      "A share of the IMA, Indian Naval Academy and Air Force Academy vacancies is reserved for NCC 'C' Certificate holders of the corresponding wing.",
+      "Success in the written examination confers no right of admission; candidates must clear the Services Selection Board and the prescribed medical standards.",
+    ],
+    selectionStages: [
+      "Written examination",
+      "Intelligence and personality test at a Services Selection Board",
+      "Medical examination",
+      "Final merit and academy allocation — CDS (I) 2026 scheme of examination",
+    ],
+    syllabus: [
+      "IMA, Indian Naval Academy and Air Force Academy: English, General Knowledge and Elementary Mathematics, 100 marks and two hours each.",
+      "Officers' Training Academy: English and General Knowledge, 100 marks and two hours each.",
+      "SSB interview marks equal the written total — 300 for IMA, INA and AFA and 200 for OTA. All papers are objective; Elementary Mathematics is of matriculation standard and the other papers of graduate standard.",
+    ],
   }),
   activeUpscExam({
     slug: "upsc-nda-na-i-2026",
@@ -311,5 +630,129 @@ export const exams: Exam[] = [
     education: ["12th"],
     nextAction: "Track SSB and final-result notices after the written result",
     summary: "The first 2026 Class 12 officer-entry cycle for the National Defence Academy and Naval Academy.",
+    examPageUrl: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202026",
+    keywords: [
+      "National Defence Academy",
+      "Naval Academy Ezhimala",
+      "Khadakwasla",
+      "10+2 defence entry",
+      "राष्ट्रीय रक्षा अकादमी",
+      "एनडीए परीक्षा",
+      "NDA 1 exam",
+      "N.D.A. entrance",
+      "after 12th army navy air force",
+      "10+2 Cadet Entry Scheme",
+      "General Ability Test",
+    ],
+    age:
+      "Only unmarried male and female candidates born not earlier than 1 Jul 2007 and not later than 1 Jul 2010 are eligible, under the NDA & NA (I) 2026 notice (10 Dec 2025).",
+    qualification:
+      "Army wing of the National Defence Academy — Class 12 pass of the 10+2 pattern. Air Force and Naval wings and the 10+2 Cadet Entry Scheme at the Indian Naval Academy — Class 12 with Physics, Chemistry and Mathematics. Candidates appearing in Class 12 may also apply, per the NDA & NA (I) 2026 notice.",
+    fee: "₹100 under the NDA & NA (I) 2026 notice; SC and ST candidates, female candidates and the wards of JCOs/NCOs/ORs specified in the notice are exempt.",
+    pay: "Training stipend and commissioned pay follow the defence service rules described in the notice.",
+    eligibility: [
+      "Vacancies cover the Army, Navy and Air Force wings of the National Defence Academy plus the 10+2 Cadet Entry Scheme at the Indian Naval Academy; Air Force vacancies are split between Flying, Ground Duties (Technical) and Ground Duties (Non-Technical).",
+      "Men and women are separate entries: written results and final merit lists are prepared separately and in a gender-pure manner against the vacancies notified for each.",
+      "Candidates who clear the SSB interview but cannot produce the Matriculation or 10+2 certificate in original at that stage must follow the proof deadlines in the notice.",
+      "Physical and medical standards apply after the written examination.",
+    ],
+    selectionStages: [
+      "Written examination — Mathematics and General Ability Test",
+      "SSB test/interview — 900 marks",
+      "Medical examination",
+      "Final merit and academy/wing allocation — NDA & NA (I) 2026 scheme of examination",
+    ],
+    syllabus: [
+      "Mathematics — 300 marks, two and a half hours, objective.",
+      "General Ability Test — 600 marks, two and a half hours, covering English and General Knowledge.",
+      "All papers are objective; Mathematics and Part B of the General Ability Test are set in both Hindi and English.",
+    ],
+  }),
+  exam({
+    slug: "upsc-cisf-ac-exe-ldce-2026",
+    title: "UPSC CISF Assistant Commandants (Executive) Limited Departmental Competitive Examination 2026",
+    shortTitle: "UPSC CISF AC (EXE) LDCE 2026",
+    aliases: ["CISF AC EXE LDCE 2026", "CISF Assistant Commandant LDCE"],
+    organisation: "Union Public Service Commission",
+    governmentLevel: "Central",
+    jurisdiction: "All India",
+    cycle: "2026",
+    year: 2026,
+    verification: "verified",
+    sector: "Central armed police forces",
+    examTypes: ["Police & CAPF"],
+    education: ["Graduate"],
+    status: {
+      label: "Written examination held",
+      tone: "violet",
+      nextAction: "Watch the official page for the written result and the physical/medical stage notice",
+      detail:
+        "The written examination was held on 8 Mar 2026 at New Delhi and the exam is still on UPSC's active list; no further dated stage has been published.",
+    },
+    summary:
+      "Departmental promotion examination for serving CISF Sub-Inspectors and Inspectors (GD) into Assistant Commandant (Executive) posts. It is not open to the general public.",
+    vacancies: 20,
+    vacancyLabel: "20 tentative vacancies",
+    vacancyNote: "The notice gives General 16, SC 3 and ST 1; the Commission calls the total tentative.",
+    vacancyBreakdown: [{ label: "Assistant Commandant (Executive), CISF", ur: 16, sc: 3, st: 1, total: 20 }],
+    age:
+      "A candidate must not have attained 35 years as on 1 Aug 2026, i.e. born not earlier than 2 Aug 1991; relaxable by up to five years for SC and ST candidates.",
+    qualification:
+      "Graduation from a recognised university, together with four years of regular service as on 1 January of the examination year in the rank of Sub-Inspector (GD) or Inspector (GD) in CISF, including the period of basic training.",
+    fee: "The examination notice does not prescribe a fee; follow the instructions on the official notice.",
+    pay: "See the official notification",
+    timeline: [
+      { label: "Notice and Rules published", date: "2025-12-03", displayDate: "3 Dec 2025", state: "completed" },
+      { label: "Applications closed", date: "2025-12-23", displayDate: "23 Dec 2025, 6 PM", state: "completed" },
+      { label: "Written examination", date: "2026-03-08", displayDate: "8 Mar 2026", state: "completed" },
+      { label: "Written result and later stages", displayDate: "To be announced", state: "current" },
+    ],
+    eligibility: [
+      "The examination is restricted to certain categories of departmental candidates of CISF; it is not an open recruitment.",
+      "Four years of regular service as on 1 January of the examination year in the rank of Sub-Inspector (GD) or Inspector (GD), including basic training, with a clean service record under CISF Rules 2001.",
+      "Three attempts are permitted at the examination.",
+      "An NCC 'B' or 'C' certificate is a desirable qualification and is considered only at the Interview/Personality Test.",
+      "Candidates must meet the physical and medical standards specified in Appendix-II of the Rules.",
+    ],
+    relaxations: [
+      "The upper age limit is relaxable by up to five years for SC and ST candidates; the Rules provide for no other age relaxation.",
+      "Reservation is made for SC and ST candidates against vacancies as fixed by the Government.",
+    ],
+    selectionStages: [
+      "Written examination — Paper I (300 marks) and Paper II (100 marks)",
+      "Physical Standards Test and Physical Efficiency Test",
+      "Detailed and review medical examination",
+      "Interview/Personality Test — 200 marks",
+      "Merit list prepared by the Commission",
+    ],
+    syllabus: [
+      "Paper I — General Ability and Intelligence and Professional Skill: 300 marks, 150 objective questions, two and a half hours, set in English and Hindi; Part A General Ability and Intelligence (150 marks) and Part B Professional Skill (150 marks).",
+      "Paper II — Essay, Precis Writing and Comprehension: 100 marks, two hours.",
+      "The full syllabus, scheme and physical/medical standards are in the Rules notified by the Ministry of Home Affairs in the Gazette of India dated 3 Dec 2025.",
+    ],
+    officialLinks: [
+      {
+        label: "Official examination notice and Rules",
+        url: "https://www.upsc.gov.in/sites/default/files/Notif-CISF-AC-EXE-LDCE-26-Engl-031225.pdf",
+        type: "notice",
+      },
+      { label: "UPSC active examinations", url: "https://www.upsc.gov.in/examinations/active-exams", type: "website" },
+      { label: "UPSC notification archive", url: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives", type: "notice" },
+      { label: "UPSC application portal", url: "https://upsconline.nic.in/", type: "apply" },
+    ],
+    sourceTitle: "UPSC CISF Assistant Commandants (Executive) LDCE 2026 examination notice",
+    sourceUrl: "https://www.upsc.gov.in/sites/default/files/Notif-CISF-AC-EXE-LDCE-26-Engl-031225.pdf",
+    sourcePublished: "Notice and Ministry of Home Affairs Rules dated 3 Dec 2025",
+    lastVerified: "4 Aug 2026, 17:30 IST",
+    keywords: [
+      "CISF LDCE",
+      "CISF departmental exam",
+      "Assistant Commandant Executive",
+      "Central Industrial Security Force promotion exam",
+      "सीआईएसएफ विभागीय परीक्षा",
+      "Sub Inspector GD promotion",
+      "Inspector GD promotion",
+      "limited departmental competitive examination",
+    ],
   }),
 ];

@@ -1,6 +1,33 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 19.2727C22 20.779 20.779 22 19.2727 22H14.7273C13.221 22 12 20.779 12 19.2727V12H19.2727C20.779 12 22 13.221 22 14.7273V19.2727Z" fill="#267B5A"/>
-<path d="M20 2C21.1046 2 22 2.89543 22 4V7C22 8.10457 21.1046 9 20 9H17C15.8954 9 15 8.10457 15 7V4C15 2.89543 15.8954 2 17 2H20Z" fill="#E76D24"/>
-<path d="M7 15C8.10457 15 9 15.8954 9 17V20C9 21.1046 8.10457 22 7 22H4C2.89543 22 2 21.1046 2 20V17C2 15.8954 2.89543 15 4 15H7Z" fill="#23688F"/>
-<path d="M12 12H4.72727C3.22104 12 2 10.779 2 9.27273V4.72727C2 3.22104 3.22104 2 4.72727 2H9.27273C10.779 2 12 3.22104 12 4.72727V12Z" fill="#09283F"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Government Exam India">
+  <!--
+    Brand mark: a civic facade (government) standing on a stack of books
+    (exams), the books carrying the tricolour. Deliberately not the State Emblem
+    of India, which is protected and would misrepresent an independent index.
+
+    Every element is centred on x=32 and the composition on y=32, so the mark
+    sits square in the tile at any size. Each book is wider than the plinth it
+    supports and carries a darker spine, so the stack reads as books rather than
+    as more of the architecture.
+  -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#103552" />
+
+  <g fill="#FFFEFA">
+    <path d="M32 9.4 50 19.2 14 19.2 Z" />
+    <rect x="14" y="20.6" width="36" height="3.2" rx="1.1" />
+    <rect x="16" y="25.2" width="7.2" height="10.7" rx="1.2" />
+    <rect x="28.4" y="25.2" width="7.2" height="10.7" rx="1.2" />
+    <rect x="40.8" y="25.2" width="7.2" height="10.7" rx="1.2" />
+    <rect x="16" y="37.1" width="32" height="3" rx="1.1" />
+  </g>
+
+  <g>
+    <rect x="12.5" y="42.4" width="39" height="3.8" rx="1.2" fill="#E76D24" />
+    <path d="M16.1 42.4 13.7 42.4 Q12.5 42.4 12.5 43.6 L12.5 45 Q12.5 46.2 13.7 46.2 L16.1 46.2 Z" fill="#B9531A" />
+
+    <rect x="15" y="46.8" width="34" height="3.8" rx="1.2" fill="#FFFEFA" />
+    <path d="M18.6 46.8 16.2 46.8 Q15 46.8 15 48 L15 49.4 Q15 50.6 16.2 50.6 L18.6 50.6 Z" fill="#C1BAAC" />
+
+    <rect x="11.5" y="51.2" width="41" height="3.8" rx="1.2" fill="#267B5A" />
+    <path d="M15.1 51.2 12.7 51.2 Q11.5 51.2 11.5 52.4 L11.5 53.8 Q11.5 55 12.7 55 L15.1 55 Z" fill="#17563E" />
+  </g>
 </svg>

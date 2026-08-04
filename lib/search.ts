@@ -1,4 +1,11 @@
 import type { EducationLevel, Exam, ExamType, GovernmentLevel, StatusTone } from "@/lib/exam-types";
+import {
+  applicationCloseDate,
+  lifecyclePhaseIndex,
+  lifecyclePhases,
+  lifecycleSortKey,
+  type LifecyclePhase,
+} from "@/lib/lifecycle";
 
 /**
  * A deliberately small per-exam record. The explorer and the search page load
@@ -24,7 +31,19 @@ export type SearchDoc = {
   /** last checked, date part only */ c: string;
   /** verified? */ vf: 0 | 1;
   /** featured? */ f: 0 | 1;
+  /** lifecycle phase index: 0 ongoing, 1 upcoming, 2 past */ p: 0 | 1 | 2;
+  /** within-phase sort key, deadline-first */ k: string;
+  /** ISO application closing date, when one is published */ cd?: string;
 };
+
+/** Ongoing before upcoming before past, then the nearest deadline to act on. */
+export function compareDocs(a: SearchDoc, b: SearchDoc) {
+  return a.p - b.p || a.k.localeCompare(b.k) || b.f - a.f || a.st.localeCompare(b.st);
+}
+
+export function phaseOfDoc(doc: SearchDoc): LifecyclePhase {
+  return lifecyclePhases[doc.p] ?? "past";
+}
 
 export function toSearchDoc(item: Exam): SearchDoc {
   const haystack = [
@@ -38,6 +57,7 @@ export function toSearchDoc(item: Exam): SearchDoc {
   ]
     .filter(Boolean)
     .join(" · ");
+  const closing = applicationCloseDate(item);
 
   return {
     s: item.slug,
@@ -58,6 +78,9 @@ export function toSearchDoc(item: Exam): SearchDoc {
     c: item.lastVerified.split(",")[0],
     vf: item.verification === "verified" ? 1 : 0,
     f: item.featured ? 1 : 0,
+    p: lifecyclePhaseIndex(item) as 0 | 1 | 2,
+    k: lifecycleSortKey(item),
+    ...(closing ? { cd: closing } : {}),
   };
 }
 
@@ -216,7 +239,7 @@ export function rank(docs: SearchDoc[], query: string): Ranked[] {
   const tokens = rawTokens.filter((token) => !STOPWORDS.has(token));
   if (!tokens.length) {
     return uniqueSearchDocs(docs)
-      .sort((a, b) => b.f - a.f || b.y - a.y || a.st.localeCompare(b.st))
+      .sort(compareDocs)
       .map((doc) => ({ doc, score: 0 }));
   }
 
@@ -286,7 +309,11 @@ export function rank(docs: SearchDoc[], query: string): Ranked[] {
     if (!existing || score > existing.score) results.set(doc.s, { doc, score });
   }
 
-  return Array.from(results.values()).sort((a, b) => b.score - a.score || a.doc.st.localeCompare(b.doc.st));
+  // Phase leads every list on the site, so a live cycle is never buried under a
+  // finished one. Relevance still decides the order inside a phase.
+  return Array.from(results.values()).sort(
+    (a, b) => a.doc.p - b.doc.p || b.score - a.score || compareDocs(a.doc, b.doc),
+  );
 }
 
 function escapeRegExp(value: string) {
@@ -300,6 +327,7 @@ export type Facets = {
   region: "All" | string;
   year: "All" | number;
   tones: readonly StatusTone[];
+  phase?: LifecyclePhase;
 };
 
 /** Apply the explorer's dropdown filters. Kept separate from ranking. */
@@ -310,6 +338,7 @@ export function applyFacets(docs: SearchDoc[], facets: Facets) {
     if (facets.level !== "All" && doc.g !== facets.level) return false;
     if (facets.year !== "All" && doc.y !== facets.year) return false;
     if (facets.tones.length && !facets.tones.includes(doc.n)) return false;
+    if (facets.phase && phaseOfDoc(doc) !== facets.phase) return false;
     if (facets.region !== "All") {
       // "central" is offered as its own option, so picking a state narrows to
       // that state's own recruitment rather than re-listing every all-India cycle.
@@ -323,19 +352,38 @@ export function applyFacets(docs: SearchDoc[], facets: Facets) {
   });
 }
 
-export type StatusFilter = "all" | "open" | "attention" | "notification-soon" | "upcoming" | "in-progress";
+export type StatusFilter =
+  | "all"
+  | "ongoing"
+  | "upcoming"
+  | "past"
+  | "open"
+  | "attention"
+  | "notification-soon"
+  | "exam-scheduled"
+  | "in-progress";
 
+/**
+ * Two ways to narrow the same list: by where the cycle sits overall (phase), or
+ * by the exact stage it is at (tone). The explorer groups them separately so
+ * "Ongoing" never reads like a synonym for "Applications open".
+ */
 export const statusFilters: readonly {
   value: StatusFilter;
   label: string;
   tones: readonly StatusTone[];
+  phase?: LifecyclePhase;
+  group?: "phase" | "stage";
 }[] = [
   { value: "all", label: "All stages", tones: [] },
-  { value: "open", label: "Applications open", tones: ["green"] },
-  { value: "attention", label: "Needs attention", tones: ["red"] },
-  { value: "notification-soon", label: "Notification soon", tones: ["amber"] },
-  { value: "upcoming", label: "Exam upcoming", tones: ["blue"] },
-  { value: "in-progress", label: "In progress / results", tones: ["violet", "slate"] },
+  { value: "ongoing", label: "Ongoing", tones: [], phase: "ongoing", group: "phase" },
+  { value: "upcoming", label: "Upcoming", tones: [], phase: "upcoming", group: "phase" },
+  { value: "past", label: "Past", tones: [], phase: "past", group: "phase" },
+  { value: "open", label: "Applications open", tones: ["green"], group: "stage" },
+  { value: "attention", label: "Needs attention", tones: ["red"], group: "stage" },
+  { value: "notification-soon", label: "Notification soon", tones: ["amber"], group: "stage" },
+  { value: "exam-scheduled", label: "Exam scheduled", tones: ["blue"], group: "stage" },
+  { value: "in-progress", label: "In progress / results", tones: ["violet", "slate"], group: "stage" },
 ];
 
 export type ExplorerState = {
@@ -369,6 +417,10 @@ export const defaultExplorerState: ExplorerState = {
 
 export function tonesForStatus(status: StatusFilter): readonly StatusTone[] {
   return statusFilters.find((filter) => filter.value === status)?.tones ?? [];
+}
+
+export function phaseForStatus(status: StatusFilter) {
+  return statusFilters.find((filter) => filter.value === status)?.phase;
 }
 
 export function parseExplorerParams(params: URLSearchParams, options: ExplorerParamOptions): ExplorerState {
