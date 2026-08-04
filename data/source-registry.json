@@ -22,12 +22,18 @@
       "LA"
     ],
     "allowedHosts": [
-      "ladakh.gov.in"
+      "ladakh.gov.in",
+      "police.ladakh.gov.in"
     ],
     "watchUrls": [
       {
         "id": "ladakh-administration-1",
         "url": "https://ladakh.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "ladakh-administration-2",
+        "url": "https://police.ladakh.gov.in/pages/recruitment.html",
         "cadenceHours": 24
       }
     ]
@@ -107,6 +113,72 @@
     ]
   },
   {
+    "id": "apepdcl",
+    "name": "Andhra Pradesh Eastern Power Distribution Company Limited",
+    "level": "State",
+    "regionCodes": [
+      "AP"
+    ],
+    "allowedHosts": [
+      "www.apeasternpower.com",
+      "apeasternpower.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "apepdcl-1",
+        "url": "https://www.apeasternpower.com/careers",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "andhra-pradesh-grama-ward-sachivalayam",
+    "name": "Andhra Pradesh Grama Ward Sachivalayam Department",
+    "level": "State",
+    "regionCodes": [
+      "AP"
+    ],
+    "allowedHosts": [
+      "gramawardsachivalayam.ap.gov.in",
+      "sgsw.ap.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "andhra-pradesh-grama-ward-sachivalayam-1",
+        "url": "https://gramawardsachivalayam.ap.gov.in/GSWS/Home/Main",
+        "cadenceHours": 24
+      },
+      {
+        "id": "andhra-pradesh-grama-ward-sachivalayam-2",
+        "url": "https://sgsw.ap.gov.in/GSWS/Home/Main",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "andhra-pradesh-msrb",
+    "name": "Andhra Pradesh Medical Services Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "AP"
+    ],
+    "allowedHosts": [
+      "apmsrb.ap.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "andhra-pradesh-msrb-1",
+        "url": "https://apmsrb.ap.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "andhra-pradesh-msrb-2",
+        "url": "https://apmsrb.ap.gov.in/msrb/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "andhra-pradesh-psc",
     "name": "Andhra Pradesh Public Service Commission",
     "level": "State",
@@ -150,6 +222,63 @@
       {
         "id": "andhra-pradesh-school-education-2",
         "url": "https://tet2dsc.apcfss.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "andhra-pradesh-slprb",
+    "name": "Andhra Pradesh State Level Police Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "AP"
+    ],
+    "allowedHosts": [
+      "slprb.ap.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "andhra-pradesh-slprb-1",
+        "url": "https://slprb.ap.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "avnl",
+    "name": "Armoured Vehicles Nigam Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "avnl.co.in",
+      "www.avnl.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "avnl-1",
+        "url": "https://avnl.co.in/careers-vacancies",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "arunachal-police",
+    "name": "Arunachal Pradesh Police",
+    "level": "State",
+    "regionCodes": [
+      "AR"
+    ],
+    "allowedHosts": [
+      "arunpol.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "arunachal-police-1",
+        "url": "https://arunpol.nic.in/advert.html",
+        "cadenceHours": 24
+      },
+      {
+        "id": "arunachal-police-2",
+        "url": "https://arunpol.nic.in/",
         "cadenceHours": 24
       }
     ]
@@ -217,6 +346,45 @@
       {
         "id": "assam-psc-2",
         "url": "https://apsc.nic.in/advt_2026.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "assam-rifles",
+    "name": "Assam Rifles",
+    "level": "Central",
+    "allowedHosts": [
+      "www.assamrifles.gov.in",
+      "assamrifles.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "assam-rifles-1",
+        "url": "https://www.assamrifles.gov.in/onlineapp/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bescom",
+    "name": "Bangalore Electricity Supply Company Limited",
+    "level": "State",
+    "regionCodes": [
+      "KA"
+    ],
+    "allowedHosts": [
+      "bescom.karnataka.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bescom-1",
+        "url": "https://bescom.karnataka.gov.in/100/recruitment/en",
+        "cadenceHours": 24
+      },
+      {
+        "id": "bescom-2",
+        "url": "https://bescom.karnataka.gov.in/new-page/Direct%20Recruitment%20-%202024/en",
         "cadenceHours": 24
       }
     ]
@@ -354,6 +522,25 @@
       {
         "id": "bssc-1",
         "url": "https://bssc.bihar.gov.in/NoticeBoard.htm",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bsphcl",
+    "name": "Bihar State Power Holding Company Limited",
+    "level": "State",
+    "regionCodes": [
+      "BR"
+    ],
+    "allowedHosts": [
+      "bsphcl.co.in",
+      "www.bsphcl.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bsphcl-1",
+        "url": "https://bsphcl.co.in/Recruitment.aspx",
         "cadenceHours": 24
       }
     ]
@@ -575,6 +762,24 @@
     ]
   },
   {
+    "id": "cg-state-power-companies",
+    "name": "Chhattisgarh State Power Companies",
+    "level": "State",
+    "regionCodes": [
+      "CG"
+    ],
+    "allowedHosts": [
+      "www.cspdcl.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "cg-state-power-companies-1",
+        "url": "https://www.cspdcl.co.in/cseb/frmViewRecruitment.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "coal-india",
     "name": "Coal India Limited",
     "level": "Central",
@@ -602,6 +807,29 @@
       {
         "id": "cochin-shipyard-1",
         "url": "https://cochinshipyard.in/career",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "karnataka-health-family-welfare-services",
+    "name": "Commissionerate of Health and Family Welfare Services, Karnataka",
+    "level": "State",
+    "regionCodes": [
+      "KA"
+    ],
+    "allowedHosts": [
+      "hfwcom.karnataka.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "karnataka-health-family-welfare-services-1",
+        "url": "https://hfwcom.karnataka.gov.in/english",
+        "cadenceHours": 24
+      },
+      {
+        "id": "karnataka-health-family-welfare-services-2",
+        "url": "https://hfwcom.karnataka.gov.in/page/Recruitment+(DRC)/Direct+Recruitment+Cell+(DRC)/en",
         "cadenceHours": 24
       }
     ]
@@ -708,6 +936,29 @@
       {
         "id": "meghalaya-dert-1",
         "url": "https://megeducation.gov.in/dert/pages/dert_notice_board.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "manipur-health-directorate",
+    "name": "Directorate of Health Services, Manipur",
+    "level": "State",
+    "regionCodes": [
+      "MN"
+    ],
+    "allowedHosts": [
+      "manipurhealthdirectorate.mn.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "manipur-health-directorate-1",
+        "url": "https://manipurhealthdirectorate.mn.gov.in/notifications",
+        "cadenceHours": 24
+      },
+      {
+        "id": "manipur-health-directorate-2",
+        "url": "https://manipurhealthdirectorate.mn.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -886,6 +1137,29 @@
     ]
   },
   {
+    "id": "goa-ssc",
+    "name": "Goa Staff Selection Commission",
+    "level": "State",
+    "regionCodes": [
+      "GA"
+    ],
+    "allowedHosts": [
+      "gssc.goa.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "goa-ssc-1",
+        "url": "https://gssc.goa.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "goa-ssc-2",
+        "url": "https://gssc.goa.gov.in/?page_id=1079",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "gpssb",
     "name": "Gujarat Panchayat Service Selection Board",
     "level": "State",
@@ -910,6 +1184,29 @@
     ]
   },
   {
+    "id": "gprb",
+    "name": "Gujarat Police Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "GJ"
+    ],
+    "allowedHosts": [
+      "gprb.gujarat.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "gprb-1",
+        "url": "https://gprb.gujarat.gov.in/advertisements.htm",
+        "cadenceHours": 24
+      },
+      {
+        "id": "gprb-2",
+        "url": "https://gprb.gujarat.gov.in/notice.htm",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "gujarat-psc",
     "name": "Gujarat Public Service Commission",
     "level": "State",
@@ -924,6 +1221,24 @@
       {
         "id": "gujarat-psc-1",
         "url": "https://gpsc.gujarat.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "gsrtc",
+    "name": "Gujarat State Road Transport Corporation",
+    "level": "State",
+    "regionCodes": [
+      "GJ"
+    ],
+    "allowedHosts": [
+      "www.gsrtc.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "gsrtc-1",
+        "url": "https://www.gsrtc.in/site/downloads/innerPages/recruitment.html",
         "cadenceHours": 24
       }
     ]
@@ -953,6 +1268,74 @@
     ]
   },
   {
+    "id": "guvnl",
+    "name": "Gujarat Urja Vikas Nigam Limited",
+    "level": "State",
+    "regionCodes": [
+      "GJ"
+    ],
+    "allowedHosts": [
+      "www.mgvcl.com",
+      "www.guvnl.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "guvnl-1",
+        "url": "https://www.mgvcl.com/career.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "hkrn",
+    "name": "Haryana Kaushal Rozgar Nigam Limited",
+    "level": "State",
+    "regionCodes": [
+      "HR"
+    ],
+    "allowedHosts": [
+      "hkrnl.itiharyana.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "hkrn-1",
+        "url": "https://hkrnl.itiharyana.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "hkrn-2",
+        "url": "https://hkrnl.itiharyana.gov.in/VacantJobs.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "haryana-power-utilities",
+    "name": "Haryana Power Utilities",
+    "level": "State",
+    "regionCodes": [
+      "HR"
+    ],
+    "allowedHosts": [
+      "uhbvn.org.in",
+      "www.uhbvn.org.in",
+      "dhbvn.org.in",
+      "www.dhbvn.org.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "haryana-power-utilities-1",
+        "url": "https://www.uhbvn.org.in/web/portal/career",
+        "cadenceHours": 24
+      },
+      {
+        "id": "haryana-power-utilities-2",
+        "url": "https://www.dhbvn.org.in/web/portal/career",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "hssc",
     "name": "Haryana Staff Selection Commission",
     "level": "State",
@@ -972,6 +1355,53 @@
       {
         "id": "hssc-2",
         "url": "https://hssc.gov.in/index.php/advertisement",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "mizoram-health-family-welfare",
+    "name": "Health and Family Welfare Department, Government of Mizoram",
+    "level": "State",
+    "regionCodes": [
+      "MZ"
+    ],
+    "allowedHosts": [
+      "health.mizoram.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "mizoram-health-family-welfare-1",
+        "url": "https://health.mizoram.gov.in/page/advertisement",
+        "cadenceHours": 24
+      },
+      {
+        "id": "mizoram-health-family-welfare-2",
+        "url": "https://health.mizoram.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "tripura-health-family-welfare",
+    "name": "Health and Family Welfare Department, Government of Tripura",
+    "level": "State",
+    "regionCodes": [
+      "TR"
+    ],
+    "allowedHosts": [
+      "health.tripura.gov.in",
+      "healthrecruitment.tripura.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "tripura-health-family-welfare-1",
+        "url": "https://healthrecruitment.tripura.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "tripura-health-family-welfare-2",
+        "url": "https://health.tripura.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -1322,7 +1752,8 @@
       "UK"
     ],
     "allowedHosts": [
-      "highcourtofuttarakhand.gov.in"
+      "highcourtofuttarakhand.gov.in",
+      "cdnbbsr.s3waas.gov.in"
     ],
     "watchUrls": [
       {
@@ -1371,6 +1802,48 @@
       {
         "id": "hppsc-2",
         "url": "https://hppsc.hp.gov.in/Home/HomeWhatsNew",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "hprca",
+    "name": "Himachal Pradesh Rajya Chayan Aayog, Hamirpur",
+    "level": "State",
+    "regionCodes": [
+      "HP"
+    ],
+    "allowedHosts": [
+      "hprca.hp.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "hprca-1",
+        "url": "https://hprca.hp.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "hprca-2",
+        "url": "https://hprca.hp.gov.in/advertisements",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "hpsebl",
+    "name": "Himachal Pradesh State Electricity Board Limited",
+    "level": "State",
+    "regionCodes": [
+      "HP"
+    ],
+    "allowedHosts": [
+      "hpseb.in",
+      "www.hpseb.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "hpsebl-1",
+        "url": "https://www.hpseb.in/",
         "cadenceHours": 24
       }
     ]
@@ -1641,6 +2114,25 @@
     ]
   },
   {
+    "id": "jbvnl",
+    "name": "Jharkhand Bijli Vitran Nigam Limited",
+    "level": "State",
+    "regionCodes": [
+      "JH"
+    ],
+    "allowedHosts": [
+      "jbvnl.co.in",
+      "www.jbvnl.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jbvnl-1",
+        "url": "https://www.jbvnl.co.in/careers",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "jpsc",
     "name": "Jharkhand Public Service Commission",
     "level": "State",
@@ -1665,6 +2157,24 @@
     ]
   },
   {
+    "id": "jrhms-jharkhand",
+    "name": "Jharkhand Rural Health Mission Society",
+    "level": "State",
+    "regionCodes": [
+      "JH"
+    ],
+    "allowedHosts": [
+      "jrhms.jharkhand.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jrhms-jharkhand-1",
+        "url": "https://jrhms.jharkhand.gov.in/Home/Career",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "jssc",
     "name": "Jharkhand Staff Selection Commission",
     "level": "State",
@@ -1678,6 +2188,30 @@
       {
         "id": "jssc-1",
         "url": "https://jssc.jharkhand.gov.in/whats-new",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "karnataka-examinations-authority",
+    "name": "Karnataka Examinations Authority",
+    "level": "State",
+    "regionCodes": [
+      "KA"
+    ],
+    "allowedHosts": [
+      "cetonline.karnataka.gov.in",
+      "www.cetonline.karnataka.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "karnataka-examinations-authority-1",
+        "url": "https://cetonline.karnataka.gov.in/kea/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "karnataka-examinations-authority-2",
+        "url": "https://cetonline.karnataka.gov.in/kea/vaorpc2026.aspx",
         "cadenceHours": 24
       }
     ]
@@ -1702,6 +2236,29 @@
       {
         "id": "karnataka-forest-department-2",
         "url": "https://recruitment.aranya.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "kptcl",
+    "name": "Karnataka Power Transmission Corporation Limited",
+    "level": "State",
+    "regionCodes": [
+      "KA"
+    ],
+    "allowedHosts": [
+      "kptcl.karnataka.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "kptcl-1",
+        "url": "https://kptcl.karnataka.gov.in/661/%E0%B2%A8%E0%B3%87%E0%B2%AE%E0%B2%95%E0%B2%BE%E0%B2%A4%E0%B2%BF/kn",
+        "cadenceHours": 24
+      },
+      {
+        "id": "kptcl-2",
+        "url": "https://kptcl.karnataka.gov.in/662/%E0%B2%A8%E0%B3%87%E0%B2%AE%E0%B2%95%E0%B2%BE%E0%B2%A4%E0%B2%BF-2024/kn",
         "cadenceHours": 24
       }
     ]
@@ -1760,6 +2317,30 @@
     ]
   },
   {
+    "id": "karnataka-state-police",
+    "name": "Karnataka State Police",
+    "level": "State",
+    "regionCodes": [
+      "KA"
+    ],
+    "allowedHosts": [
+      "ksp.karnataka.gov.in",
+      "cetonline.karnataka.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "karnataka-state-police-1",
+        "url": "https://ksp.karnataka.gov.in/info-3/Recruitment/en",
+        "cadenceHours": 24
+      },
+      {
+        "id": "karnataka-state-police-2",
+        "url": "https://cetonline.karnataka.gov.in/kea/cpcrpc2026",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "kvs-nvs",
     "name": "Kendriya Vidyalaya Sangathan & Navodaya Vidyalaya Samiti",
     "level": "Central",
@@ -1777,6 +2358,29 @@
       {
         "id": "kvs-nvs-2",
         "url": "https://navodaya.gov.in/nvs/recruitment/Welcome/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "kdrb",
+    "name": "Kerala Devaswom Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "KL"
+    ],
+    "allowedHosts": [
+      "kdrb.kerala.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "kdrb-1",
+        "url": "https://kdrb.kerala.gov.in/category/examination/notifications/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "kdrb-2",
+        "url": "https://kdrb.kerala.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -1905,6 +2509,24 @@
     ]
   },
   {
+    "id": "mp-rajya-sahakari-bank",
+    "name": "Madhya Pradesh Rajya Sahakari Bank Maryadit (Apex Bank)",
+    "level": "State",
+    "regionCodes": [
+      "MP"
+    ],
+    "allowedHosts": [
+      "apexbankmp.bank.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "mp-rajya-sahakari-bank-1",
+        "url": "https://apexbankmp.bank.in/Main/Recruitment",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "mpsc",
     "name": "Maharashtra Public Service Commission",
     "level": "State",
@@ -1935,7 +2557,8 @@
       "MH"
     ],
     "allowedHosts": [
-      "mahatet.in"
+      "mahatet.in",
+      "mscepune.in"
     ],
     "watchUrls": [
       {
@@ -1946,6 +2569,47 @@
       {
         "id": "msce-pune-2",
         "url": "https://mahatet.in/Notices/TimeTable/ShowTimeTable",
+        "cadenceHours": 24
+      },
+      {
+        "id": "msce-pune-3",
+        "url": "https://mscepune.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "msedcl",
+    "name": "Maharashtra State Electricity Distribution Company Limited",
+    "level": "State",
+    "regionCodes": [
+      "MH"
+    ],
+    "allowedHosts": [
+      "www.mahadiscom.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "msedcl-1",
+        "url": "https://www.mahadiscom.in/en/category/career/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "msetcl",
+    "name": "Maharashtra State Electricity Transmission Company Limited",
+    "level": "State",
+    "regionCodes": [
+      "MH"
+    ],
+    "allowedHosts": [
+      "www.mahatransco.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "msetcl-1",
+        "url": "https://www.mahatransco.in/career/active",
         "cadenceHours": 24
       }
     ]
@@ -1965,6 +2629,24 @@
       {
         "id": "maharashtra-police-1",
         "url": "https://www.mahapolice.gov.in/police-recru.php/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "msrtc",
+    "name": "Maharashtra State Road Transport Corporation",
+    "level": "State",
+    "regionCodes": [
+      "MH"
+    ],
+    "allowedHosts": [
+      "msrtc.maharashtra.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "msrtc-1",
+        "url": "https://msrtc.maharashtra.gov.in/GeneralPages/Recruitment.aspx",
         "cadenceHours": 24
       }
     ]
@@ -2022,6 +2704,53 @@
       {
         "id": "mazagon-dock-1",
         "url": "https://mazagondock.in/English/career/Career-Executives",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "assam-mhrb",
+    "name": "Medical and Health Recruitment Board, Assam",
+    "level": "State",
+    "regionCodes": [
+      "AS"
+    ],
+    "allowedHosts": [
+      "nhm.assam.gov.in",
+      "nhmssd.assam.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "assam-mhrb-1",
+        "url": "https://nhm.assam.gov.in/portlets/recruitment",
+        "cadenceHours": 24
+      },
+      {
+        "id": "assam-mhrb-2",
+        "url": "https://nhmssd.assam.gov.in/eHRMIS_latest/Recruitments",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "meghalaya-meecl",
+    "name": "Meghalaya Energy Corporation Limited",
+    "level": "State",
+    "regionCodes": [
+      "ML"
+    ],
+    "allowedHosts": [
+      "meecl.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "meghalaya-meecl-1",
+        "url": "https://meecl.nic.in/index.php/recruitment/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "meghalaya-meecl-2",
+        "url": "https://meecl.nic.in/",
         "cadenceHours": 24
       }
     ]
@@ -2117,6 +2846,63 @@
     ]
   },
   {
+    "id": "mp-power-transmission-company",
+    "name": "MP Power Transmission Company Limited",
+    "level": "State",
+    "regionCodes": [
+      "MP"
+    ],
+    "allowedHosts": [
+      "www.mptransco.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "mp-power-transmission-company-1",
+        "url": "https://www.mptransco.in/Personnel/Career",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "munitions-india",
+    "name": "Munitions India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "munitionsindia.in",
+      "www.munitionsindia.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "munitions-india-1",
+        "url": "https://munitionsindia.in/career/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nagaland-police",
+    "name": "Nagaland Police",
+    "level": "State",
+    "regionCodes": [
+      "NL"
+    ],
+    "allowedHosts": [
+      "police.nagaland.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nagaland-police-1",
+        "url": "https://police.nagaland.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "nagaland-police-2",
+        "url": "https://police.nagaland.gov.in/advertisements/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "nagaland-psc",
     "name": "Nagaland Public Service Commission",
     "level": "State",
@@ -2135,6 +2921,34 @@
       {
         "id": "nagaland-psc-2",
         "url": "https://npsc.nagaland.gov.in/latest-updates",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nagaland-nssb",
+    "name": "Nagaland Staff Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "NL"
+    ],
+    "allowedHosts": [
+      "nssb.nagaland.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nagaland-nssb-1",
+        "url": "https://nssb.nagaland.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "nagaland-nssb-2",
+        "url": "https://nssb.nagaland.gov.in/category/recruitment/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "nagaland-nssb-3",
+        "url": "https://nssb.nagaland.gov.in/category/results/",
         "cadenceHours": 24
       }
     ]
@@ -2185,6 +2999,24 @@
       {
         "id": "nbems-1",
         "url": "https://natboard.edu.in/allnotice?NBEMSNOTICE=examination",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nhm-madhya-pradesh",
+    "name": "National Health Mission, Madhya Pradesh",
+    "level": "State",
+    "regionCodes": [
+      "MP"
+    ],
+    "allowedHosts": [
+      "www.nhmmp.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nhm-madhya-pradesh-1",
+        "url": "https://www.nhmmp.gov.in/Vacancy.aspx",
         "cadenceHours": 24
       }
     ]
@@ -2311,6 +3143,25 @@
     ]
   },
   {
+    "id": "optcl",
+    "name": "Odisha Power Transmission Corporation Limited",
+    "level": "State",
+    "regionCodes": [
+      "OD"
+    ],
+    "allowedHosts": [
+      "optcl.co.in",
+      "www.optcl.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "optcl-1",
+        "url": "https://www.optcl.co.in/Currentopening.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "opsc",
     "name": "Odisha Public Service Commission",
     "level": "State",
@@ -2335,6 +3186,25 @@
     ]
   },
   {
+    "id": "ossc",
+    "name": "Odisha Staff Selection Commission",
+    "level": "State",
+    "regionCodes": [
+      "OD"
+    ],
+    "allowedHosts": [
+      "ossc.gov.in",
+      "www.ossc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "ossc-1",
+        "url": "https://www.ossc.gov.in/Public/OSSC/AdvertisementSection.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "osssc",
     "name": "Odisha Sub-ordinate Staff Selection Commission",
     "level": "State",
@@ -2349,6 +3219,30 @@
       {
         "id": "osssc-1",
         "url": "https://osssc.gov.in/Public/OSSSC/Default.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "tn-registrar-cooperative-societies",
+    "name": "Office of the Registrar of Cooperative Societies, Tamil Nadu",
+    "level": "State",
+    "regionCodes": [
+      "TN"
+    ],
+    "allowedHosts": [
+      "rcs.tn.gov.in",
+      "www.rcs.tn.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "tn-registrar-cooperative-societies-1",
+        "url": "https://rcs.tn.gov.in/implinksrbdrb.php",
+        "cadenceHours": 24
+      },
+      {
+        "id": "tn-registrar-cooperative-societies-2",
+        "url": "https://rcs.tn.gov.in/cm.php",
         "cadenceHours": 24
       }
     ]
@@ -2466,6 +3360,30 @@
     ]
   },
   {
+    "id": "punjab-police",
+    "name": "Punjab Police",
+    "level": "State",
+    "regionCodes": [
+      "PB"
+    ],
+    "allowedHosts": [
+      "punjabpolice.gov.in",
+      "www.punjabpolice.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "punjab-police-1",
+        "url": "https://www.punjabpolice.gov.in/en/recruitments/punjab-police-recruitment/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "punjab-police-2",
+        "url": "https://www.punjabpolice.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "ppsc",
     "name": "Punjab Public Service Commission",
     "level": "State",
@@ -2556,6 +3474,22 @@
     ]
   },
   {
+    "id": "railtel",
+    "name": "RailTel Corporation of India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.railtel.in",
+      "railtel.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "railtel-1",
+        "url": "https://www.railtel.in/careers.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "rpf",
     "name": "Railway Protection Force",
     "level": "Central",
@@ -2590,6 +3524,24 @@
     ]
   },
   {
+    "id": "rajcrb",
+    "name": "Rajasthan Cooperative Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "RJ"
+    ],
+    "allowedHosts": [
+      "rajcrb.rajasthan.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "rajcrb-1",
+        "url": "https://rajcrb.rajasthan.gov.in/RecruitmentAdvertisements.aspx?menu_id=13",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "rpsc",
     "name": "Rajasthan Public Service Commission",
     "level": "State",
@@ -2608,6 +3560,24 @@
       {
         "id": "rpsc-2",
         "url": "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "rvunl",
+    "name": "Rajasthan Rajya Vidyut Utpadan Nigam Limited",
+    "level": "State",
+    "regionCodes": [
+      "RJ"
+    ],
+    "allowedHosts": [
+      "energy.rajasthan.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "rvunl-1",
+        "url": "https://energy.rajasthan.gov.in/rrvun/",
         "cadenceHours": 24
       }
     ]
@@ -2702,6 +3672,25 @@
     ]
   },
   {
+    "id": "maharashtra-rural-development",
+    "name": "Rural Development and Panchayat Raj Department, Government of Maharashtra",
+    "level": "State",
+    "regionCodes": [
+      "MH"
+    ],
+    "allowedHosts": [
+      "rdd.maharashtra.gov.in",
+      "cdnbbsr.s3waas.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "maharashtra-rural-development-1",
+        "url": "https://rdd.maharashtra.gov.in/en/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "ssb",
     "name": "Sashastra Seema Bal",
     "level": "Central",
@@ -2769,6 +3758,44 @@
       {
         "id": "sjvn-1",
         "url": "https://sjvn.nic.in/en/current-job",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "apspdcl",
+    "name": "Southern Power Distribution Company of Andhra Pradesh Limited",
+    "level": "State",
+    "regionCodes": [
+      "AP"
+    ],
+    "allowedHosts": [
+      "www.apspdcl.in",
+      "apspdcl.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "apspdcl-1",
+        "url": "https://www.apspdcl.in/careers.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "tgspdcl",
+    "name": "Southern Power Distribution Company of Telangana Limited",
+    "level": "State",
+    "regionCodes": [
+      "TG"
+    ],
+    "allowedHosts": [
+      "tgsouthernpower.org",
+      "www.tgsouthernpower.org"
+    ],
+    "watchUrls": [
+      {
+        "id": "tgspdcl-1",
+        "url": "https://tgsouthernpower.org/careers",
         "cadenceHours": 24
       }
     ]
@@ -2848,6 +3875,24 @@
     ]
   },
   {
+    "id": "shs-bihar",
+    "name": "State Health Society, Bihar",
+    "level": "State",
+    "regionCodes": [
+      "BR"
+    ],
+    "allowedHosts": [
+      "shs.bihar.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "shs-bihar-1",
+        "url": "https://shs.bihar.gov.in/Advertisement.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "assam-slprb",
     "name": "State Level Police Recruitment Board, Assam",
     "level": "State",
@@ -2916,6 +3961,55 @@
       {
         "id": "supreme-court-india-1",
         "url": "https://www.sci.gov.in/recruitments/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "mrb-tamil-nadu",
+    "name": "Tamil Nadu Medical Services Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "TN"
+    ],
+    "allowedHosts": [
+      "mrb.tn.gov.in",
+      "www.mrb.tn.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "mrb-tamil-nadu-1",
+        "url": "https://mrb.tn.gov.in/content.php?menu_id=MTkw&dept_id=ODAw&lang=MQ==",
+        "cadenceHours": 24
+      },
+      {
+        "id": "mrb-tamil-nadu-2",
+        "url": "https://mrb.tn.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "tangedco",
+    "name": "Tamil Nadu Power Distribution Corporation Limited (TANGEDCO)",
+    "level": "State",
+    "regionCodes": [
+      "TN"
+    ],
+    "allowedHosts": [
+      "www.tnpdcl.org",
+      "tnpdcl.org",
+      "www.tnebltd.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "tangedco-1",
+        "url": "https://www.tnpdcl.org/en/tnpdcl/recruitment/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "tangedco-2",
+        "url": "https://www.tnpdcl.org/",
         "cadenceHours": 24
       }
     ]
@@ -3022,6 +4116,24 @@
     ]
   },
   {
+    "id": "telangana-mhsrb",
+    "name": "Telangana Medical and Health Services Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "TG"
+    ],
+    "allowedHosts": [
+      "mhsrb.telangana.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "telangana-mhsrb-1",
+        "url": "https://mhsrb.telangana.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "telangana-psc",
     "name": "Telangana Public Service Commission",
     "level": "State",
@@ -3045,6 +4157,30 @@
     ]
   },
   {
+    "id": "telangana-treirb",
+    "name": "Telangana Residential Educational Institutions Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "TG"
+    ],
+    "allowedHosts": [
+      "treirb.telangana.gov.in",
+      "treirb.cgg.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "telangana-treirb-1",
+        "url": "https://treirb.cgg.gov.in/getMenuContent/75",
+        "cadenceHours": 24
+      },
+      {
+        "id": "telangana-treirb-2",
+        "url": "https://treirb.telangana.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "telangana-school-education",
     "name": "Telangana School Education Department",
     "level": "State",
@@ -3058,6 +4194,25 @@
       {
         "id": "telangana-school-education-1",
         "url": "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "telangana-slprb",
+    "name": "Telangana State Level Police Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "TG"
+    ],
+    "allowedHosts": [
+      "www.tgprb.in",
+      "tgprb.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "telangana-slprb-1",
+        "url": "https://www.tgprb.in/",
         "cadenceHours": 24
       }
     ]
@@ -3088,6 +4243,29 @@
       {
         "id": "niacl-1",
         "url": "https://www.newindia.co.in/recruitment/list",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "tripura-police",
+    "name": "Tripura Police",
+    "level": "State",
+    "regionCodes": [
+      "TR"
+    ],
+    "allowedHosts": [
+      "police.tripura.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "tripura-police-1",
+        "url": "https://police.tripura.gov.in/recruitment",
+        "cadenceHours": 24
+      },
+      {
+        "id": "tripura-police-2",
+        "url": "https://police.tripura.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -3141,7 +4319,8 @@
       "DN"
     ],
     "allowedHosts": [
-      "ddd.gov.in"
+      "ddd.gov.in",
+      "cdnbbsr.s3waas.gov.in"
     ],
     "watchUrls": [
       {
@@ -3165,6 +4344,29 @@
       {
         "id": "upbeb-1",
         "url": "https://upbasiceduboard.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "upcisb",
+    "name": "Uttar Pradesh Co-operative Institutional Service Board",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "upcisb.upsdc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "upcisb-1",
+        "url": "https://upcisb.upsdc.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "upcisb-2",
+        "url": "https://upcisb.upsdc.gov.in/UPCIBS/ViewRecruitment",
         "cadenceHours": 24
       }
     ]
@@ -3216,6 +4418,30 @@
     ]
   },
   {
+    "id": "uppcl",
+    "name": "Uttar Pradesh Power Corporation Limited",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "upenergy.in",
+      "www.upenergy.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "uppcl-1",
+        "url": "https://www.upenergy.in/uppcl/en/page/vacancy-results",
+        "cadenceHours": 24
+      },
+      {
+        "id": "uppcl-2",
+        "url": "https://www.upenergy.in/uppcl",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "uppsc",
     "name": "Uttar Pradesh Public Service Commission",
     "level": "State",
@@ -3229,6 +4455,30 @@
       {
         "id": "uppsc-1",
         "url": "https://uppsc.up.nic.in/OuterPages/NoticeAlert.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "uprvunl",
+    "name": "Uttar Pradesh Rajya Vidyut Utpadan Nigam Limited",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "uprvunl.org",
+      "www.uprvunl.org"
+    ],
+    "watchUrls": [
+      {
+        "id": "uprvunl-1",
+        "url": "https://www.uprvunl.org/recruitment-notices",
+        "cadenceHours": 24
+      },
+      {
+        "id": "uprvunl-2",
+        "url": "https://www.uprvunl.org/career",
         "cadenceHours": 24
       }
     ]
@@ -3270,6 +4520,52 @@
       {
         "id": "ubse-1",
         "url": "https://ubse.uk.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "ukmssb",
+    "name": "Uttarakhand Medical Service Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "UK"
+    ],
+    "allowedHosts": [
+      "ukmssb.org"
+    ],
+    "watchUrls": [
+      {
+        "id": "ukmssb-1",
+        "url": "https://ukmssb.org/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "ukmssb-2",
+        "url": "https://ukmssb.org/recruitment-advertisement/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "uttarakhand-police",
+    "name": "Uttarakhand Police",
+    "level": "State",
+    "regionCodes": [
+      "UK"
+    ],
+    "allowedHosts": [
+      "uttarakhandpolice.uk.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "uttarakhand-police-1",
+        "url": "https://uttarakhandpolice.uk.gov.in/career_recruitment",
+        "cadenceHours": 24
+      },
+      {
+        "id": "uttarakhand-police-2",
+        "url": "https://uttarakhandpolice.uk.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -3386,6 +4682,41 @@
       {
         "id": "wbprb-1",
         "url": "https://prb.wb.gov.in/recruitments",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "wbsedcl",
+    "name": "West Bengal State Electricity Distribution Company Limited",
+    "level": "State",
+    "regionCodes": [
+      "WB"
+    ],
+    "allowedHosts": [
+      "wbsedcl.in",
+      "www.wbsedcl.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "wbsedcl-1",
+        "url": "https://www.wbsedcl.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "yantra-india",
+    "name": "Yantra India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "yantraindia.co.in",
+      "www.yantraindia.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "yantra-india-1",
+        "url": "https://yantraindia.co.in/en/career",
         "cadenceHours": 24
       }
     ]
