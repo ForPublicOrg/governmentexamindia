@@ -42,6 +42,17 @@ const SAVED_KEY = "gei-saved-exams";
 const DEFAULT_PAGE_SIZE = 12;
 const COMPACT_PAGE_SIZE = 6;
 
+function facetFilterCount(filters: ExplorerState) {
+  return [
+    filters.education !== "All",
+    filters.examType !== "All",
+    filters.level !== "All",
+    filters.region !== "All",
+    filters.year !== "All",
+    filters.status !== "all",
+  ].filter(Boolean).length;
+}
+
 function readSaved(): string[] {
   try {
     const value: unknown = JSON.parse(localStorage.getItem(SAVED_KEY) ?? "[]");
@@ -61,17 +72,12 @@ function ExamResultCard({
   onSave: (slug: string) => void;
 }) {
   return (
-    <article className="exam-card">
+    <article className="exam-card exam-card-compact">
       <div className="exam-card-topline">
-        <div className="exam-card-badges">
-          <span className={`status-pill status-${item.n}`}>
-            <span className="status-dot" aria-hidden="true" />
-            {item.sl}
-          </span>
-          <span className={`verification-badge verification-${item.vf ? "verified" : "listed"}`}>
-            {item.vf ? "Notice verified" : "Official listing"}
-          </span>
-        </div>
+        <span className={`status-pill status-${item.n}`}>
+          <span className="status-dot" aria-hidden="true" />
+          {item.sl}
+        </span>
         <button
           type="button"
           className={`save-button${saved ? " is-saved" : ""}`}
@@ -80,12 +86,11 @@ function ExamResultCard({
           aria-pressed={saved}
         >
           <span aria-hidden="true">{saved ? "★" : "☆"}</span>
-          {saved ? "Saved" : "Save"}
         </button>
       </div>
 
       <div className="exam-card-heading">
-        <p>{item.o}</p>
+        <p>{item.o} <span aria-hidden="true">·</span> {item.g === "Central" ? "All India" : (item.sn ?? "State")}</p>
         <h2>
           <Link
             href={`/exams/${item.s}`}
@@ -99,7 +104,7 @@ function ExamResultCard({
       </div>
 
       <div className="next-action">
-        <span>Next</span>
+        <span>Next step</span>
         <strong>{item.na}</strong>
       </div>
 
@@ -112,17 +117,13 @@ function ExamResultCard({
           <dt>Education</dt>
           <dd>{item.e.join(" · ")}</dd>
         </div>
-        <div>
-          <dt>Level</dt>
-          <dd>{item.g === "Central" ? "Central / All India" : (item.sn ?? "State recruitment")}</dd>
-        </div>
       </dl>
 
       <div className="exam-card-footer">
-        <span>
-          Checked <strong>{item.c}</strong>
+        <span className={`card-verification${item.vf ? " is-verified" : ""}`}>
+          <strong>{item.vf ? "✓ Verified" : "Listed"}</strong> <span aria-hidden="true">·</span> {item.c}
         </span>
-        <span className="card-cta" aria-hidden="true">Open exam →</span>
+        <span className="card-cta" aria-hidden="true">Open →</span>
       </div>
     </article>
   );
@@ -140,6 +141,7 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
   const [savedOnlyReady, setSavedOnlyReady] = useState(false);
   const [saved, setSaved] = useState<string[]>([]);
   const [page, setPage] = useState(1);
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const uniqueDocs = useMemo(() => uniqueSearchDocs(docs), [docs]);
   const years = useMemo(
@@ -165,10 +167,13 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
     filters.year !== "All" ||
     filters.status !== "all" ||
     filters.savedOnly;
+  const activeFilterCount = facetFilterCount(filters);
 
   useEffect(() => {
     const frame = window.requestAnimationFrame(() => {
-      setFilters(parseExplorerParams(new URLSearchParams(window.location.search), paramOptions));
+      const initialFilters = parseExplorerParams(new URLSearchParams(window.location.search), paramOptions);
+      setFilters(initialFilters);
+      setFiltersOpen(facetFilterCount(initialFilters) > 0);
       setSaved(readSaved());
       setSavedOnlyReady(true);
     });
@@ -222,12 +227,10 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
   const reset = () => {
     setFilters(defaultExplorerState);
     setPage(1);
+    setFiltersOpen(false);
   };
 
-  const resultStatus =
-    mode === "search" && filters.savedOnly && !savedOnlyReady
-      ? "Loading saved exams"
-      : `${results.length} ${results.length === 1 ? "exam" : "exams"} found`;
+  const savedResultsLoading = mode === "search" && filters.savedOnly && !savedOnlyReady;
 
   return (
     <section className={`explorer${compact ? " explorer-compact" : ""}`} aria-labelledby={`${controlId}-title`}>
@@ -243,7 +246,10 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
             type="search"
             value={filters.query}
             onChange={(event) => updateFilters({ query: event.target.value })}
-            placeholder="Search exam, post, state or notification no."
+            onKeyDown={(event) => {
+              if (event.key === "Enter") event.preventDefault();
+            }}
+            placeholder="Search exams, posts or states"
             autoComplete="off"
           />
           {filters.query && (
@@ -253,7 +259,43 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
           )}
         </div>
 
-        <div className="filter-grid">
+        <div className="filter-summary">
+          <p role="status" aria-live="polite" aria-atomic="true">
+            {savedResultsLoading ? (
+              "Loading saved exams"
+            ) : (
+              <>
+                <strong>{results.length}</strong> {results.length === 1 ? "exam" : "exams"}
+                {activeFilterCount ? ` · ${activeFilterCount} active` : ""}
+              </>
+            )}
+          </p>
+          <div>
+            <button
+              type="button"
+              className={`saved-filter${filtersOpen ? " is-active" : ""}`}
+              onClick={() => setFiltersOpen((current) => !current)}
+              aria-expanded={filtersOpen}
+              aria-controls={`${controlId}-filters`}
+            >
+              Filters {activeFilterCount ? `(${activeFilterCount})` : ""}
+            </button>
+            <button
+              type="button"
+              className={`saved-filter${filters.savedOnly ? " is-active" : ""}`}
+              onClick={() => updateFilters({ savedOnly: !filters.savedOnly })}
+              disabled={!saved.length && !filters.savedOnly}
+              aria-pressed={filters.savedOnly}
+            >
+              ★ Saved {saved.length ? `(${saved.length})` : ""}
+            </button>
+            <button type="button" className="reset-button" onClick={reset} disabled={!hasActiveFilters}>
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <div id={`${controlId}-filters`} className="filter-grid" hidden={!filtersOpen}>
           <label htmlFor={`${controlId}-education`}>
             <span>Education</span>
             <select
@@ -341,26 +383,6 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
             </select>
           </label>
         </div>
-
-        <div className="filter-summary">
-          <p role="status" aria-live="polite" aria-atomic="true">
-            {resultStatus === "Preparing search" ? resultStatus : <><strong>{results.length}</strong> {results.length === 1 ? "exam" : "exams"} found</>}
-          </p>
-          <div>
-            <button
-              type="button"
-              className={`saved-filter${filters.savedOnly ? " is-active" : ""}`}
-              onClick={() => updateFilters({ savedOnly: !filters.savedOnly })}
-              disabled={!saved.length && !filters.savedOnly}
-              aria-pressed={filters.savedOnly}
-            >
-              ★ Saved {saved.length ? `(${saved.length})` : ""}
-            </button>
-            <button type="button" className="reset-button" onClick={reset} disabled={!hasActiveFilters}>
-              Reset filters
-            </button>
-          </div>
-        </div>
       </div>
 
       {visibleResults.length ? (
@@ -372,9 +394,9 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
           </div>
           {visibleResults.length < results.length && (
             <div className="load-more-row">
-              <p>Showing {visibleResults.length} of {results.length} exams</p>
+              <p>{visibleResults.length} of {results.length}</p>
               <button type="button" className="button button-secondary" onClick={() => setPage((current) => current + 1)}>
-                Load {Math.min(pageSize, results.length - visibleResults.length)} more
+                Show {Math.min(pageSize, results.length - visibleResults.length)} more
               </button>
             </div>
           )}
@@ -382,10 +404,9 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue" }: Exam
       ) : (
         <div className="empty-state">
           <span aria-hidden="true">⌕</span>
-          <h2>No matching exam found</h2>
-          <p>Check the spelling, try a shorter phrase, choose another state, or remove a filter.</p>
+          <h2>No matches</h2>
           <button type="button" className="button button-primary" onClick={reset}>
-            Clear search and filters
+            Reset
           </button>
         </div>
       )}

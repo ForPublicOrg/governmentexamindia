@@ -69,11 +69,11 @@ test("exports the searchable catalogue as useful HTML before JavaScript", async 
   const response = await render("/exams");
   assert.equal(response.status, 200);
   const html = await response.text();
-  assert.match(html, /Government exams worth checking now/);
-  assert.match(html, /IBPS Probationary Officer/);
-  assert.match(html, /SSC Combined Graduate Level/);
-  assert.match(html, /BPSC Integrated 72nd/);
-  assert.match(html, /Checked (?:<!-- -->)?4 Aug 2026/);
+  const cards = (html.match(/<a class="[^"]*\bcollection-card\b[^"]*"/g) ?? []).length;
+  const detailLinks = new Set([...html.matchAll(/href="\/exams\/([^"?#]+)"/g)].map((match) => match[1]));
+  assert.ok(cards >= 12 && cards <= 24, `catalogue should render 12–24 highlights, got ${cards}`);
+  assert.ok(detailLinks.size >= cards, "every server-rendered highlight should link to an exam detail route");
+  assert.match(html, /Checked (?:<!-- -->)?\d{1,2} [A-Z][a-z]{2} 20\d{2}/);
 });
 
 test("keeps discovery pages bounded and does not repeat national exams on every state page", async () => {
@@ -92,14 +92,39 @@ test("keeps discovery pages bounded and does not repeat national exams on every 
   const home = await homeResponse.text();
   const search = await searchResponse.text();
   const tamilNadu = await tamilNaduResponse.text();
+  const searchIndexSource = await readFile(new URL("../out/search-index.json", import.meta.url), "utf8");
+  const searchIndex = JSON.parse(searchIndexSource);
   assert.ok(Buffer.byteLength(home) < 210_000, "home HTML should stay below 210 KB");
   assert.ok(Buffer.byteLength(search) < 150_000, "ranked-search HTML should stay below 150 KB");
+  assert.ok(Buffer.byteLength(searchIndexSource) < 100_000, "lazy search index should stay below 100 KB");
+  assert.ok(searchIndex.length >= 100, "lazy index should contain a useful nationwide catalogue");
+  assert.equal(new Set(searchIndex.map((item) => item.s)).size, searchIndex.length, "lazy index should not repeat exams");
   assert.match(search, /<meta name="robots" content="noindex, follow"/);
-  assert.equal((search.match(/class="exam-card"/g) ?? []).length, 12, "search should render its first page before JavaScript");
+  assert.match(search, /<input[^>]+type="search"/);
+  assert.match(search, /aria-live="polite"/);
+  const searchCards = (search.match(/<article class="[^"]*\bexam-card\b[^"]*"/g) ?? []).length;
+  const searchDetailLinks = new Set([...search.matchAll(/href="\/exams\/([^"?#]+)"/g)].map((match) => match[1]));
+  assert.ok(searchCards >= 6 && searchCards <= 12, `search should SSR 6–12 useful results, got ${searchCards}`);
+  assert.ok(searchDetailLinks.size >= searchCards, "server-rendered search results should link to exam details");
+
+  const regionSelect = search.match(/<select[^>]*-region[^>]*>[\s\S]*?<\/select>/)?.[0];
+  assert.ok(regionSelect, "search should render its location filter before JavaScript");
+  const renderedRegions = new Set([...regionSelect.matchAll(/<option value="([A-Z]{2})"/g)].map((match) => match[1]));
+  assert.equal(renderedRegions.size, 36, "location filter should include all 28 states and 8 union territories");
+  for (const filter of ["education", "type", "region"]) {
+    assert.match(search, new RegExp(`<select[^>]*-${filter}[^>]*>`), `search should retain the ${filter} filter`);
+  }
+
   assert.match(home, /36<!-- -->\/36<\/strong><span>states &amp; UTs represented/);
-  assert.equal((home.match(/class="exam-card"/g) ?? []).length, 0, "home should not render the full interactive catalogue");
-  assert.match(homeSource, /action="\/search"/);
-  assert.doesNotMatch(homeSource, /ExamExplorer/);
+  assert.match(home, /<input[^>]+type="search"/);
+  assert.match(home, /role="combobox"/);
+  assert.match(home, /aria-autocomplete="list"/);
+  assert.doesNotMatch(home, /<form[^>]+action="\/search"/);
+  assert.ok(
+    (home.match(/<article class="[^"]*\bexam-card\b[^"]*"/g) ?? []).length <= 6,
+    "home live search should stay compact",
+  );
+  assert.doesNotMatch(homeSource, /action=["']\/search["']/);
 
   assert.match(tamilNadu, /TNPSC/);
   assert.doesNotMatch(tamilNadu, /UPSC Civil Services|IBPS Probationary Officer|RRB NTPC/);

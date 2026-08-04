@@ -15,16 +15,10 @@ const searchDocs = exams.map(toSearchDoc);
 export default function SearchPage() {
   return (
     <div className="page-shell listing-page search-page">
-      <div className="page-intro">
-        <div>
-          <span className="eyebrow">Ranked exam search</span>
-          <h1>Search the government exam index</h1>
-          <p>
-            Search natural phrases such as “12th pass”, “bank PO” or a state name. Results are ranked by relevance,
-            then can be narrowed by location, qualification, year and current stage.
-          </p>
-        </div>
-      </div>
+      <header className="search-page-heading">
+        <span className="eyebrow">{exams.length} exam cycles</span>
+        <h1>Find an exam</h1>
+      </header>
       <ExamExplorer docs={searchDocs} mode="search" />
     </div>
   );

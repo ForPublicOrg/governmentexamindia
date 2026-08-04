@@ -28,6 +28,21 @@ function hits(query: string) {
   return rank(docs, query).map((entry) => entry.doc.s);
 }
 
+async function readDirectComponentImports(source: string) {
+  const componentPaths = [
+    ...new Set(
+      [...source.matchAll(/from\s+["']@\/components\/([^"']+)["']/g)].map((match) => match[1]),
+    ),
+  ];
+
+  return Promise.all(
+    componentPaths.map(async (componentPath) => ({
+      componentPath,
+      source: await readFile(new URL(`../components/${componentPath}.tsx`, import.meta.url), "utf8"),
+    })),
+  );
+}
+
 test("finds an exam by its acronym", () => {
   const results = top("cgl");
   assert.ok(
@@ -140,6 +155,8 @@ test("year, status, type, education and level facets compose", () => {
 test("every state and union territory is available to the region facet", () => {
   assert.equal(indiaRegions.length, 36);
   assert.equal(new Set(indiaRegions.map((region) => region.code)).size, 36);
+  assert.equal(indiaRegions.filter((region) => region.kind === "State").length, 28);
+  assert.equal(indiaRegions.filter((region) => region.kind === "Union territory").length, 8);
 });
 
 test("all declared discovery categories are selectable", () => {
@@ -187,11 +204,46 @@ test("the search document stays small enough to ship to the browser", () => {
   assert.ok(perDoc < 700, `search doc averages ${Math.round(perDoc)} bytes, expected under 700`);
 });
 
-test("the live catalogue and dedicated route use the compact ranked search", async () => {
-  const [explorerSource, catalogueSource, searchPageSource, headerSource] = await Promise.all([
+test("home matches while typing instead of submitting to the search route", async () => {
+  const [homeSource, explorerSource] = await Promise.all([
+    readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../components/ExamExplorer.tsx", import.meta.url), "utf8"),
+  ]);
+  const importedHomeComponents = await readDirectComponentImports(homeSource);
+  const liveHomeSearch = importedHomeComponents.find(
+    ({ source }) => /type=["']search["']/.test(source) && /onChange=/.test(source),
+  );
+
+  assert.ok(liveHomeSearch, "home should render a client component that matches as the query changes");
+  assert.doesNotMatch(homeSource, /action=["']\/search["']/);
+  assert.doesNotMatch(liveHomeSearch.source, /action=["']\/search["']/);
+  assert.match(liveHomeSearch.source, /(?:\brank|\.rank)\(/, "home search should use the ranked matcher");
+  assert.match(liveHomeSearch.source, /onChange=/, "home should update while the user types");
+  assert.match(liveHomeSearch.source, /role=["']combobox["']/);
+  assert.match(liveHomeSearch.source, /aria-autocomplete=["']list["']/);
+  assert.match(liveHomeSearch.source, /role=["']status["']/);
+  assert.match(liveHomeSearch.source, /onSubmit=/);
+  assert.match(liveHomeSearch.source, /\.preventDefault\(\)/, "home form must not perform native navigation");
+  assert.match(liveHomeSearch.source, /SEARCH_INDEX_URL\s*=\s*["']\/search-index\.json\?v=\d+["']/);
+  assert.match(liveHomeSearch.source, /fetch\(SEARCH_INDEX_URL/);
+  assert.match(liveHomeSearch.source, /RESULT_LIMIT\s*=\s*5/);
+
+  assert.match(explorerSource, /type=["']search["']/, "search explorer should expose a search input");
+  assert.match(explorerSource, /onChange=/, "search explorer should update while the user types");
+  assert.match(explorerSource, /onKeyDown=/, "search explorer should handle Enter explicitly");
+  assert.match(
+    explorerSource,
+    /\.key\s*===\s*["']Enter["'][\s\S]{0,300}?\.preventDefault\(\)/,
+    "search explorer should prevent Enter from submitting or navigating",
+  );
+});
+
+test("the catalogue and dedicated route use a compact, complete ranked search", async () => {
+  const [explorerSource, catalogueSource, searchPageSource, indexRouteSource, headerSource] = await Promise.all([
     readFile(new URL("../components/ExamExplorer.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/exams/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/search/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../app/search-index.json/route.ts", import.meta.url), "utf8"),
     readFile(new URL("../components/SiteHeader.tsx", import.meta.url), "utf8"),
   ]);
 
@@ -199,7 +251,8 @@ test("the live catalogue and dedicated route use the compact ranked search", asy
   assert.match(explorerSource, /docs:\s*SearchDoc\[\]/);
   assert.match(explorerSource, /applyFacets\(uniqueDocs/);
   assert.match(explorerSource, /rank\(matches, filters\.query\)/);
-  assert.match(explorerSource, /indiaRegions\.filter/);
+  assert.match(explorerSource, /indiaRegions\.filter\(\(region\) => region\.kind === "State"\)/);
+  assert.match(explorerSource, /indiaRegions\.filter\(\(region\) => region\.kind === "Union territory"\)/);
   assert.match(explorerSource, /results\.slice\(0, page \* pageSize\)/);
   assert.match(explorerSource, /prefetch=\{false\}/);
   assert.doesNotMatch(catalogueSource, /toSearchDoc|ExamExplorer/);
@@ -209,5 +262,8 @@ test("the live catalogue and dedicated route use the compact ranked search", asy
   assert.match(searchPageSource, /exams\.map\(toSearchDoc\)/);
   assert.match(searchPageSource, /<ExamExplorer docs=\{searchDocs\} mode="search"/);
   assert.match(searchPageSource, /robots:\s*\{\s*index:\s*false,\s*follow:\s*true\s*\}/);
+  assert.match(indexRouteSource, /dynamic\s*=\s*["']force-static["']/);
+  assert.match(indexRouteSource, /Response\.json\(exams\.map\(toSearchDoc\)/);
+  assert.match(indexRouteSource, /Cache-Control/);
   assert.match(headerSource, /className="header-search" href="\/search"/);
 });

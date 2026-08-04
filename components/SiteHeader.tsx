@@ -2,12 +2,11 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
-  { href: "/exams", label: "Current exams" },
+  { href: "/exams", label: "Exams" },
   { href: "/states", label: "States" },
-  { href: "/exam-types", label: "Exam types" },
+  { href: "/exam-types", label: "Categories" },
   { href: "/calendar", label: "Calendar" },
   { href: "/updates", label: "Updates" },
-  { href: "/#education", label: "By education" },
 ];
 
 export function SiteHeader() {

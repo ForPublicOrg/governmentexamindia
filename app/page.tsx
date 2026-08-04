@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { IndiaStateMap } from "@/components/IndiaStateMap";
+import { InstantExamSearch } from "@/components/InstantExamSearch";
 import { examTypeOptions, indiaRegions } from "@/lib/discovery";
 import { educationOptions, exams, examsForRegion } from "@/lib/exams";
 
@@ -74,25 +75,9 @@ export default function Home() {
               Government exams across India.
               <span> One clear next step.</span>
             </h1>
-            <p className="hero-lede">
-              Find reviewed central and state recruitment by education. See the published status, eligibility, dates,
-              vacancies, reservation details, syllabus, fees and official links—without the clutter.
-            </p>
+            <p className="hero-lede">Deadlines · eligibility · vacancies · syllabus · official links</p>
 
-            <form className="hero-search" action="/search" method="get" role="search">
-              <label htmlFor="home-search" className="sr-only">
-                Search the government exam index
-              </label>
-              <span aria-hidden="true">⌕</span>
-              <input
-                id="home-search"
-                name="q"
-                type="search"
-                placeholder="Try “12th pass”, “bank PO” or “Bihar”"
-                autoComplete="off"
-              />
-              <button type="submit">Search exams</button>
-            </form>
+            <InstantExamSearch />
             <div className="search-hints" aria-label="Popular searches">
               <span>Popular:</span>
               <Link href="/search?q=SSC" prefetch={false}>SSC</Link>
