@@ -9,6 +9,9 @@ type LoadState = "idle" | "loading" | "ready" | "error";
 
 const RESULT_LIMIT = 5;
 const SEARCH_INDEX_URL = "/search-index.json?v=2";
+// Trailing slash to match `trailingSlash: true`, so Enter lands on the search
+// page directly instead of taking a redirect on the way.
+const SEARCH_PAGE = "/search/";
 
 export function InstantExamSearch() {
   const router = useRouter();
@@ -61,33 +64,29 @@ export function InstantExamSearch() {
     void ensureRuntime().catch(() => undefined);
   }, [ensureRuntime]);
 
-  const openSelected = useCallback(async () => {
+  /**
+   * Enter runs the whole search rather than opening the top suggestion. The
+   * typeahead is a shortcut, not a guess at what was meant: only a row the
+   * reader has deliberately arrowed onto opens as an exam. Nothing here waits
+   * on the index, so Enter works while the suggestions are still loading.
+   */
+  const submitSearch = useCallback(() => {
     const cleaned = query.trim();
     if (!cleaned) {
       inputRef.current?.focus();
       return;
     }
 
-    try {
-      const loaded = runtime ?? (await ensureRuntime());
-      const ranked = rank(loaded.docs, cleaned).slice(0, RESULT_LIMIT);
-      const selectedIndex = highlighted >= 0 && highlighted < ranked.length ? highlighted : 0;
-      const selected = ranked[selectedIndex]?.doc;
-
-      if (selected) {
-        router.push(`/exams/${selected.s}/`);
-      } else {
-        setIsOpen(true);
-      }
-    } catch {
-      setIsOpen(true);
-    }
-  }, [ensureRuntime, highlighted, query, router, runtime]);
+    const chosen = highlighted >= 0 ? matches[highlighted] : undefined;
+    setIsOpen(false);
+    setHighlighted(-1);
+    router.push(chosen ? `/exams/${chosen.s}/` : `${SEARCH_PAGE}?q=${encodeURIComponent(cleaned)}`);
+  }, [highlighted, matches, query, router]);
 
   function handleKeyDown(event: KeyboardEvent<HTMLInputElement>) {
     if (event.key === "Enter") {
       event.preventDefault();
-      void openSelected();
+      submitSearch();
       return;
     }
 
@@ -120,7 +119,7 @@ export function InstantExamSearch() {
   const activeOptionId = hasListbox && matches[highlighted]
     ? `instant-search-option-${instanceId}-${highlighted}`
     : undefined;
-  const fullResultsHref = `/search?q=${encodeURIComponent(cleanedQuery)}`;
+  const fullResultsHref = `${SEARCH_PAGE}?q=${encodeURIComponent(cleanedQuery)}`;
 
   return (
     <div className="instant-exam-search" onBlur={handleBlur}>
@@ -129,7 +128,7 @@ export function InstantExamSearch() {
         role="search"
         onSubmit={(event) => {
           event.preventDefault();
-          void openSelected();
+          submitSearch();
         }}
       >
         <label htmlFor={`home-search-${instanceId}`} className="sr-only">
@@ -153,17 +152,16 @@ export function InstantExamSearch() {
           value={query}
           onFocus={() => {
             loadWithoutThrowing();
-            if (cleanedQuery) {
-              setIsOpen(true);
-              setHighlighted(0);
-            }
+            // Nothing starts selected: a highlighted row is a choice the reader
+            // made with the arrow keys, and Enter honours only that.
+            if (cleanedQuery) setIsOpen(true);
           }}
           onChange={(event) => {
             const value = event.target.value;
             setQuery(value);
             if (value.trim()) {
               setIsOpen(true);
-              setHighlighted(0);
+              setHighlighted(-1);
               loadWithoutThrowing();
             } else {
               setIsOpen(false);
@@ -172,7 +170,7 @@ export function InstantExamSearch() {
           }}
           onKeyDown={handleKeyDown}
         />
-        <button type="submit" disabled={!cleanedQuery}>Open</button>
+        <button type="submit" disabled={!cleanedQuery}>Search</button>
       </form>
 
       {showPanel ? (
@@ -187,7 +185,7 @@ export function InstantExamSearch() {
           ) : matches.length ? (
             <>
               <p className="sr-only" role="status" aria-live="polite" aria-atomic="true">
-                {rankedMatches.length} matches. First: {matches[0].t}.
+                {rankedMatches.length} matches. Press Enter for all of them, or arrow down to open one.
               </p>
               <ul className="instant-search-results" id={listboxId} role="listbox" aria-label="Matching exams">
                 {matches.map((doc, index) => (
@@ -198,7 +196,6 @@ export function InstantExamSearch() {
                       href={`/exams/${doc.s}/`}
                       role="option"
                       aria-selected={highlighted === index}
-                      onMouseEnter={() => setHighlighted(index)}
                     >
                       <span className="instant-search-result-copy">
                         <strong className="instant-search-result-title">{doc.t}</strong>

@@ -223,7 +223,7 @@ test("the search index stays cheap to download", () => {
   assert.ok(raw / docs.length < 1_500, `search doc averages ${Math.round(raw / docs.length)} raw bytes, expected under 1,500`);
 });
 
-test("home matches while typing instead of submitting to the search route", async () => {
+test("home matches while typing, and Enter opens the full search rather than the top hit", async () => {
   const [homeSource, explorerSource] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../components/ExamExplorer.tsx", import.meta.url), "utf8"),
@@ -246,6 +246,33 @@ test("home matches while typing instead of submitting to the search route", asyn
   assert.match(liveHomeSearch.source, /SEARCH_INDEX_URL\s*=\s*["']\/search-index\.json\?v=\d+["']/);
   assert.match(liveHomeSearch.source, /fetch\(SEARCH_INDEX_URL/);
   assert.match(liveHomeSearch.source, /RESULT_LIMIT\s*=\s*5/);
+
+  // Enter is "show me everything you have for this", not "open your best guess".
+  assert.match(
+    liveHomeSearch.source,
+    /SEARCH_PAGE\s*=\s*["']\/search\/["']/,
+    "Enter should land on the search page itself, not on a trailing-slash redirect",
+  );
+  assert.match(
+    liveHomeSearch.source,
+    /router\.push\([\s\S]{0,160}\$\{SEARCH_PAGE\}\?q=\$\{encodeURIComponent\(/,
+    "Enter should navigate to the full search carrying the typed query",
+  );
+  assert.match(
+    liveHomeSearch.source,
+    /highlighted >= 0 \? matches\[highlighted\] : undefined/,
+    "only a suggestion the reader arrowed onto should open as an exam",
+  );
+  assert.doesNotMatch(
+    liveHomeSearch.source,
+    /setHighlighted\(0\)/,
+    "no suggestion may start selected, or Enter would open the top hit again",
+  );
+  assert.doesNotMatch(
+    liveHomeSearch.source,
+    /onMouseEnter=\{\(\) => setHighlighted/,
+    "hovering must not arm Enter; :hover already paints the row",
+  );
 
   assert.match(explorerSource, /type=["']search["']/, "search explorer should expose a search input");
   assert.match(explorerSource, /onChange=/, "search explorer should update while the user types");

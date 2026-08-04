@@ -214,15 +214,16 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue", indexU
     filters.savedOnly;
   const activeFilterCount = facetFilterCount(filters);
 
+  // Read straight from the effect rather than waiting for a frame: this is what
+  // applies ?q= when the home typeahead sends someone here, and a frame never
+  // arrives in a tab that is not being painted (opened in the background, or
+  // restored behind another tab).
   useEffect(() => {
-    const frame = window.requestAnimationFrame(() => {
-      const initialFilters = parseExplorerParams(new URLSearchParams(window.location.search), paramOptions);
-      setFilters(initialFilters);
-      setFiltersOpen(facetFilterCount(initialFilters) > 0);
-      setSaved(readSaved());
-      setSavedOnlyReady(true);
-    });
-    return () => window.cancelAnimationFrame(frame);
+    const initialFilters = parseExplorerParams(new URLSearchParams(window.location.search), paramOptions);
+    setFilters(initialFilters);
+    setFiltersOpen(facetFilterCount(initialFilters) > 0);
+    setSaved(readSaved());
+    setSavedOnlyReady(true);
   }, [paramOptions]);
 
   useEffect(() => {
