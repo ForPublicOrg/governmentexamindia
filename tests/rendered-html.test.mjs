@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { access, readFile, stat } from "node:fs/promises";
 import test from "node:test";
+import { gzipSync } from "node:zlib";
 
 const outputRoot = new URL("../out/", import.meta.url);
 
@@ -65,6 +66,60 @@ test("exports the finished public exam portal as static HTML", async () => {
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 
+test("ships one brand mark that is also the favicon", async () => {
+  const html = await (await render()).text();
+
+  // The header logo must be the same asset the browser puts in the tab, so the
+  // two can never drift apart.
+  assert.match(html, /<link[^>]+rel="icon"[^>]+href="\/favicon\.svg"/);
+  assert.match(html, /<link[^>]+rel="apple-touch-icon"[^>]+href="\/apple-touch-icon\.png"/);
+  assert.match(html, /class="brand-mark"[^>]*src="\/favicon\.svg"|src="\/favicon\.svg"[^>]*class="brand-mark"/);
+
+  const mark = await readFile(new URL("favicon.svg", outputRoot), "utf8");
+  assert.match(mark, /viewBox="0 0 64 64"/, "the mark should be a square, scalable icon");
+  // Check the artwork, not the comment that explains why the emblem is absent.
+  const drawn = mark.replace(/<!--[\s\S]*?-->/g, "");
+  assert.doesNotMatch(
+    drawn,
+    /ashoka|lion capital|satyameva|state emblem/i,
+    "an independent index must not carry the protected State Emblem of India",
+  );
+
+  // The artwork inside the tile must sit square in it. Every shape is measured
+  // and the union box checked against the centre, so a nudged element cannot
+  // quietly pull the mark off-centre again.
+  const box = { minX: Infinity, maxX: -Infinity, minY: Infinity, maxY: -Infinity };
+  const grow = (x, y) => {
+    box.minX = Math.min(box.minX, x);
+    box.maxX = Math.max(box.maxX, x);
+    box.minY = Math.min(box.minY, y);
+    box.maxY = Math.max(box.maxY, y);
+  };
+
+  for (const [, attrs] of mark.matchAll(/<rect\b([^>]*)>/g)) {
+    const at = (name) => Number(attrs.match(new RegExp(`\\b${name}="([-\\d.]+)"`))?.[1]);
+    const [x, y, w, h] = [at("x"), at("y"), at("width"), at("height")];
+    if (w === 60 && h === 60) continue; // the tile itself
+    grow(x, y);
+    grow(x + w, y + h);
+  }
+  for (const [, d] of mark.matchAll(/<path\b[^>]*\bd="([^"]+)"/g)) {
+    const numbers = (d.match(/-?\d+(?:\.\d+)?/g) ?? []).map(Number);
+    for (let index = 0; index + 1 < numbers.length; index += 2) grow(numbers[index], numbers[index + 1]);
+  }
+
+  assert.ok(Number.isFinite(box.minX), "expected measurable artwork inside the mark");
+  const centreX = (box.minX + box.maxX) / 2;
+  const centreY = (box.minY + box.maxY) / 2;
+  assert.ok(Math.abs(centreX - 32) < 0.5, `mark artwork is off-centre horizontally (centre ${centreX})`);
+  assert.ok(Math.abs(centreY - 32) < 1, `mark artwork is off-centre vertically (centre ${centreY})`);
+
+  for (const raster of ["apple-touch-icon.png", "icon-192.png", "icon-512.png"]) {
+    const { size } = await stat(new URL(raster, outputRoot));
+    assert.ok(size > 500, `${raster} should be a real generated icon, not a placeholder`);
+  }
+});
+
 test("exports the searchable catalogue as useful HTML before JavaScript", async () => {
   const response = await render("/exams");
   assert.equal(response.status, 200);
@@ -95,8 +150,19 @@ test("keeps discovery pages bounded and does not repeat national exams on every 
   const searchIndexSource = await readFile(new URL("../out/search-index.json", import.meta.url), "utf8");
   const searchIndex = JSON.parse(searchIndexSource);
   assert.ok(Buffer.byteLength(home) < 210_000, "home HTML should stay below 210 KB");
+  // The search page must not grow with the catalogue: it server-renders a first
+  // page and the browser fetches the rest from the shared index.
   assert.ok(Buffer.byteLength(search) < 150_000, "ranked-search HTML should stay below 150 KB");
-  assert.ok(Buffer.byteLength(searchIndexSource) < 100_000, "lazy search index should stay below 100 KB");
+  assert.ok(
+    searchIndex.length > 12 * 3,
+    "the lazy index should carry the whole catalogue even though the page renders one page of it",
+  );
+  // The index is a static file the browser fetches compressed, so budget the
+  // transferred size rather than the raw JSON it expands to.
+  assert.ok(
+    gzipSync(searchIndexSource).length < 150_000,
+    "lazy search index should stay below 150 KB transferred; split the index rather than raising this",
+  );
   assert.ok(searchIndex.length >= 100, "lazy index should contain a useful nationwide catalogue");
   assert.equal(new Set(searchIndex.map((item) => item.s)).size, searchIndex.length, "lazy index should not repeat exams");
   assert.match(search, /<meta name="robots" content="noindex, follow"/);
@@ -287,13 +353,20 @@ test("exports calendar, sources, updates, state and exam-type routes", async () 
   assert.match(await method.text(), /How exam information is updated/);
   assert.match(updatesHtml, /Corrections &amp; changes/);
   assert.match(updatesHtml, /<time dateTime="2026-08">Aug 2026<\/time>/);
-  assert.ok(
-    updatesHtml.indexOf("Aug 2026") < updatesHtml.indexOf("28 Jul 2026") &&
-      updatesHtml.indexOf("28 Jul 2026") < updatesHtml.indexOf("20 Jul 2026") &&
-      updatesHtml.indexOf("20 Jul 2026") < updatesHtml.indexOf("10 Jul 2026") &&
-      updatesHtml.indexOf("10 Jul 2026") < updatesHtml.indexOf("6 Apr 2026"),
-    "updates must be newest-first by ISO date rather than display-label text",
-  );
+  // Read the machine-readable dates in document order. Searching the raw HTML
+  // for display labels instead would trip over update text that legitimately
+  // cites a date ("an objection notice dated 10 Jul 2026 confirms...").
+  const updateDates = [...updatesHtml.matchAll(/<time dateTime="([^"]+)">/g)].map((match) => match[1]);
+  assert.ok(updateDates.length > 5, `expected a list of updates, got ${updateDates.length}`);
+  for (let index = 1; index < updateDates.length; index += 1) {
+    assert.ok(
+      updateDates[index - 1] >= updateDates[index],
+      `updates must be newest-first by ISO date rather than display-label text: ` +
+        `${updateDates[index - 1]} precedes ${updateDates[index]}`,
+    );
+  }
+  assert.equal(updateDates[0], [...updateDates].sort().at(-1), "the newest update must lead the page");
+  assert.equal(updateDates.at(-1), [...updateDates].sort()[0], "the oldest update must close the page");
   assert.match(await states.text(), /28 states · 8 union territories/);
   assert.match(await tamilNadu.text(), /Tamil Nadu(?:<!-- -->)? exams/);
   assert.match(await types.text(), /Browse by work/);

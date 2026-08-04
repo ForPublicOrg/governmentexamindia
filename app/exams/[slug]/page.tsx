@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ShareExam } from "@/components/ShareExam";
 import { exams, getExam } from "@/lib/exams";
 
 type PageProps = { params: Promise<{ slug: string }> };
@@ -71,6 +72,11 @@ export default async function ExamDetailPage({ params }: PageProps) {
               <a href={item.sourceUrl} target="_blank" rel="noreferrer" className="button button-primary">
                 Open official source <span aria-hidden="true">↗</span>
               </a>
+              <ShareExam
+                path={`/exams/${item.slug}`}
+                title={item.title}
+                summary={`${item.status.label}: ${item.status.nextAction}`}
+              />
               <div className="checked-line">
                 <span aria-hidden="true">✓</span>
                 <span>{item.verification === "verified" ? "Notice checked" : "Official listing checked"} {item.lastVerified}</span>

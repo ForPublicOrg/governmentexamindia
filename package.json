@@ -12,14 +12,16 @@
     "test:data": "tsx --test tests/data-rules.test.ts",
     "test:catalogue": "tsx --test tests/catalogue.test.ts",
     "test:search": "tsx --test tests/search.test.ts",
-    "test": "npm run test:data && npm run test:catalogue && npm run test:search && npm run build && node --test tests/rendered-html.test.mjs",
+    "test:lifecycle": "tsx --test tests/lifecycle.test.ts",
+    "test": "npm run test:data && npm run test:catalogue && npm run test:search && npm run test:lifecycle && npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern .next --ignore-pattern out --ignore-pattern dist",
     "data:registry": "tsx tools/data/build-registry.ts",
     "data:validate": "tsx tools/data/validate.ts",
     "data:validate:full": "tsx tools/data/validate.ts --require-full-coverage",
     "data:watch": "tsx tools/data/watch-sources.ts",
     "check": "npm run lint && npm test",
-    "map:build": "node tools/build-state-map.mjs"
+    "map:build": "node tools/build-state-map.mjs",
+    "icons:build": "node tools/build-icons.mjs"
   },
   "dependencies": {
     "next": "^16.3.0",

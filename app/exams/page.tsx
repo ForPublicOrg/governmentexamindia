@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ExamCollection } from "@/components/ExamCollection";
-import { exams, type StatusTone } from "@/lib/exams";
+import { exams } from "@/lib/exams";
 
 export const metadata: Metadata = {
   title: "Current government exams",
@@ -9,24 +9,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/exams" },
 };
 
-const statusPriority: Record<StatusTone, number> = {
-  green: 0,
-  red: 1,
-  blue: 2,
-  amber: 3,
-  violet: 4,
-  slate: 5,
-};
-
-const currentHighlights = exams
-  .filter((item) => item.verification === "verified")
-  .sort(
-    (a, b) =>
-      statusPriority[a.status.tone] - statusPriority[b.status.tone] ||
-      b.year - a.year ||
-      a.title.localeCompare(b.title),
-  )
-  .slice(0, 24);
+// `exams` is already ordered ongoing → upcoming → past, by the deadline a
+// candidate still has to act on, so this only narrows and truncates.
+const currentHighlights = exams.filter((item) => item.verification === "verified").slice(0, 24);
 
 export default function ExamsPage() {
   return (

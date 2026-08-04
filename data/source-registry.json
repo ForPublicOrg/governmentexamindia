@@ -1,5 +1,20 @@
 [
   {
+    "id": "abvims-rmlh",
+    "name": "ABVIMS & Dr Ram Manohar Lohia Hospital, New Delhi",
+    "level": "Central",
+    "allowedHosts": [
+      "rmlh.mohfw.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "abvims-rmlh-1",
+        "url": "https://rmlh.mohfw.gov.in/Index1.aspx?lsid=150&lev=1&lid=151&langid=1",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "ladakh-administration",
     "name": "Administration of Union Territory of Ladakh",
     "level": "State",
@@ -29,6 +44,22 @@
       {
         "id": "asrb-1",
         "url": "https://asrb.org.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "aai",
+    "name": "Airports Authority of India",
+    "level": "Central",
+    "allowedHosts": [
+      "www.aai.aero",
+      "aai.aero"
+    ],
+    "watchUrls": [
+      {
+        "id": "aai-1",
+        "url": "https://www.aai.aero/en/careers/recruitment",
         "cadenceHours": 24
       }
     ]
@@ -100,6 +131,30 @@
     ]
   },
   {
+    "id": "andhra-pradesh-school-education",
+    "name": "Andhra Pradesh School Education Department",
+    "level": "State",
+    "regionCodes": [
+      "AP"
+    ],
+    "allowedHosts": [
+      "cse.ap.gov.in",
+      "tet2dsc.apcfss.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "andhra-pradesh-school-education-1",
+        "url": "https://cse.ap.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "andhra-pradesh-school-education-2",
+        "url": "https://tet2dsc.apcfss.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "arunachal-pradesh-psc",
     "name": "Arunachal Pradesh Public Service Commission",
     "level": "State",
@@ -119,6 +174,24 @@
       {
         "id": "arunachal-pradesh-psc-2",
         "url": "https://appsc.gov.in/Index/common_sub_page/doc2195/Advertisements",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "arunachal-apssb",
+    "name": "Arunachal Pradesh Staff Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "AR"
+    ],
+    "allowedHosts": [
+      "apssb.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "arunachal-apssb-1",
+        "url": "https://apssb.nic.in/",
         "cadenceHours": 24
       }
     ]
@@ -149,6 +222,38 @@
     ]
   },
   {
+    "id": "barc",
+    "name": "Bhabha Atomic Research Centre",
+    "level": "Central",
+    "allowedHosts": [
+      "www.barc.gov.in",
+      "barc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "barc-1",
+        "url": "https://www.barc.gov.in/careers/recruitment.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bel",
+    "name": "Bharat Electronics Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "bel-india.in",
+      "www.bel-india.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bel-1",
+        "url": "https://bel-india.in/job-notifications/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "bhel-haridwar",
     "name": "Bharat Heavy Electricals Limited — Haridwar",
     "level": "Central",
@@ -161,6 +266,40 @@
       {
         "id": "bhel-haridwar-1",
         "url": "https://hwr.bhel.com/recruitment/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bpcl",
+    "name": "Bharat Petroleum Corporation Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.bharatpetroleum.in",
+      "bharatpetroleum.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bpcl-1",
+        "url": "https://www.bharatpetroleum.in/careers/careers",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bpssc",
+    "name": "Bihar Police Sub-Ordinate Service Commission",
+    "level": "State",
+    "regionCodes": [
+      "BR"
+    ],
+    "allowedHosts": [
+      "bpssc.bihar.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bpssc-1",
+        "url": "https://bpssc.bihar.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -184,6 +323,24 @@
     ]
   },
   {
+    "id": "bseb",
+    "name": "Bihar School Examination Board",
+    "level": "State",
+    "regionCodes": [
+      "BR"
+    ],
+    "allowedHosts": [
+      "biharboardonline.bihar.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bseb-1",
+        "url": "https://biharboardonline.bihar.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "bssc",
     "name": "Bihar Staff Selection Commission",
     "level": "State",
@@ -202,16 +359,114 @@
     ]
   },
   {
+    "id": "bseh",
+    "name": "Board of School Education Haryana",
+    "level": "State",
+    "regionCodes": [
+      "HR"
+    ],
+    "allowedHosts": [
+      "bseh.org.in",
+      "www.bseh.org.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bseh-1",
+        "url": "https://bseh.org.in/home",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bse-odisha",
+    "name": "Board of Secondary Education, Odisha",
+    "level": "State",
+    "regionCodes": [
+      "OD"
+    ],
+    "allowedHosts": [
+      "bseodisha.ac.in",
+      "www.bseodisha.ac.in",
+      "cdn.bseodisha.ac.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bse-odisha-1",
+        "url": "https://bseodisha.ac.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bser",
+    "name": "Board of Secondary Education, Rajasthan",
+    "level": "State",
+    "regionCodes": [
+      "RJ"
+    ],
+    "allowedHosts": [
+      "rajeduboard.rajasthan.gov.in",
+      "reet2024.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bser-1",
+        "url": "https://rajeduboard.rajasthan.gov.in/RTET-REET/RTET-REET.htm",
+        "cadenceHours": 24
+      },
+      {
+        "id": "bser-2",
+        "url": "https://rajeduboard.rajasthan.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "bsf",
+    "name": "Border Security Force",
+    "level": "Central",
+    "allowedHosts": [
+      "rectt.bsf.gov.in",
+      "www.bsf.gov.in",
+      "bsf.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bsf-1",
+        "url": "https://rectt.bsf.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "cbse-ctet",
     "name": "Central Board of Secondary Education — CTET",
     "level": "Central",
     "allowedHosts": [
-      "ctet.nic.in"
+      "ctet.nic.in",
+      "cdnbbsr.s3waas.gov.in"
     ],
     "watchUrls": [
       {
         "id": "cbse-ctet-1",
         "url": "https://ctet.nic.in/document-category/public-notices/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "cisf",
+    "name": "Central Industrial Security Force",
+    "level": "Central",
+    "allowedHosts": [
+      "www.cisf.gov.in",
+      "cisf.gov.in",
+      "cisfrectt.cisf.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "cisf-1",
+        "url": "https://www.cisf.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -230,6 +485,25 @@
       {
         "id": "crpf-1",
         "url": "https://recruitment.crpf.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "csbc",
+    "name": "Central Selection Board of Constable",
+    "level": "State",
+    "regionCodes": [
+      "BR"
+    ],
+    "allowedHosts": [
+      "csbc.bihar.gov.in",
+      "csbc-bih.bihar.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "csbc-1",
+        "url": "https://csbc-bih.bihar.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -261,12 +535,73 @@
       "CG"
     ],
     "allowedHosts": [
-      "vyapamcg.cgstate.gov.in"
+      "vyapamcg.cgstate.gov.in",
+      "cgssb.cgstate.gov.in"
     ],
     "watchUrls": [
       {
         "id": "cg-vyapam-1",
         "url": "https://vyapamcg.cgstate.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "cg-vyapam-2",
+        "url": "https://cgssb.cgstate.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "cgpsc",
+    "name": "Chhattisgarh Public Service Commission",
+    "level": "State",
+    "regionCodes": [
+      "CG"
+    ],
+    "allowedHosts": [
+      "psc.cg.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "cgpsc-1",
+        "url": "https://psc.cg.gov.in/Notifications.php",
+        "cadenceHours": 24
+      },
+      {
+        "id": "cgpsc-2",
+        "url": "https://psc.cg.gov.in/Advertisement.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "coal-india",
+    "name": "Coal India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.coalindia.in",
+      "coalindia.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "coal-india-1",
+        "url": "https://www.coalindia.in/career-cil/jobs-coal-india/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "cochin-shipyard",
+    "name": "Cochin Shipyard Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "cochinshipyard.in",
+      "www.cochinshipyard.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "cochin-shipyard-1",
+        "url": "https://cochinshipyard.in/career",
         "cadenceHours": 24
       }
     ]
@@ -313,6 +648,71 @@
     ]
   },
   {
+    "id": "puducherry-dopar",
+    "name": "Department of Personnel and Administrative Reforms, Puducherry",
+    "level": "State",
+    "regionCodes": [
+      "PY"
+    ],
+    "allowedHosts": [
+      "recruitment.py.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "puducherry-dopar-1",
+        "url": "https://recruitment.py.gov.in/news-and-notification",
+        "cadenceHours": 24
+      },
+      {
+        "id": "puducherry-dopar-2",
+        "url": "https://recruitment.py.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "assam-school-education-tet",
+    "name": "Department of School Education, Assam (State Level Empowered Committee, TET)",
+    "level": "State",
+    "regionCodes": [
+      "AS"
+    ],
+    "allowedHosts": [
+      "sebamis.sebaonline.org",
+      "scert.assam.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "assam-school-education-tet-1",
+        "url": "https://sebamis.sebaonline.org/spltet2026/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "assam-school-education-tet-2",
+        "url": "https://scert.assam.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "meghalaya-dert",
+    "name": "Directorate of Educational Research and Training, Meghalaya",
+    "level": "State",
+    "regionCodes": [
+      "ML"
+    ],
+    "allowedHosts": [
+      "megeducation.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "meghalaya-dert-1",
+        "url": "https://megeducation.gov.in/dert/pages/dert_notice_board.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "puducherry-school-education",
     "name": "Directorate of School Education, Puducherry",
     "level": "State",
@@ -326,6 +726,88 @@
       {
         "id": "puducherry-school-education-1",
         "url": "https://schooledn.py.gov.in/recruitment.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "sikkim-education-department",
+    "name": "Education Department, Government of Sikkim",
+    "level": "State",
+    "regionCodes": [
+      "SK"
+    ],
+    "allowedHosts": [
+      "tet.sikkim.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "sikkim-education-department-1",
+        "url": "https://tet.sikkim.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "ecil",
+    "name": "Electronics Corporation of India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.ecil.co.in",
+      "ecil.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "ecil-1",
+        "url": "https://www.ecil.co.in/jobopenings",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "epfo",
+    "name": "Employees' Provident Fund Organisation",
+    "level": "Central",
+    "allowedHosts": [
+      "www.epfindia.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "epfo-1",
+        "url": "https://www.epfindia.gov.in/site_en/Recruitments.php?id=sm9_index",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "esic",
+    "name": "Employees' State Insurance Corporation",
+    "level": "Central",
+    "allowedHosts": [
+      "www.esic.gov.in",
+      "esic.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "esic-1",
+        "url": "https://www.esic.gov.in/recruitments",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "eil",
+    "name": "Engineers India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.engineersindia.com",
+      "engineersindia.com",
+      "recruitment.eil.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "eil-1",
+        "url": "https://recruitment.eil.co.in/",
         "cadenceHours": 24
       }
     ]
@@ -348,6 +830,44 @@
     ]
   },
   {
+    "id": "grse",
+    "name": "Garden Reach Shipbuilders and Engineers Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "grse.in",
+      "www.grse.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "grse-1",
+        "url": "https://grse.in/career/index",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "gauhati-high-court",
+    "name": "Gauhati High Court",
+    "level": "State",
+    "regionCodes": [
+      "AS",
+      "NL",
+      "MZ",
+      "AR"
+    ],
+    "allowedHosts": [
+      "ghconline.gov.in",
+      "ghcrec.assam.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "gauhati-high-court-1",
+        "url": "https://ghconline.gov.in/index.php/recruitment-judicial-officer/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "goa-psc",
     "name": "Goa Public Service Commission",
     "level": "State",
@@ -361,6 +881,30 @@
       {
         "id": "goa-psc-1",
         "url": "https://gpsc.goa.gov.in/advertisements/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "gpssb",
+    "name": "Gujarat Panchayat Service Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "GJ"
+    ],
+    "allowedHosts": [
+      "gpssb.gujarat.gov.in",
+      "ojas.gujarat.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "gpssb-1",
+        "url": "https://gpssb.gujarat.gov.in/advertisements.htm",
+        "cadenceHours": 24
+      },
+      {
+        "id": "gpssb-2",
+        "url": "https://gpssb.gujarat.gov.in/index.htm",
         "cadenceHours": 24
       }
     ]
@@ -385,6 +929,30 @@
     ]
   },
   {
+    "id": "gsssb",
+    "name": "Gujarat Subordinate Service Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "GJ"
+    ],
+    "allowedHosts": [
+      "gsssb.gujarat.gov.in",
+      "ojas.gujarat.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "gsssb-1",
+        "url": "https://gsssb.gujarat.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "gsssb-2",
+        "url": "https://ojas.gujarat.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "hssc",
     "name": "Haryana Staff Selection Commission",
     "level": "State",
@@ -404,6 +972,79 @@
       {
         "id": "hssc-2",
         "url": "https://hssc.gov.in/index.php/advertisement",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "calcutta-high-court",
+    "name": "High Court at Calcutta",
+    "level": "State",
+    "regionCodes": [
+      "WB"
+    ],
+    "allowedHosts": [
+      "www.calcuttahighcourt.gov.in",
+      "calcuttahighcourt.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "calcutta-high-court-1",
+        "url": "https://www.calcuttahighcourt.gov.in/Notices/recruiment-notice",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "telangana-high-court",
+    "name": "High Court for the State of Telangana",
+    "level": "State",
+    "regionCodes": [
+      "TG"
+    ],
+    "allowedHosts": [
+      "tshc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "telangana-high-court-1",
+        "url": "https://tshc.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "andhra-pradesh-high-court",
+    "name": "High Court of Andhra Pradesh",
+    "level": "State",
+    "regionCodes": [
+      "AP"
+    ],
+    "allowedHosts": [
+      "aphc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "andhra-pradesh-high-court-1",
+        "url": "https://aphc.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "chhattisgarh-high-court",
+    "name": "High Court of Chhattisgarh",
+    "level": "State",
+    "regionCodes": [
+      "CG"
+    ],
+    "allowedHosts": [
+      "highcourt.cg.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "chhattisgarh-high-court-1",
+        "url": "https://highcourt.cg.gov.in/index.php",
         "cadenceHours": 24
       }
     ]
@@ -442,6 +1083,44 @@
       {
         "id": "gujarat-high-court-1",
         "url": "https://gujarathighcourt.nic.in/currentopenings",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "jk-ladakh-high-court",
+    "name": "High Court of Jammu & Kashmir and Ladakh",
+    "level": "State",
+    "regionCodes": [
+      "JK",
+      "LA"
+    ],
+    "allowedHosts": [
+      "jkhighcourt.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jk-ladakh-high-court-1",
+        "url": "https://jkhighcourt.nic.in/noti.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "jharkhand-high-court",
+    "name": "High Court of Jharkhand",
+    "level": "State",
+    "regionCodes": [
+      "JH"
+    ],
+    "allowedHosts": [
+      "jharkhandhighcourt.nic.in",
+      "dj.jhc.org.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jharkhand-high-court-1",
+        "url": "https://jharkhandhighcourt.nic.in/recruitment.php",
         "cadenceHours": 24
       }
     ]
@@ -504,6 +1183,175 @@
     ]
   },
   {
+    "id": "rajasthan-high-court",
+    "name": "High Court of Judicature for Rajasthan",
+    "level": "State",
+    "regionCodes": [
+      "RJ"
+    ],
+    "allowedHosts": [
+      "hcraj.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "rajasthan-high-court-1",
+        "url": "https://hcraj.nic.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "karnataka-high-court",
+    "name": "High Court of Karnataka",
+    "level": "State",
+    "regionCodes": [
+      "KA"
+    ],
+    "allowedHosts": [
+      "judiciary.karnataka.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "karnataka-high-court-1",
+        "url": "https://judiciary.karnataka.gov.in/main_notify.php?p=106&stateNM=",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "kerala-high-court",
+    "name": "High Court of Kerala",
+    "level": "State",
+    "regionCodes": [
+      "KL"
+    ],
+    "allowedHosts": [
+      "highcourt.kerala.gov.in",
+      "hckrecruitment.keralacourts.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "kerala-high-court-1",
+        "url": "https://highcourt.kerala.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "madhya-pradesh-high-court",
+    "name": "High Court of Madhya Pradesh",
+    "level": "State",
+    "regionCodes": [
+      "MP"
+    ],
+    "allowedHosts": [
+      "mphc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "madhya-pradesh-high-court-1",
+        "url": "https://mphc.gov.in/recruitment-results",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "madras-high-court",
+    "name": "High Court of Madras",
+    "level": "State",
+    "regionCodes": [
+      "TN"
+    ],
+    "allowedHosts": [
+      "hcmadras.tn.gov.in",
+      "mhc.tn.gov.in",
+      "www.mhc.tn.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "madras-high-court-1",
+        "url": "https://hcmadras.tn.gov.in/vacancy.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "orissa-high-court",
+    "name": "High Court of Orissa",
+    "level": "State",
+    "regionCodes": [
+      "OD"
+    ],
+    "allowedHosts": [
+      "www.orissahighcourt.nic.in",
+      "orissahighcourt.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "orissa-high-court-1",
+        "url": "https://www.orissahighcourt.nic.in/recruitment-corner/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "punjab-haryana-high-court",
+    "name": "High Court of Punjab and Haryana",
+    "level": "State",
+    "regionCodes": [
+      "PB",
+      "HR",
+      "CH"
+    ],
+    "allowedHosts": [
+      "highcourtchd.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "punjab-haryana-high-court-1",
+        "url": "https://highcourtchd.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "uttarakhand-high-court",
+    "name": "High Court of Uttarakhand",
+    "level": "State",
+    "regionCodes": [
+      "UK"
+    ],
+    "allowedHosts": [
+      "highcourtofuttarakhand.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "uttarakhand-high-court-1",
+        "url": "https://highcourtofuttarakhand.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "hpbose",
+    "name": "Himachal Pradesh Board of School Education",
+    "level": "State",
+    "regionCodes": [
+      "HP"
+    ],
+    "allowedHosts": [
+      "hpbose.org",
+      "www.hpbose.org"
+    ],
+    "watchUrls": [
+      {
+        "id": "hpbose-1",
+        "url": "https://hpbose.org/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "hppsc",
     "name": "Himachal Pradesh Public Service Commission",
     "level": "State",
@@ -523,6 +1371,22 @@
       {
         "id": "hppsc-2",
         "url": "https://hppsc.hp.gov.in/Home/HomeWhatsNew",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "hal",
+    "name": "Hindustan Aeronautics Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "hal-india.co.in",
+      "www.hal-india.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "hal-1",
+        "url": "https://hal-india.co.in/career",
         "cadenceHours": 24
       }
     ]
@@ -552,7 +1416,9 @@
       "pib.gov.in",
       "afcat.edcil.co.in",
       "www.careeriaf.gov.in",
-      "careeriaf.gov.in"
+      "careeriaf.gov.in",
+      "agnipathvayu.cdac.in",
+      "airmenselection.cdac.in"
     ],
     "watchUrls": [
       {
@@ -581,15 +1447,33 @@
     ]
   },
   {
+    "id": "indian-coast-guard",
+    "name": "Indian Coast Guard",
+    "level": "Central",
+    "allowedHosts": [
+      "indiancoastguard.gov.in",
+      "joinindiancoastguard.gov.in",
+      "joinindiancoastguard.cdac.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "indian-coast-guard-1",
+        "url": "https://indiancoastguard.gov.in/recruitment",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "icar",
     "name": "Indian Council of Agricultural Research",
     "level": "Central",
     "allowedHosts": [
       "www.icar.org.in",
       "icar.org.in",
-      "exams.nta.ac.in",
+      "exams.nta.nic.in",
       "www.nta.ac.in",
-      "nta.ac.in"
+      "nta.ac.in",
+      "cdnbbsr.s3waas.gov.in"
     ],
     "watchUrls": [
       {
@@ -632,6 +1516,39 @@
     ]
   },
   {
+    "id": "isro",
+    "name": "Indian Space Research Organisation",
+    "level": "Central",
+    "allowedHosts": [
+      "www.isro.gov.in",
+      "isro.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "isro-1",
+        "url": "https://www.isro.gov.in/Careers.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "itbp",
+    "name": "Indo-Tibetan Border Police",
+    "level": "Central",
+    "allowedHosts": [
+      "recruitment.itbpolice.nic.in",
+      "www.itbpolice.nic.in",
+      "itbpolice.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "itbp-1",
+        "url": "https://recruitment.itbpolice.nic.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "ibps",
     "name": "Institute of Banking Personnel Selection",
     "level": "Central",
@@ -667,6 +1584,63 @@
     ]
   },
   {
+    "id": "jkssb",
+    "name": "Jammu and Kashmir Services Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "JK"
+    ],
+    "allowedHosts": [
+      "jkssb.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jkssb-1",
+        "url": "https://jkssb.nic.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "jkssb-2",
+        "url": "https://jkssb.nic.in/Advertisement.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "jipmer",
+    "name": "Jawaharlal Institute of Postgraduate Medical Education & Research, Puducherry",
+    "level": "Central",
+    "allowedHosts": [
+      "jipmer.edu.in",
+      "www.jipmer.edu.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jipmer-1",
+        "url": "https://jipmer.edu.in/announcement/jobs",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "jac",
+    "name": "Jharkhand Academic Council",
+    "level": "State",
+    "regionCodes": [
+      "JH"
+    ],
+    "allowedHosts": [
+      "jac.jharkhand.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jac-1",
+        "url": "https://jac.jharkhand.gov.in/jac/notice.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "jpsc",
     "name": "Jharkhand Public Service Commission",
     "level": "State",
@@ -686,6 +1660,48 @@
       {
         "id": "jpsc-2",
         "url": "https://www.jpsc.gov.in/Examination-Links.php",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "jssc",
+    "name": "Jharkhand Staff Selection Commission",
+    "level": "State",
+    "regionCodes": [
+      "JH"
+    ],
+    "allowedHosts": [
+      "jssc.jharkhand.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "jssc-1",
+        "url": "https://jssc.jharkhand.gov.in/whats-new",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "karnataka-forest-department",
+    "name": "Karnataka Forest Department",
+    "level": "State",
+    "regionCodes": [
+      "KA"
+    ],
+    "allowedHosts": [
+      "aranya.gov.in",
+      "recruitment.aranya.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "karnataka-forest-department-1",
+        "url": "https://aranya.gov.in/aranyacms/English/Home.aspx",
+        "cadenceHours": 24
+      },
+      {
+        "id": "karnataka-forest-department-2",
+        "url": "https://recruitment.aranya.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -722,12 +1738,69 @@
       "KA"
     ],
     "allowedHosts": [
-      "sts.karnataka.gov.in"
+      "sts.karnataka.gov.in",
+      "schooleducation.karnataka.gov.in"
     ],
     "watchUrls": [
       {
         "id": "karnataka-school-education-1",
         "url": "https://sts.karnataka.gov.in/GPSTRNHK/TETHOME.aspx",
+        "cadenceHours": 24
+      },
+      {
+        "id": "karnataka-school-education-2",
+        "url": "https://sts.karnataka.gov.in/TET/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "karnataka-school-education-3",
+        "url": "https://schooleducation.karnataka.gov.in/cacell/en",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "kvs-nvs",
+    "name": "Kendriya Vidyalaya Sangathan & Navodaya Vidyalaya Samiti",
+    "level": "Central",
+    "allowedHosts": [
+      "kvsangathan.nic.in",
+      "navodaya.gov.in",
+      "cdnbbsr.s3waas.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "kvs-nvs-1",
+        "url": "https://kvsangathan.nic.in/en/interview-notice/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "kvs-nvs-2",
+        "url": "https://navodaya.gov.in/nvs/recruitment/Welcome/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "kerala-pareeksha-bhavan",
+    "name": "Kerala Pareeksha Bhavan (Office of the Commissioner for Government Examinations)",
+    "level": "State",
+    "regionCodes": [
+      "KL"
+    ],
+    "allowedHosts": [
+      "ktet.kerala.gov.in",
+      "pareekshabhavan.kerala.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "kerala-pareeksha-bhavan-1",
+        "url": "https://ktet.kerala.gov.in/notification.php",
+        "cadenceHours": 24
+      },
+      {
+        "id": "kerala-pareeksha-bhavan-2",
+        "url": "https://ktet.kerala.gov.in/results.php",
         "cadenceHours": 24
       }
     ]
@@ -764,7 +1837,8 @@
       "LD"
     ],
     "allowedHosts": [
-      "lakshadweep.gov.in"
+      "lakshadweep.gov.in",
+      "cdn.s3waas.gov.in"
     ],
     "watchUrls": [
       {
@@ -775,6 +1849,21 @@
       {
         "id": "lakshadweep-administration-2",
         "url": "https://lakshadweep.gov.in/past-notices/recruitment/index.html/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "lic",
+    "name": "Life Insurance Corporation of India",
+    "level": "Central",
+    "allowedHosts": [
+      "www.licindia.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "lic-1",
+        "url": "https://www.licindia.in/web/guest/careers",
         "cadenceHours": 24
       }
     ]
@@ -793,6 +1882,24 @@
       {
         "id": "mp-esb-1",
         "url": "https://esb.mp.gov.in/student_dashboard.htm",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "mppsc",
+    "name": "Madhya Pradesh Public Service Commission",
+    "level": "State",
+    "regionCodes": [
+      "MP"
+    ],
+    "allowedHosts": [
+      "mppsc.mp.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "mppsc-1",
+        "url": "https://mppsc.mp.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -821,6 +1928,66 @@
     ]
   },
   {
+    "id": "msce-pune",
+    "name": "Maharashtra State Council of Examination",
+    "level": "State",
+    "regionCodes": [
+      "MH"
+    ],
+    "allowedHosts": [
+      "mahatet.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "msce-pune-1",
+        "url": "https://mahatet.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "msce-pune-2",
+        "url": "https://mahatet.in/Notices/TimeTable/ShowTimeTable",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "maharashtra-police",
+    "name": "Maharashtra State Police (Police Recruitment Cell)",
+    "level": "State",
+    "regionCodes": [
+      "MH"
+    ],
+    "allowedHosts": [
+      "www.mahapolice.gov.in",
+      "policerecruitment2025.mahait.org"
+    ],
+    "watchUrls": [
+      {
+        "id": "maharashtra-police-1",
+        "url": "https://www.mahapolice.gov.in/police-recru.php/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "manipur-police",
+    "name": "Manipur Police",
+    "level": "State",
+    "regionCodes": [
+      "MN"
+    ],
+    "allowedHosts": [
+      "manipurpolice.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "manipur-police-1",
+        "url": "https://manipurpolice.gov.in/?cat=59",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "manipur-psc",
     "name": "Manipur Public Service Commission",
     "level": "State",
@@ -839,6 +2006,40 @@
       {
         "id": "manipur-psc-2",
         "url": "https://mpscmanipur.gov.in/Recruitment_Advertisement.html",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "mazagon-dock",
+    "name": "Mazagon Dock Shipbuilders Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "mazagondock.in",
+      "www.mazagondock.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "mazagon-dock-1",
+        "url": "https://mazagondock.in/English/career/Career-Executives",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "meghalaya-police",
+    "name": "Meghalaya Police (Central Recruitment Board)",
+    "level": "State",
+    "regionCodes": [
+      "ML"
+    ],
+    "allowedHosts": [
+      "megpolice.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "meghalaya-police-1",
+        "url": "https://megpolice.gov.in/recruitment",
         "cadenceHours": 24
       }
     ]
@@ -869,6 +2070,24 @@
       {
         "id": "meghalaya-psc-3",
         "url": "https://megrecruitment.nic.in/rpa/loginfailed.htm",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "mizoram-mbse",
+    "name": "Mizoram Board of School Education",
+    "level": "State",
+    "regionCodes": [
+      "MZ"
+    ],
+    "allowedHosts": [
+      "www.mbse.edu.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "mizoram-mbse-1",
+        "url": "https://www.mbse.edu.in/",
         "cadenceHours": 24
       }
     ]
@@ -921,6 +2140,38 @@
     ]
   },
   {
+    "id": "nalco",
+    "name": "National Aluminium Company Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "nalcoindia.com",
+      "www.nalcoindia.com",
+      "mudira.nalcoindia.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nalco-1",
+        "url": "https://mudira.nalcoindia.co.in/rec_portal/default.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nabard",
+    "name": "National Bank for Agriculture and Rural Development",
+    "level": "Central",
+    "allowedHosts": [
+      "www.nabard.org"
+    ],
+    "watchUrls": [
+      {
+        "id": "nabard-1",
+        "url": "https://www.nabard.org/ftrcontent.aspx?id=660",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "nbems",
     "name": "National Board of Examinations in Medical Sciences",
     "level": "Central",
@@ -939,6 +2190,21 @@
     ]
   },
   {
+    "id": "nicl",
+    "name": "National Insurance Company Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "nationalinsurance.nic.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nicl-1",
+        "url": "https://nationalinsurance.nic.co.in/recruitment",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "nta",
     "name": "National Testing Agency",
     "level": "Central",
@@ -947,12 +2213,99 @@
       "nta.ac.in",
       "ugcnet.nta.ac.in",
       "csirnet.nta.nic.in",
-      "exams.nta.ac.in"
+      "exams.nta.ac.in",
+      "exams.nta.nic.in",
+      "cdnbbsr.s3waas.gov.in"
     ],
     "watchUrls": [
       {
         "id": "nta-1",
         "url": "https://www.nta.ac.in/NoticeBoardArchive",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nta-neet",
+    "name": "National Testing Agency — NEET Examinations",
+    "level": "Central",
+    "allowedHosts": [
+      "neet.nta.nic.in",
+      "cdnbbsr.s3waas.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nta-neet-1",
+        "url": "https://neet.nta.nic.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nhpc",
+    "name": "NHPC Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.nhpcindia.com",
+      "nhpcindia.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "nhpc-1",
+        "url": "https://www.nhpcindia.com/welcome/job",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nfr",
+    "name": "Northeast Frontier Railway",
+    "level": "Central",
+    "regionCodes": [
+      "AS",
+      "WB",
+      "BR"
+    ],
+    "allowedHosts": [
+      "nfr.indianrailways.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nfr-1",
+        "url": "https://nfr.indianrailways.gov.in/view_section.jsp?lang=0&id=0,6,592,593,933",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "ntpc",
+    "name": "NTPC Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "ntpc.co.in",
+      "www.ntpc.co.in",
+      "careers.ntpc.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "ntpc-1",
+        "url": "https://careers.ntpc.co.in/recruitment/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "npcil",
+    "name": "Nuclear Power Corporation of India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.npcilcareers.co.in",
+      "npcilcareers.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "npcil-1",
+        "url": "https://www.npcilcareers.co.in/",
         "cadenceHours": 24
       }
     ]
@@ -971,6 +2324,11 @@
     "watchUrls": [
       {
         "id": "opsc-1",
+        "url": "https://opsc.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "opsc-2",
         "url": "https://opsc.gov.in/public/opsc/default.aspx",
         "cadenceHours": 24
       }
@@ -991,6 +2349,54 @@
       {
         "id": "osssc-1",
         "url": "https://osssc.gov.in/Public/OSSSC/Default.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "ongc",
+    "name": "Oil and Natural Gas Corporation Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.ongcindia.com",
+      "ongcindia.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "ongc-1",
+        "url": "https://www.ongcindia.com/web/eng/career/recruitment-notice",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "oil-india",
+    "name": "Oil India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.oil-india.com",
+      "oil-india.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "oil-india-1",
+        "url": "https://www.oil-india.com/advertisement-list",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "pgimer",
+    "name": "Postgraduate Institute of Medical Education & Research, Chandigarh",
+    "level": "Central",
+    "allowedHosts": [
+      "pgimer.edu.in",
+      "www.pgimer.edu.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "pgimer-1",
+        "url": "https://pgimer.edu.in/PGIMER_PORTAL/PGIMERPORTAL/Vacancies/JSP/VACANCIE_VIEW.jsp?countt=0",
         "cadenceHours": 24
       }
     ]
@@ -1036,6 +2442,78 @@
     ]
   },
   {
+    "id": "puducherry-police",
+    "name": "Puducherry Police Department",
+    "level": "State",
+    "regionCodes": [
+      "PY"
+    ],
+    "allowedHosts": [
+      "recruitment.py.gov.in",
+      "police.py.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "puducherry-police-1",
+        "url": "https://recruitment.py.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "puducherry-police-2",
+        "url": "https://police.py.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "ppsc",
+    "name": "Punjab Public Service Commission",
+    "level": "State",
+    "regionCodes": [
+      "PB"
+    ],
+    "allowedHosts": [
+      "ppsc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "ppsc-1",
+        "url": "https://ppsc.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "ppsc-2",
+        "url": "https://ppsc.gov.in/index.aspx?page=309&tabid=34&tablinkid=1353&tablinkyes=1",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "pseb",
+    "name": "Punjab School Education Board",
+    "level": "State",
+    "regionCodes": [
+      "PB"
+    ],
+    "allowedHosts": [
+      "pseb.ac.in",
+      "www.pseb.ac.in",
+      "pstet.pseb.ac.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "pseb-1",
+        "url": "https://pstet.pseb.ac.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "pseb-2",
+        "url": "https://www.pseb.ac.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "pspcl",
     "name": "Punjab State Power Corporation Limited",
     "level": "State",
@@ -1055,20 +2533,58 @@
     ]
   },
   {
+    "id": "psssb",
+    "name": "Punjab Subordinate Services Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "PB"
+    ],
+    "allowedHosts": [
+      "sssb.punjab.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "psssb-1",
+        "url": "https://sssb.punjab.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "psssb-2",
+        "url": "https://sssb.punjab.gov.in/previous-advertisements/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "rpf",
+    "name": "Railway Protection Force",
+    "level": "Central",
+    "allowedHosts": [
+      "rpf.indianrailways.gov.in",
+      "rrb.indianrailways.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "rpf-1",
+        "url": "https://rpf.indianrailways.gov.in/RPF/Recruitments/Upcoming.jsp",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "rrb",
     "name": "Railway Recruitment Boards",
     "level": "Central",
     "allowedHosts": [
-      "www.rrbcdg.gov.in",
-      "rrbcdg.gov.in",
-      "rrbchennai.gov.in",
+      "rrb.indianrailways.gov.in",
+      "www.rrbapply.gov.in",
       "www.pib.gov.in",
       "pib.gov.in"
     ],
     "watchUrls": [
       {
         "id": "rrb-1",
-        "url": "https://www.rrbcdg.gov.in/employment-notices.php",
+        "url": "https://rrb.indianrailways.gov.in/chandigarh",
         "cadenceHours": 24
       }
     ]
@@ -1092,6 +2608,127 @@
       {
         "id": "rpsc-2",
         "url": "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "rssb",
+    "name": "Rajasthan Staff Selection Board",
+    "level": "State",
+    "regionCodes": [
+      "RJ"
+    ],
+    "allowedHosts": [
+      "rssb.rajasthan.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "rssb-1",
+        "url": "https://rssb.rajasthan.gov.in/advertisements",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "rinl-vizag-steel",
+    "name": "Rashtriya Ispat Nigam Limited (Vizag Steel)",
+    "level": "Central",
+    "allowedHosts": [
+      "www.vizagsteel.com",
+      "vizagsteel.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "rinl-vizag-steel-1",
+        "url": "https://www.vizagsteel.com/code/tenders/viewjobads.asp",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "rbi",
+    "name": "Reserve Bank of India",
+    "level": "Central",
+    "allowedHosts": [
+      "www.rbi.org.in",
+      "opportunities.rbi.org.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "rbi-1",
+        "url": "https://www.rbi.org.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "rbi-2",
+        "url": "https://opportunities.rbi.org.in/scripts/index.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "maharashtra-revenue",
+    "name": "Revenue Department, Government of Maharashtra",
+    "level": "State",
+    "regionCodes": [
+      "MH"
+    ],
+    "allowedHosts": [
+      "mahabhumi.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "maharashtra-revenue-1",
+        "url": "https://mahabhumi.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "rites",
+    "name": "RITES Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "rites.com",
+      "www.rites.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "rites-1",
+        "url": "https://rites.com/Career",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "ssb",
+    "name": "Sashastra Seema Bal",
+    "level": "Central",
+    "allowedHosts": [
+      "recruitment.ssb.gov.in",
+      "www.ssb.gov.in",
+      "ssb.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "ssb-1",
+        "url": "https://recruitment.ssb.gov.in/advertisementsUrl",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "sebi",
+    "name": "Securities and Exchange Board of India",
+    "level": "Central",
+    "allowedHosts": [
+      "www.sebi.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "sebi-1",
+        "url": "https://www.sebi.gov.in/sebiweb/about/AboutAction.do?doVacancies=yes",
         "cadenceHours": 24
       }
     ]
@@ -1121,6 +2758,22 @@
     ]
   },
   {
+    "id": "sjvn",
+    "name": "SJVN Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "sjvn.nic.in",
+      "www.sjvn.nic.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "sjvn-1",
+        "url": "https://sjvn.nic.in/en/current-job",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "ssc",
     "name": "Staff Selection Commission",
     "level": "Central",
@@ -1133,6 +2786,120 @@
       {
         "id": "ssc-1",
         "url": "https://ssc.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "sbi",
+    "name": "State Bank of India",
+    "level": "Central",
+    "allowedHosts": [
+      "sbi.bank.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "sbi-1",
+        "url": "https://sbi.bank.in/web/careers/current-openings",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "nagaland-scert",
+    "name": "State Council of Educational Research and Training, Nagaland",
+    "level": "State",
+    "regionCodes": [
+      "NL"
+    ],
+    "allowedHosts": [
+      "scert.nagaland.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "nagaland-scert-1",
+        "url": "https://scert.nagaland.gov.in/category/examinations/n-tet/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "nagaland-scert-2",
+        "url": "https://scert.nagaland.gov.in/teacher-eligibility-test-tet/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "gujarat-seb",
+    "name": "State Examination Board, Gujarat",
+    "level": "State",
+    "regionCodes": [
+      "GJ"
+    ],
+    "allowedHosts": [
+      "www.sebexam.org",
+      "sebexam.org"
+    ],
+    "watchUrls": [
+      {
+        "id": "gujarat-seb-1",
+        "url": "https://www.sebexam.org/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "assam-slprb",
+    "name": "State Level Police Recruitment Board, Assam",
+    "level": "State",
+    "regionCodes": [
+      "AS"
+    ],
+    "allowedHosts": [
+      "slprbassam.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "assam-slprb-1",
+        "url": "https://slprbassam.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "assam-slrc",
+    "name": "State Level Recruitment Commission, Assam",
+    "level": "State",
+    "regionCodes": [
+      "AS"
+    ],
+    "allowedHosts": [
+      "assam.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "assam-slrc-1",
+        "url": "https://assam.gov.in/latest-updates-list-page",
+        "cadenceHours": 24
+      },
+      {
+        "id": "assam-slrc-2",
+        "url": "https://assam.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "sail",
+    "name": "Steel Authority of India Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "sailcareers.com",
+      "www.sailcareers.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "sail-1",
+        "url": "https://sailcareers.com/",
         "cadenceHours": 24
       }
     ]
@@ -1161,18 +2928,95 @@
       "TN"
     ],
     "allowedHosts": [
-      "www.tnpsc.gov.in",
-      "tnpsc.gov.in"
+      "tnpsc.gov.in",
+      "www.tnpsc.gov.in"
     ],
     "watchUrls": [
       {
         "id": "tnpsc-1",
-        "url": "https://www.tnpsc.gov.in/English/annual_planner.html",
+        "url": "https://tnpsc.gov.in/",
         "cadenceHours": 24
       },
       {
         "id": "tnpsc-2",
+        "url": "https://www.tnpsc.gov.in/English/annual_planner.html",
+        "cadenceHours": 24
+      },
+      {
+        "id": "tnpsc-3",
         "url": "https://www.tnpsc.gov.in/English/press_releases.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "tnusrb",
+    "name": "Tamil Nadu Uniformed Services Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "TN"
+    ],
+    "allowedHosts": [
+      "www.tnusrb.tn.gov.in",
+      "tnusrb.tn.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "tnusrb-1",
+        "url": "https://www.tnusrb.tn.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "tnusrb-2",
+        "url": "https://www.tnusrb.tn.gov.in/pdfs/Annual_Planner_2026_en.pdf",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "trb-tamil-nadu",
+    "name": "Teachers Recruitment Board, Tamil Nadu",
+    "level": "State",
+    "regionCodes": [
+      "TN",
+      "PY"
+    ],
+    "allowedHosts": [
+      "trb.tn.gov.in",
+      "www.trb.tn.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "trb-tamil-nadu-1",
+        "url": "https://trb.tn.gov.in/notification.php?language=LG-1&status=Active",
+        "cadenceHours": 24
+      },
+      {
+        "id": "trb-tamil-nadu-2",
+        "url": "https://trb.tn.gov.in/result.php?language=LG-1&status=Active",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "tripura-trb",
+    "name": "Teachers' Recruitment Board, Tripura",
+    "level": "State",
+    "regionCodes": [
+      "TR"
+    ],
+    "allowedHosts": [
+      "trb.tripura.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "tripura-trb-1",
+        "url": "https://trb.tripura.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "tripura-trb-2",
+        "url": "https://trb.tripura.gov.in/eligibility",
         "cadenceHours": 24
       }
     ]
@@ -1196,6 +3040,54 @@
       {
         "id": "telangana-psc-2",
         "url": "https://websitenew.tgpsc.gov.in/notifications",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "telangana-school-education",
+    "name": "Telangana School Education Department",
+    "level": "State",
+    "regionCodes": [
+      "TG"
+    ],
+    "allowedHosts": [
+      "schooledu.telangana.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "telangana-school-education-1",
+        "url": "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "territorial-army",
+    "name": "Territorial Army",
+    "level": "Central",
+    "allowedHosts": [
+      "territorialarmy.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "territorial-army-1",
+        "url": "https://territorialarmy.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "niacl",
+    "name": "The New India Assurance Company Limited",
+    "level": "Central",
+    "allowedHosts": [
+      "www.newindia.co.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "niacl-1",
+        "url": "https://www.newindia.co.in/recruitment/list",
         "cadenceHours": 24
       }
     ]
@@ -1260,6 +3152,70 @@
     ]
   },
   {
+    "id": "upbeb",
+    "name": "Uttar Pradesh Basic Education Board",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "upbasiceduboard.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "upbeb-1",
+        "url": "https://upbasiceduboard.gov.in/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "up-pariksha-niyamak-pradhikari",
+    "name": "Uttar Pradesh Examination Regulatory Authority (Pariksha Niyamak Pradhikari), Prayagraj",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "updeled.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "up-pariksha-niyamak-pradhikari-1",
+        "url": "https://updeled.gov.in/Default.aspx",
+        "cadenceHours": 24
+      },
+      {
+        "id": "up-pariksha-niyamak-pradhikari-2",
+        "url": "https://updeled.gov.in/DefaultTET.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "uppbpb",
+    "name": "Uttar Pradesh Police Recruitment and Promotion Board",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "uppbpb.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "uppbpb-1",
+        "url": "https://uppbpb.gov.in/Home/Notice",
+        "cadenceHours": 24
+      },
+      {
+        "id": "uppbpb-2",
+        "url": "https://uppbpb.gov.in/Home/Result",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "uppsc",
     "name": "Uttar Pradesh Public Service Commission",
     "level": "State",
@@ -1273,6 +3229,47 @@
       {
         "id": "uppsc-1",
         "url": "https://uppsc.up.nic.in/OuterPages/NoticeAlert.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "upsssc",
+    "name": "Uttar Pradesh Subordinate Services Selection Commission",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "upsssc.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "upsssc-1",
+        "url": "https://upsssc.gov.in/AllNotifications.aspx",
+        "cadenceHours": 24
+      },
+      {
+        "id": "upsssc-2",
+        "url": "https://upsssc.gov.in/News.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "ubse",
+    "name": "Uttarakhand Board of School Education",
+    "level": "State",
+    "regionCodes": [
+      "UK"
+    ],
+    "allowedHosts": [
+      "ubse.uk.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "ubse-1",
+        "url": "https://ubse.uk.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -1296,6 +3293,99 @@
       {
         "id": "ukpsc-2",
         "url": "https://psc.uk.gov.in/candidate-corner/recruitment",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "uksssc",
+    "name": "Uttarakhand Subordinate Service Selection Commission",
+    "level": "State",
+    "regionCodes": [
+      "UK"
+    ],
+    "allowedHosts": [
+      "sssc.uk.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "uksssc-1",
+        "url": "https://sssc.uk.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "uksssc-2",
+        "url": "https://sssc.uk.gov.in/recruitment-notification/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "vmmc-safdarjung",
+    "name": "Vardhman Mahavir Medical College & Safdarjung Hospital, New Delhi",
+    "level": "Central",
+    "allowedHosts": [
+      "vmmc-sjh.mohfw.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "vmmc-safdarjung-1",
+        "url": "https://vmmc-sjh.mohfw.gov.in/recruitment",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "wbbpe",
+    "name": "West Bengal Board of Primary Education",
+    "level": "State",
+    "regionCodes": [
+      "WB"
+    ],
+    "allowedHosts": [
+      "wbbpe.wb.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "wbbpe-1",
+        "url": "https://wbbpe.wb.gov.in/pages/notice.aspx",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "wbssc",
+    "name": "West Bengal Central School Service Commission",
+    "level": "State",
+    "regionCodes": [
+      "WB"
+    ],
+    "allowedHosts": [
+      "westbengalssc.com",
+      "www.westbengalssc.com"
+    ],
+    "watchUrls": [
+      {
+        "id": "wbssc-1",
+        "url": "https://www.westbengalssc.com/otr/recruitment/",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "wbprb",
+    "name": "West Bengal Police Recruitment Board",
+    "level": "State",
+    "regionCodes": [
+      "WB"
+    ],
+    "allowedHosts": [
+      "prb.wb.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "wbprb-1",
+        "url": "https://prb.wb.gov.in/recruitments",
         "cadenceHours": 24
       }
     ]

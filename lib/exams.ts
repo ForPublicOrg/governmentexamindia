@@ -14,6 +14,7 @@ import * as stateSouth from "@/data/exams/state-south";
 import * as stateWest from "@/data/exams/state-west";
 import * as teachingResearch from "@/data/exams/teaching-research";
 import * as upsc from "@/data/exams/upsc";
+import { byLifecycle } from "@/lib/lifecycle";
 import type { Authority, Exam, EducationLevel, StatusTone } from "@/lib/exam-types";
 
 export type {
@@ -49,10 +50,12 @@ const modules = [
   stateNortheast,
 ];
 
-/** Every recruitment record, sorted newest cycle first then alphabetically. */
-export const exams: Exam[] = modules
-  .flatMap((module) => module.exams)
-  .sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+/**
+ * Every recruitment record, ordered the way a candidate reads a list: ongoing
+ * cycles first, then upcoming, then past, and inside each group by the
+ * submission deadline they still have to act on.
+ */
+export const exams: Exam[] = modules.flatMap((module) => module.exams).sort(byLifecycle());
 
 /** Every recruiting body referenced by a record, de-duplicated by id. */
 export const authorities: Authority[] = Array.from(

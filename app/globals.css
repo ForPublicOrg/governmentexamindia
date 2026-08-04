@@ -357,17 +357,12 @@ summary:focus-visible {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
   width: 2.55rem;
   height: 2.55rem;
-  place-items: center;
+  flex-shrink: 0;
   border-radius: 0.78rem;
-  background: var(--navy);
-  box-shadow: inset 0 -3px 0 rgb(0 0 0 / 0.13);
-  color: white;
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: -0.04em;
+  box-shadow: 0 1px 3px rgb(9 27 45 / 0.16);
 }
 
 .brand-copy {
@@ -4148,6 +4143,147 @@ summary:focus-visible {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Lifecycle segregation: ongoing, then upcoming, then past. */
+.phase-group + .phase-group {
+  margin-top: 2rem;
+}
+
+.phase-heading {
+  display: grid;
+  gap: 0.15rem;
+  padding-bottom: 0.6rem;
+  margin-top: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.phase-group:first-child .phase-heading {
+  margin-top: 0;
+}
+
+.phase-heading h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.phase-heading p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.phase-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--slate);
+}
+
+.phase-count {
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.phase-ongoing .phase-dot {
+  background: var(--green);
+}
+
+.phase-ongoing h3 {
+  color: var(--status-green-ink);
+}
+
+.phase-upcoming .phase-dot {
+  background: var(--blue);
+}
+
+.phase-upcoming h3 {
+  color: var(--status-blue-ink);
+}
+
+.phase-past .phase-dot {
+  background: var(--slate);
+}
+
+.phase-past h3 {
+  color: var(--status-slate-ink);
+}
+
+/* Submission deadline, the field the list is ordered by. */
+.deadline-line {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.73rem;
+  font-weight: 700;
+}
+
+.deadline-line.is-open {
+  color: var(--status-green-ink);
+}
+
+.deadline-line strong {
+  font-weight: 800;
+}
+
+/* Share control on an exam page. */
+.share-exam {
+  position: relative;
+  margin-top: 0.6rem;
+}
+
+.share-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.share-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.4rem);
+  right: 0;
+  left: 0;
+  display: grid;
+  overflow: hidden;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-solid);
+  box-shadow: var(--shadow-md);
+}
+
+.share-menu-item {
+  padding: 0.6rem 0.8rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.share-menu-item:last-child {
+  border-bottom: 0;
+}
+
+.share-menu-item:hover,
+.share-menu-item:focus-visible {
+  background: var(--surface-hover);
 }
 
 @media print {
