@@ -15,4 +15,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Verify generated source registry is committed
+        run: |
+          npm run --silent data:registry
+          git diff --exit-code -- data/source-registry.json
       - run: npm run check

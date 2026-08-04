@@ -15,29 +15,35 @@ npm run dev
 
 ```bash
 npm run data:validate
+npm run data:validate:full
 npm test
 npm run lint
 ```
 
-`npm run build` runs the data validator before producing the deployment build. Production dependencies should also remain clean under `npm audit --omit=dev`.
+`npm run build` requires at least one explicitly tagged state-level cycle for all 36 states and union territories before producing the deployment build. Production dependencies should also remain clean under `npm audit --omit=dev`.
 
 ## Vercel deployment
 
 The production build is a static Next.js export written to `out/`. Import
 `ForPublicOrg/governmentexamindia` in Vercel and keep the detected framework as
 Next.js. Vercel uses the committed `vercel.json`, runs `npm ci` followed by
-`npm run build`, and serves the exported pages from its edge network.
+`npm run build`, and serves the exported pages from its edge network. The public
+site uses no server functions, database, image-transformation service or
+scheduled Vercel job, so normal traffic consumes static bandwidth only.
 
 Connect `governmentexamindia.com` from **Project settings → Domains** after the
 first deployment, then add the DNS records Vercel provides at the domain host.
 
 ## Updating data
 
-Exam cycles live in `lib/exams.ts`. Recruiting-body watch pages and official-domain allowlists live in `data/source-registry.json`. See `docs/UPDATING.md` for the review and publication flow.
+Exam cycles live in the family modules under `data/exams/` and are aggregated by
+`lib/exams.ts`. Recruiting-body watch pages and official-domain allowlists are
+generated into `data/source-registry.json`. See `docs/UPDATING.md` for the review
+and publication flow.
 
 Useful commands:
 
-- `npm run data:watch`: check registered official pages for a changed fingerprint without editing public records.
+- `npm run data:watch`: check registered official pages for a changed fingerprint without editing public records. The scheduled monitor runs once daily and uses ETag/Last-Modified validators when official servers provide them.
 - `npm run data:watch -- --write`: update local watcher fingerprints after reviewing the report.
 - `npm run map:build`: regenerate the simplified state-map paths from the attributed source geometry.
 

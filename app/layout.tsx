@@ -22,7 +22,7 @@ const themeBootstrap = `
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Government Exam India — Every exam, one clear next step",
+    default: "Government Exam India — Government exams across India",
     template: "%s | Government Exam India",
   },
   description:
@@ -47,23 +47,23 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: siteUrl,
     siteName: "Government Exam India",
-    title: "Every government exam. One clear next step.",
+    title: "Government exams across India. One clear next step.",
     description:
       "Search notifications, eligibility, seats, reservation and timelines for central and state government exams.",
     images: [
       {
-        url: "https://governmentexamindia.com/og.png",
+        url: "https://governmentexamindia.com/og-v2.jpg",
         width: 1734,
         height: 907,
-        alt: "Government Exam India — Every government exam. One clear next step.",
+        alt: "Government Exam India — government exams across India, with one clear next step.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Government Exam India",
-    description: "Every government exam. One clear next step.",
-    images: ["https://governmentexamindia.com/og.png"],
+    description: "Government exams across India. One clear next step.",
+    images: ["https://governmentexamindia.com/og-v2.jpg"],
   },
   robots: { index: true, follow: true },
 };

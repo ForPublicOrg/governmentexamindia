@@ -41,8 +41,8 @@ export default async function ExamDetailPage({ params }: PageProps) {
       <div className="exam-detail-top">
         <div className="page-shell">
           <nav className="breadcrumbs" aria-label="Breadcrumb">
-            <Link href="/">Home</Link><span aria-hidden="true">/</span>
-            <Link href="/exams">Exams</Link><span aria-hidden="true">/</span>
+            <Link href="/" prefetch={false}>Home</Link><span aria-hidden="true">/</span>
+            <Link href="/exams" prefetch={false}>Exams</Link><span aria-hidden="true">/</span>
             <span aria-current="page">{item.shortTitle}</span>
           </nav>
 
@@ -52,6 +52,9 @@ export default async function ExamDetailPage({ params }: PageProps) {
                 <span className={`status-pill status-${item.status.tone}`}>
                   <span className="status-dot" aria-hidden="true" />
                   {item.status.label}
+                </span>
+                <span className={`verification-badge verification-${item.verification}`}>
+                  {item.verification === "verified" ? "Notice verified" : "Official listing · details pending"}
                 </span>
                 <span>{item.governmentLevel} · {item.jurisdiction}</span>
                 {item.notificationNumber && <span>{item.notificationNumber}</span>}
@@ -70,7 +73,7 @@ export default async function ExamDetailPage({ params }: PageProps) {
               </a>
               <div className="checked-line">
                 <span aria-hidden="true">✓</span>
-                <span>Officially checked {item.lastVerified}</span>
+                <span>{item.verification === "verified" ? "Notice checked" : "Official listing checked"} {item.lastVerified}</span>
               </div>
             </aside>
           </div>
@@ -145,17 +148,24 @@ export default async function ExamDetailPage({ params }: PageProps) {
               <span>03</span>
               <div><h2 id="timeline">Complete timeline</h2><p>One record from notification to final outcome.</p></div>
             </div>
-            <ol className="detail-timeline">
-              {item.timeline.map((event, index) => (
-                <li className={`timeline-${event.state}`} key={`${event.label}-${event.date}`}>
-                  <div className="timeline-marker" aria-hidden="true">
-                    {event.state === "completed" ? "✓" : event.state === "postponed" ? "!" : index + 1}
-                  </div>
-                  <div><h3>{event.label}</h3><p>{event.displayDate}</p>{event.note && <small>{event.note}</small>}</div>
-                  <span className="timeline-state">{event.state}</span>
-                </li>
-              ))}
-            </ol>
+            {item.timeline.length ? (
+              <ol className="detail-timeline">
+                {item.timeline.map((event, index) => (
+                  <li className={`timeline-${event.state}`} key={`${event.label}-${event.date ?? event.sortMonth ?? "unannounced"}-${index}`}>
+                    <div className="timeline-marker" aria-hidden="true">
+                      {event.state === "completed" ? "✓" : event.state === "postponed" ? "!" : index + 1}
+                    </div>
+                    <div><h3>{event.label}</h3><p>{event.displayDate}</p>{event.note && <small>{event.note}</small>}</div>
+                    <span className="timeline-state">{event.state}</span>
+                  </li>
+                ))}
+              </ol>
+            ) : (
+              <div className="missing-data">
+                <span aria-hidden="true">i</span>
+                <div><h3>No current-cycle dates announced</h3><p>This timeline will be dated only after the recruiting body publishes a schedule.</p></div>
+              </div>
+            )}
           </section>
 
           <section className="detail-section" aria-labelledby="eligibility">
@@ -274,11 +284,11 @@ export default async function ExamDetailPage({ params }: PageProps) {
         <div className="page-shell">
           <div className="section-heading section-heading-split">
             <div><span className="kicker">Keep exploring</span><h2>Related exams</h2></div>
-            <Link href="/exams" className="text-link">View all exams →</Link>
+            <Link href="/exams" prefetch={false} className="text-link">View current exams →</Link>
           </div>
           <div className="related-grid">
             {related.map((candidate) => (
-              <Link href={`/exams/${candidate.slug}`} key={candidate.slug}>
+              <Link href={`/exams/${candidate.slug}`} prefetch={false} key={candidate.slug}>
                 <span className={`status-pill status-${candidate.status.tone}`}><span className="status-dot" />{candidate.status.label}</span>
                 <h3>{candidate.shortTitle}</h3>
                 <p>{candidate.status.nextAction}</p>

@@ -18,7 +18,8 @@ const authorities = Array.from(
 
 const sourceRules = [
   { title: "Dates", text: "Exact dates, tentative windows and awaited events are labelled separately." },
-  { title: "Status", text: "A status changes when the recruiting body publishes the corresponding notice or result." },
+  { title: "Verification", text: "“Notice verified” means cycle facts were read from a dated notice; “Official listing” means the cycle is confirmed but unannounced fields stay blank." },
+  { title: "Status", text: "A status changes after a reviewer confirms the corresponding official notice or result." },
   { title: "Corrections", text: "Revised vacancies, dates and postponements are added to the exam’s change record." },
   { title: "Eligibility", text: "Summaries help with the first check; the official notification decides eligibility." },
 ];
@@ -59,7 +60,7 @@ export default function MethodologyPage() {
 
         <section className="method-section" id="coverage">
           <div className="section-heading section-heading-split">
-            <div><span className="kicker">Current coverage</span><h2>Recruiting bodies in the index</h2><p>{exams.length} cycles are currently included. More authorities will be added over time.</p></div>
+            <div><span className="kicker">Current coverage</span><h2>Recruiting bodies in the index</h2><p>{exams.length} official-source recruitment cycles are currently included, covering regular posts plus selected apprentice, contract and departmental routes with a public examination or selection notice. This is an expanding index, not every individual government vacancy.</p></div>
             <div className="coverage-total"><strong>{exams.length}</strong><span>recruitment cycles</span></div>
           </div>
           <div className="coverage-table-wrap">

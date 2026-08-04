@@ -2,7 +2,7 @@ name: Watch official exam sources
 
 on:
   schedule:
-    - cron: "17 */3 * * *"
+    - cron: "17 1 * * *"
   workflow_dispatch:
 
 permissions:
@@ -11,6 +11,7 @@ permissions:
 jobs:
   watch:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -18,18 +19,26 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Verify generated source registry is committed
+        run: |
+          npm run --silent data:registry
+          git diff --exit-code -- data/source-registry.json
       - uses: actions/cache/restore@v4
         with:
           path: data/source-watch-state.json
           key: source-watch-${{ github.run_id }}
           restore-keys: source-watch-
-      - run: npm run --silent data:watch -- --write > source-watch-report.json
-      - run: cat source-watch-report.json >> "$GITHUB_STEP_SUMMARY"
+      - id: watch
+        run: |
+          npm run --silent data:watch -- --write > source-watch-report.json
+          cat source-watch-report.json >> "$GITHUB_STEP_SUMMARY"
+          node --input-type=module -e 'import { readFileSync } from "node:fs"; const report = JSON.parse(readFileSync("source-watch-report.json", "utf8")); console.log(`actionable=${report.results.some(({ state }) => !["unchanged", "not-due"].includes(state))}`)' >> "$GITHUB_OUTPUT"
       - uses: actions/cache/save@v4
         with:
           path: data/source-watch-state.json
           key: source-watch-${{ github.run_id }}
       - uses: actions/upload-artifact@v4
+        if: steps.watch.outputs.actionable == 'true'
         with:
           name: source-watch-report
           path: source-watch-report.json

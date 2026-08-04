@@ -6,8 +6,7 @@ export default function NotFound() {
       <span>404</span>
       <h1>This exam page is not in the index.</h1>
       <p>It may use a different name, belong to a cycle we have not covered yet, or have moved after a correction.</p>
-      <div><Link href="/exams" className="button button-primary">Search all exams</Link><Link href="/" className="button button-secondary">Go home</Link></div>
+      <div><Link href="/search" prefetch={false} className="button button-primary">Search the exam index</Link><Link href="/" prefetch={false} className="button button-secondary">Go home</Link></div>
     </div>
   );
 }
-

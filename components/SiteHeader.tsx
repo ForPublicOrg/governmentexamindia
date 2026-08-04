@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
-  { href: "/exams", label: "All exams" },
+  { href: "/exams", label: "Current exams" },
   { href: "/states", label: "States" },
   { href: "/exam-types", label: "Exam types" },
   { href: "/calendar", label: "Calendar" },
@@ -15,7 +15,7 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="tricolour-rule" aria-hidden="true" />
       <div className="header-inner page-shell">
-        <Link href="/" className="brand" aria-label="Government Exam India home">
+        <Link href="/" prefetch={false} className="brand" aria-label="Government Exam India home">
           <span className="brand-mark" aria-hidden="true">
             GE
           </span>
@@ -27,7 +27,7 @@ export function SiteHeader() {
 
         <nav className="desktop-nav" aria-label="Primary navigation">
           {navItems.map((item) => (
-            <Link href={item.href} key={item.href}>
+            <Link href={item.href} prefetch={false} key={item.href}>
               {item.label}
             </Link>
           ))}
@@ -35,7 +35,7 @@ export function SiteHeader() {
 
         <div className="header-actions">
           <ThemeToggle />
-          <Link className="header-search" href="/exams" aria-label="Search all exams">
+          <Link className="header-search" href="/search" prefetch={false} aria-label="Search the exam index">
             <span aria-hidden="true">⌕</span>
             <span>Search</span>
           </Link>
@@ -43,7 +43,7 @@ export function SiteHeader() {
             <summary aria-label="Open navigation menu">Menu</summary>
             <nav aria-label="Mobile navigation">
               {navItems.map((item) => (
-                <Link href={item.href} key={item.href}>
+                <Link href={item.href} prefetch={false} key={item.href}>
                   {item.label}
                 </Link>
               ))}

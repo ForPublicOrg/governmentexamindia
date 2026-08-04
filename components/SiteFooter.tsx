@@ -9,7 +9,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="page-shell footer-grid">
         <div>
-          <Link href="/" className="footer-brand">
+          <Link href="/" prefetch={false} className="footer-brand">
             Government Exam India
           </Link>
           <p>
@@ -21,14 +21,14 @@ export function SiteFooter() {
         </div>
         <div>
           <h2>Explore</h2>
-          <Link href="/exams">All exams</Link>
-          <Link href="/states">Exams by state</Link>
-          <Link href="/exam-types">Exam types</Link>
-          <Link href="/calendar">Exam calendar</Link>
+          <Link href="/exams" prefetch={false}>Current exams</Link>
+          <Link href="/states" prefetch={false}>Exams by state</Link>
+          <Link href="/exam-types" prefetch={false}>Exam types</Link>
+          <Link href="/calendar" prefetch={false}>Exam calendar</Link>
         </div>
         <div>
           <h2>About</h2>
-          <Link href="/methodology">Sources & coverage</Link>
+          <Link href="/methodology" prefetch={false}>Sources & coverage</Link>
           <a href="mailto:corrections@governmentexamindia.com">Report a correction</a>
           <a href="mailto:hello@governmentexamindia.com">Contact</a>
         </div>

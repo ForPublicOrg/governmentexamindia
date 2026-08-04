@@ -1,11 +1,11 @@
 import { indiaRegions } from "@/lib/discovery";
-import { exams } from "@/lib/exams";
+import { examsForRegion } from "@/lib/exams";
 import mapData from "@/data/geo/india-state-paths.json";
 
 export function IndiaStateMap() {
   const regionByMapName = new Map(indiaRegions.map((region) => [region.mapName, region]));
   const countByCode = new Map(
-    indiaRegions.map((region) => [region.code, exams.filter((item) => item.stateCode === region.code).length]),
+    indiaRegions.map((region) => [region.code, examsForRegion(region.code).length]),
   );
 
   return (
@@ -23,7 +23,7 @@ export function IndiaStateMap() {
           if (!region) return <path d={shape.d} className="map-shape map-shape-muted" key={shape.name} />;
           const count = countByCode.get(region.code) ?? 0;
           const intensity = Math.min(count, 3);
-          const label = `${region.name}: ${count ? `${count} state recruitment ${count === 1 ? "cycle" : "cycles"}` : "no state-specific cycle in the index"}`;
+          const label = `${region.name}: ${count ? `${count} explicitly tagged recruitment ${count === 1 ? "cycle" : "cycles"}` : "no state-specific cycle in the index"}`;
 
           return (
             <a href={`/states/${region.slug}`} aria-label={label} className="map-link" key={region.code}>

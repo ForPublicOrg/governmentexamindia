@@ -26,7 +26,7 @@ export default async function ExamTypePage({ params }: { params: Promise<{ type:
 
   return (
     <div className="page-shell collection-page">
-      <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/exam-types">Exam types</Link><span>›</span><span>{type.value}</span></nav>
+      <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/exam-types" prefetch={false}>Exam types</Link><span>›</span><span>{type.value}</span></nav>
       <div className="collection-hero">
         <div><span className="eyebrow">Exam type</span><h1>{type.value}</h1><p>{type.description}</p></div>
         <dl><div><dt>Cycles</dt><dd>{matching.length}</dd></div></dl>

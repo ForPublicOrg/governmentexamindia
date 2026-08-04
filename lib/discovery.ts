@@ -1,4 +1,4 @@
-import type { ExamType } from "@/lib/exams";
+import type { ExamType } from "@/lib/exam-types";
 
 export type IndiaRegion = {
   code: string;
@@ -57,6 +57,8 @@ export const examTypeOptions: { value: ExamType; slug: string; description: stri
   { value: "Technical & Trades", slug: "technical-trades", description: "ITI, diploma, engineering and trade-based recruitment" },
   { value: "Teaching & Education", slug: "teaching-education", description: "School, lecturer and education-department posts" },
   { value: "Specialist & Professional", slug: "specialist-professional", description: "Domain-specific roles in law, statistics, IT and more" },
+  { value: "Judiciary & Legal", slug: "judiciary-legal", description: "Judicial service, prosecution, legal officer and court recruitment" },
+  { value: "Public Sector Undertakings", slug: "public-sector-undertakings", description: "Technical, management and specialist recruitment by public-sector enterprises" },
 ];
 
 export function getRegion(slug: string) {

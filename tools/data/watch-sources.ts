@@ -9,6 +9,9 @@ type SnapshotFile = Record<string, Snapshot>;
 const projectRoot = resolve(import.meta.dirname, "../..");
 const statePath = resolve(projectRoot, "data/source-watch-state.json");
 const shouldWrite = process.argv.includes("--write");
+const REQUEST_TIMEOUT_MS = 12_000;
+const MAX_CONCURRENCY = 6;
+const DUE_EARLY_TOLERANCE_HOURS = 6;
 const previous = JSON.parse(await readFile(statePath, "utf8")) as SnapshotFile;
 const next: SnapshotFile = { ...previous };
 const results: { id: string; authority: string; state: string; url: string; detail?: string }[] = [];
@@ -21,19 +24,32 @@ function normalize(contentType: string, body: Buffer) {
 async function checkSource(authority: (typeof sourceRegistry)[number], source: (typeof authority.watchUrls)[number]) {
   const old = previous[source.id];
   const elapsedHours = old ? (Date.now() - Date.parse(old.checkedAt)) / 3_600_000 : Number.POSITIVE_INFINITY;
-  if (elapsedHours < source.cadenceHours - 0.1) {
+  // Scheduled runners are not exact. A generous tolerance prevents a delayed
+  // daily run from making the following day's check slip by another 24 hours.
+  if (elapsedHours < source.cadenceHours - DUE_EARLY_TOLERANCE_HOURS) {
     results.push({ id: source.id, authority: authority.name, state: "not-due", url: source.url });
     return;
   }
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 20_000);
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
   try {
+    const headers: Record<string, string> = {
+      "user-agent": "GovernmentExamIndia source monitor (+https://governmentexamindia.com/methodology)",
+    };
+    if (old?.etag) headers["if-none-match"] = old.etag;
+    if (old?.lastModified) headers["if-modified-since"] = old.lastModified;
+
     const response = await fetch(source.url, {
-      headers: { "user-agent": "GovernmentExamIndia source monitor (+https://governmentexamindia.com/methodology)" },
+      headers,
       redirect: "follow",
       signal: controller.signal,
     });
+    if (response.status === 304 && old) {
+      next[source.id] = { ...old, checkedAt: new Date().toISOString() };
+      results.push({ id: source.id, authority: authority.name, state: "unchanged", url: source.url });
+      return;
+    }
     if ([403, 405, 429].includes(response.status)) {
       results.push({ id: source.id, authority: authority.name, state: "blocked", url: source.url, detail: `HTTP ${response.status}` });
       return;
@@ -62,8 +78,10 @@ async function checkSource(authority: (typeof sourceRegistry)[number], source: (
 }
 
 const jobs = sourceRegistry.flatMap((authority) => authority.watchUrls.map((source) => ({ authority, source })));
-for (let index = 0; index < jobs.length; index += 4) {
-  await Promise.all(jobs.slice(index, index + 4).map(({ authority, source }) => checkSource(authority, source)));
+for (let index = 0; index < jobs.length; index += MAX_CONCURRENCY) {
+  await Promise.all(
+    jobs.slice(index, index + MAX_CONCURRENCY).map(({ authority, source }) => checkSource(authority, source)),
+  );
 }
 
 if (shouldWrite) await writeFile(statePath, `${JSON.stringify(next, null, 2)}\n`, "utf8");

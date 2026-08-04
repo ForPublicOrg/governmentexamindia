@@ -85,6 +85,11 @@
   --radius-sm: 0.7rem;
   --radius-md: 1.1rem;
   --radius-lg: 1.6rem;
+  --type-hero: clamp(2.75rem, 3.4vw, 4rem);
+  --type-page-title: clamp(2.25rem, 2.8vw, 3.25rem);
+  --type-section-title: clamp(1.75rem, 2vw, 2.5rem);
+  --type-method-title: clamp(2.5rem, 3.4vw, 4rem);
+  --section-space: clamp(3.5rem, 5vw, 4rem);
   --page: 74rem;
 }
 
@@ -265,6 +270,29 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
+.stretched-card-link::after {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: var(--card-link-radius, var(--radius-md));
+  content: "";
+}
+
+.stretched-card-link:focus-visible {
+  outline: none;
+}
+
+.stretched-card-link:focus-visible::after {
+  outline: 3px solid var(--saffron);
+  outline-offset: 3px;
+}
+
+.card-cta {
+  color: var(--blue);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
 .skip-link {
   position: fixed;
   z-index: 100;
@@ -316,7 +344,7 @@ summary:focus-visible {
 
 .header-inner {
   display: flex;
-  min-height: 4.5rem;
+  min-height: 4.25rem;
   align-items: center;
   gap: 1.5rem;
 }
@@ -532,7 +560,7 @@ summary:focus-visible {
 .hero-section {
   position: relative;
   overflow: hidden;
-  padding: 5.3rem 0 4.8rem;
+  padding: 3.5rem 0 3.25rem;
   background: var(--hero-bg);
 }
 
@@ -554,7 +582,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(22rem, 0.68fr);
   align-items: center;
-  gap: clamp(2.5rem, 6vw, 5.5rem);
+  gap: clamp(2rem, 4vw, 3.5rem);
 }
 
 .eyebrow-row {
@@ -574,13 +602,13 @@ summary:focus-visible {
 }
 
 .hero-copy h1 {
-  max-width: 13ch;
-  margin-top: 1.15rem;
+  max-width: 16ch;
+  margin-top: 0.9rem;
   color: var(--ink-strong);
-  font-size: clamp(3rem, 6.4vw, 5.65rem);
-  font-weight: 880;
-  letter-spacing: -0.07em;
-  line-height: 0.95;
+  font-size: var(--type-hero);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
 }
 
 .hero-copy h1 span {
@@ -589,10 +617,10 @@ summary:focus-visible {
 
 .hero-lede {
   max-width: 46rem;
-  margin-top: 1.55rem;
+  margin-top: 1.15rem;
   color: var(--hero-lede);
-  font-size: clamp(1.02rem, 1.6vw, 1.22rem);
-  line-height: 1.62;
+  font-size: clamp(0.98rem, 1.2vw, 1.1rem);
+  line-height: 1.58;
 }
 
 .hero-search {
@@ -601,8 +629,8 @@ summary:focus-visible {
   align-items: center;
   gap: 0.7rem;
   max-width: 43rem;
-  min-height: 4.25rem;
-  margin-top: 2rem;
+  min-height: 3.8rem;
+  margin-top: 1.5rem;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   border: 1px solid var(--line-strong);
   border-radius: 1rem;
@@ -632,7 +660,7 @@ summary:focus-visible {
 }
 
 .hero-search button {
-  min-height: 3.15rem;
+  min-height: 2.9rem;
   padding: 0.75rem 1.15rem;
   border: 0;
   border-radius: 0.75rem;
@@ -758,8 +786,8 @@ summary:focus-visible {
   padding: 0.28rem 0.55rem;
   border: 1px solid transparent;
   border-radius: 999px;
-  font-size: 0.64rem;
-  font-weight: 850;
+  font-size: 0.6875rem;
+  font-weight: 800;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
@@ -779,6 +807,41 @@ summary:focus-visible {
 .status-violet { border-color: var(--status-violet-border); background: var(--violet-soft); color: var(--status-violet-ink); }
 .status-slate { border-color: var(--status-slate-border); background: var(--slate-soft); color: var(--status-slate-ink); }
 
+.exam-card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.verification-badge,
+.detail-labels .verification-badge {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 1.62rem;
+  align-items: center;
+  padding: 0.28rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.verification-verified,
+.detail-labels .verification-verified {
+  border-color: var(--status-green-border);
+  background: var(--green-soft);
+  color: var(--status-green-ink);
+}
+
+.verification-listed,
+.detail-labels .verification-listed {
+  border-color: var(--status-amber-border);
+  background: var(--amber-soft);
+  color: var(--status-amber-ink);
+}
+
 .snapshot-strip {
   border-block: 1px solid var(--line);
   background: var(--surface);
@@ -792,16 +855,20 @@ summary:focus-visible {
 
 .snapshot-grid > div {
   display: flex;
-  min-height: 6.2rem;
+  min-height: 4.8rem;
   flex-direction: column;
   justify-content: center;
   padding: 1.1rem 1.2rem;
   border-right: 1px solid var(--line);
 }
 
+.snapshot-grid > div:last-child {
+  border-right: 0;
+}
+
 .snapshot-grid strong {
   color: var(--ink-strong);
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 900;
   letter-spacing: -0.04em;
 }
@@ -822,7 +889,7 @@ summary:focus-visible {
 }
 
 .section {
-  padding-block: 6rem;
+  padding-block: var(--section-space);
 }
 
 .section-tinted,
@@ -839,10 +906,10 @@ summary:focus-visible {
 .section-heading h2 {
   margin-top: 0.55rem;
   color: var(--ink-strong);
-  font-size: clamp(2rem, 4vw, 3.35rem);
-  font-weight: 860;
-  letter-spacing: -0.055em;
-  line-height: 1.04;
+  font-size: var(--type-section-title);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
 }
 
 .section-heading p {
@@ -872,7 +939,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.8rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .education-card {
@@ -955,7 +1022,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(20rem, 0.92fr);
   gap: 1.1rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .map-card,
@@ -997,8 +1064,9 @@ summary:focus-visible {
 
 .india-map {
   display: block;
-  width: min(100%, 30rem);
-  height: auto;
+  width: auto;
+  max-width: 100%;
+  height: clamp(20rem, 43vh, 27rem);
   margin-inline: auto;
   filter: drop-shadow(0 8px 18px rgb(9 40 63 / 0.12));
 }
@@ -1115,7 +1183,7 @@ summary:focus-visible {
   border-radius: 0.52rem;
   background: var(--navy);
   color: white;
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   font-weight: 900;
 }
 
@@ -1155,7 +1223,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
-  margin-top: 2.4rem;
+  margin-top: 2rem;
 }
 
 .home-type-card {
@@ -1210,12 +1278,12 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.9rem;
-  margin-top: 2.75rem;
+  margin-top: 2rem;
 }
 
 .problem-card {
-  min-height: 12rem;
-  padding: 1.55rem;
+  min-height: 10rem;
+  padding: 1.25rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--surface);
@@ -1230,14 +1298,14 @@ summary:focus-visible {
 }
 
 .problem-card h3 {
-  margin-top: 1.4rem;
+  margin-top: 1rem;
   color: var(--ink-strong);
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   letter-spacing: -0.03em;
 }
 
 .problem-card p {
-  margin-top: 0.9rem;
+  margin-top: 0.65rem;
   color: var(--muted);
   font-size: 0.84rem;
   line-height: 1.58;
@@ -1247,7 +1315,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 1rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .transparency-grid > * {
@@ -1264,7 +1332,7 @@ summary:focus-visible {
 
 .vacancy-demo,
 .timeline-demo {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
 
 .demo-heading {
@@ -1478,7 +1546,7 @@ summary:focus-visible {
 
 .filter-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
   margin-top: 0.75rem;
 }
@@ -1560,6 +1628,11 @@ summary:focus-visible {
   color: var(--blue);
 }
 
+.reset-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
 .exam-results {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1567,11 +1640,31 @@ summary:focus-visible {
   margin-top: 1rem;
 }
 
-.exam-card {
+.load-more-row {
   display: flex;
-  min-height: 25rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.load-more-row p {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.search-prompt {
+  min-height: 14rem;
+}
+
+.exam-card {
+  --card-link-radius: 1.1rem;
+  position: relative;
+  display: flex;
+  min-height: 21rem;
   flex-direction: column;
-  padding: 1.35rem;
+  padding: 1.15rem;
   border: 1px solid var(--line);
   border-radius: 1.1rem;
   background: var(--surface);
@@ -1594,6 +1687,8 @@ summary:focus-visible {
 }
 
 .save-button {
+  position: relative;
+  z-index: 2;
   min-height: 2rem;
   padding: 0.3rem 0.55rem;
   border: 1px solid var(--line);
@@ -1616,7 +1711,7 @@ summary:focus-visible {
 }
 
 .exam-card-heading {
-  margin-top: 1.15rem;
+  margin-top: 0.9rem;
 }
 
 .exam-card-heading > p {
@@ -1630,7 +1725,7 @@ summary:focus-visible {
 .exam-card-heading h2 {
   margin-top: 0.35rem;
   color: var(--ink-strong);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   letter-spacing: -0.035em;
   line-height: 1.2;
 }
@@ -1642,8 +1737,8 @@ summary:focus-visible {
 .next-action {
   display: grid;
   gap: 0.2rem;
-  margin-top: 1.2rem;
-  padding: 0.85rem;
+  margin-top: 0.9rem;
+  padding: 0.7rem;
   border-left: 3px solid var(--saffron);
   border-radius: 0 0.65rem 0.65rem 0;
   background: var(--saffron-soft);
@@ -1651,7 +1746,7 @@ summary:focus-visible {
 
 .next-action span {
   color: var(--amber);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1666,12 +1761,12 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
-  margin-top: 1.15rem;
+  margin-top: 0.9rem;
   border-block: 1px solid var(--line);
 }
 
 .exam-facts > div {
-  padding: 0.85rem 0.6rem;
+  padding: 0.7rem 0.55rem;
   border-right: 1px solid var(--line);
 }
 
@@ -1686,8 +1781,8 @@ summary:focus-visible {
 
 .exam-facts dt {
   color: var(--muted-light);
-  font-size: 0.61rem;
-  font-weight: 850;
+  font-size: 0.6875rem;
+  font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -1702,16 +1797,21 @@ summary:focus-visible {
 
 .exam-card-footer {
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
 }
 
 .exam-card-footer > span {
   color: var(--muted);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
 }
 
 .exam-card-footer > span strong {
   color: var(--green);
+}
+
+.exam-card-footer .card-cta {
+  color: var(--blue);
+  font-weight: 800;
 }
 
 .text-link {
@@ -1722,7 +1822,7 @@ summary:focus-visible {
 
 .empty-state {
   display: grid;
-  min-height: 24rem;
+  min-height: 18rem;
   place-items: center;
   align-content: center;
   gap: 0.6rem;
@@ -1753,7 +1853,7 @@ summary:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding-block: 2rem 4.5rem;
+  padding-block: 1.75rem 3.5rem;
   color: var(--muted);
   font-size: 0.78rem;
 }
@@ -1770,7 +1870,7 @@ summary:focus-visible {
 
 .discovery-page,
 .collection-page {
-  padding-block: 3.5rem 6rem;
+  padding-block: 2.5rem 4rem;
 }
 
 .all-india-card {
@@ -1813,11 +1913,11 @@ summary:focus-visible {
 }
 
 .region-group {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .region-group .section-heading h2 {
-  font-size: clamp(1.8rem, 3.5vw, 2.65rem);
+  font-size: clamp(1.65rem, 1.8vw, 2.1rem);
 }
 
 .region-grid {
@@ -1887,9 +1987,9 @@ summary:focus-visible {
 
 .type-directory-card {
   display: flex;
-  min-height: 15rem;
+  min-height: 12.5rem;
   flex-direction: column;
-  padding: 1.35rem;
+  padding: 1.1rem;
   border: 1px solid var(--line);
   border-top: 4px solid var(--type-accent, var(--blue));
   border-radius: 1rem;
@@ -1911,9 +2011,9 @@ summary:focus-visible {
 }
 
 .type-directory-card h2 {
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   color: var(--ink-strong);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   letter-spacing: -0.035em;
   line-height: 1.12;
 }
@@ -1966,9 +2066,10 @@ summary:focus-visible {
 .collection-hero h1 {
   margin-top: 0.55rem;
   color: var(--ink-strong);
-  font-size: clamp(2.6rem, 6vw, 4.8rem);
-  letter-spacing: -0.065em;
-  line-height: 0.98;
+  font-size: var(--type-page-title);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 .collection-hero p {
@@ -1993,7 +2094,7 @@ summary:focus-visible {
 
 .collection-hero dt {
   color: var(--muted);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -2006,7 +2107,7 @@ summary:focus-visible {
 }
 
 .collection-section {
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 
 .collection-grid {
@@ -2018,13 +2119,20 @@ summary:focus-visible {
 
 .collection-card {
   display: flex;
-  min-height: 20rem;
+  min-height: 17rem;
   flex-direction: column;
-  padding: 1.25rem;
+  padding: 1.1rem;
   border: 1px solid var(--line);
   border-radius: 1rem;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.collection-card:hover {
+  border-color: var(--card-hover-border);
+  box-shadow: 0 14px 34px rgb(9 27 45 / 0.08);
+  transform: translateY(-2px);
 }
 
 .collection-card-topline {
@@ -2042,9 +2150,9 @@ summary:focus-visible {
 }
 
 .collection-card h3 {
-  margin-top: 1.1rem;
+  margin-top: 0.9rem;
   color: var(--ink-strong);
-  font-size: 1.22rem;
+  font-size: 1.12rem;
   letter-spacing: -0.035em;
   line-height: 1.2;
 }
@@ -2075,7 +2183,7 @@ summary:focus-visible {
 
 .collection-card dt {
   color: var(--muted);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -2093,15 +2201,15 @@ summary:focus-visible {
   justify-content: space-between;
   gap: 1rem;
   margin-top: auto;
-  padding-top: 1rem;
+  padding-top: 0.8rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.64rem;
 }
 
-.collection-card footer a {
+.collection-card footer .card-cta {
   color: var(--blue);
-  font-weight: 850;
+  font-weight: 800;
 }
 
 .collection-empty {
@@ -2126,7 +2234,7 @@ summary:focus-visible {
 .listing-page,
 .calendar-page,
 .updates-page {
-  padding-block: 3.5rem 6rem;
+  padding-block: 2.5rem 4rem;
 }
 
 .page-intro {
@@ -2145,10 +2253,10 @@ summary:focus-visible {
 .page-intro h1 {
   margin-top: 0.55rem;
   color: var(--ink-strong);
-  font-size: clamp(2.5rem, 6vw, 4.8rem);
-  font-weight: 880;
-  letter-spacing: -0.065em;
-  line-height: 0.98;
+  font-size: var(--type-page-title);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 .page-intro > div:first-child > p {
@@ -2158,7 +2266,7 @@ summary:focus-visible {
 }
 
 .exam-detail-top {
-  padding: 2rem 0 3rem;
+  padding: 1.5rem 0 2.25rem;
   border-bottom: 1px solid var(--line);
   background: var(--detail-hero-bg);
 }
@@ -2180,8 +2288,8 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1.3fr) minmax(20rem, 0.7fr);
   align-items: end;
-  gap: 4rem;
-  margin-top: 2.5rem;
+  gap: 2.5rem;
+  margin-top: 1.75rem;
 }
 
 .detail-labels {
@@ -2202,7 +2310,7 @@ summary:focus-visible {
 }
 
 .detail-organisation {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
   color: var(--blue);
   font-size: 0.77rem;
   font-weight: 850;
@@ -2214,10 +2322,10 @@ summary:focus-visible {
   max-width: 18ch;
   margin-top: 0.45rem;
   color: var(--ink-strong);
-  font-size: clamp(2.5rem, 5.5vw, 4.65rem);
-  font-weight: 880;
-  letter-spacing: -0.065em;
-  line-height: 0.98;
+  font-size: var(--type-page-title);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 .detail-summary {
@@ -2228,7 +2336,7 @@ summary:focus-visible {
 }
 
 .action-panel {
-  padding: 1.35rem;
+  padding: 1.15rem;
   border: 1px solid var(--line-strong);
   border-top: 4px solid var(--saffron);
   border-radius: 1rem;
@@ -2254,7 +2362,7 @@ summary:focus-visible {
 .action-panel h2 {
   margin-top: 0.45rem;
   color: var(--ink-strong);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   letter-spacing: -0.035em;
   line-height: 1.15;
 }
@@ -2284,12 +2392,16 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 17.5rem;
   align-items: start;
-  gap: 3.2rem;
-  padding-block: 1rem 6rem;
+  gap: 2.5rem;
+  padding-block: 1rem 4rem;
+}
+
+.detail-layout > * {
+  min-width: 0;
 }
 
 .detail-section {
-  padding-block: 4.2rem;
+  padding-block: 3rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -2315,7 +2427,7 @@ summary:focus-visible {
 
 .detail-section-heading h2 {
   color: var(--ink-strong);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: -0.045em;
   line-height: 1.1;
 }
@@ -2336,8 +2448,8 @@ summary:focus-visible {
 }
 
 .glance-grid > div {
-  min-height: 10.2rem;
-  padding: 1.25rem;
+  min-height: 8.5rem;
+  padding: 1rem;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -2376,7 +2488,7 @@ summary:focus-visible {
 }
 
 .detail-card {
-  padding: 1.35rem;
+  padding: 1.15rem;
 }
 
 .vacancy-total-row {
@@ -2521,7 +2633,7 @@ summary:focus-visible {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   font-weight: 850;
   text-transform: uppercase;
 }
@@ -2563,7 +2675,7 @@ summary:focus-visible {
   border-radius: 50%;
   background: var(--green-soft);
   color: var(--green);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   font-weight: 900;
 }
 
@@ -2684,7 +2796,7 @@ summary:focus-visible {
   border-radius: 999px;
   background: var(--slate-soft);
   color: var(--slate);
-  font-size: 0.58rem;
+  font-size: 0.6875rem;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -2711,7 +2823,7 @@ summary:focus-visible {
 
 .source-record dt {
   color: var(--status-green-ink);
-  font-size: 0.6rem;
+  font-size: 0.6875rem;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -2754,7 +2866,7 @@ summary:focus-visible {
 .change-card > span {
   margin-bottom: 0.5rem;
   color: var(--muted-light);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   font-weight: 900;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2778,7 +2890,7 @@ summary:focus-visible {
 
 .change-card time {
   color: var(--saffron);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   font-weight: 850;
 }
 
@@ -2822,7 +2934,7 @@ summary:focus-visible {
 }
 
 .related-section {
-  padding-block: 4.5rem;
+  padding-block: var(--section-space);
 }
 
 .related-grid {
@@ -2925,8 +3037,8 @@ summary:focus-visible {
 
 .calendar-list {
   display: grid;
-  gap: 3rem;
-  margin-top: 3rem;
+  gap: 2.25rem;
+  margin-top: 2.25rem;
 }
 
 .calendar-month {
@@ -2963,8 +3075,8 @@ summary:focus-visible {
   grid-template-columns: 8rem minmax(0, 1fr) auto auto;
   align-items: center;
   gap: 1rem;
-  min-height: 6rem;
-  padding: 1rem;
+  min-height: 5.25rem;
+  padding: 0.85rem;
   border-bottom: 1px solid var(--line);
   border-left: 3px solid var(--slate);
   background: var(--calendar-row-bg);
@@ -2988,8 +3100,8 @@ summary:focus-visible {
 
 .calendar-event > div > span {
   color: var(--muted-light);
-  font-size: 0.58rem;
-  font-weight: 850;
+  font-size: 0.6875rem;
+  font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -3010,7 +3122,7 @@ summary:focus-visible {
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--muted);
-  font-size: 0.55rem;
+  font-size: 0.6875rem;
   text-transform: uppercase;
 }
 
@@ -3024,7 +3136,7 @@ summary:focus-visible {
   grid-template-columns: minmax(0, 1fr) 20rem;
   align-items: start;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .updates-list {
@@ -3032,11 +3144,19 @@ summary:focus-visible {
 }
 
 .updates-list article {
+  --card-link-radius: 0.5rem;
+  position: relative;
   display: grid;
   grid-template-columns: 8rem minmax(0, 1fr);
   gap: 1rem;
-  padding: 1.5rem 0;
+  padding: 1.15rem 0.75rem;
   border-bottom: 1px solid var(--line);
+  border-radius: 0.5rem;
+  transition: background-color 160ms ease;
+}
+
+.updates-list article:hover {
+  background: var(--surface-hover);
 }
 
 .updates-list time {
@@ -3062,7 +3182,9 @@ summary:focus-visible {
   font-size: 0.82rem;
 }
 
-.updates-list article a:not(h2 a) {
+.updates-list .update-source-link {
+  position: relative;
+  z-index: 2;
   display: inline-block;
   margin-top: 0.7rem;
   color: var(--blue);
@@ -3073,13 +3195,20 @@ summary:focus-visible {
 .update-method-card {
   position: sticky;
   top: 6rem;
+  display: block;
   padding: 1.4rem;
   border-radius: 1rem;
   background: var(--navy-deep);
   color: white;
+  transition: box-shadow 160ms ease, transform 160ms ease;
 }
 
-.update-method-card > span {
+.update-method-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.update-method-card > span:first-child {
   color: #ef9863;
   font-size: 0.65rem;
   font-weight: 900;
@@ -3098,16 +3227,16 @@ summary:focus-visible {
   font-size: 0.78rem;
 }
 
-.update-method-card a {
+.update-method-card .card-cta {
   display: inline-block;
   margin-top: 1rem;
   color: #ffae7b;
   font-size: 0.75rem;
-  font-weight: 850;
+  font-weight: 800;
 }
 
 .method-hero {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background:
     radial-gradient(circle at 80% 20%, rgb(231 109 36 / 0.12), transparent 25%),
     var(--navy-deep);
@@ -3116,24 +3245,25 @@ summary:focus-visible {
 
 .method-hero h1 {
   margin-top: 0.7rem;
-  font-size: clamp(3rem, 7vw, 6rem);
-  letter-spacing: -0.07em;
-  line-height: 0.95;
+  font-size: var(--type-method-title);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1.02;
 }
 
 .method-hero p {
   max-width: 45rem;
   margin-top: 1.2rem;
   color: #cbd9e2;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .method-page {
-  padding-block: 1rem 6rem;
+  padding-block: 1rem 4rem;
 }
 
 .method-section {
-  padding-block: 5.5rem;
+  padding-block: var(--section-space);
   border-bottom: 1px solid var(--line);
 }
 
@@ -3141,14 +3271,14 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.8rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .evidence-grid article {
   display: flex;
-  min-height: 19rem;
+  min-height: 15rem;
   flex-direction: column;
-  padding: 1.35rem;
+  padding: 1.15rem;
   border: 1px solid var(--line);
   border-radius: 0.9rem;
   background: var(--surface);
@@ -3159,7 +3289,7 @@ summary:focus-visible {
 }
 
 .source-rule-grid article {
-  min-height: 12rem;
+  min-height: 10rem;
 }
 
 .evidence-grid article > span {
@@ -3276,7 +3406,7 @@ summary:focus-visible {
 .coverage-table thead th {
   background: var(--coverage-head);
   color: var(--muted);
-  font-size: 0.62rem;
+  font-size: 0.6875rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -3316,9 +3446,9 @@ summary:focus-visible {
 .not-found h1 {
   max-width: 18ch;
   color: var(--ink-strong);
-  font-size: clamp(2.2rem, 5vw, 4rem);
-  letter-spacing: -0.06em;
-  line-height: 1;
+  font-size: var(--type-page-title);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
 }
 
 .not-found p {
@@ -3342,7 +3472,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: 2fr 0.8fr 0.8fr;
   gap: 4rem;
-  padding-block: 4rem;
+  padding-block: 3rem;
 }
 
 .footer-brand {
@@ -3460,7 +3590,7 @@ summary:focus-visible {
   }
 
   .hero-section {
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 
   .hero-grid,
@@ -3473,6 +3603,14 @@ summary:focus-visible {
 
   .status-desk {
     max-width: 42rem;
+  }
+
+  .section-heading-split,
+  .page-intro,
+  .method-cta,
+  .collection-hero {
+    align-items: start;
+    flex-direction: column;
   }
 
   .filter-grid {
@@ -3566,11 +3704,11 @@ summary:focus-visible {
   }
 
   .hero-section {
-    padding-block: 3.2rem;
+    padding-block: 2.8rem;
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.8rem, 14vw, 4.3rem);
+    font-size: clamp(2.5rem, 11vw, 3.4rem);
   }
 
   .hero-search {
@@ -3597,15 +3735,7 @@ summary:focus-visible {
   }
 
   .section {
-    padding-block: 4.4rem;
-  }
-
-  .section-heading-split,
-  .page-intro,
-  .method-cta,
-  .collection-hero {
-    align-items: start;
-    flex-direction: column;
+    padding-block: 3.5rem;
   }
 
   .education-grid,
@@ -3684,7 +3814,7 @@ summary:focus-visible {
   }
 
   .detail-title h1 {
-    font-size: clamp(2.55rem, 13vw, 4rem);
+    font-size: clamp(2.25rem, 10vw, 3.2rem);
   }
 
   .glance-grid {

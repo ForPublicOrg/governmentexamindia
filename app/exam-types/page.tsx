@@ -17,7 +17,7 @@ export default function ExamTypesPage() {
         {examTypeOptions.map((type, index) => {
           const count = exams.filter((item) => item.examTypes.includes(type.value)).length;
           return (
-            <Link href={`/exam-types/${type.slug}`} className={`type-directory-card type-accent-${(index % 4) + 1}`} key={type.slug}>
+            <Link href={`/exam-types/${type.slug}`} prefetch={false} className={`type-directory-card type-accent-${(index % 4) + 1}`} key={type.slug}>
               <span>{String(index + 1).padStart(2, "0")}</span>
               <div><h2>{type.value}</h2><p>{type.description}</p></div>
               <footer><strong>{count}</strong> {count === 1 ? "cycle" : "cycles"}<i aria-hidden="true">→</i></footer>
