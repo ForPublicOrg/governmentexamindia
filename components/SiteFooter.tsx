@@ -1,4 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
+
+const REPO_URL = "https://github.com/ForPublicOrg/governmentexamindia";
+const ATHENA_URL = "https://tryathena.dev";
 
 export function SiteFooter() {
   return (
@@ -30,8 +34,20 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="page-shell footer-bottom">
-        <span>Independent exam index; not a government website.</span>
-        <span>Official notice always has final authority.</span>
+        <span>© {new Date().getFullYear()} Government Exam India</span>
+        <div className="footer-credits">
+          <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">
+              <path d="M8.7 16.3 4.4 12l4.3-4.3 1.4 1.4L7.2 12l2.9 2.9-1.4 1.4Zm6.6 0-1.4-1.4 2.9-2.9-2.9-2.9 1.4-1.4 4.3 4.3-4.3 4.3ZM10.6 19l2.8-14 2 .4-2.8 14-2-.4Z" />
+            </svg>
+            Open source
+          </a>
+          <span aria-hidden="true">·</span>
+          <a href={ATHENA_URL} target="_blank" rel="noopener noreferrer">
+            <Image src="/athena.svg" alt="" width={14} height={14} unoptimized />
+            Built using Athena
+          </a>
+        </div>
       </div>
     </footer>
   );

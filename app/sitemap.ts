@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { examTypeOptions, indiaRegions } from "@/lib/discovery";
 import { exams } from "@/lib/exams";
 
+export const dynamic = "force-static";
+
 const baseUrl = "https://governmentexamindia.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {

@@ -15,5 +15,4 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run data:validate
-      - run: npm test
+      - run: npm run check

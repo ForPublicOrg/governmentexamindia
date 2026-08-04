@@ -27,8 +27,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-/.sites-dev*.log
-/.sites-dev*.err
 
 # env files (can opt-in for committing if needed)
 .env*

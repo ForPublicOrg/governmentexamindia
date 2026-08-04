@@ -3199,6 +3199,31 @@ summary:focus-visible {
   font-size: 0.67rem;
 }
 
+.footer-credits {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.footer-credits a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #c8d6df;
+  text-underline-offset: 3px;
+}
+
+.footer-credits a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-credits svg {
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
 @media (max-width: 1080px) {
   .desktop-nav a:nth-last-child(-n + 2) {
     display: none;

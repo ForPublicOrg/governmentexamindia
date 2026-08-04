@@ -3,15 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">=22.13.0"
+    "node": "22.x"
   },
   "scripts": {
-    "dev": "vinext dev",
+    "dev": "next dev",
     "prebuild": "npm run data:validate",
-    "build": "vinext build",
-    "start": "vinext start",
+    "build": "next build",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "lint": "eslint . --ignore-pattern .next --ignore-pattern out --ignore-pattern dist",
     "data:validate": "tsx tools/data/validate.ts",
     "data:watch": "tsx tools/data/watch-sources.ts",
     "check": "npm run lint && npm test",
@@ -23,23 +22,14 @@
     "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.50.0",
-    "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "6.0.2",
-    "@vitejs/plugin-rsc": "0.5.26",
     "d3-geo": "^3.1.1",
     "eslint": "9.39.4",
     "eslint-config-next": "^16.3.0",
-    "react-server-dom-webpack": "^19.2.8",
-    "tailwindcss": "4.2.1",
     "tsx": "^4.23.5",
-    "typescript": "5.9.3",
-    "vinext": "0.0.50",
-    "vite": "^8.2.0",
-    "wrangler": "^4.118.0"
+    "typescript": "5.9.3"
   },
   "type": "module"
 }
