@@ -1,0 +1,85 @@
+[
+  {
+    "id": "ibps",
+    "name": "Institute of Banking Personnel Selection",
+    "level": "Central",
+    "allowedHosts": ["www.ibps.in", "ibps.in"],
+    "watchUrls": [
+      { "id": "ibps-recruitment", "url": "https://www.ibps.in/index.php/recruitment/", "cadenceHours": 6 }
+    ]
+  },
+  {
+    "id": "upsc",
+    "name": "Union Public Service Commission",
+    "level": "Central",
+    "allowedHosts": ["www.upsc.gov.in", "upsc.gov.in", "upsconline.nic.in"],
+    "watchUrls": [
+      { "id": "upsc-active-exams", "url": "https://www.upsc.gov.in/examinations/active-exams", "cadenceHours": 3 }
+    ]
+  },
+  {
+    "id": "ssc",
+    "name": "Staff Selection Commission",
+    "level": "Central",
+    "allowedHosts": ["ssc.gov.in", "www.pib.gov.in", "pib.gov.in"],
+    "watchUrls": [
+      { "id": "ssc-home", "url": "https://ssc.gov.in/", "cadenceHours": 3 }
+    ]
+  },
+  {
+    "id": "rrb",
+    "name": "Railway Recruitment Boards",
+    "level": "Central",
+    "allowedHosts": ["www.rrbcdg.gov.in", "rrbcdg.gov.in", "rrbchennai.gov.in", "www.pib.gov.in", "pib.gov.in"],
+    "watchUrls": [
+      { "id": "rrb-employment-notices", "url": "https://www.rrbcdg.gov.in/employment-notices.php", "cadenceHours": 3 }
+    ]
+  },
+  {
+    "id": "tnpsc",
+    "name": "Tamil Nadu Public Service Commission",
+    "level": "State",
+    "allowedHosts": ["www.tnpsc.gov.in", "tnpsc.gov.in"],
+    "watchUrls": [
+      { "id": "tnpsc-planner", "url": "https://www.tnpsc.gov.in/English/annual_planner.html", "cadenceHours": 6 },
+      { "id": "tnpsc-press", "url": "https://www.tnpsc.gov.in/English/press_releases.aspx", "cadenceHours": 3 }
+    ]
+  },
+  {
+    "id": "bpsc",
+    "name": "Bihar Public Service Commission",
+    "level": "State",
+    "allowedHosts": ["bpsc.bihar.gov.in"],
+    "watchUrls": [
+      { "id": "bpsc-whats-new", "url": "https://bpsc.bihar.gov.in/whats-new/", "cadenceHours": 3 }
+    ]
+  },
+  {
+    "id": "uppsc",
+    "name": "Uttar Pradesh Public Service Commission",
+    "level": "State",
+    "allowedHosts": ["uppsc.up.nic.in"],
+    "watchUrls": [
+      { "id": "uppsc-notices", "url": "https://uppsc.up.nic.in/OuterPages/NoticeAlert.aspx", "cadenceHours": 3 }
+    ]
+  },
+  {
+    "id": "mp-esb",
+    "name": "Madhya Pradesh Employees Selection Board",
+    "level": "State",
+    "allowedHosts": ["esb.mp.gov.in"],
+    "watchUrls": [
+      { "id": "mp-esb-dashboard", "url": "https://esb.mp.gov.in/student_dashboard.htm", "cadenceHours": 6 }
+    ]
+  },
+  {
+    "id": "rpsc",
+    "name": "Rajasthan Public Service Commission",
+    "level": "State",
+    "allowedHosts": ["rpsc.rajasthan.gov.in"],
+    "watchUrls": [
+      { "id": "rpsc-advertisements", "url": "https://rpsc.rajasthan.gov.in/advertisements", "cadenceHours": 6 },
+      { "id": "rpsc-exams", "url": "https://rpsc.rajasthan.gov.in/forthcomingexaminations", "cadenceHours": 6 }
+    ]
+  }
+]

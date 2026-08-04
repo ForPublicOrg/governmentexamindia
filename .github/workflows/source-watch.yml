@@ -1,0 +1,36 @@
+name: Watch official exam sources
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/cache/restore@v4
+        with:
+          path: data/source-watch-state.json
+          key: source-watch-${{ github.run_id }}
+          restore-keys: source-watch-
+      - run: npm run --silent data:watch -- --write > source-watch-report.json
+      - run: cat source-watch-report.json >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/cache/save@v4
+        with:
+          path: data/source-watch-state.json
+          key: source-watch-${{ github.run_id }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: source-watch-report
+          path: source-watch-report.json
+          retention-days: 14
