@@ -139,7 +139,7 @@ test("keeps discovery pages bounded and does not repeat national exams on every 
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/states/[state]/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../components/ExamCollection.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../app/calendar/page.tsx", import.meta.url), "utf8"),
+    readFile(new URL("../components/CalendarBrowser.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/updates/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/exams/[slug]/page.tsx", import.meta.url), "utf8"),
   ]);
@@ -349,7 +349,18 @@ test("exports calendar, sources, updates, state and exam-type routes", async () 
   assert.equal(types.status, 200);
   assert.equal(railways.status, 200);
   const updatesHtml = await updates.text();
-  assert.match(await calendar.text(), /One national timeline/);
+  const calendarHtml = await calendar.text();
+  assert.match(calendarHtml, /One national timeline/);
+  // The calendar filter is a compact strip, and it has to be usable markup
+  // before JavaScript runs rather than a client-only control.
+  assert.match(calendarHtml, /class="calendar-filter"/);
+  assert.match(calendarHtml, /<input[^>]+type="search"/);
+  const calendarSelects = (calendarHtml.match(/<select[^>]*>/g) ?? []).length;
+  assert.equal(calendarSelects, 3, "the calendar filter should stay a three-control strip");
+  assert.ok(
+    Buffer.byteLength(calendarHtml) < 200_000,
+    "calendar HTML should stay below 200 KB; bound the rendered window rather than raising this",
+  );
   assert.match(await method.text(), /How exam information is updated/);
   assert.match(updatesHtml, /Corrections &amp; changes/);
   assert.match(updatesHtml, /<time dateTime="2026-08">Aug 2026<\/time>/);

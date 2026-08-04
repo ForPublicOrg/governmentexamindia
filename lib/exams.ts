@@ -136,6 +136,13 @@ export const calendarEvents = exams
             examTitle: item.shortTitle,
             organisation: item.organisation,
             tone: item.status.tone,
+            // Facets the calendar filter needs, carried on the milestone so the
+            // page never has to look the exam up again.
+            examTypes: item.examTypes,
+            governmentLevel: item.governmentLevel,
+            regionCodes: Array.from(
+              new Set([...(item.regionCodes ?? []), ...(item.stateCode ? [item.stateCode] : [])]),
+            ),
           }]
         : [],
     ),
