@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ExamExplorer } from "@/components/ExamExplorer";
 import { exams } from "@/lib/exams";
+import { todayIso } from "@/lib/lifecycle";
 import { toSearchDoc } from "@/lib/search";
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export default function SearchPage() {
         <span className="eyebrow">{exams.length} exam cycles</span>
         <h1>Find an exam</h1>
       </header>
-      <ExamExplorer docs={searchDocs} indexUrl="/search-index.json?v=2" />
+      <ExamExplorer docs={searchDocs} buildDate={todayIso()} indexUrl="/search-index.json?v=2" />
     </div>
   );
 }

@@ -11,6 +11,24 @@ function errorsFor(...records: Exam[]) {
   return validateRecords(records, authorities, { referenceDate: "2026-08-04" }).errors.join("\n");
 }
 
+/**
+ * Findings that only mean "the clock has moved past this". They are errors for
+ * the daily data job and warnings everywhere else, so a rule about them has to
+ * be exercised in strict mode.
+ */
+function freshnessFor(...records: Exam[]) {
+  const { errors, warnings } = validateRecords(records, authorities, {
+    referenceDate: "2026-08-04",
+    freshness: "error",
+  });
+  assert.equal(warnings.filter((line) => errors.includes(line)).length, 0, "a finding is one or the other");
+  return errors.join("\n");
+}
+
+function warningsFor(...records: Exam[]) {
+  return validateRecords(records, authorities, { referenceDate: "2026-08-04" }).warnings.join("\n");
+}
+
 test("strict date validation rejects calendar rollovers", () => {
   const record: Exam = {
     ...base,
@@ -87,7 +105,11 @@ test("scheduled events cannot remain scheduled after their official date", () =>
     slug: "stale-scheduled-event",
     timeline: [{ label: "Exam", date: "2026-08-03", displayDate: "3 Aug 2026", state: "scheduled" }],
   };
-  assert.match(errorsFor(record), /scheduled event 'Exam' is already in the past/);
+  assert.match(freshnessFor(record), /scheduled event 'Exam' is already in the past/);
+  // …but it must not stop the site being rebuilt. The clock moving is not a
+  // reason to be unable to deploy; see tools/data/validate.ts.
+  assert.equal(errorsFor(record), "");
+  assert.match(warningsFor(record), /scheduled event 'Exam' is already in the past/);
 });
 
 test("time-sensitive statuses require a review at least every 45 days", () => {
@@ -97,7 +119,8 @@ test("time-sensitive statuses require a review at least every 45 days", () => {
     status: { ...base.status, tone: "blue" },
     lastVerified: "1 Jun 2026, 12:00 IST",
   };
-  assert.match(errorsFor(record), /time-sensitive status was last reviewed 64 days ago/);
+  assert.match(freshnessFor(record), /time-sensitive status was last reviewed 64 days ago/);
+  assert.equal(errorsFor(record), "", "an unreviewed record must not make the site unbuildable");
 });
 
 test("applications-open statuses require a verified current deadline", () => {
@@ -108,9 +131,11 @@ test("applications-open statuses require a verified current deadline", () => {
     status: { ...base.status, tone: "green" },
     timeline: [],
   };
-  const errors = errorsFor(record);
-  assert.match(errors, /applications-open status must be verified/);
-  assert.match(errors, /applications-open status requires a current exact deadline/);
+  // Claiming "applications open" without verification is a malformed record and
+  // always an error. Having no *live* deadline is only the clock catching up.
+  assert.match(errorsFor(record), /applications-open status must be verified/);
+  assert.match(freshnessFor(record), /applications-open status requires a current exact deadline/);
+  assert.doesNotMatch(errorsFor(record), /requires a current exact deadline/);
 });
 
 test("official links outside an authority allowlist fail validation", () => {

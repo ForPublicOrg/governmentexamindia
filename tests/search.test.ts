@@ -315,7 +315,10 @@ test("the catalogue and dedicated route use a compact, complete ranked search", 
   assert.doesNotMatch(explorerSource, /from ["']@\/lib\/exams["']/);
   assert.match(explorerSource, /docs:\s*SearchDoc\[\]/);
   assert.match(explorerSource, /applyFacets\(uniqueDocs/);
-  assert.match(explorerSource, /rank\(matches, filters\.query\)/);
+  // Ranking is date-aware: an expired window must not keep its deadline-first
+  // ranking just because the page was built while it was open.
+  assert.match(explorerSource, /rank\(matches, filters\.query, today\)/);
+  assert.match(explorerSource, /compareDocsAt\(today\)/);
   assert.match(explorerSource, /indiaRegions\.filter\(\(region\) => region\.kind === "State"\)/);
   assert.match(explorerSource, /indiaRegions\.filter\(\(region\) => region\.kind === "Union territory"\)/);
   assert.match(explorerSource, /results\.slice\(0, page \* pageSize\)/);

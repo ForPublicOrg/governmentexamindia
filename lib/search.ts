@@ -1,9 +1,11 @@
 import type { EducationLevel, Exam, ExamType, GovernmentLevel, StatusTone } from "@/lib/exam-types";
 import {
   applicationCloseDate,
+  invertedDateKey,
   lifecyclePhaseIndex,
   lifecyclePhases,
   lifecycleSortKey,
+  todayIso,
   type LifecyclePhase,
 } from "@/lib/lifecycle";
 
@@ -36,9 +38,35 @@ export type SearchDoc = {
   /** ISO application closing date, when one is published */ cd?: string;
 };
 
+/**
+ * Whether the submission window is still open, judged against `at` rather than
+ * against the build. `cd` is the published closing date, so the browser can
+ * answer this itself however old the page it is reading is.
+ */
+export function isWindowOpen(doc: SearchDoc, at = todayIso()) {
+  return doc.cd != null && doc.cd >= at;
+}
+
+/**
+ * `k` was computed when the site was built. Bucket "0" means "the application
+ * window is open", and that is the one bucket that goes stale dangerously: a
+ * cycle whose deadline has since passed would keep sorting above every live
+ * one. Recompute just that case from the published closing date and let the
+ * rest of the key stand.
+ */
+export function sortKeyAt(doc: SearchDoc, at: string) {
+  if (doc.k.startsWith("0") && doc.cd != null && doc.cd < at) return `2${invertedDateKey(doc.cd)}`;
+  return doc.k;
+}
+
 /** Ongoing before upcoming before past, then the nearest deadline to act on. */
-export function compareDocs(a: SearchDoc, b: SearchDoc) {
-  return a.p - b.p || a.k.localeCompare(b.k) || b.f - a.f || a.st.localeCompare(b.st);
+export function compareDocs(a: SearchDoc, b: SearchDoc, at = todayIso()) {
+  return a.p - b.p || sortKeyAt(a, at).localeCompare(sortKeyAt(b, at)) || b.f - a.f || a.st.localeCompare(b.st);
+}
+
+/** `compareDocs` with the reference date resolved once, for sorting long lists. */
+export function compareDocsAt(at: string) {
+  return (a: SearchDoc, b: SearchDoc) => compareDocs(a, b, at);
 }
 
 export function phaseOfDoc(doc: SearchDoc): LifecyclePhase {
@@ -231,7 +259,7 @@ export function uniqueSearchDocs(docs: SearchDoc[]) {
  * hits beat prefixes, prefixes beat substrings, and a bounded edit distance
  * catches typos like "cosntable".
  */
-export function rank(docs: SearchDoc[], query: string): Ranked[] {
+export function rank(docs: SearchDoc[], query: string, at = todayIso()): Ranked[] {
   const cleaned = normalise(query);
   if (!cleaned) return [];
 
@@ -239,7 +267,7 @@ export function rank(docs: SearchDoc[], query: string): Ranked[] {
   const tokens = rawTokens.filter((token) => !STOPWORDS.has(token));
   if (!tokens.length) {
     return uniqueSearchDocs(docs)
-      .sort(compareDocs)
+      .sort(compareDocsAt(at))
       .map((doc) => ({ doc, score: 0 }));
   }
 
@@ -312,7 +340,7 @@ export function rank(docs: SearchDoc[], query: string): Ranked[] {
   // Phase leads every list on the site, so a live cycle is never buried under a
   // finished one. Relevance still decides the order inside a phase.
   return Array.from(results.values()).sort(
-    (a, b) => a.doc.p - b.doc.p || b.score - a.score || compareDocs(a.doc, b.doc),
+    (a, b) => a.doc.p - b.doc.p || b.score - a.score || compareDocs(a.doc, b.doc, at),
   );
 }
 

@@ -23,6 +23,12 @@ jobs:
         run: |
           npm run --silent data:registry
           git diff --exit-code -- data/source-registry.json
+      # Freshness is a hard failure here and only here. This job exists to tell
+      # somebody the data needs re-checking, so it is the right place to gate on
+      # expired stages and stale reviews -- unlike the build, which must keep
+      # working so the site can actually be redeployed.
+      - name: Report data that needs re-checking
+        run: npm run --silent data:validate:fresh
       - uses: actions/cache/restore@v4
         with:
           path: data/source-watch-state.json

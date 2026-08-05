@@ -1,28 +1,22 @@
 import { indiaRegions } from "../../lib/discovery";
 import type { Authority, Exam } from "../../lib/exam-types";
+import { indiaDateKey, isRealIsoDate, lastVerifiedIso } from "../../lib/lifecycle";
 
 export type RuleResult = { errors: string[]; warnings: string[] };
-export type RuleOptions = { referenceDate?: string };
+export type RuleOptions = {
+  referenceDate?: string;
+  /**
+   * How to treat findings that only say the data needs re-checking — a stage
+   * whose date has passed, a deadline that has expired, a record reviewed too
+   * long ago. These are true of correct data the moment the clock moves past
+   * it, so they are warnings unless something explicitly asks to gate on them.
+   */
+  freshness?: "error" | "warning";
+};
 
 const regionByCode = new Map(indiaRegions.map((region) => [region.code, region.name]));
 const validRegions = new Set(regionByCode.keys());
-const isoDate = /^\d{4}-\d{2}-\d{2}$/;
 const isoMonth = /^\d{4}-\d{2}$/;
-const checkedDate = /^(\d{1,2}) ([A-Z][a-z]{2}) (\d{4}), (\d{2}):(\d{2}) IST$/;
-const monthNumber: Record<string, number> = {
-  Jan: 1,
-  Feb: 2,
-  Mar: 3,
-  Apr: 4,
-  May: 5,
-  Jun: 6,
-  Jul: 7,
-  Aug: 8,
-  Sep: 9,
-  Oct: 10,
-  Nov: 11,
-  Dec: 12,
-};
 const scopeStart = "2025-06-01";
 const freshnessTones = new Set(["green", "amber", "red", "blue", "violet"]);
 const FRESHNESS_WARNING_DAYS = 14;
@@ -33,16 +27,7 @@ function normaliseIdentity(value: string) {
   return value.toLocaleLowerCase("en-IN").replace(/[^a-z0-9]+/g, "");
 }
 
-export function isRealIsoDate(value: string) {
-  if (!isoDate.test(value)) return false;
-  const [year, month, day] = value.split("-").map(Number);
-  const parsed = new Date(Date.UTC(year, month - 1, day));
-  return (
-    parsed.getUTCFullYear() === year &&
-    parsed.getUTCMonth() === month - 1 &&
-    parsed.getUTCDate() === day
-  );
-}
+export { isRealIsoDate };
 
 function isRealIsoMonth(value: string) {
   if (!isoMonth.test(value)) return false;
@@ -50,22 +35,14 @@ function isRealIsoMonth(value: string) {
   return month >= 1 && month <= 12;
 }
 
-function checkedDateKey(value: string) {
-  const match = checkedDate.exec(value);
-  if (!match) return undefined;
-  const [, dayText, monthText, yearText, hourText, minuteText] = match;
-  const month = monthNumber[monthText];
-  const hour = Number(hourText);
-  const minute = Number(minuteText);
-  if (!month || hour > 23 || minute > 59) return undefined;
-  const key = `${yearText}-${String(month).padStart(2, "0")}-${String(Number(dayText)).padStart(2, "0")}`;
-  return isRealIsoDate(key) ? key : undefined;
-}
+const checkedDateKey = lastVerifiedIso;
 
 export function validateRecords(exams: Exam[], authorities: Authority[], options: RuleOptions = {}): RuleResult {
   const errors: string[] = [];
   const warnings: string[] = [];
-  const referenceDate = options.referenceDate ?? new Date().toISOString().slice(0, 10);
+  // IST, matching lastVerified's own timezone and the site's todayIso(). A UTC
+  // reference date calls a record verified at 02:00 IST "verified tomorrow".
+  const referenceDate = options.referenceDate ?? indiaDateKey(new Date());
   const referenceTime = Date.parse(`${referenceDate}T00:00:00Z`);
   if (!isRealIsoDate(referenceDate)) errors.push(`validation: invalid reference date ${referenceDate}`);
   const seenSlugs = new Set<string>();
@@ -75,6 +52,19 @@ export function validateRecords(exams: Exam[], authorities: Authority[], options
 
   const fail = (slug: string, message: string) => errors.push(`${slug}: ${message}`);
   const failAuthority = (id: string, message: string) => errors.push(`authority:${id}: ${message}`);
+
+  /**
+   * A finding that means "re-check this against the source", not "this record
+   * is malformed". Every one of these arrives on its own without anybody
+   * touching the repository, so gating the build on them stops unrelated work
+   * from shipping — and, worse, freezes the deployed site on the stale data
+   * the alarm was complaining about. The daily data job passes
+   * freshness: "error" so someone is still told, loudly, every morning.
+   */
+  const stale =
+    options.freshness === "error"
+      ? fail
+      : (slug: string, message: string) => warnings.push(`${slug}: ${message}`);
 
   for (const authority of authorities) {
     if (!/^[a-z0-9-]+$/.test(authority.id)) failAuthority(authority.id, "id must be lowercase kebab-case");
@@ -154,7 +144,7 @@ export function validateRecords(exams: Exam[], authorities: Authority[], options
       if (ageDays < 0) {
         fail(item.slug, "lastVerified cannot be in the future");
       } else if (ageDays > FRESHNESS_ERROR_DAYS) {
-        fail(item.slug, `time-sensitive status was last reviewed ${ageDays} days ago (maximum ${FRESHNESS_ERROR_DAYS})`);
+        stale(item.slug, `time-sensitive status was last reviewed ${ageDays} days ago (maximum ${FRESHNESS_ERROR_DAYS})`);
       } else if (ageDays > FRESHNESS_WARNING_DAYS) {
         warnings.push(`${item.slug}: time-sensitive status was last reviewed ${ageDays} days ago`);
       }
@@ -250,7 +240,7 @@ export function validateRecords(exams: Exam[], authorities: Authority[], options
           fail(item.slug, `dated event '${event.label}' says its date is unannounced`);
         }
         if (event.state === "scheduled" && event.date < referenceDate) {
-          fail(item.slug, `scheduled event '${event.label}' is already in the past`);
+          stale(item.slug, `scheduled event '${event.label}' is already in the past`);
         }
       } else if (event.sortMonth != null) {
         if (!isRealIsoMonth(event.sortMonth)) {
@@ -262,7 +252,7 @@ export function validateRecords(exams: Exam[], authorities: Authority[], options
           fail(item.slug, `month-only event '${event.label}' must show its year`);
         }
         if (event.state === "scheduled" && event.sortMonth < referenceDate.slice(0, 7)) {
-          fail(item.slug, `scheduled month '${event.label}' is already in the past`);
+          stale(item.slug, `scheduled month '${event.label}' is already in the past`);
         }
       } else {
         if (["completed", "scheduled", "postponed"].includes(event.state)) {
@@ -288,7 +278,9 @@ export function validateRecords(exams: Exam[], authorities: Authority[], options
           /\b(deadline|applications? close|last date|registration closes?)\b/i.test(event.label),
       );
       if (!activeDeadline) {
-        fail(item.slug, "an applications-open status requires a current exact deadline");
+        // Green means "applications open". The day after the deadline that is
+        // no longer true, but the record is not malformed — it is out of date.
+        stale(item.slug, "an applications-open status requires a current exact deadline");
       }
     }
     if (item.verification === "verified" && !datedEvents.some((date) => date >= scopeStart)) {

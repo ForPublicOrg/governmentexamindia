@@ -8,6 +8,7 @@ import {
   defaultCalendarFilter,
   examLookup,
   filterCalendar,
+  splitCalendar,
   type CalendarExam,
   type CalendarFeed,
   type CalendarFilterState,
@@ -15,6 +16,7 @@ import {
 } from "@/lib/calendar";
 import { examTypeOptions, indiaRegions } from "@/lib/discovery";
 import type { ExamType, TimelineState } from "@/lib/exam-types";
+import { useToday } from "@/lib/use-today";
 
 const MONTH_NAMES = [
   "January", "February", "March", "April", "May", "June",
@@ -81,14 +83,16 @@ function CalendarEventGroups({
   );
 }
 
-export function CalendarBrowser({ feed, historyDays }: { feed: CalendarFeed; historyDays: number }) {
+export function CalendarBrowser({ feed, buildDate }: { feed: CalendarFeed; buildDate: string }) {
   const controlId = useId();
   const [filters, setFilters] = useState<CalendarFilterState>(defaultCalendarFilter);
+  const today = useToday(buildDate);
 
   const exams = useMemo(() => examLookup(feed), [feed]);
   const matches = useMemo(() => filterCalendar(feed, filters), [feed, filters]);
-  const upcoming = matches.filter((event) => event.p === 0);
-  const history = matches.filter((event) => event.p === 1);
+  // The build's split is only right on the day it ran, so it is made again here
+  // against the reader's own date.
+  const { upcoming, history } = useMemo(() => splitCalendar(matches, today), [matches, today]);
   const activeCount = calendarFilterCount(filters);
 
   const update = (patch: Partial<CalendarFilterState>) => setFilters((current) => ({ ...current, ...patch }));
@@ -200,7 +204,10 @@ export function CalendarBrowser({ feed, historyDays }: { feed: CalendarFeed; his
           <span className="kicker">Recent history</span>
           <h2 id="recent-history-title">Recently completed milestones</h2>
           <p>
-            The newest {history.length} {history.length === 1 ? "event" : "events"} from the past {historyDays} days.
+            {/* No fixed window is claimed: milestones move here as their dates
+                pass, so a page read weeks after it was built holds more than
+                the history the build shipped. */}
+            The {history.length} most recent {history.length === 1 ? "milestone" : "milestones"} already passed.
             Older dates remain on each exam page.
           </p>
         </div>

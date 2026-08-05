@@ -57,8 +57,67 @@ export function applicationCloseDate(item: LifecycleInput) {
   return closing;
 }
 
+const indiaDateFormatter = new Intl.DateTimeFormat("en-CA", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  timeZone: "Asia/Kolkata",
+});
+
+/** The IST calendar date of an instant, as YYYY-MM-DD. */
+export function indiaDateKey(at: Date) {
+  // en-CA formats as ISO, and formatToParts avoids depending on that.
+  const parts = indiaDateFormatter.formatToParts(at);
+  const value = (type: Intl.DateTimeFormatPartTypes) => parts.find((part) => part.type === type)?.value ?? "";
+  return `${value("year")}-${value("month")}-${value("day")}`;
+}
+
+/**
+ * The date the site reasons from, in IST because every deadline here is an
+ * Indian one — UTC would call it yesterday until 05:30 every morning.
+ *
+ * In the browser this is the reader's own clock, so anything recomputed client
+ * side corrects itself across midnight and in a page served from cache. On the
+ * build machine it is the build date, which SITE_REFERENCE_DATE can override to
+ * pin a build or to run the site forward in time (see tools/data/time-travel.ts).
+ */
 export function todayIso() {
-  return new Date().toISOString().slice(0, 10);
+  if (typeof window === "undefined") {
+    const pinned = process.env.SITE_REFERENCE_DATE;
+    if (pinned) return pinned;
+  }
+  return indiaDateKey(new Date());
+}
+
+/** Complement of YYYYMMDD, so an ascending sort reads newest first. */
+export function invertedDateKey(iso: string) {
+  return String(99_999_999 - Number(iso.replaceAll("-", ""))).padStart(8, "0");
+}
+
+export function isRealIsoDate(value: string) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const [year, month, day] = value.split("-").map(Number);
+  const parsed = new Date(Date.UTC(year, month - 1, day));
+  return (
+    parsed.getUTCFullYear() === year && parsed.getUTCMonth() === month - 1 && parsed.getUTCDate() === day
+  );
+}
+
+const MONTH_NUMBER: Record<string, number> = {
+  Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6,
+  Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12,
+};
+const LAST_VERIFIED = /^(\d{1,2}) ([A-Z][a-z]{2}) (\d{4}), (\d{2}):(\d{2}) IST$/;
+
+/** The date part of a `lastVerified` stamp ("4 Aug 2026, 19:00 IST" → "2026-08-04"). */
+export function lastVerifiedIso(value: string) {
+  const match = LAST_VERIFIED.exec(value);
+  if (!match) return undefined;
+  const [, dayText, monthText, yearText, hourText, minuteText] = match;
+  const month = MONTH_NUMBER[monthText];
+  if (!month || Number(hourText) > 23 || Number(minuteText) > 59) return undefined;
+  const key = `${yearText}-${String(month).padStart(2, "0")}-${String(Number(dayText)).padStart(2, "0")}`;
+  return isRealIsoDate(key) ? key : undefined;
 }
 
 function datedPoints(item: LifecycleInput) {
@@ -68,9 +127,6 @@ function datedPoints(item: LifecycleInput) {
 }
 
 const compact = (iso: string) => iso.replaceAll("-", "");
-
-/** Complement of YYYYMMDD, so an ascending sort reads newest first. */
-const inverted = (iso: string) => String(99_999_999 - Number(compact(iso))).padStart(8, "0");
 
 /**
  * A sortable key that puts the most actionable record first *within* a phase:
@@ -89,7 +145,7 @@ export function lifecycleSortKey(item: LifecycleInput, referenceDate = todayIso(
   if (next) return `1${compact(next)}`;
 
   const last = points.at(-1);
-  return last ? `2${inverted(last)}` : "3";
+  return last ? `2${invertedDateKey(last)}` : "3";
 }
 
 /**

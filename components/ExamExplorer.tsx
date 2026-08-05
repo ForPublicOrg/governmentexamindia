@@ -5,9 +5,11 @@ import { useEffect, useId, useMemo, useState, useSyncExternalStore } from "react
 import { examTypeOptions, indiaRegions } from "@/lib/discovery";
 import type { EducationLevel, ExamType, GovernmentLevel } from "@/lib/exam-types";
 import { lifecyclePhaseMeta, lifecyclePhases } from "@/lib/lifecycle";
+import { useToday } from "@/lib/use-today";
 import {
   applyFacets,
-  compareDocs,
+  compareDocsAt,
+  isWindowOpen,
   defaultExplorerState,
   parseExplorerParams,
   phaseForStatus,
@@ -83,6 +85,7 @@ function subscribeToUrl(onChange: () => void) {
   return () => window.removeEventListener("popstate", onChange);
 }
 
+
 const savedListeners = new Set<() => void>();
 let savedRaw: string | null = null;
 let savedList: readonly string[] = NO_SAVED;
@@ -150,10 +153,12 @@ function ExamResultCard({
   item,
   saved,
   onSave,
+  today,
 }: {
   item: SearchDoc;
   saved: boolean;
   onSave: (slug: string) => void;
+  today: string;
 }) {
   return (
     <article className="exam-card exam-card-compact">
@@ -193,11 +198,11 @@ function ExamResultCard({
       </div>
 
       {item.cd && (
-        // `k` is built at the same time as `cd`, so bucket "0" is the record's
-        // own build-time answer to "is this window still open?".
-        <p className={`deadline-line${item.k.startsWith("0") ? " is-open" : ""}`}>
+        // Judged against the reader's clock, not the build's. A page built in
+        // August and read in October has to say "closed", not "close".
+        <p className={`deadline-line${isWindowOpen(item, today) ? " is-open" : ""}`}>
           <span aria-hidden="true">⏳</span>
-          {item.k.startsWith("0") ? "Applications close " : "Applications closed "}
+          {isWindowOpen(item, today) ? "Applications close " : "Applications closed "}
           <strong>{formatIsoDate(item.cd)}</strong>
         </p>
       )}
@@ -226,6 +231,12 @@ function ExamResultCard({
 type ExamExplorerProps = {
   /** Records rendered on the server. Keep this a bounded first page. */
   docs: SearchDoc[];
+  /**
+   * The date the HTML was built with. Rendering the reader's own date straight
+   * away would disagree with the static markup, so the build's date is used for
+   * the hydration render and the real one takes over immediately after.
+   */
+  buildDate: string;
   compact?: boolean;
   /**
    * Where to fetch the rest of the catalogue once JavaScript runs. Serialising
@@ -235,7 +246,7 @@ type ExamExplorerProps = {
   indexUrl?: string;
 };
 
-export function ExamExplorer({ docs, compact = false, indexUrl }: ExamExplorerProps) {
+export function ExamExplorer({ docs, buildDate, compact = false, indexUrl }: ExamExplorerProps) {
   const controlId = useId();
   // Everything the reader changes is an override on top of what the URL and
   // localStorage already say, so nothing has to be copied between the two.
@@ -245,6 +256,9 @@ export function ExamExplorer({ docs, compact = false, indexUrl }: ExamExplorerPr
   const [loadedDocs, setLoadedDocs] = useState<SearchDoc[] | null>(null);
   const search = useSyncExternalStore(subscribeToUrl, () => window.location.search, () => NO_SEARCH);
   const saved = useSyncExternalStore(subscribeToSaved, savedSnapshot, () => NO_SAVED);
+  // Deadlines and ordering are judged against the reader's clock, so a page
+  // built weeks ago still reads correctly.
+  const today = useToday(buildDate);
 
   useEffect(() => {
     if (!indexUrl) return;
@@ -316,10 +330,10 @@ export function ExamExplorer({ docs, compact = false, indexUrl }: ExamExplorerPr
     });
 
     if (filters.savedOnly) matches = matches.filter((doc) => saved.includes(doc.s));
-    if (filters.query.trim()) return rank(matches, filters.query).map((result) => result.doc);
+    if (filters.query.trim()) return rank(matches, filters.query, today).map((result) => result.doc);
 
-    return matches.sort(compareDocs);
-  }, [filters, saved, uniqueDocs]);
+    return matches.sort(compareDocsAt(today));
+  }, [filters, saved, today, uniqueDocs]);
 
   const pageSize = compact ? COMPACT_PAGE_SIZE : DEFAULT_PAGE_SIZE;
   const visibleResults = results.slice(0, page * pageSize);
@@ -534,7 +548,13 @@ export function ExamExplorer({ docs, compact = false, indexUrl }: ExamExplorerPr
               </div>
               <div className="exam-results">
                 {group.items.map((item) => (
-                  <ExamResultCard key={item.s} item={item} saved={saved.includes(item.s)} onSave={toggleSaved} />
+                  <ExamResultCard
+                    key={item.s}
+                    item={item}
+                    saved={saved.includes(item.s)}
+                    onSave={toggleSaved}
+                    today={today}
+                  />
                 ))}
               </div>
             </section>

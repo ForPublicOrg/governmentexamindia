@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { CalendarBrowser } from "@/components/CalendarBrowser";
 import { toCalendarFeed } from "@/lib/calendar";
 import { calendarEvents } from "@/lib/exams";
+import { todayIso } from "@/lib/lifecycle";
 
 export const metadata: Metadata = {
   title: "Government exam calendar",
@@ -9,23 +10,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/calendar" },
 };
 
-const indiaDateFormatter = new Intl.DateTimeFormat("en-IN", {
-  day: "2-digit",
-  month: "2-digit",
-  year: "numeric",
-  timeZone: "Asia/Kolkata",
-});
 const RECENT_HISTORY_DAYS = 90;
+/**
+ * This bounds what is *shipped*, and the page has almost no room left in its
+ * 200 KB budget, so it cannot go up without making each row cheaper first.
+ * Note the section still fills out over time without shipping more: milestones
+ * cross into it from the upcoming list as their dates pass.
+ */
 const MAX_RECENT_HISTORY_EVENTS = 36;
 
 function monthKey(date: string) {
   return date.slice(0, 7);
-}
-
-function indiaDateKey(date: Date) {
-  const parts = indiaDateFormatter.formatToParts(date);
-  const value = (type: Intl.DateTimeFormatPartTypes) => parts.find((part) => part.type === type)?.value ?? "";
-  return `${value("year")}-${value("month")}-${value("day")}`;
 }
 
 function shiftIsoDate(date: string, days: number) {
@@ -34,10 +29,18 @@ function shiftIsoDate(date: string, days: number) {
   return value.toISOString().slice(0, 10);
 }
 
-const today = indiaDateKey(new Date());
+const today = todayIso();
 const recentHistoryCutoff = shiftIsoDate(today, -RECENT_HISTORY_DAYS);
 const currentMonth = monthKey(today);
 const recentHistoryCutoffMonth = monthKey(recentHistoryCutoff);
+
+/*
+ * This decides what the page *ships*, not what each section shows: the browser
+ * re-splits the feed against the reader's own date, because milestones cross
+ * from upcoming to past while the build sits there. So the two lists below only
+ * have to be a superset of what either section will ever need — every future
+ * milestone, plus enough history to fill the second section on day one.
+ */
 const currentAndUpcomingEvents = calendarEvents.filter((event) =>
   event.dateTime.length === 7 ? event.dateTime >= currentMonth : event.sortDate >= today,
 );
@@ -74,7 +77,7 @@ export default function CalendarPage() {
         <p><strong>Dates are not all the same kind.</strong> Exact dates come from notices; month-only entries come from official tentative calendars. Open the exam page to see which is which.</p>
       </div>
 
-      <CalendarBrowser feed={feed} historyDays={RECENT_HISTORY_DAYS} />
+      <CalendarBrowser feed={feed} buildDate={today} />
     </div>
   );
 }

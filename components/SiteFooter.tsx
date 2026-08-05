@@ -1,10 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
+import { todayIso } from "@/lib/lifecycle";
 
 const REPO_URL = "https://github.com/ForPublicOrg/governmentexamindia";
 const ATHENA_URL = "https://tryathena.dev";
 
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+/** "2026-08-05" → "5 Aug 2026". */
+function formatBuildDate(iso: string) {
+  const [year, month, day] = iso.split("-");
+  return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`;
+}
+
 export function SiteFooter() {
+  const buildDate = formatBuildDate(todayIso());
   return (
     <footer className="site-footer">
       <div className="page-shell footer-grid">
@@ -34,7 +44,11 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="page-shell footer-bottom">
-        <span>© {new Date().getFullYear()} Government Exam India</span>
+        {/* No year in the notice: it would be the *build* year, and this site
+            is a static export that can sit deployed across a New Year. The
+            build date is stated instead, which is a fact about the page and
+            tells a reader how fresh what they are looking at is. */}
+        <span>© Government Exam India · built {buildDate}</span>
         <div className="footer-credits">
           <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
             <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14">

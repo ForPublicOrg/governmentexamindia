@@ -78,6 +78,32 @@ export function toCalendarFeed(upcoming: CalendarEventInput[], history: Calendar
   return { exams: Array.from(exams.values()), events };
 }
 
+/**
+ * Which section a milestone belongs in, judged against `at`. The build files
+ * each milestone once, but a date does not stay in the future: read the page a
+ * week later and yesterday's exam is still sitting under "Current and
+ * upcoming" unless this is asked again in the browser.
+ *
+ * Mirrors the windowing in app/calendar/page.tsx — month-only entries are only
+ * ever as precise as their month.
+ */
+export function calendarSection(event: CalendarMilestone, at: string): 0 | 1 {
+  if (event.dt.length === 7) return event.dt >= at.slice(0, 7) ? 0 : 1;
+  return event.d >= at ? 0 : 1;
+}
+
+/** Soonest first for what is still to come, newest first for what has passed. */
+export function splitCalendar(events: CalendarMilestone[], at: string) {
+  const upcoming: CalendarMilestone[] = [];
+  const history: CalendarMilestone[] = [];
+  for (const event of events) {
+    (calendarSection(event, at) === 0 ? upcoming : history).push(event);
+  }
+  upcoming.sort((a, b) => a.d.localeCompare(b.d));
+  history.sort((a, b) => b.d.localeCompare(a.d));
+  return { upcoming, history };
+}
+
 export type CalendarFilterState = {
   query: string;
   examType: "All" | ExamType;

@@ -2,8 +2,19 @@ import { authorities, exams } from "../../lib/exams";
 import { indiaRegions } from "../../lib/discovery";
 import { validateRecords } from "./rules";
 
+/**
+ * Freshness findings are warnings here and errors under --strict-freshness.
+ * The build must not depend on the wall clock: a stage sliding into the past
+ * makes the data stale, not invalid, and blocking the build on it would stop
+ * the site being redeployed — leaving readers on exactly the stale copy the
+ * alarm is about. The daily source-watch job runs with the flag.
+ */
+const strictFreshness =
+  process.argv.includes("--strict-freshness") || process.env.STRICT_FRESHNESS === "1";
+
 const { errors, warnings } = validateRecords(exams, authorities, {
   referenceDate: process.env.DATA_REFERENCE_DATE,
+  freshness: strictFreshness ? "error" : "warning",
 });
 const coveredRegions = new Set(
   exams.flatMap((item) => item.regionCodes ?? (item.stateCode ? [item.stateCode] : [])),
@@ -29,7 +40,16 @@ if (uncovered.length) {
   else warnings.push(message);
 }
 
-if (warnings.length) console.warn(`Data warnings (${warnings.length}):\n- ${warnings.join("\n- ")}`);
+if (warnings.length) {
+  // Loud enough to notice, capped so a synchronised freshness cliff does not
+  // bury every other warning under hundreds of identical lines.
+  const shown = warnings.slice(0, 20);
+  const rest = warnings.length - shown.length;
+  console.warn(
+    `Data warnings (${warnings.length}):\n- ${shown.join("\n- ")}` +
+      (rest > 0 ? `\n- …and ${rest} more (run with --strict-freshness to fail on these)` : ""),
+  );
+}
 
 if (errors.length) {
   console.error(`Data validation failed (${errors.length}):\n- ${errors.join("\n- ")}`);
