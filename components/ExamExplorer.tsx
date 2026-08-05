@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useId, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useState, useSyncExternalStore } from "react";
 import { examTypeOptions, indiaRegions } from "@/lib/discovery";
 import type { EducationLevel, ExamType, GovernmentLevel } from "@/lib/exam-types";
 import { lifecyclePhaseMeta, lifecyclePhases } from "@/lib/lifecycle";
@@ -65,13 +65,85 @@ function formatIsoDate(iso: string) {
   return `${Number(day)} ${MONTHS[Number(month) - 1]} ${year}`;
 }
 
-function readSaved(): string[] {
+/*
+ * The query string and the saved list are external stores, so they are
+ * subscribed to rather than copied into state by an effect. An effect cannot
+ * run before the first render, which is why an earlier version deferred the
+ * read to a frame that never arrives in a tab the browser is not painting --
+ * a search link opened in a background tab came up unfiltered. The server
+ * snapshots below are what the static HTML was built with, so hydration still
+ * matches and the real values arrive in the render straight after it.
+ */
+
+const NO_SEARCH = "";
+const NO_SAVED: readonly string[] = [];
+
+function subscribeToUrl(onChange: () => void) {
+  window.addEventListener("popstate", onChange);
+  return () => window.removeEventListener("popstate", onChange);
+}
+
+const savedListeners = new Set<() => void>();
+let savedRaw: string | null = null;
+let savedList: readonly string[] = NO_SAVED;
+let storageWorks = true;
+
+function parseSaved(raw: string | null): readonly string[] {
   try {
-    const value: unknown = JSON.parse(localStorage.getItem(SAVED_KEY) ?? "[]");
-    return Array.isArray(value) ? value.filter((item): item is string => typeof item === "string") : [];
+    const value: unknown = JSON.parse(raw ?? "[]");
+    if (!Array.isArray(value)) return NO_SAVED;
+    const list = value.filter((item): item is string => typeof item === "string");
+    // Reusing the empty constant keeps the snapshot identical to the one the
+    // server rendered, so a reader with nothing saved costs no extra render.
+    return list.length ? list : NO_SAVED;
   } catch {
-    return [];
+    return NO_SAVED;
   }
+}
+
+/**
+ * React compares snapshots by identity, so the parsed list is cached against
+ * the raw string instead of being rebuilt — and handed back new — every render.
+ */
+function savedSnapshot(): readonly string[] {
+  if (!storageWorks) return savedList;
+  let raw: string | null;
+  try {
+    raw = localStorage.getItem(SAVED_KEY);
+  } catch {
+    storageWorks = false;
+    return savedList;
+  }
+  if (raw !== savedRaw) {
+    savedRaw = raw;
+    savedList = parseSaved(raw);
+  }
+  return savedList;
+}
+
+function subscribeToSaved(onChange: () => void) {
+  // `storage` only fires in the tabs that did not write, so saving notifies
+  // this one directly and other tabs through the event.
+  savedListeners.add(onChange);
+  window.addEventListener("storage", onChange);
+  return () => {
+    savedListeners.delete(onChange);
+    window.removeEventListener("storage", onChange);
+  };
+}
+
+function writeSaved(next: readonly string[]) {
+  const raw = JSON.stringify(next);
+  savedList = next;
+  try {
+    localStorage.setItem(SAVED_KEY, raw);
+    savedRaw = raw;
+  } catch {
+    // Storage can be blocked or full. Saving is an enhancement, so the list
+    // keeps working for this visit rather than the star going dead.
+    storageWorks = false;
+  }
+  for (const listener of savedListeners) listener();
 }
 
 function ExamResultCard({
@@ -155,7 +227,6 @@ type ExamExplorerProps = {
   /** Records rendered on the server. Keep this a bounded first page. */
   docs: SearchDoc[];
   compact?: boolean;
-  mode?: "catalogue" | "search";
   /**
    * Where to fetch the rest of the catalogue once JavaScript runs. Serialising
    * the whole index into the page instead would grow the HTML with every exam
@@ -164,14 +235,16 @@ type ExamExplorerProps = {
   indexUrl?: string;
 };
 
-export function ExamExplorer({ docs, compact = false, mode = "catalogue", indexUrl }: ExamExplorerProps) {
+export function ExamExplorer({ docs, compact = false, indexUrl }: ExamExplorerProps) {
   const controlId = useId();
-  const [filters, setFilters] = useState<ExplorerState>(defaultExplorerState);
-  const [savedOnlyReady, setSavedOnlyReady] = useState(false);
-  const [saved, setSaved] = useState<string[]>([]);
+  // Everything the reader changes is an override on top of what the URL and
+  // localStorage already say, so nothing has to be copied between the two.
+  const [edited, setEdited] = useState<ExplorerState | null>(null);
+  const [openedFilters, setOpenedFilters] = useState<boolean | null>(null);
   const [page, setPage] = useState(1);
-  const [filtersOpen, setFiltersOpen] = useState(false);
   const [loadedDocs, setLoadedDocs] = useState<SearchDoc[] | null>(null);
+  const search = useSyncExternalStore(subscribeToUrl, () => window.location.search, () => NO_SEARCH);
+  const saved = useSyncExternalStore(subscribeToSaved, savedSnapshot, () => NO_SAVED);
 
   useEffect(() => {
     if (!indexUrl) return;
@@ -203,6 +276,13 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue", indexU
     [years],
   );
 
+  const urlFilters = useMemo(
+    () => parseExplorerParams(new URLSearchParams(search), paramOptions),
+    [paramOptions, search],
+  );
+  const filters = edited ?? urlFilters;
+  const filtersOpen = openedFilters ?? facetFilterCount(filters) > 0;
+
   const hasActiveFilters =
     Boolean(filters.query.trim()) ||
     filters.education !== "All" ||
@@ -214,24 +294,15 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue", indexU
     filters.savedOnly;
   const activeFilterCount = facetFilterCount(filters);
 
-  // Read straight from the effect rather than waiting for a frame: this is what
-  // applies ?q= when the home typeahead sends someone here, and a frame never
-  // arrives in a tab that is not being painted (opened in the background, or
-  // restored behind another tab).
+  // Only once the reader has changed something: the URL they arrived on is
+  // theirs to keep, and rewriting it before the first render finishes would
+  // erase the very parameters this component is about to read.
   useEffect(() => {
-    const initialFilters = parseExplorerParams(new URLSearchParams(window.location.search), paramOptions);
-    setFilters(initialFilters);
-    setFiltersOpen(facetFilterCount(initialFilters) > 0);
-    setSaved(readSaved());
-    setSavedOnlyReady(true);
-  }, [paramOptions]);
-
-  useEffect(() => {
-    if (!savedOnlyReady) return;
-    const params = toExplorerParams(filters).toString();
+    if (!edited) return;
+    const params = toExplorerParams(edited).toString();
     const nextUrl = `${window.location.pathname}${params ? `?${params}` : ""}${window.location.hash}`;
     window.history.replaceState(window.history.state, "", nextUrl);
-  }, [filters, savedOnlyReady]);
+  }, [edited]);
 
   const results = useMemo(() => {
     let matches = applyFacets(uniqueDocs, {
@@ -269,30 +340,25 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue", indexU
   );
 
   const updateFilters = (patch: Partial<ExplorerState>) => {
-    setFilters((current) => ({ ...current, ...patch }));
+    // Pin the panel where it stands before changing anything. It holds the
+    // control being operated, so deriving its visibility from the facet count
+    // would shut it the moment the last facet went back to "All" — closing it
+    // over the reader's hands and dropping focus.
+    setOpenedFilters(filtersOpen);
+    setEdited({ ...filters, ...patch });
     setPage(1);
   };
 
   const toggleSaved = (slug: string) => {
-    setSaved((current) => {
-      const next = current.includes(slug) ? current.filter((item) => item !== slug) : [...current, slug];
-      try {
-        localStorage.setItem(SAVED_KEY, JSON.stringify(next));
-      } catch {
-        // Saving is an enhancement; filtering and navigation must still work.
-      }
-      return next;
-    });
+    writeSaved(saved.includes(slug) ? saved.filter((item) => item !== slug) : [...saved, slug]);
     setPage(1);
   };
 
   const reset = () => {
-    setFilters(defaultExplorerState);
+    setEdited(defaultExplorerState);
     setPage(1);
-    setFiltersOpen(false);
+    setOpenedFilters(false);
   };
-
-  const savedResultsLoading = mode === "search" && filters.savedOnly && !savedOnlyReady;
 
   return (
     <section className={`explorer${compact ? " explorer-compact" : ""}`} aria-labelledby={`${controlId}-title`}>
@@ -323,20 +389,14 @@ export function ExamExplorer({ docs, compact = false, mode = "catalogue", indexU
 
         <div className="filter-summary">
           <p role="status" aria-live="polite" aria-atomic="true">
-            {savedResultsLoading ? (
-              "Loading saved exams"
-            ) : (
-              <>
-                <strong>{results.length}</strong> {results.length === 1 ? "exam" : "exams"}
-                {activeFilterCount ? ` · ${activeFilterCount} active` : ""}
-              </>
-            )}
+            <strong>{results.length}</strong> {results.length === 1 ? "exam" : "exams"}
+            {activeFilterCount ? ` · ${activeFilterCount} active` : ""}
           </p>
           <div>
             <button
               type="button"
               className={`saved-filter${filtersOpen ? " is-active" : ""}`}
-              onClick={() => setFiltersOpen((current) => !current)}
+              onClick={() => setOpenedFilters(!filtersOpen)}
               aria-expanded={filtersOpen}
               aria-controls={`${controlId}-filters`}
             >

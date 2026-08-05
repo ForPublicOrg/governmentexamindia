@@ -2369,9 +2369,9 @@ export const exams: Exam[] = [
     status: {
       label: "Selection in progress",
       tone: "violet",
-      nextAction: "Attend the final sports-category certificate verification on 4 Aug 2026 if called, and watch the board's notices",
+      nextAction: "Watch the board's notices for the merit list and web counselling; the final sports-category verification was called for 4 Aug 2026",
       detail:
-        "The board's public notice issues a final call for sports-category certificate verification for Civil Assistant Surgeon posts on a regular basis under Notification No.13/2025 dated 4 Sep 2025, at the Sports Authority of Andhra Pradesh office in Vijayawada on 4 Aug 2026, for candidates who did not attend on 23 Jul 2026.",
+        "The board's public notice issued a final call for sports-category certificate verification for Civil Assistant Surgeon posts on a regular basis under Notification No.13/2025 dated 4 Sep 2025, at the Sports Authority of Andhra Pradesh office in Vijayawada on 4 Aug 2026, for candidates who did not attend on 23 Jul 2026.",
     },
     summary:
       "Direct recruitment of Civil Assistant Surgeons on a regular basis by the Andhra Pradesh Medical Services Recruitment Board.",
@@ -2388,7 +2388,7 @@ export const exams: Exam[] = [
       { label: "Online applications open", date: "2025-09-11", displayDate: "11 Sep 2025", state: "completed" },
       { label: "Application deadline", date: "2025-10-10", displayDate: "10 Oct 2025", state: "completed" },
       { label: "Sports-category certificate verification", date: "2026-07-23", displayDate: "23 Jul 2026", state: "completed" },
-      { label: "Final call for sports-category certificate verification", date: "2026-08-04", displayDate: "4 Aug 2026", state: "scheduled", note: "At the Sports Authority of Andhra Pradesh office, IGMC Stadium, M.G. Road, Labbipet, Vijayawada, at 10.00 AM" },
+      { label: "Final call for sports-category certificate verification", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed", note: "At the Sports Authority of Andhra Pradesh office, IGMC Stadium, M.G. Road, Labbipet, Vijayawada, at 10.00 AM" },
     ],
     eligibility: [
       "This record covers candidates registered under Notification No.13/2025 for Civil Assistant Surgeon posts on a regular basis.",

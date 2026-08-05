@@ -274,6 +274,25 @@ test("home matches while typing, and Enter opens the full search rather than the
     "hovering must not arm Enter; :hover already paints the row",
   );
 
+  // ?q= has to survive a tab that is never painted, so the query string is
+  // subscribed to rather than copied into state once a frame comes along.
+  assert.match(
+    explorerSource,
+    /useSyncExternalStore\(subscribeToUrl/,
+    "the explorer should read the query string as an external store",
+  );
+  assert.doesNotMatch(
+    explorerSource,
+    /requestAnimationFrame/,
+    "a frame never arrives in a background tab, so the filters would never apply",
+  );
+  // The panel holds the control being operated. Deriving its visibility from
+  // the live facet count shuts it the moment the last facet returns to "All".
+  assert.match(
+    explorerSource,
+    /const updateFilters = \([\s\S]{0,400}?setOpenedFilters\(filtersOpen\)/,
+    "changing a facet must pin the filter panel open rather than let it derive shut",
+  );
   assert.match(explorerSource, /type=["']search["']/, "search explorer should expose a search input");
   assert.match(explorerSource, /onChange=/, "search explorer should update while the user types");
   assert.match(explorerSource, /onKeyDown=/, "search explorer should handle Enter explicitly");
@@ -306,7 +325,7 @@ test("the catalogue and dedicated route use a compact, complete ranked search", 
   assert.match(catalogueSource, /<ExamCollection items=\{currentHighlights\}/);
   assert.match(catalogueSource, /href="\/search"/);
   assert.match(searchPageSource, /\.map\(toSearchDoc\)/);
-  assert.match(searchPageSource, /<ExamExplorer docs=\{searchDocs\} mode="search"/);
+  assert.match(searchPageSource, /<ExamExplorer docs=\{searchDocs\}/);
   // The page must server-render a bounded first page and let the browser pull
   // the rest, so the HTML does not grow with every exam added to the index.
   assert.match(searchPageSource, /exams\.slice\(0, SSR_DOCS\)/);

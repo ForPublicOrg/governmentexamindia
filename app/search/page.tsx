@@ -25,7 +25,7 @@ export default function SearchPage() {
         <span className="eyebrow">{exams.length} exam cycles</span>
         <h1>Find an exam</h1>
       </header>
-      <ExamExplorer docs={searchDocs} mode="search" indexUrl="/search-index.json?v=2" />
+      <ExamExplorer docs={searchDocs} indexUrl="/search-index.json?v=2" />
     </div>
   );
 }
