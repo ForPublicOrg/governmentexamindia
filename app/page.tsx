@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import Link from "next/link";
 import { IndiaStateMap } from "@/components/IndiaStateMap";
 import { InstantExamSearch } from "@/components/InstantExamSearch";
@@ -318,6 +319,8 @@ export default function Home() {
         </p>
         <Link href="/methodology#coverage" prefetch={false}>See coverage →</Link>
       </section>
+
+      <Analytics />
     </>
   );
 }
