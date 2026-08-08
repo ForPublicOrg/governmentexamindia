@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile, stat } from "node:fs/promises";
+import { access, readdir, readFile, stat } from "node:fs/promises";
 import test from "node:test";
 import { gzipSync } from "node:zlib";
 
@@ -382,4 +382,38 @@ test("exports calendar, sources, updates, state and exam-type routes", async () 
   assert.match(await tamilNadu.text(), /Tamil Nadu(?:<!-- -->)? exams/);
   assert.match(await types.text(), /Browse by work/);
   assert.match(await railways.text(), /RRB NTPC/);
+});
+
+// `trailingSlash: true` means the slashless form of every route only 308s to
+// the real one. A crawler handed the slashless form reports a redirect instead
+// of a page, so neither the sitemap nor our own markup may point at one.
+test("advertises only the URLs that answer with a page, never their redirects", async () => {
+  const siteOrigin = "https://governmentexamindia.com";
+  const sitemap = await readFile(new URL("sitemap.xml", outputRoot), "utf8");
+  const locations = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+
+  assert.ok(locations.length > 100, `expected the full catalogue in the sitemap, got ${locations.length}`);
+  const offsite = locations.filter((location) => !location.startsWith(`${siteOrigin}/`));
+  assert.deepEqual(offsite, [], "every sitemap entry must sit on the canonical origin");
+  const slashless = locations.filter((location) => !location.endsWith("/"));
+  assert.deepEqual(slashless.slice(0, 5), [], `${slashless.length} sitemap entries point at a redirect`);
+
+  // The same rule applies to the markup. next/link adds the slash for us, so a
+  // violation here means a hand-written anchor (the SVG state map cannot use
+  // next/link) has drifted away from how the routes are actually served.
+  const pages = (await readdir(outputRoot, { recursive: true })).filter((entry) => entry.endsWith(".html"));
+  const redirected = new Map();
+  for (const page of pages) {
+    const html = await readFile(new URL(page, outputRoot), "utf8");
+    for (const [, href] of html.matchAll(/href="(\/[^"]*)"/g)) {
+      const path = href.replace(/[#?].*$/, "");
+      if (path === "/" || path.startsWith("/_next/") || /\.[a-z0-9]+$/i.test(path)) continue;
+      if (!path.endsWith("/")) redirected.set(path, page);
+    }
+  }
+  assert.deepEqual(
+    [...redirected].slice(0, 5),
+    [],
+    `${redirected.size} internal links point at a redirect rather than the page itself`,
+  );
 });

@@ -25,8 +25,12 @@ export function IndiaStateMap() {
           const intensity = Math.min(count, 3);
           const label = `${region.name}: ${count ? `${count} explicitly tagged recruitment ${count === 1 ? "cycle" : "cycles"}` : "no state-specific cycle in the index"}`;
 
+          // Plain anchors, not next/link, because these live inside the SVG.
+          // That also means the trailing slash `trailingSlash: true` implies is
+          // not added for us, and without it every state link on the home page
+          // is a redirect rather than a crawlable destination.
           return (
-            <a href={`/states/${region.slug}`} aria-label={label} className="map-link" key={region.code}>
+            <a href={`/states/${region.slug}/`} aria-label={label} className="map-link" key={region.code}>
               <title>{label}</title>
               <path d={shape.d} className={`map-shape map-intensity-${intensity}`} />
             </a>
