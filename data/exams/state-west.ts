@@ -808,11 +808,11 @@ export const exams: Exam[] = [
     examTypes: ["Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Applications open; closes 7 Aug",
-      tone: "green",
-      nextAction: "Apply by 7 Aug 2026",
+      label: "Applications closed 7 Aug; interview awaited",
+      tone: "violet",
+      nextAction: "Watch ddd.gov.in for the interview date and time",
       detail:
-        "The Office of the Secretary (Revenue and Disaster Management) opened this contractual professional-staff engagement on 16 July 2026 and the UT Administration's own recruitment listing shows it closing on 7 August 2026.",
+        "The UT Administration's own recruitment listing still shows this engagement closing on 7 August 2026, with no extension shown. Notice No. 27/UTEOC/DM/SFDRR/2023-24/01 states the interview date and time will be uploaded on ddd.gov.in; no date was shown on the pages reviewed on 10 Aug 2026.",
     },
     summary: "Professional staff recruitment for the Union Territory Disaster Management Cell under the Revenue and Disaster Management Secretariat.",
     vacancyLabel: NOT_ANNOUNCED,
@@ -855,12 +855,21 @@ export const exams: Exam[] = [
     ],
     timeline: [
       { label: "Notice published", date: "2026-07-16", displayDate: "16 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-07", displayDate: "7 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
+      { label: "Interview", displayDate: "Date and time to be announced on ddd.gov.in", state: "tentative" },
     ],
     sourceTitle: "DNHDD recruitment notice for Disaster Management Cell professional staff",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/20260716628244246.pdf",
-    sourcePublished: "Official listing open 16 Jul to 7 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:20 IST",
+    sourcePublished:
+      "Official listing open 16 Jul to 7 Aug 2026; ddd.gov.in recruitment listing re-checked 10 Aug 2026 still shows the 7 Aug 2026 close date with no extension",
+    lastVerified: "10 Aug 2026, 11:20 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Application deadline of 7 Aug 2026 passed with no extension shown on the UT recruitment listing; marked the deadline event completed and moved status from applications-open to applications-closed with the interview date awaited, per notice No. 27/UTEOC/DM/SFDRR/2023-24/01.",
+      },
+    ],
   }),
   exam({
     slug: "dnhdd-samagra-shiksha-tgt-pgt-walk-in-2026",
@@ -1054,11 +1063,11 @@ export const exams: Exam[] = [
     examTypes: ["Health & Medical", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Applications open; closes 8 Aug",
-      tone: "green",
-      nextAction: "Submit the Annexure I application before 8 Aug 2026",
+      label: "Applications closed 8 Aug; interview awaited",
+      tone: "violet",
+      nextAction: "Watch ddd.gov.in and the NHM office for the interview schedule",
       detail:
-        "The Department of Health and Family Welfare published this short term contract advertisement on 30 July 2026 and receives applications at the National Health Mission office, Moti Daman, before 8 August 2026.",
+        "The UT Administration's own recruitment listing still shows this short term contract engagement closing on 8 August 2026, with no extension shown. Advertisement No. NHM/ABDM/Interview/2025-26/2017 provides for an interview under the same file number; no interview date was shown on the pages reviewed on 10 Aug 2026.",
     },
     summary:
       "Short term contract engagement of a Project Manager (IT), an MIS/Data Analyst and a Project Manager (Coordination) under the Ayushman Bharat Digital Mission in the UT Department of Health and Family Welfare.",
@@ -1082,7 +1091,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement published", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed" },
       { label: "Age reckoned as on", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
-      { label: "Last date to submit the application", date: "2026-08-08", displayDate: "8 Aug 2026 (Saturday)", state: "current" },
+      { label: "Last date to submit the application", date: "2026-08-08", displayDate: "8 Aug 2026 (Saturday)", state: "completed" },
+      { label: "Interview", displayDate: "Date to be announced", state: "tentative" },
     ],
     eligibility: [
       "The three positions are filled on short term contract basis under the Ayushman Bharat Digital Mission in the Department of Health and Family Welfare of the UT of Dadra and Nagar Haveli and Daman and Diu.",
@@ -1118,8 +1128,16 @@ export const exams: Exam[] = [
     sourceTitle:
       "Department of Health and Family Welfare, UT of DNH and DD — advertisement No. NHM/ABDM/Interview/2025-26/2017",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/20260730144737518.pdf",
-    sourcePublished: "Advertisement dated 30 Jul 2026; UT listing open 30 Jul to 8 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:40 IST",
+    sourcePublished:
+      "Advertisement dated 30 Jul 2026; UT listing open 30 Jul to 8 Aug 2026; ddd.gov.in recruitment listing re-checked 10 Aug 2026 still shows the 8 Aug 2026 close date with no extension",
+    lastVerified: "10 Aug 2026, 11:35 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Application deadline of 8 Aug 2026 passed with no extension shown on the UT recruitment listing; marked the deadline event completed and moved status from applications-open to applications-closed with the interview date awaited, per advertisement No. NHM/ABDM/Interview/2025-26/2017.",
+      },
+    ],
   }),
   exam({
     slug: "rpsc-ras-combined-competitive-exam-2026",
@@ -2944,11 +2962,11 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["ITI / Diploma", "Graduate"],
     status: {
-      label: "Applications open 5 Aug 2026",
-      tone: "blue",
-      nextAction: "Online applications from 5 to 25 Aug 2026",
+      label: "Applications open; closes 25 Aug 2026",
+      tone: "green",
+      nextAction: "Apply online for JEn-I, Junior Accountant or Junior Assistant/Commercial Assistant-II by 25 Aug 2026",
       detail:
-        "RVUN's official portal announces the detailed advertisement for common recruitment in the state power companies and states that the online application form for Junior Engineer-I, Junior Accountant and Junior Assistant/Commercial Assistant-II can be filled from 5 to 25 August 2026.",
+        "RVUN's Recruitment 2026-27 page now shows a live \"Apply Online\" link to the registration portal alongside the short and detailed advertisements, confirming the online application window opened as scheduled on 5 August 2026 and runs to 25 August 2026.",
     },
     summary:
       "Single common recruitment for Rajasthan's five state power companies — the generation company RVUN, the transmission company RVPN and the distribution companies JVVN, AVVN and JdVVN — to Junior Engineer-I, Junior Accountant and Junior Assistant/Commercial Assistant-II posts.",
@@ -2964,8 +2982,8 @@ export const exams: Exam[] = [
     pay: "As prescribed in the detailed advertisement for the 2026-27 common recruitment; no pay figure is asserted here.",
     timeline: [
       { label: "Detailed advertisement announced", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
-      { label: "Online application window opens", date: "2026-08-05", displayDate: "5 Aug 2026", state: "scheduled" },
-      { label: "Online application deadline", date: "2026-08-25", displayDate: "25 Aug 2026", state: "scheduled" },
+      { label: "Online application window opens", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed" },
+      { label: "Online application deadline", date: "2026-08-25", displayDate: "25 Aug 2026", state: "current" },
     ],
     eligibility: [
       "This is a single common recruitment across RVUN, RVPN, JVVN, AVVN and JdVVN — one application covers the participating companies, and allotment follows the detailed advertisement.",
@@ -3011,8 +3029,16 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Rajasthan Rajya Vidyut Utpadan Nigam — common recruitment 2026-27 announcement and press release",
     sourceUrl: "https://energy.rajasthan.gov.in/rrvun/",
-    sourcePublished: "Portal announcement and press release dated 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:25 IST",
+    sourcePublished:
+      "Portal announcement and press release dated 4 Aug 2026; Recruitment 2026-27 page shows a live Apply Online link and was last updated 7 Aug 2026",
+    lastVerified: "10 Aug 2026, 11:05 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "RVUN's Recruitment 2026-27 page confirmed the online application window opened on schedule on 5 Aug 2026, with a live Apply Online link now shown; marked that timeline event completed and moved status from an upcoming opening to applications open against the 25 Aug 2026 deadline.",
+      },
+    ],
   }),
   listedExam({
     slug: "rajcrb-cooperative-bank-recruitment",

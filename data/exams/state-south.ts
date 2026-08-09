@@ -384,10 +384,10 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 5 Aug 2026",
-      detail: "Kerala PSC included Category 44/2026 in the 30 June extraordinary gazette batch.",
+      label: "Applications closed; next stage awaited",
+      tone: "amber",
+      nextAction: "Watch the OTR profile and Kerala PSC's examination calendar for confirmation of a test or the advice memo",
+      detail: "Applications for Category 44/2026 closed 5 Aug 2026. The 30 June extraordinary gazette batch page and the notification carry no corrigendum or extension, and no written/OMR test date has been published for this category.",
     },
     summary: "Direct recruitment for Assistant Engineer (Electrical) in the Kerala State Housing Board.",
     vacancies: 1,
@@ -399,7 +399,7 @@ export const exams: Exam[] = [
     pay: "Rs 51,400-1,10,300 (Kerala State Housing Board scale per Category 44/2026).",
     timeline: [
       { label: "Gazette notification", date: "2026-06-30", displayDate: "30 Jun 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-05", displayDate: "5 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Method of appointment is Direct Recruitment; no application fee is charged.",
@@ -419,7 +419,10 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 044/2026 — Assistant Engineer (Electrical), Kerala State Housing Board",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-06/noti-44-26.pdf",
     sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026",
-    lastVerified: "4 Aug 2026, 16:15 IST",
+    lastVerified: "10 Aug 2026, 11:05 IST",
+    changeLog: [
+      { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 5 Aug 2026 with no corrigendum, extension or test date published on Kerala PSC's site; moved status from 'Applications open' (green) to 'next stage awaited' (amber) and marked the application-deadline event completed." },
+    ],
     keywords: [
       "Kerala PSC",
       "KPSC",
@@ -452,10 +455,10 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 5 Aug 2026",
-      detail: "Category 47/2026 is part of Kerala PSC's 30 June extraordinary gazette batch.",
+      label: "Applications closed; next stage awaited",
+      tone: "amber",
+      nextAction: "Watch the OTR profile and Kerala PSC's examination calendar for the confirmation window or the physical measurement/PET call",
+      detail: "Applications for Category 47/2026 closed 5 Aug 2026. The 30 June extraordinary gazette batch page and the notification carry no corrigendum or extension, and no examination or PET date has been published for this category.",
     },
     summary: "Kerala Fire and Rescue Services recruitment for Station Officer (Trainee).",
     vacancies: 1,
@@ -467,7 +470,7 @@ export const exams: Exam[] = [
     pay: "Rs 43,400-91,200 (Fire and Rescue Services scale per Category 47/2026).",
     timeline: [
       { label: "Gazette notification", date: "2026-06-30", displayDate: "30 Jun 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-05", displayDate: "5 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Differently abled candidates and women are not eligible to apply for this post.",
@@ -495,7 +498,10 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 047/2026 — Station Officer (Trainee), Fire and Rescue Services",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-06/noti-47-26.pdf",
     sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026",
-    lastVerified: "4 Aug 2026, 16:20 IST",
+    lastVerified: "10 Aug 2026, 11:10 IST",
+    changeLog: [
+      { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 5 Aug 2026 with no corrigendum, extension or test date published on Kerala PSC's site; moved status from 'Applications open' (green) to 'next stage awaited' (amber) and marked the application-deadline event completed." },
+    ],
     keywords: [
       "Kerala PSC",
       "KPSC",
@@ -671,11 +677,11 @@ export const exams: Exam[] = [
     education: ["Graduate", "Postgraduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications close 7 Aug 2026",
-      tone: "green",
-      nextAction: "Post the Annexure-A application to the Principal, Government Polytechnic College, Minicoy by 7 Aug 2026",
+      label: "Applications closed; checklist due around 11 Aug 2026",
+      tone: "blue",
+      nextAction: "Watch the Lakshadweep recruitment notices page for the checklist (tentative 11 Aug 2026) and final list (tentative 14 Aug 2026)",
       detail:
-        "The Directorate of Education's Employment Notice, File No. LD-23004/1/2025-Acd-Wng-Dir of Edn (1)/643 dated 15 Jul 2026, is preparing a merit panel of Lecturers in Mechanical Engineering for the Government Polytechnic College, Minicoy. The recruitment index lists the notice until 16 Aug 2026, but the notice itself fixes 7 Aug 2026 as the last date for applications.",
+        "The application window fixed by the Directorate of Education's Employment Notice, File No. LD-23004/1/2025-Acd-Wng-Dir of Edn (1)/643 dated 15 Jul 2026, closed 7 Aug 2026 with no extension found on the Lakshadweep recruitment notices page. The notice's own schedule anticipates a checklist around 11 Aug 2026 and a final list around 14 Aug 2026, ahead of an interview to be intimated by email.",
     },
     summary: "Panel preparation for contract faculty engagement — Lecturer in Mechanical Engineering — at the Government Polytechnic College, Minicoy, Lakshadweep.",
     vacancyLabel: "Merit panel; no vacancy number notified",
@@ -689,7 +695,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Employment Notice issued", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "Follow-up notice on checklist and final list responsibilities", date: "2026-07-23", displayDate: "23 Jul 2026", state: "completed" },
-      { label: "Last date for submission of applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "current" },
+      { label: "Last date for submission of applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
       { label: "Publishing of checklist (tentative)", date: "2026-08-11", displayDate: "11 Aug 2026", state: "scheduled" },
       { label: "Publishing of final list (tentative)", date: "2026-08-14", displayDate: "14 Aug 2026", state: "scheduled" },
       { label: "Online / physical interview", displayDate: "To be intimated through mail; date not announced", state: "tentative" },
@@ -719,7 +725,10 @@ export const exams: Exam[] = [
     sourceTitle: "Employment Notice — Preparation of panel for the engagement of faculty on contract basis in Polytechnic College, Minicoy",
     sourceUrl: "https://cdn.s3waas.gov.in/s358238e9ae2dd305d79c2ebc8c1883422/uploads/2026/07/17841973661799.pdf",
     sourcePublished: "Notice dated 15 Jul 2026; last date for applications 7 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:20 IST",
+    lastVerified: "10 Aug 2026, 11:15 IST",
+    changeLog: [
+      { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 7 Aug 2026 with no extension found on the Lakshadweep recruitment notices page; moved status from 'Applications open' (green) to reflect the closed window and the notice's own tentative checklist (11 Aug) and final list (14 Aug) dates, and marked the deadline event completed." },
+    ],
     keywords: [
       "Lakshadweep recruitment",
       "ലക്ഷദ്വീപ്",
@@ -1417,10 +1426,10 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Exam on 8-9 Aug 2026; admit card released",
-      tone: "blue",
-      nextAction: "Download the K-TET February 2026 admit card and attend on the notified date",
-      detail: "Pareeksha Bhavan moved the K-TET February 2026 examination to 8 and 9 Aug 2026 and has published the admit card; registration had earlier been reopened until 5 Jun 2026.",
+      label: "Examination held 8-9 Aug 2026; result awaited",
+      tone: "violet",
+      nextAction: "Watch the K-TET website for the answer key and result",
+      detail: "The K-TET February 2026 examination was held on 8 and 9 Aug 2026 as notified. Pareeksha Bhavan's site does not yet list an answer key or result for this cycle; registration had earlier been reopened until 5 Jun 2026.",
     },
     summary: "Kerala's teacher eligibility test, run by Pareeksha Bhavan under the Right to Education Act, in four categories covering Lower Primary, Upper Primary, High School and language/specialist/physical-education teachers.",
     vacancyLabel: "Eligibility test — no vacancies",
@@ -1434,7 +1443,7 @@ export const exams: Exam[] = [
       { label: "Last date for online application (extended)", date: "2026-03-21", displayDate: "21 Mar 2026", state: "completed", note: "Final printout also due 21 Mar 2026" },
       { label: "Registration reopened", date: "2026-06-05", displayDate: "Reopened until 5 Jun 2026, 5:00 PM", state: "completed" },
       { label: "Admit card published", displayDate: "Published — exact date not announced on the K-TET site", state: "current" },
-      { label: "Examination", date: "2026-08-08", displayDate: "8-9 Aug 2026", state: "scheduled", note: "Rescheduled from the dates first notified" },
+      { label: "Examination", date: "2026-08-08", displayDate: "8-9 Aug 2026", state: "completed", note: "Rescheduled from the dates first notified" },
     ],
     eligibility: [
       "Category I is for Lower Primary classes, Category II for Upper Primary classes, Category III for High School classes, and Category IV for language teachers (Arabic, Hindi, Sanskrit, Urdu up to UP classes), specialist teachers (Art & Craft) and physical education teachers.",
@@ -1460,7 +1469,10 @@ export const exams: Exam[] = [
     sourceTitle: "Kerala Pareeksha Bhavan — K-TET February 2026 notification and announcements",
     sourceUrl: "https://ktet.kerala.gov.in/downloads/feb2026/feb2026.pdf",
     sourcePublished: "Application window 26 Feb - 21 Mar 2026, reopened to 5 Jun 2026; exam date changed to 8-9 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:55 IST",
+    lastVerified: "10 Aug 2026, 11:25 IST",
+    changeLog: [
+      { date: "2026-08-10", displayDate: "10 Aug 2026", text: "The 8-9 Aug 2026 examination has taken place; marked the Examination timeline event completed and moved status from 'Exam scheduled' (blue) to 'Result awaited' (violet) since no answer key or result is yet published on the K-TET site." },
+    ],
     keywords: [
       "KTET",
       "K-TET",
@@ -1810,11 +1822,11 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications close 6 Aug 2026",
-      tone: "green",
-      nextAction: "Send the prescribed application to the State Project Officer, Lakshadweep Samagra Shiksha, Kavaratti by 5:00 PM on 6 Aug 2026",
+      label: "Applications closed; registration and interview on 20 Aug 2026",
+      tone: "blue",
+      nextAction: "Report for registration 09:30-10:30 AM and the interview from 11:00 AM on 20 Aug 2026 at the Directorate of Education, Kavaratti",
       detail:
-        "Employment Notice F. No. 1/8/2018 - Edn (SMSA)/64, dated 27 Jul 2026, invites applications for one Computer Programmer on contract at the Samagra Shiksha State Project Office, Kavaratti. Registration and interview are fixed for 20 Aug 2026 at the Directorate of Education, Kavaratti. The recruitment index lists the notice until 21 Aug 2026, but the notice itself fixes 6 Aug 2026 as the last date for applications.",
+        "The application window fixed by Employment Notice F. No. 1/8/2018 - Edn (SMSA)/64, dated 27 Jul 2026, closed 6 Aug 2026 with no extension found on the Lakshadweep recruitment notices page. Registration and interview remain fixed for 20 Aug 2026 at the Directorate of Education, Kavaratti.",
     },
     summary: "Contract engagement of a Computer Programmer at the Samagra Shiksha State Project Office of the Directorate of Education, Kavaratti, Lakshadweep.",
     vacancies: 1,
@@ -1827,7 +1839,7 @@ export const exams: Exam[] = [
     pay: "Rs 23,000 per month (consolidated), on contract basis.",
     timeline: [
       { label: "Employment Notice issued", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed", note: "F. No. 1/8/2018 - Edn (SMSA)/64" },
-      { label: "Last date for receipt of applications", date: "2026-08-06", displayDate: "6 Aug 2026, 5:00 PM", state: "current" },
+      { label: "Last date for receipt of applications", date: "2026-08-06", displayDate: "6 Aug 2026, 5:00 PM", state: "completed" },
       { label: "Registration and interview", date: "2026-08-20", displayDate: "20 Aug 2026", state: "scheduled", note: "Registration 09:30-10:30 AM, interview 11:00 AM onwards, Directorate of Education, Kavaratti" },
     ],
     eligibility: [
@@ -1852,8 +1864,9 @@ export const exams: Exam[] = [
     sourceTitle: "Employment Notice — Computer Programmer on contract basis under Samagra Shiksha, State Project Office, Directorate of Education, Kavaratti",
     sourceUrl: "https://cdn.s3waas.gov.in/s358238e9ae2dd305d79c2ebc8c1883422/uploads/2026/07/17851558532471.pdf",
     sourcePublished: "Notice dated 27 Jul 2026; last date 6 Aug 2026; interview 20 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:25 IST",
+    lastVerified: "10 Aug 2026, 11:20 IST",
     changeLog: [
+      { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 6 Aug 2026 with no extension found on the Lakshadweep recruitment notices page; moved status from 'Applications open' (green) to reflect the closed window and the confirmed 20 Aug 2026 registration/interview date, and marked the deadline event completed." },
       { date: "2026-08-04", displayDate: "4 Aug 2026", text: "Deadline corrected to 6 Aug 2026 after reading the Employment Notice itself; the recruitment index's 21 Aug 2026 end date is only the notice's display period." },
     ],
     keywords: [
@@ -2517,11 +2530,11 @@ export const exams: Exam[] = [
     education: ["Graduate", "Postgraduate"],
     verification: "verified",
     status: {
-      label: "Examination postponed",
-      tone: "red",
-      nextAction: "Wait for the fresh examination dates on the Puducherry recruitment portal",
+      label: "Written examination tentatively scheduled for 21-23 Aug 2026",
+      tone: "blue",
+      nextAction: "Watch the Puducherry recruitment portal for hall-ticket instructions confirming the schedule",
       detail:
-        "The Puducherry Examining Authority's notice No.A-12011/114/2026/PEA/73042, dated 31 Jul 2026, postpones the CGL Examination-2025 — tentatively scheduled from 9 to 12 Aug 2026 — for administrative reasons, and says fresh dates will be announced in due course.",
+        "The Puducherry Examining Authority's notice No.A-34012/3/E-5/PEA/2025, dated 6 Aug 2026, gives a tentative schedule for the CGL Examination-2025 after its earlier postponement (notice No.A-12011/114/2026/PEA/73042, dated 31 Jul 2026): Paper-II B papers post-wise on 21-22 Aug 2026, the common Paper-I on the morning of 23 Aug 2026, and the Upper Division Clerk Paper-II on the afternoon of 23 Aug 2026. The notice says hall-ticket instructions will be published shortly.",
     },
     summary:
       "Puducherry's combined graduate-level recruitment, run by the Puducherry Examining Authority for 327 posts across eight post codes including Upper Division Clerk, Statistical Inspector, Agriculture Officer and Library and Information Assistant.",
@@ -2540,7 +2553,13 @@ export const exams: Exam[] = [
       { label: "Online application closes", date: "2025-12-14", displayDate: "14 Dec 2025, 3:00 PM", state: "completed" },
       { label: "Postponement notice", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed", note: "No.A-12011/114/2026/PEA/73042" },
       { label: "Written examination (tentatively fixed)", date: "2026-08-09", displayDate: "9-12 Aug 2026", state: "postponed", note: "Postponed for administrative reasons" },
-      { label: "Fresh examination dates", displayDate: "To be announced", state: "tentative" },
+      {
+        label: "Written examination (revised tentative schedule)",
+        date: "2026-08-21",
+        displayDate: "21-23 Aug 2026",
+        state: "tentative",
+        note: "Notice No.A-34012/3/E-5/PEA/2025 dated 6 Aug 2026: Paper-II B papers 21-22 Aug, common Paper-I 23 Aug morning, UDC Paper-II 23 Aug afternoon",
+      },
     ],
     eligibility: [
       "Only applications successfully filed through the Puducherry online recruitment portal are accepted; candidature is provisional at every stage.",
@@ -2562,16 +2581,22 @@ export const exams: Exam[] = [
       "Minimum qualifying marks in each paper: 30% for UR, 25% for OBC/MBC/EBC/BCM/BT/EWS and 20% for SC/ST/PwBD/XSM.",
     ],
     officialLinks: [
+      { label: "Notice announcing the tentative examination schedule (6 Aug 2026)", url: "https://recruitment.py.gov.in/files/2195/cgl2025-exam-date", type: "notice" },
       { label: "Notice postponing the CGL Examination-2025 (31 Jul 2026)", url: "https://recruitment.py.gov.in/files/2192/cgl2025-postponed-notice", type: "notice" },
       { label: "Advertisement No.01/CGL/PEA/2025 (notification)", url: "https://recruitment.py.gov.in/recruitment/ao2025/show-notification", type: "notice" },
       { label: "Puducherry recruitment news and notifications", url: "https://recruitment.py.gov.in/news-and-notification", type: "website" },
       { label: "Puducherry recruitment portal", url: "https://recruitment.py.gov.in/", type: "website" },
     ],
-    sourceTitle: "Puducherry Examining Authority — Notice dated 31 Jul 2026 postponing the Combined Graduate Level Examination-2025",
-    sourceUrl: "https://recruitment.py.gov.in/files/2192/cgl2025-postponed-notice",
-    sourcePublished: "Advertisement dated 16 Nov 2025; postponement notice dated 31 Jul 2026",
-    lastVerified: "4 Aug 2026, 21:15 IST",
+    sourceTitle: "Puducherry Examining Authority — Notice No.A-34012/3/E-5/PEA/2025 dated 6 Aug 2026, tentative schedule for the Combined Graduate Level Examination-2025",
+    sourceUrl: "https://recruitment.py.gov.in/files/2195/cgl2025-exam-date",
+    sourcePublished: "Advertisement dated 16 Nov 2025; postponement notice dated 31 Jul 2026; tentative schedule notice dated 6 Aug 2026",
+    lastVerified: "10 Aug 2026, 11:45 IST",
     changeLog: [
+      {
+        date: "2026-08-06",
+        displayDate: "6 Aug 2026",
+        text: "Puducherry Examining Authority notice No.A-34012/3/E-5/PEA/2025 gives a tentative revised schedule for the CGL Examination-2025 written test — Paper-II B papers on 21-22 Aug 2026, and the common Paper-I plus the UDC Paper-II on 23 Aug 2026 — after the 31 Jul 2026 postponement. Status changed from postponed to tentatively scheduled.",
+      },
       { date: "2026-07-31", displayDate: "31 Jul 2026", text: "CGL Examination-2025, tentatively fixed for 9-12 Aug 2026, postponed for administrative reasons; fresh dates awaited." },
     ],
     keywords: [
@@ -2885,11 +2910,11 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Post the Annexure-I application to the Member Secretary, Puducherry Examining Authority and email the scanned set to dpar-exam@py.gov.in by 7 Aug 2026",
+      label: "Applications closed; selection process awaited",
+      tone: "amber",
+      nextAction: "Watch the Puducherry recruitment portal's news and notification page for the selection or engagement announcement",
       detail:
-        "Circular No.A-12011/31/2026/PEA/62504 dated 17 Jul 2026 re-circulates the Puducherry Examining Authority's notification for fresh applications and fixes 7 Aug 2026 as the last date, keeping the eligibility and other conditions unchanged. The circular's reference line cites a notification of even number dated 04.06.2026, while the notification enclosed with it is dated 10.06.2026.",
+        "Applications closed 7 Aug 2026 under Circular No.A-12011/31/2026/PEA/62504's extended deadline; the Department's news and notification page carries no update after 17 Jul 2026 and no interview or selection date has been published.",
     },
     summary:
       "Engagement of one retired Puducherry Government official as a full-time Consultant (Legal) on contract in the Puducherry Examining Authority, to monitor recruitment litigation before the CAT, the Madras High Court and the Supreme Court.",
@@ -2906,7 +2931,7 @@ export const exams: Exam[] = [
       { label: "Notification enclosed with the circular", date: "2026-06-10", displayDate: "10 Jun 2026", state: "completed", note: "No.A-12011/31/2026/PEA/62504" },
       { label: "Original last date for submission of applications", date: "2026-06-30", displayDate: "30 Jun 2026, 5:00 PM", state: "completed" },
       { label: "Re-circulation circular", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
-      { label: "Last date for receipt of applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "current", note: "Extended by the 17 Jul 2026 circular" },
+      { label: "Last date for receipt of applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed", note: "Extended by the 17 Jul 2026 circular" },
     ],
     eligibility: [
       "Only officials retired from the Government of Puducherry in the grade of SAO, JAO, Superintendent, Law Officer or Legal Assistant may apply; the engagement is purely contractual and initially for six months.",
@@ -2944,7 +2969,10 @@ export const exams: Exam[] = [
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Circular No.A-12011/31/2026/PEA/62504 dated 17.07.2026, engagement of Consultant (Legal) on contract basis from retired Government officials",
     sourceUrl: "https://recruitment.py.gov.in/files/2186/consultant-legal-extn-of-time",
     sourcePublished: "Circular dated 17 Jul 2026, published on the recruitment portal 26 Jul 2026; last date 7 Aug 2026",
-    lastVerified: "4 Aug 2026, 23:15 IST",
+    lastVerified: "10 Aug 2026, 11:30 IST",
+    changeLog: [
+      { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 7 Aug 2026 with no further update on the Department's news and notification page; moved status from 'Applications open' (green) to 'selection process awaited' (amber) and marked the deadline event completed." },
+    ],
     keywords: [
       "Puducherry Examining Authority",
       "புதுச்சேரி தேர்வு ஆணையம்",

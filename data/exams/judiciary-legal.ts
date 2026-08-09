@@ -584,11 +584,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "Advertisement No. RC/B/1320/2026 (LA), dated 29 June 2026, invites online applications for 65 Legal Assistant posts. The advertisement states that the reservation policy does not apply because the appointments are contractual, so no category break-up is published.",
     status: {
-      label: "Applications closed; written test on 9 August 2026",
-      tone: "blue",
-      nextAction: "Listed candidates should download the call letter from HC-OJAS and appear for the written test on 9 August 2026",
+      label: "Written test held 9 August 2026; viva-voce awaited",
+      tone: "violet",
+      nextAction: "Track the High Court recruitment page for the written-test result and the viva-voce call letter",
       detail:
-        "Advertisement No. RC/B/1320/2026 (LA), dated 29 June 2026, closed on 20 July 2026. The High Court published the provisional list of candidates for the written test on 31 July 2026 and fixed the objective (MCQ) written test for 9 August 2026, with the viva-voce tentatively in August/September 2026.",
+        "Advertisement No. RC/B/1320/2026 (LA), dated 29 June 2026, closed on 20 July 2026. The High Court published the provisional list of candidates for the written test on 31 July 2026 and held the objective (MCQ) written test on 9 August 2026 as scheduled; the recruitment page carries no result or postponement notice yet. The viva-voce remains tentatively set for August/September 2026, exact date awaited.",
     },
     summary:
       "Contractual legal-research engagement of 65 fresh law graduates as Legal Assistants on the establishment of the High Court of Gujarat.",
@@ -601,7 +601,7 @@ export const exams: Exam[] = [
       { label: "Online applications opened", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
       { label: "Online applications closed", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
       { label: "Provisional list for the written test", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
-      { label: "Written test (objective type — MCQs)", date: "2026-08-09", displayDate: "9 Aug 2026 (Sunday)", state: "scheduled" },
+      { label: "Written test (objective type — MCQs)", date: "2026-08-09", displayDate: "9 Aug 2026 (Sunday)", state: "completed" },
       { label: "Viva-voce test", displayDate: "Tentatively August/September 2026; exact date awaited", state: "tentative" },
     ],
     eligibility: [
@@ -638,8 +638,16 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Detailed advertisement for Legal Assistant, No. RC/B/1320/2026 (LA)",
     sourceUrl: "https://gujarathighcourt.nic.in/hccms/sites/default/files/Recruitment_files/999_999_2026_6_29_645.pdf",
-    sourcePublished: "Advertisement 29 Jun 2026; provisional written-test list 31 Jul 2026",
-    lastVerified: "4 Aug 2026, 20:20 IST",
+    sourcePublished:
+      "Advertisement 29 Jun 2026; provisional written-test list 31 Jul 2026; recruitment page rechecked 10 Aug 2026, no result or postponement notice posted yet",
+    lastVerified: "10 Aug 2026, 11:20 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Written test held 9 Aug 2026 as originally scheduled; the High Court recruitment page carried no postponement or result notice. Marked the written-test event completed and moved status from written-test-scheduled (blue) to viva-voce-awaited (violet) rather than leaving a stale pre-test claim.",
+      },
+    ],
     keywords: [
       "GHC legal assistant",
       "Gujarat court legal researcher",
@@ -1265,11 +1273,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "Advertisement No. 4081-RG dated 13 June 2025, with corrigendum No. 4547-RG dated 1 July 2025, is for four posts of Translator for translating judgments from English to Bengali, purely on contractual basis; no category break-up is repeated in the follow-up notifications cited here.",
     status: {
-      label: "Phase-II test and viva-voce on 6 August 2026",
-      tone: "blue",
-      nextAction: "The 70 qualified candidates should carry their call letter and appear for the Phase-II test and viva-voce on 6 August 2026",
+      label: "Phase-II test and viva-voce held 6 August 2026; panel awaited",
+      tone: "violet",
+      nextAction: "Track the Calcutta High Court recruitment notices page for the Phase-II result and the appointment panel",
       detail:
-        "Notification No. 3179-R(R&M) dated 8 July 2026 published the Phase-I written test result with 70 qualified candidates. The Phase-II computer proficiency test and interview/viva-voce, first scheduled for 20–22 July 2026, was postponed on 21 July 2026 by Notification No. 3486-R(R&M) and rescheduled to 6 August 2026.",
+        "Notification No. 3179-R(R&M) dated 8 July 2026 published the Phase-I written test result with 70 qualified candidates. The Phase-II computer proficiency test and interview/viva-voce, first scheduled for 20–22 July 2026, was postponed on 21 July 2026 by Notification No. 3486-R(R&M) and rescheduled to 6 August 2026; that test was held as rescheduled, and the recruitment notices page carries no further postponement or result notice as of this check.",
     },
     summary:
       "Contractual engagement of Translators on the Appellate Side establishment of the High Court at Calcutta, for translating judgments from English into Bengali.",
@@ -1298,7 +1306,7 @@ export const exams: Exam[] = [
         label: "Phase-II computer proficiency test and interview/viva-voce",
         date: "2026-08-06",
         displayDate: "6 Aug 2026 (Thursday)",
-        state: "scheduled",
+        state: "completed",
       },
     ],
     eligibility: [
@@ -1340,8 +1348,16 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Notification No. 3486-R(R&M) dated 21 July 2026 rescheduling the Translator Phase-II examination",
     sourceUrl: "https://www.calcuttahighcourt.gov.in/Notice-Files/recruiment-notice/17568",
-    sourcePublished: "Advertisement 13 Jun 2025; rescheduling notification 21 Jul 2026",
-    lastVerified: "4 Aug 2026, 21:05 IST",
+    sourcePublished:
+      "Advertisement 13 Jun 2025; rescheduling notification 21 Jul 2026; recruitment notices page rechecked 10 Aug 2026, no further postponement or result notice found",
+    lastVerified: "10 Aug 2026, 11:47 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Phase-II computer proficiency test and interview/viva-voce held 6 Aug 2026 as rescheduled; the Calcutta High Court recruitment notices page carried no further postponement or result notice. Marked the Phase-II event completed and moved status from Phase-II-scheduled (blue) to panel-awaited (violet) rather than leaving a stale pre-test claim.",
+      },
+    ],
     keywords: [
       "Calcutta High Court translator",
       "কলকাতা হাইকোর্ট অনুবাদক",

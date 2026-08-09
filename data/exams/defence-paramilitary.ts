@@ -363,10 +363,10 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Written exam scheduled for 8 Aug 2026",
-      tone: "blue",
-      nextAction: "Download the admit card from 5 Aug 2026 on the AFCAT candidate portal",
-      detail: "Applications closed on 19 Jun 2026 (2330 hrs), later shown as extended to 21 Jun 2026 on the AFCAT portal. The official notification fixes the AFCAT written exam for 8 Aug 2026 (Saturday) for courses commencing Jul 2027.",
+      label: "Written exam held 8 Aug 2026; answer key objections open",
+      tone: "violet",
+      nextAction: "Check the question paper, answer key and response sheet, and raise objections by 11 Aug 2026 (1700 hrs) on the AFCAT candidate portal",
+      detail: "Applications closed on 19 Jun 2026 (2330 hrs), later shown as extended to 21 Jun 2026 on the AFCAT portal. The official notification fixed the AFCAT written exam for 8 Aug 2026 (Saturday) for courses commencing Jul 2027; the notification also opens an answer-key objection window from 9 to 11 Aug 2026. AFSB testing dates are not yet announced.",
     },
     summary: "Officer-entry cycle for Flying and Ground Duty (Technical and Non-Technical) branches, plus NCC Special Entry and a GATE-score route for the Technical Branch, for courses commencing Jul 2027.",
     vacancyLabel: "Branch-wise vacancies for Flying, Ground Duty (Technical/Non-Technical), NCC Special Entry and GATE Score Entry",
@@ -378,8 +378,9 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online applications opened", date: "2026-05-20", displayDate: "20 May 2026, 1100 hrs", state: "completed" },
       { label: "Online applications closed", date: "2026-06-21", displayDate: "19 Jun 2026, 2330 hrs (shown as extended to 21 Jun 2026 on the AFCAT portal)", state: "completed" },
-      { label: "Admit card available", date: "2026-08-05", displayDate: "5 Aug 2026, 1100 hrs", state: "scheduled" },
-      { label: "AFCAT written exam", date: "2026-08-08", displayDate: "8 Aug 2026 (Saturday)", state: "scheduled" },
+      { label: "Admit card available", date: "2026-08-04", displayDate: "4 Aug 2026, 1100 hrs", state: "completed" },
+      { label: "AFCAT written exam", date: "2026-08-08", displayDate: "8 Aug 2026 (Saturday)", state: "completed" },
+      { label: "Answer key and objection window", date: "2026-08-09", displayDate: "9 Aug 2026, 1700 hrs – 11 Aug 2026, 1700 hrs", state: "current" },
       { label: "AFSB testing", displayDate: "AFSB schedule not announced in the cited notification", state: "current" },
     ],
     eligibility: [
@@ -407,7 +408,14 @@ export const exams: Exam[] = [
     sourceTitle: "AFCAT 02/2026 official notification",
     sourceUrl: "https://afcat.edcil.co.in/assets/images/news/AFCAT_02_2026/Notification%20for%20AFCAT%20Cycle%2002-2026.pdf",
     sourcePublished: "Notification published ahead of the 20 May 2026 application opening",
-    lastVerified: "4 Aug 2026, 15:20 IST",
+    lastVerified: "10 Aug 2026, 11:05 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Re-read against the official notification: admit-card release was 4 Aug 2026 (not 5 Aug as previously shown), the 8 Aug 2026 written exam date has passed with no postponement notice found, and the notification's answer-key objection window (9–11 Aug 2026) was added to the timeline.",
+      },
+    ],
     keywords: [
       "Air Force officer entry",
       "AFCAT Flying Branch",

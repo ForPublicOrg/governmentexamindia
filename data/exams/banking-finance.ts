@@ -1495,10 +1495,10 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online before 7 Aug 2026",
-      detail: "Online registration is open for 500 Assistant (Class III) vacancies; the Phase-I examination is scheduled for 27 Aug 2026.",
+      label: "Applications closed; Phase-I exam scheduled",
+      tone: "blue",
+      nextAction: "Await the admit card for the Phase-I Examination on 27 Aug 2026",
+      detail: "Online registration for 500 Assistant (Class III) vacancies closed on 7 Aug 2026; the Phase-I examination is scheduled for 27 Aug 2026, followed by the Phase-II examination on 30 Oct 2026.",
     },
     summary: "Recruitment of 500 Assistants (Class III) at National Insurance Company Limited through a two-phase online examination and Regional Language Test.",
     vacancies: 500,
@@ -1512,7 +1512,7 @@ export const exams: Exam[] = [
     pay: "Scale of pay ₹36,290–₹1,00,865; gross emoluments approximately ₹53,000 per month in a Metro city at the initial stage.",
     timeline: [
       { label: "Online registration opens", date: "2026-07-18", displayDate: "18 Jul 2026", state: "completed" },
-      { label: "Applications close", date: "2026-08-07", displayDate: "7 Aug 2026", state: "current" },
+      { label: "Applications close", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
       { label: "Phase-I Examination", date: "2026-08-27", displayDate: "27 Aug 2026", state: "scheduled" },
       { label: "Phase-II Examination", date: "2026-10-30", displayDate: "30 Oct 2026", state: "scheduled" },
     ],
@@ -1547,9 +1547,14 @@ export const exams: Exam[] = [
     sourceTitle: "NICL Assistant 2026-27 detailed advertisement",
     sourceUrl:
       "https://nationalinsurance.nic.co.in/sites/default/files/2026-07/NICL%20ASSISTANT%20-%20Recuritment%20Advertisment%202026-27%20%28Final%29.pdf",
-    sourcePublished: "Detailed advertisement dated 17 Jul 2026",
-    lastVerified: "4 Aug 2026, 10:40 IST",
+    sourcePublished: "Detailed advertisement dated 17 Jul 2026; recruitment index re-checked 10 Aug 2026 with no extension or corrigendum found",
+    lastVerified: "10 Aug 2026, 11:20 IST",
     changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Applications closed on 7 Aug 2026 as originally scheduled; the recruitment index carried no extension notice or corrigendum. Marked the deadline event completed and moved status from applications-open (green) to Phase-I-scheduled (blue) rather than leaving a stale open-applications claim.",
+      },
       { date: "2026-07-17", displayDate: "17 Jul 2026", text: "Detailed advertisement released for 500 Assistant vacancies." },
     ],
     keywords: [

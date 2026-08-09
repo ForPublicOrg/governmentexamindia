@@ -1190,10 +1190,10 @@ export const exams: Exam[] = [
     vacancyLabel: "50 posts",
     vacancyNote: "The 15 June advertisement publishes 50 Accounts Clerk/Junior Storekeeper posts.",
     status: {
-      label: "Applications open after extension",
-      tone: "green",
-      nextAction: "Apply by 7 Aug 2026 at midnight",
-      detail: "SPSC's 27 July notice extended the online application deadline.",
+      label: "Applications closed; written exam date awaited",
+      tone: "amber",
+      nextAction: "Watch SPSC's notices for the written exam date and admit card",
+      detail: "Online applications for Advertisement 21/SPSC/EXAM/2026 closed on 7 Aug 2026 per the 27 Jul 2026 extension notice; SPSC's notice board (checked 10 Aug 2026) has not yet published a written exam date or admit card.",
     },
     summary: "Sikkim state recruitment for Accounts Clerk and Junior Storekeeper posts.",
     age: "See Advertisement 21/SPSC/EXAM/2026.",
@@ -1203,7 +1203,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement", date: "2026-06-15", displayDate: "15 Jun 2026", state: "completed" },
       { label: "Extension notice", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
-      { label: "Extended application deadline", date: "2026-08-07", displayDate: "7 Aug 2026, midnight", state: "current" },
+      { label: "Extended application deadline", date: "2026-08-07", displayDate: "7 Aug 2026, midnight", state: "completed" },
     ],
     eligibility: [
       "Class XII passed and equivalent from any recognized Board with Mathematics as one of the subjects in Class X (Ten).",
@@ -1230,8 +1230,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Extension Notice - Accounts Clerk / Junior Storekeeper Online Application",
     sourceUrl: "https://spsc.sikkim.gov.in/Notices/Extension_Notice_Online%20Application_Accounts_Clert_Jail_Warder_27_07_2026.pdf",
-    sourcePublished: "27 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:45 IST",
+    sourcePublished: "Extension notice dated 27 Jul 2026; SPSC notice board re-checked 10 Aug 2026 with no further extension or exam-date notice found",
+    lastVerified: "10 Aug 2026, 11:15 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Applications closed on 7 Aug 2026 as per the extended deadline; SPSC's notice board and candidate portal carried no further extension, written exam date or admit card as of 10 Aug 2026. Marked the deadline event completed and moved status from applications-open (green) to written-exam-date-awaited (amber) rather than leaving a stale open-applications claim.",
+      },
+    ],
     keywords: [
       "Sikkim accounts clerk",
       "SPSC junior storekeeper",
@@ -1261,10 +1268,10 @@ export const exams: Exam[] = [
     vacancyLabel: "37 posts",
     vacancyNote: "The 17 June SPSC advertisement publishes 37 Warder posts.",
     status: {
-      label: "Applications open after extension",
-      tone: "green",
-      nextAction: "Apply by 7 Aug 2026 at midnight",
-      detail: "The common 27 July extension notice moved the Warder application deadline.",
+      label: "Applications closed; written exam date awaited",
+      tone: "amber",
+      nextAction: "Watch SPSC's notices for the written exam date and admit card",
+      detail: "Online applications for Advertisement 22/SPSC/EXAM/2026 closed on 7 Aug 2026 per the common 27 Jul 2026 extension notice; SPSC's notice board (checked 10 Aug 2026) has not yet published a written exam date or admit card.",
     },
     summary: "Direct recruitment for Warder posts in Sikkim State Jail.",
     age: "See Advertisement 22/SPSC/EXAM/2026.",
@@ -1274,7 +1281,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement", date: "2026-06-17", displayDate: "17 Jun 2026", state: "completed" },
       { label: "Extension notice", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
-      { label: "Extended application deadline", date: "2026-08-07", displayDate: "7 Aug 2026, midnight", state: "current" },
+      { label: "Extended application deadline", date: "2026-08-07", displayDate: "7 Aug 2026, midnight", state: "completed" },
     ],
     eligibility: [
       "Class XII passed from a recognized board.",
@@ -1298,8 +1305,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Extension Notice - Sikkim State Jail Warder Online Application",
     sourceUrl: "https://spsc.sikkim.gov.in/Notices/Extension_Notice_Online%20Application_Accounts_Clert_Jail_Warder_27_07_2026.pdf",
-    sourcePublished: "27 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:45 IST",
+    sourcePublished: "Extension notice dated 27 Jul 2026; SPSC notice board re-checked 10 Aug 2026 with no further extension or exam-date notice found",
+    lastVerified: "10 Aug 2026, 11:32 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Applications closed on 7 Aug 2026 as per the extended deadline; SPSC's notice board and candidate portal carried no further extension, written exam date or admit card as of 10 Aug 2026. Marked the deadline event completed and moved status from applications-open (green) to written-exam-date-awaited (amber) rather than leaving a stale open-applications claim.",
+      },
+    ],
     keywords: [
       "Sikkim jail warder",
       "SPSC warder recruitment",

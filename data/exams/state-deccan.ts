@@ -1027,11 +1027,11 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Examination scheduled",
-      tone: "blue",
-      nextAction: "Download the hall ticket and appear on your allotted date between 5 and 21 Aug 2026",
+      label: "Examination in progress",
+      tone: "violet",
+      nextAction: "Appear on your allotted date within the 5 to 21 Aug 2026 window if not already done",
       detail:
-        "Notification No.01-APTET-JUNE-2026 dated 5 Jun 2026 closed applications on 5 Jul 2026; the computer-based test runs from 5 to 21 Aug 2026 and final results are scheduled for 15 Sep 2026.",
+        "Notification No.01-APTET-JUNE-2026 dated 5 Jun 2026 closed applications on 5 Jul 2026; the computer-based test is underway from 5 to 21 Aug 2026 and final results are scheduled for 15 Sep 2026.",
     },
     summary:
       "Andhra Pradesh's teacher eligibility test for classes I to VIII, conducted as a computer-based test by the Department of School Education under RTE Act and NCTE norms.",
@@ -1048,7 +1048,7 @@ export const exams: Exam[] = [
       { label: "Application and fee payment deadline", date: "2026-07-05", displayDate: "5 Jul 2026", state: "completed", note: "The window opened on 5 Jun 2026." },
       { label: "Online mock test available", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "Hall ticket download", date: "2026-07-25", displayDate: "25 Jul 2026 onwards", state: "completed" },
-      { label: "Computer-based examination", date: "2026-08-05", displayDate: "5 to 21 Aug 2026", state: "scheduled", note: "Two sessions daily: 9.30 AM to 12.00 noon and 2.30 PM to 5.00 PM." },
+      { label: "Computer-based examination", date: "2026-08-05", displayDate: "5 to 21 Aug 2026", state: "current", note: "Two sessions daily: 9.30 AM to 12.00 noon and 2.30 PM to 5.00 PM." },
       { label: "Initial key released", date: "2026-08-24", displayDate: "24 Aug 2026", state: "scheduled" },
       { label: "Objections on the initial key", date: "2026-08-25", displayDate: "25 to 31 Aug 2026", state: "scheduled" },
       { label: "Final key released", date: "2026-09-08", displayDate: "8 Sep 2026", state: "scheduled" },
@@ -1080,7 +1080,14 @@ export const exams: Exam[] = [
     sourceTitle: "APTET-JUNE 2026 Notification No.01-APTET-JUNE-2026, Director of School Education, Andhra Pradesh",
     sourceUrl: "https://tet2dsc.apcfss.in/TET-PDF/APTET-2026%20Notification.pdf",
     sourcePublished: "Notification dated 5 Jun 2026",
-    lastVerified: "4 Aug 2026, 16:30 IST",
+    lastVerified: "10 Aug 2026, 11:35 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Marked the computer-based examination as in progress within its published 5 to 21 Aug 2026 window. Checked the APTET/DSC portal and the Commissioner of School Education website for a postponement notice and found none.",
+      },
+    ],
     keywords: [
       "AP TET",
       "APTET June 2026",
@@ -2814,11 +2821,11 @@ export const exams: Exam[] = [
     education: ["Postgraduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Interview stage scheduled",
+      label: "Deputation orders awaited",
       tone: "blue",
-      nextAction: "Attend the interview cum demonstration between 6 and 8 Aug 2026 if shortlisted",
+      nextAction: "Await issue of deputation orders, due on or before 11 Aug 2026",
       detail:
-        "Notification No.33/N1/TSCERT/2026 dated 28 Jun 2026 held the computer-based written test from 25 to 31 Jul 2026 at Hyderabad and schedules the interview cum demonstration for 6 to 8 Aug 2026, with deputation orders on 10 Aug 2026.",
+        "Notification No.33/N1/TSCERT/2026 dated 28 Jun 2026 held the computer-based written test from 25 to 31 Jul 2026 at Hyderabad. Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026 rescheduled certificate verification and interview cum demonstration institution-wise - SCERT on 5 Aug, CTE/IASE on 6 Aug and DIETs on 7 Aug 2026 - and moved the issue of deputation orders to on or before 11 Aug 2026.",
     },
     summary:
       "Selection of in-service Gazetted Headmasters and School Assistants for Lecturer and Professor posts in Telangana's DIETs, CTEs, IASE and SCERT, as stop-gap arrangements on deputation for one year or until regular staff are appointed.",
@@ -2843,8 +2850,8 @@ export const exams: Exam[] = [
       { label: "Application deadline", date: "2026-07-14", displayDate: "14 Jul 2026", state: "completed" },
       { label: "Application edit option", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
       { label: "Computer-based written test", date: "2026-07-25", displayDate: "25 to 31 Jul 2026", state: "completed", note: "Held at Hyderabad" },
-      { label: "Interview cum demonstration", date: "2026-08-06", displayDate: "6 to 8 Aug 2026", state: "scheduled" },
-      { label: "Issue of deputation orders", date: "2026-08-10", displayDate: "10 Aug 2026", state: "scheduled" },
+      { label: "Interview cum demonstration", date: "2026-08-05", displayDate: "5 to 7 Aug 2026 (institution-wise: SCERT 5 Aug, CTE/IASE 6 Aug, DIETs 7 Aug)", state: "completed", note: "Rescheduled from the earlier common 6-8 Aug window to per-institution dates by Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026." },
+      { label: "Issue of deputation orders", date: "2026-08-11", displayDate: "On or before 11 Aug 2026", state: "scheduled", note: "Moved from 10 Aug 2026 by Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026." },
     ],
     eligibility: [
       "Only in-service Gazetted Headmasters and School Assistants working in Government and Local Body management schools under the School Education Department are eligible.",
@@ -2860,12 +2867,20 @@ export const exams: Exam[] = [
     syllabus: ["The syllabus is annexed to Notification No.33/N1/TSCERT/2026 dated 28 Jun 2026."],
     officialLinks: [
       { label: "DIET, CTE, IASE and SCERT notification (PDF)", url: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/downloadDocs.do?mode=downloadDocuments&manualName=Notification%20-DIET,CTE,IASE,SCERT.pdf", type: "notice" },
+      { label: "Revised interview-cum-demonstration schedule, Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026 (PDF)", url: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/downloadDocs.do?mode=downloadProceedings&Go=Interview%20different%20dates%20for%20DIET,CTE,IASE,SCERT_04082026.pdf", type: "notice" },
       { label: "Telangana School Education Department portal", url: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/", type: "website" },
     ],
     sourceTitle: "Notification No.33/N1/TSCERT/2026, Director of School Education, Telangana",
     sourceUrl: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/downloadDocs.do?mode=downloadDocuments&manualName=Notification%20-DIET,CTE,IASE,SCERT.pdf",
-    sourcePublished: "Notification dated 28 Jun 2026",
-    lastVerified: "4 Aug 2026, 19:30 IST",
+    sourcePublished: "Notification dated 28 Jun 2026; interview schedule revised by Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026",
+    lastVerified: "10 Aug 2026, 11:20 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "Updated the interview cum demonstration to the revised institution-wise dates (SCERT 5 Aug, CTE/IASE 6 Aug, DIETs 7 Aug 2026) and marked it completed, and moved the issue of deputation orders to on or before 11 Aug 2026, per Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026.",
+      },
+    ],
     keywords: [
       "Telangana DIET lecturer",
       "SCERT Telangana recruitment",

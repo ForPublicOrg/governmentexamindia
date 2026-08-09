@@ -1538,9 +1538,9 @@ export const exams: Exam[] = [
     status: {
       label: "Applications open",
       tone: "green",
-      nextAction: "Complete the online application and fee payment on the LAHD-SSRB portal before 6 August 2026",
+      nextAction: "Complete the online application and fee payment on the LAHD-SSRB portal before 13 August 2026",
       detail:
-        "Advertisement Notice No. 01 of 2026 (F.No. SECY/LAHD-SSRB/2026/1605-18) dated 14 July 2026 opened applications on 17 July 2026, with 6 August 2026 as both the closing date and the last date for online fee payment. The written examination date is to be announced on the Board's website.",
+        "Advertisement Notice No. 01 of 2026 (F.No. SECY/LAHD-SSRB/2026/1605-18) dated 14 July 2026 opened applications on 17 July 2026. Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 August 2026 extended the closing date and the last date for online fee payment from 6 August 2026 to 13 August 2026, and states no further extension will be granted; the eligibility cut-off date remains 6 August 2026. A Corrigendum Notice dated 7 August 2026 (F.No. SECY/LAHD-SSRB/2026/1947-1960) reads 'District Leh' throughout the advertisement as 'Erstwhile District Leh'. The written examination date is to be announced on the Board's website.",
     },
     summary:
       "District-cadre recruitment of Teacher (Primary) and Teacher (Upper Primary) for the School Education Department of Leh district by the Leh Autonomous Hill Development - Subordinate Services Recruitment Board.",
@@ -1555,13 +1555,15 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement notice published", date: "2026-07-14", displayDate: "14 Jul 2026", state: "completed" },
       { label: "Online applications opened", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
-      { label: "Last date for submission of application and fee", date: "2026-08-06", displayDate: "6 Aug 2026", state: "current" },
+      { label: "Revised Section-B syllabus notified", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
+      { label: "Corrigendum on 'District Leh' definition", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed", note: "'District Leh' read as 'Erstwhile District Leh' for eligibility, domicile and reservation purposes" },
+      { label: "Last date for submission of application and fee", date: "2026-08-13", displayDate: "13 Aug 2026", state: "current", note: "Extended from 6 Aug 2026 by Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 Aug 2026; eligibility cut-off date remains 6 Aug 2026" },
       { label: "Written examination", displayDate: "To be announced on the LAHD-SSRB website", state: "tentative" },
     ],
     eligibility: [
-      "A candidate must be a resident of Leh district and must possess a Domicile Certificate in the format at Annexure-V, issued by a competent authority under the Ladakh Civil Services Decentralization and Recruitment - Grant of Domicile Certificate (Procedure) Rules, 2025 and S.O. 76 dated 27-06-2025 (clause 4).",
+      "A candidate must be a resident of Leh district and must possess a Domicile Certificate in the format at Annexure-V, issued by a competent authority under the Ladakh Civil Services Decentralization and Recruitment - Grant of Domicile Certificate (Procedure) Rules, 2025 and S.O. 76 dated 27-06-2025 (clause 4). Corrigendum Notice F.No. SECY/LAHD-SSRB/2026/1947-1960 dated 7 August 2026 clarifies that 'District Leh' throughout the Advertisement Notice, including this domicile requirement, means 'Erstwhile District Leh' - the territorial jurisdiction of District Leh as it existed immediately before Notification S.O. 180 dated 27 April 2026.",
       "Age must be 18 to 40 years as on 1 January 2026, with the category relaxations tabulated in clause 5.",
-      "The crucial date for determining SC/ST/ALC/EWS/PwD/ESM status or any other benefit such as reservation, age relaxation, domicile certificate and essential qualification, where not specified otherwise, is the closing date for submission of application, i.e. 06.08.2026 (clause 3).",
+      "The crucial date for determining SC/ST/ALC/EWS/PwD/ESM status or any other benefit such as reservation, age relaxation, domicile certificate and essential qualification, where not specified otherwise, is 06.08.2026 (clause 3). Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 August 2026, which extended the closing date for applications to 13.08.2026, confirms this eligibility cut-off date of 06.08.2026 remains unchanged.",
       "A candidate eligible for reservation under multiple categories (ST and ALC, ALC and EWS, SC and ALC) must opt for only one category at the time of filling the online application under section 19 of the J&K Reservation Act, 2004; the choice is final and cannot be changed after submission.",
       "Only applications filled successfully through the Board's website and found in order are accepted; candidature of candidates not meeting the eligibility conditions is cancelled at any stage without notice (clause 1).",
     ],
@@ -1578,16 +1580,28 @@ export const exams: Exam[] = [
       "Part-B (General Awareness): questions designed to test general awareness of the environment and its application to society, knowledge of current events and of matters of everyday observation and experience in their scientific aspect, and questions relating to India and its neighbouring countries especially pertaining to History, Culture, Geography, Economic Scene, General Policy and Scientific Research.",
       "Part-C (Quantitative Aptitude): computation of whole numbers, decimals, fractions and relationships between numbers, Percentage, Ratio & Proportion, Square roots, Averages, Interest, Profit and Loss, Discount, Partnership Business, Mixture and Alligation, Time and distance, Time & Work, Basic algebraic identities of School Algebra & Elementary surds, Graphs of Linear Equations, Triangle and its various kinds of centres, Congruence and similarity of triangles, Circle and its chords, tangents, angles subtended by chords of a circle, common tangents to two or more circles, Quadrilaterals, Regular Polygons, Right Prism, Right Circular Cone, Right Circular Cylinder, Sphere, Hemispheres, Rectangular Parallelepiped, Regular Right Pyramid with triangular or square base, Trigonometric ratio, Degree and Radian Measures, Standard Identities, Complementary angles, Heights and Distances, Histogram, Frequency polygon, Bar diagram and Pie chart.",
       "Part-D (English Language): the candidate's ability to understand correct English, his basic comprehension and writing ability, etc. would be tested. Questions in Parts A, B and D are at a level commensurate with the essential qualification (graduation) and questions in Part-C are at 10th standard level.",
+      "Revised Section-B syllabus, Teacher (Primary) (Notice F.No. SECY/LAHD-SSRB/Syllabus/2026/1867-1880 dated 3 August 2026, superseding Section-B of the syllabus notified earlier): 100 marks across eight units - I. Child Development, Learning and Educational Psychology (stages of child development, heredity and environment, socialization, Piaget, Vygotsky, Kohlberg, learning theories, multiple intelligence, teacher as reflective practitioner); II. Foundational Stage Education, FLN and Child-centred Pedagogy (NEP 2020, NCF-FS 2022, 5+3+3+4 structure, Balvatika, Vidya Pravesh, NIPUN Bharat, play/activity/toy-based learning, multilingual education, ECCE); III. Curriculum, Teaching-Learning Process and Classroom Management (learning outcomes, competency-based education, lesson planning, TLMs, inquiry/project learning, classroom management); IV. Language, Mathematics and Environmental Studies Pedagogy; V. Assessment, Evaluation and Learning Outcomes (PARAKH, Holistic Progress Card, SBA, CCE); VI. Inclusive Education, Child Protection and Guidance (UDL, CWSN, RPwD Act 2016, IEP, RTE Act, POCSO Act); VII. School Organisation, Educational Technology and Professional Ethics (SDP, SMC, ICT, DIKSHA, PM eVidya, AI awareness); VIII. Contemporary Educational Initiatives (NEP 2020, NCF-SE 2023, Samagra Shiksha, PM SHRI, NIPUN Bharat, PARAKH, APAAR ID, SDGs).",
+      "Revised Section-B syllabus, Teacher (Upper Primary) (same Notice dated 3 August 2026): 100 marks across eight units - I. Educational Psychology and Adolescent Development (growth during adolescence, learning theories, motivation, mental health, Piaget, Vygotsky, Kohlberg); II. Curriculum, Instruction and Classroom Processes (constructivist classroom, lesson planning, questioning techniques, art-integrated learning); III. Subject-specific Pedagogical Content Knowledge (Language, Mathematics, Science and Social Science pedagogy, STEM education, computational thinking); IV. Assessment, Evaluation and Educational Research (competency-based assessment, PARAKH, Holistic Progress Card, Bloom's Taxonomy, CCE, action research); V. Inclusive Education, Guidance and Child Protection (UDL, CWSN, gifted and slow learners, RPwD Act 2016, RTE Act, POCSO Act); VI. Educational Technology, AI and Digital Pedagogy (ICT integration, DIKSHA, PM eVidya, adaptive/blended learning, cyber safety); VII. School Leadership, Administration and Professional Ethics (SDP, SMC, professional learning communities); VIII. Contemporary Educational Initiatives (NEP 2020, NCF-SE 2023, Samagra Shiksha, PM SHRI, PARAKH, APAAR, Ek Bharat Shreshtha Bharat, SDG-4).",
     ],
     officialLinks: [
       { label: "Advertisement Notice No. 01 of 2026", url: "https://www.lahdssrb.in/file_uploads/advertisement/attachment/AdvertisementNoticeNo01OF2026Dated14072026-3a83c795593053cd1a85121837e90420.pdf", type: "notice" },
+      { label: "Notice: extension of closing date to 13 Aug 2026", url: "https://www.lahdssrb.in/file_uploads/notices/attachment/Extensionoftheclosingdateforsubmissionofon-68a0cf43082567247af8447487850a1d.pdf", type: "notice" },
+      { label: "Corrigendum Notice: 'District Leh' definition", url: "https://www.lahdssrb.in/file_uploads/notices/attachment/CORRIGENDUMNOTICE-8889ce39e37a92c4990cd8b7c1f68483.pdf", type: "notice" },
+      { label: "Revised Section-B syllabus notice", url: "https://www.lahdssrb.in/file_uploads/notices/attachment/RevisedSyllabusfortherecruitmentofTeacherP-586109084a3342d561c708f6dc1b1227.pdf", type: "notice" },
       { label: "LAHD-SSRB official portal", url: "https://www.lahdssrb.in/", type: "website" },
       { label: "UT Ladakh LAHD-SSRB page", url: "https://ladakh.gov.in/dssrb-leh/", type: "website" },
     ],
     sourceTitle: "LAHD-SSRB Advertisement Notice No. 01 of 2026",
     sourceUrl: "https://www.lahdssrb.in/file_uploads/advertisement/attachment/AdvertisementNoticeNo01OF2026Dated14072026-3a83c795593053cd1a85121837e90420.pdf",
-    sourcePublished: "Advertisement notice dated 14 Jul 2026; applications 17 Jul to 6 Aug 2026",
-    lastVerified: "4 Aug 2026, 23:35 IST",
+    sourcePublished: "Advertisement notice dated 14 Jul 2026; applications 17 Jul 2026 to 13 Aug 2026 (closing date extended from 6 Aug 2026 by notice dated 6 Aug 2026); corrigendum dated 7 Aug 2026; revised Section-B syllabus dated 3 Aug 2026",
+    lastVerified: "10 Aug 2026, 16:20 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "LAHD-SSRB extended the application closing date and fee-payment deadline from 6 Aug 2026 to 13 Aug 2026 (Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 Aug 2026; eligibility cut-off date unchanged at 6 Aug 2026), so status/nextAction/timeline were updated to keep 'Applications open' honest rather than stale. Also added the 7 Aug 2026 corrigendum redefining 'District Leh' as 'Erstwhile District Leh' for eligibility/domicile purposes, and the 3 Aug 2026 revised Section-B syllabus for Teacher (Primary) and Teacher (Upper Primary), with matching timeline entries, eligibility notes, syllabus content and official links.",
+      },
+    ],
     keywords: [
       "LAHD SSRB",
       "Leh teacher recruitment",
