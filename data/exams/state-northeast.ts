@@ -702,7 +702,7 @@ export const exams: Exam[] = [
     sourceTitle: "Meghalaya MPSC Examination Programme - Lower Division Assistant",
     sourceUrl: "https://www.mpsc.meghalaya.gov.in/programme/Notice24July2026a.pdf",
     sourcePublished: "Programme MPSC/EX-C/25/2026/18 dated 24 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:05 IST",
+    lastVerified: "20 Aug 2026, 03:00 IST",
     keywords: [
       "Meghalaya LDA",
       "MPSC LDA exam",
@@ -1098,7 +1098,7 @@ export const exams: Exam[] = [
     sourceTitle: "Programme for Preliminary Examination for Personal Assistant Grade II",
     sourceUrl: "https://tpsc.tripura.gov.in/sites/default/files/2026-07/Prog_PA-II_280726.pdf",
     sourcePublished: "28 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:35 IST",
+    lastVerified: "20 Aug 2026, 03:05 IST",
     keywords: [
       "TPSC personal assistant",
       "Tripura stenographer recruitment",
@@ -1169,7 +1169,7 @@ export const exams: Exam[] = [
     sourceTitle: "Programme for Food Safety Officer Examination",
     sourceUrl: "https://tpsc.tripura.gov.in/sites/default/files/2026-07/Prog_FSO_270726.pdf",
     sourcePublished: "27 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:35 IST",
+    lastVerified: "20 Aug 2026, 03:05 IST",
     keywords: [
       "TPSC FSO",
       "Tripura food safety officer",
@@ -1728,10 +1728,10 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "Included in tentative September 2026 programme",
+      label: "Preliminary examination confirmed for 26 Sep 2026",
       tone: "blue",
-      nextAction: "Watch MPSC for the confirmed Meghalaya Civil Service examination date",
-      detail: "MPSC's 29 Jul 2026 tentative programme lists the MCS [Oct 2025] cycle for September 2026; an exact date is not yet fixed.",
+      nextAction: "Prepare for the preliminary examination on 26 Sep 2026 and watch MPSC for the admit card",
+      detail: "MPSC's Programme of Examination No. MPSC/EX-C/25/2026/27 dated 14 Aug 2026 confirms the Meghalaya Civil Service (MCS) [October 2025] preliminary examination for 26 September 2026, with Paper I from 10:00 AM to 12:00 PM and Paper II from 2:00 PM to 4:00 PM, and publishes the venue and capacity list.",
     },
     summary: "Meghalaya's combined competitive examination for Meghalaya Civil Service, currently listed in the tentative September 2026 examination programme.",
     vacancyLabel: "See the MCS [Oct 2025] advertisement",
@@ -1742,8 +1742,10 @@ export const exams: Exam[] = [
     pay: "Meghalaya pay level as notified for the Meghalaya Civil Service.",
     timeline: [
       { label: "Advertisement", date: "2025-10-10", displayDate: "10 Oct 2025", state: "completed" },
-      { label: "Tentative September 2026 programme", date: "2026-07-29", displayDate: "29 Jul 2026", state: "current" },
-      { label: "Written examination", displayDate: "September 2026 (exact date awaited)", state: "tentative" },
+      { label: "Tentative September 2026 programme", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
+      { label: "Programme of examination confirming the date", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
+      { label: "Preliminary examination", date: "2026-09-26", displayDate: "26 Sep 2026 - Paper I 10:00 AM-12:00 PM, Paper II 2:00-4:00 PM", state: "scheduled" },
+      { label: "Main examination", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "Applications are invited on behalf of the Govt. of Meghalaya from the citizens of India for recruitment to the Meghalaya Civil Service (MCS), Post Code 01, in Level 15 of the Revised Pay Structure.",
@@ -1767,14 +1769,22 @@ export const exams: Exam[] = [
       "Interview/Personality Test of 150 marks, intended to assess the personal suitability of the candidate for a career in public service, judging mental alertness, critical powers of assimilation, clear and logical exposition, balance of judgment, variety and depth of interest, ability for social cohesion and leadership, and intellectual and moral integrity.",
     ],
     officialLinks: [
+      { label: "Programme of examination confirming 26 Sep 2026", url: "https://mpsc.meghalaya.gov.in/programme/Notice14Aug2026a.pdf", type: "calendar" },
       { label: "Tentative September 2026 programme", url: "https://mpsc.meghalaya.gov.in/programme/Notice29July2026a.pdf", type: "calendar" },
       { label: "MCS [Oct 2025] advertisement", url: "https://mpsc.meghalaya.gov.in/advt/Advt10Oct2025a.pdf", type: "notice" },
       { label: "Meghalaya MPSC home", url: "https://mpsc.meghalaya.gov.in/", type: "website" },
     ],
-    sourceTitle: "Meghalaya MPSC Tentative Programme for September 2026 - MCS [Oct 2025]",
-    sourceUrl: "https://mpsc.meghalaya.gov.in/programme/Notice29July2026a.pdf",
-    sourcePublished: "29 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:30 IST",
+    sourceTitle: "Meghalaya MPSC Programme of Examination for MCS [Oct 2025], No. MPSC/EX-C/25/2026/27",
+    sourceUrl: "https://mpsc.meghalaya.gov.in/programme/Notice14Aug2026a.pdf",
+    sourcePublished: "Programme of examination dated 14 Aug 2026, confirming the tentative programme of 29 Jul 2026",
+    lastVerified: "20 Aug 2026, 03:00 IST",
+    changeLog: [
+      {
+        date: "2026-08-14",
+        displayDate: "14 Aug 2026",
+        text: "MPSC confirmed the MCS [Oct 2025] preliminary examination for 26 Sep 2026 with paper timings and a venue list, replacing the tentative September 2026 window.",
+      },
+    ],
     keywords: [
       "MCS Meghalaya",
       "Meghalaya civil service exam",
