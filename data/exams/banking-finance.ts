@@ -92,11 +92,10 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Prelims scheduled",
+      detail: "IBPS released the online preliminary exam call letter and information handouts on 14 Aug 2026. The preliminary examination is on 22 and 23 Aug 2026 and the main examination on 4 Oct 2026, as in the IBPS 2026-27 calendar.",
+      label: "Prelims call letter released",
       tone: "blue",
-      nextAction: "Prepare for prelims on 22–23 Aug 2026",
-      detail:
-        "Registration and the correction window are over. Watch the official page for the call-letter link.",
+      nextAction: "Download the preliminary exam call letter and appear on 22 or 23 Aug 2026",
     },
     summary:
       "A common recruitment process for Probationary Officer and Management Trainee posts in participating public-sector banks.",
@@ -113,10 +112,11 @@ export const exams: Exam[] = [
     pay: "Basic pay starts at ₹48,480; allowances vary by bank and posting.",
     timeline: [
       { label: "Notification", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
-      { label: "Applications closed", date: "2026-07-26", displayDate: "26 Jul 2026", state: "completed" },
-      { label: "Preliminary exam", date: "2026-08-22", displayDate: "22–23 Aug 2026", state: "current" },
+      { label: "Applications closed", date: "2026-07-21", displayDate: "21 Jul 2026", state: "completed" },
+      { label: "Preliminary exam call letter released", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
+      { label: "Preliminary exam", date: "2026-08-22", displayDate: "22-23 Aug 2026", state: "current" },
       { label: "Main exam", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled" },
-      { label: "Provisional allotment", sortMonth: "2027-01", displayDate: "Jan 2027", state: "tentative", note: "Tentative month" },
+      { label: "Provisional allotment", sortMonth: "2027-01", displayDate: "Jan 2027", state: "tentative" },
     ],
     eligibility: [
       "A graduate in any discipline with the result declared by the notification’s cut-off date.",
@@ -137,9 +137,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "IBPS CRP PO/MT-XVI recruitment page and 2026–27 calendar",
     sourceUrl: "https://www.ibps.in/index.php/management-trainees-xvi/",
-    sourcePublished: "1 Jul 2026; vacancy update 20 Jul 2026",
-    lastVerified: "4 Aug 2026, 11:30 IST",
+    sourcePublished: "Notification 1 Jul 2026; vacancy corrigendum 20 Jul 2026; preliminary call letter 14 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:35 IST",
     changeLog: [
+      {
+        date: "2026-08-14",
+        displayDate: "14 Aug 2026",
+        text: "IBPS released the preliminary exam call letter and information handouts for CRP PO/MT-XVI. The prelims remain on 22-23 Aug 2026. The applications-closed date is also corrected to 21 Jul 2026, the date given by IBPS's own detailed notification.",
+      },
       { date: "2026-07-28", displayDate: "28 Jul 2026", text: "IBPS posted the application edit-window notice." },
       { date: "2026-07-20", displayDate: "20 Jul 2026", text: "Indicative vacancies increased from 6,715 to 7,365." },
       { date: "2026-07-01", displayDate: "1 Jul 2026", text: "Detailed notification released." },
@@ -217,7 +222,7 @@ export const exams: Exam[] = [
     sourceTitle: "IBPS CRP SPL-XVI official notification and update page",
     sourceUrl: "https://www.ibps.in/index.php/specialist-officers-xvi/",
     sourcePublished: "1 Jul 2026; vacancy update 20 Jul 2026",
-    lastVerified: "4 Aug 2026, 11:30 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
       { date: "2026-07-28", displayDate: "28 Jul 2026", text: "IBPS posted the application edit-window notice." },
       { date: "2026-07-20", displayDate: "20 Jul 2026", text: "Indicative vacancies increased from 745 to 1,035." },
@@ -337,7 +342,7 @@ export const exams: Exam[] = [
     sourceTitle: "IBPS CRP CSA-XVI detailed notification and the 2026–27 tentative calendar",
     sourceUrl: "https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf",
     sourcePublished: "Detailed notification published 1 Aug 2026; calendar dated 16 Jan 2026",
-    lastVerified: "4 Aug 2026, 20:15 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
       { date: "2026-08-01", displayDate: "1 Aug 2026", text: "IBPS released the detailed CRP CSA-XVI notification and opened online registration." },
       { date: "2026-07-31", displayDate: "31 Jul 2026", text: "IBPS issued the window notification for CRP CSA-XVI." },
@@ -1242,7 +1247,7 @@ export const exams: Exam[] = [
     sourceTitle: "LIC AAO Generalist 32nd batch notification",
     sourceUrl: "https://www.licindia.in/documents/d/guest/aao-generalist-notification-2025-final",
     sourcePublished: "Notification dated 16 Aug 2025",
-    lastVerified: "4 Aug 2026, 10:25 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
       { date: "2025-08-16", displayDate: "16 Aug 2025", text: "Notification released for AAO Generalist, Specialist and Assistant Engineer posts." },
     ],
@@ -1495,10 +1500,10 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Applications closed; Phase-I exam scheduled",
+      label: "Pre-recruitment training on; Phase-I exam 27 Aug 2026",
       tone: "blue",
-      nextAction: "Await the admit card for the Phase-I Examination on 27 Aug 2026",
-      detail: "Online registration for 500 Assistant (Class III) vacancies closed on 7 Aug 2026; the Phase-I examination is scheduled for 27 Aug 2026, followed by the Phase-II examination on 30 Oct 2026.",
+      nextAction: "Watch the NICL recruitment page for the Phase-I call letter link, expected shortly before 27 Aug 2026.",
+      detail: "A notice dated 14 Aug 2026 fixes online pre-recruitment training for SC/ST/OBC and PwBD candidates from 19 to 22 Aug 2026, with instructions sent to registered e-mail. The Phase-I online examination remains scheduled for 27 Aug 2026 and Phase-II for 30 Oct 2026; call letters are not yet out.",
     },
     summary: "Recruitment of 500 Assistants (Class III) at National Insurance Company Limited through a two-phase online examination and Regional Language Test.",
     vacancies: 500,
@@ -1513,6 +1518,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online registration opens", date: "2026-07-18", displayDate: "18 Jul 2026", state: "completed" },
       { label: "Applications close", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
+      { label: "Pre-recruitment training (online) for SC/ST/OBC & PwBD candidates", date: "2026-08-19", displayDate: "19-22 Aug 2026", state: "current" },
       { label: "Phase-I Examination", date: "2026-08-27", displayDate: "27 Aug 2026", state: "scheduled" },
       { label: "Phase-II Examination", date: "2026-10-30", displayDate: "30 Oct 2026", state: "scheduled" },
     ],
@@ -1547,9 +1553,14 @@ export const exams: Exam[] = [
     sourceTitle: "NICL Assistant 2026-27 detailed advertisement",
     sourceUrl:
       "https://nationalinsurance.nic.co.in/sites/default/files/2026-07/NICL%20ASSISTANT%20-%20Recuritment%20Advertisment%202026-27%20%28Final%29.pdf",
-    sourcePublished: "Detailed advertisement dated 17 Jul 2026; recruitment index re-checked 10 Aug 2026 with no extension or corrigendum found",
-    lastVerified: "10 Aug 2026, 11:20 IST",
+    sourcePublished: "Detailed advertisement for 500 Assistants dated 17 Jul 2026; pre-recruitment training notice dated 14 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "NICL notified online pre-recruitment training for reserved-category candidates from 19 to 22 Aug 2026; Phase-I still 27 Aug 2026.",
+      },
       {
         date: "2026-08-10",
         displayDate: "10 Aug 2026",

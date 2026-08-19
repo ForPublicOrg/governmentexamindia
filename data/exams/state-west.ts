@@ -337,7 +337,7 @@ export const exams: Exam[] = [
     sourceTitle: "RPSC recruitment advertisement list and consolidated 2026 calendar",
     sourceUrl: "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
     sourcePublished: "Calendar released 26 Dec 2025",
-    lastVerified: "4 Aug 2026, 11:55 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "gpsc-gujarat-civil-services-2026",
@@ -360,10 +360,10 @@ export const exams: Exam[] = [
     // the fields GPSC has not published here still say so.
     verification: "verified",
     status: {
-      label: "Main-stage notices active",
-      tone: "violet",
+      label: "Main-exam form open till 27 Aug",
+      tone: "blue",
       nextAction: "Track the GPSC notice stream for main-examination instructions",
-      detail: "GPSC's official site lists final-key, marks and main-eligibility notices for this Gujarat Administrative, Civil Services and Municipal Chief Officer cycle.",
+      detail: "The 6,099 candidates who cleared the preliminary examination must file the main-examination online form and upload documents from 6 Aug 2026, 4:00 PM to 27 Aug 2026, 11:59 PM. The main written exam is to be held at Gandhinagar/Ahmedabad; its detailed schedule is still to be published.",
     },
     summary: "Combined recruitment to Gujarat Administrative Service Class I, Gujarat Civil Services Class I and II, and Municipal Chief Officer Service Class II.",
     vacancies: 213,
@@ -405,7 +405,9 @@ export const exams: Exam[] = [
       { label: "Preliminary final answer key", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed" },
       { label: "Eligibility list for the main examination", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed" },
       { label: "Main-examination syllabus published", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
-      { label: "Preliminary marks window", date: "2026-07-31", displayDate: "31 Jul 2026, 4:00 PM – 15 Aug 2026, 11:59 PM", state: "current" },
+      { label: "Preliminary marks window", date: "2026-07-31", displayDate: "31 Jul 2026, 4:00 PM – 15 Aug 2026, 11:59 PM", state: "completed" },
+      { label: "Main-examination form and document upload", date: "2026-08-06", displayDate: "6 Aug 2026, 4:00 PM – 27 Aug 2026, 11:59 PM", state: "current" },
+      { label: "Main written examination", displayDate: "Detailed schedule not announced", state: "tentative" },
     ],
     officialLinks: [
       { label: "GPSC advertisement 05/2026-27 detail page", url: "https://gpsc.gujarat.gov.in/AdvertisementDetail?no=2333&tab=Advertisement", type: "notice" },
@@ -419,8 +421,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "GPSC advertisement 05/2026-27 detail page and its linked documents",
     sourceUrl: "https://gpsc.gujarat.gov.in/AdvertisementDetail?no=2333&tab=Advertisement",
-    sourcePublished: "Advertisement page shows applications 2–16 Apr 2026 and a 7 Jun 2026 preliminary exam; final key, main-eligibility list and main syllabus published 30-31 Jul 2026",
-    lastVerified: "4 Aug 2026, 19:05 IST",
+    sourcePublished: "Mains form-filling and document-upload notice dated 6 Aug 2026; language-selection notice for main question papers dated 12 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   listedExam({
     slug: "gpsc-gujarat-engineering-service-civil-2026",
@@ -471,7 +473,7 @@ export const exams: Exam[] = [
     sourceTitle: "GPSC Gujarat Engineering Service Civil advertisement 01/2026-27 notices",
     sourceUrl: "https://gpsc.gujarat.gov.in/",
     sourcePublished: "Provisional main-answer-key notices published 1 Aug 2026",
-    lastVerified: "4 Aug 2026, 15:55 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "mpsc-maharashtra-civil-services-gazetted-2026",
@@ -788,7 +790,7 @@ export const exams: Exam[] = [
     sourceTitle: "Goa Public Service Commission Advertisement No. 07 Year 2026",
     sourceUrl: "https://gpsc.goa.gov.in/wp-content/uploads/2026/07/Advt.-No.-07-Year-2026-website.pdf",
     sourcePublished: "Published 10 Jul 2026 in the Navhind Times, Herald, Lokmat, Tarun Bharat, Gomantak and Bhangarbhuy; last date 24 Jul 2026",
-    lastVerified: "4 Aug 2026, 22:05 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "dnhdd-disaster-management-professional-staff-2026",
@@ -862,8 +864,13 @@ export const exams: Exam[] = [
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/20260716628244246.pdf",
     sourcePublished:
       "Official listing open 16 Jul to 7 Aug 2026; ddd.gov.in recruitment listing re-checked 10 Aug 2026 still shows the 7 Aug 2026 close date with no extension",
-    lastVerified: "10 Aug 2026, 11:20 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Main-examination form filling and document upload opened 6 Aug 2026 and closes 27 Aug 2026 for the 6,099 prelim-qualified candidates; preliminary-marks window has closed.",
+      },
       {
         date: "2026-08-10",
         displayDate: "10 Aug 2026",
@@ -1045,7 +1052,7 @@ export const exams: Exam[] = [
     sourceTitle: "Government Engineering College, Daman — advertisement No. 1.0-EST-GEC/Volume-III/2026-27/413",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/202607211982098225.pdf",
     sourcePublished: "Advertisement dated 21 Jul 2026; applications 22 Jul to 21 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:25 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "dnhdd-abdm-short-term-contract-2026",
@@ -1138,7 +1145,7 @@ export const exams: Exam[] = [
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/20260730144737518.pdf",
     sourcePublished:
       "Advertisement dated 30 Jul 2026; UT listing open 30 Jul to 8 Aug 2026; ddd.gov.in recruitment listing re-checked 10 Aug 2026 still shows the 8 Aug 2026 close date with no extension",
-    lastVerified: "10 Aug 2026, 11:35 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
       {
         date: "2026-08-10",
@@ -1221,7 +1228,7 @@ export const exams: Exam[] = [
     sourceTitle: "RPSC advertisement 02/2026-27 and proposed exam-date calendar for RAS 2026",
     sourceUrl: "https://rpsc.rajasthan.gov.in/proposedexamdate",
     sourcePublished: "Advertisement released 27 May 2026; exam-date press note released 2 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:10 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "rssb-cet-graduate-level-2026",
@@ -1298,7 +1305,7 @@ export const exams: Exam[] = [
     sourceTitle: "RSSB advertisement listing — Common Eligibility Test (Graduation Level) 2026",
     sourceUrl: "https://rssb.rajasthan.gov.in/advertisements",
     sourcePublished: "Detailed advertisement listed 1 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:15 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "maharashtra-police-constable-bharti-2024-25",
@@ -1733,7 +1740,7 @@ export const exams: Exam[] = [
     sourceTitle: "RSSB short advertisement — direct recruitment to various Forest Department posts, 2025",
     sourceUrl: "https://rssb.rajasthan.gov.in/storage/advertisement_item/1752765122.pdf",
     sourcePublished: "Short advertisement listed 17 Jul 2025; advertisement list checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:20 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "mahatet-maharashtra-teacher-eligibility-test-june-2026",
@@ -2171,7 +2178,7 @@ export const exams: Exam[] = [
     sourceTitle: "MSEDCL advertisement 02/2025 and its 3 Feb 2026 notification reopening the application link",
     sourceUrl: "https://www.mahadiscom.in/wp-content/uploads/2025/06/MSEDCL-Advt.-No_02_2025_FOR-VARIOUS-POSTS-IN-TECHNICAL-CADRE_27062025cr.pdf",
     sourcePublished: "Advertisement dated 27 Jun 2025; reopening notification dated 3 Feb 2026",
-    lastVerified: "4 Aug 2026, 19:30 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   listedExam({
     slug: "msetcl-mahatransco-direct-recruitment",
@@ -2231,7 +2238,7 @@ export const exams: Exam[] = [
     sourceTitle: "MSETCL (MahaTransco) active careers page",
     sourceUrl: "https://www.mahatransco.in/career/active",
     sourcePublished: "Careers page checked 4 Aug 2026; latest cadre document dated 27 Jul 2026",
-    lastVerified: "4 Aug 2026, 19:35 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   listedExam({
     slug: "maharashtra-zilla-parishad-group-c-recruitment",
@@ -2356,7 +2363,7 @@ export const exams: Exam[] = [
     sourceTitle: "Maharashtra State Road Transport Corporation — official recruitment page",
     sourceUrl: "https://msrtc.maharashtra.gov.in/GeneralPages/Recruitment.aspx",
     sourcePublished: "Recruitment page checked 4 Aug 2026; latest listed advertisement extended to 17 Apr 2026",
-    lastVerified: "4 Aug 2026, 19:45 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
   exam({
     slug: "maha-tait-teacher-aptitude-intelligence-test-2025",
@@ -3114,6 +3121,6 @@ export const exams: Exam[] = [
     sourceTitle: "Rajasthan Cooperative Recruitment Board — recruitment-advertisements and About Us pages",
     sourceUrl: "https://rajcrb.rajasthan.gov.in/RecruitmentAdvertisements.aspx?menu_id=13",
     sourcePublished: "Latest listed documents dated 24 Mar 2025; pages checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:30 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
   }),
 ];

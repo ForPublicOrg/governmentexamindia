@@ -322,10 +322,10 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Professional degree"],
     status: {
-      label: "Application/shortlisting cycle active",
+      label: "Final results out for three disciplines",
       tone: "violet",
-      nextAction: "Use the GAIL vacancies page and candidate login for shortlisting updates",
-      detail: "The detailed advertisement is a current 2026 recruitment using only GATE 2026 scores; prior-year GATE scores are not valid for this exercise.",
+      nextAction: "Watch the Final Result tab on gailonline.com for Executive Trainee (Electrical); then the record can close as complete.",
+      detail: "GAIL has published discipline-wise shortlists (May–June 2026) and final results for Executive Trainee (Chemical) on 13 Jul 2026, (Instrumentation) on 16 Jul 2026 and (Mechanical) on 5 Aug 2026 under Advt. GAIL/OPEN/ET/2A/2025. The Electrical discipline has been shortlisted but its final result is still awaited.",
     },
     summary: "GAIL recruitment of recent engineering graduates as Executive Trainees in the disciplines notified against GATE 2026.",
     age: "Upper age 26 years as on 18 March 2026, with the advertisement's category relaxations.",
@@ -333,7 +333,12 @@ export const exams: Exam[] = [
     pay: "E-2 scale ₹60,000–1,80,000 during one-year training-cum-probation and after absorption, subject to the advertisement.",
     timeline: [
       { label: "Detailed advertisement", date: "2026-02-20", displayDate: "20 Feb 2026", state: "completed" },
-      { label: "Candidate shortlisting / next stage", displayDate: "Exact official date awaited", state: "current" },
+      { label: "Applications closed", date: "2026-03-18", displayDate: "18 Mar 2026, 6:00 PM", state: "completed" },
+      { label: "Discipline-wise shortlists published", date: "2026-05-18", displayDate: "18 May – 9 Jun 2026", state: "completed" },
+      { label: "Final result — Chemical", date: "2026-07-13", displayDate: "13 Jul 2026", state: "completed" },
+      { label: "Final result — Instrumentation", date: "2026-07-16", displayDate: "16 Jul 2026", state: "completed" },
+      { label: "Final result — Mechanical", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed" },
+      { label: "Final result — Electrical", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
       "A GATE-2026 registration number and GATE-2026 marks are mandatory, and only GATE-2026 marks are valid for this exercise — Executive Trainee (Chemical) maps to GATE paper CH, Instrumentation to IN, Electrical to EE and Mechanical to ME.",
@@ -351,8 +356,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Career opportunities as Executive Trainee through GATE 2026",
     sourceUrl: "https://www.gailonline.com/careers/currentOpnning/GATE2026Advertisement20022026.pdf",
-    sourcePublished: "20 Feb 2026",
-    lastVerified: "4 Aug 2026, 16:50 IST",
+    sourcePublished: "Advertisement dated 20 Feb 2026; final result for Executive Trainee (Mechanical) posted 5 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Discipline-wise shortlists were published in May–June 2026 and final results followed for Chemical (13 Jul), Instrumentation (16 Jul) and Mechanical (5 Aug 2026); the Electrical final result is still awaited.",
+      },
+    ],
     keywords: [
       "GAIL ET 2026",
       "gas PSU executive trainee",
@@ -611,7 +623,7 @@ export const exams: Exam[] = [
     sourceTitle: "Requirement of Non-Executive Personnel in Refineries Division — 2025",
     sourceUrl: "https://iocl.com/latest-job-opening",
     sourcePublished: "20 Dec 2025; CBT 30 Jan 2026; later shortlists published in 2026",
-    lastVerified: "4 Aug 2026, 17:10 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "IndianOil non-executive 2025",
       "IOCL refinery JEA",
@@ -697,16 +709,20 @@ export const exams: Exam[] = [
     examTypes: ["Technical & Trades", "Specialist & Professional"],
     education: ["10th", "ITI / Diploma", "Graduate"],
     status: {
-      label: "Official recruitment lifecycle active",
+      label: "Tier-I result declared; Tier-II result awaited",
       tone: "violet",
-      nextAction: "Open the CEPTAM-11 entry on DRDO's vacancy page for the current candidate notice",
-      detail: "DRDO's live vacancy index continues to list CEPTAM-11 for STA-B and Technician-A. Only the dated publication is asserted here; candidate-stage dates must come from the linked entry.",
+      nextAction: "Watch the same DRDO vacancy page for the Tier-II CBT result and the final select list.",
+      detail: "DRDO has published the Tier-I CBT result (25 May 2026), a score-normalisation notice (9 Jun 2026) and the question-challenge portal for the Tier-II CBT (18 Jun 2026). No Tier-II result or select list has been published. The vacancy entry stays live until 31 Dec 2026.",
     },
     summary: "Technical-cadre recruitment for Senior Technical Assistant-B and Technician-A posts in DRDO establishments.",
     qualification: "Post-code-specific science/engineering diploma or degree for STA-B, and matriculation plus notified ITI/trade credential for Technician-A.",
     timeline: [
-      { label: "Advertisement published", date: "2025-12-11", displayDate: "11 Dec 2025", state: "completed" },
-      { label: "Current candidate stage", displayDate: "Exact official date awaited", state: "current" },
+      { label: "Short advertisement published", date: "2025-12-04", displayDate: "4 Dec 2025", state: "completed" },
+      { label: "CEPTAM-11 advertisement published", date: "2025-12-11", displayDate: "11 Dec 2025", state: "completed" },
+      { label: "Tier-I CBT result declared", date: "2026-05-25", displayDate: "25 May 2026", state: "completed" },
+      { label: "Score normalisation notice", date: "2026-06-09", displayDate: "9 Jun 2026", state: "completed" },
+      { label: "Tier-II CBT question-challenge portal opened", date: "2026-06-18", displayDate: "18 Jun 2026", state: "completed" },
+      { label: "Tier-II result and further stages", displayDate: "Not announced", state: "current" },
     ],
     eligibility: [
       "Only Indian Nationals need apply, and every eligibility condition is determined with reference to the crucial date of eligibility, 1 Jan 2026.",
@@ -721,8 +737,8 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official DRDO vacancy index", url: "https://www.drdo.gov.in/drdo/offerings/vacancies", type: "notice" }],
     sourceTitle: "CEPTAM-11 advertisement for STA-B and Technician-A",
     sourceUrl: "https://www.drdo.gov.in/drdo/offerings/vacancies",
-    sourcePublished: "11 Dec 2025; live entry checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:20 IST",
+    sourcePublished: "Short advertisement 4 Dec 2025; full advertisement 11 Dec 2025; Tier-I CBT result 25 May 2026; Tier-II question challenge 18 Jun 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "DRDO CEPTAM 11",
       "DRDO STA-B recruitment",
@@ -873,16 +889,18 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Professional degree", "Postgraduate"],
     status: {
-      label: "Applications closed; screening under way",
-      tone: "violet",
-      nextAction: "Track ONGC's recruitment-notice page and the registered candidate login for the shortlist and next stage",
-      detail: "ONGC's official recruitment-notice page confirms Advertisement No. 2/2026 (R&P) for Geologists and Engineers at E1 level, dated 16 Jul 2026, published through the career section.",
+      label: "CBT tentatively set for 6 Sep 2026",
+      tone: "blue",
+      nextAction: "Watch ONGC recruitment notices for the CBT call letter and confirmation of the 6 Sep 2026 date; retitle the record away from 'through GATE'.",
+      detail: "Registration under Advt. No. 2/2026 (R&P) ran 17–31 Jul 2026 and is closed. ONGC's own schedule puts the Computer Based Test on 6 Sep 2026 (tentative); selection then runs CBT, interview and medical fitness. No result or call letter has been published yet.",
     },
     summary: "Direct recruitment of Graduate Trainees in Engineering and Geo-Sciences disciplines at E1 level in ONGC, based on a GATE score and ONGC's own selection process.",
     qualification: "Notified engineering discipline degree or postgraduate Geology qualification as specified in Advertisement No. 2/2026 (R&P); see the official advertisement for the exact discipline list and marks requirement.",
     timeline: [
       { label: "Advertisement published", date: "2026-07-16", displayDate: "16 Jul 2026", state: "completed" },
-      { label: "Screening / next stage", displayDate: "Exact official date awaited", state: "current" },
+      { label: "Online registration opened", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
+      { label: "Online registration closed", date: "2026-07-31", displayDate: "31 Jul 2026, 23:59", state: "completed" },
+      { label: "Computer Based Test", date: "2026-09-06", displayDate: "6 Sep 2026 — tentative", state: "tentative" },
     ],
     eligibility: [
       "Advertisement No. 2/2026 (R&P) is titled 'Recruitment of Geologists and Engineers at E1 level through Computer Based Test (CBT)' and prescribes ONGC's own CBT — it does not use a GATE score at any stage of selection.",
@@ -900,8 +918,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Recruitment of Geologists and Engineers at E1 Level — Advt. No. 2/2026 (R&P)",
     sourceUrl: "https://www.ongcindia.com/web/eng/career/recruitment-notice",
-    sourcePublished: "16 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:35 IST",
+    sourcePublished: "Advt. No. 2/2026 (R&P), listed on ONGC's recruitment-notice page 16 Jul 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "ONGC graduate trainee 2026",
       "ONGC E1 recruitment",
@@ -1018,7 +1036,7 @@ export const exams: Exam[] = [
     sourceTitle: "NTPC Engineering Executive Trainee (EET-2025) through GATE 2025 — Advt. 14/24",
     sourceUrl: "https://careers.ntpc.co.in/recruitment/",
     sourcePublished: "Applications closed 25 Feb 2026; fourth shortlist 29 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:42 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "NTPC EET 2025",
       "NTPC executive trainee GATE",
@@ -1051,10 +1069,10 @@ export const exams: Exam[] = [
     vacancyLabel: "389 posts (Manager — 11 disciplines; Junior Executive — 4 disciplines)",
     vacancyNote: "Figure as published on AAI's official recruitment dashboard; see the detailed advertisement for the discipline-wise split.",
     status: {
-      label: "Advertisement released; application window awaited",
-      tone: "amber",
-      nextAction: "Watch AAI's recruitment dashboard on aai.aero for the online-application link and CBT schedule",
-      detail: "AAI's official recruitment dashboard lists Advt. No. 12/2026/CHQ/DR-CBT, posted 22 Jul 2026 and updated 3 Aug 2026, for 389 Manager and Junior Executive posts through a computer-based test.",
+      label: "Applications open until 7 Sep 2026",
+      tone: "green",
+      nextAction: "Move the record to exam-awaited after 7 Sep 2026 and watch aai.aero for the CBT date.",
+      detail: "The detailed advertisement for Advt. No. 12/2026/CHQ/DR-CBT (389 posts) sets the online application window as 8 Aug 2026 to 7 Sep 2026, with 7 Sep 2026 also the eligibility cut-off date. The registration link is live on the AAI recruitment dashboard and post-wise syllabi were added on 13 Aug 2026; the CBT date is still to be announced.",
     },
     summary: "Direct recruitment of Managers across 11 disciplines and Junior Executives across 4 disciplines in the Airports Authority of India through a computer-based test and interview/physical test where applicable.",
     qualification: "Discipline-specific graduate, postgraduate or professional engineering qualification as listed against each Manager and Junior Executive discipline in Advt. 12/2026/CHQ/DR-CBT.",
@@ -1063,7 +1081,10 @@ export const exams: Exam[] = [
     pay: "Post and grade specific under Advt. 12/2026/CHQ/DR-CBT.",
     timeline: [
       { label: "Advertisement posted", date: "2026-07-22", displayDate: "22 Jul 2026", state: "completed" },
-      { label: "Application window", displayDate: "Exact official date awaited", state: "current" },
+      { label: "Online applications open", date: "2026-08-08", displayDate: "8 Aug 2026", state: "completed" },
+      { label: "Post-wise syllabus published", date: "2026-08-13", displayDate: "13 Aug 2026", state: "completed" },
+      { label: "Last date for online applications", date: "2026-09-07", displayDate: "7 Sep 2026", state: "current" },
+      { label: "Computer Based Test", displayDate: "To be announced on the AAI website", state: "tentative" },
     ],
     eligibility: [
       "Manager posts require the discipline-specific qualification plus three years of post-qualification work experience in the corresponding field — for example a Bachelor's degree in Engineering or Technology in Civil or in Electrical for the two engineering Manager posts, and an MBA or PGDM with Finance specialisation, or a Cost Accountant, Chartered Accountant or Chartered Financial Analyst qualification, for Manager (Finance).",
@@ -1084,8 +1105,15 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official AAI recruitment dashboard", url: "https://www.aai.aero/en/careers/recruitment", type: "notice" }],
     sourceTitle: "Direct Recruitment of Managers and Junior Executives — Advt. 12/2026/CHQ/DR-CBT",
     sourceUrl: "https://www.aai.aero/en/careers/recruitment",
-    sourcePublished: "Posted 22 Jul 2026; updated 3 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:46 IST",
+    sourcePublished: "Advertisement posted 22 Jul 2026, detailed advertisement updated 3 Aug 2026; dashboard entry last updated 13 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The detailed advertisement gives an 8 Aug - 7 Sep 2026 application window, so applications are now open; syllabus published 13 Aug 2026.",
+      },
+    ],
     keywords: [
       "AAI manager recruitment 2026",
       "AAI junior executive 2026",
@@ -1115,17 +1143,20 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Professional degree"],
     status: {
-      label: "Applications closed; interview stage active",
+      label: "Provisional shortlists out; medical examination stage",
       tone: "violet",
-      nextAction: "Check NALCO's recruitment portal for the interview schedule and result",
-      detail: "NALCO's official recruitment portal lists Advertisement No. 10250803 for Graduate Engineer Trainees through GATE-2025, with the application window closed and the interview stage shown as active.",
+      nextAction: "Shortlisted candidates should watch for the Pre-Employment Medical Examination letter",
+      detail: "NALCO held the personal interviews for Graduate Engineer Trainee against Advt. No. 10250803 - Mechanical and Electrical on 9 Mar 2026 and Chemical on 16 Mar 2026 - and has published four successive lists of provisionally shortlisted candidates. The fourth list adds candidates who are being sent Pre-Employment Medical Examination letters. No final selection list has been published.",
     },
     summary: "Graduate Engineer Trainee recruitment in NALCO using GATE 2025 scores, covering Mechanical, Electrical and Chemical engineering disciplines.",
     qualification: "Full-time Bachelor's degree in Mechanical, Electrical or Chemical Engineering with a valid GATE 2025 score, per Advt. 10250803.",
     timeline: [
       { label: "Applications opened", date: "2026-01-02", displayDate: "2 Jan 2026", state: "completed" },
       { label: "Applications closed", date: "2026-01-22", displayDate: "22 Jan 2026", state: "completed" },
-      { label: "Interview stage", displayDate: "Exact official date awaited", state: "current" },
+      { label: "Personal interview - Mechanical and Electrical", date: "2026-03-09", displayDate: "9 Mar 2026", state: "completed" },
+      { label: "Personal interview - Chemical", date: "2026-03-16", displayDate: "16 Mar 2026", state: "completed" },
+      { label: "1st, 2nd and 3rd provisional shortlists published", displayDate: "Publication dates not announced on the notices", state: "current" },
+      { label: "4th provisional shortlist; Pre-Employment Medical Examination letters being sent", displayDate: "Publication date not announced on the notice", state: "tentative" },
     ],
     eligibility: [
       "A GATE-2025 score is mandatory and only GATE-2025 marks are valid for this recruitment — Mechanical maps to GATE paper ME, Electrical to EE and Chemical to CH. The score counts only if it is at or above the qualifying marks fixed for that paper by the GATE-2025 conducting authority.",
@@ -1140,8 +1171,15 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official NALCO recruitment portal", url: "https://mudira.nalcoindia.co.in/rec_portal/default.aspx", type: "notice" }],
     sourceTitle: "Graduate Engineer Trainees through GATE-2025 — Advt. No. 10250803",
     sourceUrl: "https://mudira.nalcoindia.co.in/rec_portal/default.aspx",
-    sourcePublished: "Applications 2–22 Jan 2026; interview phase active",
-    lastVerified: "4 Aug 2026, 17:50 IST",
+    sourcePublished: "Advt. No. 10250803; fourth provisional shortlist published on the NALCO recruitment portal",
+    lastVerified: "20 Aug 2026, 02:45 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "NALCO's recruitment portal now shows four provisional shortlists against Advt. No. 10250803, the latest sending Pre-Employment Medical Examination letters, after interviews held on 9 Mar 2026 (Mechanical, Electrical) and 16 Mar 2026 (Chemical).",
+      },
+    ],
     keywords: [
       "NALCO GET 2026",
       "NALCO graduate engineer trainee",
@@ -1347,11 +1385,10 @@ export const exams: Exam[] = [
       { label: "Management Trainee (other than Construction)", total: 44 },
     ],
     status: {
-      label: "Registration closed; selection outcome on the portal",
-      tone: "violet",
-      nextAction: "Open EIL's recruitment portal for the selected-candidates list and joining instructions",
-      detail:
-        "EIL's official recruitment portal shows registration for Advt. HRD/Rectt./Advt./2025-26/18 as closed and links a selected-candidates list for this Management Trainee cycle; the portal publishes no date against that list.",
+      detail: "EIL's recruitment portal shows 'Registration is closed for MT Recruitment' and publishes the list of selected candidates against Advt. No. HRD/Rectt./Advt./2025-26/18, across Chemical, Electrical, Civil and Mechanical disciplines for both Construction and Other-than-Construction streams, with initial offer letters already issued.",
+      label: "Selection complete; initial offer letters issued",
+      tone: "slate",
+      nextAction: "No further action expected on this cycle; watch for a fresh MT advertisement (2026-27 series) instead.",
     },
     summary:
       "GATE-2026 based recruitment of engineering graduates as Management Trainees at Engineers India Limited, split between a construction stream posted to project sites and a core-engineering stream in design, costing, procurement and inspection.",
@@ -1363,7 +1400,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online registration opened", date: "2026-03-20", displayDate: "20 Mar 2026", state: "completed" },
       { label: "Online registration closed", date: "2026-04-13", displayDate: "13 Apr 2026", state: "completed" },
-      { label: "Selection outcome", displayDate: "Exact official date awaited", state: "current" },
+      { label: "List of selected candidates published, initial offer letters issued", displayDate: "Publication date not announced on the list", state: "current" },
     ],
     eligibility: [
       "A GATE-2026 score is mandatory: Chemical maps to GATE paper CH, Mechanical to ME, Civil to CE and Electrical to EE.",
@@ -1387,8 +1424,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Recruitment of Management Trainees-2026 through GATE-2026 — HRD/Rectt./Advt./2025-26/18",
     sourceUrl: "https://recruitment.eil.co.in/hrdnew/mt/2025_26_18.pdf",
-    sourcePublished: "Registration 20 Mar – 13 Apr 2026; portal checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:32 IST",
+    sourcePublished: "Registration 20 Mar – 13 Apr 2026; selected-candidates list on the EIL recruitment portal (no publication date printed on the list)",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "EIL management trainee 2026",
       "Engineers India Limited recruitment",
@@ -1422,11 +1459,10 @@ export const exams: Exam[] = [
     vacancyNote:
       "Totals as published in the vacancy table of Advt. NPCIL/HQ/HRM/ET/2026/02; the discipline-wise split is in the advertisement itself.",
     status: {
-      label: "Selection lists and interview cut-offs published",
+      detail: "Revised interview cut-off marks after operation of waiting list 1 were uploaded on 10 Aug 2026, following the 3 Jul 2026 selection list, waiting list and interview cut-offs and the 19 May 2026 GATE-score cut-off and interview shortlist.",
+      label: "Waiting list 1 operated; revised interview cut-offs out",
       tone: "violet",
-      nextAction: "Check npcilcareers.co.in for the subject-wise and category-wise selection/waitlist and interview cut-offs",
-      detail:
-        "NPCIL's official recruitment portal shows Executive Trainee 2026 (GATE-based) and a separate Executive Trainee 2026 (Industrial & Fire Safety, Physics) cycle, both with selection lists and interview cut-off marks posted; the portal's own update note is dated 22 Jul 2026.",
+      nextAction: "Watch the ET-2026 portal notices for any further waiting-list operation or an offer/joining notice; move to slate once the cycle closes.",
     },
     summary:
       "NPCIL's Executive Trainee recruitment to Mechanical, Chemical, Electrical, Electronics, Instrumentation and Civil disciplines, shortlisted on GATE 2024, 2025 or 2026 scores and run entirely on the corporation's own recruitment portal.",
@@ -1438,7 +1474,9 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online applications opened", date: "2026-04-10", displayDate: "10 Apr 2026, 10:00 hrs", state: "completed" },
       { label: "Applications closed", date: "2026-04-30", displayDate: "30 Apr 2026, 16:00 hrs", state: "completed" },
-      { label: "Selection list and interview cut-offs", displayDate: "Exact official date awaited", state: "current" },
+      { label: "GATE score cut-off and interview shortlist published", date: "2026-05-19", displayDate: "19 May 2026", state: "completed" },
+      { label: "Selection list, waiting list and interview cut-off marks published", date: "2026-07-03", displayDate: "3 Jul 2026", state: "completed" },
+      { label: "Interview cut-off marks after operation of waiting list 1", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "A valid GATE 2024, GATE 2025 or GATE 2026 score in the discipline applied for is mandatory; older GATE scores are not accepted for this cycle.",
@@ -1459,8 +1497,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Recruitment of Executive Trainees 2026 through GATE — Advt. NPCIL/HQ/HRM/ET/2026/02",
     sourceUrl: "https://www.npcilcareers.co.in/ETHQ10042026/documents/advt.pdf",
-    sourcePublished: "Applications 10–30 Apr 2026; portal update noted 22 Jul 2026",
-    lastVerified: "4 Aug 2026, 18:36 IST",
+    sourcePublished: "Applications 10-30 Apr 2026; portal notice dated 10 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Replaced the dateless 'exact official date awaited' entry with the portal's dated notices: 19 May 2026, 3 Jul 2026 and a new 10 Aug 2026 revised cut-off after waiting list 1 was operated.",
+      },
+    ],
     keywords: [
       "NPCIL executive trainee 2026",
       "nuclear PSU recruitment",
@@ -1862,7 +1907,7 @@ export const exams: Exam[] = [
     sourceTitle: "Oil India Limited advertisement list and advertisement archive",
     sourceUrl: "https://www.oil-india.com/advertisement-list",
     sourcePublished: "Advertisement list and archive checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:22 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "Oil India Grade A recruitment",
       "OIL officer jobs",
@@ -1918,7 +1963,7 @@ export const exams: Exam[] = [
     sourceTitle: "GRSE career page — Recruitment of Officers, Advt. 2026/03(O)",
     sourceUrl: "https://grse.in/career/index",
     sourcePublished: "Application window 9–31 Mar 2026; career page checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:52 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "GRSE officers 2026",
       "Garden Reach Shipbuilders recruitment",
@@ -2050,11 +2095,10 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Professional degree"],
     status: {
-      label: "Shortlist published; interview stage under way",
-      tone: "violet",
-      nextAction: "Check NHPC's official job page for the shortlist, consent notices and interview schedule",
-      detail:
-        "NHPC's official job page records a second-phase consent notice for Trainee Engineer (Mechanical, Electrical and Civil) on 25 Jun 2026 and the list of candidates shortlisted for interview under Notification NH/Rectt/02/2026 on 1 Jul 2026.",
+      detail: "On 14 Aug 2026 NHPC published lists of provisionally selected candidates for Trainee Engineer (Civil), (Electrical) and (Mechanical) against Advt. No. NH/Rectt/02/2026 (SRD), with cut-offs based on GATE-2024/GATE-2025 score, group discussion and personal interview. Selection is subject to document verification, medical fitness and NHPC's terms; offer letters are sent only to registered e-mail IDs.",
+      label: "Provisional selection lists published",
+      tone: "slate",
+      nextAction: "Nothing further expected on the public job page beyond document verification/medical; re-open only if NHPC issues a reserve-panel or supplementary list.",
     },
     summary:
       "GATE-score based recruitment of Trainee Engineers in Civil, Electrical and Mechanical disciplines at NHPC, India's largest hydropower generator, including a special recruitment drive for SC/ST/OBC-NCL/PwBD candidates.",
@@ -2063,7 +2107,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Second-phase consent notice for Trainee Engineer", date: "2026-06-25", displayDate: "25 Jun 2026", state: "completed" },
       { label: "Shortlist for interview published", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
-      { label: "Interview and assessment stage", displayDate: "Exact official date awaited", state: "current" },
+      { label: "Provisional selection lists for Trainee Engineer (Civil, Electrical, Mechanical)", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Advertisement No. NH/Rectt./02/2026 dated 12 Mar 2026 is entirely a Special Recruitment Drive — only SC, ST, OBC (Non-Creamy Layer) and PwBD candidates may apply for the Trainee Engineer (Civil), (Electrical) and (Mechanical) posts.",
@@ -2083,8 +2127,15 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official NHPC job page", url: "https://www.nhpcindia.com/welcome/job", type: "notice" }],
     sourceTitle: "NHPC job page — Trainee Engineer shortlists under Notification NH/Rectt/02/2026",
     sourceUrl: "https://www.nhpcindia.com/welcome/job",
-    sourcePublished: "Consent notice 25 Jun 2026; shortlist 1 Jul 2026",
-    lastVerified: "4 Aug 2026, 19:02 IST",
+    sourcePublished: "NHPC notice NH/HR/Talent Acquisition/2026/509 dated 13 Aug 2026, hosted 14 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "NHPC declared the GATE-based Trainee Engineer result on 14 Aug 2026: provisional selection lists for Civil, Electrical and Mechanical against Advt. NH/Rectt/02/2026.",
+      },
+    ],
     keywords: [
       "NHPC trainee engineer",
       "NHPC recruitment GATE",
@@ -2403,7 +2454,7 @@ export const exams: Exam[] = [
     sourceTitle: "Apprenticeship Training at RailTel Corporation of India Ltd — Notice RCIL/2024/P&A/27/1",
     sourceUrl: "https://www.railtel.in/images/careers/DocScanner%2028-Jul-2026%2004-10%20PM.pdf",
     sourcePublished: "28 Jul 2026; last date 27 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:26 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "RailTel apprenticeship 2026",
       "RCIL graduate apprentice",

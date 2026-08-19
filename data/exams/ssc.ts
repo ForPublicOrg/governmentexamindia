@@ -1071,10 +1071,10 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["12th"],
     status: {
-      label: "CBE scheduled for August 2026",
-      tone: "violet",
-      nextAction: "Watch SSC (Northern Region) for the admission certificate and the exact CBE date",
-      detail: "Applications closed 20 Jul 2026 after an addendum extended the original 16 Jul 2026 deadline. The notice places the computer-based examination tentatively in August 2026 in Delhi-NCR only; exact dates are issued through SSC (Northern Region) and are not asserted here.",
+      label: "Examination on 23 Aug 2026 at Delhi",
+      tone: "blue",
+      nextAction: "Appear at the Delhi centre on 23 Aug 2026 and follow the descriptive-paper instructions",
+      detail: "SSC announced on 13 Aug 2026 that this Limited Departmental Competitive Examination will be held at Delhi on 23 August 2026. Its Important Notice of 18 Aug 2026 tells candidates that the descriptive paper's questions appear on the computer screen while answers must be written in the physical answer booklet provided at the venue.",
     },
     summary: "The limited departmental competitive examination held separately for the Central Secretariat Clerical Service cadre of the Department of Personnel and Training, to make additions to its select list of Junior Secretariat Assistant / Lower Division Clerk Grade.",
     vacancies: 49,
@@ -1086,8 +1086,10 @@ export const exams: Exam[] = [
     pay: "Pay Level-2, Group 'C' Non-Gazetted (₹19,900–₹63,200).",
     timeline: [
       { label: "Notification", date: "2026-06-25", displayDate: "25 Jun 2026", state: "completed" },
-      { label: "Applications closed (extended)", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed", note: "Extended from 16 Jul 2026 by the addendum dated 13 Jul 2026." },
-      { label: "Computer-based examination", sortMonth: "2026-08", displayDate: "August 2026", state: "current", note: "Tentative month per the notice; conducted in Delhi-NCR only." },
+      { label: "Applications closed (extended)", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
+      { label: "Examination date announced for 23 Aug 2026", date: "2026-08-13", displayDate: "13 Aug 2026", state: "completed" },
+      { label: "Instructions for the descriptive paper issued", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
+      { label: "Computer-based examination and descriptive paper, Delhi", date: "2026-08-23", displayDate: "23 Aug 2026", state: "scheduled" },
     ],
     eligibility: [
       "Open only to serving Group C employees of the Central Secretariat Clerical Service cadre of DoPT with Grade Pay ₹1,800.",
@@ -1114,9 +1116,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "SSC JSA/LDC Grade Limited Departmental Competitive Examination 2025 (CSCS, DoPT) official notice and addendum",
     sourceUrl: "https://ssc.gov.in/api/attachment/uploads/masterData/NoticeBoards/Notice_of_JSA_Dopt_2026_06_25.pdf.pdf",
-    sourcePublished: "Notice 25 Jun 2026; addendum 13 Jul 2026",
-    lastVerified: "4 Aug 2026, 18:25 IST",
+    sourcePublished: "Notice of examination 25 Jun 2026; examination date announced 13 Aug 2026; descriptive-paper instructions 18 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:35 IST",
     changeLog: [
+      {
+        date: "2026-08-18",
+        displayDate: "18 Aug 2026",
+        text: "SSC fixed 23 Aug 2026 at Delhi for this departmental examination and then issued instructions for the descriptive paper: questions are displayed on screen and answers must be written in the physical answer booklet supplied at the venue.",
+      },
       { date: "2026-07-13", displayDate: "13 Jul 2026", text: "Addendum extended the closing date to 20 Jul 2026 and added a one-year qualifying-service relaxation for MTS up to Select List Year 2020." },
     ],
     keywords: [

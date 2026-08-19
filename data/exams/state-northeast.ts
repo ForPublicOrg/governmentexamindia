@@ -320,7 +320,7 @@ export const exams: Exam[] = [
     sourceTitle: "Assistant Manager in Assam Power Generation Corporation Limited - Advertisement 09/2026",
     sourceUrl: "https://apsc.nic.in/advt_2026/AM_APGCL_Advt_09_2026.pdf",
     sourcePublished: "15 Jul 2026",
-    lastVerified: "4 Aug 2026, 15:35 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "APGCL Assistant Manager",
       "Assam Power Generation Corporation recruitment",
@@ -384,7 +384,7 @@ export const exams: Exam[] = [
     sourceTitle: "Junior Manager in Assam Power Generation Corporation Limited - Advertisement 10/2026",
     sourceUrl: "https://apsc.nic.in/advt_2026/Advt_10_2026_APGCL.pdf",
     sourcePublished: "16 Jul 2026",
-    lastVerified: "4 Aug 2026, 15:35 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "APGCL Junior Manager",
       "APSC JM APGCL",
@@ -826,7 +826,7 @@ export const exams: Exam[] = [
     sourceTitle: "Mizoram PSC Advertisement 21 of 2026-27 - Soil Conservation Ranger",
     sourceUrl: "https://mpsc.mizoram.gov.in/page/advertisement-2026-2027",
     sourcePublished: "28 Jul 2026; closes 31 Aug 2026",
-    lastVerified: "4 Aug 2026, 16:15 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "Mizoram ranger recruitment",
       "MPSC Mizoram soil conservation",
@@ -894,7 +894,7 @@ export const exams: Exam[] = [
     sourceTitle: "Mizoram PSC Advertisement 20 of 2026-27 - Assistant Sub-Inspector of Excise",
     sourceUrl: "https://mpsc.mizoram.gov.in/page/advertisement-2026-2027",
     sourcePublished: "24 Jul 2026; closes 28 Aug 2026",
-    lastVerified: "4 Aug 2026, 16:15 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "Mizoram excise ASI",
       "MPSC Mizoram excise",
@@ -982,10 +982,10 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "Verification and physical-test stage",
-      tone: "violet",
-      nextAction: "Affected candidates must follow the 5 Aug disability-certificate reverification notice",
-      detail: "NPSC issued the reverification notice on 28 July alongside current physical-fitness-test updates.",
+      label: "Final result declared",
+      tone: "slate",
+      nextAction: "Move to complete/slate; no further stages expected for this cycle.",
+      detail: "NPSC declared the final (provisional) results of the NCS, NPS and Allied Services Examination 2025 on 10 Aug 2026, then issued a modified supplementary list on 18 Aug 2026 after some candidates declined posts. The cycle is complete.",
     },
     summary: "Nagaland's combined civil, police and allied services cycle, now in post-written selection stages.",
     vacancyLabel: "See the 2025 notification",
@@ -998,7 +998,9 @@ export const exams: Exam[] = [
       { label: "Advertisement", date: "2025-10-28", displayDate: "28 Oct 2025", state: "completed" },
       { label: "Corrigendum", date: "2026-02-04", displayDate: "4 Feb 2026", state: "completed" },
       { label: "Reverification notice", date: "2026-07-28", displayDate: "28 Jul 2026", state: "completed" },
-      { label: "Disability-certificate reverification", date: "2026-08-05", displayDate: "5 Aug 2026", state: "current" },
+      { label: "Disability-certificate reverification", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed" },
+      { label: "Final results declared", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
+      { label: "Supplementary (modified) results", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Educational qualification for Item No. 1 to 21 is a Bachelor's Degree in any discipline, including Divinity, from a recognized University; candidates who possess a degree in any discipline at the time of applying are eligible to take the test.",
@@ -1018,8 +1020,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "NCS, NPS and Allied Services 2025 - Disability Certificate Reverification",
     sourceUrl: "https://npsc.nagaland.gov.in/notification/178521776380674",
-    sourcePublished: "28 Jul 2026; reverification 5 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:45 IST",
+    sourcePublished: "Notification No. NPSC/EXAM-5/2025 dated 10 Aug 2026 (final results) and dated 18 Aug 2026 (supplementary results)",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "NPSC declared the final results of the NCS, NPS and Allied Services Examination 2025 on 10 Aug 2026 and a modified supplementary list on 18 Aug 2026, completing the cycle.",
+      },
+    ],
     keywords: [
       "NPSC NCS",
       "Nagaland civil service exam",
@@ -1692,7 +1701,7 @@ export const exams: Exam[] = [
     sourceTitle: "Manipur Police recruitment notices",
     sourceUrl: "https://manipurpolice.gov.in/?cat=59",
     sourcePublished: "Recruitment page checked 4 Aug 2026; latest standing rules page updated 15 Jul 2026",
-    lastVerified: "4 Aug 2026, 20:00 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "Manipur police bharti",
       "Manipur SI recruitment",
@@ -2826,7 +2835,7 @@ export const exams: Exam[] = [
     sourceTitle: "Medical and Health Recruitment Board, Assam - Advertisement No. MHRB/72/Faculty/2026/5004",
     sourceUrl: "https://nhmssd.assam.gov.in/eHRMIS_latest/uploadAdmin/uploads/job166-doc-1.pdf",
     sourcePublished: "13 Jul 2026",
-    lastVerified: "4 Aug 2026, 19:15 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "MHRB Assam",
       "Assam medical college faculty recruitment",
@@ -2852,10 +2861,10 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Professional degree"],
     status: {
-      label: "Written-test stage; dates not published in readable form",
-      tone: "amber",
-      nextAction: "Open the MeECL recruitment page for the Assistant Engineer advertisement, written-test notice and e-admit card link",
-      detail: "MeECL's recruitment page carries the Assistant Engineer advertisement, a written-test examination notice and an e-admit card link for the Assistant Engineers written test; all three documents are scanned images whose dates could not be read, so no date, vacancy or fee is asserted here.",
+      label: "Written-test result out; interview 1 Sep 2026",
+      tone: "blue",
+      nextAction: "Re-check after 1 Sep 2026 for the interview result / appointment orders, which would complete the cycle.",
+      detail: "MeECL declared the written-test results for Assistant Engineer (Electrical/EEE) and (Computer Science Engineering/IT) on 13 August 2026. The test was held on 20 June 2026. Qualified candidates attend a personal interview on 1 September 2026 at the MeECL Guest House Campus, Lumjingshai, Shillong — Electrical/EEE from 10:00 AM and Computer Science/IT from 2:00 PM.",
     },
     summary: "Meghalaya Energy Corporation Limited's direct recruitment for Assistant Engineers in the Electrical, Electrical & Electronics, Computer Science and IT Engineering disciplines.",
     eligibility: [
@@ -2877,8 +2886,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Meghalaya Energy Corporation Limited - Recruitment page",
     sourceUrl: "https://meecl.nic.in/index.php/recruitment/",
-    sourcePublished: "MeECL recruitment page checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:20 IST",
+    sourcePublished: "Result notifications No. MeECL/CA/RECT/13/2026/84 and /85, both dated 13 August 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "MeECL declared the Assistant Engineer written-test results on 13 August 2026, revealing that the test was held on 20 June 2026 and that shortlisted candidates are called for a personal interview on 1 September 2026 in Shillong.",
+      },
+    ],
     keywords: [
       "MeECL recruitment",
       "Meghalaya Energy Corporation",
@@ -2952,10 +2968,10 @@ export const exams: Exam[] = [
     education: ["12th", "ITI / Diploma"],
     verification: "verified",
     status: {
-      label: "Applications closed; further stages awaited",
-      tone: "amber",
-      nextAction: "Watch the Tripura health recruitment portal for the next stage of the MPW recruitment",
-      detail: "The Health & Family Welfare Department's recruitment portal records that the MPW (Male & Female) application window ran from 17 Mar 2026 to 31 Mar 2026, 5:00 PM; no result, examination or interview notice has been published on it since.",
+      label: "Written exam held; result awaited",
+      tone: "violet",
+      nextAction: "Watch health.tripura.gov.in/jobs-and-recruitment for the MPW written-exam result.",
+      detail: "The Directorate of Family Welfare & P.M. published the eligible-candidate list (Annexure-A) with the written-examination notification on 23 Jun 2026, opened admit-card download from 1 Jul 2026, and held the written examination on 12 Jul 2026. No result notice yet.",
     },
     summary: "Recruitment of Multipurpose Workers (Male and Female) for Tripura's health services, run through the Health & Family Welfare Department's own recruitment portal.",
     vacancyLabel: "See the MPW advertisement",
@@ -2965,9 +2981,13 @@ export const exams: Exam[] = [
     fee: "See the MPW advertisement on the Tripura health recruitment portal",
     pay: "Tripura health-services pay level for Multipurpose Worker as notified in the advertisement.",
     timeline: [
+      { label: "Employment notification", date: "2026-03-13", displayDate: "13 Mar 2026", state: "completed" },
       { label: "Applications open", date: "2026-03-17", displayDate: "17 Mar 2026", state: "completed" },
       { label: "Application deadline", date: "2026-03-31", displayDate: "31 Mar 2026, 5:00 PM", state: "completed" },
-      { label: "Next stage", displayDate: "Awaited", state: "current" },
+      { label: "Eligible-candidate list and written-examination notification", date: "2026-06-23", displayDate: "23 Jun 2026", state: "completed" },
+      { label: "Admit card download opens", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
+      { label: "Written examination", date: "2026-07-12", displayDate: "12 Jul 2026", state: "completed" },
+      { label: "Result", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
       "Applications were accepted only through the Health & Family Welfare Department's own recruitment portal within the published window.",
@@ -2992,8 +3012,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Health & Family Welfare Department, Tripura - health recruitment portal, MPW (Male & Female) recruitment",
     sourceUrl: "https://healthrecruitment.tripura.gov.in/",
-    sourcePublished: "Application window 17-31 Mar 2026; portal checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:30 IST",
+    sourcePublished: "Notification dated 23 Jun 2026; corrigendum 24 Jun 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Tripura MPW: eligible list published 23 Jun, admit cards from 1 Jul, and the written examination was held on 12 Jul 2026.",
+      },
+    ],
     keywords: [
       "Tripura MPW",
       "Tripura multipurpose worker recruitment",

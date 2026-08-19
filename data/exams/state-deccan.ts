@@ -1088,7 +1088,7 @@ export const exams: Exam[] = [
     sourceTitle: "APTET-JUNE 2026 Notification No.01-APTET-JUNE-2026, Director of School Education, Andhra Pradesh",
     sourceUrl: "https://tet2dsc.apcfss.in/TET-PDF/APTET-2026%20Notification.pdf",
     sourcePublished: "Notification dated 5 Jun 2026",
-    lastVerified: "10 Aug 2026, 11:35 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
       {
         date: "2026-08-10",
@@ -1782,11 +1782,10 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate"],
     verification: "verified",
     status: {
-      label: "Notification published",
-      tone: "amber",
-      nextAction: "Read the VAO-2026 notification on the KEA portal and apply through the KEA recruitment application link",
-      detail:
-        "KEA's VAO-2026 pages carry a detailed notification and post-classification list dated 10 Jul 2026 for the Rest of Karnataka posts, an application link posted on 11 Jul 2026 and a further VAO-2026 notification dated 29 Jul 2026. The announcement list publishes no closing date.",
+      detail: "KEA extended the window a second time on 6 Aug 2026: online applications close 20 Aug 2026 and fee payment 21 Aug 2026. The compulsory Kannada language qualifying exam is on 22 Aug 2026, and the VAO written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka).",
+      label: "Applications open - last date 20 Aug 2026",
+      tone: "green",
+      nextAction: "Move the record to violet after 20 Aug 2026, when the application window closes; then track the 22 Aug Kannada exam and the October written exams.",
     },
     summary:
       "Recruitment of Village Administrative Officers for the Karnataka Revenue Department, conducted by the Karnataka Examinations Authority with separate Rest of Karnataka and Kalyana Karnataka processes.",
@@ -1801,9 +1800,16 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Detailed notification and post classification (Rest of Karnataka)", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
       { label: "Online application link opened", date: "2026-07-11", displayDate: "11 Jul 2026", state: "completed" },
-      { label: "VAO-2026 notification", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
-      { label: "Application deadline", displayDate: "Not announced on the KEA announcement list", state: "current" },
-      { label: "Examination", displayDate: "Schedule not announced", state: "tentative" },
+      { label: "VAO-2026 notification, deadline extended to 7 Aug 2026", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
+      { label: "Second extension of the application window", date: "2026-08-06", displayDate: "6 Aug 2026", state: "completed" },
+      { label: "Kannada language examination notified", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed" },
+      { label: "Upcoming exam calendar published", date: "2026-08-15", displayDate: "15 Aug 2026", state: "completed" },
+      { label: "Kannada language exam admit card link opened", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
+      { label: "Last date for online application", date: "2026-08-20", displayDate: "20 Aug 2026", state: "current" },
+      { label: "Last date for online fee payment", date: "2026-08-21", displayDate: "21 Aug 2026", state: "scheduled" },
+      { label: "Compulsory Kannada language examination", date: "2026-08-22", displayDate: "22 Aug 2026", state: "scheduled" },
+      { label: "Written examination (Rest of Karnataka)", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled" },
+      { label: "Written examination (Kalyana Karnataka)", date: "2026-10-25", displayDate: "25 Oct 2026", state: "scheduled" },
     ],
     eligibility: [
       "Apply against the Rest of Karnataka or Kalyana Karnataka process whose notification you meet; KEA runs the two as separate recruitments.",
@@ -1833,8 +1839,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka Examinations Authority - Village Administrative Officer 2026 announcement pages",
     sourceUrl: "https://cetonline.karnataka.gov.in/kea/vaorpc2026.aspx",
-    sourcePublished: "Latest VAO-2026 notification dated 29 Jul 2026",
-    lastVerified: "4 Aug 2026, 18:10 IST",
+    sourcePublished: "KEA extension notice ID/KEA/26 NE.VI/2026 (RPC) dated 6 Aug 2026; KEA upcoming exam calendar dated 15 Aug 2026; read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The deadline is no longer unknown: KEA's 6 Aug 2026 notice sets 20 Aug 2026 for applications and 21 Aug 2026 for fees, and the 15 Aug 2026 exam calendar fixes the VAO written exam for 4 Oct 2026 (RPC) and 25 Oct 2026 (KK), with the Kannada language exam on 22 Aug 2026.",
+      },
+    ],
     keywords: [
       "Karnataka VAO",
       "ಗ್ರಾಮ ಆಡಳಿತ ಅಧಿಕಾರಿ",
@@ -1863,11 +1876,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th"],
     verification: "verified",
     status: {
-      label: "Answer key published",
+      detail: "KEA has moved the cycle past the answer-key stage. Revised answer keys dated 7 Aug 2026 were issued for both the Rest of Karnataka and the Kalyana Karnataka streams. On 15 Aug 2026 KEA published the provisional marks list for both streams with an objection-submission link, and district-wise provisional marks lists for the Rest of Karnataka stream followed on 19 Aug 2026. No final result has been published.",
+      label: "Provisional marks list published; objections invited",
       tone: "violet",
-      nextAction: "File objections through the KEA objection link within the notified window and watch for the result",
-      detail:
-        "The Karnataka Examinations Authority published the provisional answer key for the 2026 Civil Police Constable examination and opened the objection window on 3 Aug 2026 for both the Rest of Karnataka and Kalyana Karnataka processes. No result date is published.",
+      nextAction: "Check your provisional marks on the KEA portal and file any objection within the notified window",
     },
     summary:
       "Direct recruitment to Civil Police Constable posts in the Karnataka State Police, notified region-wise and examined by the Karnataka Examinations Authority.",
@@ -1884,8 +1896,13 @@ export const exams: Exam[] = [
       { label: "Online application link opened", date: "2026-06-09", displayDate: "9 Jun 2026", state: "completed" },
       { label: "Advertisement (Rest of Karnataka)", date: "2026-06-22", displayDate: "22 Jun 2026", state: "completed" },
       { label: "Examination admission letter download", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
+      { label: "Written examination (Rest of Karnataka)", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
+      { label: "Written examination (Kalyana Karnataka)", date: "2026-08-02", displayDate: "2 Aug 2026", state: "completed" },
       { label: "Provisional answer key and objection window", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
-      { label: "Result", displayDate: "Not announced", state: "tentative" },
+      { label: "Revised answer keys (both streams)", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
+      { label: "Provisional marks list published and objections invited", date: "2026-08-15", displayDate: "15 Aug 2026", state: "completed" },
+      { label: "District-wise provisional marks lists hosted", date: "2026-08-19", displayDate: "19 Aug 2026", state: "current" },
+      { label: "Final result", displayDate: "Not announced", state: "tentative" },
     ],
     eligibility: [
       "Apply against the region whose 2026-27 notification you meet; the Kalyana Karnataka and non-Kalyana Karnataka posts are notified separately.",
@@ -1906,8 +1923,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka State Police recruitment page, read with the KEA Civil Police Constable 2026 examination pages",
     sourceUrl: "https://ksp.karnataka.gov.in/info-3/Recruitment/en",
-    sourcePublished: "Recruitment page checked 4 Aug 2026; latest KEA notice dated 3 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:15 IST",
+    sourcePublished: "Provisional marks list published 15 Aug 2026; district-wise lists hosted 19 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:50 IST",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "KEA published revised answer keys for both the Rest of Karnataka and Kalyana Karnataka streams on 7 Aug 2026, the provisional marks list with an objection link on 15 Aug 2026, and district-wise provisional marks lists for the Rest of Karnataka stream on 19 Aug 2026.",
+      },
+    ],
     keywords: [
       "Karnataka police constable",
       "ಸಿವಿಲ್ ಪೊಲೀಸ್ ಕಾನ್‌ಸ್ಟೇಬಲ್",
@@ -2309,7 +2333,7 @@ export const exams: Exam[] = [
     sourceTitle: "APEPDCL careers page - detailed notification for recruitment in engineering services",
     sourceUrl: "https://www.apeasternpower.com/careers",
     sourcePublished: "Application window 30 Jun to 20 Jul 2026; examination 22 to 29 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:50 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "APEPDCL AEE",
       "ఏపీఈపీడీసీఎల్ అసిస్టెంట్ ఎగ్జిక్యూటివ్ ఇంజనీర్",

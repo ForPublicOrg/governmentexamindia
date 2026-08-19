@@ -196,7 +196,7 @@ export const exams: Exam[] = [
     sourceTitle: "TNPSC Annual Planner — Programme of Examinations 2026",
     sourceUrl: "https://www.tnpsc.gov.in/English/annual_planner.html",
     sourcePublished: "3 Dec 2025; notification date listed 7 Jul 2026",
-    lastVerified: "4 Aug 2026, 12:25 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "TNPSC",
       "தமிழ்நாடு அரசுப் பணியாளர் தேர்வாணையம்",
@@ -348,7 +348,7 @@ export const exams: Exam[] = [
     sourceTitle: "TNPSC Press Release 83/2026 — postponement of Group I preliminary exam",
     sourceUrl: "https://www.tnpsc.gov.in/Document/PressEnglish/press%20dt%2016.7.26%20(1).pdf",
     sourcePublished: "16 Jul 2026; original planner published 3 Dec 2025",
-    lastVerified: "4 Aug 2026, 19:05 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
       { date: "2026-07-16", displayDate: "16 Jul 2026", text: "Preliminary exam postponed from 6 Sep 2026 to 27 Sep 2026 per Press Release 83/2026." },
     ],
@@ -1133,7 +1133,7 @@ export const exams: Exam[] = [
     sourceTitle: "TNPSC Press Release 88/2026 — Group IV (Notification 01/2024) Forest Guard & Forest Watcher certificate verification",
     sourceUrl: "https://www.tnpsc.gov.in/Document/PressEnglish/2%20-%20PRESS%20RELEASE%2088_2026(1).pdf",
     sourcePublished: "27 Jul 2026; verification held 3 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:00 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "TNPSC Group 4",
       "VAO exam",
@@ -1480,7 +1480,7 @@ export const exams: Exam[] = [
     sourceTitle: "Kerala Pareeksha Bhavan — K-TET February 2026 notification and announcements",
     sourceUrl: "https://ktet.kerala.gov.in/downloads/feb2026/feb2026.pdf",
     sourcePublished: "Application window 26 Feb - 21 Mar 2026, reopened to 5 Jun 2026; exam date changed to 8-9 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:25 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "The 8-9 Aug 2026 examination has taken place; marked the Examination timeline event completed and moved status from 'Exam scheduled' (blue) to 'Result awaited' (violet) since no answer key or result is yet published on the K-TET site." },
     ],
@@ -1833,11 +1833,10 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications closed; registration and interview on 20 Aug 2026",
+      detail: "Lakshadweep Samagra Shiksha has postponed the registration and interview that our record showed for 20 Aug 2026. Notice F.No. 1/8/2018-Edn (SMSA), published on the Lakshadweep recruitment board on 19 Aug 2026, reschedules registration to 24 August 2026 from 09:30 AM to 10:30 AM and the interview to 11:00 AM onwards, both at the Directorate of Education, Kavaratti. Eligible candidates must report within the stipulated time. A check list for the post was also published on the board on 14 Aug 2026.",
+      label: "Interview postponed; rescheduled to 24 Aug 2026",
       tone: "blue",
-      nextAction: "Report for registration 09:30-10:30 AM and the interview from 11:00 AM on 20 Aug 2026 at the Directorate of Education, Kavaratti",
-      detail:
-        "The application window fixed by Employment Notice F. No. 1/8/2018 - Edn (SMSA)/64, dated 27 Jul 2026, closed 6 Aug 2026 with no extension found on the Lakshadweep recruitment notices page. Registration and interview remain fixed for 20 Aug 2026 at the Directorate of Education, Kavaratti.",
+      nextAction: "Add the postponement notice to links; re-check after 24 Aug for a panel or selection list.",
     },
     summary: "Contract engagement of a Computer Programmer at the Samagra Shiksha State Project Office of the Directorate of Education, Kavaratti, Lakshadweep.",
     vacancies: 1,
@@ -1849,9 +1848,11 @@ export const exams: Exam[] = [
     fee: "The Employment Notice does not prescribe an application fee; applications are submitted in the prescribed format with attested copies of certificates.",
     pay: "Rs 23,000 per month (consolidated), on contract basis.",
     timeline: [
-      { label: "Employment Notice issued", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed", note: "F. No. 1/8/2018 - Edn (SMSA)/64" },
+      { label: "Employment Notice issued", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
       { label: "Last date for receipt of applications", date: "2026-08-06", displayDate: "6 Aug 2026, 5:00 PM", state: "completed" },
-      { label: "Registration and interview", date: "2026-08-20", displayDate: "20 Aug 2026", state: "scheduled", note: "Registration 09:30-10:30 AM, interview 11:00 AM onwards, Directorate of Education, Kavaratti" },
+      { label: "Check list for the post published", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
+      { label: "Registration and interview postponed", date: "2026-08-19", displayDate: "19 Aug 2026", state: "completed" },
+      { label: "Registration and interview", date: "2026-08-24", displayDate: "24 Aug 2026, 9:30 AM registration", state: "scheduled" },
     ],
     eligibility: [
       "Applications in the prescribed format, with attested copies of all relevant certificates, testimonials and supporting documents, must reach the State Project Officer, Lakshadweep Samagra Shiksha (SMSA), Directorate of Education, Kavaratti by 5:00 PM on 6 Aug 2026; late applications are not entertained under any circumstances.",
@@ -1874,9 +1875,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Employment Notice — Computer Programmer on contract basis under Samagra Shiksha, State Project Office, Directorate of Education, Kavaratti",
     sourceUrl: "https://cdn.s3waas.gov.in/s358238e9ae2dd305d79c2ebc8c1883422/uploads/2026/07/17851558532471.pdf",
-    sourcePublished: "Notice dated 27 Jul 2026; last date 6 Aug 2026; interview 20 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:20 IST",
+    sourcePublished: "Employment Notice 27 Jul 2026; postponement and rescheduling notice published 19 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Registration and interview postponed from 20 Aug and rescheduled to 24 Aug 2026 at the Directorate of Education, Kavaratti.",
+      },
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 6 Aug 2026 with no extension found on the Lakshadweep recruitment notices page; moved status from 'Applications open' (green) to reflect the closed window and the confirmed 20 Aug 2026 registration/interview date, and marked the deadline event completed." },
       { date: "2026-08-04", displayDate: "4 Aug 2026", text: "Deadline corrected to 6 Aug 2026 after reading the Employment Notice itself; the recruitment index's 21 Aug 2026 end date is only the notice's display period." },
     ],
@@ -2361,11 +2367,10 @@ export const exams: Exam[] = [
     education: ["10th", "ITI / Diploma"],
     verification: "verified",
     status: {
-      label: "Applications closed; selection under way",
+      detail: "Certificate verification for the main list runs 18-21 Aug 2026 at the MRB office in Chennai, with the additional list called for 22 Aug 2026.",
+      label: "Certificate verification under way",
       tone: "violet",
-      nextAction: "Watch MRB's notifications page for the weightage list and certificate-verification schedule",
-      detail:
-        "Online applications for Notification 01/MRB/2026 closed on 8 Feb 2026. There is no written examination for this post — selection is by weightage of marks — and MRB's notification page for this post currently carries only the notification and the application portal. The Board's tentative annual recruitment planner, updated 2 Jul 2026, still lists Nursing Assistant Grade-II with 999 vacancies.",
+      nextAction: "Watch for the provisional selection list after 22 Aug 2026; the record then moves to slate.",
     },
     summary:
       "Tamil Nadu's largest health-department recruitment at school-leaving level: Nursing Assistant Grade II in the Tamil Nadu Medical Subordinate Service, selected without any written test or interview on the weightage of academic and technical marks.",
@@ -2381,7 +2386,10 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification 01/MRB/2026", date: "2026-01-19", displayDate: "19 Jan 2026", state: "completed" },
       { label: "Last date for online application and payment", date: "2026-02-08", displayDate: "8 Feb 2026", state: "completed" },
-      { label: "Weightage list and certificate verification", displayDate: "To be announced", state: "tentative" },
+      { label: "Certificate verification schedule published", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed" },
+      { label: "Additional certificate-verification list published", date: "2026-08-12", displayDate: "12 Aug 2026", state: "completed" },
+      { label: "Certificate verification, main list", date: "2026-08-18", displayDate: "18-21 Aug 2026, 7th Floor DMS Building, Chennai", state: "current" },
+      { label: "Certificate verification, additional list", date: "2026-08-22", displayDate: "22 Aug 2026", state: "scheduled" },
     ],
     eligibility: [
       "Applications are accepted online only, through the portal linked from MRB's notification page.",
@@ -2407,8 +2415,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Medical Services Recruitment Board Notification No. 01/MRB/2026 — Nursing Assistant Grade II",
     sourceUrl: "https://mrb.tn.gov.in/departments_cms/uploads/tami_800/content_pdf/NotificationforthepostofNursingAssistantGradeII.pdf",
-    sourcePublished: "Notified 19 Jan 2026; applications closed 8 Feb 2026; planner updated 2 Jul 2026",
-    lastVerified: "4 Aug 2026, 21:00 IST",
+    sourcePublished: "CV Intimation 01/MRB/2026 dated 11 Aug 2026; additional list dated 12 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "MRB published the certificate-verification schedule for Nursing Assistant Grade II on 11 Aug 2026 (serial numbers 1-1765 called for 18-21 Aug 2026) and an additional list on 12 Aug 2026 (1766-2175 called for 22 Aug 2026).",
+      },
+    ],
     keywords: [
       "MRB",
       "TN MRB",

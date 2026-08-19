@@ -363,10 +363,10 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Written exam held 8 Aug 2026; answer key objections open",
+      label: "Written exam held 8 Aug 2026; result awaited",
       tone: "violet",
-      nextAction: "Check the question paper, answer key and response sheet, and raise objections by 11 Aug 2026 (1700 hrs) on the AFCAT candidate portal",
-      detail: "Applications closed on 19 Jun 2026 (2330 hrs), later shown as extended to 21 Jun 2026 on the AFCAT portal. The official notification fixed the AFCAT written exam for 8 Aug 2026 (Saturday) for courses commencing Jul 2027; the notification also opens an answer-key objection window from 9 to 11 Aug 2026. AFSB testing dates are not yet announced.",
+      nextAction: "Watch afcat.edcil.co.in for the AFCAT 02/2026 result and scorecard, then AFSB call letters.",
+      detail: "The 9-11 Aug 2026 objection window against the provisional answer keys has closed. As of 20 Aug 2026 the AFCAT portal's top news is still the objection-portal notice - no AFCAT 02/2026 result or scorecard has been published.",
     },
     summary: "Officer-entry cycle for Flying and Ground Duty (Technical and Non-Technical) branches, plus NCC Special Entry and a GATE-score route for the Technical Branch, for courses commencing Jul 2027.",
     vacancyLabel: "Branch-wise vacancies for Flying, Ground Duty (Technical/Non-Technical), NCC Special Entry and GATE Score Entry",
@@ -377,11 +377,12 @@ export const exams: Exam[] = [
     pay: "Stipend of ₹56,100 per month as a Flight Cadet; Flying Officer pay scale ₹56,100–₹1,77,500 (Level 10) plus allowances on commissioning.",
     timeline: [
       { label: "Online applications opened", date: "2026-05-20", displayDate: "20 May 2026, 1100 hrs", state: "completed" },
-      { label: "Online applications closed", date: "2026-06-21", displayDate: "19 Jun 2026, 2330 hrs (shown as extended to 21 Jun 2026 on the AFCAT portal)", state: "completed" },
+      { label: "Online applications closed", date: "2026-06-21", displayDate: "21 Jun 2026, 2359 hrs (extended from 19 Jun 2026)", state: "completed" },
       { label: "Admit card available", date: "2026-08-04", displayDate: "4 Aug 2026, 1100 hrs", state: "completed" },
       { label: "AFCAT written exam", date: "2026-08-08", displayDate: "8 Aug 2026 (Saturday)", state: "completed" },
-      { label: "Answer key and objection window", date: "2026-08-09", displayDate: "9 Aug 2026, 1700 hrs – 11 Aug 2026, 1700 hrs", state: "current" },
-      { label: "AFSB testing", displayDate: "AFSB schedule not announced in the cited notification", state: "current" },
+      { label: "Answer key and objection window", date: "2026-08-09", displayDate: "9 Aug 2026, 1700 hrs to 11 Aug 2026, 1700 hrs", state: "completed" },
+      { label: "Result and scorecard", displayDate: "Official date awaited", state: "current" },
+      { label: "AFSB testing", displayDate: "AFSB schedule not announced in the cited notification", state: "tentative" },
     ],
     eligibility: [
       "Flying Branch: 10+2 with Physics and Mathematics, plus a three-year graduation degree, a four-year BE/B.Tech, or cleared Sections A and B of the Associate Membership examinations.",
@@ -407,9 +408,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "AFCAT 02/2026 official notification",
     sourceUrl: "https://afcat.edcil.co.in/assets/images/news/AFCAT_02_2026/Notification%20for%20AFCAT%20Cycle%2002-2026.pdf",
-    sourcePublished: "Notification published ahead of the 20 May 2026 application opening",
-    lastVerified: "10 Aug 2026, 11:05 IST",
+    sourcePublished: "Notification published ahead of the 20 May 2026 application opening; portal re-checked 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Objection window (9-11 Aug 2026) has passed and moves to completed; the live stage is now the awaited result/scorecard. Label changed from 'answer key objections open'.",
+      },
       {
         date: "2026-08-10",
         displayDate: "10 Aug 2026",
@@ -728,10 +734,10 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces", "Technical & Trades"],
     education: ["12th"],
     status: {
-      label: "SSB scheduled from Sep 2026",
+      label: "SSB call-up letters due by end Aug 2026",
       tone: "blue",
-      nextAction: "Watch for the SSB call-up letter by e-mail and SMS",
-      detail: "Online applications closed on 18 Jun 2026. The official notification schedules SSB interviews at Bengaluru, Bhopal, Kolkata and Visakhapatnam from Sep 2026 onwards.",
+      nextAction: "Re-check the Join Indian Navy home page in early Sep 2026 for the actual SSB interview schedule.",
+      detail: "Shortlisting for SSB is complete; the Navy says call-up letters will be issued by end Aug 2026, with SSB interviews from Sep 2026 onwards.",
     },
     summary: "Permanent Commission technical-branch entry for unmarried men and women after Class 12, leading to a four-year B.Tech at the Indian Naval Academy, Ezhimala.",
     vacancies: 60,
@@ -750,7 +756,9 @@ export const exams: Exam[] = [
     pay: "Entire training cost, clothing and messing borne by the Navy; Permanent Commission officer pay and allowances apply on commissioning.",
     timeline: [
       { label: "Online application window opened", date: "2026-05-29", displayDate: "29 May 2026", state: "completed" },
-      { label: "Online application window closed", date: "2026-06-18", displayDate: "18 Jun 2026", state: "completed" },
+      { label: "Online application window closed", date: "2026-06-29", displayDate: "18 Jun 2026 in the advertisement; extended to 29 Jun 2026 on the official news feed", state: "completed" },
+      { label: "SSB shortlisting", displayDate: "Announced on the Join Indian Navy home page; date not announced", state: "current" },
+      { label: "SSB call-up letters issued", sortMonth: "2026-08", displayDate: "By end Aug 2026", state: "scheduled" },
       { label: "SSB interviews", sortMonth: "2026-09", displayDate: "From Sep 2026 onwards", state: "scheduled" },
     ],
     selectionStages: [
@@ -767,8 +775,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "10+2 (B.Tech) Cadet Entry Scheme official advertisement (course commencing Jan 2027)",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advertisement_10+2_B.Tech_Jan_27.pdf",
-    sourcePublished: "Advertisement published ahead of the 29 May 2026 application opening",
-    lastVerified: "4 Aug 2026, 16:15 IST",
+    sourcePublished: "Join Indian Navy home page, last updated 12 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Shortlisting for the 10+2 (B.Tech) Jan 2027 entry is complete and SSB call-up letters are due by end Aug 2026; the official news feed also shows the application window ran to 29 Jun 2026, not 18 Jun 2026.",
+      },
+    ],
     keywords: [
       "Navy B.Tech cadet",
       "INA Ezhimala B.Tech",
@@ -938,7 +953,7 @@ export const exams: Exam[] = [
     sourceTitle: "Indian Navy Short Service Commission officer entry — Jun 2027 (AT 27) course notification",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/SSC_Notification_for_ADV_Jun_27.pdf",
     sourcePublished: "Notification published ahead of the 25 Jun 2026 application opening; extension notice checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:25 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "Navy SSC officer",
       "navy officer entry",
@@ -1036,7 +1051,7 @@ export const exams: Exam[] = [
     sourceTitle: "Indian Navy Agniveer (Apprentice) 01/2027 and 02/2027 batch advertisement",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_Apprentice_01_27_English.pdf",
     sourcePublished: "Advertisement published ahead of the 5 Jun 2026 application opening; extension notice checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:30 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "Navy Apprentice Agniveer",
       "diploma navy recruitment",
@@ -1615,10 +1630,10 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF", "Technical & Trades", "Health & Medical"],
     education: ["10th", "12th", "ITI / Diploma", "Graduate"],
     status: {
-      label: "Applications closed; selection schedule awaited",
+      label: "Physical tests under way",
       tone: "violet",
-      nextAction: "Watch the SSB recruitment portal for the next-stage notice and admit cards",
-      detail: "The SSB recruitment portal's advertisement listing shows this combined advertisement open from 21 Mar 2026 to 4 May 2026 across its Constable, Head Constable, Assistant Sub Inspector and Sub Inspector rows. No later stage date is asserted here.",
+      nextAction: "Read the 18 Aug 2026 corrigendum and the PET/PST notice for exact dates, then watch for PET/PST results.",
+      detail: "SSB notified the commencement of PET and PST on 29 Jul 2026, issued PET/PST e-admit cards on 7 Aug 2026 and published a corrigendum on 18 Aug 2026. No single all-India test date has been published; centre-wise dates are carried on the e-admit card.",
     },
     summary:
       "The force's own combined recruitment for non-General-Duty cadres — Sub Inspector (Staff Nurse, Communication, Pioneer), Assistant Sub Inspector (Pharmacist, Radiographer, Dental and Operation Theatre Technician), Head Constable (Communication, Electrician, Steward, Veterinary, Laboratory Assistant, Physiotherapy Assistant) and Constable trades including Driver, Tailor, Cobbler, Barber, Carpenter, Gardner, Washerman, Water Carrier, Waiter, Veterinary and Nursing Orderly. It is separate from the SSC Constable (GD) examination.",
@@ -1632,7 +1647,11 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Applications opened", date: "2026-03-21", displayDate: "21 Mar 2026", state: "completed" },
       { label: "Applications closed", date: "2026-05-04", displayDate: "4 May 2026", state: "completed" },
-      { label: "Next selection stage", displayDate: "Official schedule not announced", state: "current" },
+      { label: "Correction window for online applications", date: "2026-05-06", displayDate: "6 May 2026", state: "completed" },
+      { label: "Notice on commencement of PET and PST", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
+      { label: "E-admit card for PET and PST released", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
+      { label: "Corrigendum to the recruitment", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
+      { label: "PET and PST", displayDate: "Centre-wise dates not announced publicly - they are printed on the e-admit card", state: "current" },
     ],
     eligibility: [
       "This is a single combined advertisement covering several cadres, so education, age, physical standard and trade or professional-registration conditions are fixed post by post rather than by one common standard.",
@@ -1658,8 +1677,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "SSB recruitment portal advertisement listing — Advt 524/RC/SSB/Combined-Advt./CT to SI (Non-GD)/2025",
     sourceUrl: "https://recruitment.ssb.gov.in/advertisementsUrl",
-    sourcePublished: "Advertisement listing checked 4 Aug 2026; application window 21 Mar 2026 to 4 May 2026",
-    lastVerified: "4 Aug 2026, 17:00 IST",
+    sourcePublished: "SSB recruitment portal Latest News; newest item a corrigendum dated 18 Aug 2026; read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Selection has moved on: SSB notified commencement of PET/PST on 29 Jul 2026, released PET/PST e-admit cards on 7 Aug 2026 and issued a corrigendum on 18 Aug 2026.",
+      },
+    ],
     keywords: [
       "SSB recruitment",
       "Sashastra Seema Bal vacancy",
@@ -1690,10 +1716,10 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF"],
     education: ["10th", "12th"],
     status: {
-      label: "Applications closed; selection schedule awaited",
+      label: "Stage-1 documentation and physical/medical tests under way",
       tone: "violet",
-      nextAction: "Watch the SSB recruitment portal for trial, verification and stage notices",
-      detail: "The SSB recruitment portal's advertisement listing shows this sports-quota advertisement open from 9 May 2026 to 7 Jun 2026. No later stage date is asserted here.",
+      nextAction: "Watch for the Stage-1 result and the Stage-2 (proficiency trial) schedule.",
+      detail: "Admit cards for Stage-1 — Documentation, Physical Standard Test, Detailed Medical Examination and Review Medical Examination — were released on 1 Jul 2026, followed by a notice on the sports-quota exam on 2 Jul 2026. Test dates are carried on the admit card.",
     },
     summary:
       "Direct recruitment by the force itself to Constable (General Duty) against the sports quota, for candidates with the sporting achievements specified in the advertisement. It is separate from the SSC Constable (GD) examination.",
@@ -1706,7 +1732,9 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Applications opened", date: "2026-05-09", displayDate: "9 May 2026", state: "completed" },
       { label: "Applications closed", date: "2026-06-07", displayDate: "7 Jun 2026", state: "completed" },
-      { label: "Next selection stage", displayDate: "Official schedule not announced", state: "current" },
+      { label: "Admit card for Stage-1 Documentation, PST, DME and RME", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
+      { label: "Important notice on the sports quota exam-2026", date: "2026-07-02", displayDate: "2 Jul 2026", state: "completed" },
+      { label: "Stage-1 documentation, PST, DME and RME", displayDate: "Dates not announced publicly - they are printed on the admit card", state: "current" },
     ],
     eligibility: [
       "Eligibility rests on the sporting achievement levels and the education, age and physical standards printed in the sports-quota advertisement; read that advertisement before relying on any summary.",
@@ -1731,8 +1759,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "SSB recruitment portal advertisement listing — Advt 541/RC/SSB/CT(GD)SQ-2025/2026",
     sourceUrl: "https://recruitment.ssb.gov.in/advertisementsUrl",
-    sourcePublished: "Advertisement listing checked 4 Aug 2026; application window 9 May 2026 to 7 Jun 2026",
-    lastVerified: "4 Aug 2026, 17:05 IST",
+    sourcePublished: "SSB recruitment portal Latest News and advertisement listing; read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Selection has started: SSB released the Stage-1 admit card for documentation, PST, DME and RME on 1 Jul 2026 and a further notice on 2 Jul 2026.",
+      },
+    ],
     keywords: [
       "SSB sports quota",
       "SSB constable GD vacancy",

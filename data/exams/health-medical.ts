@@ -291,10 +291,10 @@ export const exams: Exam[] = [
     examTypes: ["Health & Medical"],
     education: ["Professional degree"],
     status: {
-      label: "Examination scheduled",
+      label: "Exam on 30 August",
       tone: "blue",
-      nextAction: "Follow the NBEMS candidate notice and admit-card instructions for 30 August",
-      detail: "NBEMS' updated tentative-schedule notice gives 30 August 2026 as the tentative examination date, and the July notice board confirms active conduct notices.",
+      nextAction: "Re-check after 30 Aug 2026 for the answer key / result.",
+      detail: "NBEMS conduct notice fixes the computer-based exam for 30 Aug 2026 and result by 30 Sep 2026. Applications closed 21 Jul; test city intimated 11 Aug; the final selective edit window for images ran 12-15 Aug 2026.",
     },
     summary: "National eligibility and ranking examination for admission to MD/MS/PG Diploma and other notified postgraduate medical seats.",
     qualification: "MBBS degree/provisional pass certificate, registration and internship completion by the official cut-off under the 2026 bulletin.",
@@ -304,9 +304,13 @@ export const exams: Exam[] = [
       "Completed the compulsory rotating internship by the cut-off date set in the NEET-PG 2026 bulletin.",
     ],
     timeline: [
-      { label: "Tentative schedule update", date: "2026-04-29", displayDate: "29 Apr 2026", state: "completed" },
-      { label: "Conduct notice", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
-      { label: "NEET-PG examination", date: "2026-08-30", displayDate: "30 Aug 2026", state: "tentative", note: "Tentative date in the NBEMS schedule" },
+      { label: "Updated tentative schedule", date: "2026-04-29", displayDate: "29 Apr 2026", state: "completed" },
+      { label: "Conduct notice fixing exam for 30 Aug 2026", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
+      { label: "Online application window closed", date: "2026-07-21", displayDate: "21 Jul 2026", state: "completed" },
+      { label: "Test City Intimation published", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed" },
+      { label: "Selective edit window for photograph/signature/thumb images", date: "2026-08-15", displayDate: "12-15 Aug 2026", state: "completed" },
+      { label: "NEET-PG examination", date: "2026-08-30", displayDate: "30 Aug 2026", state: "scheduled" },
+      { label: "Declaration of result", date: "2026-09-30", displayDate: "By 30 Sep 2026", state: "scheduled" },
     ],
     selectionStages: ["Computer-based NEET-PG", "NBEMS score/rank", "National or state counselling under the applicable quota"],
     syllabus: [
@@ -323,8 +327,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Updated tentative schedule (including NEET-SS 2026) of forthcoming NBEMS examinations",
     sourceUrl: "https://www.natboard.edu.in/viewNotice.php?NBE=dkU5K0VnZjY0ellZSTh2dlF4UnNUdz09",
-    sourcePublished: "29 Apr 2026; conduct notice 1 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:20 IST",
+    sourcePublished: "Conduct notice 1 Jul 2026; test-city notice 12 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "NEET-PG 2026: test city intimated 11 Aug and the edit window closed 15 Aug; exam confirmed for 30 Aug 2026 with result by 30 Sep.",
+      },
+    ],
     keywords: [
       "NEET PG",
       "medical PG entrance",
@@ -484,7 +495,7 @@ export const exams: Exam[] = [
     sourceTitle: "NBEMS DNB-PDCET 2026 examination and counselling notices",
     sourceUrl: "https://www.natboard.edu.in/viewnbeexam?exam=pdcet",
     sourcePublished: "Result 14 May 2026; first-round allotment 9 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:35 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "DNB PDCET",
       "post diploma DNB",
@@ -542,7 +553,7 @@ export const exams: Exam[] = [
     sourceTitle: "Updated tentative schedule (including NEET-SS 2026) of forthcoming NBEMS examinations",
     sourceUrl: "https://www.natboard.edu.in/viewNotice.php?NBE=dkU5K0VnZjY0ellZSTh2dlF4UnNUdz09",
     sourcePublished: "29 Apr 2026",
-    lastVerified: "4 Aug 2026, 16:14 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "NEET SS",
       "DM MCh admission",
@@ -764,7 +775,7 @@ export const exams: Exam[] = [
     sourceTitle: "Recruitment of Insurance Medical Officers Grade-II (IMO Gr. II) in ESI Corporation — official advertisement",
     sourceUrl: "https://esic.gov.in/attachments/recruitmentfile/Advertisement_for_Recruitment_of_Insurance_Medical_Officers_Grade_II_IMO_Gr_II_in_ESI_Corporation_English_1768300965.pdf",
     sourcePublished: "Applications closed 17 Feb 2026",
-    lastVerified: "4 Aug 2026, 17:50 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "ESIC IMO",
       "Insurance Medical Officer",

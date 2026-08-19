@@ -134,7 +134,7 @@ export const exams: Exam[] = [
     sourceTitle: "CTET September 2026 Information Bulletin",
     sourceUrl: "https://ctet.nic.in/document/ctet-sept-2026-information-bulletin/",
     sourcePublished: "Information Bulletin published 11 May 2026; correction notice published 15 Jun 2026",
-    lastVerified: "4 Aug 2026, 19:20 IST",
+    lastVerified: "20 Aug 2026, 02:30 IST",
     keywords: [
       "CTET",
       "सीटीईटी",
