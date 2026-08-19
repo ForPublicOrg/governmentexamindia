@@ -1,4 +1,4 @@
-import { exam, listedExam, type Authority, type Exam } from "@/lib/exam-types";
+import { exam, listedExam, NOT_ANNOUNCED, type Authority, type Exam } from "@/lib/exam-types";
 
 // upsc recruitment records.
 // Every record must cite an official host listed in `authorities` below.
@@ -40,32 +40,74 @@ function activeUpscExam(value: {
   eligibility?: string[];
   selectionStages?: string[];
   syllabus?: string[];
+  /**
+   * The dated stages the exam's own official page publishes for this cycle
+   * (notification, application deadline, examination, written result, later
+   * stage notices). Supplying them makes the record `verified`, because those
+   * dates are read from a dated cycle-specific official page rather than from
+   * the standing scheme. Vacancies stay unclaimed either way.
+   */
+  timeline?: Exam["timeline"];
+  status?: Exam["status"];
+  /** Extra cycle documents to link beside the exam page, newest first. */
+  extraLinks?: Exam["officialLinks"];
+  sourceTitle?: string;
+  sourceUrl?: string;
+  sourcePublished?: string;
+  lastVerified?: string;
+  changeLog?: Exam["changeLog"];
 }) {
-  const { examPageUrl, keywords, ...rest } = value;
-  return listedExam({
+  const { examPageUrl, keywords, timeline, status, extraLinks, sourceTitle, sourceUrl, sourcePublished, lastVerified, changeLog, ...rest } = value;
+  const officialLinks: Exam["officialLinks"] = [
+    { label: "Official examination page", url: examPageUrl, type: "notice" },
+    ...(extraLinks ?? []),
+    { label: "UPSC active examinations", url: "https://www.upsc.gov.in/examinations/active-exams", type: "website" },
+    { label: "UPSC notification archive", url: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives", type: "notice" },
+  ];
+  const shared = {
     ...rest,
     keywords,
     organisation: "Union Public Service Commission",
-    governmentLevel: "Central",
+    governmentLevel: "Central" as const,
     jurisdiction: "All India",
     cycle: "2026",
     year: 2026,
-    status: {
+    status: status ?? {
       label: "Officially active",
-      tone: "violet",
+      tone: "violet" as const,
       nextAction: value.nextAction,
       detail: "UPSC lists this cycle as active. Open the official examination page for the latest stage-specific notice.",
     },
-    timeline: [{ label: "Next official update", displayDate: "Not announced", state: "current" }],
-    officialLinks: [
-      { label: "Official examination page", url: examPageUrl, type: "notice" },
-      { label: "UPSC active examinations", url: "https://www.upsc.gov.in/examinations/active-exams", type: "website" },
-      { label: "UPSC notification archive", url: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives", type: "notice" },
+    officialLinks,
+    sourceTitle: sourceTitle ?? "UPSC active examinations — 2026 cycle listing",
+    sourceUrl: sourceUrl ?? "https://www.upsc.gov.in/examinations/active-exams",
+    sourcePublished: sourcePublished ?? "Active list checked 19 Aug 2026",
+    lastVerified: lastVerified ?? "19 Aug 2026, 16:34 IST",
+  };
+  if (!timeline) {
+    return listedExam({
+      ...shared,
+      timeline: [{ label: "Next official update", displayDate: "Not announced", state: "current" }],
+    });
+  }
+  return exam({
+    ...shared,
+    verification: "verified",
+    vacancyLabel: NOT_ANNOUNCED,
+    vacancyNote: "UPSC publishes the vacancy count for this cycle separately; none is claimed here.",
+    age: value.age ?? "As prescribed in the notification.",
+    qualification: value.qualification ?? "See the official notification; no current-cycle qualification is asserted here.",
+    fee: value.fee ?? "See the official notification",
+    pay: value.pay ?? "See the official notification",
+    eligibility: value.eligibility ?? [
+      "Confirm education, age, nationality, domicile and category rules in the official current-cycle notice.",
     ],
-    sourceTitle: "UPSC active examinations — 2026 cycle listing",
-    sourceUrl: "https://www.upsc.gov.in/examinations/active-exams",
-    sourcePublished: "Active list checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:30 IST",
+    selectionStages: value.selectionStages ?? [
+      "See the official notification; no current-cycle selection stages are asserted here.",
+    ],
+    syllabus: value.syllabus ?? ["Use only the official current-cycle syllabus when it is published."],
+    timeline,
+    changeLog: changeLog ?? [],
   });
 }
 
@@ -86,10 +128,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["Graduate"],
     status: {
-      label: "Timetable released",
-      tone: "violet",
-      nextAction: "Read the official mains timetable",
-      detail: "Only candidates declared qualified in Civil Services Prelims 2026 can proceed to the mains stage.",
+      label: "Admit card released",
+      tone: "blue",
+      nextAction: "Download the mains e-admit card",
+      detail:
+        "The press note of 19 Aug 2026 confirms the mains sittings on 21–23 and 29–30 Aug 2026. Only candidates declared qualified in Civil Services Prelims 2026 can proceed to the mains stage.",
     },
     summary:
       "The written mains stage of the Civil Services Examination for services including IAS, IPS and central Group A/B services.",
@@ -104,7 +147,9 @@ export const exams: Exam[] = [
       { label: "Prelims", date: "2026-05-24", displayDate: "24 May 2026", state: "completed" },
       { label: "Prelims result", date: "2026-06-15", displayDate: "15 Jun 2026", state: "completed" },
       { label: "Mains timetable", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
-      { label: "Mains examination", date: "2026-08-21", displayDate: "From 21 Aug 2026", state: "current" },
+      { label: "e-Admit card", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
+      { label: "Mains examination", date: "2026-08-21", displayDate: "21–23 Aug and 29–30 Aug 2026", state: "scheduled" },
+      { label: "Question paper representation portal", date: "2026-08-31", displayDate: "31 Aug – 4 Sep 2026", state: "scheduled" },
       { label: "Interview", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
@@ -120,15 +165,24 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Official mains page", url: "https://www.upsc.gov.in/examinations/Civil%20Services%20%28Main%29%20Examination%2C%202026", type: "notice" },
+      { label: "Press note dated 19 Aug 2026", url: "https://www.upsc.gov.in/sites/default/files/PressNote-CSM-2026-Engl-190826.pdf", type: "notice" },
+      { label: "Mains examination time table", url: "https://www.upsc.gov.in/sites/default/files/TT-CSM-2026-Engl-100726.pdf", type: "notice" },
       { label: "Official 2026 CSE notice PDF", url: "https://www.upsc.gov.in/sites/default/files/Notif-CSP-2026-Engl-060226Rev.pdf", type: "notice" },
       { label: "Prelims page and result", url: "https://www.upsc.gov.in/examinations/Civil%20Services%20%28Preliminary%29%20Examination%2C%202026", type: "result" },
       { label: "UPSC active examinations", url: "https://www.upsc.gov.in/examinations/active-exams", type: "website" },
     ],
     sourceTitle: "UPSC Civil Services (Main) Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Civil%20Services%20%28Main%29%20Examination%2C%202026",
-    sourcePublished: "Timetable uploaded 10 Jul 2026",
-    lastVerified: "4 Aug 2026, 11:10 IST",
-    changeLog: [{ date: "2026-07-10", displayDate: "10 Jul 2026", text: "UPSC uploaded the 2026 mains timetable." }],
+    sourcePublished: "Press note dated 19 Aug 2026; e-admit card uploaded 14 Aug 2026",
+    lastVerified: "19 Aug 2026, 16:34 IST",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "UPSC's press note of 19 Aug 2026 confirms the mains sittings on 21–23 and 29–30 Aug 2026 and opens the question-paper representation portal from 31 Aug to 4 Sep 2026. The e-admit card was uploaded on 14 Aug 2026.",
+      },
+      { date: "2026-07-10", displayDate: "10 Jul 2026", text: "UPSC uploaded the 2026 mains timetable." },
+    ],
     keywords: [
       "IAS mains",
       "IPS mains",
@@ -163,10 +217,10 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Exam scheduled",
+      label: "Timetable released",
       tone: "blue",
       nextAction: "Exam on 13 Sep 2026",
-      detail: "Applications are closed. Watch the official exam page for the e-admit card.",
+      detail: "Applications are closed. UPSC uploaded the examination time table on 10 Aug 2026; the e-admit card follows on the same page.",
     },
     summary: "Officer-entry examination for IMA, INA, Air Force Academy and Officers’ Training Academy courses.",
     vacancies: 451,
@@ -179,7 +233,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification", date: "2026-05-20", displayDate: "20 May 2026", state: "completed" },
       { label: "Applications closed", date: "2026-06-11", displayDate: "11 Jun 2026, 6 PM", state: "completed" },
-      { label: "Written exam", date: "2026-09-13", displayDate: "13 Sep 2026", state: "current" },
+      { label: "Examination time table", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
+      { label: "Written exam", date: "2026-09-13", displayDate: "13 Sep 2026", state: "scheduled" },
       { label: "Written result", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
@@ -194,14 +249,23 @@ export const exams: Exam[] = [
       "Papers are objective; the official notice defines level, duration and negative marking.",
     ],
     officialLinks: [
+      { label: "Official examination page", url: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026", type: "notice" },
+      { label: "Examination time table", url: "https://www.upsc.gov.in/sites/default/files/TT-CDSE-II-2026-Engl-100826.pdf", type: "notice" },
       { label: "Official detailed notice", url: "https://www.upsc.gov.in/sites/default/files/Notif-CDS-II-2026-Engl-200526.pdf", type: "notice" },
       { label: "UPSC notification archive", url: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives", type: "website" },
       { label: "UPSC application portal", url: "https://upsconline.nic.in/", type: "apply" },
     ],
-    sourceTitle: "UPSC notification archive and CDS II 2026 detailed notice",
-    sourceUrl: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives",
-    sourcePublished: "Notice 20 May 2026; archive deadline updated to 11 Jun 2026",
-    lastVerified: "4 Aug 2026, 11:10 IST",
+    sourceTitle: "UPSC Combined Defence Services Examination (II), 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",
+    sourcePublished: "Examination time table uploaded 10 Aug 2026",
+    lastVerified: "19 Aug 2026, 16:34 IST",
+    changeLog: [
+      {
+        date: "2026-08-10",
+        displayDate: "10 Aug 2026",
+        text: "UPSC uploaded the CDS II 2026 examination time table for the 13 Sep 2026 sitting.",
+      },
+    ],
     keywords: [
       "Indian Military Academy",
       "Indian Naval Academy",
@@ -233,10 +297,10 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces"],
     education: ["12th"],
     status: {
-      label: "Exam scheduled",
+      label: "Timetable released",
       tone: "blue",
       nextAction: "Exam on 13 Sep 2026",
-      detail: "Applications are closed. Watch the official page for the e-admit card and centre instructions.",
+      detail: "Applications are closed. UPSC uploaded the examination time table on 12 Aug 2026; the e-admit card and centre instructions follow on the same page.",
     },
     summary: "Entry examination after Class 12 for the Army, Navy and Air Force wings of NDA and the Naval Academy.",
     vacancies: 394,
@@ -249,7 +313,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification", date: "2026-05-20", displayDate: "20 May 2026", state: "completed" },
       { label: "Applications closed", date: "2026-06-11", displayDate: "11 Jun 2026, 6 PM", state: "completed" },
-      { label: "Written exam", date: "2026-09-13", displayDate: "13 Sep 2026", state: "current" },
+      { label: "Examination time table", date: "2026-08-12", displayDate: "12 Aug 2026", state: "completed" },
+      { label: "Written exam", date: "2026-09-13", displayDate: "13 Sep 2026", state: "scheduled" },
       { label: "SSB", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
@@ -264,14 +329,23 @@ export const exams: Exam[] = [
       "The official notice gives the detailed topic list and paper scheme.",
     ],
     officialLinks: [
+      { label: "Official examination page", url: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026", type: "notice" },
+      { label: "Examination time table", url: "https://www.upsc.gov.in/sites/default/files/TimeTable-NDA-%20NA-Exam-II-2026-Engl-120826.pdf", type: "notice" },
       { label: "Official detailed notice", url: "https://www.upsc.gov.in/sites/default/files/Notif-NDA-II-2026-Engl-200526.pdf", type: "notice" },
       { label: "UPSC notification archive", url: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives", type: "website" },
       { label: "UPSC application portal", url: "https://upsconline.nic.in/", type: "apply" },
     ],
-    sourceTitle: "UPSC notification archive and NDA II 2026 detailed notice",
-    sourceUrl: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives",
-    sourcePublished: "Notice 20 May 2026; archive deadline updated to 11 Jun 2026",
-    lastVerified: "4 Aug 2026, 11:10 IST",
+    sourceTitle: "UPSC National Defence Academy and Naval Academy Examination (II), 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
+    sourcePublished: "Examination time table uploaded 12 Aug 2026",
+    lastVerified: "19 Aug 2026, 16:34 IST",
+    changeLog: [
+      {
+        date: "2026-08-12",
+        displayDate: "12 Aug 2026",
+        text: "UPSC uploaded the NDA & NA II 2026 examination time table for the 13 Sep 2026 sitting.",
+      },
+    ],
     keywords: [
       "National Defence Academy",
       "Naval Academy Ezhimala",
@@ -298,6 +372,42 @@ export const exams: Exam[] = [
     nextAction: "Track the written result after the 2 Aug examination",
     summary: "Recruitment examination for medical officer posts in central health services and participating organisations.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Medical%20Services%20Examination%2C%202026",
+    status: {
+      label: "Result awaited",
+      tone: "violet",
+      nextAction: "Track the written result after the 2 Aug examination",
+      detail:
+        "The computer-based examination was held on 2 Aug 2026 and UPSC published the question papers on 3 Aug 2026. No written result has been published yet.",
+    },
+    timeline: [
+      { label: "Notification", date: "2026-03-11", displayDate: "11 Mar 2026", state: "completed" },
+      { label: "Applications closed", date: "2026-03-31", displayDate: "31 Mar 2026, 6 PM", state: "completed" },
+      { label: "e-Admit card", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
+      { label: "Written examination", date: "2026-08-02", displayDate: "2 Aug 2026", state: "completed" },
+      { label: "Written result", displayDate: "To be announced", state: "current" },
+    ],
+    extraLinks: [
+      {
+        label: "Official detailed notice",
+        url: "https://www.upsc.gov.in/sites/default/files/Notification-CMSE-2026-English-110326.pdf",
+        type: "notice",
+      },
+      {
+        label: "Press note dated 24 Jul 2026",
+        url: "https://www.upsc.gov.in/sites/default/files/PressNote-CMSE-2026-Engl-240726.pdf",
+        type: "notice",
+      },
+    ],
+    sourceTitle: "UPSC Combined Medical Services Examination, 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Medical%20Services%20Examination%2C%202026",
+    sourcePublished: "Question papers uploaded 3 Aug 2026; examination held 2 Aug 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own CMS 2026 page, including the 2 Aug 2026 examination; the written result is still awaited.",
+      },
+    ],
     keywords: [
       "Central Health Service",
       "CHS doctor recruitment",
@@ -346,6 +456,42 @@ export const exams: Exam[] = [
     nextAction: "Track the written result and physical-stage notice",
     summary: "Officer recruitment for Assistant Commandant posts in the central armed police forces.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026",
+    status: {
+      label: "Result awaited",
+      tone: "violet",
+      nextAction: "Track the written result and physical-stage notice",
+      detail:
+        "The written examination was held on 19 Jul 2026 and UPSC published the question papers on 20 Jul 2026. No written result has been published yet.",
+    },
+    timeline: [
+      { label: "Notification", date: "2026-02-20", displayDate: "20 Feb 2026", state: "completed" },
+      { label: "Applications closed", date: "2026-03-12", displayDate: "12 Mar 2026, 6 PM", state: "completed" },
+      { label: "e-Admit card", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
+      { label: "Written examination", date: "2026-07-19", displayDate: "19 Jul 2026", state: "completed" },
+      { label: "Written result", displayDate: "To be announced", state: "current" },
+    ],
+    extraLinks: [
+      {
+        label: "Official detailed notice",
+        url: "https://www.upsc.gov.in/sites/default/files/ExamNotifi_CAPF_AC_Exam_2026_Eng_20022026.pdf",
+        type: "notice",
+      },
+      {
+        label: "Press note dated 10 Jul 2026",
+        url: "https://www.upsc.gov.in/sites/default/files/PressNote-CAPF-2026-Engl-100726.pdf",
+        type: "notice",
+      },
+    ],
+    sourceTitle: "UPSC Central Armed Police Forces (ACs) Examination, 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026",
+    sourcePublished: "Question papers uploaded 20 Jul 2026; examination held 19 Jul 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own CAPF (ACs) 2026 page, including the 19 Jul 2026 written examination; the result is still awaited.",
+      },
+    ],
     keywords: [
       "BSF Assistant Commandant",
       "CRPF Assistant Commandant",
@@ -391,9 +537,51 @@ export const exams: Exam[] = [
     sector: "Economics and statistics",
     examTypes: ["Specialist & Professional"],
     education: ["Postgraduate"],
-    nextAction: "Track the interview schedule after the 4 Aug written result",
+    nextAction: "Update the application form before 25 Aug 2026",
     summary: "Specialist recruitment to the Indian Economic Service and Indian Statistical Service.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026",
+    status: {
+      label: "Application form window open",
+      tone: "violet",
+      nextAction: "Update the application form before 25 Aug 2026",
+      detail:
+        "The written result was declared on 4 Aug 2026. UPSC's notice of 11 Aug 2026 requires every written-qualified candidate to update and finally submit the application form on upsconline.nic.in between 11 Aug and 25 Aug 2026, 6 PM, to generate the e-Summon Letter for the Personality Test.",
+    },
+    timeline: [
+      { label: "Notification", date: "2026-02-11", displayDate: "11 Feb 2026", state: "completed" },
+      { label: "Applications closed", date: "2026-03-03", displayDate: "3 Mar 2026, 6 PM", state: "completed" },
+      { label: "Written examination", date: "2026-06-19", displayDate: "19–21 Jun 2026", state: "completed" },
+      { label: "Written result", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
+      { label: "Application form update window closes", date: "2026-08-25", displayDate: "25 Aug 2026, 6 PM", state: "scheduled" },
+      { label: "Personality Test", displayDate: "To be announced", state: "tentative" },
+    ],
+    extraLinks: [
+      {
+        label: "Notice for written-qualified candidates dated 11 Aug 2026",
+        url: "https://www.upsc.gov.in/sites/default/files/Notice-AF-Updation-IES-ISS-26-Engl-110826.pdf",
+        type: "notice",
+      },
+      {
+        label: "Written result — Indian Economic Service (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-RollList-IES-Exam-26-Engl-040826.pdf",
+        type: "result",
+      },
+      {
+        label: "Written result — Indian Statistical Service (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-RollList-ISS-Exam-26-Engl-040826.pdf",
+        type: "result",
+      },
+    ],
+    sourceTitle: "UPSC Indian Economic Service / Indian Statistical Service Examination, 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026",
+    sourcePublished: "Application-form notice dated 11 Aug 2026; written result declared 4 Aug 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own IES/ISS 2026 page: the written result of 4 Aug 2026 and the application-form update window of 11–25 Aug 2026 opened by the notice of 11 Aug 2026.",
+      },
+    ],
     keywords: [
       "Indian Economic Service",
       "Indian Statistical Service",
@@ -438,9 +626,44 @@ export const exams: Exam[] = [
     sector: "Engineering services",
     examTypes: ["Technical & Trades", "Specialist & Professional"],
     education: ["Professional degree"],
-    nextAction: "Track the personality-test notice after the 24 Jul mains result",
+    nextAction: "Update the application form before 21 Aug 2026",
     summary: "Recruitment to civil, mechanical, electrical and electronics engineering services of the Union.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Main%29%20Examination%2C%202026",
+    status: {
+      label: "Application form window open",
+      tone: "violet",
+      nextAction: "Update the application form before 21 Aug 2026",
+      detail:
+        "The mains result was declared on 24 Jul 2026. UPSC's notice of 7 Aug 2026 requires every written-qualified candidate to update and finally submit the application form on upsconline.nic.in between 7 Aug and 21 Aug 2026, 6 PM, before the Personality Test.",
+    },
+    timeline: [
+      { label: "Mains examination", date: "2026-06-21", displayDate: "21 Jun 2026", state: "completed" },
+      { label: "Mains result", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
+      { label: "Application form update window closes", date: "2026-08-21", displayDate: "21 Aug 2026, 6 PM", state: "scheduled" },
+      { label: "Personality Test", displayDate: "To be announced", state: "tentative" },
+    ],
+    extraLinks: [
+      {
+        label: "Notice for written-qualified candidates dated 7 Aug 2026",
+        url: "https://www.upsc.gov.in/sites/default/files/AF-Notice-ESEM-2026-English-070826.pdf",
+        type: "notice",
+      },
+      {
+        label: "Mains written result (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/RollList-WR-ESEM-26-Engl-240726.pdf",
+        type: "result",
+      },
+    ],
+    sourceTitle: "UPSC Engineering Services (Main) Examination, 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Main%29%20Examination%2C%202026",
+    sourcePublished: "Application-form notice dated 7 Aug 2026; mains result declared 24 Jul 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own ESE (Main) 2026 page: the mains result of 24 Jul 2026 and the application-form update window of 7–21 Aug 2026 opened by the notice of 7 Aug 2026.",
+      },
+    ],
     keywords: [
       "Indian Engineering Service",
       "civil engineering service exam",
@@ -489,6 +712,35 @@ export const exams: Exam[] = [
     nextAction: "Track the interview notice after the 20 Jul mains result",
     summary: "Specialist recruitment for geology, geophysics, chemistry and hydrogeology posts in central services.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026",
+    status: {
+      label: "Interview stage awaited",
+      tone: "violet",
+      nextAction: "Track the interview notice after the 20 Jul mains result",
+      detail: "UPSC declared the Combined Geo-Scientist (Main) 2026 written result on 20 Jul 2026. No interview schedule has been published yet.",
+    },
+    timeline: [
+      { label: "Mains time table", date: "2026-05-11", displayDate: "11 May 2026", state: "completed" },
+      { label: "Mains examination", date: "2026-06-20", displayDate: "20–21 Jun 2026", state: "completed" },
+      { label: "Mains written result", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
+      { label: "Personality Test", displayDate: "To be announced", state: "current" },
+    ],
+    extraLinks: [
+      {
+        label: "Mains written result (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-RollList-CGeoSntstMain-2026-Engl-200726.pdf",
+        type: "result",
+      },
+    ],
+    sourceTitle: "UPSC Combined Geo-Scientist (Main) Examination, 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026",
+    sourcePublished: "Mains written result declared 20 Jul 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own Combined Geo-Scientist (Main) 2026 page, including the written result of 20 Jul 2026.",
+      },
+    ],
     keywords: [
       "Geological Survey of India recruitment",
       "geologist exam",
@@ -535,7 +787,37 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     nextAction: "Track the forest-service mains stage after the common prelims",
     summary: "Recruitment to the Indian Forest Service through the common Civil Services preliminary examination and a separate mains process.",
-    examPageUrl: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Preliminary%29%20Examination%2C%202026",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Preliminary%29%20Examination%2C%202026%20through%20CS%28P%29%20Examination%2C%202026",
+    status: {
+      label: "Mains stage awaited",
+      tone: "violet",
+      nextAction: "Track the forest-service mains stage after the common prelims",
+      detail: "UPSC declared the Indian Forest Service (Preliminary) 2026 result on 15 Jun 2026. No mains date has been published on the official page yet.",
+    },
+    timeline: [
+      { label: "Notification", date: "2026-02-04", displayDate: "4 Feb 2026", state: "completed" },
+      { label: "Applications closed", date: "2026-02-27", displayDate: "27 Feb 2026, 6 PM", state: "completed" },
+      { label: "Preliminary examination", date: "2026-05-24", displayDate: "24 May 2026", state: "completed" },
+      { label: "Preliminary result", date: "2026-06-15", displayDate: "15 Jun 2026", state: "completed" },
+      { label: "Mains examination", displayDate: "To be announced", state: "current" },
+    ],
+    extraLinks: [
+      {
+        label: "Preliminary result (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-IFoSP-2026-RollList-Engl-150626.pdf",
+        type: "result",
+      },
+    ],
+    sourceTitle: "UPSC Indian Forest Service (Preliminary) Examination, 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Preliminary%29%20Examination%2C%202026%20through%20CS%28P%29%20Examination%2C%202026",
+    sourcePublished: "Preliminary result declared 15 Jun 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own Indian Forest Service (Preliminary) 2026 page, including the preliminary result of 15 Jun 2026.",
+      },
+    ],
     keywords: [
       "Indian Forest Service",
       "IFS forest officer",
@@ -582,6 +864,41 @@ export const exams: Exam[] = [
     nextAction: "Track SSB and final-result notices after the written result",
     summary: "The first 2026 officer-entry cycle for IMA, INA, Air Force Academy and Officers’ Training Academy courses.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28I%29%2C%202026",
+    status: {
+      label: "SSB stage in progress",
+      tone: "violet",
+      nextAction: "Track SSB and final-result notices after the written result",
+      detail: "The written result was declared on 8 May 2026 and the name list followed on 20 May 2026. Qualified candidates are called by the Services Selection Boards; no final result has been published.",
+    },
+    timeline: [
+      { label: "Notification", date: "2025-12-10", displayDate: "10 Dec 2025", state: "completed" },
+      { label: "Applications closed", date: "2025-12-30", displayDate: "30 Dec 2025, 6 PM", state: "completed" },
+      { label: "Written examination", date: "2026-04-12", displayDate: "12 Apr 2026", state: "completed" },
+      { label: "Written result", date: "2026-05-08", displayDate: "8 May 2026", state: "completed" },
+      { label: "SSB interview and final result", displayDate: "To be announced", state: "current" },
+    ],
+    extraLinks: [
+      {
+        label: "Written result (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-RollList-CDSE-I-2026-Engl-080526.pdf",
+        type: "result",
+      },
+      {
+        label: "Official detailed notice",
+        url: "https://www.upsc.gov.in/sites/default/files/Notif-CDSE-I-2026-Engl-101225.pdf",
+        type: "notice",
+      },
+    ],
+    sourceTitle: "UPSC Combined Defence Services Examination (I), 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28I%29%2C%202026",
+    sourcePublished: "Written result name list published 20 May 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own CDS (I) 2026 page, including the written result of 8 May 2026.",
+      },
+    ],
     keywords: [
       "Indian Military Academy",
       "Indian Naval Academy",
@@ -631,6 +948,41 @@ export const exams: Exam[] = [
     nextAction: "Track SSB and final-result notices after the written result",
     summary: "The first 2026 Class 12 officer-entry cycle for the National Defence Academy and Naval Academy.",
     examPageUrl: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202026",
+    status: {
+      label: "SSB stage in progress",
+      tone: "violet",
+      nextAction: "Track SSB and final-result notices after the written result",
+      detail: "The written result was declared on 8 May 2026 and the name list followed on 13 May 2026. Qualified candidates are called by the Services Selection Boards; no final result has been published.",
+    },
+    timeline: [
+      { label: "Notification", date: "2025-12-10", displayDate: "10 Dec 2025", state: "completed" },
+      { label: "Applications closed", date: "2025-12-30", displayDate: "30 Dec 2025, 6 PM", state: "completed" },
+      { label: "Written examination", date: "2026-04-12", displayDate: "12 Apr 2026", state: "completed" },
+      { label: "Written result", date: "2026-05-08", displayDate: "8 May 2026", state: "completed" },
+      { label: "SSB interview and final result", displayDate: "To be announced", state: "current" },
+    ],
+    extraLinks: [
+      {
+        label: "Written result (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-RollList-NDA-NA-I-2026-Engl-080526.pdf",
+        type: "result",
+      },
+      {
+        label: "Official detailed notice",
+        url: "https://www.upsc.gov.in/sites/default/files/Notif-NDA-NA-I-2026-Engl-101225.pdf",
+        type: "notice",
+      },
+    ],
+    sourceTitle: "UPSC National Defence Academy and Naval Academy Examination (I), 2026 page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202026",
+    sourcePublished: "Written result name list published 13 May 2026",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Added the dated stages from UPSC's own NDA & NA (I) 2026 page, including the written result of 8 May 2026.",
+      },
+    ],
     keywords: [
       "National Defence Academy",
       "Naval Academy Ezhimala",
@@ -683,11 +1035,11 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF"],
     education: ["Graduate"],
     status: {
-      label: "Written examination held",
+      label: "Interviews in progress",
       tone: "violet",
-      nextAction: "Watch the official page for the written result and the physical/medical stage notice",
+      nextAction: "Download the e-Summon Letter for the Personality Test",
       detail:
-        "The written examination was held on 8 Mar 2026 at New Delhi and the exam is still on UPSC's active list; no further dated stage has been published.",
+        "The written result was declared on 13 Apr 2026. UPSC's notice of 29 Jul 2026 began the Personality Test/Interview at Dholpur House, New Delhi with effect from 17 Aug 2026 for candidates found medically fit.",
     },
     summary:
       "Departmental promotion examination for serving CISF Sub-Inspectors and Inspectors (GD) into Assistant Commandant (Executive) posts. It is not open to the general public.",
@@ -706,7 +1058,10 @@ export const exams: Exam[] = [
       { label: "Notice and Rules published", date: "2025-12-03", displayDate: "3 Dec 2025", state: "completed" },
       { label: "Applications closed", date: "2025-12-23", displayDate: "23 Dec 2025, 6 PM", state: "completed" },
       { label: "Written examination", date: "2026-03-08", displayDate: "8 Mar 2026", state: "completed" },
-      { label: "Written result and later stages", displayDate: "To be announced", state: "current" },
+      { label: "Written result", date: "2026-04-13", displayDate: "13 Apr 2026", state: "completed" },
+      { label: "Interview schedule notice", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
+      { label: "Personality Test / Interview", date: "2026-08-17", displayDate: "From 17 Aug 2026", state: "current" },
+      { label: "Final merit list", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "The examination is restricted to certain categories of departmental candidates of CISF; it is not an open recruitment.",
@@ -732,6 +1087,17 @@ export const exams: Exam[] = [
       "The full syllabus, scheme and physical/medical standards are in the Rules notified by the Ministry of Home Affairs in the Gazette of India dated 3 Dec 2025.",
     ],
     officialLinks: [
+      { label: "Official examination page", url: "https://www.upsc.gov.in/examinations/CISF%20AC%28EXE%29%20LDCE-2026", type: "notice" },
+      {
+        label: "Interview schedule notice dated 29 Jul 2026",
+        url: "https://www.upsc.gov.in/sites/default/files/Intv-CISFAC-EXE-LDCE-2026-Engl-290726.pdf",
+        type: "notice",
+      },
+      {
+        label: "Written result (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-CISF-2026-Engl-RollList-130426.pdf",
+        type: "result",
+      },
       {
         label: "Official examination notice and Rules",
         url: "https://www.upsc.gov.in/sites/default/files/Notif-CISF-AC-EXE-LDCE-26-Engl-031225.pdf",
@@ -741,10 +1107,17 @@ export const exams: Exam[] = [
       { label: "UPSC notification archive", url: "https://www.upsc.gov.in/exams-related-info/exam-notification/archives", type: "notice" },
       { label: "UPSC application portal", url: "https://upsconline.nic.in/", type: "apply" },
     ],
-    sourceTitle: "UPSC CISF Assistant Commandants (Executive) LDCE 2026 examination notice",
-    sourceUrl: "https://www.upsc.gov.in/sites/default/files/Notif-CISF-AC-EXE-LDCE-26-Engl-031225.pdf",
-    sourcePublished: "Notice and Ministry of Home Affairs Rules dated 3 Dec 2025",
-    lastVerified: "4 Aug 2026, 17:30 IST",
+    sourceTitle: "UPSC CISF AC (EXE) LDCE-2026 examination page",
+    sourceUrl: "https://www.upsc.gov.in/examinations/CISF%20AC%28EXE%29%20LDCE-2026",
+    sourcePublished: "Interview schedule notice dated 29 Jul 2026; written result declared 13 Apr 2026",
+    lastVerified: "19 Aug 2026, 16:34 IST",
+    changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "Recorded the stages UPSC had already published: the written result of 13 Apr 2026 and the notice of 29 Jul 2026 starting the Personality Test from 17 Aug 2026.",
+      },
+    ],
     keywords: [
       "CISF LDCE",
       "CISF departmental exam",
