@@ -1785,7 +1785,7 @@ export const exams: Exam[] = [
       detail: "KEA extended the window a second time on 6 Aug 2026: online applications close 20 Aug 2026 and fee payment 21 Aug 2026. The compulsory Kannada language qualifying exam is on 22 Aug 2026, and the VAO written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka).",
       label: "Applications open - last date 20 Aug 2026",
       tone: "green",
-      nextAction: "Move the record to violet after 20 Aug 2026, when the application window closes; then track the 22 Aug Kannada exam and the October written exams.",
+      nextAction: "Apply before the window closes on 20 Aug 2026; the Kannada language test follows on 22 Aug and the written exams in October",
     },
     summary:
       "Recruitment of Village Administrative Officers for the Karnataka Revenue Department, conducted by the Karnataka Examinations Authority with separate Rest of Karnataka and Kalyana Karnataka processes.",

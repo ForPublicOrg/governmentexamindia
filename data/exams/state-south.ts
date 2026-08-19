@@ -1833,10 +1833,10 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      detail: "Lakshadweep Samagra Shiksha has postponed the registration and interview that our record showed for 20 Aug 2026. Notice F.No. 1/8/2018-Edn (SMSA), published on the Lakshadweep recruitment board on 19 Aug 2026, reschedules registration to 24 August 2026 from 09:30 AM to 10:30 AM and the interview to 11:00 AM onwards, both at the Directorate of Education, Kavaratti. Eligible candidates must report within the stipulated time. A check list for the post was also published on the board on 14 Aug 2026.",
+      detail: "Lakshadweep Samagra Shiksha has postponed the registration and interview previously fixed for 20 Aug 2026. Notice F.No. 1/8/2018-Edn (SMSA), published on the Lakshadweep recruitment board on 19 Aug 2026, reschedules registration to 24 August 2026 from 09:30 AM to 10:30 AM and the interview to 11:00 AM onwards, both at the Directorate of Education, Kavaratti. Eligible candidates must report within the stipulated time. A check list for the post was also published on the board on 14 Aug 2026.",
       label: "Interview postponed; rescheduled to 24 Aug 2026",
       tone: "blue",
-      nextAction: "Add the postponement notice to links; re-check after 24 Aug for a panel or selection list.",
+      nextAction: "Report for the rescheduled registration and interview on 24 Aug 2026, then watch for the panel",
     },
     summary: "Contract engagement of a Computer Programmer at the Samagra Shiksha State Project Office of the Directorate of Education, Kavaratti, Lakshadweep.",
     vacancies: 1,
@@ -2370,7 +2370,7 @@ export const exams: Exam[] = [
       detail: "Certificate verification for the main list runs 18-21 Aug 2026 at the MRB office in Chennai, with the additional list called for 22 Aug 2026.",
       label: "Certificate verification under way",
       tone: "violet",
-      nextAction: "Watch for the provisional selection list after 22 Aug 2026; the record then moves to slate.",
+      nextAction: "Watch for the provisional selection list after certificate verification ends on 22 Aug 2026",
     },
     summary:
       "Tamil Nadu's largest health-department recruitment at school-leaving level: Nursing Assistant Grade II in the Tamil Nadu Medical Subordinate Service, selected without any written test or interview on the weightage of academic and technical marks.",

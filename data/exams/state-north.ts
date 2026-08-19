@@ -1536,7 +1536,7 @@ export const exams: Exam[] = [
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
-        text: "Online submission opened on 10 Aug 2026 as notified, so the record now shows the cycle as open with the 8 Sep 2026 cut-off; JKSSB's advertisement list shows no corrigendum against Notification 07 of 2026.",
+        text: "Online submission opened on 10 Aug 2026 as notified, so this cycle is now open with an 8 Sep 2026 cut-off; JKSSB's advertisement list shows no corrigendum against Notification 07 of 2026.",
       },
     ],
     keywords: [
@@ -2912,7 +2912,7 @@ export const exams: Exam[] = [
       detail: "Advertisements 57/7-2026 (Male) and 58/7-2026 (Female); the 3 Aug 2026 addendum extended the last date for online applications by 15 days to 21 Aug 2026, 11:59 PM, alongside a one-time one-year age relaxation. A further addendum dated 6 Aug 2026 applies revised EWS instructions.",
       label: "Applications close 21 Aug 2026",
       tone: "green",
-      nextAction: "Re-check on 22 Aug 2026: the window closes 21 Aug, after which the record must move off green and await PST/PET dates.",
+      nextAction: "Apply online before 11:59 pm on 21 Aug 2026, then watch for the PST and PET dates",
     },
     summary:
       "Recruitment of Class-III constables to the Himachal Pradesh Police Department under the HP Police Department (Recruitment of Constables) Rules 2024, advertised and examined by the state Public Service Commission.",

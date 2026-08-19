@@ -736,7 +736,7 @@ export const exams: Exam[] = [
     status: {
       label: "SSB call-up letters due by end Aug 2026",
       tone: "blue",
-      nextAction: "Re-check the Join Indian Navy home page in early Sep 2026 for the actual SSB interview schedule.",
+      nextAction: "Watch the Join Indian Navy home page for the SSB interview schedule",
       detail: "Shortlisting for SSB is complete; the Navy says call-up letters will be issued by end Aug 2026, with SSB interviews from Sep 2026 onwards.",
     },
     summary: "Permanent Commission technical-branch entry for unmarried men and women after Class 12, leading to a four-year B.Tech at the Indian Naval Academy, Ezhimala.",

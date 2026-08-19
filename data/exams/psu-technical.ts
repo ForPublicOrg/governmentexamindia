@@ -324,7 +324,7 @@ export const exams: Exam[] = [
     status: {
       label: "Final results out for three disciplines",
       tone: "violet",
-      nextAction: "Watch the Final Result tab on gailonline.com for Executive Trainee (Electrical); then the record can close as complete.",
+      nextAction: "Watch the Final Result tab on gailonline.com for Executive Trainee (Electrical)",
       detail: "GAIL has published discipline-wise shortlists (May–June 2026) and final results for Executive Trainee (Chemical) on 13 Jul 2026, (Instrumentation) on 16 Jul 2026 and (Mechanical) on 5 Aug 2026 under Advt. GAIL/OPEN/ET/2A/2025. The Electrical discipline has been shortlisted but its final result is still awaited.",
     },
     summary: "GAIL recruitment of recent engineering graduates as Executive Trainees in the disciplines notified against GATE 2026.",
@@ -1071,7 +1071,7 @@ export const exams: Exam[] = [
     status: {
       label: "Applications open until 7 Sep 2026",
       tone: "green",
-      nextAction: "Move the record to exam-awaited after 7 Sep 2026 and watch aai.aero for the CBT date.",
+      nextAction: "Apply on aai.aero before 7 Sep 2026, then watch the site for the CBT date",
       detail: "The detailed advertisement for Advt. No. 12/2026/CHQ/DR-CBT (389 posts) sets the online application window as 8 Aug 2026 to 7 Sep 2026, with 7 Sep 2026 also the eligibility cut-off date. The registration link is live on the AAI recruitment dashboard and post-wise syllabi were added on 13 Aug 2026; the CBT date is still to be announced.",
     },
     summary: "Direct recruitment of Managers across 11 disciplines and Junior Executives across 4 disciplines in the Airports Authority of India through a computer-based test and interview/physical test where applicable.",

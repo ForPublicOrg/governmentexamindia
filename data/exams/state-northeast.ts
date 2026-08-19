@@ -2873,7 +2873,7 @@ export const exams: Exam[] = [
     status: {
       label: "Written-test result out; interview 1 Sep 2026",
       tone: "blue",
-      nextAction: "Re-check after 1 Sep 2026 for the interview result / appointment orders, which would complete the cycle.",
+      nextAction: "Watch for the interview result and appointment orders after 1 Sep 2026",
       detail: "MeECL declared the written-test results for Assistant Engineer (Electrical/EEE) and (Computer Science Engineering/IT) on 13 August 2026. The test was held on 20 June 2026. Qualified candidates attend a personal interview on 1 September 2026 at the MeECL Guest House Campus, Lumjingshai, Shillong — Electrical/EEE from 10:00 AM and Computer Science/IT from 2:00 PM.",
     },
     summary: "Meghalaya Energy Corporation Limited's direct recruitment for Assistant Engineers in the Electrical, Electrical & Electronics, Computer Science and IT Engineering disciplines.",

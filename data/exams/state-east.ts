@@ -2529,7 +2529,7 @@ export const exams: Exam[] = [
       detail: "JRHMS issued a Career Opportunity notice dated 12.08.2026 for 51 contractual Accounts and management posts at State, District and Block level under NHM Jharkhand — Chartered Accountant, State Finance Manager-RCH, State Accounts Manager, State Accounts Officer-Urban, Accounts Officer/State Accountant-NTEP, Executive Assistant-Accounts-RCH, District Accounts Manager (5), Accounts Assistant-District-RCH (6) and Block Accounts Manager (33), advertisement nos 02/2026-2521(MD) to 02/2026-2529(MD). Online applications only, at recruitment.jharkhand.gov.in.",
       label: "Applications open until 13 Sep 2026",
       tone: "blue",
-      nextAction: "Re-check on 14 Sep 2026 — the window closes 13 Sep 11:59 pm and the record must leave green then.",
+      nextAction: "Apply online before 11:59 pm on 13 Sep 2026",
     },
     summary:
       "Contractual recruitment to National Health Mission posts in Jharkhand — specialist and medical officers, hospital managers and programme staff — by the Jharkhand Rural Health Mission Society.",

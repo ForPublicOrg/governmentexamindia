@@ -427,7 +427,7 @@ export const exams: Exam[] = [
     status: {
       label: "PSTET 2026 notified; applications from 21 Aug 2026",
       tone: "blue",
-      nextAction: "Repoint sourceUrl to the 2026 rulebook, add the MP Online form link, and flip to green on 21 Aug once the window is actually open.",
+      nextAction: "Apply through MP Online once the application window opens on 21 Aug 2026",
       detail: "A new cycle has been notified. MP ESB has published a combined rulebook for the 'प्राथमिक एवं माध्यमिक कक्षाओं में अध्यापन कर रहे शिक्षकों के लिए पात्रता परीक्षा 2026', issued under the Supreme Court order of 1 Sep 2025 in Civil Appeals 1385/2025 and 1386/2025; Chapter 1 is the Prathmik Shikshak Patrata Pariksha 2026 for in-service teachers. Online applications run 21 Aug to 4 Sep 2026, corrections 21 Aug to 9 Sep 2026, and the examination starts 12 Oct 2026 in two shifts (10:00 AM–12:30 PM and 3:00–5:30 PM). Fee Rs 1,000 per question paper, plus MP Online portal charges of Rs 60 (kiosk) or Rs 20 (registered citizen user).",
     },
     summary: "Madhya Pradesh's lifetime-valid eligibility test for primary school teachers, conducted by the Employees Selection Board for the School Education Department and the Tribal Affairs Department.",
@@ -504,7 +504,7 @@ export const exams: Exam[] = [
     status: {
       label: "MSTET 2026 notified; applications from 21 Aug 2026",
       tone: "blue",
-      nextAction: "Repoint sourceUrl to the 2026 rulebook, add the MP Online form link, and flip to green on 21 Aug once the window is actually open.",
+      nextAction: "Apply through MP Online once the application window opens on 21 Aug 2026",
       detail: "A new cycle has been notified. MP ESB has published a combined rulebook for the 'प्राथमिक एवं माध्यमिक कक्षाओं में अध्यापन कर रहे शिक्षकों के लिए पात्रता परीक्षा 2026', issued under the Supreme Court order of 1 Sep 2025 in Civil Appeals 1385/2025 and 1386/2025; Chapter 2 is the Madhyamik Shikshak Patrata Pariksha 2026 for in-service teachers. Online applications run 21 Aug to 4 Sep 2026, corrections 21 Aug to 9 Sep 2026, and the examination starts 12 Oct 2026 in two shifts (10:00 AM–12:30 PM and 3:00–5:30 PM). Fee Rs 1,000 per question paper, plus MP Online portal charges of Rs 60 (kiosk) or Rs 20 (registered citizen user).",
     },
     summary: "Madhya Pradesh's lifetime-valid eligibility test for middle school subject teachers and for sports, music and dance teacher posts, conducted by the Employees Selection Board for the School Education Department and the Tribal Affairs Department.",
@@ -1516,7 +1516,7 @@ export const exams: Exam[] = [
     status: {
       label: "Rolling post-wise notices; no combined recruitment examination",
       tone: "amber",
-      nextAction: "Re-check the vacancy board after 22 Aug 2026; it remains a rolling board with no combined exam.",
+      nextAction: "Open the NHM Madhya Pradesh vacancy board for the post you want; there is no combined examination",
       detail: "Vacancy page still carries only rolling post-wise notices and appointment orders. Newest entries are dated 10 Aug 2026, and a walk-in vacancy window for contractual PGMO/MO posts runs 8-22 Aug 2026.",
     },
     summary: "Contractual recruitment under the National Health Mission in Madhya Pradesh, run by the Human Resource branch of the Department of Public Health and Medical Education for state, district and block-level programme, clinical and paramedical posts.",

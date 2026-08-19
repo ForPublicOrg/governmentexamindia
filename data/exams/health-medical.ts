@@ -293,7 +293,7 @@ export const exams: Exam[] = [
     status: {
       label: "Exam on 30 August",
       tone: "blue",
-      nextAction: "Re-check after 30 Aug 2026 for the answer key / result.",
+      nextAction: "Watch for the answer key and result after the 30 Aug 2026 examination",
       detail: "NBEMS conduct notice fixes the computer-based exam for 30 Aug 2026 and result by 30 Sep 2026. Applications closed 21 Jul; test city intimated 11 Aug; the final selective edit window for images ran 12-15 Aug 2026.",
     },
     summary: "National eligibility and ranking examination for admission to MD/MS/PG Diploma and other notified postgraduate medical seats.",
