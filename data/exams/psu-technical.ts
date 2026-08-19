@@ -1156,6 +1156,102 @@ export const exams: Exam[] = [
     ],
   }),
   exam({
+    slug: "isro-lpsc-technical-assistant-technician-02-2026",
+    title: "ISRO LPSC Technical Assistant, Technician 'B', Draughtsman 'B' and Fireman 'A' Recruitment 2026",
+    shortTitle: "ISRO LPSC 02/2026",
+    aliases: ["LPSC recruitment 2026", "LPSC Technician B 2026", "ISRO Technical Assistant 2026"],
+    organisation: "Indian Space Research Organisation",
+    governmentLevel: "Central",
+    jurisdiction: "Liquid Propulsion Systems Centre — Valiamala (Thiruvananthapuram) and Bengaluru",
+    cycle: "2026 (Advt. LPSC/02/2026)",
+    year: 2026,
+    verification: "verified",
+    notificationNumber: "LPSC/02/2026",
+    sector: "Space research PSU",
+    examTypes: ["Public Sector Undertakings", "Technical & Trades"],
+    education: ["10th", "ITI / Diploma"],
+    status: {
+      label: "Applications open until 4 Sep 2026",
+      tone: "green",
+      nextAction: "Apply on the LPSC recruitment portal before 1400 hrs on 4 Sep 2026",
+      detail:
+        "Advertisement LPSC/02/2026 dated 15 Aug 2026 invites applications for 19 posts at the Liquid Propulsion Systems Centre. The online recruitment portal is open from 1400 hrs on 18 Aug 2026 to 1400 hrs on 4 Sep 2026, and applications are submitted at www.lpsc.gov.in.",
+    },
+    summary:
+      "Diploma and ITI level recruitment at ISRO's Liquid Propulsion Systems Centre for Technical Assistant, Technician 'B', Draughtsman 'B' and Fireman 'A' posts at Valiamala and Bengaluru.",
+    vacancies: 19,
+    vacancyLabel: "19 posts",
+    vacancyNote:
+      "The advertisement notifies 6 Technical Assistant (Mechanical), 1 Technical Assistant (Chemical), 1 Technician 'B' (Electronic Mechanic), 9 Technician 'B' (Fitter), 1 Draughtsman 'B' (Mechanical) and 1 Fireman 'A'. Two of the nine Fitter posts are reserved for ex-servicemen, and specified posts are backlog vacancies reserved for candidates with benchmark disabilities.",
+    vacancyBreakdown: [
+      { label: "Technical Assistant (Mechanical) — Post 813", total: 6 },
+      { label: "Technical Assistant (Chemical) — Post 814", total: 1 },
+      { label: "Technician 'B' (Electronic Mechanic) — Post 815", total: 1 },
+      { label: "Technician 'B' (Fitter) — Post 816", total: 9 },
+      { label: "Draughtsman 'B' (Mechanical) — Post 817", total: 1 },
+      { label: "Fireman 'A' — Post 802", total: 1 },
+    ],
+    age:
+      "Minimum 18 years for all posts. The maximum age as on 4 Sep 2026 is 35 years for post numbers 813 to 817 and 25 years for post number 802 (Fireman 'A'), with the relaxations stated in the advertisement.",
+    qualification:
+      "Technical Assistant — a three-year Diploma in Mechanical Engineering (post 813) or Chemical Engineering (post 814) with First Class. Technician 'B' — SSLC/SSC pass with ITI/NTC/NAC from NCVT in the Electronic Mechanic trade (post 815) or the Fitter trade (post 816). Draughtsman 'B' — SSLC/SSC pass with ITI/NTC/NAC in the Draughtsman (Mechanical) trade. Fireman 'A' — SSLC/SSC pass, meeting the prescribed physical fitness and Physical Efficiency Test standards. The qualification must be held as on 4 Sep 2026.",
+    fee: "₹750 initially for posts 813 and 814, of which ₹500 is refunded after the written test and ₹250 retained; ₹500 initially for posts 802, 815, 816 and 817, of which ₹400 is refunded and ₹100 retained. Women, SC, ST, PwBD and ex-servicemen candidates are refunded the full fee after appearing for the written test.",
+    pay:
+      "Technical Assistant — Pay Matrix Level 7, ₹44,900–₹1,42,400. Technician 'B' and Draughtsman 'B' — Level 3, ₹21,700–₹69,100. Fireman 'A' — Level 2, ₹19,900–₹63,200.",
+    timeline: [
+      { label: "Advertisement published", date: "2026-08-15", displayDate: "15 Aug 2026", state: "completed" },
+      { label: "Online application portal opens", date: "2026-08-18", displayDate: "18 Aug 2026, 1400 hrs", state: "completed" },
+      { label: "Last date for online applications", date: "2026-09-04", displayDate: "4 Sep 2026, 1400 hrs", state: "current" },
+      { label: "Written test", displayDate: "To be announced", state: "tentative" },
+    ],
+    eligibility: [
+      "The posts are temporary but likely to continue indefinitely, at LPSC units at Valiamala near Thiruvananthapuram and at Bengaluru.",
+      "Only candidates who hold the prescribed qualification as on 4 Sep 2026 should apply.",
+      "An EWS Income and Asset Certificate must be issued by the competent authority on or before 4 Sep 2026.",
+      "Candidates in government service must apply through proper channel and may attend the written test, skill test or PET only with their employer's permission.",
+      "No travelling allowance is paid for attending the written test.",
+    ],
+    selectionStages: [
+      "Written test — 80 multiple-choice questions in 90 minutes, one mark each with 0.33 negative marking, on the prescribed curriculum",
+      "Skill test on a go-no-go basis for candidates shortlisted at a 1:5 ratio, subject to a minimum of 10 candidates",
+      "Final selection purely on written-test marks among candidates who qualify the skill test",
+    ],
+    syllabus: [
+      "The written-test syllabus is curriculum based, covering the theoretical and practical content of the qualification prescribed for the post, as stated in advertisement LPSC/02/2026.",
+    ],
+    officialLinks: [
+      { label: "Official LPSC 02/2026 recruitment page", url: "https://www.isro.gov.in/LPSCRecruitment13.html", type: "notice" },
+      {
+        label: "Detailed bilingual advertisement (PDF)",
+        url: "https://www.isro.gov.in/media_isro/pdf/recruitmentNotice/2026/August/LPSC_02_2026_Detailed_Advt17082026.pdf",
+        type: "notice",
+      },
+      { label: "ISRO careers page", url: "https://www.isro.gov.in/Careers.html", type: "website" },
+    ],
+    sourceTitle: "Advertisement No. LPSC/02/2026 dated 15 Aug 2026 — Liquid Propulsion Systems Centre",
+    sourceUrl: "https://www.isro.gov.in/LPSCRecruitment13.html",
+    sourcePublished: "Advertisement dated 15 Aug 2026; detailed advertisement PDF uploaded 17 Aug 2026",
+    lastVerified: "20 Aug 2026, 02:05 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Record added — ISRO published advertisement LPSC/02/2026 on 15 Aug 2026 and opened its application portal on 18 Aug 2026.",
+      },
+    ],
+    keywords: [
+      "LPSC recruitment",
+      "ISRO technician recruitment",
+      "Liquid Propulsion Systems Centre",
+      "ISRO ITI job",
+      "इसरो तकनीशियन भर्ती",
+      "ISRO diploma job 2026",
+      "Valiamala Thiruvananthapuram ISRO",
+      "ISRO Fireman recruitment",
+      "Draughtsman B ISRO",
+    ],
+  }),
+  exam({
     ...noCount,
     slug: "isro-scientist-engineer-sc-2026",
     title: "ISRO Recruitment of Scientist/Engineer 'SC' 2026 (Advt. ISRO:ICRB:02(EMC-CEPO):2026)",
