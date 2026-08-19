@@ -551,7 +551,7 @@ export const exams: Exam[] = [
     sourceTitle: "MPSC advertisement 132/2025, its Scheme of Examination and the service-wise preliminary results",
     sourceUrl: "https://mpsc.gov.in/downloadFile/english/12414",
     sourcePublished: "Advertisement and scheme published 24 Dec 2025; corrigenda 27 Apr, 6 May and 17 Jun 2026; service-wise preliminary results 22-23 Jun 2026",
-    lastVerified: "4 Aug 2026, 19:10 IST",
+    lastVerified: "20 Aug 2026, 03:25 IST",
   }),
   exam({
     slug: "mpsc-maharashtra-group-c-combined-2026",
@@ -2601,11 +2601,10 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Graduate", "Professional degree"],
     status: {
+      detail: "MGVCL, the lead company for this centralised recruitment, scheduled the first-tier examination for 9 Aug 2026 by a notice of 7 Jul 2026, with hall tickets live from 31 Jul 2026. Its notice of 1 Aug 2026 postponed that examination because of the weather across Gujarat and says the next date will be announced subsequently. MGVCL's career page, last modified 1 Aug 2026, publishes no revised date.",
       label: "First-tier examination postponed",
       tone: "red",
       nextAction: "Watch MGVCL's career page for the rescheduled first-tier examination date",
-      detail:
-        "MGVCL, the lead company for this centralised recruitment, has published a notice postponing the first-tier examination for Vidyut Sahayak (Junior Engineer - Electrical); no revised date is published on its career page.",
     },
     summary:
       "Centralised recruitment run by MGVCL on behalf of GUVNL's distribution companies MGVCL, DGVCL, UGVCL and PGVCL and the transmission company GETCO, for Vidyut Sahayak (Junior Engineer - Electrical) posts across Gujarat.",
@@ -2620,8 +2619,11 @@ export const exams: Exam[] = [
     pay: "Fixed remuneration of ₹48,100 a month in the first year and ₹50,700 in the second year as Vidyut Sahayak, with no other allowance; on satisfactory completion of two years the candidate may be appointed Junior Engineer (Electrical) on regular establishment in the ₹45,400–1,01,200 scale.",
     timeline: [
       { label: "Advertisement published", date: "2026-06-10", displayDate: "10 Jun 2026", state: "completed" },
-      { label: "Online application window", date: "2026-06-12", displayDate: "12 Jun – 2 Jul 2026, up to 6:00 PM", state: "completed" },
-      { label: "First-tier examination", displayDate: "Postponed — new date awaited", state: "current" },
+      { label: "Online application window", date: "2026-06-12", displayDate: "12 Jun - 2 Jul 2026, up to 6:00 PM", state: "completed" },
+      { label: "First-tier examination schedule notice", date: "2026-07-07", displayDate: "7 Jul 2026", state: "completed" },
+      { label: "Hall ticket download", date: "2026-07-31", displayDate: "31 Jul - 8 Aug 2026", state: "completed" },
+      { label: "Postponement notice", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
+      { label: "First-tier examination", displayDate: "Postponed - new date awaited", state: "current" },
     ],
     eligibility: [
       "Applicants must rank the five companies — MGVCL, DGVCL, UGVCL, PGVCL and GETCO — in order of preference at the time of applying; the preference cannot be changed later and is used with merit rank at allotment.",
@@ -2667,8 +2669,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "MGVCL centralised advertisement for Vidyut Sahayak (Junior Engineer - Electrical) on behalf of all DISCOMs and GETCO",
     sourceUrl: "https://www.mgvcl.com/Upload/jobs/Centralised%20Rec.%20Advertisement_%20VS_JE-%20Electrical.pdf",
-    sourcePublished: "Advertisement dated 10 Jun 2026; applications 12 Jun to 2 Jul 2026; first-tier examination postponed",
-    lastVerified: "4 Aug 2026, 20:05 IST",
+    sourcePublished: "Advertisement 10 Jun 2026; examination schedule 7 Jul 2026; postponement notice 1 Aug 2026",
+    lastVerified: "20 Aug 2026, 03:20 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Recorded the dates behind the postponement: the first-tier examination was fixed for 9 Aug 2026 by MGVCL's notice of 7 Jul 2026 and postponed on 1 Aug 2026 because of the weather across Gujarat. No revised date has been published since.",
+      },
+    ],
   }),
   exam({
     slug: "gssc-goa-group-c-police-forest-prisons-2026",
