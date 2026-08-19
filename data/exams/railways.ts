@@ -1390,9 +1390,9 @@ export const exams: Exam[] = [
     status: {
       label: "Applications open",
       tone: "green",
-      nextAction: "Apply online on the NFR website before 17:30 on 19 Aug 2026",
+      nextAction: "Apply online on the NFR website before 17:30 on 20 Aug 2026",
       detail:
-        "The centralised Act Apprentice notification dated 14 Jul 2026 was published on 16 Jul 2026. Online applications opened at 09:00 on 20 Jul 2026 and close at 17:30 on 19 Aug 2026. There is no written examination — selection is on academic merit followed by document verification.",
+        "The centralised Act Apprentice notification dated 14 Jul 2026 was published on 16 Jul 2026 and online applications opened at 09:00 on 20 Jul 2026. NFR's notice of 19 Aug 2026 extended the closing time from 17:30 on 19 Aug to 17:30 on 20 Aug 2026; all other terms are unchanged. There is no written examination — selection is on academic merit followed by document verification.",
     },
     summary:
       "Engagement of 6,777 Act Apprentices under the Apprentices Act 1961 in designated trades across Northeast Frontier Railway divisions, workshops and units.",
@@ -1419,7 +1419,8 @@ export const exams: Exam[] = [
       { label: "Notification issued", date: "2026-07-14", displayDate: "14 Jul 2026", state: "completed" },
       { label: "Notification published", date: "2026-07-16", displayDate: "16 Jul 2026", state: "completed" },
       { label: "Applications opened", date: "2026-07-20", displayDate: "20 Jul 2026 (09:00)", state: "completed" },
-      { label: "Applications close", date: "2026-08-19", displayDate: "19 Aug 2026 (17:30)", state: "current" },
+      { label: "Extension notice", date: "2026-08-19", displayDate: "19 Aug 2026", state: "completed" },
+      { label: "Applications close (extended)", date: "2026-08-20", displayDate: "20 Aug 2026 (17:30)", state: "current" },
       { label: "Document verification", displayDate: "Date not announced — see the official NFR page", state: "tentative" },
     ],
     eligibility: [
@@ -1447,12 +1448,22 @@ export const exams: Exam[] = [
         url: "https://nfr.indianrailways.gov.in/cris/uploads/files/1784037710106-Notification%20for%20Engagement%20of%20Trainees%20under%20Act%20Apprenticeship%202026%20-%20Dated%2014-07-2026.pdf",
         type: "notice",
       },
+      {
+        label: "Notice extending the last date, 19 Aug 2026 (PDF)",
+        url: "https://nfr.indianrailways.gov.in/cris//uploads/files/1787143770349-Notice%20for%20extension%20of%20last%20date%20for%20submission%20of%20online%20applications%20for%20engagement%20of%20Act%20Apprentices%20over%20NFR.pdf",
+        type: "notice",
+      },
     ],
     sourceTitle: "Northeast Frontier Railway — Centralized Notification for Engagement of Act Apprentices, Notification No. NFR/NAPS/ACT APP./2026",
     sourceUrl: "https://nfr.indianrailways.gov.in/cris/uploads/files/1784037710106-Notification%20for%20Engagement%20of%20Trainees%20under%20Act%20Apprenticeship%202026%20-%20Dated%2014-07-2026.pdf",
-    sourcePublished: "Notification dated 14 Jul 2026, published on the NFR website 16 Jul 2026; checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:19 IST",
+    sourcePublished: "Notification dated 14 Jul 2026, published on the NFR website 16 Jul 2026; extension notice dated 19 Aug 2026",
+    lastVerified: "20 Aug 2026, 00:45 IST",
     changeLog: [
+      {
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        text: "NFR extended the last date and time for online applications from 17:30 on 19 Aug 2026 to 17:30 on 20 Aug 2026; all other terms of the 14 Jul 2026 notification are unchanged.",
+      },
       { date: "2026-08-04", displayDate: "4 Aug 2026", text: "Record added — no railway apprenticeship notice was present in this module." },
     ],
     keywords: [

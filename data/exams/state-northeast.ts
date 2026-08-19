@@ -2352,10 +2352,10 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate"],
     verification: "verified",
     status: {
-      label: "Examination scheduled for 28 Aug 2026",
+      label: "Admit card download open until 27 Aug 2026",
       tone: "blue",
-      nextAction: "Re-download the admit card from 18 Aug 2026 and appear on 28 Aug 2026",
-      detail: "MBSE's notice of 27 Jul 2026 supersedes its 8 Jul 2026 notice, fixes the rescheduled MTET on 28 Aug 2026 and cancels all previously issued admit cards and roll sheets.",
+      nextAction: "Re-download the admit card from mbseonline.com before 27 Aug 2026 and appear on 28 Aug 2026",
+      detail: "MBSE's notice of 27 Jul 2026 supersedes its 8 Jul 2026 notice, fixes the rescheduled MTET on 28 Aug 2026 and cancels all previously issued admit cards and roll sheets. Admit cards are downloadable from the MBSE online portal between 18 and 27 Aug 2026, with new roll numbers, and the revised roll numbers and centres are notified separately on mbse.edu.in.",
     },
     summary: "Mizoram's teacher eligibility test for primary and middle school teaching, entrusted to the Mizoram Board of School Education by the Government of Mizoram.",
     vacancyLabel: "Eligibility test - no vacancies",
@@ -2369,8 +2369,8 @@ export const exams: Exam[] = [
       { label: "Application deadline", date: "2026-05-15", displayDate: "15 May 2026", state: "completed" },
       { label: "Late-fee application deadline", date: "2026-05-23", displayDate: "23 May 2026", state: "completed" },
       { label: "Rescheduling notice", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
-      { label: "Document resubmission deadline for rejected applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "current" },
-      { label: "Admit card download opens", date: "2026-08-18", displayDate: "18 Aug 2026", state: "scheduled" },
+      { label: "Document resubmission deadline for rejected applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
+      { label: "Admit card download", date: "2026-08-18", displayDate: "18–27 Aug 2026", state: "current", note: "New roll numbers are assigned; candidates who downloaded an earlier admit card must download it again." },
       { label: "Written examination", date: "2026-08-28", displayDate: "28 Aug 2026 - Paper I 9:30 AM-12:00 noon, Paper II 1:30-4:00 PM", state: "scheduled" },
     ],
     eligibility: [
@@ -2393,8 +2393,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "MBSE Notice No. K.12012/3/2025-MBSE(Acad)/107 - MTET rescheduled to 28 August 2026",
     sourceUrl: "https://www.mbse.edu.in/wp-content/uploads/2026/07/MTET-2026-Exam-Reschedule.pdf",
-    sourcePublished: "27 Jul 2026",
-    lastVerified: "4 Aug 2026, 18:30 IST",
+    sourcePublished: "Rescheduling notice dated 27 Jul 2026",
+    lastVerified: "20 Aug 2026, 01:10 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The admit-card window opened on 18 Aug 2026 and runs to 27 Aug 2026 under MBSE's rescheduling notice; the document-resubmission deadline of 7 Aug 2026 has passed.",
+      },
+    ],
     keywords: [
       "MTET Mizoram",
       "Mizoram TET",

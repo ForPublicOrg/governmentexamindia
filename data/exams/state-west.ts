@@ -895,11 +895,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Walk-in-interview on 10 Aug",
-      tone: "green",
-      nextAction: "Attend the walk-in-interview on 10 Aug 2026 at 09:30 AM",
+      label: "Walk-in-interview held; outcome awaited",
+      tone: "violet",
+      nextAction: "Watch the UT Administration's recruitment listing for the engagement order",
       detail:
-        "The Directorate of Education published this notice on 3 August 2026 and the UT Administration's own recruitment listing shows it running to 10 August 2026, the date of the walk-in-interview at Shiksha Sadan, Moti Daman.",
+        "The Directorate of Education published this notice on 3 August 2026 and held the walk-in-interview at Shiksha Sadan, Moti Daman on 10 August 2026. The notice has since dropped off the UT Administration's live recruitment listing and no selection or engagement order has been published for it.",
     },
     summary:
       "Walk-in-interview by the Directorate of Education under Samagra Shiksha to engage Trained Graduate Teachers and Post Graduate Teachers on short-term contract in government schools of the Dadra and Nagar Haveli and Daman districts.",
@@ -924,9 +924,10 @@ export const exams: Exam[] = [
         label: "Walk-in-interview and last date to apply",
         date: "2026-08-10",
         displayDate: "10 Aug 2026, 9:30 AM",
-        state: "current",
-        note: "Shiksha Sadan, Moti Daman — the application is submitted in hard copy at the interview",
+        state: "completed",
+        note: "Shiksha Sadan, Moti Daman — the application was submitted in hard copy at the interview",
       },
+      { label: "Engagement order", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "The engagement is purely on short-term contract under Samagra Shiksha, a Centrally Sponsored Scheme, for government schools of the Dadra and Nagar Haveli and Daman districts.",
@@ -959,8 +960,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Directorate of Education, Samagra Shiksha, Moti Daman — walk-in-interview notice for TGTs and PGTs",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/08/20260803608077527.pdf",
-    sourcePublished: "Notice dated 3 Aug 2026; UT listing open 3 Aug to 10 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:20 IST",
+    sourcePublished: "Notice dated 3 Aug 2026; UT listing ran 3 Aug to 10 Aug 2026 and was re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:25 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The walk-in-interview of 10 Aug 2026 has taken place and the notice no longer appears among the UT Administration's live recruitment notices; no engagement order has been published.",
+      },
+    ],
   }),
   exam({
     slug: "dnhdd-gec-daman-assistant-professor-stc-2026",
@@ -1374,10 +1382,10 @@ export const exams: Exam[] = [
     examTypes: ["Health & Medical"],
     education: ["12th", "ITI / Diploma"],
     status: {
-      label: "Applications open; closes 15 Aug",
-      tone: "green",
-      nextAction: "Apply online by 15 Aug 2026",
-      detail: "GSSSB advertisement GSSSB/202627/441 for Multi Purpose Health Worker (Male), Class III, is open on the OJAS portal and closes 15 Aug 2026.",
+      label: "Applications closed; exam date awaited",
+      tone: "amber",
+      nextAction: "Watch gsssb.gujarat.gov.in for the competitive-examination date and admit card",
+      detail: "Applications for GSSSB advertisement GSSSB/202627/441, Multi Purpose Health Worker (Male), Class III, closed on 15 Aug 2026 after the board's extension notice of 1 Aug 2026. The board's news list carries no further extension and no examination date for this advertisement.",
     },
     summary: "Gujarat Subordinate Service Selection Board recruitment to a Class III Multi Purpose Health Worker (Male) post in the Health and Family Welfare Department.",
     vacancyLabel: "See official advertisement GSSSB/202627/441",
@@ -1387,7 +1395,9 @@ export const exams: Exam[] = [
     fee: "See the official advertisement for category-wise fee.",
     pay: "₹26,000 fixed monthly pay during a 5-year probation (Class III post), as stated on the official OJAS listing.",
     timeline: [
-      { label: "Application deadline", date: "2026-08-15", displayDate: "15 Aug 2026", state: "current" },
+      { label: "Deadline extension notice", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
+      { label: "Application deadline", date: "2026-08-15", displayDate: "15 Aug 2026", state: "completed" },
+      { label: "Competitive examination", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Age 18 to 33 years as stated on the OJAS advertisement listing.",
@@ -1425,8 +1435,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "GSSSB advertisement GSSSB/202627/441 — Multi Purpose Health Worker (Male)",
     sourceUrl: "https://ojas.gujarat.gov.in/AdvtDetails.aspx?sid=K3JOsteln/k=&yr=iNSQ32x8ipg=&ano=lYLAyZ8UKKE=",
-    sourcePublished: "OJAS listing open with deadline 15 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:25 IST",
+    sourcePublished: "OJAS listing with deadline 15 Aug 2026; GSSSB news list re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:00 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The application window closed on 15 Aug 2026. GSSSB's news list publishes no further extension for advertisement 441/202627 and no examination date yet, though it has begun issuing exam-date notices for other 2026-27 advertisements.",
+      },
+    ],
   }),
   listedExam({
     slug: "reet-rajasthan-eligibility-examination-for-teachers",

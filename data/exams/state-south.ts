@@ -677,11 +677,11 @@ export const exams: Exam[] = [
     education: ["Graduate", "Postgraduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications closed; checklist due around 11 Aug 2026",
-      tone: "blue",
-      nextAction: "Watch the Lakshadweep recruitment notices page for the checklist (tentative 11 Aug 2026) and final list (tentative 14 Aug 2026)",
+      label: "Applications closed; checklist not yet published",
+      tone: "amber",
+      nextAction: "Watch the Lakshadweep recruitment notices page for the checklist and final list",
       detail:
-        "The application window fixed by the Directorate of Education's Employment Notice, File No. LD-23004/1/2025-Acd-Wng-Dir of Edn (1)/643 dated 15 Jul 2026, closed 7 Aug 2026 with no extension found on the Lakshadweep recruitment notices page. The notice's own schedule anticipates a checklist around 11 Aug 2026 and a final list around 14 Aug 2026, ahead of an interview to be intimated by email.",
+        "The application window fixed by the Directorate of Education's Employment Notice, File No. LD-23004/1/2025-Acd-Wng-Dir of Edn (1)/643 dated 15 Jul 2026, closed 7 Aug 2026 with no extension found on the Lakshadweep recruitment notices page. The notice's own schedule anticipated a checklist around 11 Aug 2026 and a final list around 14 Aug 2026; both tentative dates have passed and neither list appears on the administration's recruitment notices page, which still carries this notice with a display period running to 24 Aug 2026.",
     },
     summary: "Panel preparation for contract faculty engagement — Lecturer in Mechanical Engineering — at the Government Polytechnic College, Minicoy, Lakshadweep.",
     vacancyLabel: "Merit panel; no vacancy number notified",
@@ -696,8 +696,8 @@ export const exams: Exam[] = [
       { label: "Employment Notice issued", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "Follow-up notice on checklist and final list responsibilities", date: "2026-07-23", displayDate: "23 Jul 2026", state: "completed" },
       { label: "Last date for submission of applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
-      { label: "Publishing of checklist (tentative)", date: "2026-08-11", displayDate: "11 Aug 2026", state: "scheduled" },
-      { label: "Publishing of final list (tentative)", date: "2026-08-14", displayDate: "14 Aug 2026", state: "scheduled" },
+      { label: "Publishing of checklist", displayDate: "Awaited — the notice's tentative 11 Aug 2026 date has passed", state: "current" },
+      { label: "Publishing of final list", displayDate: "Awaited — the notice's tentative 14 Aug 2026 date has passed", state: "tentative" },
       { label: "Online / physical interview", displayDate: "To be intimated through mail; date not announced", state: "tentative" },
     ],
     eligibility: [
@@ -724,9 +724,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Employment Notice — Preparation of panel for the engagement of faculty on contract basis in Polytechnic College, Minicoy",
     sourceUrl: "https://cdn.s3waas.gov.in/s358238e9ae2dd305d79c2ebc8c1883422/uploads/2026/07/17841973661799.pdf",
-    sourcePublished: "Notice dated 15 Jul 2026; last date for applications 7 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:15 IST",
+    sourcePublished: "Notice dated 15 Jul 2026; last date for applications 7 Aug 2026; recruitment notices page re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:45 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The tentative checklist and final-list dates of 11 and 14 Aug 2026 have passed without either list appearing on the Lakshadweep recruitment notices page, so both stages are shown as awaited rather than scheduled.",
+      },
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 7 Aug 2026 with no extension found on the Lakshadweep recruitment notices page; moved status from 'Applications open' (green) to reflect the closed window and the notice's own tentative checklist (11 Aug) and final list (14 Aug) dates, and marked the deadline event completed." },
     ],
     keywords: [
@@ -1162,10 +1167,10 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "PST/PET scheduled 13-14 Aug 2026",
-      tone: "blue",
-      nextAction: "Download the PST/PET admit card and report to Police Ground, Gorimedu",
-      detail: "The IRBn Commandant's press release of 1 Aug 2026 records 1,871 applications received, admit cards downloadable from 18:00 hrs on 1 Aug 2026, and the Physical Standard Test / Physical Efficiency Test on 13 and 14 Aug 2026 at Police Ground, Gorimedu, Puducherry.",
+      label: "PST/PET held; next stage awaited",
+      tone: "violet",
+      nextAction: "Watch the Puducherry recruitment portal for the PST/PET outcome and the written examination",
+      detail: "The IRBn Commandant's press release of 1 Aug 2026 recorded 1,871 applications received, admit cards downloadable from 18:00 hrs on 1 Aug 2026, and the Physical Standard Test / Physical Efficiency Test on 13 and 14 Aug 2026 at Police Ground, Gorimedu, Puducherry. Those dates have passed; the recruitment portal carries no postponement for this recruitment and no PST/PET result.",
     },
     summary: "Puducherry Police direct recruitment to Sub-Inspector of Police (Male) in the India Reserve Battalion (IRBn), run through the Union Territory's Combined Graduate Level (CGL) exam process.",
     vacancies: 8,
@@ -1184,7 +1189,8 @@ export const exams: Exam[] = [
       { label: "Online application closes", date: "2026-06-01", displayDate: "1 Jun 2026", state: "completed", note: "Closed 3:00 PM; 1,871 applications received" },
       { label: "Press release on rejected applications", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "PST/PET admit card available", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed", note: "From 18:00 hrs on recruitment.py.gov.in" },
-      { label: "Physical Standard Test / Physical Efficiency Test", date: "2026-08-13", displayDate: "13-14 Aug 2026", state: "scheduled", note: "Police Ground, Gorimedu, Puducherry" },
+      { label: "Physical Standard Test / Physical Efficiency Test", date: "2026-08-13", displayDate: "13-14 Aug 2026", state: "completed", note: "Police Ground, Gorimedu, Puducherry" },
+      { label: "PST/PET result and written examination", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Only Indian citizens who are natives or residents of the Union Territory of Puducherry may apply.",
@@ -1215,9 +1221,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Government of Puducherry, Police Department (IRBn) — Press Release dated 1 Aug 2026 on PST/PET admit cards",
     sourceUrl: "https://recruitment.py.gov.in/files/2193/press-release-for-issue-of-admit-card-for-pst-pet",
-    sourcePublished: "1 Aug 2026; application window was 18 May - 1 Jun 2026",
-    lastVerified: "4 Aug 2026, 19:40 IST",
+    sourcePublished: "Press release 1 Aug 2026; application window was 18 May - 1 Jun 2026; portal re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:50 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The Physical Standard and Physical Efficiency Tests of 13-14 Aug 2026 have taken place. The Puducherry recruitment portal publishes no postponement for this recruitment and no result yet, so the record now waits on the PST/PET outcome.",
+      },
       { date: "2026-08-01", displayDate: "1 Aug 2026", text: "PST/PET fixed for 13-14 Aug 2026 at Police Ground, Gorimedu; admit cards released from 18:00 hrs." },
     ],
     keywords: [

@@ -591,10 +591,10 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 17 Aug 2026 at 5:00 PM",
-      detail: "The current TGPSC direct-recruitment page lists the application period.",
+      label: "Applications closed; exam date awaited",
+      tone: "amber",
+      nextAction: "Watch the TGPSC direct-recruitment page for the examination date",
+      detail: "TGPSC's direct-recruitment listing gives 10 Jul 2026 to 17 Aug 2026, 5:00 PM as the application window for Notification 05/G/TP/2026. That window has closed and the listing shows no examination date for this notification.",
     },
     summary: "Telangana direct recruitment for Assistant Director of Town Planning.",
     vacancyLabel: "See Notification 05/G/TP/2026",
@@ -605,7 +605,8 @@ export const exams: Exam[] = [
     pay: "Telangana pay scale stated in the notification.",
     timeline: [
       { label: "Applications open", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-17", displayDate: "17 Aug 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline", date: "2026-08-17", displayDate: "17 Aug 2026, 5:00 PM", state: "completed" },
+      { label: "Examination", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Section 2 of Notification 05/G/TP/2026, dated 6 Jul 2026, requires that the applicant is a citizen of India, possesses the academic and other qualifications prescribed for the post, and that his or her character and antecedents qualify him or her for such service.",
@@ -635,8 +636,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TGPSC Direct Recruitment - Assistant Director of Town Planning 05/G/TP/2026",
     sourceUrl: "https://websitenew.tgpsc.gov.in/directRecruitment",
-    sourcePublished: "Application window listed 10 Jul to 17 Aug 2026",
-    lastVerified: "4 Aug 2026, 15:10 IST",
+    sourcePublished: "Application window listed 10 Jul to 17 Aug 2026; listing re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 00:55 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The application window closed on 17 Aug 2026 as listed by TGPSC, with no extension and no examination date published for Notification 05/G/TP/2026.",
+      },
+    ],
     keywords: [
       "TGPSC Assistant Director Town Planning",
       "TSPSC ADTP",
@@ -2821,11 +2829,11 @@ export const exams: Exam[] = [
     education: ["Postgraduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Deputation orders awaited",
-      tone: "blue",
-      nextAction: "Await issue of deputation orders, due on or before 11 Aug 2026",
+      label: "General merit list published; deputation orders awaited",
+      tone: "violet",
+      nextAction: "Check the general merit list linked from the School Education Department site and complete certificate verification",
       detail:
-        "Notification No.33/N1/TSCERT/2026 dated 28 Jun 2026 held the computer-based written test from 25 to 31 Jul 2026 at Hyderabad. Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026 rescheduled certificate verification and interview cum demonstration institution-wise - SCERT on 5 Aug, CTE/IASE on 6 Aug and DIETs on 7 Aug 2026 - and moved the issue of deputation orders to on or before 11 Aug 2026.",
+        "Notification No.33/N1/TSCERT/2026 dated 28 Jun 2026 held the computer-based written test from 25 to 31 Jul 2026 at Hyderabad. Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026 rescheduled certificate verification and interview cum demonstration institution-wise - SCERT on 5 Aug, CTE/IASE on 6 Aug and DIETs on 7 Aug 2026 - and moved the issue of deputation orders to on or before 11 Aug 2026. The department has since published the general merit list of DIET, CTE, IASE and SCERT candidates selected by deputation under foreign-service terms, together with a certificate-verification proforma; no deputation order has been published on the department's site.",
     },
     summary:
       "Selection of in-service Gazetted Headmasters and School Assistants for Lecturer and Professor posts in Telangana's DIETs, CTEs, IASE and SCERT, as stop-gap arrangements on deputation for one year or until regular staff are appointed.",
@@ -2851,7 +2859,8 @@ export const exams: Exam[] = [
       { label: "Application edit option", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
       { label: "Computer-based written test", date: "2026-07-25", displayDate: "25 to 31 Jul 2026", state: "completed", note: "Held at Hyderabad" },
       { label: "Interview cum demonstration", date: "2026-08-05", displayDate: "5 to 7 Aug 2026 (institution-wise: SCERT 5 Aug, CTE/IASE 6 Aug, DIETs 7 Aug)", state: "completed", note: "Rescheduled from the earlier common 6-8 Aug window to per-institution dates by Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026." },
-      { label: "Issue of deputation orders", date: "2026-08-11", displayDate: "On or before 11 Aug 2026", state: "scheduled", note: "Moved from 10 Aug 2026 by Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026." },
+      { label: "General merit list and certificate-verification proforma", displayDate: "Published on the department site — publication date not announced", state: "current" },
+      { label: "Issue of deputation orders", displayDate: "Date not announced — the notified target of 11 Aug 2026 has passed", state: "tentative" },
     ],
     eligibility: [
       "Only in-service Gazetted Headmasters and School Assistants working in Government and Local Body management schools under the School Education Department are eligible.",
@@ -2872,9 +2881,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Notification No.33/N1/TSCERT/2026, Director of School Education, Telangana",
     sourceUrl: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/downloadDocs.do?mode=downloadDocuments&manualName=Notification%20-DIET,CTE,IASE,SCERT.pdf",
-    sourcePublished: "Notification dated 28 Jun 2026; interview schedule revised by Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:20 IST",
+    sourcePublished: "Notification dated 28 Jun 2026; interview schedule revised 1 Aug 2026; department site re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:40 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The School Education Department has published the general merit list for DIET, CTE, IASE and SCERT deputation together with a certificate-verification proforma. The notified target of issuing deputation orders on or before 11 Aug 2026 has passed without an order being published, so that stage is now shown as awaited rather than scheduled.",
+      },
       {
         date: "2026-08-10",
         displayDate: "10 Aug 2026",

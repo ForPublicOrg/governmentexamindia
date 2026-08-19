@@ -1172,16 +1172,17 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades", "Specialist & Professional"],
     education: ["Professional degree"],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online on ISRO's careers page before 17 Aug 2026",
-      detail: "ISRO's official careers page confirms Advt. No. ISRO:ICRB:02(EMC-CEPO):2026 dated 28 Jul 2026, with the online application portal open from 28 Jul to 17 Aug 2026 for Scientist/Engineer 'SC' posts based in Bengaluru.",
+      label: "Applications closed; test date awaited",
+      tone: "amber",
+      nextAction: "Watch ISRO's careers page for the written-test date and admit card",
+      detail: "ISRO's advertisement page for Advt. No. ISRO:ICRB:02(EMC-CEPO):2026 dated 28 Jul 2026 gives 17 Aug 2026 as the last date for online submission and states the application portal was open from 28 Jul to 17 Aug 2026. The page still labels the vacancy 'Open' but publishes no extended date and no written-test date.",
     },
     summary: "Direct recruitment of Scientist/Engineer 'SC', a Group A technical post, through GATE score-based shortlisting followed by an interview.",
     qualification: "Notified engineering discipline degree with a valid GATE score, per Advt. ISRO:ICRB:02(EMC-CEPO):2026; see the bilingual advertisement for the exact disciplines.",
     timeline: [
       { label: "Advertisement published", date: "2026-07-28", displayDate: "28 Jul 2026", state: "completed" },
-      { label: "Applications close", date: "2026-08-17", displayDate: "17 Aug 2026", state: "current" },
+      { label: "Applications closed", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
+      { label: "Written test", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Only Indian nationals need apply. Candidates are screened in for interview on the basis of a valid GATE-2025 or GATE-2026 score — the advertisement accepts no other GATE year — and the GATE paper must match the subject of the qualifying degree.",
@@ -1204,8 +1205,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Recruitment to the post of Scientist/Engineer 'SC' — Advt. ISRO:ICRB:02(EMC-CEPO):2026",
     sourceUrl: "https://www.isro.gov.in/ICRB_Recruitment12.html",
-    sourcePublished: "28 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:55 IST",
+    sourcePublished: "Advertisement dated 28 Jul 2026; application window stated on the advertisement page ended 17 Aug 2026",
+    lastVerified: "20 Aug 2026, 00:35 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The application window stated on ISRO's own advertisement page closed on 17 Aug 2026 with no extension published, so this record no longer invites applications; the written-test date has not been announced.",
+      },
+    ],
     keywords: [
       "ISRO Scientist Engineer SC 2026",
       "ISRO GATE recruitment",
@@ -2084,21 +2092,46 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades", "Specialist & Professional"],
     education: ["Professional degree", "Postgraduate"],
     status: {
-      label: "Applications close 10 Aug 2026",
+      label: "Current vacancies close 27 Aug – 4 Sep 2026",
       tone: "blue",
       nextAction: "Open the vacancy notification on cochinshipyard.in and apply before the last date shown against each post",
       detail:
-        "Cochin Shipyard's official career page, checked 4 Aug 2026, lists Executive Trainee (Environment), Manager (Defence – Business Expansions) and Manager (Environment) at Kochi and executive posts at its Mumbai and Kolkata ship repair units with a last date of 10 Aug 2026, plus contract Boat Crew closing 12 Aug 2026. Post-wise vacancy counts and eligibility are only in the linked notifications.",
+        "Cochin Shipyard's official career page, checked 20 Aug 2026, now advertises a fresh set of vacancies with last dates between 27 Aug and 4 Sep 2026: Manager (Defence – Business Expansions) for Kochi and ship repair at Karwar/Vizag on 2 Sep, Production & Commissioning Assistants and Engineers and Ship Draftsman Trainees on 4 Sep, Senior Project Officers, Project Officer and Project Assistant (Office) for the Andaman ship repair unit on 31 Aug, and Assistant Manager (Materials) and Office Assistant at UCSL Malpe on 27 Aug. Post-wise vacancy counts and eligibility are only in the linked notifications.",
     },
     summary:
       "Executive and Executive Trainee recruitment at Cochin Shipyard Limited, India's largest shipbuilding and maintenance facility, run against separate vacancy notifications on the company's own career page.",
     timeline: [
       {
-        label: "Last date for the current executive vacancies",
+        label: "Previous executive vacancies closed",
         date: "2026-08-10",
         displayDate: "10 Aug 2026",
+        state: "completed",
+      },
+      {
+        label: "UCSL Malpe posts close",
+        date: "2026-08-27",
+        displayDate: "27 Aug 2026",
+        state: "current",
+        note: "Assistant Manager (Materials) on regular roll and Office Assistant on contract",
+      },
+      {
+        label: "Andaman ship repair unit posts close",
+        date: "2026-08-31",
+        displayDate: "31 Aug 2026",
         state: "scheduled",
-        note: "Applies to the Executive Trainee and Manager posts listed on the career page; the contract Boat Crew post closes 12 Aug 2026",
+        note: "Senior Project Officers, Project Officer and Project Assistant (Office) for CANSRU",
+      },
+      {
+        label: "Manager (Defence – Business Expansions) closes",
+        date: "2026-09-02",
+        displayDate: "2 Sep 2026",
+        state: "scheduled",
+      },
+      {
+        label: "Production & Commissioning and Ship Draftsman Trainee posts close",
+        date: "2026-09-04",
+        displayDate: "4 Sep 2026",
+        state: "scheduled",
       },
     ],
     officialLinks: [
@@ -2107,8 +2140,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Cochin Shipyard Limited — Careers",
     sourceUrl: "https://cochinshipyard.in/career",
-    sourcePublished: "Career page checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:10 IST",
+    sourcePublished: "Career page checked 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 00:40 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The executive vacancies that closed on 10 Aug 2026 have been replaced on Cochin Shipyard's career page by a new set closing between 27 Aug and 4 Sep 2026, including Production & Commissioning posts, Ship Draftsman Trainees and posts at the Andaman and Malpe units.",
+      },
+    ],
     keywords: [
       "Cochin Shipyard recruitment 2026",
       "CSL executive trainee",

@@ -1460,11 +1460,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Technical & Trades"],
     education: ["10th", "12th", "ITI / Diploma", "Graduate"],
     status: {
-      label: "Applications open 10 August 2026",
-      tone: "blue",
-      nextAction: "Obtain the migrant or Kashmiri Pandit certificate and apply on the JKSSB portal from 10 August 2026",
+      label: "Applications open until 8 September 2026",
+      tone: "green",
+      nextAction: "Obtain the migrant or Kashmiri Pandit certificate and apply on the JKSSB portal before 8 September 2026",
       detail:
-        "Advertisement Notification 07 of 2026 dated 8 July 2026 advertises 72 Divisional Cadre posts requisitioned under the PM Package, with online applications from 10 August 2026 to 8 September 2026.",
+        "Advertisement Notification 07 of 2026 dated 8 July 2026 advertises 72 Divisional Cadre posts requisitioned under the PM Package. Online submission commenced on 10 August 2026 and the cut-off date stated in the notification is 8 September 2026; JKSSB's advertisement list carries no corrigendum against 07 of 2026.",
     },
     summary:
       "JKSSB recruitment to 72 Divisional Cadre posts requisitioned by the Disaster Management, Relief, Rehabilitation & Reconstruction Department under the Prime Minister's Package for Kashmiri Migrants and Non-Migrant Kashmiri Pandits.",
@@ -1479,8 +1479,8 @@ export const exams: Exam[] = [
     pay: "Post-wise pay level printed against each post in Annexure-A of the notification.",
     timeline: [
       { label: "Advertisement notification published", date: "2026-07-08", displayDate: "8 Jul 2026", state: "completed" },
-      { label: "Online applications commence", date: "2026-08-10", displayDate: "10 Aug 2026", state: "scheduled" },
-      { label: "Last date for online applications", date: "2026-09-08", displayDate: "8 Sep 2026", state: "scheduled" },
+      { label: "Online applications commence", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
+      { label: "Last date for online applications", date: "2026-09-08", displayDate: "8 Sep 2026", state: "current" },
     ],
     eligibility: [
       "Selection is carried out under SRO 412 dated 30.12.2009 read with SRO 425 dated 10.10.2017; only 'Migrants' as defined in SRO 412 of 2009 or 'Kashmiri Pandits' as defined in SRO 425 of 2017 are eligible to apply for these posts (clause 01).",
@@ -1506,8 +1506,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 07 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advt_07OF2026_08072026.pdf",
-    sourcePublished: "Notification dated 8 Jul 2026; applications 10 Aug to 8 Sep 2026",
-    lastVerified: "4 Aug 2026, 23:30 IST",
+    sourcePublished: "Notification dated 8 Jul 2026; applications 10 Aug to 8 Sep 2026; advertisement list re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:05 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Online submission opened on 10 Aug 2026 as notified, so the record now shows the cycle as open with the 8 Sep 2026 cut-off; JKSSB's advertisement list shows no corrigendum against Notification 07 of 2026.",
+      },
+    ],
     keywords: [
       "JKSSB PM package",
       "Kashmiri migrant recruitment",
@@ -1536,11 +1543,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["Graduate"],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Complete the online application and fee payment on the LAHD-SSRB portal before 13 August 2026",
+      label: "Applications closed; exam date awaited",
+      tone: "amber",
+      nextAction: "Watch the LAHD-SSRB website for the written-examination date and admit card",
       detail:
-        "Advertisement Notice No. 01 of 2026 (F.No. SECY/LAHD-SSRB/2026/1605-18) dated 14 July 2026 opened applications on 17 July 2026. Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 August 2026 extended the closing date and the last date for online fee payment from 6 August 2026 to 13 August 2026, and states no further extension will be granted; the eligibility cut-off date remains 6 August 2026. A Corrigendum Notice dated 7 August 2026 (F.No. SECY/LAHD-SSRB/2026/1947-1960) reads 'District Leh' throughout the advertisement as 'Erstwhile District Leh'. The written examination date is to be announced on the Board's website.",
+        "Advertisement Notice No. 01 of 2026 (F.No. SECY/LAHD-SSRB/2026/1605-18) dated 14 July 2026 opened applications on 17 July 2026. Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 August 2026 extended the closing date and the last date for online fee payment from 6 August 2026 to 13 August 2026, and stated that no further extension would be granted; that closing date has now passed and the Board's notice board carries no further extension. The eligibility cut-off date remains 6 August 2026. A Corrigendum Notice dated 7 August 2026 (F.No. SECY/LAHD-SSRB/2026/1947-1960) reads 'District Leh' throughout the advertisement as 'Erstwhile District Leh'. The written examination date is to be announced on the Board's website.",
     },
     summary:
       "District-cadre recruitment of Teacher (Primary) and Teacher (Upper Primary) for the School Education Department of Leh district by the Leh Autonomous Hill Development - Subordinate Services Recruitment Board.",
@@ -1557,7 +1564,7 @@ export const exams: Exam[] = [
       { label: "Online applications opened", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
       { label: "Revised Section-B syllabus notified", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
       { label: "Corrigendum on 'District Leh' definition", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed", note: "'District Leh' read as 'Erstwhile District Leh' for eligibility, domicile and reservation purposes" },
-      { label: "Last date for submission of application and fee", date: "2026-08-13", displayDate: "13 Aug 2026", state: "current", note: "Extended from 6 Aug 2026 by Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 Aug 2026; eligibility cut-off date remains 6 Aug 2026" },
+      { label: "Last date for submission of application and fee", date: "2026-08-13", displayDate: "13 Aug 2026", state: "completed", note: "Extended from 6 Aug 2026 by Notice F.No. SECY/LAHD-SSRB/2026/1924-37 dated 6 Aug 2026; eligibility cut-off date remains 6 Aug 2026" },
       { label: "Written examination", displayDate: "To be announced on the LAHD-SSRB website", state: "tentative" },
     ],
     eligibility: [
@@ -1594,8 +1601,13 @@ export const exams: Exam[] = [
     sourceTitle: "LAHD-SSRB Advertisement Notice No. 01 of 2026",
     sourceUrl: "https://www.lahdssrb.in/file_uploads/advertisement/attachment/AdvertisementNoticeNo01OF2026Dated14072026-3a83c795593053cd1a85121837e90420.pdf",
     sourcePublished: "Advertisement notice dated 14 Jul 2026; applications 17 Jul 2026 to 13 Aug 2026 (closing date extended from 6 Aug 2026 by notice dated 6 Aug 2026); corrigendum dated 7 Aug 2026; revised Section-B syllabus dated 3 Aug 2026",
-    lastVerified: "10 Aug 2026, 16:20 IST",
+    lastVerified: "20 Aug 2026, 01:15 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The extended closing date of 13 Aug 2026 has passed and the Board's notice board publishes no further extension, so this cycle is no longer open to applicants; the written-examination date is still to be announced.",
+      },
       {
         date: "2026-08-10",
         displayDate: "10 Aug 2026",

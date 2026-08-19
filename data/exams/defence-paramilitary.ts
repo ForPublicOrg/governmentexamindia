@@ -648,10 +648,10 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces", "Judiciary & Legal"],
     education: ["Professional degree"],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online by 17 Aug 2026, 1500 hrs",
-      detail: "The official notification opened online applications on 17 Jul 2026 at 1500 hrs; they close on 17 Aug 2026 at 1500 hrs.",
+      label: "Applications closed; shortlist awaited",
+      tone: "violet",
+      nextAction: "Watch joinindianarmy.nic.in for the CLAT PG based shortlist for SSB",
+      detail: "The official notification opened online applications on 17 Jul 2026 at 1500 hrs and closed them on 17 Aug 2026 at 1500 hrs. Shortlisting for the SSB is made on the CLAT PG 2026 score against the notified vacancies, and SSB interviews are scheduled for Nov–Dec 2026.",
     },
     summary: "Short Service Commission for unmarried male and female law graduates into the Judge Advocate General (JAG) Branch, trained at Officers Training Academy, Chennai.",
     vacancies: 10,
@@ -670,7 +670,8 @@ export const exams: Exam[] = [
     pay: "Stipend of ₹56,100 per month during training; commissioned as Lieutenant with a CTC of about ₹17–18 lakh a year; Short Service Commission with release options after 5, 10 or 14 years.",
     timeline: [
       { label: "Online applications opened", date: "2026-07-17", displayDate: "17 Jul 2026, 1500 hrs", state: "completed" },
-      { label: "Online applications close", date: "2026-08-17", displayDate: "17 Aug 2026, 1500 hrs", state: "current" },
+      { label: "Online applications close", date: "2026-08-17", displayDate: "17 Aug 2026, 1500 hrs", state: "completed" },
+      { label: "Shortlist for SSB on CLAT PG 2026 score", displayDate: "To be announced", state: "current" },
       { label: "SSB interviews", sortMonth: "2026-11", displayDate: "Nov–Dec 2026 (up to five days)", state: "scheduled" },
       { label: "Course commences at OTA Chennai", sortMonth: "2027-04", displayDate: "From Apr 2027 (49 weeks)", state: "scheduled" },
     ],
@@ -688,8 +689,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JAG Entry Scheme 125th Course official notification",
     sourceUrl: "https://www.joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/Notification_for_JAG_Entry_Scheme_125th_Course_Apr_2027.pdf",
-    sourcePublished: "Notification published ahead of the 17 Jul 2026 application opening",
-    lastVerified: "4 Aug 2026, 16:10 IST",
+    sourcePublished: "Notification published ahead of the 17 Jul 2026 application opening; portal re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:25 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The online application window closed on 17 Aug 2026 at 1500 hrs as notified, so the record now waits on the CLAT PG based shortlist for SSB.",
+      },
+    ],
     keywords: [
       "Army law graduate entry",
       "JAG Branch officer",
@@ -1366,11 +1374,11 @@ export const exams: Exam[] = [
     examTypes: ["Technical & Trades"],
     education: ["10th", "ITI / Diploma"],
     status: {
-      label: "Applications open until 11 Aug 2026",
-      tone: "green",
-      nextAction: "Send the completed Annexure-I application by ordinary post so it reaches the Commander, Coast Guard Region (A&N) by 11 Aug 2026",
+      label: "Applications closed; admit card awaited",
+      tone: "amber",
+      nextAction: "Watch the Coast Guard recruitment page for the scrutiny outcome and the written-examination admit card",
       detail:
-        "The advertisement was published in the 27 Jun – 3 Jul 2026 issue of Employment News and sets 11 Aug 2026 as the last date for receipt of applications. It is an offline, postal application — the advertisement says no application printouts are to be sent by any other route and no original certificates are to be enclosed.",
+        "The advertisement was published in the 27 Jun – 3 Jul 2026 issue of Employment News and set 11 Aug 2026 as the last date for receipt of the postal application. That date has passed and the Coast Guard recruitment page, updated 18 Aug 2026, still lists only this advertisement, with no extension and no examination date.",
     },
     summary:
       "Direct recruitment by Headquarters, Coast Guard Region (A&N), Sri Vijaya Puram to the Group 'C' civilian post of Engine Driver, through document verification, a written examination and a qualifying skill test.",
@@ -1386,7 +1394,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement published in Employment News", date: "2026-06-27", displayDate: "27 Jun – 3 Jul 2026 issue", state: "completed" },
       { label: "Advertisement posted on the Coast Guard recruitment page", date: "2026-07-21", displayDate: "21 Jul 2026", state: "completed" },
-      { label: "Last date for receipt of applications", date: "2026-08-11", displayDate: "11 Aug 2026", state: "current" },
+      { label: "Last date for receipt of applications", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed" },
       { label: "Written examination", displayDate: "Examination date not announced in the advertisement", state: "tentative" },
     ],
     eligibility: [
@@ -1433,8 +1441,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Advertisement for filling up of Group 'C' civilian vacant post by direct recruitment in CGRHQ (A&N)",
     sourceUrl: "https://indiancoastguard.gov.in/sites/default/files/Advt_in_English.pdf",
-    sourcePublished: "Published in the 27 Jun – 3 Jul 2026 issue of Employment News; posted on the Coast Guard recruitment page on 21 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:45 IST",
+    sourcePublished: "Published in the 27 Jun – 3 Jul 2026 issue of Employment News; posted on the Coast Guard recruitment page on 21 Jul 2026, which was last updated 18 Aug 2026",
+    lastVerified: "20 Aug 2026, 00:50 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "The postal application deadline of 11 Aug 2026 has passed. The Coast Guard recruitment page, updated 18 Aug 2026, publishes no extension and no written-examination date, so the record now waits on the admit card.",
+      },
+    ],
     keywords: [
       "Coast Guard civilian recruitment",
       "ICG Group C vacancy",

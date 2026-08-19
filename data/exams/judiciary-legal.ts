@@ -928,11 +928,11 @@ export const exams: Exam[] = [
     examTypes: ["Judiciary & Legal"],
     education: ["Professional degree"],
     status: {
-      label: "Viva-voce scheduled for 11 August 2026",
-      tone: "blue",
-      nextAction: "Shortlisted candidates should download the viva-voce call letter from the High Court recruitment portal",
+      label: "Viva-voce marks published; final selection awaited",
+      tone: "violet",
+      nextAction: "Check your viva-voce marks on the High Court recruitment portal and await the selection list",
       detail:
-        "The High Court's recruitment portal published the viva-voce call letter on 30 July 2026 for the post of District Judge (Entry Level) in the Tamil Nadu State Judicial Service under Notification No. 1/2023, dated 1 July 2023, in consequence of the Supreme Court's order dated 19 February 2026 in S.L.P. (C) No. 21281 of 2024. The viva-voce is on 11 August 2026.",
+        "The High Court's recruitment portal published the viva-voce call letter on 30 July 2026 for the post of District Judge (Entry Level) in the Tamil Nadu State Judicial Service under Notification No. 1/2023, dated 1 July 2023, in consequence of the Supreme Court's order dated 19 February 2026 in S.L.P. (C) No. 21281 of 2024. The viva-voce was held on 11 August 2026 and the marks secured by the candidates were published on 17 August 2026; no selection list has followed yet.",
     },
     summary:
       "Direct recruitment of eligible advocates to entry-level District Judge posts in the Tamil Nadu State Judicial Service, conducted by the Madras High Court's Centralised Recruitment Cell.",
@@ -955,7 +955,9 @@ export const exams: Exam[] = [
         state: "completed",
       },
       { label: "Viva-voce call letter published", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed" },
-      { label: "Viva-voce", date: "2026-08-11", displayDate: "11 Aug 2026 (Tuesday)", state: "scheduled" },
+      { label: "Viva-voce", date: "2026-08-11", displayDate: "11 Aug 2026 (Tuesday)", state: "completed" },
+      { label: "Viva-voce marks published", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
+      { label: "Selection list", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Recruitment is governed by the Tamil Nadu State Judicial Service (Cadre and Recruitment) Rules, 2007, as amended, and applications are accepted only online through the High Court's recruitment portal or the Government website.",
@@ -988,6 +990,11 @@ export const exams: Exam[] = [
       },
       { label: "Madras High Court recruitment portal", url: "https://www.mhc.tn.gov.in/recruitment/", type: "apply" },
       {
+        label: "Marks secured in the viva-voce held on 11 Aug 2026",
+        url: "https://www.mhc.tn.gov.in/recruitment/mark_tndj_viva_012023",
+        type: "result",
+      },
+      {
         label: "Tamil Nadu State Judicial Service (Cadre and Recruitment) Rules, 2007",
         url: "https://www.mhc.tn.gov.in/recruitment/docs/tamilnadujo_service_rules.pdf",
         type: "website",
@@ -995,8 +1002,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Notification No. 1/2023 for District Judge (Entry Level), read with the viva-voce call letter published on the High Court recruitment portal",
     sourceUrl: "https://www.mhc.tn.gov.in/recruitment/docs/NOTIFICATION_01_2023.pdf",
-    sourcePublished: "Notification No. 1/2023 dated 1 Jul 2023; viva-voce call letter published 30 Jul 2026",
-    lastVerified: "4 Aug 2026, 21:00 IST",
+    sourcePublished: "Notification No. 1/2023 dated 1 Jul 2023; viva-voce marks published on the recruitment portal 17 Aug 2026",
+    lastVerified: "20 Aug 2026, 01:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-17",
+        displayDate: "17 Aug 2026",
+        text: "The Madras High Court published the marks secured by candidates in the viva-voce held on 11 Aug 2026 for District Judge (Entry Level) under Notification No. 1/2023.",
+      },
+    ],
     keywords: [
       "Tamil Nadu district judge exam",
       "TN higher judiciary recruitment",
