@@ -82,7 +82,7 @@ function activeUpscExam(value: {
     sourceTitle: sourceTitle ?? "UPSC active examinations — 2026 cycle listing",
     sourceUrl: sourceUrl ?? "https://www.upsc.gov.in/examinations/active-exams",
     sourcePublished: sourcePublished ?? "Active list checked 19 Aug 2026",
-    lastVerified: lastVerified ?? "19 Aug 2026, 16:34 IST",
+    lastVerified: lastVerified ?? "19 Aug 2026, 22:15 IST",
   };
   if (!timeline) {
     return listedExam({
@@ -174,7 +174,7 @@ export const exams: Exam[] = [
     sourceTitle: "UPSC Civil Services (Main) Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Civil%20Services%20%28Main%29%20Examination%2C%202026",
     sourcePublished: "Press note dated 19 Aug 2026; e-admit card uploaded 14 Aug 2026",
-    lastVerified: "19 Aug 2026, 16:34 IST",
+    lastVerified: "19 Aug 2026, 22:15 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -258,7 +258,7 @@ export const exams: Exam[] = [
     sourceTitle: "UPSC Combined Defence Services Examination (II), 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",
     sourcePublished: "Examination time table uploaded 10 Aug 2026",
-    lastVerified: "19 Aug 2026, 16:34 IST",
+    lastVerified: "19 Aug 2026, 22:15 IST",
     changeLog: [
       {
         date: "2026-08-10",
@@ -338,7 +338,7 @@ export const exams: Exam[] = [
     sourceTitle: "UPSC National Defence Academy and Naval Academy Examination (II), 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
     sourcePublished: "Examination time table uploaded 12 Aug 2026",
-    lastVerified: "19 Aug 2026, 16:34 IST",
+    lastVerified: "19 Aug 2026, 22:15 IST",
     changeLog: [
       {
         date: "2026-08-12",
@@ -1110,7 +1110,7 @@ export const exams: Exam[] = [
     sourceTitle: "UPSC CISF AC (EXE) LDCE-2026 examination page",
     sourceUrl: "https://www.upsc.gov.in/examinations/CISF%20AC%28EXE%29%20LDCE-2026",
     sourcePublished: "Interview schedule notice dated 29 Jul 2026; written result declared 13 Apr 2026",
-    lastVerified: "19 Aug 2026, 16:34 IST",
+    lastVerified: "19 Aug 2026, 22:15 IST",
     changeLog: [
       {
         date: "2026-08-19",
