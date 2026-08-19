@@ -2142,7 +2142,7 @@ export const exams: Exam[] = [
     sourceTitle: "Commissionerate of Health and Family Welfare Services, Karnataka - Direct Recruitment Cell notifications",
     sourceUrl: "https://hfwcom.karnataka.gov.in/page/Recruitment+(DRC)/Direct+Recruitment+Cell+(DRC)/en",
     sourcePublished: "Walk-in notification listed with interview date 20 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:30 IST",
+    lastVerified: "20 Aug 2026, 03:45 IST",
     keywords: [
       "Karnataka health department recruitment",
       "ಆರೋಗ್ಯ ಮತ್ತು ಕುಟುಂಬ ಕಲ್ಯಾಣ ನೇಮಕಾತಿ",
