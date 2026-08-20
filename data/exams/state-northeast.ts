@@ -2542,7 +2542,7 @@ export const exams: Exam[] = [
     sourceTitle: "Information Bulletin, State Teacher Eligibility Test-2026 (For In-Service Regular Teacher), Ref. No. 75/Exam/Edn./2026",
     sourceUrl: "https://tet.sikkim.gov.in/Uploads/Notice/STET-2026(In-Service)%20INFORMATION%20BULLETIN%202026.pdf",
     sourcePublished: "30 Jul 2026",
-    lastVerified: "4 Aug 2026, 18:40 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "STET",
       "Sikkim TET",
@@ -2659,10 +2659,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th", "ITI / Diploma", "Graduate"],
     verification: "verified",
     status: {
-      label: "Shortlisted candidates called for interview",
+      label: "Interviews under way (19-20 Aug 2026)",
       tone: "violet",
-      nextAction: "Follow the CETSE 2026 result notification for interview on the NSSB results page",
-      detail: "NSSB published the provisional answer keys on 13 Apr 2026 and the CETSE 2026 result notification for interview, together with a notification on non-evaluated OMR sheets, on 24 Jul 2026.",
+      nextAction: "Watch nssb.nagaland.gov.in results category for the CETSE 2026 final select list after 20 Aug 2026.",
+      detail: "NSSB issued the detailed interview schedule on 10 Aug 2026. Group interviews run 19-20 Aug 2026 at the Nagaland Staff Selection Board office, Kohima (near the NPSC office); reporting is 9:30 am for the morning group and 12:30 pm for the afternoon group. Candidates must bring originals, and anyone who has not submitted the Detailed Application Form with a District Medical Board fitness certificate is not eligible to appear. No change of interview slot is entertained.",
     },
     summary: "Nagaland Staff Selection Board's combined Group C recruitment for Sectional Officer Grade-II, Soil Conservation Assistant, Surveyor Grade-III, Agriculture Field Assistant, Library Assistant, Horticulture Extension Assistant, Drawing Teacher, Physical Education Teacher and Sericulture Field Assistant.",
     vacancyLabel: "See the CETSE 2026 advertisement",
@@ -2681,7 +2681,9 @@ export const exams: Exam[] = [
       { label: "Corrigendum", date: "2026-03-03", displayDate: "3 Mar 2026", state: "completed" },
       { label: "Written examination", date: "2026-04-11", displayDate: "11 Apr 2026 (date fixed in the advertisement)", state: "completed" },
       { label: "Provisional answer keys", date: "2026-04-13", displayDate: "13 Apr 2026", state: "completed" },
-      { label: "Result notification for interview", date: "2026-07-24", displayDate: "24 Jul 2026", state: "current" },
+      { label: "Result notification for interview", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
+      { label: "Detailed interview schedule notification", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
+      { label: "Interviews at NSSB office, Kohima", date: "2026-08-19", displayDate: "19-20 Aug 2026", state: "current" },
     ],
     eligibility: [
       "All CETSE 2026 vacancies are reserved for indigenous inhabitants of the State of Nagaland.",
@@ -2706,8 +2708,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Combined Education and Technical Services Examination 2026 - Advertisement No. NSSB/EXAM-4/8/2022(VOL-1)/15",
     sourceUrl: "https://nssb.nagaland.gov.in/wp-content/uploads/2026/02/CETSE-2026-ADVERTISEMENT.pdf",
-    sourcePublished: "3 Feb 2026; NSSB recruitment and results pages checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:05 IST",
+    sourcePublished: "Notification No. NSSB/EXAM-4/14/2023(VOL-I)/223 dated 10 Aug 2026 (interview schedule, Annexure-I)",
+    lastVerified: "20 Aug 2026, 04:00 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "NSSB published the detailed CETSE 2026 interview schedule on 10 Aug 2026: group interviews are being held on 19 and 20 August 2026 at the Board's office in Kohima, so the cycle has moved from 'called for interview' to interviews actually in progress.",
+      },
+    ],
     keywords: [
       "NSSB CETSE",
       "Nagaland Staff Selection Board",

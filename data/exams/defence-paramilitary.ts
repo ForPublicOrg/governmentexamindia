@@ -1531,7 +1531,7 @@ export const exams: Exam[] = [
     sourceTitle: "Territorial Army Commission 2026 official notification",
     sourceUrl: "https://territorialarmy.in/uploads/downloads/downloads_1776660017.pdf",
     sourcePublished: "Notification published ahead of the 20 Apr 2026 application opening",
-    lastVerified: "4 Aug 2026, 16:45 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Territorial Army officer",
       "TA Commission exam",

@@ -578,7 +578,7 @@ export const exams: Exam[] = [
     sourceTitle: "SBI CRPD/PO/2026-27/09 detailed advertisement",
     sourceUrl: "https://sbi.bank.in/csfile/18062026_1_Detailed_Adv.2026.pdf",
     sourcePublished: "Detailed advertisement dated 18 Jun 2026",
-    lastVerified: "4 Aug 2026, 10:00 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     changeLog: [
       { date: "2026-06-18", displayDate: "18 Jun 2026", text: "Detailed advertisement released for 1,500 Probationary Officer vacancies." },
     ],
@@ -610,11 +610,10 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Notification awaited",
-      tone: "amber",
-      nextAction: "Watch SBI's current-openings page for the next Junior Associate notification",
-      detail:
-        "The 2025-26 cycle (CRPD/CR/2025-26/06) is at the waitlist-selection stage; SBI had not opened a new Junior Associate cycle for 2026-27 as of this review.",
+      detail: "Advertisement CRPD/CR/2026-27/17 for Junior Associates (Customer Support & Sales) opened online registration on 11 Aug 2026 and closes on 31 Aug 2026. The detailed advertisement says the preliminary examination will be conducted tentatively in September 2026 and the main examination tentatively in November 2026; the backlog advertisement CRPD/CR/SPLDRIVE/2026-27/16 gives September 2026 and Oct/Nov 2026.",
+      label: "Applications open until 31 August 2026",
+      tone: "blue",
+      nextAction: "Apply on the SBI careers page before 31 Aug 2026; the preliminary examination is tentatively in September 2026",
     },
     summary: "Common recruitment for Junior Associate (Customer Support & Sales) clerical posts in State Bank of India branches nationwide.",
     vacancyNote:
@@ -652,8 +651,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "SBI current-openings recruitment index and the Junior Associate 2025-26 detailed advertisement",
     sourceUrl: "https://sbi.bank.in/web/careers/current-openings",
-    sourcePublished: "Openings list checked 4 Aug 2026; previous-cycle advertisement opened registration 6 Aug 2025",
-    lastVerified: "4 Aug 2026, 18:46 IST",
+    sourcePublished: "Advertisement CRPD/CR/2026-27/17, online application window 11-31 Aug 2026",
+    lastVerified: "20 Aug 2026, 04:10 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "SBI opened Junior Associate advertisement CRPD/CR/2026-27/17 on 11 Aug 2026 with a 31 Aug 2026 deadline, and its detailed advertisement places the preliminary examination tentatively in September 2026 and the main examination in November 2026.",
+      },
+    ],
     keywords: [
       "SBI clerk",
       "junior associate",
@@ -681,11 +687,10 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Multiple posts open on a rolling basis",
-      tone: "amber",
-      nextAction: "Check the current-openings page for the specific specialist post and its own advertisement number",
-      detail:
-        "SBI advertises Specialist Cadre Officer posts (law, medical, IT, business analyst, advisory and other roles) individually through the year rather than in one common cycle; each post carries its own advertisement number, dates and vacancy count.",
+      detail: "Three new Specialist Cadre Officer advertisements — CRPD/SCO/2026-27/11, /12 and /13 — opened for online registration on 7 August 2026 and close on 27 August 2026. For the earlier /02 (Assistant Manager & Deputy Manager, Law) and /03 (Bank Medical Officer) advertisements, call letters are out for an online written examination on 23 August 2026.",
+      label: "Three advertisements open until 27 August 2026",
+      tone: "blue",
+      nextAction: "Apply on the SBI careers page before 27 Aug 2026 for advertisements /11, /12 and /13",
     },
     summary:
       "State Bank of India's continuing programme of Specialist Cadre Officer recruitment across law, medical, IT and other professional roles, each advertised separately.",
@@ -734,7 +739,14 @@ export const exams: Exam[] = [
     sourceUrl: "https://sbi.bank.in/web/careers/current-openings",
     sourcePublished:
       "Openings list checked 4 Aug 2026, showing CRPD/SCO/2026-27/02, /03, /05 and /10 at various stages; the /02 and /03 advertisements opened registration on 24 Jun 2026",
-    lastVerified: "4 Aug 2026, 20:30 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Three new SCO advertisements (/11, /12 and /13) opened on 7 Aug 2026 and close 27 Aug 2026; the online written exam for /02 and /03 is set for 23 Aug 2026.",
+      },
+    ],
     keywords: [
       "SBI specialist officer",
       "SBI SCO",

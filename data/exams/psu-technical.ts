@@ -2210,7 +2210,7 @@ export const exams: Exam[] = [
     sourceTitle: "SJVN Limited career opportunities — Advt. No. 127/2026, Buxar Thermal Power Project",
     sourceUrl: "https://sjvn.nic.in/sites/default/files/2026-07/Detailed%20Advt%20127.pdf",
     sourcePublished: "Published 30 Jul 2026; closing date 26 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:06 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "SJVN recruitment 2026",
       "Buxar thermal power project job",

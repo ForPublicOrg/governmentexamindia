@@ -562,7 +562,7 @@ export const exams: Exam[] = [
     sourceTitle: "TGPSC Direct Recruitment - Town Planning Assistant 06/G/TP/2026",
     sourceUrl: "https://websitenew.tgpsc.gov.in/directRecruitment",
     sourcePublished: "Application window listed 15 Jul to 22 Aug 2026",
-    lastVerified: "4 Aug 2026, 15:10 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "TGPSC Town Planning Assistant",
       "TSPSC town planning assistant",
@@ -1392,7 +1392,7 @@ export const exams: Exam[] = [
     sourceTitle: "Karnataka Forest Department - circle-wise Forest Watcher notifications 2026-27",
     sourceUrl: "https://aranya.gov.in/aranyacms/English/Home.aspx",
     sourcePublished: "Circle notifications dated 20 and 21 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:50 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Karnataka Forest Watcher",
       "ಅರಣ್ಯ ವೀಕ್ಷಕ ನೇಮಕಾತಿ",

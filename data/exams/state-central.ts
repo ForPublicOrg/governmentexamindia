@@ -1254,7 +1254,7 @@ export const exams: Exam[] = [
     sourceTitle: "MPPSC State Service Examination 2026 advertisement 29/2025, preliminary result and Main Examination scheme notice",
     sourceUrl: "https://mppsc.mp.gov.in/uploads/advertisement/Advt_State_Service_Exam_2026_Dated_31_12_2025.pdf",
     sourcePublished: "Advertisement 31 Dec 2025; preliminary result 22 May 2026; Main scheme notice 31 Jul 2026",
-    lastVerified: "4 Aug 2026, 17:45 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "MPPSC SSE 2026",
       "MP Deputy Collector exam",

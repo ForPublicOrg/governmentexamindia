@@ -419,7 +419,7 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 044/2026 — Assistant Engineer (Electrical), Kerala State Housing Board",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-06/noti-44-26.pdf",
     sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:05 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 5 Aug 2026 with no corrigendum, extension or test date published on Kerala PSC's site; moved status from 'Applications open' (green) to 'next stage awaited' (amber) and marked the application-deadline event completed." },
     ],
@@ -498,7 +498,7 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 047/2026 — Station Officer (Trainee), Fire and Rescue Services",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-06/noti-47-26.pdf",
     sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:10 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 5 Aug 2026 with no corrigendum, extension or test date published on Kerala PSC's site; moved status from 'Applications open' (green) to 'next stage awaited' (amber) and marked the application-deadline event completed." },
     ],
@@ -1572,7 +1572,7 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 097/2026 — Forest Watcher (Special Recruitment), Forest and Wildlife Department",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-08/noti-97-26.pdf",
     sourcePublished: "Gazette date 30 Jul 2026; last date 2 Sep 2026",
-    lastVerified: "4 Aug 2026, 20:00 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Kerala Forest Watcher",
       "ഫോറസ്റ്റ് വാച്ചർ",
@@ -1802,7 +1802,7 @@ export const exams: Exam[] = [
     sourceTitle: "Puducherry Recruitment Portal — CHSL 2025 result notifications and examination notices",
     sourceUrl: "https://recruitment.py.gov.in/files/LDC2025/3295/ldc-result-notification",
     sourcePublished: "Advertisement No.02/CHSL/PEA/2025 dated 17 Nov 2025; examination held 28 Jun 2026; LDC result published 29 Jul 2026",
-    lastVerified: "4 Aug 2026, 20:15 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Puducherry CHSL",
       "புதுச்சேரி CHSL தேர்வு",
@@ -1964,7 +1964,7 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 021/2026 — Electricity Worker, Kerala State Electricity Board Ltd.",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-04/noti-21-26.pdf",
     sourcePublished: "Gazette date 30 Apr 2026; last date 3 Jun 2026; examination fixed for 30 Sep 2026 in the modified September 2026 programme",
-    lastVerified: "4 Aug 2026, 20:30 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "KSEB",
       "കെ എസ് ഇ ബി",
@@ -2045,7 +2045,7 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 423/2025 — Last Grade Servants, Various Government owned Companies/Corporations/Boards",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2025-10/noti-423-25.pdf",
     sourcePublished: "Gazette date 30 Oct 2025; last date 3 Dec 2025; staged preliminary examination 1 Aug and 22 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:35 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Kerala LGS",
       "LGS Kerala PSC",
@@ -2124,7 +2124,7 @@ export const exams: Exam[] = [
     sourceTitle: "Category No. 619/2025 — Lower Division Clerk, Kerala State Beverages (Manufacturing & Marketing) Corporation Limited",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2025-12/noti%20619-25.pdf",
     sourcePublished: "Gazette date 30 Dec 2025; last date 4 Feb 2026; staged preliminary examination 1 Aug and 22 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:40 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Kerala PSC LDC",
       "LD Clerk Kerala",
@@ -2556,11 +2556,10 @@ export const exams: Exam[] = [
     education: ["Graduate", "Postgraduate"],
     verification: "verified",
     status: {
-      label: "Written examination tentatively scheduled for 21-23 Aug 2026",
+      detail: "Hall tickets have been downloadable since 6:00 PM on 12 Aug 2026. The examination runs 21-23 Aug 2026 at centres in Puducherry, Karaikal, Mahe and Yanam. A corrigendum dated 14 Aug 2026 shifted two Paper-II B sessions on 21 Aug (Library & Information Assistant to 12:30-2:30 PM, Field Supervisor to 4:00-6:00 PM); all other sessions are unchanged. A notice dated 19 Aug 2026 clarifies that Paper-I is common to all posts and a candidate may sit it at any one of the centres shown on their hall tickets.",
+      label: "Hall tickets out; written exam 21-23 Aug 2026",
       tone: "blue",
-      nextAction: "Watch the Puducherry recruitment portal for hall-ticket instructions confirming the schedule",
-      detail:
-        "The Puducherry Examining Authority's notice No.A-34012/3/E-5/PEA/2025, dated 6 Aug 2026, gives a tentative schedule for the CGL Examination-2025 after its earlier postponement (notice No.A-12011/114/2026/PEA/73042, dated 31 Jul 2026): Paper-II B papers post-wise on 21-22 Aug 2026, the common Paper-I on the morning of 23 Aug 2026, and the Upper Division Clerk Paper-II on the afternoon of 23 Aug 2026. The notice says hall-ticket instructions will be published shortly.",
+      nextAction: "Download the hall ticket and appear for the written examination between 21 and 23 Aug 2026",
     },
     summary:
       "Puducherry's combined graduate-level recruitment, run by the Puducherry Examining Authority for 327 posts across eight post codes including Upper Division Clerk, Statistical Inspector, Agriculture Officer and Library and Information Assistant.",
@@ -2577,15 +2576,13 @@ export const exams: Exam[] = [
       { label: "Advertisement No.01/CGL/PEA/2025", date: "2025-11-16", displayDate: "16 Nov 2025", state: "completed" },
       { label: "Online application opens", date: "2025-11-18", displayDate: "18 Nov 2025, 12:00 noon", state: "completed" },
       { label: "Online application closes", date: "2025-12-14", displayDate: "14 Dec 2025, 3:00 PM", state: "completed" },
-      { label: "Postponement notice", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed", note: "No.A-12011/114/2026/PEA/73042" },
-      { label: "Written examination (tentatively fixed)", date: "2026-08-09", displayDate: "9-12 Aug 2026", state: "postponed", note: "Postponed for administrative reasons" },
-      {
-        label: "Written examination (revised tentative schedule)",
-        date: "2026-08-21",
-        displayDate: "21-23 Aug 2026",
-        state: "tentative",
-        note: "Notice No.A-34012/3/E-5/PEA/2025 dated 6 Aug 2026: Paper-II B papers 21-22 Aug, common Paper-I 23 Aug morning, UDC Paper-II 23 Aug afternoon",
-      },
+      { label: "Postponement notice", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
+      { label: "Revised tentative examination schedule notice", date: "2026-08-06", displayDate: "6 Aug 2026", state: "completed" },
+      { label: "Written examination (originally tentatively fixed)", date: "2026-08-09", displayDate: "9-12 Aug 2026", state: "postponed" },
+      { label: "Hall tickets available for download", date: "2026-08-12", displayDate: "12 Aug 2026, 6:00 PM onwards", state: "completed" },
+      { label: "Corrigendum modifying exam timings on 21 Aug 2026", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
+      { label: "Clarification notice on Paper-I centre allocation", date: "2026-08-19", displayDate: "19 Aug 2026", state: "completed" },
+      { label: "Written examination", date: "2026-08-21", displayDate: "21-23 Aug 2026", state: "scheduled" },
     ],
     eligibility: [
       "Only applications successfully filed through the Puducherry online recruitment portal are accepted; candidature is provisional at every stage.",
@@ -2615,9 +2612,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Puducherry Examining Authority — Notice No.A-34012/3/E-5/PEA/2025 dated 6 Aug 2026, tentative schedule for the Combined Graduate Level Examination-2025",
     sourceUrl: "https://recruitment.py.gov.in/files/2195/cgl2025-exam-date",
-    sourcePublished: "Advertisement dated 16 Nov 2025; postponement notice dated 31 Jul 2026; tentative schedule notice dated 6 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:45 IST",
+    sourcePublished: "Press release dated 12 Aug 2026; corrigendum dated 14 Aug 2026; clarification notice dated 19 Aug 2026",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Puducherry PEA released CGL 2025 hall tickets on 12 Aug 2026 and confirmed the written examination for 21-23 Aug 2026. A 14 Aug corrigendum revised the Paper-II B timings for two posts on 21 Aug, and a 19 Aug notice clarified Paper-I centre allocation for candidates holding multiple hall tickets.",
+      },
       {
         date: "2026-08-06",
         displayDate: "6 Aug 2026",
@@ -2715,7 +2717,7 @@ export const exams: Exam[] = [
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Advertisement No.01/CGL/PEA/2026, Combined Graduate Level Examination-2026",
     sourceUrl: "https://recruitment.py.gov.in/recruitment/CGL2026001/show-notification",
     sourcePublished: "Advertisement dated 13 Mar 2026; applications 23 Mar to 13 Apr 2026, extended on the portal to 20 Apr 2026",
-    lastVerified: "4 Aug 2026, 22:05 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Puducherry CGL 2026",
       "புதுச்சேரி CGL 2026",
@@ -2805,7 +2807,7 @@ export const exams: Exam[] = [
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Advertisement No.02/CHSL/PEA/2026, Combined Higher Secondary Level Examination-2026",
     sourceUrl: "https://recruitment.py.gov.in/recruitment/CHSL202620/show-notification",
     sourcePublished: "Advertisement dated 13 Mar 2026; applications 23 Mar to 13 Apr 2026, extended on the portal to 20 Apr 2026",
-    lastVerified: "4 Aug 2026, 22:20 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Puducherry CHSL 2026",
       "புதுச்சேரி CHSL 2026",
@@ -2904,7 +2906,7 @@ export const exams: Exam[] = [
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Advertisement No.03/CSL/PEA/2025, Combined Secondary Level Examination-2025, and the result notification dated 30 Jun 2026",
     sourceUrl: "https://recruitment.py.gov.in/recruitment/DACGA2025/RenderNotification",
     sourcePublished: "Advertisement dated 16 Nov 2025; examination 31 May 2026; result notification 30 Jun 2026",
-    lastVerified: "4 Aug 2026, 23:10 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Puducherry CSL 2025",
       "புதுச்சேரி CSL தேர்வு",
@@ -2995,7 +2997,7 @@ export const exams: Exam[] = [
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Circular No.A-12011/31/2026/PEA/62504 dated 17.07.2026, engagement of Consultant (Legal) on contract basis from retired Government officials",
     sourceUrl: "https://recruitment.py.gov.in/files/2186/consultant-legal-extn-of-time",
     sourcePublished: "Circular dated 17 Jul 2026, published on the recruitment portal 26 Jul 2026; last date 7 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:30 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 7 Aug 2026 with no further update on the Department's news and notification page; moved status from 'Applications open' (green) to 'selection process awaited' (amber) and marked the deadline event completed." },
     ],

@@ -1097,7 +1097,7 @@ export const exams: Exam[] = [
     sourceTitle: "VMMC & Safdarjung Hospital official Senior Resident and Junior Resident (Non-PG) recruitment listing",
     sourceUrl: "https://vmmc-sjh.mohfw.gov.in/senior-resident-and-junior-resident-non-pg-posts-recruitment",
     sourcePublished: "Recruitment listing checked 4 Aug 2026; last regular-cycle advertisements 14 and 18 Nov 2025",
-    lastVerified: "4 Aug 2026, 18:16 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Safdarjung hospital recruitment",
       "VMMC Safdarjung jobs",

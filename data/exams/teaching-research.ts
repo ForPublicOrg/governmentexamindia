@@ -767,10 +767,10 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["12th", "Graduate", "Postgraduate"],
     status: {
-      label: "Tier-II conducted; result awaited",
+      label: "Tier-II results being declared post by post",
       tone: "violet",
-      nextAction: "Track kvsangathan.nic.in and navodaya.gov.in for the Tier-II result, document verification and interview/skill-test schedule under Advt 01/2025",
-      detail: "KVS's public notice on the Tier-II OMR response sheet and provisional answer key (13 May 2026) confirms the Tier-II computer-based examination for Advt 01/2025 has been conducted; no result or next-stage date has been announced yet.",
+      nextAction: "Check the KVS results page for your post; results are being released in batches",
+      detail: "KVS is declaring Tier-II results under Recruitment Notification 01/2025 post by post. Its press release of 17 Aug 2026 declared results for PGT (Computer Science), TGT (Computer Science), Finance Officer and Stenographer Grade-I. A further press release of 18 Aug 2026 declared results for twenty-four more posts: PGT in Assamese, Urdu, Bangla, Garo, Bio-Technology, Manipuri, Tamil and Telugu; TGT in Marathi, Telugu, Assamese, Manipuri, Urdu, Bangla, Nepali, Gujarati, Odiya, Kannada, Punjabi, Malayalam and Tamil; and Assistant Engineer (Civil), Administrative Officer and Multi-Tasking Staff. Results for the posts not named in either press release have not been published yet.",
     },
     summary: "Joint CBSE-conducted direct recruitment for Kendriya Vidyalaya Sangathan and Navodaya Vidyalaya Samiti teaching posts (Principal, PGT, TGT, PRT, Librarian) and non-teaching posts under Recruitment Notification 01/2025.",
     vacancies: 14967,
@@ -801,7 +801,9 @@ export const exams: Exam[] = [
       { label: "Online registration closed", date: "2025-12-04", displayDate: "4 Dec 2025, 11:50 PM", state: "completed" },
       { label: "Tier-I score and Tier-II shortlisting status published", date: "2026-02-28", displayDate: "28 Feb 2026", state: "completed" },
       { label: "Tier-II OMR sheet and provisional answer key published", date: "2026-05-13", displayDate: "13 May 2026", state: "completed" },
-      { label: "Tier-II result / document verification", displayDate: "Official date awaited", state: "current" },
+      { label: "Tier-II result for four posts", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
+      { label: "Tier-II result for a further twenty-four posts", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
+      { label: "Tier-II results for the remaining posts", displayDate: "Dates awaited", state: "current" },
     ],
     eligibility: [
       "Indian citizen meeting the post-specific education, subject and CTET/B.Ed. requirements set out in Notification 01/2025.",
@@ -844,8 +846,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Recruitment Notification 01/2025 — Filling up the teaching and non-teaching posts in KVS and NVS through Direct Recruitment",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2025/11/2025111348.pdf",
-    sourcePublished: "13 Nov 2025; Tier-II OMR/answer-key notice published 13 May 2026",
-    lastVerified: "4 Aug 2026, 16:10 IST",
+    sourcePublished: "KVS press releases declaring Tier-II results, dated 17 and 18 Aug 2026",
+    lastVerified: "20 Aug 2026, 04:15 IST",
+    changeLog: [
+      {
+        date: "2026-08-18",
+        displayDate: "18 Aug 2026",
+        text: "KVS began declaring Tier-II results under Recruitment Notification 01/2025: four posts on 17 Aug 2026 and twenty-four more on 18 Aug 2026, across PGT and TGT language and subject posts plus Assistant Engineer (Civil), Administrative Officer, Finance Officer, Stenographer Grade-I and Multi-Tasking Staff.",
+      },
+    ],
     keywords: [
       "KVS teacher recruitment",
       "NVS teacher recruitment",

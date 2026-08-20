@@ -657,7 +657,7 @@ export const exams: Exam[] = [
     sourceUrl: "https://gujarathighcourt.nic.in/hccms/sites/default/files/Recruitment_files/999_999_2026_6_29_645.pdf",
     sourcePublished:
       "Advertisement 29 Jun 2026; provisional written-test list 31 Jul 2026; recruitment page rechecked 10 Aug 2026, no result or postponement notice posted yet",
-    lastVerified: "10 Aug 2026, 11:20 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     changeLog: [
       {
         date: "2026-08-10",
@@ -2284,7 +2284,7 @@ export const exams: Exam[] = [
     sourceTitle: "Uttarakhand Judicial Service Rules, 2005 as amended, from the High Court's Service Matter document library",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s3bc7f621451b4f5df308a8e098112185d/uploads/2025/07/202507231389898741.pdf",
     sourcePublished: "Rules as amended to the Amendment Rules, 2025 (21 Feb 2025); recruitment section checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:40 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "Uttarakhand PCS J",
       "UKPSC civil judge",

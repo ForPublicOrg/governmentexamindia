@@ -2698,11 +2698,10 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF", "Technical & Trades"],
     education: ["10th", "12th", "Graduate"],
     status: {
-      label: "PET eligibility lists withdrawn",
+      detail: "After the 3 August lists were withdrawn on 4 August 2026, GSSC republished the PET / physical standards eligibility lists for all fourteen posts on 10 August 2026. On 17 August 2026 it issued corrigenda adding candidates to the Warden (Male), Police Constable (Male), Police Constable (Female) and Police Constable (Armed Police) lists, plus an addendum to the final result of the CBT held in May 2026. The lists say the PET date, venue and time will be intimated separately.",
+      label: "PET eligibility lists republished; test date awaited",
       tone: "violet",
-      nextAction: "Wait for the Commission to re-upload the corrected PET eligibility lists",
-      detail:
-        "The Commission uploaded eligibility lists for the Physical Endurance Test on 3 Aug 2026 and withdrew them on 4 Aug 2026 for all fourteen posts because of a technical error while mapping identical names.",
+      nextAction: "Watch gssc.goa.gov.in for the notice fixing the PET date, venue and time.",
     },
     summary:
       "Goa's single Group C advertisement covering Police Constable, Armed Police Constable, Constable Driver, Range Forest Officer, Round Forester, Forest Guard, prison and home-guard posts across the Police, Forest, Prisons, Sports and Women and Child Development departments.",
@@ -2736,8 +2735,12 @@ export const exams: Exam[] = [
       { label: "Advertisement No. 2 of Year 2026", date: "2026-02-20", displayDate: "20 Feb 2026", state: "completed" },
       { label: "Addendum on swimming and medical board", date: "2026-02-23", displayDate: "23 Feb 2026", state: "completed" },
       { label: "Last date to apply", date: "2026-03-13", displayDate: "13 Mar 2026", state: "completed" },
+      { label: "Computer-based test", date: "2026-05-16", displayDate: "16, 17, 24, 30 & 31 May 2026", state: "completed" },
       { label: "PET eligibility lists uploaded", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
-      { label: "PET eligibility lists withdrawn", date: "2026-08-04", displayDate: "4 Aug 2026", state: "current" },
+      { label: "PET eligibility lists withdrawn", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
+      { label: "Revised PET eligibility lists published", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
+      { label: "Corrigenda to PET eligibility lists and addendum to CBT final result", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
+      { label: "Physical Endurance Test / Physical Standards and Efficiency Tests", displayDate: "Date not announced - venue and time to be intimated separately", state: "current" },
     ],
     eligibility: [
       "Applicants need a valid 15-year Goa residence certificate issued by the competent authority in Goa and registration with the Employment Exchange, Goa, alongside the birth, caste or social-status, EWS and experience certificates relevant to their claim.",
@@ -2802,8 +2805,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Goa Staff Selection Commission Advertisement No. 2 of Year 2026, its addendum and the 4 Aug 2026 PET notice",
     sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2026/02/Advertisement-No.-2-of-Year-2026_compressed.pdf",
-    sourcePublished: "Advertisement dated 20 Feb 2026; addendum 23 Feb 2026; PET withdrawal notice 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:10 IST",
+    sourcePublished: "Advertisement dated 20 Feb 2026; PET eligibility lists dated 10 Aug 2026; corrigenda and CBT final-result addendum dated 17 Aug 2026",
+    lastVerified: "20 Aug 2026, 04:00 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "GSSC republished the withdrawn PET eligibility lists on 10 Aug 2026 and issued corrigenda for four posts on 17 Aug 2026; the PET date itself is still to be intimated.",
+      },
+    ],
   }),
   exam({
     slug: "gssc-goa-government-primary-school-teacher-2026",
@@ -2975,7 +2985,7 @@ export const exams: Exam[] = [
     sourceTitle: "Goa Staff Selection Commission Advertisement No. 3 of Year 2025 and its CBT-II notices",
     sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2025/12/Advertisement-No.3-of-Year-2025.pdf",
     sourcePublished: "Advertisement dated 5 Dec 2025; addendum 9 Dec 2025; CBT-II venue notice 3 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:20 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
   }),
   exam({
     slug: "rvunl-common-recruitment-state-power-companies-2026",

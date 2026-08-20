@@ -541,10 +541,10 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "Main-examination stage",
+      label: "Main examination dates notified; conduct not confirmed",
       tone: "violet",
-      nextAction: "Check JPSC examination links for the main-examination schedule and result",
-      detail: "JPSC held the preliminary examination for advertisement 01/2026 on 19 Apr 2026 and issued press releases on the combined civil services main examination on 9 and 14 Jul 2026. No main-examination date or result is confirmed from the notices reviewed here.",
+      nextAction: "Watch jpsc.gov.in for confirmation that the main examination was held and for the result",
+      detail: "JPSC's press release of 14 Jul 2026 scheduled the main written examination for 25, 26 and 27 Jul 2026 in two three-hour sittings at Ranchi district centres, with admit cards downloadable from 21 to 24 Jul 2026. This cycle's main date had already been changed once by the press release of 9 Jul 2026. JPSC's Recent Examinations table still lists only the preliminary examination date of 19 Apr 2026 for this advertisement and has published nothing about the main examination since, so this record does not claim the examination was held.",
     },
     summary: "Jharkhand's combined competitive recruitment to state civil and allied services.",
     vacancyLabel: "Not announced",
@@ -556,7 +556,10 @@ export const exams: Exam[] = [
     pay: "Post-specific Jharkhand pay levels; see advertisement 01/2026.",
     timeline: [
       { label: "Preliminary examination", date: "2026-04-19", displayDate: "19 Apr 2026", state: "completed" },
-      { label: "Main examination press release", date: "2026-07-14", displayDate: "14 Jul 2026", state: "current", note: "JPSC also issued a related press release on 9 Jul 2026." },
+      { label: "Press release changing the main examination date", date: "2026-07-09", displayDate: "9 Jul 2026", state: "completed" },
+      { label: "Press release scheduling the main examination", date: "2026-07-14", displayDate: "14 Jul 2026", state: "completed" },
+      { label: "JPSC/CID notice seeking preliminary OMR carbon copies", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
+      { label: "Main examination outcome and result", displayDate: "Awaited - JPSC has published nothing since the 25-27 Jul 2026 schedule", state: "current" },
     ],
     eligibility: [
       "Online applications are invited from qualified Indian citizens; the examination is conducted under The Jharkhand Combined Civil Services Examination Rules, 2021, the 1st Amendment Rules, 2021 and the 2nd Amendment Rules, 2023 (advertisement 01/2026 dated 29 Jan 2026).",
@@ -573,8 +576,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JPSC examination links page: preliminary exam schedule and main-examination press releases for advertisement 01/2026",
     sourceUrl: "https://www.jpsc.gov.in/Examination-Links.php",
-    sourcePublished: "Press releases dated 9 and 14 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:30 IST",
+    sourcePublished: "Press releases of 9 and 14 Jul 2026; JPSC Recent Examinations table re-read 20 Aug 2026",
+    lastVerified: "20 Aug 2026, 04:15 IST",
+    changeLog: [
+      {
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026",
+        text: "Added the dates JPSC actually published for the main examination - rescheduled on 9 Jul 2026, then fixed for 25-27 Jul 2026 by the press release of 14 Jul - together with the JPSC/CID notice of 29 Jul seeking preliminary OMR carbon copies. JPSC has confirmed nothing about the examination since, so the record stops short of saying it was held.",
+      },
+    ],
     keywords: [
       "JPSC",
       "JPSC PCS",
@@ -1465,7 +1475,7 @@ export const exams: Exam[] = [
     sourceTitle: "West Bengal Board of Primary Education dated notice list, including the TET-2023 notices and the 2026 Special Education Teacher TET notices",
     sourceUrl: "https://wbbpe.wb.gov.in/pages/notice.aspx",
     sourcePublished: "TET-2023 notice and final answer keys dated 24 Sep 2025; Special Education Teacher TET result dated 9 Mar 2026; notice list checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:00 IST",
+    lastVerified: "20 Aug 2026, 04:00 IST",
     keywords: [
       "WB TET",
       "WBTET",
