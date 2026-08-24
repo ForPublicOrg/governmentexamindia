@@ -281,7 +281,7 @@ export default async function ExamDetailPage({ params }: PageProps) {
             <span aria-hidden="true">?</span>
             <h2>Something looks wrong?</h2>
             <p>Send the official source so the record can be reviewed.</p>
-            <a href={`mailto:corrections@governmentexamindia.com?subject=${correctionSubject}`}>Report a correction</a>
+            <a href={`mailto:shelock221bholmes@gmail.com?subject=${correctionSubject}`}>Report a correction</a>
           </div>
         </aside>
       </div>

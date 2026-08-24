@@ -39,8 +39,8 @@ export function SiteFooter() {
         <div>
           <h2>About</h2>
           <Link href="/methodology" prefetch={false}>Sources & coverage</Link>
-          <a href="mailto:corrections@governmentexamindia.com">Report a correction</a>
-          <a href="mailto:hello@governmentexamindia.com">Contact</a>
+          <a href="mailto:shelock221bholmes@gmail.com">Report a correction</a>
+          <a href="mailto:shelock221bholmes@gmail.com">Contact</a>
         </div>
       </div>
       <div className="page-shell footer-bottom">
