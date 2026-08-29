@@ -148,7 +148,7 @@ export const exams: Exam[] = [
       { label: "Prelims result", date: "2026-06-15", displayDate: "15 Jun 2026", state: "completed" },
       { label: "Mains timetable", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
       { label: "e-Admit card", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
-      { label: "Mains examination", date: "2026-08-21", displayDate: "21–23 Aug and 29–30 Aug 2026", state: "scheduled" },
+      { label: "Mains examination", date: "2026-08-21", displayDate: "21–23 Aug and 29–30 Aug 2026", state: "current" },
       { label: "Question paper representation portal", date: "2026-08-31", displayDate: "31 Aug – 4 Sep 2026", state: "scheduled" },
       { label: "Interview", displayDate: "To be announced", state: "tentative" },
     ],
@@ -552,7 +552,7 @@ export const exams: Exam[] = [
       { label: "Applications closed", date: "2026-03-03", displayDate: "3 Mar 2026, 6 PM", state: "completed" },
       { label: "Written examination", date: "2026-06-19", displayDate: "19–21 Jun 2026", state: "completed" },
       { label: "Written result", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
-      { label: "Application form update window closes", date: "2026-08-25", displayDate: "25 Aug 2026, 6 PM", state: "scheduled" },
+      { label: "Application form update window closes", date: "2026-08-25", displayDate: "25 Aug 2026, 6 PM", state: "completed" },
       { label: "Personality Test", displayDate: "To be announced", state: "tentative" },
     ],
     extraLinks: [
@@ -639,7 +639,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Mains examination", date: "2026-06-21", displayDate: "21 Jun 2026", state: "completed" },
       { label: "Mains result", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
-      { label: "Application form update window closes", date: "2026-08-21", displayDate: "21 Aug 2026, 6 PM", state: "scheduled" },
+      { label: "Application form update window closes", date: "2026-08-21", displayDate: "21 Aug 2026, 6 PM", state: "completed" },
       { label: "Personality Test", displayDate: "To be announced", state: "tentative" },
     ],
     extraLinks: [

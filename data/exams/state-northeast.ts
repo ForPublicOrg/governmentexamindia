@@ -288,9 +288,9 @@ export const exams: Exam[] = [
     vacancyLabel: "35 posts",
     vacancyNote: "Electrical 10, Mechanical 6, IT 3, Instrumentation 2, Civil 10 and HR 4.",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 23 Aug 2026",
+      label: "Applications closed; next stage awaited",
+      tone: "amber",
+      nextAction: "Watch the APSC portal for the screening test or interview schedule",
       detail: "APSC opened the APGCL Assistant Manager application window on 24 July.",
     },
     summary: "Assistant Manager recruitment for engineering, IT and HR disciplines in Assam Power Generation Corporation Limited.",
@@ -301,7 +301,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "Applications open", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-23", displayDate: "23 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-23", displayDate: "23 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "The candidate must be an Indian Citizen as defined in Article 5 to 8 of the Constitution of India and must be a permanent resident of Assam.",
@@ -352,9 +352,9 @@ export const exams: Exam[] = [
     vacancyLabel: "31 posts",
     vacancyNote: "Electrical 12, Mechanical 6, IT 2, Instrumentation 2 and Civil 9.",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 21 Aug 2026",
+      label: "Applications closed; next stage awaited",
+      tone: "amber",
+      nextAction: "Watch the APSC portal for the screening test or interview schedule",
       detail: "The online application window for APGCL Junior Manager opened on 22 July.",
     },
     summary: "Diploma-level Junior Manager recruitment in five technical disciplines for Assam's power-generation utility.",
@@ -365,7 +365,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement", date: "2026-07-16", displayDate: "16 Jul 2026", state: "completed" },
       { label: "Applications open", date: "2026-07-22", displayDate: "22 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-21", displayDate: "21 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-21", displayDate: "21 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "The candidate must be an Indian Citizen as defined in Article 5 to 8 of the Constitution of India and must be a permanent resident of Assam.",
@@ -674,7 +674,7 @@ export const exams: Exam[] = [
     fee: "See the July 2025 advertisement",
     pay: "Meghalaya pay level stated in the advertisement.",
     timeline: [
-      { label: "Written examination", date: "2026-08-27", displayDate: "27 Aug 2026", state: "scheduled" },
+      { label: "Written examination", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Applications are invited on behalf of the Govt. of Meghalaya from the citizens of India for recruitment to Lower Division Assistant under the Heads of Department, Post Code 01, in Level 6 of the Revised Pay Structure.",
@@ -853,9 +853,9 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 28 Aug 2026",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch the Mizoram PSC advertisement table for the examination schedule",
       detail: "The current Mizoram PSC advertisement table lists the application deadline.",
     },
     summary: "Mizoram recruitment for Assistant Sub-Inspector of Excise under the Excise and Narcotics Department.",
@@ -867,7 +867,7 @@ export const exams: Exam[] = [
     pay: "Mizoram pay level stated in the advertisement.",
     timeline: [
       { label: "Advertisement", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-28", displayDate: "28 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Bachelor's degree from a recognised University.",
@@ -2390,7 +2390,7 @@ export const exams: Exam[] = [
       { label: "Rescheduling notice", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
       { label: "Document resubmission deadline for rejected applications", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
       { label: "Admit card download", date: "2026-08-18", displayDate: "18–27 Aug 2026", state: "current", note: "New roll numbers are assigned; candidates who downloaded an earlier admit card must download it again." },
-      { label: "Written examination", date: "2026-08-28", displayDate: "28 Aug 2026 - Paper I 9:30 AM-12:00 noon, Paper II 1:30-4:00 PM", state: "scheduled" },
+      { label: "Written examination", date: "2026-08-28", displayDate: "28 Aug 2026 - Paper I 9:30 AM-12:00 noon, Paper II 1:30-4:00 PM", state: "current" },
     ],
     eligibility: [
       "Hold the NCTE minimum qualification for the stage applied for; a 5% relaxation in the qualifying marks applies to SC, ST, OBC and differently abled candidates.",
@@ -2515,7 +2515,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Information bulletin", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed" },
       { label: "Notification in local newspapers and on the Education Department website", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
-      { label: "Applications open", date: "2026-08-24", displayDate: "24 Aug 2026", state: "scheduled" },
+      { label: "Applications open", date: "2026-08-24", displayDate: "24 Aug 2026", state: "completed" },
       { label: "Application deadline", date: "2026-09-12", displayDate: "12 Sep 2026, 4:00 PM", state: "scheduled" },
       { label: "Admit card issue", date: "2026-10-01", displayDate: "1 Oct 2026 onwards", state: "scheduled" },
       { label: "Examination", date: "2026-10-11", displayDate: "11 Oct 2026 (Sunday)", state: "scheduled" },

@@ -1852,7 +1852,7 @@ export const exams: Exam[] = [
       { label: "Last date for receipt of applications", date: "2026-08-06", displayDate: "6 Aug 2026, 5:00 PM", state: "completed" },
       { label: "Check list for the post published", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
       { label: "Registration and interview postponed", date: "2026-08-19", displayDate: "19 Aug 2026", state: "completed" },
-      { label: "Registration and interview", date: "2026-08-24", displayDate: "24 Aug 2026, 9:30 AM registration", state: "scheduled" },
+      { label: "Registration and interview", date: "2026-08-24", displayDate: "24 Aug 2026, 9:30 AM registration", state: "completed" },
     ],
     eligibility: [
       "Applications in the prescribed format, with attested copies of all relevant certificates, testimonials and supporting documents, must reach the State Project Officer, Lakshadweep Samagra Shiksha (SMSA), Directorate of Education, Kavaratti by 5:00 PM on 6 Aug 2026; late applications are not entertained under any circumstances.",
@@ -2017,7 +2017,7 @@ export const exams: Exam[] = [
       { label: "Extraordinary gazette notification", date: "2025-10-30", displayDate: "30 Oct 2025", state: "completed", note: "Cat.No.414/2025 to Cat.No.437/2025" },
       { label: "Last date for applications", date: "2025-12-03", displayDate: "3 Dec 2025, 12 midnight", state: "completed" },
       { label: "Preliminary examination — Stage III and Stage IV", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed", note: "Stage III 10.00-11.35 AM; Stage IV 1.30-3.05 PM" },
-      { label: "Preliminary examination — Stage II", date: "2026-08-22", displayDate: "22 Aug 2026, 10.30 AM-12.05 PM", state: "scheduled", note: "Admission tickets from 7 Aug 2026" },
+      { label: "Preliminary examination — Stage II", date: "2026-08-22", displayDate: "22 Aug 2026, 10.30 AM-12.05 PM", state: "completed", note: "Admission tickets from 7 Aug 2026" },
     ],
     eligibility: [
       "Applications are accepted online only, through the Kerala PSC One Time Registration system.",
@@ -2098,7 +2098,7 @@ export const exams: Exam[] = [
       { label: "Extraordinary gazette notification", date: "2025-12-30", displayDate: "30 Dec 2025", state: "completed", note: "Cat.No.609/2025 to Cat.No.682/2025" },
       { label: "Last date for applications", date: "2026-02-04", displayDate: "4 Feb 2026, 12 midnight", state: "completed" },
       { label: "Preliminary examination — Stage III and Stage IV", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed", note: "Stage III 10.00-11.35 AM; Stage IV 1.30-3.05 PM" },
-      { label: "Preliminary examination — Stage II", date: "2026-08-22", displayDate: "22 Aug 2026, 10.30 AM-12.05 PM", state: "scheduled", note: "Admission tickets from 7 Aug 2026" },
+      { label: "Preliminary examination — Stage II", date: "2026-08-22", displayDate: "22 Aug 2026, 10.30 AM-12.05 PM", state: "completed", note: "Admission tickets from 7 Aug 2026" },
     ],
     eligibility: [
       "Category 619/2025 is Part I direct recruitment; Category 620/2025 is Part II recruitment by transfer within the Corporation. Apply under the part that fits your position.",
@@ -2389,7 +2389,7 @@ export const exams: Exam[] = [
       { label: "Certificate verification schedule published", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed" },
       { label: "Additional certificate-verification list published", date: "2026-08-12", displayDate: "12 Aug 2026", state: "completed" },
       { label: "Certificate verification, main list", date: "2026-08-18", displayDate: "18-21 Aug 2026, 7th Floor DMS Building, Chennai", state: "current" },
-      { label: "Certificate verification, additional list", date: "2026-08-22", displayDate: "22 Aug 2026", state: "scheduled" },
+      { label: "Certificate verification, additional list", date: "2026-08-22", displayDate: "22 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Applications are accepted online only, through the portal linked from MRB's notification page.",
@@ -2582,7 +2582,7 @@ export const exams: Exam[] = [
       { label: "Hall tickets available for download", date: "2026-08-12", displayDate: "12 Aug 2026, 6:00 PM onwards", state: "completed" },
       { label: "Corrigendum modifying exam timings on 21 Aug 2026", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
       { label: "Clarification notice on Paper-I centre allocation", date: "2026-08-19", displayDate: "19 Aug 2026", state: "completed" },
-      { label: "Written examination", date: "2026-08-21", displayDate: "21-23 Aug 2026", state: "scheduled" },
+      { label: "Written examination", date: "2026-08-21", displayDate: "21-23 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Only applications successfully filed through the Puducherry online recruitment portal are accepted; candidature is provisional at every stage.",

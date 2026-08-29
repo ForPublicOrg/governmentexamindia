@@ -1080,10 +1080,10 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open; closes 28 Aug",
-      tone: "green",
-      nextAction: "Apply by 28 Aug 2026, 5 PM",
-      detail: "OPSC's official advertisement opens online applications from 28 July through 28 August 2026 and tentatively schedules the written examination for 27 September.",
+      label: "Applications closed; written examination tentatively 27 Sep 2026",
+      tone: "blue",
+      nextAction: "Watch the OPSC portal for confirmation of the written examination, tentatively set for 27 Sep 2026",
+      detail: "OPSC's official advertisement opened online applications from 28 July through 28 August 2026 and tentatively schedules the written examination for 27 September.",
     },
     summary: "Recruitment of Assistant Horticulture Officers for Odisha through the state Public Service Commission.",
     vacancyLabel: "Not announced",
@@ -1097,7 +1097,7 @@ export const exams: Exam[] = [
       { label: "OPSC official current notices", url: "https://opsc.gov.in/public/opsc/default.aspx", type: "notice" },
     ],
     timeline: [
-      { label: "Application deadline", date: "2026-08-28", displayDate: "28 Aug 2026, 5 PM", state: "current" },
+      { label: "Application deadline", date: "2026-08-28", displayDate: "28 Aug 2026, 5 PM", state: "completed" },
       { label: "Written examination", date: "2026-09-27", displayDate: "27 Sep 2026 (tentative)", state: "tentative" },
     ],
     eligibility: [

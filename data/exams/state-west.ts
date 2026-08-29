@@ -1000,11 +1000,10 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education", "Specialist & Professional"],
     education: ["Postgraduate", "Professional degree"],
     status: {
-      label: "Applications open; closes 21 Aug",
-      tone: "green",
-      nextAction: "Apply by hand, speed post or courier on or before 21 Aug 2026, 5:00 PM",
-      detail:
-        "The Office of the Principal, Government Engineering College, Daman published this advertisement on 21 July 2026 and accepts applications from 22 July 2026 up to 5:00 PM on 21 August 2026.",
+      label: "Applications closed; next stage awaited",
+      tone: "amber",
+      nextAction: "Watch the Government Engineering College, Daman notice board for the shortlist and interview schedule",
+      detail: "The Office of the Principal, Government Engineering College, Daman published this advertisement on 21 July 2026 and accepted applications from 22 July 2026 up to 5:00 PM on 21 August 2026.",
     },
     summary:
       "Recruitment of one Assistant Professor in English at Government Engineering College, Daman, on short term contract for a period of six months under the UT Administration.",
@@ -1019,7 +1018,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement published", date: "2026-07-21", displayDate: "21 Jul 2026", state: "completed" },
       { label: "Applications open", date: "2026-07-22", displayDate: "22 Jul 2026", state: "completed" },
-      { label: "Last date to apply", date: "2026-08-21", displayDate: "21 Aug 2026, 5:00 PM", state: "current" },
+      { label: "Last date to apply", date: "2026-08-21", displayDate: "21 Aug 2026, 5:00 PM", state: "completed" },
     ],
     eligibility: [
       "The engagement is on short term contract for a period of six months, and the advertisement states that the selected candidate will have no right or claim to regularisation against a regular or permanent vacancy.",
@@ -2942,7 +2941,7 @@ export const exams: Exam[] = [
       { label: "Last date to apply", date: "2025-12-31", displayDate: "31 Dec 2025", state: "completed" },
       { label: "Corrigenda to CBT-II eligibility lists", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "CBT-II venue notice", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
-      { label: "Second-tier computer-based test", date: "2026-08-23", displayDate: "23 and 30 Aug 2026", state: "scheduled" },
+      { label: "Second-tier computer-based test", date: "2026-08-23", displayDate: "23 and 30 Aug 2026", state: "current" },
     ],
     eligibility: [
       "Applicants need a 15-year Goa residence certificate issued by the competent authority in Goa and registration with the Employment Exchange, Goa.",
@@ -3005,11 +3004,10 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["ITI / Diploma", "Graduate"],
     status: {
-      label: "Applications open; closes 25 Aug 2026",
-      tone: "green",
-      nextAction: "Apply online for JEn-I, Junior Accountant or Junior Assistant/Commercial Assistant-II by 25 Aug 2026",
-      detail:
-        "RVUN's Recruitment 2026-27 page now shows a live \"Apply Online\" link to the registration portal alongside the short and detailed advertisements, confirming the online application window opened as scheduled on 5 August 2026 and runs to 25 August 2026.",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch RVUN's Recruitment 2026-27 page for the examination schedule",
+      detail: "RVUN's Recruitment 2026-27 page carried the short and detailed advertisements alongside a link to the registration portal; the online application window opened as scheduled on 5 August 2026 and closed on 25 August 2026.",
     },
     summary:
       "Single common recruitment for Rajasthan's five state power companies — the generation company RVUN, the transmission company RVPN and the distribution companies JVVN, AVVN and JdVVN — to Junior Engineer-I, Junior Accountant and Junior Assistant/Commercial Assistant-II posts.",
@@ -3026,7 +3024,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Detailed advertisement announced", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
       { label: "Online application window opens", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed" },
-      { label: "Online application deadline", date: "2026-08-25", displayDate: "25 Aug 2026", state: "current" },
+      { label: "Online application deadline", date: "2026-08-25", displayDate: "25 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "This is a single common recruitment across RVUN, RVPN, JVVN, AVVN and JdVVN — one application covers the participating companies, and allotment follows the detailed advertisement.",

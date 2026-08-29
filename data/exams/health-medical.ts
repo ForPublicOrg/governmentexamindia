@@ -172,7 +172,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notice / applications opened", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
       { label: "Applications close", date: "2026-08-13", displayDate: "13 Aug 2026, 5 PM", state: "completed" },
-      { label: "Application status", date: "2026-08-24", displayDate: "24 Aug 2026", state: "scheduled" },
+      { label: "Application status", date: "2026-08-24", displayDate: "24 Aug 2026", state: "completed" },
       { label: "Exam-city information", date: "2026-09-03", displayDate: "3 Sep 2026", state: "scheduled" },
       { label: "Admit card", date: "2026-09-09", displayDate: "9 Sep 2026", state: "scheduled" },
       { label: "Stage I", date: "2026-09-12", displayDate: "12 Sep 2026", state: "scheduled" },
@@ -669,7 +669,7 @@ export const exams: Exam[] = [
       { label: "MCC AIQ UG Round 1 counselling registration opens", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed", note: "Per the Medical Counselling Committee's official AIQ Round 1 schedule (published 1 Aug 2026): registration and payment ran 5-12 Aug 2026, choice filling and locking 6-13 Aug 2026, for the 15% All-India Quota and central-institution seats; state quotas follow separate state-authority schedules." },
       { label: "MCC AIQ UG Round 1 seat allotment result", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
       { label: "MCC AIQ UG Round 1 reporting and joining", date: "2026-08-18", displayDate: "18–22 Aug 2026", state: "current", note: "Institutes verify joined-candidate data on 23 Aug 2026, per the MCC AIQ Round 1 schedule." },
-      { label: "MCC AIQ UG Round 2 counselling registration opens", date: "2026-08-25", displayDate: "25 Aug 2026", state: "scheduled", note: "Registration and payment run 25-29 Aug 2026, choice filling/locking 25-30 Aug 2026, per the MCC AIQ Round 2 schedule." },
+      { label: "MCC AIQ UG Round 2 counselling registration opens", date: "2026-08-25", displayDate: "25 Aug 2026", state: "current", note: "Registration and payment run 25-29 Aug 2026, choice filling/locking 25-30 Aug 2026, per the MCC AIQ Round 2 schedule." },
       { label: "MCC AIQ UG Round 2 seat allotment result", date: "2026-09-02", displayDate: "2 Sep 2026", state: "scheduled", note: "Reporting/joining runs 3-8 Sep 2026, per the MCC AIQ Round 2 schedule." },
       { label: "MCC AIQ UG Round 3 counselling registration opens", date: "2026-09-11", displayDate: "11 Sep 2026", state: "scheduled", note: "Registration and payment run 11-15 Sep 2026, choice filling/locking 11-16 Sep 2026, per the MCC AIQ Round 3 schedule." },
       { label: "MCC AIQ UG Round 3 seat allotment result", date: "2026-09-18", displayDate: "18 Sep 2026", state: "scheduled", note: "Reporting runs 19-26 Sep 2026, per the MCC AIQ Round 3 schedule." },

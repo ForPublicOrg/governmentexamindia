@@ -259,11 +259,10 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Register online before 21 Aug 2026",
-      detail:
-        "IBPS published the detailed CRP CSA-XVI notification on 1 Aug 2026. Online registration and fee payment run to 21 Aug 2026, followed by a two-day edit window.",
+      label: "Applications closed; preliminary examination 10-11 Oct 2026",
+      tone: "blue",
+      nextAction: "Download the preliminary call letter from the IBPS site when it opens; the preliminary examination is on 10-11 Oct 2026",
+      detail: "IBPS published the detailed CRP CSA-XVI notification on 1 Aug 2026. Online registration and fee payment ran to 21 Aug 2026, followed by a two-day edit window.",
     },
     summary:
       "Common recruitment for Customer Service Associate (clerical cadre) positions in eleven participating public-sector banks, against the 2027-28 indent.",
@@ -287,7 +286,7 @@ export const exams: Exam[] = [
         label: "Applications close",
         date: "2026-08-21",
         displayDate: "21 Aug 2026",
-        state: "current",
+        state: "completed",
         note: "Registration and online fee payment close together; an edit window opens for two days afterwards.",
       },
       {
@@ -1531,7 +1530,7 @@ export const exams: Exam[] = [
       { label: "Online registration opens", date: "2026-07-18", displayDate: "18 Jul 2026", state: "completed" },
       { label: "Applications close", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
       { label: "Pre-recruitment training (online) for SC/ST/OBC & PwBD candidates", date: "2026-08-19", displayDate: "19-22 Aug 2026", state: "current" },
-      { label: "Phase-I Examination", date: "2026-08-27", displayDate: "27 Aug 2026", state: "scheduled" },
+      { label: "Phase-I Examination", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
       { label: "Phase-II Examination", date: "2026-10-30", displayDate: "30 Oct 2026", state: "scheduled" },
     ],
     eligibility: [

@@ -2169,11 +2169,10 @@ export const exams: Exam[] = [
     vacancyLabel: "21 tentative posts at E2, E4 and E8(a) levels",
     vacancyNote: "Total as published in the vacancy table of Advt. No. 127/2026, which describes the numbers as tentative.",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online through SJVN's career section before 26 Aug 2026",
-      detail:
-        "SJVN's official current-job page lists Advt. No. 127/2026 for executive-level recruitment at the Buxar Thermal Power Project, published 30 Jul 2026 with a closing date of 26 Aug 2026.",
+      label: "Applications closed; next stage awaited",
+      tone: "amber",
+      nextAction: "Watch SJVN's career section for the shortlist against Advt. No. 127/2026",
+      detail: "SJVN's official current-job page lists Advt. No. 127/2026 for executive-level recruitment at the Buxar Thermal Power Project, published 30 Jul 2026 with a closing date of 26 Aug 2026.",
     },
     summary:
       "Experienced-hire executive recruitment by SJVN Limited for its wholly owned subsidiary STPL, which is building the 1320 MW Buxar Thermal Power Project in Bihar, across Mechanical, Electrical, C&I and Chemical disciplines.",
@@ -2184,7 +2183,7 @@ export const exams: Exam[] = [
     pay: "IDA pay scales of ₹50,000–3%–1,60,000 at E2, ₹70,000–3%–2,00,000 at E4 and ₹1,20,000–3%–2,80,000 at E8(a), plus 35% cafeteria allowances, HRA or company accommodation, provident fund, performance-related pay and gratuity.",
     timeline: [
       { label: "Advertisement published", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed" },
-      { label: "Last date to apply", date: "2026-08-26", displayDate: "26 Aug 2026", state: "current" },
+      { label: "Last date to apply", date: "2026-08-26", displayDate: "26 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "The advertisement is aimed at professionals with experience in erection, commissioning or O&M of thermal power plants; each level carries its own pay-scale and experience precondition.",
@@ -2414,11 +2413,10 @@ export const exams: Exam[] = [
       { label: "Diploma Engineer apprentices", total: 8 },
     ],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Register on the NATS 2.0 portal and submit the online application before 27 Aug 2026",
-      detail:
-        "RailTel's careers page carries Notice RCIL/2024/P&A/27/1 dated 28 Jul 2026 inviting apprenticeship applications under the Apprentices Act, 1961, with the last date for receipt of applications set at 27 Aug 2026.",
+      label: "Applications closed; next stage awaited",
+      tone: "amber",
+      nextAction: "Watch RailTel's careers page for the shortlist against Notice RCIL/2024/P&A/27/1",
+      detail: "RailTel's careers page carries Notice RCIL/2024/P&A/27/1 dated 28 Jul 2026 inviting apprenticeship applications under the Apprentices Act, 1961, with the last date for receipt of applications set at 27 Aug 2026.",
     },
     summary:
       "One-year apprenticeship training at RailTel, the Navratna railway telecom PSU, for Graduate and Diploma Engineers in Electronics & Telecommunication, Computer Science and Electrical & Electronic Engineering, applied for through the NATS 2.0 portal.",
@@ -2429,7 +2427,7 @@ export const exams: Exam[] = [
     pay: "Consolidated monthly stipend ₹14,000 for a Graduate Engineer apprentice (RailTel share ₹9,500 and Government of India DBT share ₹4,500) and ₹12,000 for a Diploma Engineer apprentice (RailTel ₹8,000 and DBT ₹4,000). The notice states that no other benefit, facility or allowance is payable beyond the consolidated stipend.",
     timeline: [
       { label: "Apprenticeship notice issued", date: "2026-07-28", displayDate: "28 Jul 2026", state: "completed" },
-      { label: "Last date for receipt of application", date: "2026-08-27", displayDate: "27 Aug 2026", state: "current" },
+      { label: "Last date for receipt of application", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Candidates who have already completed an apprenticeship, terminated one mid-way, or are pursuing an apprenticeship with another organisation are not eligible.",

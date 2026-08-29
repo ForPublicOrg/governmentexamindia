@@ -249,9 +249,9 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Specialist & Professional"],
     education: ["Graduate"],
     status: {
-      label: "Applications open until 21 Aug 2026",
-      tone: "green",
-      nextAction: "Apply on the MP Online portal before 21 Aug 2026 and use the correction window until 23 Aug 2026",
+      label: "Applications closed; recruitment test from 22 Sep 2026",
+      tone: "blue",
+      nextAction: "Watch the MP Online portal for the admit card; the recruitment test starts 22 Sep 2026",
       detail: "MP ESB published the Group-2 Sub Group-4 rulebook on 4 Aug 2026. It advertises a special Patwari recruitment for Divyangjan candidates alongside posts in 61 other departments, with the recruitment test starting 22 Sep 2026. The board's notice of 18 Aug 2026 extended the application deadline from 18 to 21 Aug 2026 after server problems on the employment-registration portal.",
     },
     summary: "Madhya Pradesh's Group-2 Sub Group-4 combined recruitment test, which advertises Patwari posts under Land Resources Management (Revenue Department), Gwalior as a special recruitment for Divyangjan candidates, together with third-grade posts across 61 other state departments and undertakings.",
@@ -268,8 +268,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Rulebook published and applications opened", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
       { label: "Deadline extension notice", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
-      { label: "Application deadline (extended)", date: "2026-08-21", displayDate: "21 Aug 2026", state: "current" },
-      { label: "Correction window closes", date: "2026-08-23", displayDate: "23 Aug 2026", state: "scheduled" },
+      { label: "Application deadline (extended)", date: "2026-08-21", displayDate: "21 Aug 2026", state: "completed" },
+      { label: "Correction window closes", date: "2026-08-23", displayDate: "23 Aug 2026", state: "completed" },
       { label: "Recruitment test", date: "2026-09-22", displayDate: "From 22 Sep 2026", state: "scheduled", note: "Two shifts a day of three hours each" },
     ],
     eligibility: [
@@ -709,9 +709,9 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["12th", "Graduate"],
     status: {
-      label: "Applications open until 17:00 on 21 Aug 2026",
-      tone: "green",
-      nextAction: "Apply on the board's portal before 5 pm on 21 Aug 2026; corrections stay open to 24 Aug 2026",
+      label: "Applications closed; written examination probable 11 Oct 2026",
+      tone: "blue",
+      nextAction: "Watch the board's portal for the admit card, expected around 5 Oct 2026; the written examination is given as probable on 11 Oct 2026",
       detail: "The board's notice 3203 dated 24 Jul 2026 opened online applications for Assistant Teacher posts under the Directorate of Public Instruction and fixed 11 Oct 2026 as the probable examination date at 16 district headquarters.",
     },
     summary: "Written recruitment examination for Assistant Teacher (E and T cadre) posts in Chhattisgarh government schools under the Directorate of Public Instruction, conducted by the Chhattisgarh Staff Selection Board (formerly Vyapam).",
@@ -723,8 +723,8 @@ export const exams: Exam[] = [
     pay: "Assistant Teacher, E-cadre, non-gazetted Class III on Pay Matrix Level-06, plus dearness and other allowances notified by the state government (detailed advertisement).",
     timeline: [
       { label: "Online applications opened", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-21", displayDate: "21 Aug 2026, 5 pm", state: "current" },
-      { label: "Correction window", date: "2026-08-22", displayDate: "22–24 Aug 2026, to 5 pm", state: "scheduled" },
+      { label: "Application deadline", date: "2026-08-21", displayDate: "21 Aug 2026, 5 pm", state: "completed" },
+      { label: "Correction window", date: "2026-08-22", displayDate: "22–24 Aug 2026, to 5 pm", state: "completed" },
       { label: "Admit card", date: "2026-10-05", displayDate: "5 Oct 2026 · probable date", state: "tentative" },
       { label: "Written examination", date: "2026-10-11", displayDate: "11 Oct 2026, 10:00–12:15 · probable date", state: "tentative" },
     ],
@@ -1745,7 +1745,7 @@ export const exams: Exam[] = [
       { label: "Online applications opened", date: "2026-06-10", displayDate: "10 Jun 2026", state: "completed" },
       { label: "Application deadline", date: "2026-07-03", displayDate: "3 Jul 2026, 5 pm", state: "completed" },
       { label: "Correction window closed", date: "2026-07-06", displayDate: "4–6 Jul 2026", state: "completed" },
-      { label: "Admit card", date: "2026-08-24", displayDate: "24 Aug 2026 · probable date", state: "scheduled" },
+      { label: "Admit card", date: "2026-08-24", displayDate: "24 Aug 2026 · probable date", state: "completed" },
       { label: "Written examination", date: "2026-08-30", displayDate: "30 Aug 2026, 10:00–12:15 · probable date", state: "scheduled", note: "Held at Raipur" },
     ],
     eligibility: [

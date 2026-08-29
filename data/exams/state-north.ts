@@ -2909,10 +2909,10 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF"],
     education: ["12th"],
     status: {
+      label: "Applications closed; PET/PST schedule awaited",
+      tone: "amber",
+      nextAction: "Watch HPPSC for the Physical Standard Test and Physical Efficiency Test schedule",
       detail: "Advertisements 57/7-2026 (Male) and 58/7-2026 (Female); the 3 Aug 2026 addendum extended the last date for online applications by 15 days to 21 Aug 2026, 11:59 PM, alongside a one-time one-year age relaxation. A further addendum dated 6 Aug 2026 applies revised EWS instructions.",
-      label: "Applications close 21 Aug 2026",
-      tone: "green",
-      nextAction: "Apply online before 11:59 pm on 21 Aug 2026, then watch for the PST and PET dates",
     },
     summary:
       "Recruitment of Class-III constables to the Himachal Pradesh Police Department under the HP Police Department (Recruitment of Constables) Rules 2024, advertised and examined by the state Public Service Commission.",
@@ -2933,7 +2933,7 @@ export const exams: Exam[] = [
       { label: "Advertisements 57/7-2026 and 58/7-2026 published", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
       { label: "Addendum: one-time one-year age relaxation and extension of the last date", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
       { label: "Addendum: revised EWS instructions applied to both advertisements", date: "2026-08-06", displayDate: "6 Aug 2026", state: "completed" },
-      { label: "Last date for online recruitment applications", date: "2026-08-21", displayDate: "21 Aug 2026, 11:59 PM", state: "current" },
+      { label: "Last date for online recruitment applications", date: "2026-08-21", displayDate: "21 Aug 2026, 11:59 PM", state: "completed" },
       { label: "Physical Standard Test and Physical Efficiency Test", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [

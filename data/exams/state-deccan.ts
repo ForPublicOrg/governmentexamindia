@@ -518,10 +518,10 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 22 Aug 2026 at 5:00 PM",
-      detail: "The TGPSC direct-recruitment board lists the active application window.",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch the TGPSC direct-recruitment board for the examination schedule",
+      detail: "The TGPSC direct-recruitment board listed the application window, which closed at 5:00 PM on 22 Aug 2026.",
     },
     summary: "Direct recruitment for Town Planning Assistant posts in Telangana.",
     vacancyLabel: "See Notification 06/G/TP/2026",
@@ -532,7 +532,7 @@ export const exams: Exam[] = [
     pay: "Telangana pay scale stated in the notification.",
     timeline: [
       { label: "Applications open", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-22", displayDate: "22 Aug 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline", date: "2026-08-22", displayDate: "22 Aug 2026, 5:00 PM", state: "completed" },
     ],
     eligibility: [
       "Section 2 of Notification 06/G/TP/2026 requires that the applicant is a citizen of India, possesses the academic and other qualifications prescribed for the post, and that his or her character and antecedents qualify him or her for such service.",
@@ -1057,8 +1057,8 @@ export const exams: Exam[] = [
       { label: "Online mock test available", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "Hall ticket download", date: "2026-07-25", displayDate: "25 Jul 2026 onwards", state: "completed" },
       { label: "Computer-based examination", date: "2026-08-05", displayDate: "5 to 21 Aug 2026", state: "current", note: "Two sessions daily: 9.30 AM to 12.00 noon and 2.30 PM to 5.00 PM." },
-      { label: "Initial key released", date: "2026-08-24", displayDate: "24 Aug 2026", state: "scheduled" },
-      { label: "Objections on the initial key", date: "2026-08-25", displayDate: "25 to 31 Aug 2026", state: "scheduled" },
+      { label: "Initial key released", date: "2026-08-24", displayDate: "24 Aug 2026", state: "completed" },
+      { label: "Objections on the initial key", date: "2026-08-25", displayDate: "25 to 31 Aug 2026", state: "current" },
       { label: "Final key released", date: "2026-09-08", displayDate: "8 Sep 2026", state: "scheduled" },
       { label: "Final results", date: "2026-09-15", displayDate: "15 Sep 2026", state: "scheduled" },
     ],
@@ -1782,10 +1782,10 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate"],
     verification: "verified",
     status: {
-      detail: "KEA extended the window a second time on 6 Aug 2026: online applications close 20 Aug 2026 and fee payment 21 Aug 2026. The compulsory Kannada language qualifying exam is on 22 Aug 2026, and the VAO written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka).",
-      label: "Applications open - last date 20 Aug 2026",
-      tone: "green",
-      nextAction: "Apply before the window closes on 20 Aug 2026; the Kannada language test follows on 22 Aug and the written exams in October",
+      label: "Applications closed; written examinations 4 and 25 Oct 2026",
+      tone: "blue",
+      nextAction: "Watch KEA for the admit cards; the written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka)",
+      detail: "KEA extended the window a second time on 6 Aug 2026: online applications closed 20 Aug 2026 and fee payment 21 Aug 2026. The compulsory Kannada language qualifying exam was held on 22 Aug 2026, and the VAO written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka).",
     },
     summary:
       "Recruitment of Village Administrative Officers for the Karnataka Revenue Department, conducted by the Karnataka Examinations Authority with separate Rest of Karnataka and Kalyana Karnataka processes.",
@@ -1805,9 +1805,9 @@ export const exams: Exam[] = [
       { label: "Kannada language examination notified", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed" },
       { label: "Upcoming exam calendar published", date: "2026-08-15", displayDate: "15 Aug 2026", state: "completed" },
       { label: "Kannada language exam admit card link opened", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
-      { label: "Last date for online application", date: "2026-08-20", displayDate: "20 Aug 2026", state: "current" },
-      { label: "Last date for online fee payment", date: "2026-08-21", displayDate: "21 Aug 2026", state: "scheduled" },
-      { label: "Compulsory Kannada language examination", date: "2026-08-22", displayDate: "22 Aug 2026", state: "scheduled" },
+      { label: "Last date for online application", date: "2026-08-20", displayDate: "20 Aug 2026", state: "completed" },
+      { label: "Last date for online fee payment", date: "2026-08-21", displayDate: "21 Aug 2026", state: "completed" },
+      { label: "Compulsory Kannada language examination", date: "2026-08-22", displayDate: "22 Aug 2026", state: "completed" },
       { label: "Written examination (Rest of Karnataka)", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled" },
       { label: "Written examination (Kalyana Karnataka)", date: "2026-10-25", displayDate: "25 Oct 2026", state: "scheduled" },
     ],
@@ -2119,7 +2119,7 @@ export const exams: Exam[] = [
     fee: "See the walk-in notification; the Direct Recruitment Cell index publishes no fee.",
     pay: "Contractual remuneration under the applicable programme norms as stated in the walk-in notification.",
     timeline: [
-      { label: "Walk-in interview", date: "2026-08-20", displayDate: "20 Aug 2026", state: "scheduled" },
+      { label: "Walk-in interview", date: "2026-08-20", displayDate: "20 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "The walk-in notification No. AMPK/NUT//2026-27 [E-1298173], dated 31 Jul 2026, is issued by the Karnataka State Health & Family Welfare Society under the National Health Mission and covers four posts, all temporary and purely on contract basis, under Anemia Muktha Poushtika Karnataka (AMPK) and PM-ABHIM.",
@@ -2301,7 +2301,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online applications open", date: "2026-06-30", displayDate: "30 Jun 2026", state: "completed" },
       { label: "Application deadline", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
-      { label: "Written examination", date: "2026-08-22", displayDate: "22 to 29 Aug 2026", state: "scheduled" },
+      { label: "Written examination", date: "2026-08-22", displayDate: "22 to 29 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "This record covers candidates who applied under the APEPDCL engineering services notification during the 30 Jun to 20 Jul 2026 window.",

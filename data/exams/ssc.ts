@@ -1089,7 +1089,7 @@ export const exams: Exam[] = [
       { label: "Applications closed (extended)", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
       { label: "Examination date announced for 23 Aug 2026", date: "2026-08-13", displayDate: "13 Aug 2026", state: "completed" },
       { label: "Instructions for the descriptive paper issued", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
-      { label: "Computer-based examination and descriptive paper, Delhi", date: "2026-08-23", displayDate: "23 Aug 2026", state: "scheduled" },
+      { label: "Computer-based examination and descriptive paper, Delhi", date: "2026-08-23", displayDate: "23 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Open only to serving Group C employees of the Central Secretariat Clerical Service cadre of DoPT with Grade Pay ₹1,800.",
