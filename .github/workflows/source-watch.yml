@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -23,13 +23,7 @@ jobs:
         run: |
           npm run --silent data:registry
           git diff --exit-code -- data/source-registry.json
-      # Freshness is a hard failure here and only here. This job exists to tell
-      # somebody the data needs re-checking, so it is the right place to gate on
-      # expired stages and stale reviews -- unlike the build, which must keep
-      # working so the site can actually be redeployed.
-      - name: Report data that needs re-checking
-        run: npm run --silent data:validate:fresh
-      - uses: actions/cache/restore@v4
+      - uses: actions/cache/restore@v6
         with:
           path: data/source-watch-state.json
           key: source-watch-${{ github.run_id }}
@@ -39,13 +33,27 @@ jobs:
           npm run --silent data:watch -- --write > source-watch-report.json
           cat source-watch-report.json >> "$GITHUB_STEP_SUMMARY"
           node --input-type=module -e 'import { readFileSync } from "node:fs"; const report = JSON.parse(readFileSync("source-watch-report.json", "utf8")); console.log(`actionable=${report.results.some(({ state }) => !["unchanged", "not-due"].includes(state))}`)' >> "$GITHUB_OUTPUT"
-      - uses: actions/cache/save@v4
+      - uses: actions/cache/save@v6
+        if: always() && steps.watch.conclusion != 'skipped'
         with:
           path: data/source-watch-state.json
           key: source-watch-${{ github.run_id }}
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: steps.watch.outputs.actionable == 'true'
         with:
           name: source-watch-report
           path: source-watch-report.json
           retention-days: 14
+      # Freshness is a hard failure here and only here. This job exists to tell
+      # somebody the data needs re-checking, so it is the right place to gate on
+      # expired stages and stale reviews -- unlike the build, which must keep
+      # working so the site can actually be redeployed.
+      #
+      # It runs last on purpose. Gating before the watch step meant one expired
+      # deadline killed the job before it polled a single source, so the run
+      # that was supposed to say WHICH pages had moved produced no report at
+      # all -- exactly when the data most needed re-checking. The failure is
+      # unchanged; it now lands after the watch report has been summarised and
+      # uploaded, so whoever opens the red run has something to act on.
+      - name: Report data that needs re-checking
+        run: npm run --silent data:validate:fresh
