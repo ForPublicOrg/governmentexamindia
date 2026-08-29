@@ -4,8 +4,11 @@ import { authorities, calendarEvents, getExam } from "../lib/exams";
 import { listedExam, type Exam } from "../lib/exam-types";
 import { validateRecords } from "../tools/data/rules";
 
-const base = getExam("ssc-gd-constable-2027");
-assert.ok(base, "SSC GD fixture must exist");
+const liveBase = getExam("ssc-gd-constable-2027");
+assert.ok(liveBase, "SSC GD fixture must exist");
+// These fixtures validate against the frozen referenceDate below, so the live
+// record's review timestamp must not be allowed to drift past it.
+const base = { ...liveBase, lastVerified: "4 Aug 2026, 12:00 IST" };
 
 function errorsFor(...records: Exam[]) {
   return validateRecords(records, authorities, { referenceDate: "2026-08-04" }).errors.join("\n");

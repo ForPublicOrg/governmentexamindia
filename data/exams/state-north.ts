@@ -295,7 +295,7 @@ export const exams: Exam[] = [
       label: "Prelims date awaited",
       tone: "amber",
       nextAction: "Watch UPPSC for the prelims schedule",
-      detail: "The live advertisement was visible through 3 August 2026. The next candidate action depends on UPPSC notices.",
+      detail: "The live advertisement was visible through 3 August 2026. The Commission's notice board and notification listing carried no preliminary-examination date when re-read on 29 August 2026, so the next candidate action still depends on UPPSC notices.",
     },
     summary: "Uttar Pradesh’s combined examination for general and special recruitment to state and subordinate services.",
     vacancyLabel: "Post-wise in advertisement",
@@ -332,8 +332,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPPSC live advertisement and important notices",
     sourceUrl: "https://uppsc.up.nic.in/OuterPages/NoticeAlert.aspx",
-    sourcePublished: "Advertisement dated 25 Jun 2026; applications closed 3 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement dated 25 Jun 2026; applications closed 3 Aug 2026; notice board and notification listing re-read 29 Aug 2026 with no prelims date shown",
+    lastVerified: "29 Aug 2026, 15:20 IST",
     keywords: [
       "UP PCS",
       "UPPSC prelims",
@@ -467,7 +467,7 @@ export const exams: Exam[] = [
       label: "Subject-wise notices active",
       tone: "amber",
       nextAction: "Check the notice for the chosen lecturer subject",
-      detail: "UKPSC lists admit-card, scribe and postponement notices by subject for the 2025 lecturer cycle; candidates must use the subject-specific notice.",
+      detail: "UKPSC lists admit-card, scribe and postponement notices by subject for the 2025 lecturer cycle; candidates must use the subject-specific notice. On 27 August 2026 the Commission opened an online objection window on the structure of questions and options for the general and women-branch lecturer papers in English, Physics, Mathematics, Biology, Civics, History and Agriculture.",
     },
     summary: "General and women-branch lecturer recruitment under Uttarakhand's special subordinate education service.",
     officialLinks: [
@@ -476,8 +476,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UKPSC Lecturer Group C Examination 2025 notices",
     sourceUrl: "https://psc.uk.gov.in/",
-    sourcePublished: "Official subject notices current in 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Subject-wise notices current in 2026; online objection notice on question structure published 27 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:22 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "UKPSC published a notification on 27 Aug 2026 inviting online objections on the structure of questions and options for the Lecturer Group C 2025 papers in English, Physics, Mathematics, Biology, Civics, History and Agriculture.",
+      },
+    ],
     keywords: [
       "UK lecturer recruitment",
       "Uttarakhand lecturer Group C",
@@ -487,6 +494,96 @@ export const exams: Exam[] = [
       "UKPSC lecturer",
       "उत्तराखंड प्रवक्ता भर्ती",
       "uttarakhand lecturer bharti",
+    ],
+  }),
+  exam({
+    slug: "ukpsc-veterinary-officer-2026",
+    title: "UKPSC Veterinary Officer Selection Examination 2026",
+    shortTitle: "UKPSC Veterinary Officer",
+    aliases: ["Uttarakhand Veterinary Officer 2026", "A-2/DR(VO)/S-1/2026", "पशुचिकित्सा अधिकारी चयन परीक्षा 2026"],
+    organisation: "Uttarakhand Public Service Commission",
+    governmentLevel: "State",
+    jurisdiction: "Uttarakhand",
+    state: "Uttarakhand",
+    stateCode: "UK",
+    regionCodes: ["UK"],
+    cycle: "2026",
+    year: 2026,
+    verification: "verified",
+    notificationNumber: "A-2/DR(VO)/S-1/2026",
+    sector: "Animal husbandry",
+    examTypes: ["Health & Medical", "Specialist & Professional"],
+    education: ["Graduate", "Professional degree"],
+    status: {
+      label: "Applications open until 14 September 2026",
+      tone: "green",
+      nextAction: "Apply online through psc.uk.gov.in or ukpsc.net.in before 14 September 2026, 11:59:59 PM",
+      detail:
+        "Advertisement A-2/DR(VO)/S-1/2026 dated 25 August 2026 invites online applications for 25 vacant posts of Veterinary Officer under the Animal Husbandry Department. Applications and the fee close on 14 September 2026, 11:59:59 PM, and a single edit window runs from 22 September to 1 October 2026. The written examination date is not announced.",
+    },
+    summary:
+      "Direct recruitment of Group B gazetted Veterinary Officers for Uttarakhand's Animal Husbandry Department, selected only on the merit of an objective written examination held by the Public Service Commission.",
+    vacancies: 25,
+    vacancyLabel: "25 posts (20 general and 5 special backlog)",
+    vacancyNote:
+      "The advertisement records 25 vacancies and states that the number can increase or decrease. General recruitment carries 20 posts (Unreserved 13, Scheduled Caste 2, Scheduled Tribe nil, Other Backward Class 3, Economically Weaker Section 2) with horizontal reservation for women, dependants of freedom fighters, skilled sportspersons of Uttarakhand, ex-servicemen, orphans of Uttarakhand, identified state-movement agitators or their dependants and divyang candidates; the special (backlog) recruitment carries 5 posts.",
+    vacancyBreakdown: [
+      { label: "General recruitment", ur: 13, sc: 2, st: 0, obc: 3, ews: 2, total: 20 },
+      { label: "Special (backlog) recruitment", total: 5 },
+    ],
+    age: "21 to 42 years with 1 July 2026 as the reference date: a candidate must not be born after 1 July 2005 or before 2 July 1984. Uttarakhand Scheduled Caste, Scheduled Tribe and Other Backward Class candidates and dependants of Uttarakhand freedom fighters get five years' relaxation in the maximum age under Government orders 1399/XXX(2)/2005 and 1244/XXX(2)/2005 both dated 21 May 2005, and Uttarakhand divyang candidates get five years for Group B posts. Ex-servicemen, including Emergency and Short Service Commissioned Officers with at least five years' service, get up to five years computed on their period of service, except where they were dismissed for misconduct or inefficiency or released for a disability treated as a demerit. A candidate claiming more than one sub-category may take the benefit of only the single most advantageous one.",
+    qualification:
+      "A Bachelor's degree in Veterinary Science and Animal Husbandry (B.V.Sc & A.H.) from a university established by law in India and recognised by the Veterinary Council of India, or an equivalent degree recognised by Government, or any other veterinary qualification as defined in section 2(c) of the Indian Veterinary Council Act, 1984, together with due registration with the Uttarakhand Veterinary Council. Government letter No. 949/XV-1/2025-96554 dated 21 April 2026 lists the degrees treated as equivalent. Preferential qualification: a postgraduate degree, diploma or higher qualification in veterinary science, or two years' service in the Territorial Army, or an NCC 'B' or 'C' certificate.",
+    fee: "Unreserved and Uttarakhand Other Backward Class candidates ₹150 plus a processing fee of ₹16.36 including tax (₹166.36 in all); Uttarakhand Scheduled Caste and Scheduled Tribe candidates ₹60 plus ₹16.36 (₹76.36). Divyang candidates are exempted from the application fee but pay the ₹16.36 processing fee, and orphan candidates living in voluntary or Government homes in Uttarakhand pay nothing. Payment is only by net banking, debit card, credit card or UPI, and the fee is never refunded.",
+    pay: "Pay Level-10 (₹56,100-1,77,500). The post is Group 'B' gazetted, temporary, and carries the contributory pension scheme.",
+    timeline: [
+      { label: "Advertisement published and online applications opened", date: "2026-08-25", displayDate: "25 Aug 2026", state: "completed" },
+      { label: "Last date for online applications and fee", date: "2026-09-14", displayDate: "14 Sep 2026, 11:59:59 PM", state: "current" },
+      { label: "Application edit and correction window", date: "2026-09-22", displayDate: "22 Sep to 1 Oct 2026", state: "scheduled" },
+      { label: "Written examination", displayDate: "Date not announced", state: "tentative" },
+    ],
+    eligibility: [
+      "The candidate must hold the essential educational qualification and the reservation and category certificates on or before the last date for the online application, 14 September 2026; the date of acquiring the qualification is fixed by the marksheet issuing date or the result declaration date, which must be entered in the application form.",
+      "Nationality follows the service rule: an Indian citizen, or a Tibetan refugee who came to India before 1 January 1962 intending to settle permanently, or a person of Indian origin who migrated from Pakistan, Burma, Sri Lanka or an East African country intending to settle permanently, the last two categories needing an eligibility certificate from the State Government.",
+      "Every category and sub-category claimed for vertical and horizontal reservation must be entered in the online application form; no reservation benefit is allowed if the claim is not made there.",
+      "More than one application for the advertised post is not permitted, and all such applications are cancelled. A candidate may instead cancel an application and apply afresh before the closing date, but the fee already paid is not carried over.",
+      "The Uttarakhand Public Examinations (Measures for Prevention and Prohibition of Unfair Means in Recruitment) Act 2023, notified vide 168/XXXVI(3)/2023/10(01)/2023 dated 27 April 2023, applies; a candidate applying on forged certificates can be debarred from the Commission's examinations for up to five years and prosecuted.",
+    ],
+    selectionStages: [
+      "Written examination of objective type, held at examination centres in Haridwar and Haldwani - only Haridwar if the number of candidates is small",
+      "Merit list drawn from the marks obtained in that written examination, subject to the minimum qualifying marks fixed category-wise in Appendix-04 of the advertisement",
+      "Verification by the Commission of the educational, reservation and preferential claims made in the online application, with self-attested copies produced on the date fixed",
+    ],
+    syllabus: [
+      "The examination scheme is printed at Appendix-01 of advertisement A-2/DR(VO)/S-1/2026 and the syllabus at Appendix-02; the minimum qualifying marks are at Appendix-04.",
+      "Appendix-03 carries the prescribed formats for reservation claims, Appendix-05 and Appendix-06 the guiding principles on a scribe and other facilities for divyang candidates with 40 per cent or more and less than 40 per cent disability respectively, and Appendix-07 the checklist of records to be produced at document verification.",
+      "Use only the Commission's own appendices for this cycle; no third-party topic list is asserted here.",
+    ],
+    officialLinks: [
+      { label: "Advertisement A-2/DR(VO)/S-1/2026 (Veterinary Officer Selection Examination 2026)", url: "https://psc.uk.gov.in/public/uploads/recruitment/1339347899.pdf", type: "notice" },
+      { label: "Notification of the Veterinary Officer Selection Examination 2026", url: "https://psc.uk.gov.in/public/uploads/recruitment/1884773671.pdf", type: "notice" },
+      { label: "UKPSC recruitment listing", url: "https://psc.uk.gov.in/candidate-corner/recruitment", type: "notice" },
+      { label: "UKPSC official website", url: "https://psc.uk.gov.in/", type: "website" },
+    ],
+    sourceTitle: "UKPSC advertisement A-2/DR(VO)/S-1/2026 for the Veterinary Officer Selection Examination 2026",
+    sourceUrl: "https://psc.uk.gov.in/public/uploads/recruitment/1339347899.pdf",
+    sourcePublished: "Advertisement and notification both dated 25 Aug 2026; applications and fee close 14 Sep 2026; edit window 22 Sep to 1 Oct 2026",
+    lastVerified: "29 Aug 2026, 16:26 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "New record: UKPSC advertised 25 posts of Veterinary Officer under the Animal Husbandry Department through advertisement A-2/DR(VO)/S-1/2026 dated 25 Aug 2026, with online applications and fee closing on 14 Sep 2026.",
+      },
+    ],
+    keywords: [
+      "UKPSC veterinary officer",
+      "Uttarakhand veterinary officer",
+      "पशुचिकित्सा अधिकारी भर्ती",
+      "पशुपालन विभाग उत्तराखंड",
+      "UKPSC VO 2026",
+      "Uttarakhand animal husbandry recruitment",
+      "BVSc AH government job",
     ],
   }),
   exam({
@@ -553,8 +650,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "HSSC advertisement 05/2026 for CET Group D",
     sourceUrl: "https://hssc.gov.in/file/ac1f23cd-9d9c-1328-819e-da8c1fe70055/advertisements",
-    sourcePublished: "Advertisement published 18 Jun; final application cut-off notice dated 7 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement published 18 Jun; final application cut-off notice dated 7 Jul 2026; HSSC advertisement and public-notice pages re-read 29 Aug 2026 with no examination date announced",
+    lastVerified: "29 Aug 2026, 15:24 IST",
     keywords: [
       "Haryana CET",
       "HSSC Group D",
@@ -588,7 +685,7 @@ export const exams: Exam[] = [
       label: "Physical-stage notices active",
       tone: "violet",
       nextAction: "Check the HSSC notice for the relevant constable category",
-      detail: "The official HSSC site carries July 2026 PMT/PST notices for male, female and GRP categories under advertisement 01/2026.",
+      detail: "The official HSSC site carries July 2026 PMT/PST notices for male, female and GRP categories under advertisement 01/2026, followed by public notices to absentee candidates for the Physical Screening Test - female absentees on 24 July 2026 and male absentees on 3 August 2026 - covering advertisements 13/2024, 01/2026 and 06/2026.",
     },
     summary: "Constable recruitment for Haryana Police categories administered through HSSC.",
     pay: "See advertisement 01/2026; the constable pay level is fixed in that advertisement.",
@@ -608,8 +705,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "HSSC physical-stage notices for Haryana Police advertisement 01/2026",
     sourceUrl: "https://hssc.gov.in/",
-    sourcePublished: "PMT and PST notices published in July 2026",
-    lastVerified: "4 Aug 2026, 15:20 IST",
+    sourcePublished: "PMT and PST notices published in July 2026; absentee-candidate PST public notices dated 24 Jul and 3 Aug 2026, the latest on the page re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:26 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "HSSC's public-notice board now carries Physical Screening Test notices for absentee candidates under advertisements 13/2024, 01/2026 and 06/2026 - female absentees dated 24 Jul 2026 and male absentees dated 3 Aug 2026, which remains the latest notice for this recruitment.",
+      },
+    ],
     keywords: [
       "Haryana Police constable",
       "HSSC constable recruitment",
@@ -643,7 +747,7 @@ export const exams: Exam[] = [
       label: "Online-exam notices active",
       tone: "violet",
       nextAction: "Use the dedicated CRA 316/26 page for the latest notice",
-      detail: "PSPCL's official recruitment page carries the detailed advertisement, normalisation notice and online-examination schedule for this cycle.",
+      detail: "PSPCL's official recruitment page carries the detailed advertisement, normalisation notice and online-examination schedule for this cycle. The careers stream published the online-examination schedule for JE/Electrical against CRA 316/26 on 9 July 2026 and guidelines on the use of a scribe by PwD applicants on 28 July 2026, which is still the newest CRA 316/26 notice.",
     },
     summary: "Punjab State Power Corporation recruitment for Junior Engineer (Electrical) through CRA 316/26.",
     pay: "See the CRA 316/26 detailed advertisement; the Junior Engineer pay scale is fixed there.",
@@ -662,8 +766,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "PSPCL recruitment page for Junior Engineer Electrical CRA 316/26",
     sourceUrl: "https://www.pspcl.in/otherlinks/CRA-316-26.aspx",
-    sourcePublished: "Detailed advertisement dated 13 Apr 2026; official page updated 23 Jul 2026",
-    lastVerified: "4 Aug 2026, 15:25 IST",
+    sourcePublished: "Detailed advertisement dated 13 Apr 2026; online-examination schedule notice dated 9 Jul 2026 and scribe guidelines dated 28 Jul 2026 on the PSPCL careers page re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:28 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "PSPCL's careers page shows the CRA 316/26 online-examination schedule notice dated 9 Jul 2026 and scribe guidelines for PwD applicants dated 28 Jul 2026; no later notice for this cycle had been published by 29 Aug 2026.",
+      },
+    ],
     keywords: [
       "PSPCL JE",
       "Punjab power JE electrical",
@@ -696,7 +807,7 @@ export const exams: Exam[] = [
       label: "Joining-stage notices active",
       tone: "violet",
       nextAction: "Track PSPCL careers for biometric and joining notices",
-      detail: "PSPCL's official careers stream continues to carry biometric-verification notices for the Assistant Lineman cycle.",
+      detail: "PSPCL's official careers stream still carries the public notice on biometric verification at the time of joining for Assistant Lineman against CRA 312/25, dated 26 November 2025; no later notice for this cycle was on the page on 29 August 2026.",
     },
     summary: "Assistant Lineman recruitment for Punjab State Power Corporation's distribution workforce.",
     pay: "See the CRA 312/25 advertisement; the Assistant Lineman pay scale is fixed there.",
@@ -714,8 +825,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "PSPCL Assistant Lineman CRA 312/25 recruitment notices",
     sourceUrl: "https://www.pspcl.in/careers",
-    sourcePublished: "Biometric-verification notice remains in the 2026 official update stream",
-    lastVerified: "4 Aug 2026, 15:25 IST",
+    sourcePublished: "Public notice on biometric verification at joining dated 26 Nov 2025, still the latest CRA 312/25 entry on the careers page re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:30 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Dated the biometric-verification notice precisely: PSPCL's careers page shows it as a public notice of 26 Nov 2025, and it remains the newest CRA 312/25 notice.",
+      },
+    ],
     keywords: [
       "PSPCL ALM",
       "Punjab lineman recruitment",
@@ -769,8 +887,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "HPPSC State Eligibility Test 2026 advertisement and answer-key notice",
     sourceUrl: "https://www.hppsc.hp.gov.in/hppsc/WriteReadData/LINKS/S2026b9d66e3e-81d1-47cb-bf96-4e0ccf86a78c.pdf",
-    sourcePublished: "Advertisement dated 3 Jan 2026; provisional keys published 9 Jun 2026",
-    lastVerified: "4 Aug 2026, 15:30 IST",
+    sourcePublished: "Advertisement dated 3 Jan 2026; provisional keys published 9 Jun 2026; HPPSC's what's-new stream re-read 29 Aug 2026 with no SET result notice published",
+    lastVerified: "29 Aug 2026, 15:32 IST",
     keywords: [
       "HP SET",
       "Himachal SET",
@@ -799,10 +917,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["Postgraduate", "Professional degree"],
     status: {
-      label: "Subject advertisements published",
-      tone: "amber",
-      nextAction: "Open the advertisement for the selected discipline",
-      detail: "HPPSC lists separate 2026 college-cadre advertisements across multiple disciplines and an extension notice; requirements are subject-specific.",
+      label: "Screening test and SAT from 14 September 2026",
+      tone: "blue",
+      nextAction: "Find the date fixed for the chosen discipline in the 27 August 2026 press note and watch for the admit card",
+      detail:
+        "HPPSC press note No.3-26/2026-PSC(R-I)-Vol.-I dated 27 August 2026 revises the tentative schedule it had notified on 21 August 2026 and fixes subject-wise dates for the Screening Test and Subject Aptitude Test (SAT) for Assistant Professor (College Cadre), Group-A (Job Trainee) under advertisements 33/6-2026 to 55/6-2026, running from 14 September to 18 October 2026.",
     },
     summary: "Subject-wise Assistant Professor recruitment for the Himachal Pradesh Higher Education Department's college cadre.",
     qualification:
@@ -813,18 +932,46 @@ export const exams: Exam[] = [
       "Confirm age, Himachal Pradesh bona-fide residence and category-certificate cut-offs in that subject advertisement.",
     ],
     selectionStages: [
-      "Screening or written test where the Commission prescribes one for the discipline",
+      "Screening Test for the discipline applied for, on the date fixed in the Commission's press note of 27 August 2026",
+      "Subject Aptitude Test (SAT) for the same discipline",
       "Interview conducted by the Commission",
       "Final merit as set out in the subject advertisement",
     ],
+    timeline: [
+      { label: "Screening Test and SAT: Sanskrit and Sociology", date: "2026-09-14", displayDate: "14 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Public Administration", date: "2026-09-16", displayDate: "16 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Geography", date: "2026-09-18", displayDate: "18 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: History, Mathematics and Botany", date: "2026-09-20", displayDate: "20 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Psychology and Tabla", date: "2026-09-23", displayDate: "23 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Zoology", date: "2026-09-25", displayDate: "25 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Philosophy and Geology", date: "2026-09-28", displayDate: "28 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Physics", date: "2026-09-29", displayDate: "29 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Economics and Music-Vocal", date: "2026-09-30", displayDate: "30 Sep 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Hindi and Chemistry", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Physical Education and Music-Instrumental", date: "2026-10-07", displayDate: "7 Oct 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: Political Science and Commerce", date: "2026-10-11", displayDate: "11 Oct 2026", state: "scheduled" },
+      { label: "Screening Test and SAT: English and Dance", date: "2026-10-18", displayDate: "18 Oct 2026", state: "scheduled" },
+    ],
     officialLinks: [
+      {
+        label: "Press note dated 27 Aug 2026 - revised Screening Test and SAT schedule",
+        url: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgYGe1lQc0kPejyxoJaRy4bUNjKKeRoef8QQQN%2ByUznKo%3D",
+        type: "notice",
+      },
       { label: "HPPSC current advertisements", url: "https://hppsc.hp.gov.in/Home/HomeWhatsNew", type: "notice" },
       { label: "HPPSC official website", url: "https://hppsc.hp.gov.in/", type: "website" },
     ],
-    sourceTitle: "HPPSC Assistant Professor College Cadre advertisements 33/6-2026 to 55/6-2026",
+    sourceTitle: "HPPSC press note dated 27 Aug 2026 revising the Screening Test and SAT schedule for Assistant Professor (College Cadre)",
     sourceUrl: "https://hppsc.hp.gov.in/Home/HomeWhatsNew",
-    sourcePublished: "Subject advertisements published 17 Jun 2026; extension notice published 4 Jul 2026",
-    lastVerified: "4 Aug 2026, 15:30 IST",
+    sourcePublished: "Subject advertisements published 17 Jun 2026; extension notice 4 Jul 2026; tentative schedule 21 Aug 2026; revised schedule press note dated 27 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:34 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "HPPSC has fixed subject-wise Screening Test and Subject Aptitude Test dates for Assistant Professor (College Cadre) under advertisements 33/6-2026 to 55/6-2026, running 14 Sep to 18 Oct 2026, by press note No.3-26/2026-PSC(R-I)-Vol.-I dated 27 Aug 2026, which supersedes the tentative schedule of 21 Aug 2026.",
+      },
+    ],
     keywords: [
       "HP college cadre",
       "Himachal assistant professor recruitment",
@@ -833,6 +980,108 @@ export const exams: Exam[] = [
       "Himachal college lecturer",
       "HP higher education recruitment",
       "hppsc college cadre",
+    ],
+  }),
+  exam({
+    slug: "hppsc-hp-administrative-services-cce-2026",
+    title: "HPPSC Himachal Pradesh Administrative Service Combined Competitive Examination 2026",
+    shortTitle: "HPAS 2026",
+    aliases: ["HPPSC HPAS 2026", "Advertisement 59/8-2026", "हिमाचल प्रदेश प्रशासनिक सेवा संयुक्त प्रतियोगी परीक्षा"],
+    organisation: "Himachal Pradesh Public Service Commission",
+    governmentLevel: "State",
+    jurisdiction: "Himachal Pradesh",
+    state: "Himachal Pradesh",
+    stateCode: "HP",
+    regionCodes: ["HP"],
+    cycle: "2026",
+    year: 2026,
+    verification: "verified",
+    notificationNumber: "59/8-2026",
+    sector: "State civil services",
+    examTypes: ["Civil Services & Administration"],
+    education: ["Graduate"],
+    status: {
+      label: "Applications open until 22 September 2026",
+      tone: "green",
+      nextAction: "Register through the Commission's One Time Registration portal and submit the online application before 22 September 2026, 11:59 PM",
+      detail:
+        "Advertisement 59/8-2026 dated 26 August 2026 invites online recruitment applications for 22 posts to be filled through the H.P. Administrative Service Combined Competitive Examination-2026. The closing date for both the application and the fee is 22 September 2026, 11:59 PM. No preliminary-examination date has been announced.",
+    },
+    summary:
+      "Himachal Pradesh's combined competitive examination for the HP Administrative Service and allied gazetted posts in the Rural Development, Food and Civil Supplies, Treasuries and Revenue departments.",
+    vacancies: 22,
+    vacancyLabel: "22 posts across five services",
+    vacancyNote:
+      "The post table gives H.P. Administrative Services 4, Block Development Officer 10, District Controller 1, District Treasury Officer 1 and Tehsildar 6. The advertisement records that the number of vacancies may increase or decrease, and that any vacancy received from Government up to the closing date will be included for selection through this examination.",
+    vacancyBreakdown: [
+      { label: "H.P. Administrative Services (Personnel-IV)", total: 4 },
+      { label: "Block Development Officer (Rural Development)", total: 10 },
+      { label: "District Controller (Food, Civil Supplies and Consumer Affairs)", total: 1 },
+      { label: "District Treasury Officer (Treasuries, Accounts and Lotteries)", total: 1 },
+      { label: "Tehsildar (Revenue-A)", total: 6 },
+    ],
+    age: "21 to 35 years on or before 1 January 2026 (clause D of advertisement 59/8-2026). The upper age limit is relaxable by five years for Scheduled Castes, Scheduled Tribes, Other Backward Classes, persons with disabilities and children or grandchildren of freedom fighters of Himachal Pradesh, but only where a post is reserved for that category. A Government servant holding a substantive, officiating or contractual appointment under the H.P. Government, the High Court of Himachal Pradesh or a court subordinate to it, or in a PSU, corporation or bank substantially owned or controlled by the state, may go up to 45 years for HPAS and the other posts and 42 years for the H.P. Police Service and for District Controller. Ex-servicemen of H.P. are governed by the Ex-Servicemen (Reservation of Vacancies, Pay fixation and Regulation of Seniority in the Himachal Pradesh Administrative Service) Rules, 2020 for HPAS and HPPS, and by the Demobilized Armed Forces Personnel Rules, 1972 for the other posts.",
+    qualification:
+      "A bachelor's degree or its equivalent from a recognised university. A candidate who has appeared at, or intends to appear at, a qualifying examination may apply provisionally, but must produce proof of passing as soon as it is available and in any case not later than two months after this examination begins. Knowledge of the customs, manners and dialects of Himachal Pradesh and suitability for appointment in the peculiar conditions prevailing in the Pradesh is the desirable qualification.",
+    fee: "A uniform ₹600 is charged from every candidate irrespective of category, payable online by debit card, credit card, UPI or another online digital mode on or before the closing date. The fee is never refunded and cannot be held in reserve for another examination or selection.",
+    pay: "Post-wise: H.P. Administrative Services Pay Band Level-18 (₹56,100-1,77,500); Block Development Officer Level-17 (₹53,600-1,70,100); District Controller and District Treasury Officer Level-16 (₹48,700-1,54,300); Tehsildar Level-13 (₹46,000-1,46,500).",
+    timeline: [
+      { label: "Advertisement 59/8-2026 published", date: "2026-08-26", displayDate: "26 Aug 2026", state: "completed" },
+      { label: "Last date for online applications and fee", date: "2026-09-22", displayDate: "22 Sep 2026, 11:59 PM", state: "current" },
+      { label: "Preliminary examination", displayDate: "Date not announced", state: "tentative" },
+    ],
+    eligibility: [
+      "A candidate must be a citizen of India.",
+      "Reservation is admissible only to bona-fide residents of Himachal Pradesh in the SC, ST, OBC, EWS, ex-serviceman, ward of ex-serviceman, ward of freedom fighter and benchmark-disability categories; reserved-category candidates of other states are treated as general-category candidates.",
+      "Certificates of essential qualification, the matriculation certificate as age proof, the category certificate with the H.P. bona-fide certificate and any experience certificate must be uploaded before the closing date to avoid rejection afterwards.",
+      "An EWS claim needs either an Income and Asset Certificate or a valid BPL certificate countersigned by the BDO along with a non-SC/ST/OBC certificate on the format prescribed by the H.P. Government.",
+      "No candidate already in regular service is interviewed without a No Objection Certificate from the employer; contract, casual, ad-hoc, daily-rated and work-charged employees do not need one.",
+      "Candidates are allotted services and posts on their rank in the final merit together with the preferences expressed in the application.",
+    ],
+    selectionStages: [
+      "Screening / Preliminary Examination - two objective papers of 200 marks each, used only as a screening test, with about 20 times the number of vacancies admitted to the Main Examination",
+      "Main Examination - six compulsory papers and two papers of one optional subject; qualifying requires at least 40 per cent in each of the compulsory Hindi and English papers and 45 per cent in the aggregate of the remaining papers",
+      "Personality Test - candidates called are limited to three times the number of notified vacancies",
+      "Final ranking on the Main Examination's written papers together with the personality test, followed by allotment of service or post",
+    ],
+    syllabus: [
+      "Preliminary Examination Paper-I, General Studies (Code No. 01), 200 marks and 100 objective multiple-choice questions in two hours: History, Geography, Political, Art & Culture and Socio-Economic Development of Himachal Pradesh; current events of national and international importance; History of India and the Indian National Movement; Indian and World Geography - physical, social and economic; Indian Polity and Governance - Constitution, political system, Panchayati Raj, public policy, rights issues; Economic and Social Development; general issues on environmental ecology, biodiversity and climate change; and General Science.",
+      "Preliminary Examination Paper-II, Aptitude Test (Code No. 02), 200 marks and 100 objective multiple-choice questions in two hours: comprehension; interpersonal skills including communication skills; logical reasoning and analytical ability; decision making and problem solving; general mental ability; basic numeracy and data interpretation at Class X level; and English language comprehension skills at Class X level.",
+      "Paper-II of the Preliminary Examination is a qualifying paper with minimum qualifying marks fixed at 33 per cent, so the merit for admission to the Main Examination is drawn only on Paper-I; a candidate scoring zero or negative marks in Paper-I does not qualify, and it is mandatory to appear in both papers.",
+      "One third of the marks assigned to a question is deducted for a wrong answer in the Preliminary Examination, and giving more than one answer counts as a wrong answer; where an English and Hindi version of a question differ, the English version is final.",
+      "Main Examination compulsory papers: English 100, Hindi 100, Essay 100, General Studies-I 200, General Studies-II 200 and General Studies-III 200 marks; the optional subject carries two papers of 100 marks each, answerable in English or Hindi, and the optional subject named in the application cannot be changed after the last date for payment of the examination fee.",
+    ],
+    officialLinks: [
+      {
+        label: "Advertisement 59/8-2026 - H.P. Administrative Service Combined Competitive Examination 2026",
+        url: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgJhsSzNLtXQgyrhjwChomkO7eONOEFu3udXmeG2YxYmM%3D",
+        type: "notice",
+      },
+      { label: "HPPSC what's new", url: "https://hppsc.hp.gov.in/Home/HomeWhatsNew", type: "notice" },
+      { label: "HPPSC official website", url: "https://hppsc.hp.gov.in/", type: "website" },
+    ],
+    sourceTitle: "HPPSC advertisement 59/8-2026 for the H.P. Administrative Service Combined Competitive Examination 2026",
+    sourceUrl:
+      "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgJhsSzNLtXQgyrhjwChomkO7eONOEFu3udXmeG2YxYmM%3D",
+    sourcePublished: "Advertisement dated 26 Aug 2026; applications and fee close 22 Sep 2026, 11:59 PM",
+    lastVerified: "29 Aug 2026, 16:24 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "New record: HPPSC advertised the H.P. Administrative Service Combined Competitive Examination 2026 for 22 posts under advertisement 59/8-2026 dated 26 Aug 2026, with online applications and fee closing on 22 Sep 2026.",
+      },
+    ],
+    keywords: [
+      "HPAS",
+      "HPAS 2026",
+      "HPPSC HPAS",
+      "Himachal administrative service",
+      "हिमाचल प्रशासनिक सेवा",
+      "HP Tehsildar recruitment",
+      "HP Block Development Officer",
+      "HPAS prelims",
+      "hppsc combined competitive examination",
     ],
   }),
   listedExam({
@@ -853,10 +1102,11 @@ export const exams: Exam[] = [
     examTypes: ["Technical & Trades", "Judiciary & Legal", "Civil Services & Administration"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Corrigenda and exam notices active",
-      tone: "violet",
-      nextAction: "Check the vacancy page for the selected post code",
-      detail: "DSSSB's official page continues to publish post-code-specific corrigenda for the 2026 combined examination.",
+      label: "Examination window notified from 21 September 2026",
+      tone: "blue",
+      nextAction: "Watch https://dsssb.delhi.gov.in/notice-of-exam for the e-admit card, and re-read the corrigendum for the chosen post code",
+      detail:
+        "DSSSB's examination notification dated 24 August 2026 schedules online examinations for various post codes in the window 21 September to 24 October 2026, and Advertisement 01/2026 post code 804/26, Assistant Section Officer / Grade-II (GNCTDSS) for Services, DPCC and DUSIB, occupies most of the sittings in it. A corrigendum dated 22 July 2026 modified the Assistant Engineer (Civil) entry, post code 802/26. Post-code-specific conditions must still be read separately.",
     },
     summary: "Combined DSSSB recruitment covering Legal Assistant, civil-engineering and GNCTDSS administrative post codes.",
     pay: "See vacancy notice 01/2026; the pay level is stated against each post code.",
@@ -869,14 +1119,32 @@ export const exams: Exam[] = [
       "Skill or endurance test where the post code prescribes one",
       "Document verification and final merit",
     ],
+    timeline: [
+      {
+        label: "Online examination window for post code 804/26, Assistant Section Officer / Grade-II (GNCTDSS)",
+        date: "2026-09-21",
+        displayDate: "21 Sep to 24 Oct 2026",
+        state: "scheduled",
+        note: "Exam centre, date and shift for an individual candidate are printed on the e-admit card",
+      },
+    ],
     officialLinks: [
       { label: "DSSSB advertisement 01/2026", url: "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-012026-combined-examinations-2026-post-legal-assistant", type: "notice" },
+      { label: "Examination notification dated 24 Aug 2026 (21 Sep to 24 Oct 2026)", url: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/img_0007.pdf", type: "notice" },
+      { label: "DSSSB notice of exam", url: "https://dsssb.delhi.gov.in/notice-of-exam", type: "notice" },
       { label: "DSSSB vacancies", url: "https://dsssb.delhi.gov.in/dsssb-vacancies", type: "notice" },
     ],
-    sourceTitle: "DSSSB vacancy notice 01/2026 Combined Examinations 2026",
+    sourceTitle: "DSSSB vacancy notice 01/2026 Combined Examinations 2026 and the examination notification dated 24 Aug 2026",
     sourceUrl: "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-012026-combined-examinations-2026-post-legal-assistant",
-    sourcePublished: "Vacancy notice dated 20 Feb 2026; corrigenda current in July 2026",
-    lastVerified: "4 Aug 2026, 15:35 IST",
+    sourcePublished: "Vacancy notice dated 20 Feb 2026; corrigendum on post code 802/26 dated 22 Jul 2026; examination notification dated 24 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:36 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "DSSSB's examination notification of 24 Aug 2026 puts the online examination for Advertisement 01/2026 post code 804/26 (Assistant Section Officer / Grade-II, GNCTDSS) inside a 21 Sep to 24 Oct 2026 window, so this cycle now has a notified examination period rather than only corrigenda.",
+      },
+    ],
     keywords: [
       "DSSSB AE JE",
       "Delhi legal assistant recruitment",
@@ -910,7 +1178,7 @@ export const exams: Exam[] = [
       label: "Post-code corrigenda active",
       tone: "violet",
       nextAction: "Read the original notice and the corrigendum for the chosen post code",
-      detail: "The official DSSSB vacancy page lists advertisement 03/2026 and later corrections for individual post codes. Post-specific conditions must be checked separately.",
+      detail: "The official DSSSB vacancy page lists advertisement 03/2026 and later corrections for individual post codes - most recently a corrigendum dated 22 July 2026 in partial modification of the notice for Junior Scientific Assistant (Cyber Forensic), post code 28/26. No examination date for these post codes was notified as of 29 August 2026, so post-specific conditions must be checked separately.",
     },
     summary: "Multi-department DSSSB recruitment for the Group B and Group C post codes covered by advertisement 03/2026.",
     pay: "See vacancy notice 03/2026; the pay level is stated against each post code.",
@@ -929,8 +1197,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "DSSSB vacancy notice 03/2026 for post codes 21/26 to 45/26",
     sourceUrl: "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-032026-various-posts-post-code-2126-4526-closing-date-0",
-    sourcePublished: "Vacancy notice published 1 Jun 2026; post-code corrigenda current in July 2026",
-    lastVerified: "4 Aug 2026, 15:35 IST",
+    sourcePublished: "Vacancy notice published 1 Jun 2026; corrigendum on post code 28/26 dated 22 Jul 2026, the latest 03/2026 entry on the vacancy page re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:38 IST",
     keywords: [
       "DSSSB various posts",
       "Delhi Group B C recruitment",
@@ -960,10 +1228,10 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Technical & Trades", "Specialist & Professional"],
     education: ["12th", "ITI / Diploma", "Graduate", "Postgraduate", "Professional degree"],
     status: {
-      detail: "DSSSB has notified the computer-based examination for Advertisement 02/2026 post codes across 1–7 September 2026 (post codes 11/26, 17/26, 08/26, 04/26, 12/26, 10/26, 06/26, 18/26 and 02/26). Exam centre, date and timing will be shown on the e-admit card, links for which are to be released shortly.",
-      label: "Examination scheduled 1–7 Sep 2026",
+      detail: "DSSSB has notified the computer-based examination for Advertisement 02/2026 post codes across 1–7 September 2026 (post codes 11/26, 17/26, 08/26, 04/26, 12/26, 10/26, 06/26, 18/26 and 02/26). A further examination notification dated 24 August 2026 places the remaining 02/2026 post codes - Assistant Manager (Tourism) 01/26, Assistant Manager (Accounts) 03/26, Assistant Manager (Air Ticketing) 05/26, Assistant Grade-I 07/26, Optometrist 09/26, Katib (Calligrapher) 13/26, Patwari 14/26 and Assistant Micro Photographist 20/26 - inside a 21 September to 24 October 2026 window. Exam centre, date and timing are shown on the e-admit card.",
+      label: "Examination from 1 Sep 2026",
       tone: "blue",
-      nextAction: "Watch https://dsssb.delhi.gov.in/notice-of-exam for the e-admit card link before 1 Sep 2026.",
+      nextAction: "Watch https://dsssb.delhi.gov.in/notice-of-exam for the e-admit card link for the post code applied for.",
     },
     summary:
       "Delhi Subordinate Services Selection Board recruitment for post codes 01/26 to 20/26 across departments, local and autonomous bodies of the Government of NCT of Delhi.",
@@ -983,6 +1251,13 @@ export const exams: Exam[] = [
       { label: "Examination schedule notified", date: "2026-06-15", displayDate: "15 Jun 2026", state: "completed" },
       { label: "Corrigendum revising Junior Laboratory Assistant (18/26) vacancies", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
       { label: "Online examination (CBT)", date: "2026-09-01", displayDate: "1–7 Sep 2026", state: "scheduled" },
+      {
+        label: "Online examination for the remaining 02/2026 post codes",
+        date: "2026-09-21",
+        displayDate: "21 Sep to 24 Oct 2026",
+        state: "scheduled",
+        note: "Notified on 24 Aug 2026 for post codes 01/26, 03/26, 05/26, 07/26, 09/26, 13/26, 14/26 and 20/26",
+      },
     ],
     eligibility: [
       "Post codes 01/26 to 20/26 cover several departments, local and autonomous bodies of the Government of NCT of Delhi, so eligibility must be read against the individual post-code entry and any corrigendum.",
@@ -1003,13 +1278,21 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "DSSSB vacancy notice 02/2026", url: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_02-2026_1.pdf", type: "notice" },
+      { label: "Examination notification dated 15 Jun 2026 (1 to 20 Sep 2026)", url: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/examination_schedule_01_to_20_sep.pdf", type: "notice" },
+      { label: "Examination notification dated 24 Aug 2026 (21 Sep to 24 Oct 2026)", url: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/img_0007.pdf", type: "notice" },
+      { label: "DSSSB notice of exam", url: "https://dsssb.delhi.gov.in/notice-of-exam", type: "notice" },
       { label: "DSSSB vacancies", url: "https://dsssb.delhi.gov.in/dsssb-vacancies", type: "notice" },
     ],
     sourceTitle: "DSSSB vacancy notice advertisement no. 02/2026",
     sourceUrl: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_02-2026_1.pdf",
-    sourcePublished: "Examination notification No. F.55(438)/Exam/DSSSB/2025/PF dated 15 Jun 2026; vacancy notice dated 25 Feb 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Vacancy notice dated 25 Feb 2026; examination notifications dated 15 Jun 2026 (1 to 20 Sep 2026) and 24 Aug 2026 (21 Sep to 24 Oct 2026)",
+    lastVerified: "29 Aug 2026, 15:40 IST",
     changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "A DSSSB examination notification dated 24 Aug 2026 schedules the remaining Advertisement 02/2026 post codes - 01/26, 03/26, 05/26, 07/26, 09/26, 13/26, 14/26 and 20/26 - in a 21 September to 24 October 2026 window, alongside the 1-7 September sittings already notified.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -1045,7 +1328,7 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["10th"],
     status: {
-      detail: "The computer-based test for Multi Tasking Staff (Advt. 07/25, post code 803/25) is running in three shifts a day from 25 July 2026 to 1 September 2026. Exam centre, date and timing are given on each candidate's e-admit card.",
+      detail: "The computer-based test for Multi Tasking Staff (Advt. 07/25, post code 803/25) is running in three shifts a day from 25 July 2026 to 1 September 2026. Exam centre, date and timing are given on each candidate's e-admit card. DSSSB's notice-of-exam page carried no postponement or revision of this schedule when re-read on 29 August 2026.",
       label: "Examination under way",
       tone: "violet",
       nextAction: "After 1 Sep 2026 watch for the answer key and result notice for post code 803/25.",
@@ -1093,8 +1376,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "DSSSB vacancy notice advertisement no. 07/2025, Combined Examination 2025 for Multi-Tasking Staff",
     sourceUrl: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_no_07_2025_mts.pdf",
-    sourcePublished: "Examination notification No. F.55(438)/Exam/DSSSB/2025/PF dated 22 Apr 2026; vacancy notice dated 11 Dec 2025",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Examination notification No. F.55(438)/Exam/DSSSB/2025/PF dated 22 Apr 2026 covering June, July, August and 1 September 2026; vacancy notice dated 11 Dec 2025",
+    lastVerified: "29 Aug 2026, 15:42 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1293,8 +1576,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKPSC notification 05-PSC (DR-P) of 2026 for Assistant Professor, College Director and Librarian posts",
     sourceUrl: "https://jkpsc.nic.in/PDF/AP_DIRECTOR_FRESH_2026.PDF",
-    sourcePublished: "Notification dated 31 Jul 2026; corrigendum dated 7 Aug 2026; applications 1 Aug to 31 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:15 IST",
+    sourcePublished: "Notification dated 31 Jul 2026; corrigendum dated 7 Aug 2026; applications 1 Aug to 31 Aug 2026, with no extension notice on the Commission's notice stream re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:44 IST",
     changeLog: [
       {
         date: "2026-08-07",
@@ -1377,8 +1660,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 08 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advertisement_08OF2026_04082026.pdf",
-    sourcePublished: "Notification dated 4 Aug 2026; applications 10 Sep to 9 Oct 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Notification dated 4 Aug 2026; applications 10 Sep to 9 Oct 2026; JKSSB's advertisement list and what's-new stream re-read 29 Aug 2026 with no corrigendum against 08 of 2026",
+    lastVerified: "29 Aug 2026, 15:45 IST",
     keywords: [
       "JKSSB 08 of 2026",
       "J&K SSB recruitment 2026",
@@ -1454,8 +1737,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 06 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advt_06OF2026_06072026.pdf",
-    sourcePublished: "Notification dated 6 Jul 2026; applications 1 Aug to 30 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Notification dated 6 Jul 2026; applications 1 Aug to 30 Aug 2026, with no extension notice on JKSSB's advertisement list or what's-new stream re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:46 IST",
     keywords: [
       "JKSSB 06 of 2026",
       "J&K PWD recruitment",
@@ -1530,8 +1813,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 07 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advt_07OF2026_08072026.pdf",
-    sourcePublished: "Notification dated 8 Jul 2026; applications 10 Aug to 8 Sep 2026; advertisement list re-read 20 Aug 2026",
-    lastVerified: "20 Aug 2026, 01:05 IST",
+    sourcePublished: "Notification dated 8 Jul 2026; applications 10 Aug to 8 Sep 2026; instructions for submitting the forms published 7 Aug 2026; advertisement list re-read 29 Aug 2026 with no corrigendum",
+    lastVerified: "29 Aug 2026, 15:47 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1624,8 +1907,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "LAHD-SSRB Advertisement Notice No. 01 of 2026",
     sourceUrl: "https://www.lahdssrb.in/file_uploads/advertisement/attachment/AdvertisementNoticeNo01OF2026Dated14072026-3a83c795593053cd1a85121837e90420.pdf",
-    sourcePublished: "Advertisement notice dated 14 Jul 2026; applications 17 Jul 2026 to 13 Aug 2026 (closing date extended from 6 Aug 2026 by notice dated 6 Aug 2026); corrigendum dated 7 Aug 2026; revised Section-B syllabus dated 3 Aug 2026",
-    lastVerified: "20 Aug 2026, 01:15 IST",
+    sourcePublished: "Advertisement notice dated 14 Jul 2026; applications 17 Jul 2026 to 13 Aug 2026 (closing date extended from 6 Aug 2026 by notice dated 6 Aug 2026); corrigendum dated 7 Aug 2026; revised Section-B syllabus dated 3 Aug 2026; Board notice board re-read 29 Aug 2026 with no examination date published",
+    lastVerified: "29 Aug 2026, 15:48 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1667,10 +1950,10 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF"],
     education: ["Graduate"],
     status: {
-      detail: "LPSSRB released admit cards from 17 Jul 2026 and conducted the Physical Standard and Physical Endurance Tests venue-wise: Leh 30 Jul to 3 Aug 2026 and Kargil 6 to 10 Aug 2026. No result or further-stage notice is on the recruitment page yet.",
-      label: "PST/PET completed; next stage awaited",
+      detail: "LPSSRB released admit cards from 17 Jul 2026 and conducted the Physical Standard and Physical Endurance Tests venue-wise: Leh 30 Jul to 3 Aug 2026 and Kargil 6 to 10 Aug 2026. On 20 August 2026 the Board published the candidate-wise PST/PET result, which records height, chest, chest expansion, race time, push-ups or shot put and long jump against each candidate, together with a subject-wise weightage notice for the written examination. No written-examination date is on the recruitment page yet.",
+      label: "PST/PET result declared; written-exam date awaited",
       tone: "violet",
-      nextAction: "Watch police.ladakh.gov.in/pages/recruitment.html for the PST/PET result and written-test notice.",
+      nextAction: "Check your PST/PET result on police.ladakh.gov.in/pages/recruitment.html and watch the same page for the written-examination date and admit card.",
     },
     summary:
       "General-cadre Sub-Inspector recruitment for Ladakh Police's Executive, Armed/IRP, SDRF, Women and Border Battalion branches, conducted by the Ladakh Police Subordinate Service Recruitment Board.",
@@ -1693,7 +1976,8 @@ export const exams: Exam[] = [
       { label: "Admit cards for PST/PET available", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
       { label: "Physical Standard and Endurance Test at Leh", date: "2026-07-30", displayDate: "30 Jul - 3 Aug 2026", state: "completed" },
       { label: "Physical Standard and Endurance Test at Kargil", date: "2026-08-06", displayDate: "6 - 10 Aug 2026", state: "completed" },
-      { label: "Next stage", displayDate: "Awaited", state: "current" },
+      { label: "PST/PET result and subject-wise weightage notice published", date: "2026-08-20", displayDate: "20 Aug 2026", state: "completed" },
+      { label: "Written examination", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [
       "Only domiciles of the Union Territory of Ladakh may apply, and the domicile certificate must be issued under the Ladakh Civil Service Decentralization and Recruitment - Grant of Domicile Certificate (Procedure) Rules, 2025.",
@@ -1714,14 +1998,21 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Advertisement Notification 01 of 2026 (Sub-Inspector General Cadre)", url: "https://police.ladakh.gov.in/pages/si_recruitment_2026.pdf", type: "notice" },
+      { label: "PST/PET result published 20 Aug 2026", url: "https://police.ladakh.gov.in/pages/pdf/result1.pdf", type: "result" },
+      { label: "Subject-wise weightage notice published 20 Aug 2026", url: "https://police.ladakh.gov.in/pages/pdf/Weightage.pdf", type: "notice" },
       { label: "Ladakh Police recruitment notices", url: "https://police.ladakh.gov.in/pages/recruitment.html", type: "notice" },
       { label: "Ladakh Administration recruitment notices", url: "https://ladakh.gov.in/", type: "website" },
     ],
     sourceTitle: "LPSSRB Advertisement Notification No. 01 of 2026 for Sub-Inspector General Cadre in Ladakh Police",
     sourceUrl: "https://police.ladakh.gov.in/pages/si_recruitment_2026.pdf",
-    sourcePublished: "LPSSRB notice No. LPSSRB/2026/146-53 dated 15 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "LPSSRB notice No. LPSSRB/2026/146-53 dated 15 Jul 2026; PST/PET result and subject-wise weightage notice both dated 20 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:48 IST",
     changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "LPSSRB published the candidate-wise PST/PET result for the Sub-Inspector General Cadre recruitment on 20 Aug 2026 along with a subject-wise weightage notice for the written examination; the written-examination date is still not announced.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -1736,6 +2027,67 @@ export const exams: Exam[] = [
       "Ladakh border battalion",
       "लद्दाख पुलिस भर्ती",
       "ladakh police bharti",
+    ],
+  }),
+  listedExam({
+    slug: "ladakh-police-constable-general-cadre-2026",
+    title: "Ladakh Police Constable (Level 2) General Cadre Recruitment 2026",
+    shortTitle: "Ladakh Police Constable",
+    aliases: ["Ladakh constable recruitment 2026", "LPSSRB Constable Level 2", "लद्दाख पुलिस आरक्षी भर्ती"],
+    organisation: "Administration of Union Territory of Ladakh",
+    governmentLevel: "State",
+    jurisdiction: "Ladakh",
+    state: "Ladakh",
+    stateCode: "LA",
+    regionCodes: ["LA"],
+    cycle: "2026",
+    year: 2026,
+    sector: "Police",
+    examTypes: ["Police & CAPF"],
+    education: ["10th", "12th"],
+    status: {
+      label: "Advertisement notice published 24 August 2026",
+      tone: "blue",
+      nextAction: "Open the constable advertisement notice on the Ladakh Police recruitment page and read the posts, dates and eligibility before applying",
+      detail:
+        "The Ladakh Police recruitment page lists an advertisement notice published on 24 August 2026 for direct recruitment to the post of Constable (Level 2), General Cadre, covering the Executive, Armed/IRP, SDRF, Women and Border Battalion branches. The same page carries Standing Order No. 422 of 2026 dated 14 August 2026 for the post of Constable General Cadre in Ladakh Police. The advertisement notice is posted as a scanned document that could not be read for this record, so no post count, application window, age limit, fee or physical standard is asserted here.",
+    },
+    summary:
+      "Direct recruitment of constables to the Executive, Armed/IRP, SDRF, Women and Border Battalion branches of Ladakh Police, advertised through the Ladakh Police recruitment page.",
+    qualification:
+      "See the constable advertisement notice dated 24 August 2026 on the Ladakh Police recruitment page; no current-cycle qualification is asserted here.",
+    pay: "See the official advertisement notice; the constable pay level is fixed there.",
+    eligibility: [
+      "Recruitment to the subordinate ranks of Ladakh Police is made under the Union Territory of Ladakh Police (Subordinate) Service Recruitment (Revised) Rules, 2026, notified vide S.O. 187 dated 7 May 2026, and normally requires a domicile certificate issued under the Ladakh Civil Service Decentralization and Recruitment - Grant of Domicile Certificate (Procedure) Rules, 2025; confirm both conditions in the advertisement notice itself.",
+      "Confirm the number of posts, the application window, the age window, physical standards, fee and category-certificate rules in the advertisement notice dated 24 August 2026.",
+    ],
+    selectionStages: [
+      "See the advertisement notice dated 24 August 2026; no current-cycle selection stages are asserted here.",
+    ],
+    officialLinks: [
+      { label: "Advertisement notice for Constable (Level 2), General Cadre", url: "https://police.ladakh.gov.in/pages/pdf/contables_recruitment.pdf", type: "notice" },
+      { label: "Ladakh Police recruitment notices", url: "https://police.ladakh.gov.in/pages/recruitment.html", type: "notice" },
+      { label: "Ladakh Administration recruitment notices", url: "https://ladakh.gov.in/", type: "website" },
+    ],
+    sourceTitle: "Ladakh Police recruitment page entry for the Constable (Level 2) General Cadre advertisement notice",
+    sourceUrl: "https://police.ladakh.gov.in/pages/recruitment.html",
+    sourcePublished: "Advertisement notice listed on the Ladakh Police recruitment page as published 24 Aug 2026; Standing Order No. 422 of 2026 dated 14 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:48 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "New record: the Ladakh Police recruitment page published an advertisement notice on 24 Aug 2026 for direct recruitment of Constables (Level 2) in the General Cadre across the Executive, Armed/IRP, SDRF, Women and Border Battalion branches; the same page carries Standing Order No. 422 of 2026 dated 14 Aug 2026 for the constable posts.",
+      },
+    ],
+    keywords: [
+      "Ladakh police constable",
+      "Ladakh constable bharti",
+      "लद्दाख पुलिस आरक्षी",
+      "Ladakh police recruitment 2026",
+      "LPSSRB constable",
+      "Ladakh SDRF constable",
+      "Ladakh border battalion constable",
     ],
   }),
   exam({
@@ -1761,7 +2113,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Chandigarh public-notices page for the OMR written-examination schedule",
       detail:
-        "Online applications closed on 26 April 2026 and the fee window on 29 April 2026. The recruitment notice records the written examination, its result and the typing/proficiency test as 'to be notified later', so no exam date is asserted here.",
+        "Online applications closed on 26 April 2026 and the fee window on 29 April 2026. The recruitment notice records the written examination, its result and the typing/proficiency test as 'to be notified later', and the Administration's vacancies page re-read on 29 August 2026 still carries no examination schedule, so no exam date is asserted here.",
     },
     summary:
       "Direct recruitment to Group C Clerk and Steno-Typist (English) posts of the Chandigarh Administration common cadre under the Group 'C' (Clerk and Steno-Typist) (Common Cadre) (Ministerial) (Non-Gazetted) Recruitment Rules, 2026.",
@@ -1812,8 +2164,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Chandigarh Administration Department of Personnel recruitment notice for Clerks and Steno-Typists",
     sourceUrl: "https://chandigarh.gov.in/files/Updation26/dop26-advtclerstn0704.pdf",
-    sourcePublished: "Public appointment notice dated 31 Mar 2026; applications 6 Apr to 26 Apr 2026",
-    lastVerified: "4 Aug 2026, 20:45 IST",
+    sourcePublished: "Public appointment notice dated 31 Mar 2026; applications 6 Apr to 26 Apr 2026; Administration's vacancies page re-read 29 Aug 2026 with no examination schedule published",
+    lastVerified: "29 Aug 2026, 16:32 IST",
     keywords: [
       "Chandigarh clerk recruitment",
       "UT Chandigarh steno vacancy",
@@ -1845,7 +2197,7 @@ export const exams: Exam[] = [
       label: "Document verification and PST under way",
       tone: "violet",
       nextAction: "Check the UPPRPB notice board for DV/PST call letters and the next-stage schedule",
-      detail: "DV/PST is being held in district Reserve Police Lines from 17 Aug to 31 Aug 2026, with 31 Aug 2026 as the reserve day; admit cards went online from 10 Aug 2026.",
+      detail: "DV/PST is being held in district Reserve Police Lines from 17 Aug to 31 Aug 2026, with 31 Aug 2026 as the reserve day; admit cards went online from 10 Aug 2026. The Board's notice board carried no later DV/PST notice when re-read on 29 August 2026, so the schedule stands as published.",
     },
     summary: "Direct recruitment of Constable Civil Police and equivalent posts in Uttar Pradesh Police, conducted by the UP Police Recruitment and Promotion Board.",
     vacancyLabel: "Not stated on the reviewed notice pages",
@@ -1875,8 +2227,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPPRPB notices for Constable Civil Police and equivalent posts Direct Recruitment 2025",
     sourceUrl: "https://uppbpb.gov.in/Home/Notice",
-    sourcePublished: "DV/PST date and process notices published 10 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "DV/PST date, process and admit-card notices published 10 Aug 2026, still the latest entries on the Board's notice board re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:52 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1948,8 +2300,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "PPSC PSCSCCE 2025 notification, addendum and announcement stream",
     sourceUrl: "https://ppsc.gov.in/index.aspx?page=2540&tabid=10&tablinkid=6579",
-    sourcePublished: "Notification dated 3 Jan 2025; addendum dated 3 Sep 2025; interview schedule published 20 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Notification dated 3 Jan 2025; addendum dated 3 Sep 2025; interview schedule published 20 Jul 2026 and still the latest PSCSCCE 2025 entry in the announcement stream re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:54 IST",
     keywords: [
       "PPSC PCS",
       "Punjab civil services exam",
@@ -2028,8 +2380,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "SSSB Punjab advertisement 04/2025 listing and detailed notice",
     sourceUrl: "https://sssb.punjab.gov.in/vacancy-group-c/",
-    sourcePublished: "Advertisement published 4 Jul 2025; application window 15 Jul-5 Aug 2025",
-    lastVerified: "4 Aug 2026, 16:10 IST",
+    sourcePublished: "Advertisement published 4 Jul 2025; application window 15 Jul-5 Aug 2025; the Board's notice stream re-read 29 Aug 2026 carried no 04 of 2025 exam-date or result notice",
+    lastVerified: "29 Aug 2026, 15:55 IST",
     keywords: [
       "PSSSB clerk recruitment",
       "Punjab SSSB driver post",
@@ -2039,6 +2391,95 @@ export const exams: Exam[] = [
       "PSSSB senior assistant",
       "SSSB Punjab",
       "punjab clerk vacancy",
+    ],
+  }),
+  exam({
+    slug: "psssb-group-d-common-cadre-04-2026",
+    title: "PSSSB Group-D Common Cadre Recruitment - Advertisement 04 of 2026",
+    shortTitle: "PSSSB Group D 04/2026",
+    aliases: ["Punjab SSSB Advt 04/2026", "Punjab Group D recruitment 2026", "ਪੰਜਾਬ ਗਰੁੱਪ-ਡੀ ਭਰਤੀ 04 ਆਫ 2026"],
+    organisation: "Punjab Subordinate Services Selection Board",
+    governmentLevel: "State",
+    jurisdiction: "Punjab",
+    state: "Punjab",
+    stateCode: "PB",
+    regionCodes: ["PB"],
+    cycle: "2026",
+    year: 2026,
+    verification: "verified",
+    notificationNumber: "04 of 2026",
+    sector: "Subordinate services",
+    examTypes: ["Civil Services & Administration"],
+    education: ["10th"],
+    status: {
+      label: "Applications reopened until 4 September 2026",
+      tone: "green",
+      nextAction: "Apply on sssb.punjab.gov.in before 4 September 2026; candidates who already applied under 04 of 2026 need not apply again",
+      detail:
+        "The Board's corrigendum dated 24 August 2026 reopened the online portal for advertisement 04 of 2026 from 25 August to 4 September 2026, with 4 September 2026 as the last date for the fee as well, and set out 1,401 Group-D posts received from Punjab Government departments in Annexure-O (ਅਨੁਲੱਗ-ਓ). The same corrigendum withdrew the condition in paragraph 1(ii) and the note under serial 7(viii) about demand letters receivable up to 30 September 2026.",
+    },
+    summary:
+      "Punjab Subordinate Services Selection Board's common-cadre Group-D recruitment - Sewadar, Chowkidar, Safai Sewak, attendant and baildar posts across Punjab Government departments - filled from a single objective written examination.",
+    vacancies: 1401,
+    vacancyLabel: "1,401 Group-D posts across Punjab Government departments",
+    vacancyNote:
+      "The corrigendum dated 24 August 2026 sets out 1,401 Group-D posts received from various Punjab Government departments in Annexure-O (ਅਨੁਲੱਗ-ਓ), department- and post-wise, covering Sewadar, Safai Sewak, Safai Sewak-cum-Chowkidar, Maali-cum-Chowkidar, Chowkidar, Cattle Attendant, Pig Attendant, Animal Attendant, Sheep Attendant, Baildar-cum-attendant and similar posts, with a men and women column against each reserved category.",
+    age: "As on 1 January 2026 under clause 5 of advertisement 04 of 2026: not less than 18 years for a candidate of any category; the upper age limit is 37 years for the general category and 42 years for Punjab-resident Scheduled Caste and Backward Class candidates. State and Central Government employees may go up to 45 years and must produce a departmental NOC at counselling to claim it. Punjab-resident divyang candidates get a 10-year relaxation subject to a maximum of 47 years. For Punjab-resident ex-servicemen the upper limit follows the Punjab Recruitment of Ex-servicemen Rules, 1982 - the condition is satisfied if the age left after deducting the period of service in the forces does not exceed the post's upper limit by more than 3 years. The upper age limit for widows, divorcees and certain other categories of married women is relaxed up to 40 years under Punjab Government letter No. 1/50/83-5PP(1368)/3454 dated 23.04.1984.",
+    qualification:
+      "Under the Punjab State (Group D) Service Rules, 1963 as amended from time to time, a candidate must have passed an examination of Matriculation standard with Punjabi language as one of the subjects from a recognised educational institution. The rules exempt a blind person, a riot- or terrorist-affected person and a person appointed to the service as a sweeper from that condition. Under Punjab notification GSR75/Const./Art.309/Amd.(7)/2022 dated 04.11.2022 a candidate must also secure at least 50 per cent marks in a qualifying test of Punjabi language equivalent to matriculation standard, failing which the candidate is disqualified from the final merit list regardless of the marks scored elsewhere.",
+    fee: "General category, freedom fighters and sportspersons ₹1,000; Scheduled Caste, Backward Class and Economically Weaker Section ₹250; ex-servicemen and their dependants ₹200; divyang candidates ₹500. A fee once paid is not refunded in any circumstance.",
+    pay: "₹18,000-56,900 (Level-1) under the 7th CPC, as printed against the Group-D post in advertisement 04 of 2026.",
+    timeline: [
+      { label: "Advertisement 04 of 2026 published", date: "2026-02-24", displayDate: "24 Feb 2026", state: "completed" },
+      { label: "Online applications opened", date: "2026-02-27", displayDate: "27 Feb 2026", state: "completed" },
+      { label: "Online applications and fee closed", date: "2026-03-20", displayDate: "20 Mar 2026", state: "completed" },
+      { label: "Corrigendum reopening the application window", date: "2026-08-24", displayDate: "24 Aug 2026", state: "completed" },
+      { label: "Online applications reopened", date: "2026-08-25", displayDate: "25 Aug 2026", state: "completed" },
+      { label: "Last date for online applications and fee in the reopened window", date: "2026-09-04", displayDate: "4 Sep 2026", state: "current" },
+    ],
+    eligibility: [
+      "The benefit of reservation is available only to residents of Punjab, so the category and category code must be chosen carefully in the online form; neither can be changed at any later stage.",
+      "A recently issued Punjab Domicile or Residence Certificate must be produced at counselling by every candidate of every category claiming reservation, and it must not be more than 5 years old.",
+      "Scheduled Caste, Backward Class, ex-servicemen, divyang, sportsperson and EWS certificates must follow the formats prescribed by the Punjab Government.",
+      "An ex-serviceman post is filled first from ESM (Self) candidates and only then from ESM (Dependent) candidates; where neither is available, the vacancy is filled under the third proviso to rule 4(1) of the Punjab Recruitment of Ex-Servicemen Rules, 1982 by the grandchild of a Gallantry Award Winner, subject to the conditions there.",
+      "Candidates who had already applied under advertisement 04 of 2026 in the February-March 2026 window need not apply again in the reopened window.",
+    ],
+    selectionStages: [
+      "Objective type (multiple choice) written examination in two parts",
+      "Part-A - a qualifying Punjabi language paper of matriculation standard requiring at least 50 per cent marks; Part-B alone counts for merit and carries negative marking of one quarter of a mark for each wrong answer, with one mark per question",
+      "Counselling with verification of every document, the number of candidates called being decided by the Board",
+      "A Common Merit List drawn on the Part-B marks, on which names are recommended to the departments concerned; a tie is broken by the older date of birth and then by the higher percentage in the required educational qualification",
+    ],
+    syllabus: [
+      "The advertisement does not print a topic list: it records that the syllabus and pattern of the written examination will be uploaded on the Board's website, and that admit cards, examination date, centre, result and every later change will be published only there.",
+      "The examination structure fixed in clause 7 is a Part-A qualifying Punjabi language paper of matriculation standard, and a Part-B paper of one-mark objective questions with one-quarter negative marking whose score alone forms the merit list.",
+    ],
+    officialLinks: [
+      { label: "Corrigendum dated 24 Aug 2026 with the 1,401-post annexure", url: "https://sssb.punjab.gov.in/wp-content/uploads/2026/08/42026New_merged.pdf", type: "notice" },
+      { label: "Advertisement 04 of 2026 (Group-D)", url: "https://sssb.punjab.gov.in/wp-content/uploads/2026/02/Advertisement-Group-D-1.pdf", type: "notice" },
+      { label: "SSSB Punjab Group D vacancies", url: "https://sssb.punjab.gov.in/vacancy-group-d/", type: "notice" },
+      { label: "SSSB Punjab official website", url: "https://sssb.punjab.gov.in/", type: "website" },
+    ],
+    sourceTitle: "SSSB Punjab corrigendum dated 24 Aug 2026 and advertisement 04 of 2026 for Group-D common cadre posts",
+    sourceUrl: "https://sssb.punjab.gov.in/wp-content/uploads/2026/08/42026New_merged.pdf",
+    sourcePublished: "Advertisement published 24 Feb 2026; corrigendum dated 24 Aug 2026 reopening applications from 25 Aug to 4 Sep 2026 for 1,401 posts",
+    lastVerified: "29 Aug 2026, 15:48 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "New record: PSSSB reopened advertisement 04 of 2026 for Group-D common cadre posts by a corrigendum dated 24 Aug 2026, taking applications from 25 Aug to 4 Sep 2026 against 1,401 posts received from Punjab Government departments.",
+      },
+    ],
+    keywords: [
+      "PSSSB Group D",
+      "Punjab Group D recruitment",
+      "Punjab Sewadar bharti",
+      "ਸੇਵਾਦਾਰ ਭਰਤੀ",
+      "ਚੌਕੀਦਾਰ ਭਰਤੀ",
+      "पंजाब ग्रुप डी भर्ती",
+      "Punjab safai sewak vacancy",
+      "SSSB Punjab group d 2026",
     ],
   }),
   listedExam({
@@ -2091,8 +2532,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UKSSSC recruitment notification listing, post-wise syllabus category and advertisement text",
     sourceUrl: "https://sssc.uk.gov.in/recruitment-notification/",
-    sourcePublished: "Post-wise notices current through Aug 2026; syllabus documents dated 16 Jun 2026 and 3 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:35 IST",
+    sourcePublished: "Recruitment-notification listing re-read 29 Aug 2026, latest entry dated 21 Jul 2026; syllabus documents dated 16 Jun 2026 and 3 Aug 2026",
+    lastVerified: "29 Aug 2026, 15:56 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Dated the source precisely: the Commission's recruitment-notification listing carried nothing newer than 21 Jul 2026 when re-read on 29 Aug 2026.",
+      },
+    ],
     keywords: [
       "UKSSSC recruitment",
       "Uttarakhand Group C bharti",
@@ -2241,8 +2689,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSSSC live-advertisement listing for the Preliminary Eligibility Test (PET) 2026",
     sourceUrl: "https://upsssc.gov.in/AllNotifications.aspx",
-    sourcePublished: "Advertisement 16-Exam/2026 published 1 Aug 2026; Commission examination calendar dated 3 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement 16-Exam/2026 published 1 Aug 2026; Commission examination calendar dated 3 Aug 2026; live-advertisement listing re-read 29 Aug 2026 with the 1 Sep and 8 Sep 2026 dates unchanged",
+    lastVerified: "29 Aug 2026, 15:58 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -2284,7 +2732,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the UPSSSC advertisement listing for the next Lekhpal main-examination advertisement",
       detail:
-        "The Commission's live-advertisement listing checked on 4 August 2026 carried no open Rajaswa Lekhpal advertisement. No current-cycle date, vacancy count, fee or qualification is asserted here.",
+        "The Commission's live-advertisement listing re-read on 29 August 2026 still carried no open Rajaswa Lekhpal advertisement. No current-cycle date, vacancy count, fee or qualification is asserted here.",
     },
     summary:
       "Uttar Pradesh's high-volume village-level revenue post, recruited by the Subordinate Services Selection Commission through a main examination open to candidates holding a valid PET score.",
@@ -2307,8 +2755,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSSSC advertisement listing and notice board",
     sourceUrl: "https://upsssc.gov.in/AllNotifications.aspx",
-    sourcePublished: "Advertisement listing checked 4 Aug 2026; no open Lekhpal advertisement was listed",
-    lastVerified: "4 Aug 2026, 19:25 IST",
+    sourcePublished: "Advertisement listing re-read 29 Aug 2026; no open Lekhpal advertisement was listed",
+    lastVerified: "29 Aug 2026, 15:59 IST",
     keywords: [
       "UP Lekhpal",
       "लेखपाल भर्ती",
@@ -2342,7 +2790,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Authority's UPTET section for the next cycle's notification",
       detail:
-        "The Examination Regulatory Authority's UPTET section checked on 4 August 2026 carried no open current-cycle schedule. No UPTET date, fee or application window is asserted here.",
+        "The Examination Regulatory Authority's notice stream re-read on 29 August 2026 carried D.El.Ed 2026 counselling and merit notices but no open UPTET cycle. No UPTET date, fee or application window is asserted here.",
     },
     summary:
       "Uttar Pradesh's statutory eligibility test for appointment as a teacher for classes I to VIII, conducted by the Examination Regulatory Authority at Prayagraj.",
@@ -2372,8 +2820,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Uttar Pradesh Examination Regulatory Authority UPTET section",
     sourceUrl: "https://updeled.gov.in/DefaultTET.aspx",
-    sourcePublished: "UPTET section checked 4 Aug 2026; no open current-cycle schedule was listed",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Authority's notice stream re-read 29 Aug 2026; no open UPTET cycle was listed",
+    lastVerified: "29 Aug 2026, 16:00 IST",
     keywords: [
       "UPTET",
       "UP TET",
@@ -2464,7 +2912,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Read the Board's HTET press notes for the current schedule before applying",
       detail:
-        "The Board's official site checked on 4 August 2026 carried HTET schedule, admit-card and answer-key press notes together with the HTET certificate portal. No current-cycle date, fee or vacancy figure is asserted here.",
+        "The Board's official site re-read on 29 August 2026 still carried HTET schedule, admit-card and answer-key press notes, the HTET result and e-certificate service and the online portal for HTET-2025, but no press note opening a new cycle. No current-cycle date, fee or vacancy figure is asserted here.",
     },
     summary:
       "Haryana's eligibility test for PRT, TGT and PGT teaching posts in schools affiliated to the state, conducted by the Board of School Education at Bhiwani.",
@@ -2493,8 +2941,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Board of School Education Haryana official site and HTET press notes",
     sourceUrl: "https://bseh.org.in/home",
-    sourcePublished: "Board site checked 4 Aug 2026 carrying HTET schedule, admit-card and answer-key press notes",
-    lastVerified: "4 Aug 2026, 19:40 IST",
+    sourcePublished: "Board site re-read 29 Aug 2026 carrying HTET schedule, admit-card, answer-key and result press notes; no new cycle notified",
+    lastVerified: "29 Aug 2026, 16:02 IST",
     keywords: [
       "HTET",
       "Haryana TET",
@@ -2529,7 +2977,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Open the HSSC advertisement page and find the post code covering Patwari or Gram Sachiv",
       detail:
-        "The Commission's advertisement page checked on 4 August 2026 lists Group C advertisement 06/2026 dated 22 June 2026 and Group D advertisement 05/2026. Which advertisement carries the Patwari and Gram Sachiv post codes is not asserted here, and no date, fee or vacancy figure is claimed.",
+        "The Commission's advertisement page re-read on 29 August 2026 still lists Group C advertisement 06/2026 dated 22 June 2026 and Group D advertisement 05/2026 with its closing-date extension as the newest entries. Which advertisement carries the Patwari and Gram Sachiv post codes is not asserted here, and no date, fee or vacancy figure is claimed.",
     },
     summary:
       "Haryana's village-level revenue and panchayat posts - Patwari, Canal Patwari and Gram Sachiv - filled as Group C recruitment by the Staff Selection Commission.",
@@ -2551,8 +2999,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Haryana Staff Selection Commission advertisement listing",
     sourceUrl: "https://hssc.gov.in/index.php/advertisement",
-    sourcePublished: "Advertisement listing checked 4 Aug 2026; latest Group C advertisement 06/2026 dated 22 Jun 2026",
-    lastVerified: "4 Aug 2026, 19:45 IST",
+    sourcePublished: "Advertisement listing re-read 29 Aug 2026; latest Group C advertisement is still 06/2026 dated 22 Jun 2026",
+    lastVerified: "29 Aug 2026, 16:03 IST",
     keywords: [
       "Haryana Patwari",
       "Gram Sachiv",
@@ -2582,11 +3030,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["12th", "Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "June 2026 session admit cards live",
+      label: "June 2026 session result live",
       tone: "violet",
-      nextAction: "Download the subject admit card from the Board's TET page and watch for the result notice",
+      nextAction: "Look up the June 2026 result on the Board's TET result page using the roll number or application number",
       detail:
-        "The Board's official admit-card page for the Teacher's Eligibility Test June 2026 was live on 4 August 2026 for Special Educator, JBT, TGT (Arts, Medical, Non-Medical), Sanskrit, Punjabi and Urdu papers. No examination or result date is asserted here.",
+        "The Board's official result page for the Teacher's Eligibility Test June 2026 was live on 29 August 2026 and returns a candidate's result against a roll number or application number. The same section's admit-card page covered the Special Educator, JBT, TGT (Arts, Medical, Non-Medical), Sanskrit, Punjabi and Urdu papers. No examination or result-declaration date is asserted here.",
     },
     summary:
       "Himachal Pradesh's subject-wise eligibility test for JBT, TGT, language and special-educator teaching posts, conducted by the state Board of School Education.",
@@ -2609,13 +3057,21 @@ export const exams: Exam[] = [
       "Use the Board's own subject-wise HP TET syllabus for the session applied for.",
     ],
     officialLinks: [
+      { label: "HP TET June 2026 result page", url: "https://hpbose.org/OnlineServices/CET/TET/Result.aspx", type: "result" },
       { label: "HP TET June 2026 admit-card page", url: "https://hpbose.org/OnlineServices/CET/TET/DownloadAdmitCard.aspx", type: "notice" },
       { label: "HPBOSE official website", url: "https://hpbose.org/", type: "website" },
     ],
-    sourceTitle: "HPBOSE Teacher's Eligibility Test June 2026 admit-card page",
-    sourceUrl: "https://hpbose.org/OnlineServices/CET/TET/DownloadAdmitCard.aspx",
-    sourcePublished: "Official admit-card page for the Teacher's Eligibility Test June 2026, checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:50 IST",
+    sourceTitle: "HPBOSE Teacher's Eligibility Test June 2026 result page",
+    sourceUrl: "https://hpbose.org/OnlineServices/CET/TET/Result.aspx",
+    sourcePublished: "Official result page for the Teacher's Eligibility Test June 2026, live when re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 16:05 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "HPBOSE has moved the June 2026 Teacher's Eligibility Test on from the admit-card stage: its official TET section now carries a live 'TET June - 2026 Result' lookup by roll number or application number.",
+      },
+    ],
     keywords: [
       "HP TET",
       "HPTET",
@@ -2645,11 +3101,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["12th", "Graduate", "Professional degree"],
     status: {
-      label: "Board links a UTET 2026 application",
+      label: "UTET 2026 documents published",
       tone: "amber",
-      nextAction: "Open the Board's departmental-exam section and read the UTET notice before applying",
+      nextAction: "Read the Board's UTET 2026 documents, then use the 'Apply for UTET 2026' entry it links from its home page",
       detail:
-        "The Board's official site checked on 4 August 2026 carries an 'Apply for UTET 2026' entry under its departmental-exam section, but no dated UTET notification, fee or schedule is asserted here.",
+        "The Board published two UTET 2026 documents on 27 August 2026 - the Appendix V application form and information on the use of a scribe for UTET Paper I and Paper II - alongside the 'Apply for UTET 2026' entry linked from its home page. No UTET examination date, fee or application window is asserted here.",
     },
     summary:
       "Uttarakhand's statutory eligibility test for appointment as a teacher for classes I to VIII, conducted by the state Board of School Education at Ramnagar.",
@@ -2675,10 +3131,17 @@ export const exams: Exam[] = [
     officialLinks: [
       { label: "Uttarakhand Board of School Education official website", url: "https://ubse.uk.gov.in/", type: "website" },
     ],
-    sourceTitle: "Uttarakhand Board of School Education departmental-exam section",
+    sourceTitle: "Uttarakhand Board of School Education UTET 2026 documents and departmental-exam section",
     sourceUrl: "https://ubse.uk.gov.in/",
-    sourcePublished: "Board site checked 4 Aug 2026 listing an 'Apply for UTET 2026' entry",
-    lastVerified: "4 Aug 2026, 19:55 IST",
+    sourcePublished: "UTET 2026 application form (Appendix V) and scribe information for Paper I and II both published 27 Aug 2026; Board site re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 16:07 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "UBSE published UTET 2026 documents on 27 Aug 2026 - the Appendix V application form and scribe information for Paper I and Paper II - so the cycle is now more than a bare 'Apply for UTET 2026' link, though no examination date or fee is announced.",
+      },
+    ],
     keywords: [
       "UTET",
       "Uttarakhand TET",
@@ -2712,7 +3175,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Commission's recruitment listing for the next Patwari/Lekhpal advertisement",
       detail:
-        "The Commission's recruitment listing checked on 4 August 2026 did not show an open Patwari or Lekhpal advertisement. No current-cycle date, vacancy count, fee or age window is asserted here.",
+        "The Commission's recruitment listing re-read on 29 August 2026 still showed no open Patwari or Lekhpal advertisement; its recent entries are the Veterinary Officers, Tax and Revenue Inspector and forest-service examinations. No current-cycle date, vacancy count, fee or age window is asserted here.",
     },
     summary:
       "Uttarakhand's village-level revenue posts of Patwari and Lekhpal, recruited by the Public Service Commission after the state moved this examination to the Commission.",
@@ -2730,8 +3193,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Uttarakhand Public Service Commission recruitment listing",
     sourceUrl: "https://psc.uk.gov.in/candidate-corner/recruitment",
-    sourcePublished: "Recruitment listing checked 4 Aug 2026; no open Patwari or Lekhpal advertisement was listed",
-    lastVerified: "4 Aug 2026, 20:00 IST",
+    sourcePublished: "Recruitment listing re-read 29 Aug 2026; no open Patwari or Lekhpal advertisement was listed",
+    lastVerified: "29 Aug 2026, 16:08 IST",
     keywords: [
       "Uttarakhand Patwari",
       "Uttarakhand Lekhpal",
@@ -2877,8 +3340,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Punjab Police Advertisement No. 01 of 2026 and the June 2026 public notice on the CBT",
     sourceUrl: "https://www.punjabpolice.gov.in/media/documents/Advertisement_No._1_of_2026.pdf",
-    sourcePublished: "Advertisement published 6 Mar 2026; public notice on CBTs from 1 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement published 6 Mar 2026; public notice on CBTs from 1 Jul 2026, still the newest entry on the Punjab Police recruitment section re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 16:10 IST",
     keywords: [
       "Punjab Police constable",
       "Punjab Police bharti",
@@ -2909,10 +3372,11 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF"],
     education: ["12th"],
     status: {
-      label: "Applications closed; PET/PST schedule awaited",
-      tone: "amber",
-      nextAction: "Watch HPPSC for the Physical Standard Test and Physical Efficiency Test schedule",
-      detail: "Advertisements 57/7-2026 (Male) and 58/7-2026 (Female); the 3 Aug 2026 addendum extended the last date for online applications by 15 days to 21 Aug 2026, 11:59 PM, alongside a one-time one-year age relaxation. A further addendum dated 6 Aug 2026 applies revised EWS instructions.",
+      label: "Applications open until 5 September 2026",
+      tone: "green",
+      nextAction: "Apply through the HPPSC One Time Registration portal before 5 September 2026, 11:59 PM",
+      detail:
+        "Advertisements 57/7-2026 (Male) and 58/7-2026 (Female). Addendum No.4-06/2024-PSC(R-III) dated 21 August 2026 grants Home Guards of Himachal Pradesh a one-time five-year relaxation in the upper age limit and extends the last date for online recruitment applications by a further 15 days to 5 September 2026, 11:59 PM, after which the link is disabled. Candidates who have already applied need not apply again, and the other terms of both advertisements are unchanged.",
     },
     summary:
       "Recruitment of Class-III constables to the Himachal Pradesh Police Department under the HP Police Department (Recruitment of Constables) Rules 2024, advertised and examined by the state Public Service Commission.",
@@ -2924,7 +3388,7 @@ export const exams: Exam[] = [
       { label: "Constable (Male), advertisement 57/7-2026", total: 491 },
       { label: "Constable (Female), advertisement 58/7-2026", total: 243 },
     ],
-    age: "As on 1 January 2026: 18-25 years for General and EWS, 18-27 years for SC, ST, SC-ST Ward of Ex-Serviceman, Gorkhas, OBC and OBC Ward of Ex-Serviceman, and 20-28 years for Home Guard candidates. A one-time relaxation of one year in the upper age limit for all categories was notified on 3 August 2026.",
+    age: "As on 1 January 2026: 18-25 years for General and EWS, 18-27 years for SC, ST, SC-ST Ward of Ex-Serviceman, Gorkhas, OBC and OBC Ward of Ex-Serviceman, and 20-28 years for Home Guard candidates. A one-time relaxation of one year in the upper age limit for all categories was notified on 3 August 2026. Addendum No.4-06/2024-PSC(R-III) dated 21 August 2026 additionally grants Home Guards of Himachal Pradesh a one-time relaxation of five years in the upper age limit, following the Home Department decision conveyed by letter No. Home (A)B/02-3/2023-Part-II(Loose) dated 20 August 2026.",
     qualification:
       "10+2 pass. A candidate is eligible only if he or she has passed Matriculation and +2 from an institution, school or board situated within Himachal Pradesh; this condition does not apply to bona fide Himachalis. Persons with disabilities are not eligible for this examination.",
     fee: "A uniform ₹600 is charged from every candidate irrespective of category, payable online; the fee is not refunded or carried forward.",
@@ -2933,7 +3397,14 @@ export const exams: Exam[] = [
       { label: "Advertisements 57/7-2026 and 58/7-2026 published", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
       { label: "Addendum: one-time one-year age relaxation and extension of the last date", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
       { label: "Addendum: revised EWS instructions applied to both advertisements", date: "2026-08-06", displayDate: "6 Aug 2026", state: "completed" },
-      { label: "Last date for online recruitment applications", date: "2026-08-21", displayDate: "21 Aug 2026, 11:59 PM", state: "completed" },
+      {
+        label: "Addendum: five-year age relaxation for Home Guards of HP and a second extension",
+        date: "2026-08-21",
+        displayDate: "21 Aug 2026",
+        state: "completed",
+        note: "Moved the last date from 21 Aug 2026 to 5 Sep 2026, 11:59 PM",
+      },
+      { label: "Last date for online recruitment applications", date: "2026-09-05", displayDate: "5 Sep 2026, 11:59 PM", state: "current" },
       { label: "Physical Standard Test and Physical Efficiency Test", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [
@@ -2965,14 +3436,24 @@ export const exams: Exam[] = [
         url: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgGMznc0xvQhBcR0%2BrPp%2BMFV5lxAAc0cIlZuFQ5QhOOhs%3D",
         type: "notice",
       },
+      {
+        label: "Addendum dated 21 Aug 2026 - Home Guard age relaxation and extension to 5 Sep 2026",
+        url: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgD7GM3JBhVwRhIn%2BJEEitEzR7rvtfw519F4wqGEATw%2Fg%3D",
+        type: "notice",
+      },
       { label: "HPPSC what's new", url: "https://hppsc.hp.gov.in/Home/HomeWhatsNew", type: "notice" },
       { label: "HPPSC official website", url: "https://hppsc.hp.gov.in/", type: "website" },
     ],
     sourceTitle: "HPPSC advertisements 57/7-2026 and 58/7-2026 for Constables in the HP Police Department",
     sourceUrl: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgrmLJ%2B48MSfenisMCQ3fHXMZ0%2BajrVuV3AylOo9mGWYM%3D",
-    sourcePublished: "Advertisements dated 10 Jul 2026; addendum dated 3 Aug 2026 extending applications to 21 Aug 2026; addendum dated 6 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisements dated 10 Jul 2026; addenda dated 3 Aug and 6 Aug 2026; addendum No.4-06/2024-PSC(R-III) dated 21 Aug 2026 extending applications to 5 Sep 2026",
+    lastVerified: "29 Aug 2026, 16:12 IST",
     changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Applications are open again: HPPSC addendum No.4-06/2024-PSC(R-III) dated 21 Aug 2026 gave Home Guards of Himachal Pradesh a one-time five-year relaxation in the upper age limit and pushed the last date for online recruitment applications from 21 Aug 2026 to 5 Sep 2026, 11:59 PM. Candidates who already applied need not apply again.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -3012,7 +3493,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Board's notice stream for the written-examination date and admit card",
       detail:
-        "Applications under the detailed advertisement of 3 June 2026 closed on 2 July 2026 with a correction window to 7 July 2026. No written-examination date is published on the pages reviewed for this record.",
+        "Applications under the detailed advertisement of 3 June 2026 closed on 2 July 2026 with a correction window to 7 July 2026. The Board's notice stream re-read on 29 August 2026 still carries no written-examination date or admit-card notice for this recruitment.",
     },
     summary:
       "Direct recruitment of Group C Nursing Officers (male and female, diploma and degree holders) for the Medical Health and Family Welfare Department of Uttarakhand, conducted by the state Medical Service Selection Board.",
@@ -3062,8 +3543,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UKMSSB detailed advertisement for the Nursing Officer Examination 2026",
     sourceUrl: "https://ukmssb.org/wp-content/uploads/2026/06/Nursing-officer-Advertisment-Details.pdf",
-    sourcePublished: "Advertisement dated 3 Jun 2026; applications 12 Jun to 2 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement dated 3 Jun 2026; applications 12 Jun to 2 Jul 2026; Board notice stream re-read 29 Aug 2026 with no examination date announced",
+    lastVerified: "29 Aug 2026, 16:14 IST",
     keywords: [
       "UKMSSB nursing officer",
       "Uttarakhand staff nurse",
@@ -3093,11 +3574,11 @@ export const exams: Exam[] = [
     examTypes: ["Technical & Trades", "Public Sector Undertakings"],
     education: ["Professional degree"],
     status: {
-      label: "Post-application stage; candidate lists published",
+      label: "Post-application stage; next step not announced",
       tone: "amber",
-      nextAction: "Check the DHBVN and UHBVN recruitment pages for the shortlisting and rejected-candidate lists",
+      nextAction: "Check the DHBVN and UHBVN recruitment pages for the next notice on this GATE-based recruitment",
       detail:
-        "Applications under advertisement Rectt./HPUs/GATE/2022-2025 closed on 29 October 2025. The DHBVN recruitment page carries branch-wise candidate lists and a rejected-candidate list alongside the advertisement; no interview or joining date is asserted here.",
+        "Applications under advertisement Rectt./HPUs/GATE/2022-2025 closed on 29 October 2025. When the DHBVN career page was re-read on 29 August 2026 that advertisement - recruitment on a valid GATE-2023, GATE-2024 or GATE-2025 score, or a GATE-2022 score as a one-time measure - was the only recruitment notice shown on it. No interview or joining date is asserted here.",
     },
     summary:
       "Joint recruitment of Assistant Engineers (Electrical, Mechanical and Civil) for the Haryana power utilities on the basis of GATE 2022 to GATE 2025 scores.",
@@ -3133,8 +3614,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Haryana Power Utilities advertisement Rectt./HPUs/GATE/2022-2025 for Assistant Engineers",
     sourceUrl: "https://www.dhbvn.org.in/staticContent/Advt+DH/Advt_GATE-2022-25_dt.25-09-2025.pdf",
-    sourcePublished: "Advertisement dated 25 Sep 2025; closing date 29 Oct 2025",
-    lastVerified: "4 Aug 2026, 21:05 IST",
+    sourcePublished: "Advertisement dated 25 Sep 2025; closing date 29 Oct 2025; DHBVN career page re-read 29 Aug 2026 showing that advertisement as its only recruitment notice",
+    lastVerified: "29 Aug 2026, 16:16 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "A re-read of the DHBVN career page on 29 Aug 2026 shows advertisement Rectt./HPUs/GATE/2022-2025 as the only recruitment notice on it, so this record no longer says branch-wise candidate lists and a rejected-candidate list sit alongside it.",
+      },
+    ],
     keywords: [
       "Haryana AE GATE",
       "UHBVN assistant engineer",
@@ -3421,7 +3909,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Register on the Nigam's portal and watch its vacant-jobs listing for department-wise openings",
       detail:
-        "The Nigam runs a standing candidate-registration and deployment portal rather than a dated examination cycle. No current-cycle date, vacancy count, fee or qualification is asserted here.",
+        "The Nigam runs a standing candidate-registration and deployment portal rather than a dated examination cycle. Its vacant-jobs listing, re-read on 29 August 2026, groups openings into vacant jobs, higher-salary roles, private companies and overseas placements, each carrying its own application start and last dates. No current-cycle date, vacancy count, fee or qualification is asserted here.",
     },
     summary:
       "Haryana's state nigam for contractual deployment of manpower to government departments, boards, corporations and universities, filled through candidate registration and department-wise vacancy listings rather than a written examination.",
@@ -3444,8 +3932,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Haryana Kaushal Rozgar Nigam Limited official portal and vacant-jobs listing",
     sourceUrl: "https://hkrnl.itiharyana.gov.in/",
-    sourcePublished: "Official portal checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 21:20 IST",
+    sourcePublished: "Official portal and vacant-jobs listing re-read 29 Aug 2026 with registration open",
+    lastVerified: "29 Aug 2026, 16:18 IST",
     keywords: [
       "HKRN",
       "HKRNL",
@@ -3477,7 +3965,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Uttarakhand Police career and recruitment page for the next direct-recruitment notification",
       detail:
-        "The department's career and recruitment page checked on 4 August 2026 listed earlier direct Sub-Inspector and constable notifications and departmental examinations, but no dated open current-cycle notification. No date, vacancy count, fee or age window is asserted here.",
+        "The department's career and recruitment page re-read on 29 August 2026 still listed earlier direct Sub-Inspector and constable notifications and departmental examinations, but no dated open current-cycle notification. No date, vacancy count, fee or age window is asserted here.",
     },
     summary:
       "Direct recruitment to Uttarakhand Police, covering the direct Sub-Inspector entry and constable recruitment notified by the Police Headquarters at Dehradun.",
@@ -3499,8 +3987,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Uttarakhand Police career and recruitment page",
     sourceUrl: "https://uttarakhandpolice.uk.gov.in/career_recruitment",
-    sourcePublished: "Career and recruitment page checked 4 Aug 2026; no dated open current-cycle notification was listed",
-    lastVerified: "4 Aug 2026, 21:25 IST",
+    sourcePublished: "Career and recruitment page re-read 29 Aug 2026; no dated open current-cycle notification was listed",
+    lastVerified: "29 Aug 2026, 16:20 IST",
     keywords: [
       "Uttarakhand Police",
       "उत्तराखंड पुलिस भर्ती",
@@ -3531,7 +4019,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Open the Commission's advertisements page and read the notice for the post applied for",
       detail:
-        "The Commission's official site at Hamirpur publishes its advertisements through a client-rendered listing that could not be read for this record, so no advertisement number, date, vacancy count, fee or qualification is asserted here.",
+        "The Commission's official site at Hamirpur publishes its advertisements through a client-rendered listing that still could not be read when re-checked on 29 August 2026, so no advertisement number, date, vacancy count, fee or qualification is asserted here.",
     },
     summary:
       "Himachal Pradesh's state selection commission at Hamirpur, the successor to the Subordinate Services Selection Board, which advertises subordinate-service recruitment for state departments.",
@@ -3553,8 +4041,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Himachal Pradesh Rajya Chayan Aayog official website and advertisements page",
     sourceUrl: "https://hprca.hp.gov.in/",
-    sourcePublished: "Official site checked 4 Aug 2026; the advertisement listing is rendered client-side and could not be read",
-    lastVerified: "4 Aug 2026, 21:30 IST",
+    sourcePublished: "Official site re-checked 29 Aug 2026; the advertisement listing is rendered client-side and could not be read",
+    lastVerified: "29 Aug 2026, 16:21 IST",
     keywords: [
       "HPRCA",
       "HPSSSB Hamirpur",
@@ -3586,7 +4074,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Open the Board's vacancies and appointments section and read the notice for the post applied for",
       detail:
-        "The Board's official portal checked on 4 August 2026 carried a vacancies and appointments section with apprenticeship-training notices at the document-verification stage. No current-cycle date, vacancy count, fee or qualification is asserted here.",
+        "The Board's official portal re-read on 29 August 2026 still carried a vacancies and appointments section whose live items are apprenticeship-training notices at the document-verification stage, including a final document-verification opportunity for shortlisted candidates and a detailed notification for female apprentices. No current-cycle date, vacancy count, fee or qualification is asserted here.",
     },
     summary:
       "Recruitment and apprenticeship intake by Himachal Pradesh's state electricity board at Vidyut Bhawan, Shimla, published through its vacancies and appointments section.",
@@ -3607,8 +4095,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Himachal Pradesh State Electricity Board Limited official portal",
     sourceUrl: "https://www.hpseb.in/",
-    sourcePublished: "Official portal checked 4 Aug 2026 carrying the vacancies and appointments section",
-    lastVerified: "4 Aug 2026, 21:30 IST",
+    sourcePublished: "Official portal re-read 29 Aug 2026 carrying the vacancies and appointments section with apprenticeship-training notices",
+    lastVerified: "29 Aug 2026, 16:36 IST",
     keywords: [
       "HPSEB",
       "HPSEBL recruitment",

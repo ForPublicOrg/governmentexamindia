@@ -59,7 +59,7 @@ export const authorities: Authority[] = [
     name: "Board of Secondary Education, Odisha",
     level: "State",
     regionCodes: ["OD"],
-    allowedHosts: ["bseodisha.ac.in", "www.bseodisha.ac.in", "cdn.bseodisha.ac.in"],
+    allowedHosts: ["bseodisha.ac.in", "www.bseodisha.ac.in", "cdn.bseodisha.ac.in", "onlineapp.bseodisha.ac.in"],
     watchUrls: ["https://bseodisha.ac.in/"],
   },
   {
@@ -379,7 +379,7 @@ export const exams: Exam[] = [
       label: "Corrigenda trail active",
       tone: "amber",
       nextAction: "Read the latest 05/25 notice on BSSC's notice board before relying on an earlier copy",
-      detail: "BSSC published the detailed advertisement for the fourth graduate-level combined examination on 4 Aug 2025, extended the application date on 14 Oct 2025, and issued a further corrigendum on 21 Nov 2025. No newer notice for advertisement 05/25 is confirmed from the board reviewed here.",
+      detail: "BSSC published the detailed advertisement for the fourth graduate-level combined examination on 4 Aug 2025, extended the application date on 14 Oct 2025, and issued a further corrigendum on 21 Nov 2025. The notice board was re-read on 29 Aug 2026: its newest entries are about tenders and the Office Attendant result under advertisement 02/2022, and no newer notice for advertisement 05/25 — and no examination date — is published.",
     },
     summary: "Graduate-level combined competitive recruitment to Bihar subordinate government posts through BSSC.",
     vacancyLabel: "Not announced",
@@ -392,7 +392,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Detailed advertisement published", date: "2025-08-04", displayDate: "4 Aug 2025", state: "completed" },
       { label: "Application date extension notice", date: "2025-10-14", displayDate: "14 Oct 2025", state: "completed", note: "The same notice also covered advertisement 06/25." },
-      { label: "Latest corrigendum", date: "2025-11-21", displayDate: "21 Nov 2025", state: "current" },
+      { label: "Latest corrigendum", date: "2025-11-21", displayDate: "21 Nov 2025", state: "completed" },
+      { label: "Examination date for advertisement 05/25", displayDate: "Not announced", state: "current" },
     ],
     eligibility: [
       "The advertisement covers graduate-level vacancies requisitioned through the General Administration Department, Bihar: Assistant Branch Officer and Planning Assistant (Pay Level 7), Junior Statistical Assistant (Level 7), Data Entry Operator Grade-C (Level 6) and Auditor under the Directorate of Audit, Finance Department and under the Co-operation Department (Level 5).",
@@ -420,8 +421,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "BSSC notice board trail for advertisement 05/25 (detailed advertisement, extension and corrigenda)",
     sourceUrl: "https://bssc.bihar.gov.in/NoticeBoard.htm",
-    sourcePublished: "Latest corrigendum dated 21 Nov 2025",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Latest corrigendum dated 21 Nov 2025 — still the newest 05/25 notice on the board on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:45 IST",
     keywords: [
       "BSSC CGL",
       "Bihar SSC graduate level",
@@ -576,8 +577,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JPSC examination links page: preliminary exam schedule and main-examination press releases for advertisement 01/2026",
     sourceUrl: "https://www.jpsc.gov.in/Examination-Links.php",
-    sourcePublished: "Press releases of 9 and 14 Jul 2026; JPSC Recent Examinations table re-read 20 Aug 2026",
-    lastVerified: "20 Aug 2026, 04:15 IST",
+    sourcePublished: "Press releases of 9 and 14 Jul 2026; JPSC examination-links page re-read 29 Aug 2026 with nothing newer on advertisement 01/2026",
+    lastVerified: "29 Aug 2026, 09:45 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -619,7 +620,7 @@ export const exams: Exam[] = [
       label: "Main examination held; result awaited",
       tone: "violet",
       nextAction: "Check JPSC examination links for results and later stages",
-      detail: "JPSC held the Forest Range Officer main examination on 22 and 24 Jan 2026 and issued a further press release on advertisement 04/2024 on 14 Jul 2026. No result date is confirmed from the notices reviewed here.",
+      detail: "JPSC held the Forest Range Officer main examination on 22 and 24 Jan 2026 and issued a further press release on advertisement 04/2024 on 14 Jul 2026. The Commission's examination-links page was re-read on 29 Aug 2026 and carries nothing newer on this advertisement, so no result date is confirmed.",
     },
     summary: "Recruitment of Forest Range Officers for Jharkhand through the state Public Service Commission.",
     vacancyLabel: "Not announced",
@@ -631,7 +632,8 @@ export const exams: Exam[] = [
     pay: "Post-specific Jharkhand pay level for Forest Range Officer; see advertisement 04/2024.",
     timeline: [
       { label: "Main examination", date: "2026-01-22", displayDate: "22 Jan 2026", state: "completed", note: "JPSC's calendar also lists a second main-examination date of 24 Jan 2026." },
-      { label: "Press release on advertisement 04/2024", date: "2026-07-14", displayDate: "14 Jul 2026", state: "current" },
+      { label: "Press release on advertisement 04/2024", date: "2026-07-14", displayDate: "14 Jul 2026", state: "completed" },
+      { label: "Main-examination result", displayDate: "Awaited - JPSC has published nothing on 04/2024 since 14 Jul 2026", state: "current" },
     ],
     eligibility: [
       "Online applications are invited from qualified Indian citizens against the requisition received under Jharkhand Forest, Environment & Climate Change Department letter no. 1480 dated 22.04.2024 (advertisement 04/2024).",
@@ -649,8 +651,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JPSC examination links and 2026 calendar for Forest Range Officer advertisement 04/2024",
     sourceUrl: "https://www.jpsc.gov.in/Examination-Links.php",
-    sourcePublished: "Press release dated 14 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:30 IST",
+    sourcePublished: "Press release dated 14 Jul 2026 — still the newest entry for advertisement 04/2024 on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:45 IST",
     keywords: [
       "JPSC FRO",
       "Jharkhand forest range officer",
@@ -684,7 +686,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Read the JHTET-2026 press advertisement and notification on JAC's official JTET page",
       detail:
-        "The Jharkhand Academic Council published the JHTET-2026 press advertisement under reference JAC/JTET/2406/24-Secy/258/26 dated 28 Mar 2026, under the Jharkhand Teacher Eligibility Test Rules 2026 notified as notification no. 487 dated 26 Mar 2026. The advertisement states that the admit-card date and examination date will be published later.",
+        "The Jharkhand Academic Council published the JHTET-2026 press advertisement under reference JAC/JTET/2406/24-Secy/258/26 dated 28 Mar 2026, under the Jharkhand Teacher Eligibility Test Rules 2026 notified as notification no. 487 dated 26 Mar 2026. The advertisement states that the admit-card date and examination date will be published later, and the Council's JHTET page, re-read on 29 Aug 2026, still carries only the press advertisement, the notification, the syllabus and the application portal link — no admit-card or examination date.",
     },
     summary:
       "Jharkhand's eligibility test for appointment as a teacher in the state's elementary schools, conducted by the Jharkhand Academic Council at Level 1 (Classes 1–5) and Level 2 (Classes 6–8).",
@@ -755,8 +757,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JHTET-2026 press advertisement, Jharkhand Academic Council (JAC/JTET/2406/24-Secy/258/26)",
     sourceUrl: "https://jac.jharkhand.gov.in/jac/jhtet.html",
-    sourcePublished: "Press advertisement dated 28 Mar 2026",
-    lastVerified: "4 Aug 2026, 19:15 IST",
+    sourcePublished: "Press advertisement dated 28 Mar 2026; JAC's JHTET page re-read 29 Aug 2026 with no examination or admit-card date",
+    lastVerified: "29 Aug 2026, 10:10 IST",
     keywords: [
       "JTET",
       "JHTET",
@@ -788,10 +790,10 @@ export const exams: Exam[] = [
     education: ["12th", "ITI / Diploma", "Professional degree"],
     verification: "verified",
     status: {
-      detail: "Notice No. IIE-54/2026-2487/OSSSC dated 10 Aug 2026 extended registration/re-registration to 16 Aug 2026 and submission of online applications to 19 Aug 2026. Both dates have now passed, so the window is closed; no written-test date has been announced.",
-      label: "Applications closed on 19 Aug 2026",
-      tone: "amber",
-      nextAction: "Watch osssc.gov.in for the Nursing Officer 2026 written-test date and admit-card notice.",
+      detail: "Notice No. IIE-54/2026-2487/OSSSC dated 10 Aug 2026 extended registration/re-registration to 16 Aug 2026 and submission of online applications to 19 Aug 2026, and that window has closed. OSSSC has since issued Notification No. IIE-54/2026-2586/OSSSC dated 21 Aug 2026 on the conduct of the written test for Nursing Officer-2026 in Computer Based Recruitment Examination (CBRE) mode. The notification itself is served through the Commission's notice board rather than as a plain link, so no test date, shift or centre is asserted here — open the notification and your candidate login for those.",
+      label: "Applications closed; written test notified in CBRE mode",
+      tone: "blue",
+      nextAction: "Open Notification No. IIE-54/2026-2586/OSSSC dated 21 Aug 2026 on osssc.gov.in for your written-test date and shift, then watch for the admission letter.",
     },
     summary: "District-cadre Nursing Officer recruitment administered by the Odisha Sub-ordinate Staff Selection Commission.",
     vacancyLabel: "Not announced",
@@ -810,7 +812,18 @@ export const exams: Exam[] = [
       { label: "Dateline extended again", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
       { label: "Registration / re-registration closed", date: "2026-08-16", displayDate: "16 Aug 2026", state: "completed" },
       { label: "Last date for submission of online applications", date: "2026-08-19", displayDate: "19 Aug 2026", state: "completed" },
-      { label: "Written examination", displayDate: "Date to be announced", state: "tentative" },
+      {
+        label: "Notification on conduct of the written test in CBRE mode",
+        date: "2026-08-21",
+        displayDate: "21 Aug 2026",
+        state: "completed",
+        note: "Notification No. IIE-54/2026-2586/OSSSC.",
+      },
+      {
+        label: "Written examination (CBRE)",
+        displayDate: "Not announced here - read Notification No. IIE-54/2026-2586/OSSSC for your date and shift",
+        state: "current",
+      },
     ],
     selectionStages: [
       "See the Nursing Officer 2026 advertisement; the notices reviewed here record only the application stage and do not set out the selection stages.",
@@ -826,9 +839,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "OSSSC recruitment notices for District Cadre Nursing Officer recruitment 2026",
     sourceUrl: "https://osssc.gov.in/Public/OSSSC/Default.aspx",
-    sourcePublished: "Advertisement No. 1962/OSSSC dated 12 Jun 2026; latest dateline-extension notice dated 10 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement No. 1962/OSSSC dated 12 Jun 2026; written-test notification No. IIE-54/2026-2586/OSSSC dated 21 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:40 IST",
     changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "OSSSC notified the conduct of the Nursing Officer-2026 written test in CBRE mode on 21 Aug 2026 (Notification No. IIE-54/2026-2586/OSSSC). Read that notification for your test date and shift.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -842,6 +860,86 @@ export const exams: Exam[] = [
       "district cadre nurse Odisha",
       "osssc nursing officer 2026 apply online",
       "odisha staff nurse vacancy",
+    ],
+  }),
+  exam({
+    slug: "osssc-radiographer-2026",
+    title: "OSSSC Radiographer Recruitment 2026",
+    shortTitle: "OSSSC Radiographer",
+    aliases: ["Odisha Radiographer 2026", "IIE-60/2026-2630", "ଓଡ଼ିଶା ରେଡ଼ିଓଗ୍ରାଫର ନିଯୁକ୍ତି"],
+    organisation: "Odisha Sub-ordinate Staff Selection Commission",
+    governmentLevel: "State",
+    jurisdiction: "Odisha",
+    state: "Odisha",
+    stateCode: "OD",
+    regionCodes: ["OD"],
+    cycle: "2026",
+    year: 2026,
+    notificationNumber: "IIE-60/2026-2630/OSSSC",
+    sector: "Health services",
+    examTypes: ["Health & Medical", "Technical & Trades"],
+    education: ["12th", "ITI / Diploma"],
+    verification: "verified",
+    status: {
+      label: "Advertisement published 28 Aug 2026",
+      tone: "blue",
+      nextAction: "Open Advertisement No. IIE-60/2026-2630/OSSSC on osssc.gov.in for the vacancies, eligibility and application dates before applying",
+      detail:
+        "OSSSC published Advertisement No. IIE-60/2026-2630/OSSSC and Short Advertisement No. IIE-60/2026-2623/OSSSC, both dated 28.08.2026, inviting online applications for recruitment to the post of Radiographer-2026. The advertisement documents are served through the Commission's notice board rather than as plain links, so no vacancy count, application window, age limit, qualification, fee or pay is asserted here — read the advertisement itself.",
+    },
+    summary:
+      "Recruitment to the post of Radiographer in Odisha, administered by the Odisha Sub-ordinate Staff Selection Commission, advertised on 28 Aug 2026.",
+    vacancyLabel: "Not announced",
+    vacancyNote:
+      "OSSSC's notice board entries for Advertisement No. IIE-60/2026-2630/OSSSC carry no vacancy figure; use the advertisement itself for the district-wise and category-wise break-up.",
+    age: "As prescribed in the Radiographer-2026 advertisement; the notice board entries reviewed here do not restate age limits or relaxations.",
+    qualification:
+      "As prescribed in the Radiographer-2026 advertisement; the notice board entries reviewed here do not restate the radiography qualification or registration requirement.",
+    fee: "See the Radiographer-2026 advertisement for the examination fee and the categories exempted from it.",
+    pay: "As prescribed in the Radiographer-2026 advertisement; the notice board entries reviewed here do not restate the pay level.",
+    selectionStages: [
+      "See the Radiographer-2026 advertisement; the notice board entries reviewed here record only the advertisement and do not set out the selection stages.",
+    ],
+    syllabus: ["Use the official scheme of examination and syllabus in OSSSC's Radiographer-2026 advertisement."],
+    timeline: [
+      {
+        label: "Advertisement and short advertisement published",
+        date: "2026-08-28",
+        displayDate: "28 Aug 2026",
+        state: "completed",
+        note: "Advertisement No. IIE-60/2026-2630/OSSSC and Short Advertisement No. IIE-60/2026-2623/OSSSC.",
+      },
+      {
+        label: "Online registration and application window",
+        displayDate: "Not announced here - read the advertisement for the dates",
+        state: "current",
+      },
+    ],
+    eligibility: [
+      "Read Advertisement No. IIE-60/2026-2630/OSSSC on the Commission's notice board for the qualification, registration, age, Odia language and category rules; nothing about them is asserted here.",
+      "OSSSC recruitments of this kind are normally district or cadre based, so check in the advertisement where a selected candidate is posted before choosing a district.",
+    ],
+    officialLinks: [
+      { label: "OSSSC current notices", url: "https://osssc.gov.in/Public/OSSSC/Default.aspx", type: "notice" },
+      { label: "OSSSC official website", url: "https://www.osssc.gov.in/", type: "website" },
+    ],
+    sourceTitle: "OSSSC notice board entries for Advertisement No. IIE-60/2026-2630/OSSSC (Radiographer-2026)",
+    sourceUrl: "https://osssc.gov.in/Public/OSSSC/Default.aspx",
+    sourcePublished: "Advertisement No. IIE-60/2026-2630/OSSSC dated 28.08.2026",
+    lastVerified: "29 Aug 2026, 09:40 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Record added after OSSSC advertised recruitment to the post of Radiographer-2026 on 28 Aug 2026.",
+      },
+    ],
+    keywords: [
+      "OSSSC radiographer",
+      "Odisha radiographer recruitment",
+      "ଓଡ଼ିଶା ରେଡ଼ିଓଗ୍ରାଫର",
+      "osssc radiographer 2026 apply online",
+      "odisha x-ray technician vacancy",
     ],
   }),
   exam({
@@ -863,7 +961,7 @@ export const exams: Exam[] = [
     education: ["12th", "ITI / Diploma", "Graduate"],
     verification: "verified",
     status: {
-      detail: "OSSSC conducted the CRE-2025 written test for these posts and published answer keys and response sheets on 3 Jul 2026, with a further answer-key notification on 10 Jul 2026. Notification No. IIE-79/2026-2477/OSSSC dated 6 Aug 2026 opened a refund of the Rs 500 examination fee for candidates who paid it and appeared in the written test, through the Examination Fees Refund Management menu on the candidate portal, with bank details due by 16 Aug 2026. No written-test result or screening list has been published for these posts.",
+      detail: "OSSSC conducted the CRE-2025 written test for these posts and published answer keys and response sheets on 3 Jul 2026, with a further answer-key notification on 10 Jul 2026. Notification No. IIE-79/2026-2477/OSSSC dated 6 Aug 2026 opened a refund of the Rs 500 examination fee for candidates who paid it and appeared in the written test, through the Examination Fees Refund Management menu on the candidate portal, with bank details due by 16 Aug 2026; a further refund notification, No. IIE-79/2026-2551/OSSSC dated 20 Aug 2026, followed. No written-test result or screening list has been published for these posts, on a notice board re-read on 29 Aug 2026.",
       label: "Written test held; fee refund closed, result awaited",
       tone: "violet",
       nextAction: "Watch the OSSSC notice board for the written-test result and screening list",
@@ -899,6 +997,7 @@ export const exams: Exam[] = [
       { label: "Answer keys and response sheets published", date: "2026-07-03", displayDate: "3 Jul 2026", state: "completed" },
       { label: "Further answer-key notification", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
       { label: "Examination-fee refund window closed", date: "2026-08-16", displayDate: "16 Aug 2026", state: "completed" },
+      { label: "Further examination-fee refund notification (No. IIE-79/2026-2551/OSSSC)", date: "2026-08-20", displayDate: "20 Aug 2026", state: "completed" },
       { label: "Written-test result and screening list", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
@@ -935,9 +1034,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "OSSSC advertisement IIE-120/2025-3219/OSSSC for Combined Recruitment Examination-2025",
     sourceUrl: "https://www.osssc.gov.in/Docs/CRE-2025-3219.pdf",
-    sourcePublished: "Answer keys 3 and 10 Jul 2026; fee-refund notification dated 6 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:45 IST",
+    sourcePublished: "Answer keys 3 and 10 Jul 2026; fee-refund notifications dated 6 Aug 2026 and 20 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:40 IST",
     changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "OSSSC issued a further examination-fee refund notification for these posts on 20 Aug 2026. The written-test result and screening list are still not published.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -975,8 +1079,8 @@ export const exams: Exam[] = [
     education: ["10th", "12th"],
     verification: "verified",
     status: {
-      detail: "OSSSC published the provisional screening list of candidates called for the Physical Test (Physical Standard Measurement and Physical Efficiency Test) on 10 Aug 2026; the notice states the detailed programme for the Physical Test will be intimated later. A separate notice of 6 Aug 2026 started the refund of examination fees for this cycle.",
-      label: "Screening list for Physical Test published",
+      detail: "OSSSC published the provisional screening list of candidates called for the Physical Test (Physical Standard Measurement and Physical Efficiency Test) on 10 Aug 2026; the notice states the detailed programme for the Physical Test will be intimated later. A notice of 6 Aug 2026 started the refund of examination fees for this cycle, and a further refund notification, No. IIE-80/2026-2549/OSSSC dated 20 Aug 2026, followed. The Commission's notice board carried no Physical Test programme when it was re-read on 29 Aug 2026.",
+      label: "Screening list out; Physical Test programme awaited",
       tone: "violet",
       nextAction: "Watch osssc.gov.in for the Physical Test (PSM/PET) programme and admit cards.",
     },
@@ -1005,8 +1109,9 @@ export const exams: Exam[] = [
       { label: "Last date for online applications", date: "2026-02-07", displayDate: "7 Feb 2026", state: "completed" },
       { label: "Revised answer keys of the written test published", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
       { label: "Refund of examination fees notified", date: "2026-08-06", displayDate: "6 Aug 2026", state: "completed" },
-      { label: "Provisional screening list for the Physical Test published", date: "2026-08-10", displayDate: "10 Aug 2026", state: "current" },
-      { label: "Physical Test (PSM & PET)", displayDate: "Date not announced - the programme is to be intimated later", state: "tentative" },
+      { label: "Provisional screening list for the Physical Test published", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
+      { label: "Further examination-fee refund notification (No. IIE-80/2026-2549/OSSSC)", date: "2026-08-20", displayDate: "20 Aug 2026", state: "completed" },
+      { label: "Physical Test (PSM & PET)", displayDate: "Date not announced - the programme is to be intimated later", state: "current" },
     ],
     eligibility: [
       "Recruitment runs under the OSSSC (District Cadre) Rules 2012, the Odisha Subordinate Forest Service (Method of Recruitment and Conditions of Service of Foresters) Rules 2018 and of Forest Guards Rules 2018, and the Odisha Lower Excise Service (Excise Constables) Rules 2023.",
@@ -1041,9 +1146,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "OSSSC advertisement IIE-121/2025-3220/OSSSC for Combined Recruitment Examination-2025 (II)",
     sourceUrl: "https://www.osssc.gov.in/Docs/CRE-2025-II-3220.pdf",
-    sourcePublished: "Advertisement No. 3220/OSSSC dated 30 Dec 2025; provisional screening-list notice No. IIE-30/2026-2499/OSSSC dated 10 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement No. 3220/OSSSC dated 30 Dec 2025; provisional screening-list notice No. IIE-30/2026-2499/OSSSC dated 10 Aug 2026; refund notification No. IIE-80/2026-2549/OSSSC dated 20 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:40 IST",
     changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "OSSSC issued a further examination-fee refund notification for Forester, Forest Guard and Excise Constable on 20 Aug 2026. The Physical Test programme is still not announced.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -1158,7 +1268,7 @@ export const exams: Exam[] = [
       tone: "slate",
       nextAction: "Download the OTET-2025 digital certificate, and watch the Board's site for an OTET-2026 notification",
       detail:
-        "The Board of Secondary Education, Odisha published the OTET-2025 result along with the final scoring keys, OMR view and digital certificates on 12 Feb 2026. The Board invited a tender for confidential materials for OTET Examination-2026 on 17 Apr 2026, but no OTET-2026 notification, schedule or fee appears in the notices reviewed here.",
+        "The Board of Secondary Education, Odisha published the OTET-2025 result along with the final scoring keys, OMR view and digital certificates on 12 Feb 2026. The Board invited a tender for confidential materials for OTET Examination-2026 on 17 Apr 2026, but its dated notice list, re-read on 29 Aug 2026, still carries no OTET-2026 notification, schedule or fee. Do not confuse this with OSSTET-2026, the Board's separate secondary-level test, whose application form the Board opened on 11 Aug 2026.",
     },
     summary:
       "Odisha's teacher eligibility test conducted by the Board of Secondary Education, Odisha, in two papers — the Board published OTET-2025 scoring keys for Paper I and for Paper II in two subject streams.",
@@ -1201,6 +1311,11 @@ export const exams: Exam[] = [
         label: "Tender invited for OTET Examination-2026 confidential materials",
         date: "2026-04-17",
         displayDate: "17 Apr 2026",
+        state: "completed",
+      },
+      {
+        label: "OTET-2026 notification",
+        displayDate: "Not announced",
         state: "current",
       },
     ],
@@ -1224,8 +1339,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Board of Secondary Education, Odisha dated notice list for OTET-2025",
     sourceUrl: "https://bseodisha.ac.in/",
-    sourcePublished: "OTET-2025 result and certificate notices dated 12 Feb 2026; OTET-2026 tender dated 17 Apr 2026",
-    lastVerified: "4 Aug 2026, 19:30 IST",
+    sourcePublished: "OTET-2025 result and certificate notices dated 12 Feb 2026; OTET-2026 tender dated 17 Apr 2026; notice list re-read 29 Aug 2026 with no OTET-2026 notification",
+    lastVerified: "29 Aug 2026, 09:50 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "The Board's notice list still carries no OTET-2026 notification. The OSSTET-2026 application form the Board opened on 11 Aug 2026 is the separate secondary-level test, not OTET.",
+      },
+    ],
     keywords: [
       "OTET",
       "Odisha TET",
@@ -1235,6 +1357,106 @@ export const exams: Exam[] = [
       "otet paper 1 paper 2",
       "odisha teacher eligibility test",
       "otet result certificate",
+    ],
+  }),
+  exam({
+    slug: "bseodisha-osstet-2026",
+    title: "Odisha Secondary School Teacher Eligibility Test 2026 (OSSTET)",
+    shortTitle: "OSSTET 2026",
+    aliases: ["OSSTET-2026", "Odisha Secondary TET", "ଓଡ଼ିଶା ମାଧ୍ୟମିକ ବିଦ୍ୟାଳୟ ଶିକ୍ଷକ ଯୋଗ୍ୟତା ପରୀକ୍ଷା"],
+    organisation: "Board of Secondary Education, Odisha",
+    governmentLevel: "State",
+    jurisdiction: "Odisha",
+    state: "Odisha",
+    stateCode: "OD",
+    regionCodes: ["OD"],
+    cycle: "2026",
+    year: 2026,
+    sector: "Teacher eligibility",
+    examTypes: ["Teaching & Education"],
+    education: ["Graduate", "Postgraduate"],
+    verification: "verified",
+    status: {
+      label: "Application form online; last date extended — see the Board's 14 Aug notification",
+      tone: "blue",
+      nextAction: "Open the Board's date-extension notification of 14 Aug 2026 for the last date, then apply through the OSSTET-2026 portal",
+      detail:
+        "The Board of Secondary Education, Odisha put the OSSTET-2026 application form online on 11 Aug 2026 and issued a 'Date Extended Notification Regarding OSSTET-2026' on 14 Aug 2026. That notification is a scanned image, so the revised last date is not restated here — read it on the Board's site. The Board separately invited a tender for the transportation of OSSTET-2026 confidential material on 17 Aug 2026. No examination date, fee or eligibility condition is asserted here.",
+    },
+    summary:
+      "Odisha's eligibility test for secondary school teacher posts, conducted by the Board of Secondary Education, Odisha. It is a separate test from OTET, which covers the elementary levels.",
+    vacancyLabel: "Eligibility test — no vacancies",
+    vacancyNote: "OSSTET is a qualifying eligibility test conducted by the Board; it does not itself carry vacancies.",
+    age: "The Board's OSSTET-2026 notices reviewed here do not restate an age limit; use the official OSSTET-2026 notification.",
+    qualification:
+      "The Board's OSSTET-2026 notices reviewed here do not restate the qualification; teacher-education requirements are governed by the official OSSTET notification and NCTE norms. Do not assume an earlier cycle's wording.",
+    fee: "The Board's OSSTET-2026 notices reviewed here do not restate the examination fee; use the official OSSTET-2026 notification.",
+    pay: "OSSTET is an eligibility test, not an appointment; pay is fixed by the recruitment rules of the teacher post applied for later.",
+    selectionStages: [
+      "A qualifying eligibility test conducted by the Board of Secondary Education, Odisha for secondary school teacher posts; the paper structure for this cycle is not asserted here.",
+    ],
+    syllabus: ["Use the official OSSTET-2026 syllabus published by the Board of Secondary Education, Odisha."],
+    timeline: [
+      {
+        label: "OSSTET-2026 application form published online",
+        date: "2026-08-11",
+        displayDate: "11 Aug 2026",
+        state: "completed",
+      },
+      {
+        label: "Date-extension notification for OSSTET-2026",
+        date: "2026-08-14",
+        displayDate: "14 Aug 2026",
+        state: "completed",
+        note: "The notification is a scanned image; read it for the revised last date.",
+      },
+      {
+        label: "Online application window",
+        displayDate: "Extended last date not announced here - read the Board's 14 Aug 2026 notification before applying",
+        state: "current",
+      },
+      {
+        label: "Examination date",
+        displayDate: "Not announced",
+        state: "tentative",
+      },
+    ],
+    eligibility: [
+      "OSSTET is a qualifying eligibility test for secondary school teacher posts in Odisha; qualifying does not by itself create a claim to appointment.",
+      "Confirm education, training, age, the levels and subjects each paper covers, and the category rules from the Board's own OSSTET-2026 notification and prospectus; nothing about them is asserted here.",
+    ],
+    officialLinks: [
+      { label: "Board of Secondary Education, Odisha official website", url: "https://bseodisha.ac.in/", type: "website" },
+      {
+        label: "Date-extension notification for OSSTET-2026",
+        url: "https://bseodisha.ac.in/images12/noti14082026.pdf",
+        type: "notice",
+      },
+      {
+        label: "OSSTET-2026 online application",
+        url: "https://onlineapp.bseodisha.ac.in/osstetI2026/",
+        type: "apply",
+      },
+    ],
+    sourceTitle: "Board of Secondary Education, Odisha dated notice list entries for OSSTET-2026",
+    sourceUrl: "https://bseodisha.ac.in/",
+    sourcePublished: "Application form published 11 Aug 2026; date-extension notification dated 14 Aug 2026",
+    lastVerified: "29 Aug 2026, 10:16 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Record added after the Board of Secondary Education, Odisha opened the OSSTET-2026 application form on 11 Aug 2026 and extended its date on 14 Aug 2026.",
+      },
+    ],
+    keywords: [
+      "OSSTET",
+      "OSSTET 2026",
+      "Odisha secondary TET",
+      "ଓଡ଼ିଶା ଏସଏସଟିଇଟି",
+      "BSE Odisha OSSTET",
+      "osstet 2026 apply online",
+      "odisha secondary school teacher eligibility test",
     ],
   }),
   listedExam({
@@ -1271,8 +1493,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "OPSC official website — Candidate's Corner and the Commission's notice on the fee-exemption order",
     sourceUrl: "https://opsc.gov.in/public/opsc/default.aspx",
-    sourcePublished: "OPSC official website checked 4 Aug 2026; no current-cycle OCS advertisement listed in the notices reviewed; fee-exemption notice cites GA & PG Department order No. 9897/Gen dated 11.04.2022",
-    lastVerified: "4 Aug 2026, 21:05 IST",
+    sourcePublished: "OPSC official website re-checked 29 Aug 2026; no current-cycle OCS advertisement appears in its notices, whose newest entries are Assistant Professor and Veterinary Assistant Surgeon stage notices; fee-exemption notice cites GA & PG Department order No. 9897/Gen dated 11.04.2022",
+    lastVerified: "29 Aug 2026, 10:05 IST",
     keywords: [
       "OCS",
       "OAS",
@@ -1330,8 +1552,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "WBPSC indicative advertisement for West Bengal Civil Service (Executive) etc. Examination 2025 (Advt. No. 03/2025), with the previous cycle's scheme and syllabus for context",
     sourceUrl: "https://psc.wb.gov.in/",
-    sourcePublished: "Indicative advertisement 03/2025 announced 29 Nov 2025; previous cycle's scheme and syllabus (Advt. No. 8/2024) uploaded 14 Nov 2025",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Indicative advertisement 03/2025 announced 29 Nov 2025; previous cycle's scheme and syllabus (Advt. No. 8/2024) uploaded 14 Nov 2025; announcements page re-read 29 Aug 2026 with no detailed WBCS 2025 advertisement",
+    lastVerified: "29 Aug 2026, 09:45 IST",
     keywords: [
       "WBCS",
       "WBCS Executive",
@@ -1412,8 +1634,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "WBPSC detailed advertisement and scheme & syllabus for Miscellaneous Services Recruitment Examination, 2024 (Advt. No. 13/2024)",
     sourceUrl: "https://psc.wb.gov.in/Download?param1=Ad_20260425125928_Detailed_Advt_13_2024.pdf&param2=advertisement",
-    sourcePublished: "Detailed advertisement announced 20 May 2026; scheme and syllabus uploaded 25 Apr 2026; latest edit-window announcement 22 Jun 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Detailed advertisement announced 20 May 2026; scheme and syllabus uploaded 25 Apr 2026; latest edit-window announcement 22 Jun 2026 — the announcements page was re-read on 29 Aug 2026 and carries no preliminary examination date",
+    lastVerified: "29 Aug 2026, 09:45 IST",
     keywords: [
       "WBPSC MSRE",
       "WB Misc exam",
@@ -1474,8 +1696,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "West Bengal Board of Primary Education dated notice list, including the TET-2023 notices and the 2026 Special Education Teacher TET notices",
     sourceUrl: "https://wbbpe.wb.gov.in/pages/notice.aspx",
-    sourcePublished: "TET-2023 notice and final answer keys dated 24 Sep 2025; Special Education Teacher TET result dated 9 Mar 2026; notice list checked 4 Aug 2026",
-    lastVerified: "20 Aug 2026, 04:00 IST",
+    sourcePublished: "TET-2023 notice and final answer keys dated 24 Sep 2025; Special Education Teacher TET result dated 9 Mar 2026; notice list re-read 29 Aug 2026, whose August entries are all about the D.El.Ed. course and examinations",
+    lastVerified: "29 Aug 2026, 10:00 IST",
     keywords: [
       "WB TET",
       "WBTET",
@@ -1589,11 +1811,17 @@ export const exams: Exam[] = [
       "WB SSC teacher recruitment",
     ],
   }),
-  listedExam({
+  exam({
     slug: "jssc-graduate-level-cce-2026",
-    title: "JSSC Jharkhand Graduate Level Combined Competitive Examination 2026",
+    title: "JSSC Jharkhand Technical / Special-Qualification Graduate Level Combined Competitive Examination 2026",
     shortTitle: "JSSC Graduate Level CCE",
-    aliases: ["JTGLCCE 2026", "JSSC CGL", "झारखंड स्नातक स्तरीय संयुक्त प्रतियोगिता परीक्षा"],
+    aliases: [
+      "JTGLCCE 2026",
+      "JSSC CGL",
+      "Advertisement 01/2026",
+      "झारखंड स्नातक स्तरीय संयुक्त प्रतियोगिता परीक्षा",
+      "झारखण्ड तकनीकी/विशिष्ट योग्यताधारी स्नातक स्तरीय संयुक्त प्रतियोगिता परीक्षा",
+    ],
     organisation: "Jharkhand Staff Selection Commission",
     governmentLevel: "State",
     jurisdiction: "Jharkhand",
@@ -1602,24 +1830,90 @@ export const exams: Exam[] = [
     regionCodes: ["JH"],
     cycle: "2026",
     year: 2026,
+    notificationNumber: "01/2026",
     sector: "Subordinate services",
-    examTypes: ["Civil Services & Administration"],
+    examTypes: ["Civil Services & Administration", "Specialist & Professional"],
     education: ["Graduate"],
+    verification: "verified",
     status: {
-      label: "Official notice active",
+      label: "Applications closed; examination date awaited",
       tone: "amber",
-      nextAction: "Read JSSC's current notice for JTGLCCE-2026 before applying",
-      detail: "JSSC's official What's New page carries an active notice for the Jharkhand Graduate Level Combined Competitive Examination 2026, covering posts such as Auditor, Statistical Assistant, Laboratory Assistant, Inspector and Fishery Extension Supervisor. Vacancy count and dates are not confirmed from the notice reviewed here.",
+      nextAction: "Watch jssc.jharkhand.gov.in for the JTGLCCE-2026 examination date and admit card",
+      detail:
+        "JSSC's brochure for advertisement 01/2026 opened online registration for the regular vacancies from 1 Jun 2026 to the midnight of 30 Jun 2026, allowed fee payment and photo/signature upload until midnight on 3 Jul 2026, and reopened an edit link from 5 to 10 Jul 2026. All three windows have closed and no examination date is published. A separate brochure covers this cycle's backlog vacancies.",
     },
-    summary: "Jharkhand's graduate-level combined competitive recruitment to Group C posts including Auditor, Statistical Assistant and Inspector through JSSC.",
+    summary:
+      "Jharkhand's graduate-level combined competitive recruitment for technical and specially-qualified Group C posts — Auditor, Junior Scientific Assistant, Laboratory Assistant, Assistant Entomologist, Inspector under the vector-borne disease control programme, Block Statistical Supervisor, Dairy Technical Officer and Fishery Extension Supervisor — through JSSC.",
+    vacancyLabel: "Post-wise totals published in the brochure",
+    vacancyNote:
+      "The brochure for advertisement 01/2026 prints separate category-wise vacancy tables for each requisitioning department rather than one consolidated headline figure; read the tables in the brochure for the post you applied to. A separate brochure covers the backlog vacancies of the same cycle.",
+    age:
+      "Age is computed as on 1 August 2025 (brochure, clause 6); for Junior Scientific Assistant at the State Drug Testing Laboratory, Namkum, Ranchi, the maximum age of staff already working there on contract is computed from the date of their first contractual appointment. Minimum age 21 years. Maximum age, under Department of Personnel, Administrative Reforms and Rajbhasha resolution no. 29 dated 04.01.2021: Unreserved and EWS 35 years; Extremely Backward Class (Annexure-1) and Backward Class (Annexure-2) men 37 years; women of the Unreserved, EWS, EBC (Annexure-1) and BC (Annexure-2) categories 38 years; Scheduled Tribe and Scheduled Caste men and women 40 years. Candidates with a disability in any category get 10 further years.",
+    qualification:
+      "Post-specific graduate or technical qualification; the brochure carries a separate qualification against each post. Read that table for the post you applied to — nothing generic is asserted here.",
+    fee:
+      "₹100. Scheduled Tribe and Scheduled Caste candidates of Jharkhand pay ₹50, and candidates of Jharkhand with 40% or more disability are exempt under Department of Personnel letter no. 8559 dated 23.10.2019. A non-SC/ST candidate who pays at the concessional rate can have their application cancelled and their candidature terminated.",
+    pay: "Post-specific Jharkhand pay levels; see the post-wise table in the JTGLCCE-2026 brochure.",
+    timeline: [
+      { label: "Online registration opened", date: "2026-06-01", displayDate: "1 Jun 2026", state: "completed" },
+      { label: "Last date for online registration", date: "2026-06-30", displayDate: "30 Jun 2026, midnight", state: "completed" },
+      {
+        label: "Last date for fee payment and photo/signature upload",
+        date: "2026-07-03",
+        displayDate: "3 Jul 2026, midnight",
+        state: "completed",
+      },
+      {
+        label: "Application correction window",
+        date: "2026-07-05",
+        displayDate: "5 Jul 2026 to 10 Jul 2026",
+        state: "completed",
+        note: "Name, date of birth, e-mail ID and mobile number could not be edited.",
+      },
+      { label: "Examination date", displayDate: "Not announced", state: "current" },
+    ],
+    eligibility: [
+      "Online applications were invited from citizens of India against regular vacancies requisitioned by the Health, Medical Education & Family Welfare Department (Assistant Entomologist, Assistant Vector Borne Disease Control Officer, Inspector under the vector-borne disease control programme and Junior Scientific Assistant at the State Drug Testing Laboratory, Namkum, Ranchi), the Planning & Development Department (Block Statistical Supervisor / Junior Statistical Assistant / Investigator), the Agriculture, Animal Husbandry & Cooperative Department (Dairy Technical Officer and Fishery Extension Supervisor), the Finance Department's Directorate of Audit (Auditor) and the Directorate of Technical Education (Laboratory Assistant in science-related subjects).",
+      "Confirm the post-wise qualification and the reservation, domicile and certificate rules from the JTGLCCE-2026 brochure; only what the brochure states is recorded here.",
+      "Sportsperson reservation follows Department of Art, Culture, Sports & Youth Affairs resolution no. 1709 dated 12.09.2007 for direct recruitment to Group C posts.",
+    ],
+    selectionStages: [
+      "Preliminary examination — normally not held if fewer than 50,000 candidates apply, in which case the main examination is held directly; the Commission may also decide to go straight to the main examination in other circumstances",
+      "Preliminary examination: one General Knowledge paper of 120 objective questions in 2 hours — General Studies 30, knowledge relating to Jharkhand 60, General Mathematics 10, General Science 10 and Mental Ability 10; each question carries 3 marks with 1 mark deducted for a wrong answer, in Hindi or English",
+      "Main examination",
+      "The examination is held in OMR or Computer Based Test mode; where it runs in more than one group the marks are normalised, and the merit list and the marks published to candidates are the normalised ones",
+    ],
+    syllabus: [
+      "Preliminary paper, General Studies — general awareness of the candidate's surroundings and its application in society, close observation of current and everyday events and a scientific attitude towards them, with questions as far as possible on Jharkhand, India and its neighbouring countries; current affairs, scientific progress, national and international awards, Indian languages, book, script, capital, currency, sport and sportspersons and important events; and the history, culture, geography, environment and economic scenario of India.",
+      "Preliminary paper, knowledge relating to Jharkhand — 60 of the 120 questions are on the state.",
+      "Preliminary paper also covers General Mathematics, General Science and a Mental Ability Test of 10 questions each.",
+      "Use the official JTGLCCE-2026 brochure for the main examination scheme and the detailed syllabus.",
+    ],
     officialLinks: [
       { label: "JSSC official website", url: "https://jssc.jharkhand.gov.in/", type: "website" },
       { label: "JSSC What's New notice board", url: "https://jssc.jharkhand.gov.in/whats-new", type: "notice" },
+      {
+        label: "JTGLCCE-2026 brochure (regular vacancy)",
+        url: "https://jssc.jharkhand.gov.in/sites/default/files/JTGLCCE-2026%20Brochure%20(Regular%20Vacancy).pdf",
+        type: "notice",
+      },
+      {
+        label: "JTGLCCE-2026 brochure (backlog vacancy)",
+        url: "https://jssc.jharkhand.gov.in/notices/brochure-jtglcce-2026-backlog-vacancy",
+        type: "notice",
+      },
     ],
-    sourceTitle: "JSSC What's New notice for the Graduate Level Combined Competitive Examination 2026",
-    sourceUrl: "https://jssc.jharkhand.gov.in/whats-new",
-    sourcePublished: "Notice current on JSSC's official website as of Aug 2026",
-    lastVerified: "4 Aug 2026, 17:05 IST",
+    sourceTitle: "JSSC brochure for the Jharkhand Technical / Special-Qualification Graduate Level Combined Competitive Examination-2026, advertisement 01/2026 (regular vacancy)",
+    sourceUrl: "https://jssc.jharkhand.gov.in/sites/default/files/JTGLCCE-2026%20Brochure%20(Regular%20Vacancy).pdf",
+    sourcePublished: "JTGLCCE-2026 regular-vacancy brochure for advertisement 01/2026; JSSC's What's New board re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:55 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Read against JSSC's own JTGLCCE-2026 brochure: this is advertisement 01/2026 for technical and specially-qualified graduate posts, its application window ran 1 to 30 Jun 2026 with fee payment to 3 Jul and corrections to 10 Jul 2026, and all of it has closed. Age limits, fee, the requisitioning departments and the preliminary examination scheme are now recorded; the examination date is still unannounced.",
+      },
+    ],
     keywords: [
       "JSSC CGL",
       "JTGLCCE",
@@ -1628,13 +1922,15 @@ export const exams: Exam[] = [
       "jssc jtglcce 2026",
       "Jharkhand SSC auditor",
       "jharkhand ssc cgl",
+      "jssc advertisement 01/2026",
+      "मत्स्य प्रसार पर्यवेक्षक",
     ],
   }),
-  listedExam({
+  exam({
     slug: "jssc-intermediate-level-cce-2026",
     title: "JSSC Jharkhand Intermediate Level Combined Competitive Examination 2026",
     shortTitle: "JSSC Intermediate Level CCE",
-    aliases: ["JILCCE 2026", "JSSC Inter Level", "झारखंड इंटरमीडिएट स्तरीय संयुक्त प्रतियोगिता परीक्षा"],
+    aliases: ["JILCCE 2026", "JSSC Inter Level", "Advertisement 03/2026", "झारखंड इंटरमीडिएट स्तरीय संयुक्त प्रतियोगिता परीक्षा"],
     organisation: "Jharkhand Staff Selection Commission",
     governmentLevel: "State",
     jurisdiction: "Jharkhand",
@@ -1643,24 +1939,92 @@ export const exams: Exam[] = [
     regionCodes: ["JH"],
     cycle: "2026",
     year: 2026,
+    notificationNumber: "03/2026",
     sector: "Subordinate services",
     examTypes: ["Civil Services & Administration"],
     education: ["12th"],
+    verification: "verified",
     status: {
-      label: "Application window extended",
+      label: "Applications and the correction window have closed",
       tone: "amber",
-      nextAction: "Read JSSC's extension notice for JILCCE-2026 before applying",
-      detail: "JSSC's official What's New page carries a notice extending the online application date for the Jharkhand Intermediate Level Combined Competitive Examination 2026, covering 10+2-level Group C posts such as Health Supervisor and Junior Field Investigator. The revised date and vacancy count are not confirmed from the notice reviewed here.",
+      nextAction: "Watch jssc.jharkhand.gov.in for the JILCCE-2026 examination date and admit card",
+      detail:
+        "JSSC's brochure for advertisement 03/2026 invited online applications for 326 regular vacancies from 20 Jul 2026 to the midnight of 19 Aug 2026, with fee payment and photo/signature upload allowed until midnight on 20 Aug 2026 and a correction link open from 21 to 23 Aug 2026. All three windows have closed. The Commission had earlier issued an extension notice for the online application, which its What's New board still carries. No examination date is published.",
     },
-    summary: "Jharkhand's Intermediate (10+2) level combined competitive recruitment to Group C posts such as Health Supervisor and Veterinary Assistant through JSSC.",
+    summary:
+      "Jharkhand's Intermediate (10+2) level combined competitive recruitment to Group C posts — Health Supervisor, Multipurpose Health Worker, Veterinary/Medical Assistant, Insect Collector, Fishery Technical Assistant and Junior Field Investigator — through JSSC.",
+    vacancies: 326,
+    vacancyLabel: "326 regular posts",
+    vacancyNote:
+      "The brochure for advertisement 03/2026 prints a grand total of 326 regular vacancies across the six posts, and states that the category-wise and post-wise numbers may rise or fall on the requisitioning departments' request. Backlog vacancies, if any, are advertised separately.",
+    age:
+      "Minimum age 18 years. The maximum age is fixed by Department of Personnel, Administrative Reforms and Rajbhasha resolution no. 03 dated 02.01.2026: Unreserved 35 years; Economically Weaker Section 35 years; Extremely Backward Class (Annexure-1) and Backward Class (Annexure-2) men 37 years; women of the Unreserved, EWS, EBC (Annexure-1) and BC (Annexure-2) categories 38 years; Scheduled Tribe and Scheduled Caste men and women 40 years. Candidates with a disability of 40% or more in any category get 10 further years and ex-servicemen 5 further years, but only one of those two relaxations may be used. The brochure fixes a different age reference date for each post — 01.08.2023 for Health Supervisor, Multipurpose Health Worker and Veterinary/Medical Assistant, 01.08.2024 for Insect Collector and Fishery Technical Assistant, and 01.08.2025 for Junior Field Investigator.",
+    qualification:
+      "Intermediate (10+2) level, post-specific: the brochure's post-wise table prescribes 10+2 in Science or I.Sc., Intermediate/10+2 including Mathematics, or Intermediate in Biology depending on the post. Read the table in the brochure for the post you applied to. The last date for the online application is the reference date for the educational qualification.",
+    fee:
+      "₹100. Scheduled Tribe and Scheduled Caste candidates of Jharkhand pay ₹50, and candidates of Jharkhand with 40% or more disability are fully exempt under Department of Personnel letter no. 8559 dated 23.10.2019. The fee is non-refundable, applications submitted without it are liable to be rejected, and a non-SC/ST candidate who pays at the concessional rate can have their candidature cancelled.",
+    pay:
+      "All six posts are in Pay Band PB-1 ₹5,200–20,200; the brochure fixes grade pay of ₹2,400, ₹2,000, ₹1,900 or ₹1,800 depending on the post.",
+    timeline: [
+      { label: "Online registration opened", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
+      { label: "Last date for online registration", date: "2026-08-19", displayDate: "19 Aug 2026, midnight", state: "completed" },
+      {
+        label: "Last date for fee payment and photo/signature upload",
+        date: "2026-08-20",
+        displayDate: "20 Aug 2026, midnight",
+        state: "completed",
+      },
+      {
+        label: "Application correction window",
+        date: "2026-08-21",
+        displayDate: "21 Aug 2026 to 23 Aug 2026",
+        state: "completed",
+        note: "Name, date of birth, e-mail ID and mobile number could not be edited.",
+      },
+      { label: "Examination date", displayDate: "Not announced", state: "current" },
+    ],
+    eligibility: [
+      "Online applications were invited from citizens of India against regular vacancies requisitioned by the Health, Medical Education & Family Welfare Department, the Urban Development & Housing Department, the Agriculture, Animal Husbandry & Cooperative Department (Fisheries Division) and the Planning & Development Department (Directorate of Economics & Statistics).",
+      "Admission to the examination is purely provisional; issuing an admit card does not certify that a candidate meets the eligibility conditions, and the Commission may verify certificates after the main examination.",
+      "A disability claim is accepted only at 40% or more, on a certificate issued in the prescribed form (Annexure-X) by a medical board constituted by the State Government; a certificate issued after the last date for applications is not accepted.",
+      "Sportsperson reservation follows Department of Art, Culture, Sports & Youth Affairs resolution no. 1709 dated 12.09.2007 for direct recruitment to Group C posts, at the levels of achievement listed in the brochure.",
+      "Where a candidate submits more than one online application, the last one submitted is treated as valid and the earlier ones are cancelled without refund of fee.",
+    ],
+    selectionStages: [
+      "Preliminary examination — normally not held if fewer than 50,000 applications are received, in which case candidates go straight to the main examination; the Commission may also decide to hold the main examination directly in other circumstances",
+      "Preliminary examination: one General Knowledge paper of 120 objective questions in 2 hours — General Studies 30, knowledge relating to Jharkhand 60, General Mathematics 10, General Science 10 and Mental Ability 10; each question carries 3 marks with 1 mark deducted for a wrong answer, in Hindi or English",
+      "Minimum qualifying marks in the preliminary examination: Unreserved and EWS 40%, SC/ST/women 32%, Extremely Backward Class (Annexure-1) 34%, Backward Class (Annexure-2) 36.5% and Primitive Tribes 30%",
+      "Main examination — candidates equal to fifteen times the total vacancies are called in merit order from the preliminary examination",
+      "The examination is held in Computer Based Test (CBT) or OMR mode; where a subject is examined in more than one group the marks are normalised and the merit list and published marks are the normalised ones",
+    ],
+    syllabus: [
+      "Preliminary paper, General Studies — general awareness of the candidate's surroundings and its application in society, close observation of current and everyday events and a scientific attitude towards them; current affairs, scientific progress, national and international awards, Indian languages, book, script, capital, currency, sport and sportspersons and important events; the history, culture, geography, environment and economic scenario of India, the freedom movement, the principal features of Indian agriculture and natural resources, the Constitution and polity, the political system, panchayati raj, community development and the five-year plans, and the general geographical and political situation of Jharkhand.",
+      "Preliminary paper, knowledge relating to Jharkhand — the state's geography, history, civilisation, culture, language and literature, places, mines and minerals, industry, Jharkhand's contribution to the national movement, literature, development schemes, sport and sportspersons, personalities, civic achievements and awards, and subjects of national and international importance.",
+      "Preliminary paper, General Mathematics — arithmetic, elementary algebra, geometry, general trigonometry and mensuration, generally at matriculation / Class 10 standard.",
+      "Preliminary paper, General Science — a general understanding of science and its applications, based on everyday observation and experience, of the kind expected of an educated person who has not specially studied a science subject.",
+      "Preliminary paper, Mental Ability — verbal and non-verbal questions on analogy, similarities and differences, space visualisation, problem solving, analysis, visual memory, discrimination, observation, relationship concepts, arithmetical reasoning, arithmetical number series and coding and decoding.",
+      "Use the official JILCCE-2026 brochure for the main examination scheme and the detailed syllabus.",
+    ],
     officialLinks: [
       { label: "JSSC official website", url: "https://jssc.jharkhand.gov.in/", type: "website" },
       { label: "JSSC What's New notice board", url: "https://jssc.jharkhand.gov.in/whats-new", type: "notice" },
+      {
+        label: "JILCCE-2026 brochure (advertisement 03/2026)",
+        url: "https://jssc.jharkhand.gov.in/sites/default/files/Brochure%20JILCCE-2026.pdf",
+        type: "notice",
+      },
     ],
-    sourceTitle: "JSSC What's New notice on the application extension for the Intermediate Level Combined Competitive Examination 2026",
-    sourceUrl: "https://jssc.jharkhand.gov.in/whats-new",
-    sourcePublished: "Notice current on JSSC's official website as of Aug 2026",
-    lastVerified: "4 Aug 2026, 17:05 IST",
+    sourceTitle: "JSSC brochure for the Jharkhand Intermediate Level Combined Competitive Examination-2026, advertisement 03/2026 (regular vacancy)",
+    sourceUrl: "https://jssc.jharkhand.gov.in/sites/default/files/Brochure%20JILCCE-2026.pdf",
+    sourcePublished: "JILCCE-2026 brochure for advertisement 03/2026; JSSC's What's New board re-read 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:55 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Read against JSSC's own JILCCE-2026 brochure: advertisement 03/2026 carries 326 regular vacancies, applications ran 20 Jul to 19 Aug 2026 with fee payment to 20 Aug and corrections to 23 Aug 2026, and all of those windows have now closed. Vacancies, fee, age limits, pay and the examination scheme are now recorded; the examination date is still unannounced.",
+      },
+    ],
     keywords: [
       "JSSC Inter level",
       "JILCCE",
@@ -1669,6 +2033,8 @@ export const exams: Exam[] = [
       "Jharkhand SSC health supervisor",
       "jssc jilcce 2026",
       "jharkhand ssc inter level",
+      "jssc advertisement 03/2026",
+      "स्वास्थ्य पर्यवेक्षक झारखंड",
     ],
   }),
   exam({
@@ -1693,7 +2059,7 @@ export const exams: Exam[] = [
       label: "Final results out; confirmation of selection under way",
       tone: "violet",
       nextAction: "Watch CSBC's notice board for confirmation-of-selection and waiting-list updates",
-      detail: "CSBC published the final selection list for Constable (General Duty), Advt. 01/2025, on 27 May 2026, followed by notices on a waiting list for candidates below the merit list (4 Jul 2026) and confirmation of provisional selections (22 Jul 2026).",
+      detail: "CSBC published the final selection list for Constable (General Duty), Advt. 01/2025, on 27 May 2026, followed by notices on a waiting list for candidates below the merit list (4 Jul 2026) and confirmation of provisional selections (22 Jul 2026). The Board's notice board was re-read on 29 Aug 2026 and carries nothing further on Advt. 01/2025; its newer activity is on the separate Advt. 01/2026 and 02/2026 constable drives.",
     },
     summary: "One of Bihar's largest constable recruitment drives, now in its post-result confirmation stage through the Central Selection Board of Constable.",
     vacancyLabel: "Not announced",
@@ -1708,7 +2074,8 @@ export const exams: Exam[] = [
       { label: "Application window opened", date: "2025-03-18", displayDate: "18 Mar 2025", state: "completed" },
       { label: "Final selection result", date: "2026-05-27", displayDate: "27 May 2026", state: "completed" },
       { label: "Waiting-list/reconsideration notice", date: "2026-07-04", displayDate: "4 Jul 2026", state: "completed" },
-      { label: "Confirmation of provisional selection", date: "2026-07-22", displayDate: "22 Jul 2026", state: "current" },
+      { label: "Confirmation of provisional selection", date: "2026-07-22", displayDate: "22 Jul 2026", state: "completed" },
+      { label: "Further waiting-list or appointment notice", displayDate: "Not announced - nothing published since 22 Jul 2026", state: "current" },
     ],
     eligibility: [
       "Confirm education, age, domicile and category-certificate requirements in advertisement 01/2025.",
@@ -1722,8 +2089,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "CSBC notices on the Advt. 01/2025 final result, waiting list and confirmation of selection",
     sourceUrl: "https://csbc-bih.bihar.gov.in/",
-    sourcePublished: "Confirmation-of-selection notice dated 22 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Confirmation-of-selection notice dated 22 Jul 2026 — still the newest notice on Advt. 01/2025 on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:45 IST",
     keywords: [
       "CSBC",
       "Bihar Police Constable",
@@ -1733,6 +2100,226 @@ export const exams: Exam[] = [
       "Bihar constable result",
       "csbc bihar police 2025",
       "bihar police sipahi bharti",
+    ],
+  }),
+  exam({
+    slug: "csbc-constable-general-closed-cadre-2026",
+    title: "CSBC Constable (General Closed Cadre), Special Branch Recruitment 2026 — Advt. 01/2026",
+    shortTitle: "Bihar Special Branch Constable",
+    aliases: [
+      "CSBC Advt 01/2026",
+      "Bihar Police Special Branch Constable 2026",
+      "सिपाही (सामान्य बंद संवर्ग)",
+      "बिहार विशेष शाखा सिपाही भर्ती",
+    ],
+    organisation: "Central Selection Board of Constable",
+    governmentLevel: "State",
+    jurisdiction: "Bihar",
+    state: "Bihar",
+    stateCode: "BR",
+    regionCodes: ["BR"],
+    cycle: "2026",
+    year: 2026,
+    notificationNumber: "01/2026",
+    sector: "Police",
+    examTypes: ["Police & CAPF"],
+    education: ["10th"],
+    verification: "verified",
+    status: {
+      label: "Written result out; 254 candidates called for the PST",
+      tone: "violet",
+      nextAction: "Check the 18 Aug 2026 result notice for your roll number, then watch csbc-bih.bihar.gov.in for the Physical Standard Test programme",
+      detail:
+        "CSBC published the written-examination result for Advt. 01/2026 on 18 Aug 2026. The notice records that the advertisement was published on 29 Jan 2026 for 83 posts of Constable (General Closed Cadre) in the Special Branch, that 2,24,429 valid applications were admitted, that the two-paper written examination was held on 24 Jun 2026 at 431 centres in 38 districts with about 64,410 candidates present, and that 254 candidates have been selected for the next stage, the Physical Standard Test. The Board has not announced the PST programme. A separate notice of the same date cancelled the candidature of candidates found guilty of impersonation or unfair means.",
+    },
+    summary:
+      "Recruitment of Constables to the General Closed Cadre of Bihar Police's Special Branch through the Central Selection Board of Constable, now past the written examination.",
+    vacancies: 83,
+    vacancyLabel: "83 posts",
+    vacancyNote:
+      "The figure is the one printed in CSBC's result notice of 18 Aug 2026 for Advt. 01/2026, which also gives the category-wise reservation break-up.",
+    age: "As prescribed in advertisement 01/2026 dated 29 Jan 2026; CSBC's result notice reviewed here does not restate the age limits or relaxations.",
+    qualification:
+      "As prescribed in advertisement 01/2026; CSBC's result notice reviewed here does not restate the educational qualification.",
+    fee: "See advertisement 01/2026 for the category-wise application fee; applications for this cycle have closed.",
+    pay: "Bihar Police constable pay level as prescribed in the Bihar Police Special Branch Constable (General Closed Cadre) Rules, 2024 as amended; see the official advertisement.",
+    timeline: [
+      { label: "Advertisement 01/2026 published (83 posts)", date: "2026-01-29", displayDate: "29 Jan 2026", state: "completed" },
+      {
+        label: "Notice on the written examination and e-admit card",
+        date: "2026-05-20",
+        displayDate: "20 May 2026",
+        state: "completed",
+        note: "Memo no. 25/Ke.Ch.Pa.(Su.), fixing a single sitting for both papers.",
+      },
+      { label: "e-Admit card download opened", date: "2026-06-10", displayDate: "10 Jun 2026", state: "completed" },
+      {
+        label: "Written examination held",
+        date: "2026-06-24",
+        displayDate: "24 Jun 2026",
+        state: "completed",
+        note: "431 centres in 38 districts.",
+      },
+      {
+        label: "Written result: 254 candidates called for the Physical Standard Test",
+        date: "2026-08-18",
+        displayDate: "18 Aug 2026",
+        state: "completed",
+      },
+      { label: "Physical Standard Test (PST)", displayDate: "Date not announced", state: "current" },
+    ],
+    eligibility: [
+      "Recruitment runs under the Bihar Police Special Branch Constable (General Closed Cadre) Rules, 2024 as amended, whose rule 5 governs the appointment process (CSBC result notice dated 18 Aug 2026).",
+      "Under General Administration Department resolution no. 12575 dated 9 July 2025, a full 35% horizontal reservation is available only to women domiciled in Bihar, of both the reserved and unreserved categories; unfilled posts are carried to the next recruitment year and, failing suitable women there too, filled from the women highest in the merit list.",
+      "Confirm education, age, domicile and category-certificate requirements in advertisement 01/2026 dated 29 Jan 2026.",
+    ],
+    selectionStages: [
+      "Written examination — two papers, one mark for each correct answer and 0.25 mark deducted for each wrong answer; a candidate must score at least 30% in each paper separately and 30% in the two papers taken together",
+      "Physical Standard Test — as far as possible three times the advertised vacancies are called category-wise, a number the Board may reduce if enough qualified candidates are not available",
+      "Further stages and the final result as prescribed in advertisement 01/2026",
+    ],
+    syllabus: ["Use the official examination scheme and syllabus in CSBC's advertisement 01/2026; no syllabus is asserted here."],
+    officialLinks: [
+      { label: "CSBC official website", url: "https://csbc-bih.bihar.gov.in/", type: "website" },
+      {
+        label: "Written-examination result for the PST (Advt. 01/2026)",
+        url: "https://csbc-bih.bihar.gov.in/storage/notification/document/Results-01-2026-PST-18-08-2026.pdf",
+        type: "result",
+      },
+    ],
+    sourceTitle: "CSBC written-examination result notice for Advt. 01/2026, Constable (General Closed Cadre), Special Branch",
+    sourceUrl: "https://csbc-bih.bihar.gov.in/storage/notification/document/Results-01-2026-PST-18-08-2026.pdf",
+    sourcePublished: "Result notice dated 18 Aug 2026, citing advertisement 01/2026 dated 29 Jan 2026",
+    lastVerified: "29 Aug 2026, 09:45 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Record added after CSBC published the written-examination result for Advt. 01/2026 on 18 Aug 2026, calling 254 candidates for the Physical Standard Test against 83 Special Branch constable posts.",
+      },
+    ],
+    keywords: [
+      "CSBC 01/2026",
+      "Bihar special branch constable",
+      "सिपाही सामान्य बंद संवर्ग",
+      "बिहार पुलिस विशेष शाखा",
+      "csbc special branch result",
+      "bihar police constable PST",
+    ],
+  }),
+  exam({
+    slug: "csbc-constable-operator-2026",
+    title: "CSBC Constable (Operator) Recruitment 2026 — Advt. 02/2026",
+    shortTitle: "Bihar Police Constable (Operator)",
+    aliases: [
+      "CSBC Advt 02/2026",
+      "Bihar Police Constable Operator 2026",
+      "सिपाही (प्रचालक)",
+      "बिहार पुलिस दूरसंचार सिपाही भर्ती",
+    ],
+    organisation: "Central Selection Board of Constable",
+    governmentLevel: "State",
+    jurisdiction: "Bihar",
+    state: "Bihar",
+    stateCode: "BR",
+    regionCodes: ["BR"],
+    cycle: "2026",
+    year: 2026,
+    notificationNumber: "02/2026",
+    sector: "Police",
+    examTypes: ["Police & CAPF", "Technical & Trades"],
+    education: ["12th"],
+    verification: "verified",
+    status: {
+      label: "Written result out; 5,966 candidates called for the PET",
+      tone: "violet",
+      nextAction: "Check the 18 Aug 2026 result notice for your roll number, then watch csbc-bih.bihar.gov.in for the Physical Efficiency Test programme",
+      detail:
+        "CSBC published the written-examination result for Advt. 02/2026 on 18 Aug 2026. The notice records that the advertisement was published on 23 Feb 2026 for 993 posts of Constable (Operator) in Bihar Police's Telecommunication (Wireless) and Technical non-gazetted cadre, that 2,82,823 valid applications were admitted, that the written examination was held on 28 Jun 2026 at 544 centres in 38 districts with 1,28,482 candidates present, and that 5,966 candidates have been selected for the next stage, the Physical Efficiency Test. The Board has not announced the PET programme. A separate notice of the same date cancelled the candidature of candidates found guilty of impersonation or unfair means.",
+    },
+    summary:
+      "Recruitment of Constable (Operator) to Bihar Police's Telecommunication (Wireless) and Technical non-gazetted cadre through the Central Selection Board of Constable, now past the written examination.",
+    vacancies: 993,
+    vacancyLabel: "993 posts",
+    vacancyNote:
+      "The figure is the one printed in CSBC's result notice of 18 Aug 2026 for Advt. 02/2026, which gives the category-wise break-up: 408 Unreserved, 175 Extremely Backward Class, 157 Scheduled Caste, 113 Backward Class (including 2 transgender), 99 Economically Weaker Section, 31 women of the Backward Classes and 10 Scheduled Tribe.",
+    vacancyBreakdown: [
+      { label: "Unreserved", total: 408 },
+      { label: "Extremely Backward Class", total: 175 },
+      { label: "Scheduled Caste", total: 157 },
+      { label: "Backward Class (including 2 transgender)", total: 113 },
+      { label: "Economically Weaker Section", total: 99 },
+      { label: "Women of the Backward Classes", total: 31 },
+      { label: "Scheduled Tribe", total: 10 },
+    ],
+    age: "As prescribed in advertisement 02/2026 dated 23 Feb 2026; CSBC's result notice reviewed here does not restate the age limits or relaxations.",
+    qualification:
+      "As prescribed in advertisement 02/2026; CSBC's result notice reviewed here does not restate the educational or technical qualification.",
+    fee: "See advertisement 02/2026 for the category-wise application fee; applications for this cycle have closed.",
+    pay: "Bihar Police constable pay level as prescribed in the Bihar Police Telecommunication (Wireless) and Technical Non-Gazetted Cadre Rules, 2021 as amended; see the official advertisement.",
+    timeline: [
+      { label: "Advertisement 02/2026 published (993 posts)", date: "2026-02-23", displayDate: "23 Feb 2026", state: "completed" },
+      { label: "Notice on the written examination and e-admit card", date: "2026-05-20", displayDate: "20 May 2026", state: "completed" },
+      {
+        label: "Written examination date changed",
+        date: "2026-05-26",
+        displayDate: "26 May 2026",
+        state: "completed",
+        note: "Memo no. 27/Ke.Ch.Pa.(Su.), which also fixed a single sitting.",
+      },
+      { label: "e-Admit card download opened", date: "2026-06-13", displayDate: "13 Jun 2026", state: "completed" },
+      {
+        label: "Written examination held",
+        date: "2026-06-28",
+        displayDate: "28 Jun 2026",
+        state: "completed",
+        note: "544 centres in 38 districts.",
+      },
+      {
+        label: "Written result: 5,966 candidates called for the Physical Efficiency Test",
+        date: "2026-08-18",
+        displayDate: "18 Aug 2026",
+        state: "completed",
+      },
+      { label: "Physical Efficiency Test (PET)", displayDate: "Date not announced", state: "current" },
+    ],
+    eligibility: [
+      "Recruitment runs under the Bihar Police Telecommunication (Wireless) and Technical Non-Gazetted Cadre Rules, 2021 as amended, whose rule 5 governs the appointment process (CSBC result notice dated 18 Aug 2026).",
+      "Under General Administration Department resolution no. 12575 dated 9 July 2025, a full 35% horizontal reservation is available only to women domiciled in Bihar, of both the reserved and unreserved categories; unfilled posts are carried to the next recruitment year and, failing suitable women there too, filled from the women highest in the merit list.",
+      "Confirm education, age, domicile and category-certificate requirements in advertisement 02/2026 dated 23 Feb 2026.",
+    ],
+    selectionStages: [
+      "Written examination — a candidate scoring less than 30% is treated as unsuccessful for the Physical Efficiency Test, under rule 5(I)(gha)(iii) of the 2021 Rules",
+      "Physical Efficiency Test — as far as possible five times the advertised vacancies are called category-wise, a number the Board may reduce if enough qualified candidates are not available",
+      "Further stages and the final result as prescribed in advertisement 02/2026",
+    ],
+    syllabus: ["Use the official examination scheme and syllabus in CSBC's advertisement 02/2026; no syllabus is asserted here."],
+    officialLinks: [
+      { label: "CSBC official website", url: "https://csbc-bih.bihar.gov.in/", type: "website" },
+      {
+        label: "Written-examination result for the PET (Advt. 02/2026)",
+        url: "https://csbc-bih.bihar.gov.in/storage/notification/document/Results-02-2026-PET-18-08-2026.pdf",
+        type: "result",
+      },
+    ],
+    sourceTitle: "CSBC written-examination result notice for Advt. 02/2026, Constable (Operator)",
+    sourceUrl: "https://csbc-bih.bihar.gov.in/storage/notification/document/Results-02-2026-PET-18-08-2026.pdf",
+    sourcePublished: "Result notice dated 18 Aug 2026, citing advertisement 02/2026 dated 23 Feb 2026",
+    lastVerified: "29 Aug 2026, 09:45 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "Record added after CSBC published the written-examination result for Advt. 02/2026 on 18 Aug 2026, calling 5,966 candidates for the Physical Efficiency Test against 993 Constable (Operator) posts.",
+      },
+    ],
+    keywords: [
+      "CSBC 02/2026",
+      "Bihar police constable operator",
+      "सिपाही प्रचालक",
+      "बिहार पुलिस दूरसंचार",
+      "csbc constable operator result",
+      "bihar police wireless constable",
     ],
   }),
   exam({
@@ -1757,7 +2344,7 @@ export const exams: Exam[] = [
       label: "Applications closed 9 Aug 2026; exam date awaited",
       tone: "amber",
       nextAction: "Watch bpssc.bihar.gov.in for the scrutiny/rejection list and the written examination date for Advt. 09/2026.",
-      detail: "Advertisement 09/2026 states the online application window ran from 09/07/2026 to 09/08/2026 for 150 Level-6 posts of Police Sub-Inspector (General Closed Cadre) in the Special Branch. The window has closed and the Commission has published nothing further on this advertisement; the written competitive examination and physical efficiency test dates are still unannounced.",
+      detail: "Advertisement 09/2026 states the online application window ran from 09/07/2026 to 09/08/2026 for 150 Level-6 posts of Police Sub-Inspector (General Closed Cadre) in the Special Branch. The Commission's notice board was re-read on 29 Aug 2026: it has published nothing further on this advertisement, and the written competitive examination and physical efficiency test dates are still unannounced. Its recent notices concern other advertisements — a PET postponement under Advt. 05/2025 and the preliminary result under Advt. 04/2026 — so check the advertisement number on any notice you read.",
     },
     summary: "Direct recruitment of Police Sub-Inspectors for Bihar's Special Branch through the Bihar Police Sub-Ordinate Service Commission.",
     vacancyLabel: "Not announced",
@@ -1793,8 +2380,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "BPSSC notice board for advertisement 09/2026",
     sourceUrl: "https://bpssc.bihar.gov.in/",
-    sourcePublished: "Advertisement No. 09/2026 published 3 Jul 2026 on bpssc.bihar.gov.in",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement No. 09/2026 published 3 Jul 2026 on bpssc.bihar.gov.in — still the newest 09/2026 entry on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 10:00 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1830,10 +2417,10 @@ export const exams: Exam[] = [
     education: ["10th"],
     verification: "verified",
     status: {
-      detail: "Following the revised State List of OBCs (66 classes) notified by the Backward Classes Welfare Department on 18 May 2026, WBPRB republished the vacancy position at 11,749 posts (Notice 2026/06, 12 Aug 2026) and opened a window from 14 to 20 Aug 2026 for interviewed candidates of the Bharbhuja and Devanga classes to upload OBC certificates, or valid EWS certificates where their class is no longer listed (Notice 2026/05). A clarification of 18 Aug 2026 (Notice 2026/07) requires any EWS certificate to have been issued before the candidate's interview date.",
-      label: "Category-correction window closes 20 Aug 2026",
+      detail: "Following the revised State List of OBCs (66 classes) notified by the Backward Classes Welfare Department on 18 May 2026, WBPRB republished the vacancy position at 11,749 posts (Notice 2026/06, 12 Aug 2026) and opened a window from 14 to 20 Aug 2026 for interviewed candidates of the Bharbhuja and Devanga classes to upload OBC certificates, or valid EWS certificates where their class is no longer listed (Notice 2026/05). A clarification of 18 Aug 2026 (Notice 2026/07) required any EWS certificate to have been issued before the candidate's interview date. That upload window has now closed, and the Board's notice list for this recruitment carries nothing newer than the 18 Aug 2026 clarification.",
+      label: "Certificate-upload window closed; recategorised list awaited",
       tone: "violet",
-      nextAction: "After 20 Aug 2026 watch prb.wb.gov.in for the recategorised merit/select list or a further notice on the pending court cases.",
+      nextAction: "Watch prb.wb.gov.in for the recategorised merit/select list or a further notice on the pending court cases.",
     },
     summary: "West Bengal's constable recruitment for the state police force, conducted by the West Bengal Police Recruitment Board.",
     vacancyLabel: "Not announced",
@@ -1857,8 +2444,9 @@ export const exams: Exam[] = [
       { label: "Notice regarding pendency of cases", date: "2026-05-25", displayDate: "25 May 2026", state: "completed" },
       { label: "Revised State List of OBCs applied to the recruitment (Notice 2026/04)", date: "2026-08-12", displayDate: "12 Aug 2026", state: "completed" },
       { label: "Revised vacancy position — 11,749 posts (Notice 2026/06)", date: "2026-08-12", displayDate: "12 Aug 2026", state: "completed" },
-      { label: "Window to upload OBC / EWS certificates (Notice 2026/05)", date: "2026-08-14", displayDate: "14 Aug 2026 to 20 Aug 2026", state: "current" },
+      { label: "Window to upload OBC / EWS certificates (Notice 2026/05)", date: "2026-08-14", displayDate: "14 Aug 2026 to 20 Aug 2026", state: "completed" },
       { label: "Clarification on EWS certificates (Notice 2026/07)", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
+      { label: "Recategorised merit / select list", displayDate: "Date not announced", state: "current" },
     ],
     eligibility: [
       "Confirm education, age, domicile, physical standards and category-certificate requirements from the original 2024 advertisement linked on WBPRB's recruitment page.",
@@ -1882,9 +2470,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "WBPRB dated notice list for Recruitment to the post of Constables in West Bengal Police – 2024",
     sourceUrl: "https://prb.wb.gov.in/recruitments/12bf94a84e003c37",
-    sourcePublished: "Notices WBPRB/NOTICE-2026/04, 2026/05 and 2026/06 dated 12 Aug 2026; clarification Notice 2026/07 dated 18 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Notices WBPRB/NOTICE-2026/04, 2026/05 and 2026/06 dated 12 Aug 2026; clarification Notice 2026/07 dated 18 Aug 2026 — still the newest notice on the Board's list on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:40 IST",
     changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "The 14–20 Aug 2026 OBC/EWS certificate-upload window has closed. WBPRB's notice list for this recruitment carries nothing after the clarification of 18 Aug 2026, so the recategorised merit/select list is still awaited.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -1920,7 +2513,7 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      detail: "The Final Combined Competitive Examination was held on 22 Feb 2026 and no result has been published yet. On 12 Aug 2026 the Board issued Notice WBPRB/NOTICE-2026/04 applying the revised State List of OBCs (66 classes) to this recruitment: OBC certificates naming a class outside that list will be treated as invalid and those candidates treated as Unreserved.",
+      detail: "The Final Combined Competitive Examination was held on 22 Feb 2026 and no result has been published yet. On 12 Aug 2026 the Board issued Notice WBPRB/NOTICE-2026/04 applying the revised State List of OBCs (66 classes) to this recruitment: OBC certificates naming a class outside that list will be treated as invalid and those candidates treated as Unreserved. That notice was still the newest entry on the Board's list for this recruitment when it was re-read on 29 Aug 2026.",
       label: "Final exam held 22 Feb 2026; result awaited",
       tone: "violet",
       nextAction: "Watch https://prb.wb.gov.in/recruitments/9b380303ea68fda3 for the Final Combined Competitive Examination result and the personality-test/interview notice.",
@@ -1944,7 +2537,8 @@ export const exams: Exam[] = [
       { label: "Notice for the Final Combined Competitive Examination", date: "2026-02-06", displayDate: "6 Feb 2026", state: "completed" },
       { label: "Admit card for the Final Combined Competitive Examination", date: "2026-02-10", displayDate: "10 Feb 2026", state: "completed" },
       { label: "Final Combined Competitive Examination held", date: "2026-02-22", displayDate: "22 Feb 2026", state: "completed" },
-      { label: "Revised State List of OBCs applied to the recruitment (Notice 2026/04)", date: "2026-08-12", displayDate: "12 Aug 2026", state: "current" },
+      { label: "Revised State List of OBCs applied to the recruitment (Notice 2026/04)", date: "2026-08-12", displayDate: "12 Aug 2026", state: "completed" },
+      { label: "Final Combined Competitive Examination result", displayDate: "Date not announced", state: "current" },
     ],
     eligibility: [
       "Confirm education, age, domicile, physical standards and category-certificate requirements from the original 2024 advertisement linked on WBPRB's recruitment page.",
@@ -1968,8 +2562,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "WBPRB dated notice list for Recruitment to the post of Sub-Inspector (Unarmed & Armed Branch) in West Bengal Police – 2024",
     sourceUrl: "https://prb.wb.gov.in/recruitments/9b380303ea68fda3",
-    sourcePublished: "Notice for the Final Combined Competitive Examination dated 6 Feb 2026; Notice WBPRB/NOTICE-2026/04 dated 12 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Notice for the Final Combined Competitive Examination dated 6 Feb 2026; Notice WBPRB/NOTICE-2026/04 dated 12 Aug 2026 — still the newest notice on the Board's list on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:40 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -2010,7 +2604,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the Commission's announcements page for the Clerkship (Part-II), 2023 examination date",
       detail:
-        "The Commission published the roll numbers qualified for Clerkship Examination (Part-II), 2023 on 15 Oct 2025 along with a list of 318 candidates whose OMR sheets were rejected, opened and then extended an OMR-viewing window on 29 Oct and 12 Nov 2025, and issued further announcements on Part-II on 4 Nov and 10 Dec 2025. No Part-II examination date is published in the announcements reviewed here.",
+        "The Commission published the roll numbers qualified for Clerkship Examination (Part-II), 2023 on 15 Oct 2025 along with a list of 318 candidates whose OMR sheets were rejected, opened and then extended an OMR-viewing window on 29 Oct and 12 Nov 2025, and issued further announcements on Part-II on 4 Nov and 10 Dec 2025. The Commission's announcements page was re-read on 29 Aug 2026 and still carries no Part-II examination date.",
     },
     summary:
       "West Bengal's recruitment examination for Lower Division Assistant / Lower Division Clerk and similar posts in the Secretariat, Directorates, district offices and regional offices, conducted by the Public Service Commission, West Bengal.",
@@ -2062,8 +2656,13 @@ export const exams: Exam[] = [
         label: "Announcements in connection with Clerkship Examination (Part-II), 2023",
         date: "2025-12-10",
         displayDate: "10 Dec 2025",
-        state: "current",
+        state: "completed",
         note: "An earlier Part-II announcement was issued on 4 Nov 2025.",
+      },
+      {
+        label: "Clerkship Examination (Part-II), 2023",
+        displayDate: "Date not announced",
+        state: "current",
       },
     ],
     eligibility: [
@@ -2098,8 +2697,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "WBPSC detailed advertisement 13/2023 for the Clerkship Examination, 2023 and the Commission's dated announcement list",
     sourceUrl: "https://psc.wb.gov.in/Download?param1=An_20231204154303_Clerkship.pdf&param2=advertisement",
-    sourcePublished: "Detailed advertisement dated 4 Dec 2023; latest Part-II announcement dated 10 Dec 2025",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Detailed advertisement dated 4 Dec 2023; latest Part-II announcement dated 10 Dec 2025 — still the newest Clerkship announcement on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:45 IST",
     keywords: [
       "WBPSC Clerkship",
       "WB Clerkship exam",
@@ -2132,7 +2731,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Open WBSEDCL's official website and read the Careers advertisements before assuming a cycle is open",
       detail:
-        "WBSEDCL publishes its recruitment advertisements as PDFs in the Careers section of its official website. The advertisements linked there when this record was checked are for Director (Generation), Director (Finance) and General Manager (HRD) — senior and board-level posts — together with an application format. The site's Careers index page returned an access error and the advertisement PDFs are scanned images whose text could not be read, so no vacancy count, schedule, eligibility, age limit, fee or pay is asserted here. WBSEDCL has separately run Assistant Engineer (Electrical/Civil) recruitment in the past, but no current-cycle notice for such a post appears on the pages reviewed here.",
+        "WBSEDCL publishes its recruitment advertisements as PDFs in the Careers section of its official website. When the site was re-read on 29 Aug 2026 the only recruitment advertisement it surfaced was 'Recruitment of Director (Generation)', dated 9 June 2026 — a board-level post; earlier checks also found Director (Finance) and General Manager (HRD) advertisements. Nothing newer than June 2026 appears. The site's Careers index page has returned an access error and the advertisement PDFs are scanned images whose text could not be read, so no vacancy count, schedule, eligibility, age limit, fee or pay is asserted here. WBSEDCL has separately run Assistant Engineer (Electrical/Civil) recruitment in the past, but no current-cycle notice for such a post appears on the pages reviewed here.",
     },
     summary:
       "Recruitment by the West Bengal State Electricity Distribution Company Limited, the state-owned power distribution utility, advertised through the Careers section of its official website.",
@@ -2150,8 +2749,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "WBSEDCL official website Careers advertisements",
     sourceUrl: "https://www.wbsedcl.in/",
-    sourcePublished: "WBSEDCL official website checked 4 Aug 2026; Careers index page returned an access error and the advertisement PDFs are scanned images",
-    lastVerified: "4 Aug 2026, 20:15 IST",
+    sourcePublished: "WBSEDCL official website re-read 29 Aug 2026; the only advertisement surfaced is Director (Generation) dated 9 Jun 2026, the Careers index page returns an access error and the advertisement PDFs are scanned images",
+    lastVerified: "29 Aug 2026, 10:10 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "WBSEDCL's website surfaced only the Director (Generation) advertisement of 9 Jun 2026 on this check; no recruitment advertisement newer than June 2026 has appeared.",
+      },
+    ],
     keywords: [
       "WBSEDCL",
       "West Bengal electricity board recruitment",
@@ -2180,7 +2786,7 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      detail: "OSSC has closed the answer-key stage and published results. Final answer keys for the Mathematics Test, Computer Skill Test and Main Written Examination (Paper-I Odia & English, Paper-II GS) for the 7 and 8 Jul 2026 CBRE sittings were notified on 17 Aug 2026. On 19 Aug 2026 the Commission published three lists under Advt No. 5751/OSSC dated 12.12.2025: 7,355 candidates qualified in the Computer Skill Test, 4,441 qualified in the Mathematics Test, and 2,431 shortlisted to appear in the Certificate Verification. The certificate-verification schedule has not been announced.",
+      detail: "OSSC has closed the answer-key stage and published results. Final answer keys for the Mathematics Test, Computer Skill Test and Main Written Examination (Paper-I Odia & English, Paper-II GS) for the 7 and 8 Jul 2026 CBRE sittings were notified on 17 Aug 2026. On 19 Aug 2026 the Commission published three lists under Advt No. 5751/OSSC dated 12.12.2025: 7,355 candidates qualified in the Computer Skill Test, 4,441 qualified in the Mathematics Test, and 2,431 shortlisted to appear in the Certificate Verification. The advertisement section was re-read on 29 Aug 2026 and still carries no certificate-verification schedule or call letter.",
       label: "Results out; 2,431 shortlisted for certificate verification",
       tone: "violet",
       nextAction: "Watch for the certificate-verification date and call letters.",
@@ -2201,8 +2807,8 @@ export const exams: Exam[] = [
       { label: "Main Written Examination, Mathematics Test and Computer Skill Test", date: "2026-07-07", displayDate: "7–8 Jul 2026", state: "completed" },
       { label: "Tentative answer keys published and objections invited", date: "2026-07-14", displayDate: "14 Jul 2026", state: "completed" },
       { label: "Final answer keys published", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
-      { label: "Qualified lists and certificate-verification shortlist published", date: "2026-08-19", displayDate: "19 Aug 2026", state: "current" },
-      { label: "Certificate verification", displayDate: "Date not announced", state: "tentative" },
+      { label: "Qualified lists and certificate-verification shortlist published", date: "2026-08-19", displayDate: "19 Aug 2026", state: "completed" },
+      { label: "Certificate verification", displayDate: "Date not announced", state: "current" },
     ],
     eligibility: [
       "Confirm education, age, Odia language and category rules for CGLRE-2025 in Advertisement No. 5751/OSSC dated 12.12.2025.",
@@ -2221,8 +2827,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "OSSC advertisement-section notices for the Combined Graduate Level Recruitment Examination (CGLRE)-2025",
     sourceUrl: "https://www.ossc.gov.in/Public/OSSC/AdvertisementSection.aspx",
-    sourcePublished: "Advertisement No. 5751/OSSC dated 12.12.2025; final answer keys 17 Aug 2026; qualified and shortlist notices 19 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement No. 5751/OSSC dated 12.12.2025; final answer keys 17 Aug 2026; qualified and shortlist notices 19 Aug 2026 — the newest notices on the advertisement section on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:40 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -2258,11 +2864,11 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications closed; interview stage",
-      tone: "violet",
-      nextAction: "Use OPTCL's Current Openings page for the shortlist, cut-off and interview notice",
+      label: "Final result published",
+      tone: "slate",
+      nextAction: "Open 'FINAL RESULT - MANAGEMENT TRAINEE (ELECTRICAL)' on OPTCL's Current Openings page to check your result",
       detail:
-        "OPTCL published Advertisement No. MPPR-01/2026-27 dated 19.05.2026 for 60 Management Trainee (Electrical) posts through GATE-2026, with online applications from 26.05.2026 (4 PM) to 25.06.2026 (11:59 PM). Its Current Openings page has since added the rejected-candidates list, the cut-off score for the personal interview, the shortlist for the personal interview, a notice for document verification and personal interview, and an e-admit-card link; those notices are scanned images and their dates are not asserted here.",
+        "OPTCL published Advertisement No. MPPR-01/2026-27 dated 19.05.2026 for 60 Management Trainee (Electrical) posts through GATE-2026, with online applications from 26.05.2026 (4 PM) to 25.06.2026 (11:59 PM). Its Current Openings page then added the rejected-candidates list, the cut-off score for the personal interview, the shortlist for the personal interview, a notice for document verification and personal interview and an e-admit-card link, and now carries a 'FINAL RESULT - MANAGEMENT TRAINEE (ELECTRICAL)' notice. All of those notices are scanned images, so their dates and the number of selected candidates are not asserted here — read the result notice itself.",
     },
     summary:
       "Recruitment of Management Trainees in the Electrical discipline by Odisha Power Transmission Corporation Limited, the state-owned transmission utility, on the basis of the GATE-2026 Electrical Engineering paper, for postings across OPTCL, GRIDCO and the State Load Despatch Centre.",
@@ -2321,11 +2927,23 @@ export const exams: Exam[] = [
         url: "https://www.optcl.co.in/Writereaddata/Career/Detailed_ADVERTISEMENT__MT-EL-GATE_2026_Final.pdf",
         type: "notice",
       },
+      {
+        label: "Final result - Management Trainee (Electrical)",
+        url: "https://www.optcl.co.in/Writereaddata/Career/Result_Notice.pdf",
+        type: "result",
+      },
     ],
     sourceTitle: "OPTCL detailed advertisement No. MPPR-01/2026-27 for Management Trainee (Electrical) through GATE-2026",
     sourceUrl: "https://www.optcl.co.in/Writereaddata/Career/Detailed_ADVERTISEMENT__MT-EL-GATE_2026_Final.pdf",
-    sourcePublished: "Advertisement dated 19 May 2026; interview-stage notices current on OPTCL's Current Openings page on 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:25 IST",
+    sourcePublished: "Advertisement dated 19 May 2026; final-result notice listed on OPTCL's Current Openings page on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 09:50 IST",
+    changeLog: [
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "OPTCL's Current Openings page now carries the final result for Management Trainee (Electrical) through GATE-2026, so the record moves off the interview stage. The notice is a scanned image, so no result date or selected-candidate count is stated here.",
+      },
+    ],
     keywords: [
       "OPTCL MT",
       "OPTCL management trainee electrical",
@@ -2359,7 +2977,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Check BSPHCL's Recruitment News page for the result of document verification and the next stage",
       detail:
-        "BSPHCL's Recruitment News page carries a document-verification notice for the post of Technician Grade-III against E.N.N. 05/2024 dated 13/03/2026, an important notice on the same on 06/04/2026, and a notice dated 13/07/2026 giving a last opportunity for document verification on 29/07/2026. No result or appointment notice is confirmed from the page reviewed here.",
+        "BSPHCL's Recruitment News page carries a document-verification notice for the post of Technician Grade-III against E.N.N. 05/2024 dated 13/03/2026, an important notice on the same on 06/04/2026, and a notice dated 13/07/2026 giving a last opportunity for document verification on 29/07/2026. The page was re-read on 29 Aug 2026 and still carries nothing newer, so no result or appointment notice is confirmed.",
     },
     summary:
       "Recruitment of Technician Grade-III by Bihar State Power Holding Company Limited, the holding company for Bihar's power generation, transmission and distribution companies, now at the document-verification stage.",
@@ -2414,8 +3032,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "BSPHCL Recruitment News notices for Technician Grade-III against E.N.N. 05/2024",
     sourceUrl: "https://bsphcl.co.in/Recruitment.aspx",
-    sourcePublished: "Latest notice dated 13 Jul 2026, fixing document verification on 29 Jul 2026",
-    lastVerified: "4 Aug 2026, 20:30 IST",
+    sourcePublished: "Latest notice dated 13 Jul 2026, fixing document verification on 29 Jul 2026 — still the newest notice on the page on 29 Aug 2026",
+    lastVerified: "29 Aug 2026, 10:00 IST",
     keywords: [
       "BSPHCL",
       "Bihar State Power Holding",
@@ -2448,7 +3066,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Open the Society's Advertisement page and read the notices under Advertisement No. 02/2026 before travelling",
       detail:
-        "The State Health Society, Bihar lists 'Walk-in Recruitment for Medical Officer - Dental Against Advertisement No. 02/2026' at the head of its Advertisement page, together with an application link, a shortlist of candidates for document verification, a short notice and an important notice on document verification, the terms of reference and detailed instructions. The advertisement PDF is a scanned image whose text could not be read, so no date, vacancy count, age limit, qualification, fee or pay is asserted here.",
+        "The State Health Society, Bihar lists 'Walk-in Recruitment for Medical Officer - Dental Against Advertisement No. 02/2026' on its Advertisement page, together with an application link, a shortlist of candidates for document verification, a short notice and an important notice on document verification, the terms of reference and detailed instructions. The advertisement PDF is a scanned image whose text could not be read, so no date, vacancy count, age limit, qualification, fee or pay is asserted here. The page also now carries Advertisement No. 03/2026 for a walk-in recruitment of Specialist Doctors, a separate drive — check the advertisement number before travelling.",
     },
     summary:
       "Contractual recruitment of Medical Officers (Dental) under the National Health Mission in Bihar, conducted by the State Health Society, Bihar through a walk-in process.",
@@ -2462,8 +3080,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "State Health Society, Bihar advertisement list entry for Advertisement No. 02/2026",
     sourceUrl: "https://shs.bihar.gov.in/Advertisement.php",
-    sourcePublished: "Advertisement list checked 4 Aug 2026; the advertisement PDF is a scanned image and carries no readable date",
-    lastVerified: "4 Aug 2026, 20:35 IST",
+    sourcePublished: "Advertisement list re-checked 29 Aug 2026; the advertisement PDF is a scanned image and carries no readable date",
+    lastVerified: "29 Aug 2026, 10:05 IST",
     keywords: [
       "State Health Society Bihar",
       "SHSB recruitment",
@@ -2508,8 +3126,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JBVNL Careers page notice list",
     sourceUrl: "https://www.jbvnl.co.in/careers",
-    sourcePublished: "Careers list checked 4 Aug 2026; latest entry Job Contract Notice No. 01/2026 dated 1 Jun 2026",
-    lastVerified: "4 Aug 2026, 20:40 IST",
+    sourcePublished: "Careers list re-checked 29 Aug 2026; latest entry is still Job Contract Notice No. 01/2026 dated 1 Jun 2026",
+    lastVerified: "29 Aug 2026, 10:00 IST",
     keywords: [
       "JBVNL",
       "JUVNL",
@@ -2536,7 +3154,7 @@ export const exams: Exam[] = [
     examTypes: ["Health & Medical", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      detail: "JRHMS issued a Career Opportunity notice dated 12.08.2026 for 51 contractual Accounts and management posts at State, District and Block level under NHM Jharkhand — Chartered Accountant, State Finance Manager-RCH, State Accounts Manager, State Accounts Officer-Urban, Accounts Officer/State Accountant-NTEP, Executive Assistant-Accounts-RCH, District Accounts Manager (5), Accounts Assistant-District-RCH (6) and Block Accounts Manager (33), advertisement nos 02/2026-2521(MD) to 02/2026-2529(MD). Online applications only, at recruitment.jharkhand.gov.in.",
+      detail: "JRHMS issued a Career Opportunity notice dated 12.08.2026 for 51 contractual Accounts and management posts at State, District and Block level under NHM Jharkhand — Chartered Accountant, State Finance Manager-RCH, State Accounts Manager, State Accounts Officer-Urban, Accounts Officer/State Accountant-NTEP, Executive Assistant-Accounts-RCH, District Accounts Manager (5), Accounts Assistant-District-RCH (6) and Block Accounts Manager (33), advertisement nos 02/2026-2521(MD) to 02/2026-2529(MD). The Society's Career page shows the application window running from 19 Aug 2026 to 13 Sep 2026. Online applications only, at recruitment.jharkhand.gov.in.",
       label: "Applications open until 13 Sep 2026",
       tone: "blue",
       nextAction: "Apply online before 11:59 pm on 13 Sep 2026",
@@ -2554,8 +3172,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Jharkhand Rural Health Mission Society official website notice list",
     sourceUrl: "https://jrhms.jharkhand.gov.in/",
-    sourcePublished: "Career Opportunity notice dated 12 Aug 2026, signed by the Mission Director, NHM Jharkhand",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Career Opportunity notice dated 12 Aug 2026, signed by the Mission Director, NHM Jharkhand; the Society's Career page shows the application window as 19 Aug 2026 to 13 Sep 2026",
+    lastVerified: "29 Aug 2026, 10:00 IST",
     keywords: [
       "NHM Jharkhand",
       "JRHMS",

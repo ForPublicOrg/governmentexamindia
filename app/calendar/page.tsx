@@ -17,7 +17,7 @@ const RECENT_HISTORY_DAYS = 90;
  * Note the section still fills out over time without shipping more: milestones
  * cross into it from the upcoming list as their dates pass.
  */
-const MAX_RECENT_HISTORY_EVENTS = 36;
+const MAX_RECENT_HISTORY_EVENTS = 30;
 
 function monthKey(date: string) {
   return date.slice(0, 7);

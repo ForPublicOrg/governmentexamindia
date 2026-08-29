@@ -390,6 +390,22 @@
     ]
   },
   {
+    "id": "bank-of-baroda",
+    "name": "Bank of Baroda",
+    "level": "Central",
+    "allowedHosts": [
+      "bankofbaroda.bank.in",
+      "www.bankofbaroda.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "bank-of-baroda-1",
+        "url": "https://bankofbaroda.bank.in/career/current-opportunities",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
     "id": "barc",
     "name": "Bhabha Atomic Research Centre",
     "level": "Central",
@@ -574,7 +590,8 @@
     "allowedHosts": [
       "bseodisha.ac.in",
       "www.bseodisha.ac.in",
-      "cdn.bseodisha.ac.in"
+      "cdn.bseodisha.ac.in",
+      "onlineapp.bseodisha.ac.in"
     ],
     "watchUrls": [
       {
@@ -1020,12 +1037,18 @@
     "name": "Employees' Provident Fund Organisation",
     "level": "Central",
     "allowedHosts": [
+      "www.epfo.gov.in",
       "www.epfindia.gov.in"
     ],
     "watchUrls": [
       {
         "id": "epfo-1",
-        "url": "https://www.epfindia.gov.in/site_en/Recruitments.php?id=sm9_index",
+        "url": "https://www.epfo.gov.in/recruitments/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "epfo-2",
+        "url": "https://www.epfo.gov.in/archive-recruitments",
         "cadenceHours": 24
       }
     ]
@@ -3069,6 +3092,7 @@
       "www.nta.ac.in",
       "nta.ac.in",
       "ugcnet.nta.ac.in",
+      "ugcnet.nta.nic.in",
       "csirnet.nta.nic.in",
       "exams.nta.ac.in",
       "exams.nta.nic.in",

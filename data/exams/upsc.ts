@@ -128,11 +128,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["Graduate"],
     status: {
-      label: "Admit card released",
+      label: "Mains examination under way",
       tone: "blue",
-      nextAction: "Download the mains e-admit card",
+      nextAction: "Sit the closing papers on 29–30 Aug 2026",
       detail:
-        "The press note of 19 Aug 2026 confirms the mains sittings on 21–23 and 29–30 Aug 2026. Only candidates declared qualified in Civil Services Prelims 2026 can proceed to the mains stage.",
+        "The press note of 19 Aug 2026 sets the mains sittings for 21–23 and 29–30 Aug 2026, so the closing papers fall on 29 and 30 August. Carry the e-admit card and the same photo ID to every sitting. The same press note opens the question-paper representation portal from 31 Aug to 4 Sep 2026. Only candidates declared qualified in Civil Services Prelims 2026 appear at this stage.",
     },
     summary:
       "The written mains stage of the Civil Services Examination for services including IAS, IPS and central Group A/B services.",
@@ -453,24 +453,36 @@ export const exams: Exam[] = [
     sector: "Central armed police forces",
     examTypes: ["Police & CAPF"],
     education: ["Graduate"],
-    nextAction: "Track the written result and physical-stage notice",
+    nextAction: "Update your details on upsconline.nic.in for the PST/PET",
     summary: "Officer recruitment for Assistant Commandant posts in the central armed police forces.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026",
     status: {
-      label: "Result awaited",
-      tone: "violet",
-      nextAction: "Track the written result and physical-stage notice",
+      label: "Written result declared",
+      tone: "blue",
+      nextAction: "Update your details on upsconline.nic.in for the PST/PET",
       detail:
-        "The written examination was held on 19 Jul 2026 and UPSC published the question papers on 20 Jul 2026. No written result has been published yet.",
+        "UPSC declared the written result on 25 Aug 2026. The roll numbers listed in the press note have qualified for the Physical Standards Test and Physical Efficiency Test, and that candidature is provisional. Every qualified candidate must log in to upsconline.nic.in within the fifteen-day window the press note allows, update their details and educational qualification status and upload proof of passing the qualifying examination; the notice warns that candidates who do not will be ineligible for the later stages. PST/PET dates have not been announced.",
     },
     timeline: [
       { label: "Notification", date: "2026-02-20", displayDate: "20 Feb 2026", state: "completed" },
       { label: "Applications closed", date: "2026-03-12", displayDate: "12 Mar 2026, 6 PM", state: "completed" },
       { label: "e-Admit card", date: "2026-07-10", displayDate: "10 Jul 2026", state: "completed" },
       { label: "Written examination", date: "2026-07-19", displayDate: "19 Jul 2026", state: "completed" },
-      { label: "Written result", displayDate: "To be announced", state: "current" },
+      { label: "Written result", date: "2026-08-25", displayDate: "25 Aug 2026", state: "completed" },
+      {
+        label: "Detail update on upsconline.nic.in",
+        displayDate: "Closing date not announced",
+        state: "current",
+        note: "The press note of 25 Aug 2026 allows fifteen days from the declaration of the written result but prints no closing date.",
+      },
+      { label: "Physical Standards Test / Physical Efficiency Test", displayDate: "To be announced", state: "tentative" },
     ],
     extraLinks: [
+      {
+        label: "Written result press note dated 25 Aug 2026 (roll number list)",
+        url: "https://www.upsc.gov.in/sites/default/files/WR-CAPF-2026-Roll-Engl-250826.pdf",
+        type: "result",
+      },
       {
         label: "Official detailed notice",
         url: "https://www.upsc.gov.in/sites/default/files/ExamNotifi_CAPF_AC_Exam_2026_Eng_20022026.pdf",
@@ -484,8 +496,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Central Armed Police Forces (ACs) Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026",
-    sourcePublished: "Question papers uploaded 20 Jul 2026; examination held 19 Jul 2026",
+    sourcePublished: "Written result press note dated 25 Aug 2026; examination held 19 Jul 2026",
+    lastVerified: "29 Aug 2026, 14:57 IST",
     changeLog: [
+      {
+        date: "2026-08-25",
+        displayDate: "25 Aug 2026",
+        text: "UPSC's press note of 25 Aug 2026 declared the written result of the CAPF (ACs) 2026 examination held on 19 Jul 2026. The listed roll numbers have qualified for the Physical Standards Test and Physical Efficiency Test on a provisional basis, and qualified candidates must update their details and upload proof of their qualifying examination on upsconline.nic.in within the fifteen-day window the notice allows.",
+      },
       {
         date: "2026-08-19",
         displayDate: "19 Aug 2026",
