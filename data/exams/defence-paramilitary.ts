@@ -189,7 +189,7 @@ export const exams: Exam[] = [
       label: "Induction month reached",
       tone: "slate",
       nextAction: "Selected candidates should follow their portal dashboard and Chilka instructions",
-      detail: "The official advertisement placed Stage II in May 2026 and induction at INS Chilka in July 2026; both were tentative months.",
+      detail: "The official advertisement placed Stage II in May 2026 and induction at INS Chilka in July 2026; both were tentative months. The Join Indian Navy news and events feed, re-read on 9 Sep 2026, publishes nothing further for the 02/2026 batches.",
     },
     summary: "Four-year Agniveer sailor entry for Senior Secondary Recruit branches through INET and Stage II.",
     age: "Born 1 Jul 2005–31 Dec 2008 for the 02/2026 batch.",
@@ -215,8 +215,8 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official Agniveer SSR advertisement", url: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_SSR_English.pdf", type: "notice" }],
     sourceTitle: "Indian Navy Agniveer (SSR) 02/2025, 01/2026 and 02/2026 advertisement",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_SSR_English.pdf",
-    sourcePublished: "Recruitment advertisement published Mar 2025; advertisement re-read 29 Aug 2026 with its tentative timeline unchanged",
-    lastVerified: "29 Aug 2026, 15:20 IST",
+    sourcePublished: "Recruitment advertisement published Mar 2025; Join Indian Navy news and events feed re-read 9 Sep 2026 with nothing published for this batch",
+    lastVerified: "9 Sep 2026, 14:26 IST",
     keywords: [
       "navy sailor recruitment",
       "INET SSR",
@@ -249,7 +249,7 @@ export const exams: Exam[] = [
       label: "Induction month reached",
       tone: "slate",
       nextAction: "Selected candidates should follow their portal dashboard and Chilka instructions",
-      detail: "The official advertisement placed Stage II in May 2026 and induction at INS Chilka in July 2026; both were tentative months.",
+      detail: "The official advertisement placed Stage II in May 2026 and induction at INS Chilka in July 2026; both were tentative months. The Join Indian Navy news and events feed, re-read on 9 Sep 2026, publishes nothing further for the 02/2026 batches.",
     },
     summary: "Four-year Agniveer Matric Recruit entry for notified Navy trades through INET and Stage II.",
     age: "Born 1 Jul 2005–31 Dec 2008 for the 02/2026 batch.",
@@ -275,8 +275,8 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official Agniveer MR advertisement", url: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_MR_English.pdf", type: "notice" }],
     sourceTitle: "Indian Navy Agniveer (MR) 02/2025, 01/2026 and 02/2026 advertisement",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_MR_English.pdf",
-    sourcePublished: "Recruitment advertisement published Mar 2025; advertisement re-read 29 Aug 2026 with its tentative timeline unchanged",
-    lastVerified: "29 Aug 2026, 15:22 IST",
+    sourcePublished: "Recruitment advertisement published Mar 2025; Join Indian Navy news and events feed re-read 9 Sep 2026 with nothing published for this batch",
+    lastVerified: "9 Sep 2026, 14:28 IST",
     keywords: [
       "navy sailor recruitment",
       "INET MR",
@@ -309,7 +309,7 @@ export const exams: Exam[] = [
       label: "Induction month reached",
       tone: "slate",
       nextAction: "Selected candidates should follow their portal dashboard and Chilka instructions",
-      detail: "The official notice placed Stage II in May 2026 and induction in July 2026 as tentative months.",
+      detail: "The official notice placed Stage II in May 2026 and induction in July 2026 as tentative months. The Join Indian Navy news and events feed, re-read on 9 Sep 2026, publishes nothing further for this batch.",
     },
     summary: "Regular sailor entry to the Indian Navy Medical Branch for the separately notified SSR Medical 02/2026 batch.",
     age: "Born 1 Jul 2005–31 Dec 2008 for SSR (Medical) 02/2026.",
@@ -335,8 +335,8 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official SSR Medical advertisement", url: "https://www.joinindiannavy.gov.in/files/SSR_Med_English.pdf", type: "notice" }],
     sourceTitle: "Indian Navy SSR (Medical Assistant) 02/2025 and 02/2026 advertisement",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/SSR_Med_English.pdf",
-    sourcePublished: "Recruitment advertisement published Mar 2025; advertisement re-read 29 Aug 2026 with its tentative timeline unchanged",
-    lastVerified: "29 Aug 2026, 15:24 IST",
+    sourcePublished: "Recruitment advertisement published Mar 2025; Join Indian Navy news and events feed re-read 9 Sep 2026 with nothing published for this batch",
+    lastVerified: "9 Sep 2026, 14:30 IST",
     keywords: [
       "Navy Medical Assistant",
       "navy sailor recruitment",
@@ -367,7 +367,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Watch the candidate dashboard on the Join Indian Navy portal for the Stage-II call-up letter",
       detail:
-        "Applications for Stage-I INET 2026 ran from 14 Mar to 6 Apr 2026. The Join Indian Navy news feed, re-read on 29 Aug 2026, says call-up letters for Stage II of the 01/2027 batch will be issued by Sep 2026, which matches the advertisement's own tentative timeline. The 02/2027 batch is shortlisted separately from the same Stage-I marks.",
+        "Applications for Stage-I INET 2026 ran from 14 Mar to 6 Apr 2026. The Sep 2026 month for shortlisting and Stage-II call-up letters for the 01/2027 batch comes from the advertisement's tentative timeline and from the Join Indian Navy feed item carried in Aug 2026. That feed item is no longer listed on the site as of 9 Sep 2026, and the news and events feed re-read today publishes nothing newer for this entry — no exam notice, result or call-up notice. The 02/2027 batch is shortlisted separately from the same Stage-I marks.",
     },
     summary:
       "Four-year Agniveer sailor entry for Senior Secondary Recruit branches, filling the 01/2027 and 02/2027 batches from a single Stage-I INET 2026 and leading to induction at INS Chilka.",
@@ -390,7 +390,7 @@ export const exams: Exam[] = [
         sortMonth: "2026-09",
         displayDate: "Sep 2026",
         state: "current",
-        note: "The Join Indian Navy news feed says these call-up letters will be issued by Sep 2026",
+        note: "Tentative month; carried on the Join Indian Navy feed in Aug 2026, which no longer lists the item as of 9 Sep 2026",
       },
       { label: "Stage II for the 01/2027 batch", sortMonth: "2026-10", displayDate: "Oct 2026", state: "tentative", note: "Tentative timeline in the advertisement" },
       { label: "Induction at INS Chilka for the 01/2027 batch", sortMonth: "2026-12", displayDate: "Dec 2026", state: "tentative", note: "Training tentatively commences Dec 2026" },
@@ -430,8 +430,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Indian Navy Agniveer (SSR) 01/2027 and 02/2027 batch advertisement",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_SSR_01_27_and_02_27_English.pdf",
-    sourcePublished: "Advertisement published ahead of the 14 Mar 2026 application opening; Join Indian Navy news feed re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:00 IST",
+    sourcePublished: "Advertisement published ahead of the 14 Mar 2026 application opening; Join Indian Navy news and events feed re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:15 IST",
     keywords: [
       "navy sailor recruitment",
       "INET 2026 SSR",
@@ -464,7 +464,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Watch the candidate dashboard on the Join Indian Navy portal for the Stage-II call-up letter",
       detail:
-        "Applications for Stage-I INET 2026 ran from 14 Mar to 6 Apr 2026. The Join Indian Navy news feed, re-read on 29 Aug 2026, says call-up letters for Stage II of the 01/2027 batch will be issued by Sep 2026, which matches the advertisement's own tentative timeline. The 02/2027 batch is shortlisted separately from the same Stage-I marks.",
+        "Applications for Stage-I INET 2026 ran from 14 Mar to 6 Apr 2026. The Sep 2026 month for shortlisting and Stage-II call-up letters for the 01/2027 batch comes from the advertisement's tentative timeline and from the Join Indian Navy feed item carried in Aug 2026. That feed item is no longer listed on the site as of 9 Sep 2026, and the news and events feed re-read today publishes nothing newer for this entry — no exam notice, result or call-up notice. The 02/2027 batch is shortlisted separately from the same Stage-I marks.",
     },
     summary:
       "Four-year Agniveer Matric Recruit entry for notified Navy trades, filling the 01/2027 and 02/2027 batches from a single Stage-I INET 2026 and leading to induction at INS Chilka.",
@@ -486,7 +486,7 @@ export const exams: Exam[] = [
         sortMonth: "2026-09",
         displayDate: "Sep 2026",
         state: "current",
-        note: "The Join Indian Navy news feed says these call-up letters will be issued by Sep 2026",
+        note: "Tentative month; carried on the Join Indian Navy feed in Aug 2026, which no longer lists the item as of 9 Sep 2026",
       },
       { label: "Stage II for the 01/2027 batch", sortMonth: "2026-10", displayDate: "Oct 2026", state: "tentative", note: "Tentative timeline in the advertisement" },
       { label: "Induction at INS Chilka for the 01/2027 batch", sortMonth: "2026-12", displayDate: "Dec 2026", state: "tentative", note: "Training tentatively commences Dec 2026" },
@@ -525,8 +525,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Indian Navy Agniveer (MR) 01/2027 and 02/2027 batch advertisement",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_MR_01_27_and_02_27_English.pdf",
-    sourcePublished: "Advertisement published ahead of the 14 Mar 2026 application opening; Join Indian Navy news feed re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:04 IST",
+    sourcePublished: "Advertisement published ahead of the 14 Mar 2026 application opening; Join Indian Navy news and events feed re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:18 IST",
     keywords: [
       "navy sailor recruitment",
       "INET 2026 MR",
@@ -555,11 +555,11 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces", "Technical & Trades"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "SSB call-up letters due by end Aug 2026",
+      label: "SSB call-up letters due in early Sep 2026",
       tone: "blue",
-      nextAction: "Watch e-mail, SMS and the candidate dashboard for the SSB call-up letter this week",
+      nextAction: "Watch e-mail, SMS and the candidate dashboard for the SSB call-up letter",
       detail:
-        "Online applications ran from 16 May to 1 Jun 2026. The Join Indian Navy news feed, re-read on 29 Aug 2026, says shortlisting for this entry is complete and SSB call-up letters will be issued by end Aug 2026. The notification itself publishes no SSB date.",
+        "Online applications ran from 16 May to 1 Jun 2026. The Join Indian Navy events page for this entry, last updated 2 Sep 2026 and re-read on 9 Sep 2026, says shortlisting is complete and that SSB call-up letters will be issued by early Sep 2026; until 29 Aug 2026 the same feed said end Aug 2026. The notification itself publishes no SSB date.",
     },
     summary:
       "Short Service Commission officer entry into the Information Technology cadre of the Navy's Executive Branch, through a Special Naval Orientation Course commencing Jan 2027 at the Indian Naval Academy, Ezhimala.",
@@ -576,10 +576,10 @@ export const exams: Exam[] = [
       { label: "Online applications closed", date: "2026-06-01", displayDate: "1 Jun 2026", state: "completed" },
       {
         label: "SSB call-up letters issued",
-        sortMonth: "2026-08",
-        displayDate: "By end Aug 2026",
+        sortMonth: "2026-09",
+        displayDate: "By early Sep 2026",
         state: "current",
-        note: "The Navy news feed reports shortlisting complete but publishes no date for it",
+        note: "The Navy events page of 2 Sep 2026 reports shortlisting complete but publishes no exact issue date",
       },
       { label: "SSB interviews", displayDate: "SSB schedule not announced in the cited notification", state: "tentative" },
       { label: "Special Naval Orientation Course at INA Ezhimala", sortMonth: "2027-01", displayDate: "From Jan 2027 (six weeks)", state: "scheduled" },
@@ -605,12 +605,24 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Official SSC (IT) Jan 2027 course notification", url: "https://www.joinindiannavy.gov.in/files/Advertisement_SSC_IT_Jan_27.pdf", type: "notice" },
+      {
+        label: "Official events-page notice — SSC (IT) Jan 27 shortlisting completed",
+        url: "https://www.joinindiannavy.gov.in/en/event/ssc-it-jan-27-course-shortlisting-completed-ssb-callup-letters-will-be-issued-by-early-sep-26.html",
+        type: "notice",
+      },
       { label: "Join Indian Navy portal", url: "https://www.joinindiannavy.gov.in/", type: "website" },
     ],
     sourceTitle: "Indian Navy Short Service Commission (Information Technology) — Jan 27 course notification",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advertisement_SSC_IT_Jan_27.pdf",
-    sourcePublished: "Notification published ahead of the 16 May 2026 application opening; Join Indian Navy news feed re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:48 IST",
+    sourcePublished: "Notification published ahead of the 16 May 2026 application opening; events-page notice updated 2 Sep 2026 and re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:05 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The SSB call-up letters for this entry have slipped: the Join Indian Navy events page, updated 2 Sep 2026, now says they will be issued by early Sep 2026 rather than by end Aug 2026.",
+      },
+    ],
     keywords: [
       "Navy SSC IT officer",
       "navy officer entry",
@@ -806,8 +818,8 @@ export const exams: Exam[] = [
     status: {
       label: "SSB stage ahead",
       tone: "violet",
-      nextAction: "Watch the Army portal for SSB call-up between Aug and Sep 2026",
-      detail: "Online applications closed on 12 Jun 2026. The official notification places the SSB in the Aug–Sep 2026 window; no exact date is asserted here.",
+      nextAction: "Watch the Army portal for the SSB call-up before the Sep 2026 window closes",
+      detail: "Online applications closed on 12 Jun 2026. The official notification places the SSB in the Aug–Sep 2026 window; no exact date is asserted here. The Join Indian Army portal, re-read on 9 Sep 2026, carries only the Online Common Entrance Exam 2026 admit-card notice and publishes nothing further for TES-56; its officer-selection sub-pages and the notification PDF were unreachable at that check.",
     },
     summary: "10+2 direct-entry commission for unmarried male engineering-stream candidates, shortlisted through JEE (Main) 2026 for a four-year (3+1) engineering course leading to a Permanent Commission.",
     vacancies: 90,
@@ -845,8 +857,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Technical Entry Scheme TES-56 official notification",
     sourceUrl: "https://www.joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/Noftification_of_TES-56.pdf",
-    sourcePublished: "Notification published ahead of the 13 May 2026 application opening",
-    lastVerified: "4 Aug 2026, 16:00 IST",
+    sourcePublished: "Notification published ahead of the 13 May 2026 application opening; Join Indian Army portal re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:40 IST",
     keywords: [
       "Army 10+2 technical entry",
       "TES Jan 2027",
@@ -879,7 +891,7 @@ export const exams: Exam[] = [
       label: "SSB stage in progress",
       tone: "violet",
       nextAction: "Watch the Army portal for SSB centre/date selection and results",
-      detail: "Online applications closed on 11 Jun 2026. The official notification places a five-day SSB between Jul and Sep 2026; no exact date is asserted here.",
+      detail: "Online applications closed on 11 Jun 2026. The official notification places a five-day SSB between Jul and Sep 2026; no exact date is asserted here. The Join Indian Army portal, re-read on 9 Sep 2026, carries only the Online Common Entrance Exam 2026 admit-card notice and publishes nothing further for TGC-144; its officer-selection sub-pages and the notification PDF were unreachable at that check.",
     },
     summary: "Direct-entry Permanent Commission for unmarried male engineering graduates, mainly for the Corps of Engineers, Corps of Signals and EME, through a 12-month course at IMA Dehradun.",
     vacancies: 30,
@@ -916,8 +928,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Technical Graduate Course TGC-144 official notification",
     sourceUrl: "https://www.joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/TGC_-_144_NOTIFICATION_BILINGUAL.pdf",
-    sourcePublished: "Notification published ahead of the 13 May 2026 application opening",
-    lastVerified: "4 Aug 2026, 16:05 IST",
+    sourcePublished: "Notification published ahead of the 13 May 2026 application opening; Join Indian Army portal re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:43 IST",
     keywords: [
       "Army engineering graduate entry",
       "TGC Jan 2027",
@@ -951,7 +963,7 @@ export const exams: Exam[] = [
       label: "Applications closed; shortlist awaited",
       tone: "violet",
       nextAction: "Watch joinindianarmy.nic.in for the CLAT PG based shortlist for SSB",
-      detail: "The official notification opened online applications on 17 Jul 2026 at 1500 hrs and closed them on 17 Aug 2026 at 1500 hrs. Shortlisting for the SSB is made on the CLAT PG 2026 score against the notified vacancies, and SSB interviews are scheduled for Nov–Dec 2026.",
+      detail: "The official notification opened online applications on 17 Jul 2026 at 1500 hrs and closed them on 17 Aug 2026 at 1500 hrs. Shortlisting for the SSB is made on the CLAT PG 2026 score against the notified vacancies, and SSB interviews are scheduled for Nov–Dec 2026. The Join Indian Army portal, re-read on 9 Sep 2026, publishes no shortlist for this course; its officer-selection sub-pages and the notification PDF were unreachable at that check.",
     },
     summary: "Short Service Commission for unmarried male and female law graduates into the Judge Advocate General (JAG) Branch, trained at Officers Training Academy, Chennai.",
     vacancies: 10,
@@ -989,8 +1001,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JAG Entry Scheme 125th Course official notification",
     sourceUrl: "https://www.joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/Notification_for_JAG_Entry_Scheme_125th_Course_Apr_2027.pdf",
-    sourcePublished: "Notification published ahead of the 17 Jul 2026 application opening; portal re-read 20 Aug 2026",
-    lastVerified: "20 Aug 2026, 01:25 IST",
+    sourcePublished: "Notification published ahead of the 17 Jul 2026 application opening; portal re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:46 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1028,11 +1040,11 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces", "Technical & Trades"],
     education: ["12th"],
     status: {
-      label: "SSB call-up letters due by end Aug 2026",
+      label: "SSB call-up letters issued; SSBs scheduled in Sep 2026",
       tone: "blue",
-      nextAction: "Watch e-mail, SMS and the candidate dashboard for the SSB call-up letter this week",
+      nextAction: "Log in to the Join Indian Navy portal and download the SSB call-up letter",
       detail:
-        "Shortlisting for the SSB is complete. The Join Indian Navy news feed, re-read on 29 Aug 2026, still says call-up letters will be issued by end Aug 2026, so they are due in the next few days; SSB interviews follow from Sep 2026 onwards.",
+        "Shortlisting for the SSB is complete. The Join Indian Navy events page for this entry, last updated 2 Sep 2026 and re-read on 9 Sep 2026, says the call-up letters for SSBs scheduled in Sep 2026 have been issued and must be downloaded after logging in. The site publishes no centre-wise SSB dates; they are carried on the call-up letter.",
     },
     summary: "Permanent Commission technical-branch entry for unmarried men and women after Class 12, leading to a four-year B.Tech at the Indian Naval Academy, Ezhimala.",
     vacancies: 60,
@@ -1054,12 +1066,18 @@ export const exams: Exam[] = [
       { label: "Online application window closed", date: "2026-06-29", displayDate: "18 Jun 2026 in the advertisement; extended to 29 Jun 2026 on the official news feed", state: "completed" },
       {
         label: "SSB call-up letters issued",
-        sortMonth: "2026-08",
-        displayDate: "By end Aug 2026",
-        state: "current",
-        note: "The Navy news feed reports shortlisting complete but publishes no date for it",
+        sortMonth: "2026-09",
+        displayDate: "Issued; announced 2 Sep 2026",
+        state: "completed",
+        note: "The Navy events page says the letters are available for download after logging in",
       },
-      { label: "SSB interviews", sortMonth: "2026-09", displayDate: "From Sep 2026 onwards", state: "scheduled" },
+      {
+        label: "SSB interviews",
+        sortMonth: "2026-09",
+        displayDate: "Scheduled in Sep 2026",
+        state: "scheduled",
+        note: "Centre-wise dates are printed on the call-up letter; none is published on the site",
+      },
     ],
     selectionStages: [
       "Online application",
@@ -1071,12 +1089,17 @@ export const exams: Exam[] = [
     syllabus: ["No separate written exam; the JEE (Main) 2026 Common Rank List (CRL) is used to shortlist candidates for the SSB."],
     officialLinks: [
       { label: "Official 10+2 (B.Tech) Cadet Entry advertisement", url: "https://www.joinindiannavy.gov.in/files/Advertisement_10+2_B.Tech_Jan_27.pdf", type: "notice" },
+      {
+        label: "Official events-page notice — SSB call-ups issued for SSBs scheduled in Sep 2026",
+        url: "https://www.joinindiannavy.gov.in/en/event/10-2-b-tech-cadet-entry-jan-27-callups-for-ssbs-scheduled-in-sep-26-issued-login-to-download.html",
+        type: "notice",
+      },
       { label: "Join Indian Navy portal", url: "https://www.joinindiannavy.gov.in/", type: "website" },
     ],
     sourceTitle: "10+2 (B.Tech) Cadet Entry Scheme official advertisement (course commencing Jan 2027)",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advertisement_10+2_B.Tech_Jan_27.pdf",
-    sourcePublished: "Join Indian Navy news feed re-read 29 Aug 2026; page last updated 12 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:48 IST",
+    sourcePublished: "Join Indian Navy events-page notice updated 2 Sep 2026 and re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:10 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1087,6 +1110,11 @@ export const exams: Exam[] = [
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "Shortlisting for the 10+2 (B.Tech) Jan 2027 entry is complete and SSB call-up letters are due by end Aug 2026; the official news feed also shows the application window ran to 29 Jun 2026, not 18 Jun 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The SSB call-up letters have been issued: the Join Indian Navy events page, updated 2 Sep 2026, says call-ups for SSBs scheduled in Sep 2026 are out and can be downloaded after logging in.",
       },
     ],
     keywords: [
@@ -1120,7 +1148,7 @@ export const exams: Exam[] = [
       label: "Course commenced; selected candidates under training",
       tone: "slate",
       nextAction: "This cycle's applications are closed; watch the Navy portal for the next SSC notification",
-      detail: "Applications closed on 1 Sep 2025 for the course commencing Jun 2026 onwards at the Indian Naval Academy, Ezhimala.",
+      detail: "Applications closed on 1 Sep 2025 for the course commencing Jun 2026 onwards at the Indian Naval Academy, Ezhimala. The Join Indian Navy news and events feed, re-read on 9 Sep 2026, publishes nothing further for this cycle.",
     },
     summary: "Short Service Commission officer entry across Executive (GS(X)/Hydro/Pilot/Observer/ATC/Logistics), Naval Armament Inspectorate, Law, Education, Engineering, Electrical, Naval Constructor and other notified branches.",
     vacancyLabel: "Branch-wise vacancies published in the notification",
@@ -1155,8 +1183,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Short Service Commission officer entry official advertisement (Jun 2026 course)",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advertisement_SSC_Jun_2026.pdf",
-    sourcePublished: "Advertisement published ahead of the 9 Aug 2025 application opening",
-    lastVerified: "4 Aug 2026, 16:20 IST",
+    sourcePublished: "Advertisement published ahead of the 9 Aug 2025 application opening; Join Indian Navy news and events feed re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:32 IST",
     keywords: [
       "Navy SSC officer",
       "navy officer entry",
@@ -1189,7 +1217,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch e-mail and SMS for the SSB call-up letter; the notification publishes no SSB date",
       detail:
-        "Online applications opened on 25 Jun 2026. The notification's last date of 27 Jul 2026 was shown as extended to 3 Aug 2026 on the official Join Indian Navy events page. Shortlisting is on normalised qualifying-degree marks; no SSB schedule is asserted here.",
+        "Online applications opened on 25 Jun 2026. The notification's last date of 27 Jul 2026 was shown as extended to 3 Aug 2026 on the official Join Indian Navy events page, which still carries that item as closed. Shortlisting is on normalised qualifying-degree marks. The Join Indian Navy news and events feed, re-read on 9 Sep 2026, publishes no shortlist and no SSB schedule for this entry, so none is asserted here.",
     },
     summary:
       "Short Service Commission officer entry for the course commencing Jun 2027 at the Indian Naval Academy, Ezhimala, across the Executive (GS(X)/Hydro, Pilot, Observer, Air Traffic Control, Logistics), Naval Armament Inspectorate, Education, Engineering, Electrical, Submarine Technical and Naval Constructor branches.",
@@ -1257,8 +1285,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Indian Navy Short Service Commission officer entry — Jun 2027 (AT 27) course notification",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/SSC_Notification_for_ADV_Jun_27.pdf",
-    sourcePublished: "Notification published ahead of the 25 Jun 2026 application opening; extension notice checked 4 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Notification published ahead of the 25 Jun 2026 application opening; extension notice checked 4 Aug 2026; Join Indian Navy news and events feed re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:35 IST",
     keywords: [
       "Navy SSC officer",
       "navy officer entry",
@@ -1287,11 +1315,11 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces", "Technical & Trades"],
     education: ["ITI / Diploma"],
     status: {
-      label: "Stage-I INET 2/2026 due in Aug 2026",
-      tone: "blue",
-      nextAction: "Watch the candidate dashboard on the Join Indian Navy portal for the exact INET 2/2026 date and admit card",
+      label: "Stage-I INET 2/2026 result awaited",
+      tone: "violet",
+      nextAction: "Watch the candidate dashboard and the Join Indian Navy news feed for the Stage-I INET 2/2026 result and the Stage-II call-up",
       detail:
-        "Applications opened on 5 Jun 2026 and closed on 5 Jul 2026 after an extension. The advertisement's own timeline places Stage-I INET 2/2026 in Aug 2026 and the Stage-I result at end Aug or early Sep 2026, and states that these dates are tentative.",
+        "Applications opened on 5 Jun 2026 and closed on 5 Jul 2026 after an extension. The advertisement's own tentative timeline placed Stage-I INET 2/2026 in Aug 2026 and the Stage-I result at end Aug or early Sep 2026. Both months have now been reached, but the Join Indian Navy news and events feed, re-read on 9 Sep 2026, carries no exam notice, admit-card notice or result for INET 2/2026 — it lists only the SSC (IT) and 10+2 B.Tech officer entries — so nothing newer than the advertisement is published as of today.",
     },
     summary:
       "Four-year Agniveer entry for engineering and electrical diploma holders, filling the 01/2027 and 02/2027 Apprentice batches from a single Stage-I INET 2/2026 and leading to Artificer training at INS Chilka.",
@@ -1312,8 +1340,20 @@ export const exams: Exam[] = [
         state: "completed",
       },
       { label: "Correction window", date: "2026-07-06", displayDate: "6 Jul 2026", state: "completed" },
-      { label: "Stage-I INET 2/2026", sortMonth: "2026-08", displayDate: "Aug 2026", state: "tentative", note: "Tentative timeline in the advertisement" },
-      { label: "Stage-I result", sortMonth: "2026-08", displayDate: "End Aug 2026 or early Sep 2026", state: "tentative", note: "Tentative timeline in the advertisement" },
+      {
+        label: "Stage-I INET 2/2026",
+        sortMonth: "2026-08",
+        displayDate: "Aug 2026",
+        state: "tentative",
+        note: "Tentative timeline in the advertisement; the Navy publishes no exam or admit-card notice for it as of 9 Sep 2026",
+      },
+      {
+        label: "Stage-I result",
+        sortMonth: "2026-08",
+        displayDate: "End Aug 2026 or early Sep 2026",
+        state: "tentative",
+        note: "Tentative timeline in the advertisement; no result is published as of 9 Sep 2026",
+      },
       { label: "Stage II for the 01/2027 batch", sortMonth: "2026-10", displayDate: "Oct 2026", state: "tentative", note: "Call-up letters tentatively in Sep 2026" },
       { label: "Induction at INS Chilka for the 01/2027 batch", sortMonth: "2026-12", displayDate: "Dec 2026", state: "tentative", note: "Tentative timeline in the advertisement" },
       { label: "Stage II for the 02/2027 batch", sortMonth: "2027-03", displayDate: "Mar 2027", state: "tentative", note: "Call-up letters tentatively in Feb 2027" },
@@ -1355,8 +1395,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Indian Navy Agniveer (Apprentice) 01/2027 and 02/2027 batch advertisement",
     sourceUrl: "https://www.joinindiannavy.gov.in/files/Advt_Agniveer_Apprentice_01_27_English.pdf",
-    sourcePublished: "Advertisement published ahead of the 5 Jun 2026 application opening; extension notice checked 4 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Advertisement published ahead of the 5 Jun 2026 application opening; extension notice checked 4 Aug 2026; Join Indian Navy news and events feed re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:22 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The advertisement's tentative Aug 2026 window for Stage-I INET 2/2026 and its end-Aug/early-Sep result window have passed with nothing published on the Join Indian Navy feed, so the record now shows the Stage-I result as awaited rather than the exam as upcoming.",
+      },
+    ],
     keywords: [
       "Navy Apprentice Agniveer",
       "diploma navy recruitment",
@@ -1721,7 +1768,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Coast Guard recruitment page for the scrutiny outcome and the written-examination admit card",
       detail:
-        "The advertisement was published in the 27 Jun – 3 Jul 2026 issue of Employment News and set 11 Aug 2026 as the last date for receipt of the postal application. That date has passed and the Coast Guard recruitment page, last updated 28 Aug 2026, still lists only this advertisement, with no extension, no scrutiny outcome and no examination date.",
+        "The advertisement was published in the 27 Jun – 3 Jul 2026 issue of Employment News and set 11 Aug 2026 as the last date for receipt of the postal application. That date has passed and the Coast Guard recruitment page, re-read on 9 Sep 2026, still lists only this advertisement of 21 Jul 2026, with no extension, no scrutiny outcome and no examination date.",
     },
     summary:
       "Direct recruitment by Headquarters, Coast Guard Region (A&N), Sri Vijaya Puram to the Group 'C' civilian post of Engine Driver, through document verification, a written examination and a qualifying skill test.",
@@ -1784,8 +1831,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Advertisement for filling up of Group 'C' civilian vacant post by direct recruitment in CGRHQ (A&N)",
     sourceUrl: "https://indiancoastguard.gov.in/sites/default/files/Advt_in_English.pdf",
-    sourcePublished: "Published in the 27 Jun – 3 Jul 2026 issue of Employment News; posted on the Coast Guard recruitment page on 21 Jul 2026, which was last updated 28 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:30 IST",
+    sourcePublished: "Published in the 27 Jun – 3 Jul 2026 issue of Employment News; posted on the Coast Guard recruitment page on 21 Jul 2026, which was re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:55 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2138,7 +2185,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the BSF recruitment portal for the next advertisement",
       detail:
-        "The BSF recruitment portal's 'Current Recruitment Openings' page showed 'No Job(s) Available' at last check. Its notice board carries the direct and departmental Head Constable (Radio Operator and Radio Mechanic) 2025 advertisement with two corrigenda, a Constable (Tradesmen) correction-window notice, open rally advertisements for Constable (GD) in Meghalaya and Mizoram, and second-phase examination results for vacancy-year 2024 posts — so those cycles are past their application stage. No current-cycle dates or vacancies are asserted here.",
+        "The BSF recruitment portal's 'Current Recruitment Openings' page still says 'No Job(s) Available' on a re-read of 9 Sep 2026. Its notice board now carries a notice on the opening of the objection management portal, a notice on the interruption of a computer-based examination due to a power failure at a Kanpur centre, a rescheduling notice for the written examination for ASI (Steno/Combatant Steno) and HC (Min/Combatant Min) in CAPFs and Assam Rifles Exam-2024, admit-card availability for the HC (Ministerial) and ASI (Steno) candidates, and mock-test links for the BSF Exam 2026 cadres — so the live cycles are at their examination stage, not their application stage. The notice board publishes no dates alongside these items, and no current-cycle dates or vacancies are asserted here.",
     },
     summary:
       "Recruitment run by the BSF itself — separate from the SSC Constable (GD) examination — for Head Constable (Radio Operator and Radio Mechanic), Assistant Sub Inspector, Constable (Tradesman) and other Group B and Group C combatised posts across the communication, engineering, water wing, air wing, workshop, veterinary and paramedical set-ups.",
@@ -2157,8 +2204,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "BSF recruitment portal — current recruitment openings and notice board",
     sourceUrl: "https://rectt.bsf.gov.in/",
-    sourcePublished: "Recruitment portal checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 17:10 IST",
+    sourcePublished: "Recruitment portal re-read 9 Sep 2026; the portal publishes no date against its notice-board items",
+    lastVerified: "9 Sep 2026, 14:50 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The BSF recruitment portal's notice board has moved on to examination-stage notices — admit cards for HC (Ministerial) and ASI (Steno), a rescheduling notice for the ASI (Steno) and HC (Min) CAPFs and Assam Rifles Exam-2024 written test, and BSF Exam 2026 mock tests — while 'Current Recruitment Openings' still shows no open application window.",
+      },
+    ],
     keywords: [
       "BSF recruitment",
       "BSF bharti",
@@ -2190,7 +2244,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Download the Paramedical Staff 2026 PST and documentation e-admit card from the CISF recruitment portal",
       detail:
-        "The CISF notice board, re-read on 29 Aug 2026, now carries an August 2026 notice on the Physical Standard Test and documentation for the Paramedical Staff Recruitment 2026 saying the e-admit cards have been uploaded on the CISF recruitment portal; that recruitment was notified in Employment News (6–12 June 2026). The board also shows that the ASI (Stenographer) and Head Constable (Ministerial) 2024 written examination will be conducted through the Limited Departmental Competitive Examination, alongside trade test, documentation and PET/PST stage notices for the Constable (Tradesman) and Constable (Driver and Driver-cum-Pump-Operator) 2024 cycles and a 2025 sports-quota notice. No application dates or vacancies are asserted here.",
+        "The CISF notice board, re-read on 29 Aug 2026, now carries an August 2026 notice on the Physical Standard Test and documentation for the Paramedical Staff Recruitment 2026 saying the e-admit cards have been uploaded on the CISF recruitment portal; that recruitment was notified in Employment News (6–12 June 2026). The board also shows that the ASI (Stenographer) and Head Constable (Ministerial) 2024 written examination will be conducted through the Limited Departmental Competitive Examination, alongside trade test, documentation and PET/PST stage notices for the Constable (Tradesman) and Constable (Driver and Driver-cum-Pump-Operator) 2024 cycles and a 2025 sports-quota notice. A further re-read on 9 Sep 2026 shows the same two newest items — the Paramedical Staff 2026 PST and documentation e-admit-card notice and the ASI (Stenographer)/Head Constable (Ministerial) LDCE notice — with nothing newer. No application dates or vacancies are asserted here.",
     },
     summary:
       "Recruitment run by the CISF itself — separate from the SSC Constable (GD) examination — for Constable (Tradesman), Constable (Driver and Driver-cum-Pump-Operator), Head Constable, Assistant Sub Inspector, paramedical and sports-quota posts.",
@@ -2209,8 +2263,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "CISF official website recruitment notice board",
     sourceUrl: "https://www.cisf.gov.in/",
-    sourcePublished: "Notice board re-read 29 Aug 2026; newest recruitment items dated August 2026",
-    lastVerified: "29 Aug 2026, 15:42 IST",
+    sourcePublished: "Notice board re-read 9 Sep 2026; newest recruitment items still dated August 2026",
+    lastVerified: "9 Sep 2026, 14:58 IST",
     changeLog: [
       {
         date: "2026-08-29",

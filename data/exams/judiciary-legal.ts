@@ -274,11 +274,11 @@ export const exams: Exam[] = [
     examTypes: ["Judiciary & Legal"],
     education: ["Professional degree"],
     status: {
-      label: "Mains exam 12–13 Sep 2026",
+      label: "Mains postponed to 10–11 Oct 2026",
       tone: "blue",
-      nextAction: "Watch delhihighcourt.nic.in job openings and recruitment results for the Mains admit card and centre notice ahead of 12 Sep 2026.",
+      nextAction: "Sit the Mains on the revised dates of 10 and 11 October 2026, and watch delhihighcourt.nic.in job openings for the admit card and centre notice.",
       detail:
-        "The preliminary result of 26 July 2026 was declared by notice dated 14 August 2026, and exactly 400 candidates were shortlisted for provisional admission to the Mains (Written) Examination. That notice states the Mains will be held on 12 and 13 September 2026 across four papers — General Knowledge and Language, Law-I, Law-II and Law-III. No admit-card, centre or postponement notice had been posted as of 29 August 2026.",
+        "The preliminary result of 26 July 2026 was declared by notice dated 14 August 2026, and exactly 400 candidates were shortlisted for provisional admission to the Mains (Written) Examination across four papers — General Knowledge and Language, Law-I, Law-II and Law-III. A notice dated 31 August 2026, posted on the Job Openings page on 1 September 2026, postpones the Mains from 12 and 13 September 2026 to 10 and 11 October 2026 respectively, to avoid inconvenience to candidates from the likely traffic advisories for the 18th BRICS Summit at Bharat Mandapam. No admit-card or centre notice had been posted when the page was read on 9 September 2026.",
     },
     summary: "Direct recruitment to the Delhi Higher Judicial Service through preliminary, mains and viva-voce stages.",
     vacancies: 27,
@@ -300,9 +300,16 @@ export const exams: Exam[] = [
         note: "Preliminary marks were published out of 139.",
       },
       {
-        label: "Mains examination (written) — four papers",
+        label: "Mains examination (written) postponed from 12–13 Sep 2026",
         date: "2026-09-12",
-        displayDate: "12 and 13 Sep 2026",
+        displayDate: "Postponed by notice dated 31 Aug 2026",
+        state: "postponed",
+        note: "The notice cites the likely traffic advisories for the 18th BRICS Summit at Bharat Mandapam on 12 and 13 Sep 2026.",
+      },
+      {
+        label: "Mains examination (written) — four papers",
+        date: "2026-10-10",
+        displayDate: "10 and 11 Oct 2026",
         state: "scheduled",
         note: "General Knowledge and Language, Law-I, Law-II and Law-III.",
       },
@@ -324,14 +331,19 @@ export const exams: Exam[] = [
         url: "https://delhihighcourt.nic.in/files/2026-08/recuritment/upload_shortlisted_notice.pdf",
         type: "result",
       },
+      {
+        label: "Notice dated 31 Aug 2026 — Mains (Written) Examination re-scheduled to 10 and 11 Oct 2026",
+        url: "https://delhihighcourt.nic.in/files/2026-09/recuritment/dhjs2026.pdf",
+        type: "notice",
+      },
       { label: "Delhi High Court recruitment results", url: "https://delhihighcourt.nic.in/web/recruitment-results-current", type: "result" },
       { label: "Delhi High Court job openings", url: "https://www.delhihighcourt.nic.in/web/job-openings", type: "website" },
     ],
-    sourceTitle: "Delhi Higher Judicial Service Examination 2026 advertisement, read with the shortlist notice dated 14 August 2026",
-    sourceUrl: "https://delhihighcourt.nic.in/files/2026-07/recuritment/adv-eng_dhjs-2026.pdf",
+    sourceTitle: "Notice dated 31 August 2026 re-scheduling the Delhi Higher Judicial Service Mains Examination (Written) 2026",
+    sourceUrl: "https://delhihighcourt.nic.in/files/2026-09/recuritment/dhjs2026.pdf",
     sourcePublished:
-      "Result and shortlist notices dated 14 Aug 2026; job-openings and recruitment-results pages rechecked 29 Aug 2026, no admit-card or postponement notice posted",
-    lastVerified: "29 Aug 2026, 15:20 IST",
+      "Re-scheduling notice dated 31 Aug 2026, posted on the Job Openings page 1 Sep 2026; job-openings and recruitment-results pages re-read 9 Sep 2026, no admit-card or centre notice yet",
+    lastVerified: "9 Sep 2026, 17:12 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -342,6 +354,11 @@ export const exams: Exam[] = [
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "The High Court of Delhi declared the DHJS 2026 preliminary result on 14 Aug 2026 and shortlisted 400 candidates for the Mains (Written) Examination, which will be held on 12 and 13 September 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Postponed. A notice dated 31 Aug 2026, posted on the Job Openings page on 1 Sep 2026, moves the Mains (Written) Examination from 12 and 13 Sep 2026 to 10 and 11 Oct 2026 respectively, to avoid inconvenience to candidates from the likely traffic advisories for the 18th BRICS Summit at Bharat Mandapam.",
       },
     ],
     keywords: ["DHJS exam", "Delhi district judge recruitment", "higher judicial service Delhi", "J-5 scale judiciary"],
@@ -365,10 +382,10 @@ export const exams: Exam[] = [
     examTypes: ["Judiciary & Legal"],
     education: ["Graduate"],
     status: {
-      label: "Mains postponed; new date awaited",
-      tone: "red",
-      nextAction: "Poll delhihighcourt.nic.in Job Openings for the revised Stage-II date notice.",
-      detail: "The Stage-II Main (Descriptive) Examination fixed for 24 May 2026 was cancelled by notice No. 51/Exams-NJ/DHC dated 15 May 2026 for administrative reasons. Neither the Job Openings page nor the recruitment-results page carried a revised date as of 29 August 2026; the latest result posted for this examination is still the Stage-I result of 25 April 2026.",
+      label: "Stage-II Mains (Descriptive) on 4 Oct 2026",
+      tone: "blue",
+      nextAction: "Sit the Stage-II Mains (Descriptive) Examination on 4 October 2026 in Delhi-NCR; reporting time, examination time and centre will be on the admit card.",
+      detail: "The Stage-II Main (Descriptive) Examination fixed for 24 May 2026 was cancelled by notice No. 51/Exams-NJ/DHC dated 15 May 2026 for administrative reasons. Notice No. 83/Exams-NJ/DHC dated 8 September 2026 publishes the revised schedule: the Stage-II Mains (Descriptive) Examination will be held on Sunday, 4 October 2026, with Delhi-NCR as the city of examination, and the reporting time, examination time, centre and instructions to candidates will be as per the admit card. The recruitment-results page also carried a further notice dated 8 September 2026 on the Stage-I Preliminary (CBT) result of 22 March 2026 when it was read on 9 September 2026.",
     },
     summary: "Open recruitment examination for Junior Judicial Assistant/Restorer posts on the Delhi High Court establishment.",
     qualification: "Graduate qualification and computer/typing conditions under the 2026 open-examination advertisement.",
@@ -377,7 +394,19 @@ export const exams: Exam[] = [
       { label: "Tentative answer key and objections", date: "2026-03-24", displayDate: "24 Mar 2026", state: "completed" },
       { label: "Stage-I result", date: "2026-04-25", displayDate: "25 Apr 2026", state: "completed" },
       { label: "Stage-II Mains (Descriptive) set for 24 May 2026", date: "2026-05-15", displayDate: "Cancelled by notice of 15 May 2026", state: "postponed" },
-      { label: "Revised Stage-II Mains date", displayDate: "To be announced in due course", state: "tentative" },
+      {
+        label: "Revised Stage-II schedule notified (No. 83/Exams-NJ/DHC)",
+        date: "2026-09-08",
+        displayDate: "8 Sep 2026",
+        state: "completed",
+      },
+      {
+        label: "Stage-II Mains (Descriptive) Examination",
+        date: "2026-10-04",
+        displayDate: "4 Oct 2026 (Sunday)",
+        state: "scheduled",
+        note: "City of examination: Delhi-NCR. Reporting time, examination time and centre are as per the admit card.",
+      },
     ],
     eligibility: [
       "The Vacancy Notice for the Junior Judicial Assistant/Restorer (Open) Examination-2026 invites online applications from persons who are citizens of India or subjects of Nepal, as per instructions issued by the Government of India from time to time.",
@@ -390,18 +419,28 @@ export const exams: Exam[] = [
     selectionStages: ["Stage-I preliminary CBT", "Stage-II descriptive mains", "Typing test/interview or later stage under the advertisement", "Document verification"],
     syllabus: ["Language, general aptitude and court-establishment examination components in the JJA/Restorer 2026 scheme."],
     officialLinks: [
+      {
+        label: "Notice No. 83/Exams-NJ/DHC dated 8 Sep 2026 — Stage-II Mains (Descriptive) schedule",
+        url: "https://delhihighcourt.nic.in/files/2026-09/recuritment/83-exams-nj.pdf",
+        type: "calendar",
+      },
       { label: "Official Delhi High Court job openings", url: "https://www.delhihighcourt.nic.in/web/job-openings", type: "result" },
       { label: "Delhi High Court recruitment results", url: "https://delhihighcourt.nic.in/web/recruitment-results-current", type: "result" },
     ],
-    sourceTitle: "Junior Judicial Assistant/Restorer (Open) Examination 2026 lifecycle",
-    sourceUrl: "https://www.delhihighcourt.nic.in/web/job-openings",
-    sourcePublished: "Notice No. 51/Exams-NJ/DHC dated 15 May 2026; job-openings and recruitment-results pages rechecked 29 Aug 2026, still no revised Stage-II date",
-    lastVerified: "29 Aug 2026, 15:22 IST",
+    sourceTitle: "Notice No. 83/Exams-NJ/DHC dated 8 September 2026 — Stage-II Mains (Descriptive) Examination schedule",
+    sourceUrl: "https://delhihighcourt.nic.in/files/2026-09/recuritment/83-exams-nj.pdf",
+    sourcePublished: "Notice No. 83/Exams-NJ/DHC dated 8 Sep 2026; job-openings and recruitment-results pages re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:14 IST",
     changeLog: [
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "The 15 May 2026 notice cancelled the Stage-II Main (Descriptive) Examination that had been fixed for 24 May 2026; no revised date has been notified, so the exam is postponed rather than in progress.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Revised date published. Notice No. 83/Exams-NJ/DHC dated 8 Sep 2026 fixes the Stage-II Mains (Descriptive) Examination for Sunday, 4 Oct 2026, with Delhi-NCR as the city of examination; the centre and reporting time will be on the admit card.",
       },
     ],
     keywords: ["JJA Delhi High Court", "restorer exam Delhi", "junior judicial assistant recruitment"],
@@ -526,11 +565,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "The notification published on 14 August 2026 states the number of vacancies as 180 (One Hundred Eighty) for regular promotion to the U.P. Higher Judicial Service-2023 by way of the Suitability Test. Four per cent of the regular-promotion posts are reserved for Persons with Benchmark Disabilities under rule 7 of the UPHJS Rules, 1975; no other category break-up is published.",
     status: {
-      label: "Applications close 31 Aug 2026; written test on 27 Sep 2026",
-      tone: "green",
-      nextAction: "Eligible Civil Judges (Senior Division) must submit the online application form by 31 August 2026 and send the hard copy of their judgments by 10 September 2026",
+      label: "Applications closed; written test on 27 Sep 2026",
+      tone: "blue",
+      nextAction: "Applicants must ensure the hard copy of their judgments reaches the Court by 10 September 2026, then download the admit card from the Court's website from 21 September 2026",
       detail:
-        "The High Court published the notification, instructions, eligible-officer list and pattern for the U.P. Higher Judicial Service-2023 Suitability Test on 14 August 2026. Online application forms opened on 17 August and close on 31 August 2026, the hard copies of judgments must reach the Court by 10 September 2026, admit cards go up on the Court's website from 21 September 2026, and the written examination of the Suitability Test is on 27 September 2026. This is the regular-promotion stream and is separate from the Limited Departmental Competitive Examination of the same 2023 cycle.",
+        "The High Court published the notification, instructions, eligible-officer list and pattern for the U.P. Higher Judicial Service-2023 Suitability Test on 14 August 2026. Online application forms opened on 17 August and closed on 31 August 2026; the recruitment diary, re-read on 9 September 2026, carries no extension of that date. The next steps are the hard copies of judgments reaching the Court by 10 September 2026, admit cards on the Court's website from 21 September 2026, duplicate admit cards from the office on 24 September 2026 and the written examination on 27 September 2026, all unchanged. The diary also carries a further notice dated 1 September 2026 titled \"Notice regarding criteria regarding allocation of marks for Suitability Test of UPHJS-2023\". This is the regular-promotion stream and is separate from the Limited Departmental Competitive Examination of the same 2023 cycle.",
     },
     summary:
       "Regular promotion of serving Civil Judges (Senior Division) of the Uttar Pradesh Nyayik Sewa into the U.P. Higher Judicial Service through a Suitability Test held by the High Court of Judicature at Allahabad.",
@@ -541,7 +580,13 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification, instructions, eligible-officer list and pattern published", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
       { label: "Online application form opened", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
-      { label: "Last date for filling up the online application form", date: "2026-08-31", displayDate: "31 Aug 2026", state: "current" },
+      { label: "Last date for filling up the online application form", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed" },
+      {
+        label: "Notice on the criteria for allocation of marks for the Suitability Test",
+        date: "2026-09-01",
+        displayDate: "1 Sep 2026",
+        state: "completed",
+      },
       { label: "Last date for receiving the hard copy of judgments in the Court", date: "2026-09-10", displayDate: "10 Sep 2026", state: "scheduled" },
       { label: "Admit card available on the Court's website", date: "2026-09-21", displayDate: "21 Sep 2026", state: "scheduled" },
       { label: "Duplicate admit cards issued from the office", date: "2026-09-24", displayDate: "24 Sep 2026", state: "scheduled" },
@@ -583,17 +628,28 @@ export const exams: Exam[] = [
         url: "https://www.allahabadhighcourt.in/event/event_26614_14-08-2026.pdf",
         type: "result",
       },
+      {
+        label: "Notice regarding criteria regarding allocation of marks for the Suitability Test of UPHJS-2023",
+        url: "https://www.allahabadhighcourt.in/event/event_26729_01-09-2026.pdf",
+        type: "notice",
+      },
       { label: "Official recruitment diary", url: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7", type: "website" },
     ],
     sourceTitle: "U.P. Higher Judicial Service-2023, Regular Promotion by way of Suitability Test — notification published 14 August 2026",
     sourceUrl: "https://www.allahabadhighcourt.in/event/event_26612_14-08-2026.pdf",
-    sourcePublished: "Notification, instructions and pattern published on the recruitment diary 14 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:34 IST",
+    sourcePublished:
+      "Notification, instructions and pattern published on the recruitment diary 14 Aug 2026; diary re-read 9 Sep 2026, which also lists a marks-allocation notice of 1 Sep 2026 and no extension of the 31 Aug 2026 closing date",
+    lastVerified: "9 Sep 2026, 17:22 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "New record. The High Court of Judicature at Allahabad published the notification, instructions, eligible-officer list and pattern for the U.P. Higher Judicial Service-2023 Suitability Test on 14 Aug 2026 — 180 vacancies, applications from 17 to 31 Aug 2026 and the written examination on 27 Sep 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications closed on 31 Aug 2026 and the recruitment diary shows no extension, so the record moves off the applications-open status. The remaining dates stand: judgments in hard copy by 10 Sep 2026, admit cards from 21 Sep 2026 and the written examination on 27 Sep 2026. The diary added a notice dated 1 Sep 2026 on the criteria for allocation of marks for the Suitability Test.",
       },
     ],
     keywords: [
@@ -973,11 +1029,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "Notification No. GOB(I) 47(1)/2026 dated 28 August 2026 invites applications for filling up 79 posts under the 25 per cent LDCE category of the District Judge cadre. The notification adds that the number of posts may get altered in accordance with the outcome of the Supreme Court's decision in Writ Petition (Civil) No. 1022/1989, All India Judges' Association v. Union of India. No category break-up is published.",
     status: {
-      label: "Online applications open until 15 September 2026",
+      label: "Applications close 15 Sep 2026; LDCE on 18 October 2026",
       tone: "green",
       nextAction: "Eligible Senior Civil Judges must apply online through judiciary.karnataka.gov.in by 11.59 p.m. on 15 September 2026",
       detail:
-        "Notification No. GOB(I) 47(1)/2026, issued by the Registrar General on 28 August 2026, invites applications from Senior Civil Judges for 79 District Judge posts under the 25 per cent Limited Departmental Competitive Examination category. Applications are made online on the High Court website and close at 11.59 p.m. on 15 September 2026. No examination date has been notified yet.",
+        "Notification No. GOB(I) 47(1)/2026, issued by the Registrar General on 28 August 2026, invites applications from Senior Civil Judges for 79 District Judge posts under the 25 per cent Limited Departmental Competitive Examination category. Applications are made online on the High Court website and close at 11.59 p.m. on 15 September 2026. An intimation dated 8 September 2026 under the same notification number, read on 9 September 2026, fixes the Limited Departmental Competitive Examination for Sunday, 18 October 2026 from 10.30 a.m. to 1.30 p.m.; the venue is to be intimated in due course.",
     },
     summary:
       "Promotion of serving Senior Civil Judges to the District Judge cadre of the Karnataka State Judicial Service, strictly on merit, through the 25 per cent Limited Departmental Competitive Examination quota.",
@@ -988,13 +1044,20 @@ export const exams: Exam[] = [
     pay: "District Judge cadre scale of the Karnataka State Judicial Service.",
     timeline: [
       { label: "Notification No. GOB(I) 47(1)/2026 issued for 79 posts", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
+      { label: "Examination date intimated (Intimation of 8 Sep 2026)", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed" },
       {
         label: "Last date for the online application",
         date: "2026-09-15",
         displayDate: "15 Sep 2026, 11.59 p.m.",
         state: "current",
       },
-      { label: "Limited Departmental Competitive Examination", displayDate: "Date not announced", state: "tentative" },
+      {
+        label: "Limited Departmental Competitive Examination",
+        date: "2026-10-18",
+        displayDate: "18 Oct 2026 (Sunday), 10.30 a.m. to 1.30 p.m.",
+        state: "scheduled",
+        note: "The venue will be intimated in due course.",
+      },
     ],
     eligibility: [
       "Notification No. GOB(I) 47(1)/2026, dated 28 August 2026, records that under the Karnataka Judicial Service (Recruitment) (Amendment) Rules, 2025, 25 per cent of the total posts in the cadre of District Judges are filled by promotion from the cadre of Senior Civil Judges, strictly on the basis of merit through the Limited Departmental Competitive Examination, following the procedure in Rule 4-B of those Rules.",
@@ -1014,19 +1077,29 @@ export const exams: Exam[] = [
         url: "https://judiciary.karnataka.gov.in/common_folder/notification/Notification_28.08.2026_SD.pdf",
         type: "notice",
       },
+      {
+        label: "Intimation dated 8 Sep 2026 — LDCE scheduled for 18 October 2026",
+        url: "https://judiciary.karnataka.gov.in/common_folder/notification/Intimation_08.09.2026.pdf",
+        type: "calendar",
+      },
       { label: "District Judge LDCE application portal", url: "https://judiciary.karnataka.gov.in/recruitment/hck/djpr/home.php", type: "apply" },
       { label: "Notification listing on the High Court website", url: "https://judiciary.karnataka.gov.in/recsubnotify.php?p=1300&stateNM=", type: "website" },
       { label: "High Court of Karnataka recruitment notices", url: "https://judiciary.karnataka.gov.in/main_notify.php?p=106&stateNM=", type: "website" },
     ],
     sourceTitle: "Notification No. GOB(I) 47(1)/2026 dated 28 August 2026 — District Judges under the 25% LDCE category",
     sourceUrl: "https://judiciary.karnataka.gov.in/common_folder/notification/Notification_28.08.2026_SD.pdf",
-    sourcePublished: "28 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:36 IST",
+    sourcePublished: "Notification 28 Aug 2026; examination-date intimation of 8 Sep 2026 read on the notification listing 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:31 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "New record. The High Court of Karnataka issued Notification No. GOB(I) 47(1)/2026 on 28 Aug 2026 inviting online applications from eligible Senior Civil Judges for 79 District Judge posts under the 25 per cent Limited Departmental Competitive Examination category, with 15 Sep 2026 as the last date.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Examination date announced. An intimation dated 8 Sep 2026 under Notification No. GOB(I) 47(1)/2026 fixes the Limited Departmental Competitive Examination for Sunday, 18 Oct 2026 from 10.30 a.m. to 1.30 p.m.; the venue is to be intimated in due course. The 15 Sep 2026 application deadline is unchanged.",
       },
     ],
     keywords: [
@@ -1060,17 +1133,11 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Check the Madras High Court recruitment portal for the specific notification and stage before applying",
       detail:
-        "The High Court's Centralised Recruitment Cell handles judicial officers in the District Judge and Civil Judge cadres, staff of the subordinate judiciary in Tamil Nadu and Puducherry, and staff of the Madras High Court Service. As of 29 August 2026 the portal is showing later-stage notices rather than a fresh open notification — hall tickets released on 7 August 2026 for the Assistant Programmer written examination of 6 September 2026 and a document-upload intimation to PwD/PwBD candidates on 17 August 2026, both under Notification No. 171/2025, and the District Judge (Entry Level) viva-voce marks published on 12 August 2026 under Notification No. 1/2023. No current vacancy count is asserted here.",
+        "The High Court's Centralised Recruitment Cell handles judicial officers in the District Judge and Civil Judge cadres, staff of the subordinate judiciary in Tamil Nadu and Puducherry, and staff of the Madras High Court Service. Read again on 9 September 2026, the portal is still showing later-stage notices rather than a fresh open notification: under Notification No. 171/2025 the Assistant Programmer written examination was held on 6 September 2026 and the proposed key answers for the \"A\" and \"E1\" series were posted on 8 September 2026, following the hall tickets of 7 August 2026 and the document-upload intimation to PwD/PwBD candidates of 17 August 2026; the District Judge (Entry Level) viva-voce marks under Notification No. 1/2023 were published on 12 August 2026. No current vacancy count is asserted here.",
     },
     summary: "Non-judicial and court-staff recruitment across the Madras High Court Service and Tamil Nadu's district judiciary establishment, run by the High Court's Centralised Recruitment Cell.",
     timeline: [
-      {
-        label: "Assistant Programmer written examination (Notification No. 171/2025)",
-        date: "2026-09-06",
-        displayDate: "6 Sep 2026",
-        state: "scheduled",
-        note: "Hall tickets were released on 7 Aug 2026.",
-      },
+      { label: "Fresh open notification from the Centralised Recruitment Cell", displayDate: "To be announced", state: "tentative" },
     ],
     age: "Post-specific, and reckoned under the Madras High Court Service Rules, 2015 read with the Tamil Nadu Government Servants (Conditions of Service) Act, 2016. In the previous Personal Assistant cycle (Notification No. 56/2018) the band was 18 to 35 years for SC, SC(A), ST, MBC & DC, BC and BCM candidates and 18 to 30 for 'Others', with 45 years for in-service candidates of the Madras High Court Service and the Tamil Nadu Judicial Ministerial Service and 40 years for temporary Government candidates; candidates from outside Tamil Nadu and Puducherry could compete only under the General category with no relaxation. The current cycle's band is in Notification Nos. 71–73 of 2025.",
     qualification:
@@ -1107,13 +1174,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Madras High Court recruitment portal, read with the previous establishment notification No. 56/2018 under the Madras High Court Service Rules, 2015",
     sourceUrl: "https://www.mhc.tn.gov.in/recruitment/",
-    sourcePublished: "Previous establishment notification No. 56/2018; recruitment portal rechecked 29 Aug 2026, latest notices dated 7, 12 and 17 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:46 IST",
+    sourcePublished: "Previous establishment notification No. 56/2018; recruitment portal re-read 9 Sep 2026, latest notices are the proposed key answers of 8 Sep 2026 under Notification No. 171/2025",
+    lastVerified: "9 Sep 2026, 17:26 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Replaced the stale description of what the recruitment portal is showing. The live notices are the Assistant Programmer hall tickets of 7 Aug 2026 for the written examination on 6 Sep 2026 and the PwD/PwBD document-upload intimation of 17 Aug 2026, both under Notification No. 171/2025, plus the District Judge (Entry Level) viva-voce marks of 12 Aug 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Assistant Programmer written examination under Notification No. 171/2025 was held on 6 Sep 2026, and the recruitment portal published the proposed key answers for the \"A\" and \"E1\" series on 8 Sep 2026.",
       },
     ],
     keywords: [
@@ -1508,11 +1580,11 @@ export const exams: Exam[] = [
       { label: "System Manager", ur: 1, sc: 1, total: 2 },
     ],
     status: {
-      label: "Phase-I written competitive test on 5 September 2026",
-      tone: "blue",
-      nextAction: "Provisionally eligible System Manager candidates should collect their admit card and report by 11:00 a.m. on 5 September 2026",
+      label: "Phase-I written test date passed; Phase-II viva-voce awaited",
+      tone: "violet",
+      nextAction: "Watch the Calcutta High Court recruitment notices for the Phase-I result and the Viva-voce (Phase-II) call",
       detail:
-        "The High Court published the date, time and venue of the System Manager Phase-I written competitive test on 3 August 2026 (Notification No. 3806-R(R&M)). The test is on 5 September 2026 at 12 noon in the Training Centre and Examination Hall on the 9th floor of the New Administrative Block. Admit cards go by speed post, and duplicates may be collected on 1 September 2026. Notification No. 4388-R(R&M) of 28 August 2026 confirms the test still stands and fixes the full marks for the Viva-voce (Phase-II) at 30, to which the candidates who qualify in the written test will be called.",
+        "The High Court fixed the System Manager Phase-I written competitive test for 5 September 2026 at 12 noon in the Training Centre and Examination Hall on the 9th floor of the New Administrative Block (Notification No. 3806-R(R&M) of 3 August 2026), with duplicate admit cards collectable on 1 September 2026. Notification No. 4388-R(R&M) of 28 August 2026 fixed the full marks for the Viva-voce (Phase-II) at 30, to which the candidates who qualify in the written test will be called. The recruitment-notice board was re-read on 9 September 2026: no postponement or cancellation notice was ever issued for the 5 September test, and the Court has published nothing about the result or the viva-voce date since — its newest recruitment notice is dated 3 September 2026.",
     },
     summary:
       "Open recruitment of technical officers — System Analyst (Hardware and Networking) and System Manager — to the Appellate Side establishment of the High Court at Calcutta.",
@@ -1536,12 +1608,13 @@ export const exams: Exam[] = [
         displayDate: "28 Aug 2026",
         state: "completed",
       },
-      { label: "Duplicate admit cards collected from the office", date: "2026-09-01", displayDate: "1 Sep 2026", state: "scheduled" },
+      { label: "Duplicate admit cards collected from the office", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed" },
       {
         label: "Written competitive test (Phase-I) — System Manager",
         date: "2026-09-05",
         displayDate: "5 Sep 2026 (Saturday), 12 noon",
-        state: "scheduled",
+        state: "completed",
+        note: "No postponement notice was issued, and the Court had published no result for the test as of 9 Sep 2026.",
       },
       { label: "Viva-voce (Phase-II), 30 marks", displayDate: "Date to be announced; only Phase-I qualifiers are called", state: "tentative" },
     ],
@@ -1581,13 +1654,19 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Notification No. 7609-RG dated 20 November 2025, read with Notification Nos. 3806-R(R&M) and 4388-R(R&M)",
     sourceUrl: "https://www.calcuttahighcourt.gov.in/Notice-Files/recruiment-notice/15628",
-    sourcePublished: "Notification 20 Nov 2025; Phase-I test notification 3 Aug 2026; viva-voce full-marks notification 28 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:56 IST",
+    sourcePublished:
+      "Notification 20 Nov 2025; Phase-I test notification 3 Aug 2026; viva-voce full-marks notification 28 Aug 2026; recruitment-notice board re-read 9 Sep 2026, newest notice dated 3 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:38 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Notification No. 4388-R(R&M) dated 28 Aug 2026 fixes the full marks for the System Manager Viva-voce (Phase-II) at 30 and states that only the candidates who qualify in the Phase-I written test will be called for it. The Phase-I written competitive test of 5 Sep 2026 is unchanged.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Phase-I written competitive test date of 5 Sep 2026 has passed with no postponement notice, so the record moves to the result-awaited stage. The recruitment-notice board carries nothing on the result or the Viva-voce (Phase-II) date; its newest notice is dated 3 Sep 2026.",
       },
     ],
     keywords: [

@@ -86,11 +86,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["12th", "Graduate", "Professional degree"],
     status: {
-      label: "Applications reopened to 1 September; examination date to be revised",
+      label: "Correction window open to 10 September; examination date to be revised",
       tone: "red",
-      nextAction: "Eligible candidates who missed the earlier window can apply on ctet.nic.in until 1 Sep 2026; everyone should then wait for the revised examination date",
+      nextAction: "Candidates from either application window can correct their particulars on ctet.nic.in until 10 Sep 2026; everyone should then wait for the revised examination date",
       detail:
-        "CBSE's public notice of 25 Aug 2026 reopens the online application portal for the 22nd edition of CTET from 25 Aug to 1 Sep 2026, so that candidates who could not apply in the 11 May – 10 Jun window get a further opportunity, citing the Supreme Court's judgment in Review Petition (Civil) Diary No. 53434/2025 in Civil Appeal No. 1385/2025 on giving teachers a reasonable opportunity to acquire the TET qualification. Candidates who already submitted an application need not apply again. The same notice says the revised date of the examination will be announced after the portal closes, so the 6 September sitting in the Information Bulletin no longer stands.",
+        "CBSE's public notice of 7 Sep 2026 (F. No. CBSE/CTET/December-2026) opens the online correction facility on ctet.nic.in from 7 to 10 Sep 2026 for the 22nd edition of CTET. It applies both to candidates who applied in the reopened 25 Aug – 1 Sep 2026 window and to those who applied in the original 11 May – 10 Jun 2026 window, and no correction is allowed after 10 Sep 2026 under any circumstances. The reopened application portal closed on 1 Sep 2026 as scheduled. The notice of 25 Aug 2026 had said the revised examination date would be announced after the portal closed, but the public-notices page re-read on 9 Sep 2026 carries no revised date, so the 6 September sitting in the Information Bulletin remains superseded and no new date is asserted here.",
     },
     summary: "CBSE's central eligibility examination for teaching Classes I–V and/or VI–VIII under the applicable NCTE qualification rules.",
     qualification: "Paper- and class-level qualification combinations are set out in the CTET September 2026 Information Bulletin, which states that the minimum qualifications for appearing in CTET are as notified by NCTE and must accord with the NCTE (Determination of Minimum Qualifications) Regulations as amended, read with the recruitment rules of the appropriate Government or of Kendriya Vidyalaya Sangathan / Navodaya Vidyalaya Samiti.",
@@ -103,7 +103,7 @@ export const exams: Exam[] = [
       { label: "Correction-window notice", date: "2026-06-15", displayDate: "15 Jun 2026", state: "completed" },
       { label: "Correction window closed", date: "2026-06-18", displayDate: "18 Jun 2026", state: "completed" },
       { label: "Application portal reopened by public notice", date: "2026-08-25", displayDate: "25 Aug 2026", state: "completed" },
-      { label: "Reopened applications close", date: "2026-09-01", displayDate: "1 Sep 2026", state: "current" },
+      { label: "Reopened applications close", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed" },
       {
         label: "Possible additional examination day",
         date: "2026-09-05",
@@ -118,7 +118,14 @@ export const exams: Exam[] = [
         state: "postponed",
         note: "The public notice of 25 Aug 2026 says the revised examination date will be announced after the reopened application portal closes on 1 Sep 2026.",
       },
-      { label: "Revised examination date", displayDate: "To be announced after 1 Sep 2026", state: "tentative" },
+      {
+        label: "Correction window for both application windows",
+        date: "2026-09-07",
+        displayDate: "7–10 Sep 2026",
+        state: "current",
+        note: "Opened by the public notice of 7 Sep 2026 for candidates from the 11 May – 10 Jun and 25 Aug – 1 Sep windows alike; no correction is allowed after 10 Sep 2026.",
+      },
+      { label: "Revised examination date", displayDate: "To be announced — not published as of 9 Sep 2026", state: "tentative" },
     ],
     eligibility: [
       "Paper I is for a person who intends to teach Classes I–V; Paper II is for Classes VI–VIII; a candidate who intends to teach at both levels must sit both papers (CTET September 2026 Information Bulletin, clause 7).",
@@ -140,6 +147,11 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       {
+        label: "Public notice opening the correction window from 7 to 10 Sep 2026",
+        url: "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf",
+        type: "notice",
+      },
+      {
         label: "Public notice reopening online applications for the 22nd edition of CTET",
         url: "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
         type: "notice",
@@ -154,15 +166,20 @@ export const exams: Exam[] = [
       { label: "Correction-window notice", url: "https://ctet.nic.in/correction-window-ctet-sep-2026/", type: "notice" },
       { label: "CTET standing eligibility-criteria page", url: "https://ctet.nic.in/eligibility-criteria/", type: "website" },
     ],
-    sourceTitle: "Public Notice — Opportunity for Submission of Online Applications for the 22nd Edition of CTET",
-    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/08/20260825641447501.pdf",
-    sourcePublished: "25 Aug 2026 (F. No. CBSE/CTET/Sept./2026/e-73233); Information Bulletin published 11 May 2026",
-    lastVerified: "29 Aug 2026, 15:10 IST",
+    sourceTitle: "Public Notice — Online correction window for the 22nd Edition of CTET, 7 to 10 September 2026",
+    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/09/20260907461266783.pdf",
+    sourcePublished: "7 Sep 2026 (F. No. CBSE/CTET/December-2026); reopening notice published 25 Aug 2026; public-notices page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     changeLog: [
       {
         date: "2026-08-25",
         displayDate: "25 Aug 2026",
         text: "CBSE reopened the CTET September 2026 application portal from 25 Aug to 1 Sep 2026 for candidates who missed the 11 May – 10 Jun window, following the Supreme Court's judgment in Review Petition (Civil) Diary No. 53434/2025. The same public notice says the revised examination date will be announced after the portal closes, so the 6 September examination (and the conditional 5 September sitting) no longer stands and is now shown as superseded.",
+      },
+      {
+        date: "2026-09-07",
+        displayDate: "7 Sep 2026",
+        text: "CBSE opened an online correction window on ctet.nic.in from 7 to 10 Sep 2026 for candidates from both application windows (11 May – 10 Jun and 25 Aug – 1 Sep 2026); no correction is allowed after 10 Sep 2026. The reopened application window closed on 1 Sep 2026 as scheduled, and the revised examination date is still unpublished.",
       },
     ],
     keywords: [
@@ -198,11 +215,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate"],
     status: {
-      label: "Result out for 84 subjects; English, Commerce and Sociology to be re-examined",
-      tone: "blue",
-      nextAction: "Download the scorecard from ugcnet.nta.nic.in; English, Commerce and Sociology candidates must instead watch NTA for the re-examination city and admit-card notice",
+      label: "English, Commerce and Sociology re-examination on 9–10 September; result out for 84 subjects",
+      tone: "violet",
+      nextAction: "English, Commerce and Sociology candidates sit the re-examination on 9–10 Sep 2026 with the admit card downloaded from ugcnet.nta.nic.in; candidates of the other 84 subjects can download their scorecard from the same portal",
       detail:
-        "NTA's press release of 28 Aug 2026 declares the UGC-NET June 2026 result for 84 subjects: of 7,73,806 registered candidates 6,07,151 appeared, 4,241 qualified for JRF and Assistant Professor, 45,904 for Assistant Professor and PhD admission and 97,434 for PhD admission only. The examination ran in CBT mode on 22, 23, 24, 25, 29 and 30 June and 5 July 2026 at 655 centres in 286 cities. A separate public notice of 16 Aug 2026 orders the English, Commerce and Sociology papers to be re-conducted on 9 and 10 September 2026 after a committee found extensive factual, translation and repetition errors; candidates of those three subjects get no scorecard until after the retest and pay no additional fee.",
+        "NTA's public notice of 4 Sep 2026 released the admit cards for the re-conduct of the UGC-NET June 2026 English, Commerce and Sociology papers on 9 and 10 Sep 2026, to be downloaded together with the undertaking from ugcnet.nta.nic.in with the login credentials; examination cities were intimated by the advance city-intimation slip of 1 Sep 2026. An advisory of 8 Sep 2026 asks candidates at Delhi centres to allow extra travel time because of traffic restrictions around the BRICS Summit of 11–13 Sep 2026. The result for the other 84 subjects was declared by press release on 28 Aug 2026: of 7,73,806 registered candidates 6,07,151 appeared, 4,241 qualified for JRF and Assistant Professor, 45,904 for Assistant Professor and PhD admission and 97,434 for PhD admission only. The re-conduct follows the public notice of 16 Aug 2026, which found extensive factual, translation and repetition errors in the three papers; those candidates pay no additional fee and get their scorecard only after the retest. No result date for the three subjects is published; NTA notice board re-read 9 Sep 2026.",
     },
     summary: "National test for JRF, Assistant Professor eligibility and/or PhD admission across notified UGC-NET subjects.",
     qualification: "Postgraduate or prescribed equivalent qualification and subject mapping under the June 2026 Information Bulletin. Under the standing UGC-NET scheme (Information Bulletin, chapter 3), a master's degree with at least 55% marks — 50% for OBC-NCL, SC, ST, PwD and third-gender candidates — qualifies a candidate to appear, and holders of a four-year/eight-semester bachelor's degree with at least 75% marks may appear for JRF and PhD admission but not for Assistant Professor eligibility.",
@@ -232,12 +249,20 @@ export const exams: Exam[] = [
       },
       { label: "Final answer keys displayed", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
       { label: "Result declared for 84 subjects", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
+      { label: "Advance intimation of the re-examination city", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed" },
+      {
+        label: "Admit cards for the re-examination released",
+        date: "2026-09-04",
+        displayDate: "4 Sep 2026",
+        state: "completed",
+        note: "Downloaded with the undertaking from ugcnet.nta.nic.in using the login credentials; helpdesk 011-40759000 / ugcnet@nta.ac.in.",
+      },
       {
         label: "Re-examination of the English, Commerce and Sociology papers",
         date: "2026-09-09",
         displayDate: "9–10 Sep 2026",
-        state: "scheduled",
-        note: "English 9 Sep shift 1 (9 AM–12 noon), Commerce 9 Sep shift 2 (3–6 PM), Sociology 10 Sep shift 1 (9 AM–12 noon).",
+        state: "current",
+        note: "English 9 Sep shift 1 (9 AM–12 noon), Commerce 9 Sep shift 2 (3–6 PM), Sociology 10 Sep shift 1 (9 AM–12 noon). NTA's advisory of 8 Sep 2026 asks candidates at Delhi centres to plan for BRICS Summit traffic restrictions.",
       },
       {
         label: "Result for the three re-conducted subjects",
@@ -260,6 +285,21 @@ export const exams: Exam[] = [
       "Subject syllabi are those published by UGC for each NET subject code.",
     ],
     officialLinks: [
+      {
+        label: "Public notice releasing the admit cards for the 9–10 Sep 2026 re-examination",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260904214736.pdf",
+        type: "notice",
+      },
+      {
+        label: "Advance intimation of the re-examination city (1 Sep 2026)",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260901173447.pdf",
+        type: "notice",
+      },
+      {
+        label: "Advisory for candidates appearing at Delhi centres (8 Sep 2026)",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260908120656.pdf",
+        type: "notice",
+      },
       { label: "Press release declaring the UGC-NET June 2026 result", url: "https://www.nta.ac.in/Download/Notice/Notice_20260828231601.pdf", type: "result" },
       {
         label: "Subject- and category-wise cut-off marks for the 84 subjects",
@@ -282,10 +322,10 @@ export const exams: Exam[] = [
       { label: "Official UGC-NET portal", url: "https://ugcnet.nta.ac.in/", type: "website" },
       { label: "NTA notice archive", url: "https://www.nta.ac.in/NoticeBoardArchive", type: "website" },
     ],
-    sourceTitle: "Declaration of results of UGC-NET June 2026 — NTA press release",
-    sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260828231601.pdf",
-    sourcePublished: "28 Aug 2026; re-conduct public notice published 16 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:12 IST",
+    sourceTitle: "Release of Admit Card for UGC-NET June 2026 (re-examination of 9 and 10 September 2026) — NTA public notice",
+    sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260904214736.pdf",
+    sourcePublished: "4 Sep 2026; city-intimation notice 1 Sep 2026; Delhi advisory 8 Sep 2026; result press release 28 Aug 2026; re-conduct notice 16 Aug 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     changeLog: [
       {
         date: "2026-08-28",
@@ -296,6 +336,11 @@ export const exams: Exam[] = [
         date: "2026-08-16",
         displayDate: "16 Aug 2026",
         text: "NTA ordered the English, Commerce and Sociology papers to be re-conducted on 9 and 10 September 2026 after a committee found extensive factual, typographical, translation and repetition errors. No extra fee is charged and the scorecard for those three subjects follows the retest.",
+      },
+      {
+        date: "2026-09-04",
+        displayDate: "4 Sep 2026",
+        text: "NTA released the admit cards for the re-conduct of the English, Commerce and Sociology papers on 9 and 10 Sep 2026, after intimating the re-examination cities on 1 Sep 2026. The re-examination is now shown as the current stage of the record.",
       },
     ],
     keywords: [
@@ -331,7 +376,7 @@ export const exams: Exam[] = [
       label: "Notification awaited",
       tone: "amber",
       nextAction: "Watch ugcnet.nta.ac.in and the NTA notice archive for the December 2026 application notice",
-      detail: "The official UGC-NET portal states that UGC-NET is conducted twice every year, in June and December. No December 2026 application notice, schedule or fee has been published, so none is asserted here.",
+      detail: "The official UGC-NET portal states that UGC-NET is conducted twice every year, in June and December. No December 2026 application notice, schedule or fee has been published — the NTA notice board and the UGC-NET portal were re-read on 9 Sep 2026 — so none is asserted here.",
     },
     summary: "The second UGC-NET cycle of the year, awarding JRF, Assistant Professor eligibility and/or PhD admission across the notified UGC-NET subjects, once its notice is published.",
     qualification: "Under the standing UGC-NET scheme published by NTA, a master's degree or equivalent with at least 55% marks (50% for OBC-NCL/SC/ST/PwD/third gender) qualifies a candidate to appear; a four-year/eight-semester bachelor's degree with at least 75% marks qualifies only for JRF and PhD admission. The December 2026 bulletin will restate these rules and their cut-off date.",
@@ -367,8 +412,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Official UGC-NET portal — standing statement that UGC-NET is conducted twice every year (June and December)",
     sourceUrl: "https://ugcnet.nta.ac.in/",
-    sourcePublished: "UGC-NET portal checked 29 Aug 2026; no December 2026 notice listed",
-    lastVerified: "29 Aug 2026, 15:14 IST",
+    sourcePublished: "UGC-NET portal and NTA notice board checked 9 Sep 2026; no December 2026 notice listed",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     keywords: [
       "UGC NET December 2026",
       "यूजीसी नेट दिसंबर",
@@ -396,11 +441,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Answer-key challenge closed; result awaited",
-      tone: "violet",
-      nextAction: "Watch csirnet.nta.nic.in for the final answer key and the result",
+      label: "Scores declared",
+      tone: "slate",
+      nextAction: "Log in to csirnet.nta.nic.in to view, download and print the scorecard; eligibility and documents are verified later by the concerned authorities",
       detail:
-        "NTA's public notice of 16 Aug 2026 hosted the provisional answer keys, question papers and recorded responses on csirnet.nta.nic.in and ran the challenge window from 16 to 18 Aug 2026 at Rs. 200 per question. The notice records that the examination was conducted on 17 and 18 July 2026 in CBT mode across 224 cities at 352 centres for 1,87,739 registered candidates, and that the result will be prepared and declared on the basis of the revised final answer key. No result date has been announced.",
+        "NTA's press release of 29 Aug 2026 declares the scores of the Joint CSIR-UGC NET June 2026: 1,87,739 candidates registered and 1,50,057 appeared in the five subjects on 17 and 18 Jul 2026 across 224 cities, and the results were processed on the answer keys finalised after the 16–18 Aug 2026 challenge window. A public notice of the same date hosts the final answer keys for all five subjects on csirnet.nta.nic.in. The scorecard is available in the candidate login; the eligibility criteria, self-declaration and documents of qualified candidates are verified by the concerned authorities as per the Information Bulletin. NTA notice board re-read 9 Sep 2026.",
     },
     summary: "Joint science eligibility test for JRF, Assistant Professor and PhD routes in the notified CSIR subject areas.",
     qualification: "Per chapter 2.1 of the Joint CSIR-UGC NET June 2026 Information Bulletin: a master's degree or equivalent with at least 55% marks (50% for OBC-NCL/SC/ST/PwD/PwBD/third gender), or a four-year/eight-semester bachelor's degree with at least 75% marks (5% relaxation for SC/ST/OBC-NCL/differently-abled/EWS). Candidates qualifying on the four-year bachelor's route are eligible for JRF and PhD admission but not for appointment as Assistant Professor.",
@@ -421,7 +466,14 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Challenges cost Rs. 200 per question and closed at 11:00 PM on 18 Aug 2026.",
       },
-      { label: "Final answer key and result", displayDate: "Official date awaited", state: "current" },
+      { label: "Final answer keys displayed", date: "2026-08-29", displayDate: "29 Aug 2026", state: "completed" },
+      {
+        label: "Scores declared",
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        state: "completed",
+        note: "1,50,057 of 1,87,739 registered candidates appeared; scorecards are in the candidate login on csirnet.nta.nic.in.",
+      },
     ],
     eligibility: [
       "Indian nationals holding a master's degree or equivalent with at least 55% marks (50% for OBC-NCL/SC/ST/PwD/PwBD/third gender), per chapter 2.1 of the June 2026 Information Bulletin.",
@@ -444,6 +496,16 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       {
+        label: "Press release declaring the scores of the Joint CSIR-UGC NET June 2026",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260829181317.PDF",
+        type: "result",
+      },
+      {
+        label: "Display of final answer keys of the Joint CSIR-UGC NET June 2026",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260829145958.pdf",
+        type: "notice",
+      },
+      {
         label: "Public notice on the provisional answer keys and the answer-key challenge",
         url: "https://www.nta.ac.in/Download/Notice/Notice_20260816101710.pdf",
         type: "notice",
@@ -458,16 +520,20 @@ export const exams: Exam[] = [
       },
       { label: "Official Joint CSIR-UGC NET portal", url: "https://csirnet.nta.nic.in/", type: "website" },
     ],
-    sourceTitle:
-      "Display of Provisional Answer Keys and Question Papers with recorded responses for the Answer Key Challenge of the Joint CSIR-UGC NET June 2026",
-    sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260816101710.pdf",
-    sourcePublished: "16 Aug 2026; Information Bulletin published 27 May 2026",
-    lastVerified: "29 Aug 2026, 15:16 IST",
+    sourceTitle: "Declaration of Scores of the Joint CSIR-UGC NET June 2026 Examination — NTA press release",
+    sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260829181317.PDF",
+    sourcePublished: "29 Aug 2026; answer-key challenge notice 16 Aug 2026; Information Bulletin published 27 May 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     changeLog: [
       {
         date: "2026-08-16",
         displayDate: "16 Aug 2026",
         text: "NTA displayed the provisional answer keys, question papers and recorded responses for the Joint CSIR-UGC NET June 2026 on csirnet.nta.nic.in and ran the challenge window from 16 to 18 Aug 2026 at Rs. 200 per question. The notice also records the conduct figures — 224 cities, 352 centres and 1,87,739 registered candidates — and says the result will follow the revised final answer key.",
+      },
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "NTA declared the scores of the Joint CSIR-UGC NET June 2026 and displayed the final answer keys for all five subjects on csirnet.nta.nic.in. 1,50,057 of 1,87,739 registered candidates appeared on 17 and 18 Jul 2026 across 224 cities. The record is now closed as a completed cycle.",
       },
     ],
     keywords: [
@@ -505,7 +571,8 @@ export const exams: Exam[] = [
       label: "Result declared",
       tone: "slate",
       nextAction: "Use only the official NTA score/result and DBT fellowship instructions",
-      detail: "The CBT was held on 17 May 2026 and NTA published the result notice on 10 June 2026.",
+      detail:
+        "The CBT was held on 17 May 2026 and NTA published the result notice on 10 June 2026, followed on 25 June 2026 by the notice declaring the GAT-B 2026 score and rank card. NTA's notice board archive, re-read on 9 Sep 2026, lists nothing newer than that for GAT-B/BET 2026.",
     },
     summary: "National biotechnology eligibility examination associated with DBT research-fellowship categories.",
     qualification: "Per chapter 3.2 of the GAT-B/BET 2026 Information Bulletin: a four-year/eight-semester bachelor's degree (with research) in Biotechnology, Life Sciences or an allied discipline with at least 75% marks; or a B.Tech/B.E. with at least 60% (55% for SC/ST/differently-abled); or a master's or equivalent (M.Sc., M.Tech., M.V.Sc., M.Pharm., Integrated M.Sc./M.Tech. or MBBS) in Biotechnology, Life Sciences or an allied discipline with at least 60% (55% for SC/ST/differently-abled).",
@@ -521,6 +588,7 @@ export const exams: Exam[] = [
       { label: "Computer-based test", date: "2026-05-17", displayDate: "17 May 2026", state: "completed" },
       { label: "Provisional answer keys", date: "2026-05-23", displayDate: "23 May 2026", state: "completed" },
       { label: "Result notice", date: "2026-06-10", displayDate: "10 Jun 2026", state: "completed" },
+      { label: "Score and rank card declared", date: "2026-06-25", displayDate: "25 Jun 2026", state: "completed" },
     ],
     eligibility: [
       "Bonafide Indian citizens and residents only, holding one of the biotechnology/life-science qualifications and percentages set out in chapter 3.2 of the 2026 Information Bulletin.",
@@ -542,6 +610,11 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Official result notice", url: "https://www.nta.ac.in/Download/Notice/Notice_20260610160319.pdf", type: "result" },
+      {
+        label: "Declaration of the score and rank card of GAT-B 2026",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260625162829.pdf",
+        type: "result",
+      },
       { label: "Official answer-key notice", url: "https://www.nta.ac.in/Download/Notice/Notice_20260525132221.pdf", type: "notice" },
       {
         label: "GAT-B / BET 2026 Information Bulletin",
@@ -552,8 +625,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Declaration of result of GAT-B and Biotechnology Eligibility Test 2026",
     sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260610160319.pdf",
-    sourcePublished: "10 Jun 2026; Information Bulletin published 19 Mar 2026",
-    lastVerified: "4 Aug 2026, 19:40 IST",
+    sourcePublished: "10 Jun 2026; score and rank card notice 25 Jun 2026; Information Bulletin published 19 Mar 2026; NTA notice board archive re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
+    changeLog: [
+      {
+        date: "2026-06-25",
+        displayDate: "25 Jun 2026",
+        text: "NTA declared the score and rank card of GAT-B 2026 by a notice of 25 Jun 2026, after the GAT-B/BET result notice of 10 Jun 2026. That notice is now linked from this record and closes the timeline.",
+      },
+    ],
     keywords: [
       "BET",
       "DBT JRF",
@@ -587,7 +667,7 @@ export const exams: Exam[] = [
       label: "Result declared",
       tone: "slate",
       nextAction: "Download the official scorecard and follow the relevant institution's recruitment rules",
-      detail: "NTA declared the NTET 2026 result on 15 May 2026 and subsequently hosted scorecards on DigiLocker.",
+      detail: "NTA declared the NTET 2026 result on 15 May 2026 and subsequently hosted scorecards on DigiLocker. NTA's notice board re-read on 9 Sep 2026 lists nothing newer for NTET 2026.",
     },
     summary: "National eligibility test used for teaching eligibility in the disciplines covered by the current NTET bulletin.",
     qualification: "Per chapter 3 of the NTET 2026 Information Bulletin: a postgraduate degree in a discipline of Ayurveda, Siddha, Unani or Homoeopathy recognised by NCISM or NCH (or the erstwhile Central Councils). Postgraduate students of Indian Systems of Medicine who have completed 30 months of the programme may appear with an NOC from their institution, while Homoeopathy candidates need a completed recognised postgraduate degree. Holders of M.Sc. in Anatomy, Physiology and Biochemistry, or Forensic Medicine and Toxicology, or an MPH, may appear for the Assistant Professor level if they also hold a BHMS.",
@@ -629,8 +709,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "NTA declares the result of National Teachers' Eligibility Test 2026",
     sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260515181731.pdf",
-    sourcePublished: "15 May 2026; Information Bulletin published 11 Mar 2026",
-    lastVerified: "4 Aug 2026, 19:45 IST",
+    sourcePublished: "15 May 2026; Information Bulletin published 11 Mar 2026; NTA notice board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     keywords: [
       "NTET",
       "एनटीईटी",
@@ -664,7 +744,7 @@ export const exams: Exam[] = [
       label: "Result declared",
       tone: "slate",
       nextAction: "Use the official NTA scores and apply to the participating institution's own ITEP admission process",
-      detail: "NTA published the final answer keys and declared the result/NTA scores of NCET 2026 by public notice dated 4 June 2026. Admission itself is handled by each participating university or institution.",
+      detail: "NTA published the final answer keys and declared the result/NTA scores of NCET 2026 by public notice dated 4 June 2026. Admission itself is handled by each participating university or institution. NTA's notice board re-read on 9 Sep 2026 lists nothing newer for NCET 2026.",
     },
     summary: "NTA's national entrance test, conducted on behalf of NCTE, that a candidate must qualify for admission to the 4-Year Integrated Teacher Education Programme at participating central and state universities, IITs, NITs, RIEs and government colleges.",
     qualification: "The NCET 2026 programme-wise eligibility list published on the official NCET portal requires a candidate to have passed the Class 12 board examination (10+2) or an equivalent examination with a minimum of 50% marks in aggregate from a recognised Board or Council, for every listed institution and degree combination.",
@@ -719,8 +799,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "NTA Declares the Result/NTA Scores of National Common Entrance Test (NCET) 2026",
     sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260604181537.pdf",
-    sourcePublished: "4 Jun 2026; application notice published 12 Feb 2026",
-    lastVerified: "4 Aug 2026, 19:50 IST",
+    sourcePublished: "4 Jun 2026; application notice published 12 Feb 2026; NTA notice board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     keywords: [
       "NCET",
       "एनसीईटी",
@@ -804,11 +884,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education", "Specialist & Professional"],
     education: ["Postgraduate"],
     status: {
-      label: "Answer-key challenge closed; result awaited",
-      tone: "violet",
-      nextAction: "Track the official NTA ICAR portal for the final answer key and the NTA score",
+      label: "Result and NTA score declared",
+      tone: "slate",
+      nextAction: "Log in to the NTA ICAR portal to download the scorecard, then follow ICAR's e-Prospectus and admission procedure on icar.org.in for PhD admission and fellowship allocation",
       detail:
-        "NTA's public notice of 16 Aug 2026 hosted the provisional answer keys, question papers and recorded responses for ICAR AIEEA (PG) and AICE-JRF/SRF (PhD) 2026 on exams.nta.nic.in/icar and ran the challenge window from 16 to 18 Aug 2026 at Rs. 200 per question. The same notice records that the examination was held on 4 July 2026 at about 162 centres in 115 cities for about 42,110 candidates, 11,491 of them in AICE-JRF/SRF (PhD). No result date has been announced.",
+        "NTA's press release of 29 Aug 2026 declares the results of ICAR AIEEA (PG) and AICE-JRF/SRF (PhD) 2026: 42,110 candidates registered (30,619 for AIEEA-PG and 11,491 for AICE-JRF/SRF PhD) and 38,720 appeared (10,417 of them in AICE-JRF/SRF PhD) on 4 Jul 2026 across 162 centres in 115 cities. Scorecards are in the candidate login on the NTA ICAR portal, and a public notice of the same date hosts the final answer keys there. NTA's responsibility ends with providing the results to ICAR; eligibility and documents are verified by ICAR or the admitting institution at later stages, and candidates are referred to the e-Prospectus and admission policy on ICAR's website. No AIEEA-PG/AICE PhD counselling notice was listed on ICAR's home page when it was re-read on 9 Sep 2026.",
     },
     summary: "All-India competitive examination for admission to notified agricultural doctoral programmes and associated JRF/SRF awards.",
     qualification: "Relevant postgraduate qualification and discipline mapping under the ICAR AICE-JRF/SRF (PhD) 2026-27 Information Bulletin published on the official NTA ICAR portal.",
@@ -825,7 +905,15 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Challenges cost Rs. 200 per question and closed at 11:59 PM on 18 Aug 2026.",
       },
-      { label: "Final answer key and result", displayDate: "Official date awaited", state: "current" },
+      { label: "Final answer keys displayed", date: "2026-08-29", displayDate: "29 Aug 2026", state: "completed" },
+      {
+        label: "Result and NTA score declared",
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        state: "completed",
+        note: "38,720 of 42,110 registered candidates appeared across both examinations, 10,417 of the 11,491 AICE-JRF/SRF (PhD) registrants among them.",
+      },
+      { label: "ICAR counselling and admission", displayDate: "To be announced by ICAR", state: "tentative" },
     ],
     eligibility: [
       "The examination is conducted by NTA on behalf of ICAR for doctoral admission and the associated Junior/Senior Research Fellowship awards; NTA's official ICAR portal describes it as a computer-based test with objective multiple-choice questions.",
@@ -835,6 +923,16 @@ export const exams: Exam[] = [
     selectionStages: ["Computer-based AICE", "Answer-key/result process", "Centralised programme/fellowship allocation"],
     syllabus: ["Agricultural discipline syllabus specified in the ICAR AICE-JRF/SRF (PhD) 2026 bulletin."],
     officialLinks: [
+      {
+        label: "Press release declaring the results of ICAR AIEEA-PG and AICE-JRF/SRF (PhD) 2026",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260829230847.pdf",
+        type: "result",
+      },
+      {
+        label: "Display of final answer keys of ICAR AIEEA-PG and AICE-JRF/SRF (PhD) 2026",
+        url: "https://www.nta.ac.in/Download/Notice/Notice_20260829222626.pdf",
+        type: "notice",
+      },
       {
         label: "Public notice on the provisional answer keys and the answer-key challenge",
         url: "https://www.nta.ac.in/Download/Notice/Notice_20260816162703.pdf",
@@ -851,15 +949,20 @@ export const exams: Exam[] = [
       { label: "Official NTA ICAR portal", url: "https://exams.nta.nic.in/icar/", type: "website" },
     ],
     sourceTitle:
-      "Display of Provisional Answer Keys and Question Papers with Recorded Responses for Inviting Challenges for ICAR AIEEA (PG) & AICE-JRF/SRF (Ph.D.) 2026",
-    sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260816162703.pdf",
-    sourcePublished: "16 Aug 2026; admit-card notice published 1 Jul 2026",
-    lastVerified: "29 Aug 2026, 15:18 IST",
+      "Declaration of results of the ICAR AIEEA PG and AICE-JRF/SRF (Ph.D.) programs for the academic year 2026-27 — NTA press release",
+    sourceUrl: "https://www.nta.ac.in/Download/Notice/Notice_20260829230847.pdf",
+    sourcePublished: "29 Aug 2026; answer-key challenge notice 16 Aug 2026; admit-card notice published 1 Jul 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     changeLog: [
       {
         date: "2026-08-16",
         displayDate: "16 Aug 2026",
         text: "NTA displayed the provisional answer keys, question papers and recorded responses for ICAR AIEEA (PG) and AICE-JRF/SRF (PhD) 2026 and ran the challenge window from 16 to 18 Aug 2026 at Rs. 200 per question. The notice records the conduct figures — about 162 centres in 115 cities and about 42,110 candidates, 11,491 of them in AICE-JRF/SRF (PhD).",
+      },
+      {
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        text: "NTA declared the results and NTA scores of ICAR AIEEA-PG and AICE-JRF/SRF (PhD) 2026 and displayed the final answer keys on the NTA ICAR portal. 38,720 of 42,110 registered candidates appeared on 4 Jul 2026, 10,417 of them in AICE-JRF/SRF (PhD). Admission and fellowship allocation now pass to ICAR's own counselling under its e-Prospectus.",
       },
     ],
     keywords: [
@@ -896,10 +999,10 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["12th", "Graduate", "Postgraduate"],
     status: {
-      label: "Tier-II results being declared post by post",
+      label: "Tier-II results being declared in phases; interview schedules awaited",
       tone: "violet",
-      nextAction: "Check the KVS notifications page for your post's result, and download the Part-I bio-data format if you have been shortlisted for interview",
-      detail: "KVS is declaring Tier-II results under Recruitment Notification 01/2025 post by post. Its press release of 17 Aug 2026 declared results for PGT (Computer Science), TGT (Computer Science), Finance Officer and Stenographer Grade-I. A further press release of 18 Aug 2026 declared results for twenty-four more posts: PGT in Assamese, Urdu, Bangla, Garo, Bio-Technology, Manipuri, Tamil and Telugu; TGT in Marathi, Telugu, Assamese, Manipuri, Urdu, Bangla, Nepali, Gujarati, Odiya, Kannada, Punjabi, Malayalam and Tamil; and Assistant Engineer (Civil), Administrative Officer and Multi-Tasking Staff. Results for the posts not named in either press release have not been published yet. On 21 Aug 2026 KVS published the Part-I bio-data format that shortlisted candidates must complete and bring in five sets on the day of their interview, with age reckoned as on the 4 Dec 2025 cut-off date; post-wise interview dates have not been published yet.",
+      nextAction: "Log in to the CBSE recruitment application portal to see your post's result or interview-shortlisting status, submit any preference asked for there, and keep the Part-I bio-data ready if you are shortlisted for interview",
+      detail: "CBSE is declaring the Tier-II results under Recruitment Notification 01/2025 in phases. Press releases of 17 and 18 Aug 2026 covered twenty-eight posts (PGT and TGT language and subject posts, PGT and TGT Computer Science, Assistant Engineer (Civil), Administrative Officer, Finance Officer, Stenographer Grade-I and Multi-Tasking Staff). A press release dated 3 Sep 2026 declares the Tier-II results for PGT (English), PGT (Physical Education), TGT (Music), TGT (Physical Education / Physical & Health Education), PRT (Music) and PRT (Special Educator), and a press release of 5 Sep 2026 declares PGT (Hindi) and TGT (Hindi) and records that the Principal result was declared on 3 Sep 2026. Candidates view their result or interview-shortlisting status in the application login; for interview posts the marksheet follows within 15 days of the final result, while non-interview posts get their Tier-II marks with the result. Interview and skill-test schedules and call letters will be placed in the candidate login once finalised with KVS/NVS, and results for the remaining posts will follow in phases. Shortlisted candidates fill the Part-I bio-data format published on 21 Aug 2026 and bring five sets on the day of the interview. KVS notifications page re-read 9 Sep 2026.",
     },
     summary: "Joint CBSE-conducted direct recruitment for Kendriya Vidyalaya Sangathan and Navodaya Vidyalaya Samiti teaching posts (Principal, PGT, TGT, PRT, Librarian) and non-teaching posts under Recruitment Notification 01/2025.",
     vacancies: 14967,
@@ -939,8 +1042,16 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Shortlisted candidates fill Part-I of the bio-data and bring five sets on the day of the interview.",
       },
-      { label: "Tier-II results for the remaining posts", displayDate: "Dates awaited", state: "current" },
-      { label: "Post-wise interview and skill-test schedule", displayDate: "Dates awaited", state: "tentative" },
+      {
+        label: "Tier-II results for Principal, PGT (English), PGT (Physical Education), TGT (Music), TGT (Physical Education / Physical & Health Education), PRT (Music) and PRT (Special Educator)",
+        date: "2026-09-03",
+        displayDate: "3 Sep 2026",
+        state: "completed",
+        note: "The Principal result is recorded as declared on 3 Sep 2026 in the press release of 5 Sep 2026.",
+      },
+      { label: "Tier-II results for PGT (Hindi) and TGT (Hindi)", date: "2026-09-05", displayDate: "5 Sep 2026", state: "completed" },
+      { label: "Tier-II results for the remaining posts", displayDate: "Dates awaited — declared in phases", state: "current" },
+      { label: "Post-wise interview and skill-test schedule", displayDate: "Dates awaited — call letters via the candidate login", state: "tentative" },
     ],
     eligibility: [
       "Indian citizen meeting the post-specific education, subject and CTET/B.Ed. requirements set out in Notification 01/2025.",
@@ -983,13 +1094,23 @@ export const exams: Exam[] = [
         url: "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/08/2026082180.pdf",
         type: "notice",
       },
+      {
+        label: "Press release of 3 Sep 2026 — Tier-II results for PGT (English), PGT (PE), TGT (Music), TGT (PHE), PRT (Music) and PRT (Special Educator)",
+        url: "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/09/2026090528-2.pdf",
+        type: "result",
+      },
+      {
+        label: "Press release of 5 Sep 2026 — Tier-II results for PGT (Hindi) and TGT (Hindi)",
+        url: "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/09/2026090512-1.pdf",
+        type: "result",
+      },
       { label: "KVS Notifications/Recruitment page", url: "https://kvsangathan.nic.in/en/interview-notice/", type: "website" },
       { label: "NVS recruitment page", url: "https://navodaya.gov.in/nvs/recruitment/Welcome/", type: "website" },
     ],
-    sourceTitle: "Recruitment Notification 01/2025 — Filling up the teaching and non-teaching posts in KVS and NVS through Direct Recruitment",
-    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2025/11/2025111348.pdf",
-    sourcePublished: "KVS press releases declaring Tier-II results, dated 17 and 18 Aug 2026; interview bio-data format published 21 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:20 IST",
+    sourceTitle: "Press release — Tier-II Recruitment Examination Results for KVS & NVS under Recruitment Notification 01/2025 (PGT Hindi and TGT Hindi)",
+    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/09/2026090512-1.pdf",
+    sourcePublished: "5 Sep 2026; companion press release dated 3 Sep 2026; earlier Tier-II result press releases 17 and 18 Aug 2026; both September press releases re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
     changeLog: [
       {
         date: "2026-08-21",
@@ -1000,6 +1121,11 @@ export const exams: Exam[] = [
         date: "2026-08-18",
         displayDate: "18 Aug 2026",
         text: "KVS began declaring Tier-II results under Recruitment Notification 01/2025: four posts on 17 Aug 2026 and twenty-four more on 18 Aug 2026, across PGT and TGT language and subject posts plus Assistant Engineer (Civil), Administrative Officer, Finance Officer, Stenographer Grade-I and Multi-Tasking Staff.",
+      },
+      {
+        date: "2026-09-05",
+        displayDate: "5 Sep 2026",
+        text: "Further Tier-II results under Recruitment Notification 01/2025: a CBSE press release dated 3 Sep 2026 declares the results for PGT (English), PGT (Physical Education), TGT (Music), TGT (Physical Education / Physical & Health Education), PRT (Music) and PRT (Special Educator), and a press release of 5 Sep 2026 declares PGT (Hindi) and TGT (Hindi) and records that the Principal result was declared on 3 Sep 2026. Interview and skill-test schedules and call letters will be issued through the candidate login once finalised with KVS/NVS.",
       },
     ],
     keywords: [
@@ -1045,7 +1171,7 @@ export const exams: Exam[] = [
       tone: "green",
       nextAction: "Serving officers should have their application forwarded through proper channel to reach KVS headquarters by 14 Sep 2026",
       detail:
-        "Advertisement No. 03/2026, dated 20 Aug 2026, invites applications on transfer-on-deputation basis for one post of Executive Engineer (Pay Level-11) and one post of Assistant Director (Official Language) (Pay Level-10). Applications must be sent by registered or speed post through the cadre controlling authority to the Additional Commissioner (Admn.), KVS headquarters, New Delhi, so as to reach by 14 Sep 2026. There is no written examination.",
+        "Advertisement No. 03/2026, dated 20 Aug 2026, invites applications on transfer-on-deputation basis for one post of Executive Engineer (Pay Level-11) and one post of Assistant Director (Official Language) (Pay Level-10). Applications must be sent by registered or speed post through the cadre controlling authority to the Additional Commissioner (Admn.), KVS headquarters, New Delhi, so as to reach by 14 Sep 2026. There is no written examination. The KVS notifications page re-read on 9 Sep 2026 shows no extension or corrigendum, so the 14 Sep 2026 closing date stands.",
     },
     summary:
       "Kendriya Vidyalaya Sangathan's deputation vacancy circular for one Executive Engineer and one Assistant Director (Official Language) post at its headquarters, open to serving Central, State and Union Territory government officers.",
@@ -1108,8 +1234,8 @@ export const exams: Exam[] = [
     sourceTitle:
       "Advertisement No. 03/2026 — Filling up the post of Executive Engineer & Assistant Director (Official Language) through transfer on deputation in Kendriya Vidyalaya Sangathan",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s32d2ca7eedf739ef4c3800713ec482e1a/uploads/2026/08/2026082055.pdf",
-    sourcePublished: "20 Aug 2026 (File No. 11-RPS054/1/2026-RPS)",
-    lastVerified: "29 Aug 2026, 15:24 IST",
+    sourcePublished: "20 Aug 2026 (File No. 11-RPS054/1/2026-RPS); KVS notifications page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 05:58 IST",
     changeLog: [
       {
         date: "2026-08-20",

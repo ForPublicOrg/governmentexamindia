@@ -261,10 +261,11 @@ export const exams: Exam[] = [
       { label: "Group B", total: 202 },
     ],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 31 Aug 2026",
-      detail: "The final notification opened online applications on 1 August; the preliminary examination is tentative.",
+      label: "Applications closed on 7 Sep 2026; preliminary examination tentatively 15 Nov 2026",
+      tone: "blue",
+      nextAction: "Watch the Commission's notification page for the preliminary examination admission ticket",
+      detail:
+        "The Commission's notification page, read on 9 Sep 2026, carries a corrigendum notification extending the date for submission of the online application for Gazetted Probationers 2026-27 till 07-09-2026, so the window that the 31 Jul 2026 final notification closed on 31 Aug 2026 has now closed a week later. The final notification puts the preliminary examination tentatively on 15 Nov 2026; no admission-ticket or examination notice for it has been published yet.",
     },
     summary: "Karnataka's competitive recruitment to notified Group A and Group B gazetted services.",
     age: "Service- and category-specific under the final notification.",
@@ -274,7 +275,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Final notification", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
       { label: "Applications open", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "current" },
+      { label: "Application deadline in the final notification", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed", note: "Superseded by the Commission's corrigendum notification." },
+      { label: "Application deadline, as extended by corrigendum", date: "2026-09-07", displayDate: "7 Sep 2026", state: "completed", note: "The corrigendum notification on the Commission's notification page extends the date for submission of the online application till 07-09-2026." },
       { label: "Preliminary examination", date: "2026-11-15", displayDate: "15 Nov 2026", state: "scheduled", note: "Tentative in notification" },
     ],
     eligibility: [
@@ -302,12 +304,20 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Final notification PDF", url: "https://kpsc.kar.nic.in/GP%202026-27%20Final%20Notification%20with%20PH%20Schedules%20HOSTED%20ON%2031-07-2026.pdf", type: "notice" },
+      { label: "Corrigendum extending the application date to 7 Sep 2026 (PDF)", url: "https://kpsc.kar.nic.in/corrigendum%20notification%20GP-2026.pdf", type: "notice" },
       { label: "KPSC notification board", url: "https://kpsc.kar.nic.in/notification.html", type: "website" },
     ],
     sourceTitle: "Gazetted Probationers 2026-27 Final Notification",
     sourceUrl: "https://kpsc.kar.nic.in/GP%202026-27%20Final%20Notification%20with%20PH%20Schedules%20HOSTED%20ON%2031-07-2026.pdf",
-    sourcePublished: "31 Jul 2026",
-    lastVerified: "4 Aug 2026, 14:45 IST",
+    sourcePublished: "Final notification of 31 Jul 2026; notification page re-read 9 Sep 2026, where the corrigendum extending the application date till 07-09-2026 is listed",
+    lastVerified: "9 Sep 2026, 17:36 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Commission's notification page carries a corrigendum extending the date for submission of online applications till 7 Sep 2026, a week past the 31 Aug 2026 date in the final notification. Both dates have now passed, so the record no longer shows applications as open and points instead at the tentative preliminary examination of 15 Nov 2026.",
+      },
+    ],
     keywords: ["Karnataka Administrative Service", "KAS recruitment", "KPSC Group A Group B posts"],
     featured: true,
   }),
@@ -329,10 +339,11 @@ export const exams: Exam[] = [
     education: ["Postgraduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Results published",
-      tone: "violet",
-      nextAction: "Check the official result notice and promotion instructions",
-      detail: "The department's dedicated eligibility-test page posted results on 8 June 2026.",
+      label: "Eligibility test finished; result published 8 Jun 2026",
+      tone: "slate",
+      nextAction: "Follow the promotion process through the Centralised Admission Cell; no further test stage is notified",
+      detail:
+        "The department's dedicated eligibility-test page posted the result on 8 Jun 2026 and the test cycle is over. Re-checked on 9 Sep 2026: the old TETHOME page for this test no longer resolves, and the sts.karnataka.gov.in/GPSTRNHK portal it sat on now serves registration for the Government School Teachers Recruitment 2026 instead, so this record cites the Centralised Admission Cell page of the School Education Department, which still lists the eligibility-test application link and publishes nothing newer for this promotion test.",
     },
     summary: "In-service eligibility test for promotion of Karnataka high-school teachers as pre-university lecturers.",
     vacancyLabel: "Promotion eligibility test",
@@ -354,12 +365,20 @@ export const exams: Exam[] = [
     selectionStages: ["Eligibility test", "Result", "Promotion process under departmental rules"],
     syllabus: ["Use the subject-specific scheme and revised timetable on the official test portal."],
     officialLinks: [
-      { label: "PU Lecturer eligibility-test portal", url: "https://sts.karnataka.gov.in/GPSTRNHK/TETHOME.aspx", type: "result" },
+      { label: "Centralised Admission Cell, School Education Department", url: "https://schooleducation.karnataka.gov.in/cacell/en", type: "notice" },
+      { label: "PU Lecturer eligibility-test application portal", url: "https://sts.karnataka.gov.in/GPSTRNHK/", type: "apply" },
     ],
-    sourceTitle: "Online Application for Eligibility Test for High School Teachers to Promote as P.U. Lecturer - 2026",
-    sourceUrl: "https://sts.karnataka.gov.in/GPSTRNHK/TETHOME.aspx",
-    sourcePublished: "Result notice dated 8 Jun 2026",
-    lastVerified: "4 Aug 2026, 14:50 IST",
+    sourceTitle: "Centralised Admission Cell - Online Application for Eligibility Test for High School Teachers to Promote as P.U. Lecturer",
+    sourceUrl: "https://schooleducation.karnataka.gov.in/cacell/en",
+    sourcePublished: "Result notice dated 8 Jun 2026; Centralised Admission Cell page and the eligibility-test portal re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:34 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The eligibility-test page this record cited (sts.karnataka.gov.in/GPSTRNHK/TETHOME.aspx) no longer resolves, and the portal it sat on now opens registration for the Government School Teachers Recruitment 2026. The record now cites the Centralised Admission Cell page of the School Education Department, which still carries the eligibility-test application link, and the cycle is marked complete because the result of 8 Jun 2026 was its last published stage.",
+      },
+    ],
     keywords: [
       "Karnataka PU lecturer eligibility test",
       "ಪದವಿ ಪೂರ್ವ ಉಪನ್ಯಾಸಕ ಬಡ್ತಿ ಪರೀಕ್ಷೆ",
@@ -675,7 +694,7 @@ export const exams: Exam[] = [
       label: "Applications closed",
       tone: "slate",
       nextAction: "Watch the e-recruitment portal for examination or scrutiny updates",
-      detail: "A press note extended the Common Matric Level application deadline to 27 July 2026.",
+      detail: "A press note extended the Common Matric Level application deadline to 27 July 2026. The A&N e-recruitment archive advertisement list, re-read on 9 Sep 2026, still carries this advertisement with the same dates and publishes no examination, result or selection notice for it.",
     },
     summary: "Common recruitment for matric-level posts under the Andaman and Nicobar Administration.",
     vacancyLabel: "See the common recruitment advertisement",
@@ -705,8 +724,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Common Matric Level Posts 2026 - Archive Advertisement",
     sourceUrl: "https://erecruitment.andamannicobar.gov.in/Archiveadv.aspx",
-    sourcePublished: "Application dates updated through 27 Jul 2026",
-    lastVerified: "4 Aug 2026, 15:20 IST",
+    sourcePublished: "Application dates updated through 27 Jul 2026; archive advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:36 IST",
     keywords: [
       "Andaman Nicobar 10th pass government jobs",
       "A&N CML examination",
@@ -737,7 +756,7 @@ export const exams: Exam[] = [
       label: "Applications closed",
       tone: "slate",
       nextAction: "Watch the e-recruitment portal for examination or scrutiny updates",
-      detail: "The Administration extended the Common Higher Secondary Level application deadline to 30 July 2026.",
+      detail: "The Administration extended the Common Higher Secondary Level application deadline to 30 July 2026. The A&N e-recruitment archive advertisement list, re-read on 9 Sep 2026, still carries this advertisement with the same dates and publishes no examination, result or selection notice for it.",
     },
     summary: "Common recruitment for higher-secondary-level posts under the Andaman and Nicobar Administration.",
     vacancyLabel: "See the common recruitment advertisement",
@@ -767,8 +786,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Common Higher Secondary Level Posts 2026 - Archive Advertisement",
     sourceUrl: "https://erecruitment.andamannicobar.gov.in/Archiveadv.aspx",
-    sourcePublished: "Application dates updated through 30 Jul 2026",
-    lastVerified: "4 Aug 2026, 15:20 IST",
+    sourcePublished: "Application dates updated through 30 Jul 2026; archive advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:36 IST",
     keywords: [
       "Andaman Nicobar 12th pass government jobs",
       "A&N CHSL examination",
@@ -805,7 +824,7 @@ export const exams: Exam[] = [
       label: "Final selection list published",
       tone: "slate",
       nextAction: "Watch APPSC for the next Group-I Services notification",
-      detail: "APPSC published the final selection notification for Notification 12/2023 on 30 Jan 2026, provisionally selecting 87 candidates; the next Group-I cycle has not been notified.",
+      detail: "APPSC published the final selection notification for Notification 12/2023 on 30 Jan 2026, provisionally selecting 87 candidates; the next Group-I cycle has not been notified. The Commission's direct-recruitment selection-list page, re-read on 9 Sep 2026, lists nothing newer for this notification; its most recent entry is the selection notification for Deputy Educational Officer under Notification No. 14/2023, published on 2 Sep 2026.",
     },
     summary: "Andhra Pradesh's flagship combined competitive examination for Group I gazetted posts such as Deputy Collector, Deputy Superintendent of Police and Assistant Commissioner of State Tax. The 2023 cycle's final selection has been published.",
     vacancies: 87,
@@ -834,8 +853,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "APPSC Notification 12/2023 - Group-I Services Final Selection Notification",
     sourceUrl: "https://psc.ap.gov.in/Documents/NotificationDocuments/SelectionNotification_122023_30012026.pdf",
-    sourcePublished: "Final selection notification dated 30 Jan 2026",
-    lastVerified: "4 Aug 2026, 16:00 IST",
+    sourcePublished: "Final selection notification dated 30 Jan 2026; APPSC selection-list page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:44 IST",
     keywords: ["APPSC Group 1", "AP civil services exam", "Group 1 Deputy Collector"],
     featured: true,
   }),
@@ -865,7 +884,7 @@ export const exams: Exam[] = [
       label: "Final selection list published",
       tone: "slate",
       nextAction: "Watch APPSC for the next Group-II Services notification",
-      detail: "APPSC's provisional selection notification for Notification 11/2023, dated 27 Jan 2026, filled 891 of the notified Group-II posts; the next Group-II cycle has not been notified.",
+      detail: "APPSC's provisional selection notification for Notification 11/2023, dated 27 Jan 2026, filled 891 of the notified Group-II posts; the next Group-II cycle has not been notified. The Commission's direct-recruitment selection-list page, re-read on 9 Sep 2026, lists nothing newer for this notification; its most recent entry is the selection notification for Deputy Educational Officer under Notification No. 14/2023, published on 2 Sep 2026.",
     },
     summary: "Andhra Pradesh's Group II combined competitive examination for executive and non-executive posts such as Municipal Commissioner Grade III, Sub-Registrar and Deputy Tahsildar. The 2023 cycle's final selection has been published.",
     vacancies: 891,
@@ -892,8 +911,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "APPSC Notification 11/2023 - Group-II Services Provisional Selection Notification",
     sourceUrl: "https://psc.ap.gov.in/Documents/NotificationDocuments/SelectionNotification_112023_28012026.pdf",
-    sourcePublished: "Provisional selection notification dated 27 Jan 2026",
-    lastVerified: "4 Aug 2026, 16:00 IST",
+    sourcePublished: "Provisional selection notification dated 27 Jan 2026; APPSC selection-list page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:44 IST",
     keywords: ["APPSC Group 2", "AP Group 2 exam", "Municipal Commissioner Deputy Tahsildar"],
     featured: true,
   }),
@@ -924,7 +943,7 @@ export const exams: Exam[] = [
       label: "Final selection list published",
       tone: "slate",
       nextAction: "Watch TGPSC for the next Group-I Services notification",
-      detail: "TGPSC's results notification for Notification 02/2024, dated 24 Sep 2025, provisionally selected 562 of the 563 notified Group-I posts; the next Group-I cycle has not been notified.",
+      detail: "TGPSC's results notification for Notification 02/2024, dated 24 Sep 2025, provisionally selected 562 of the 563 notified Group-I posts; the next Group-I cycle has not been notified. The Commission's notification list, re-read on 9 Sep 2026, carries nothing newer for this notification.",
     },
     summary: "Telangana's flagship combined competitive examination for Group I gazetted posts such as Deputy Collector and Deputy Superintendent of Police. The 2024 cycle's final selection has been published.",
     vacancies: 562,
@@ -952,8 +971,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TGPSC Notification 02/2024 - Group-I Services Results Notification",
     sourceUrl: "https://websitenew.tgpsc.gov.in/preview/UFJFU1NOT1RFL0dSMS0wMjI0LVNFTC1OT1RJRk4yMDI1MDkyNTAwMTMwMC5wZGY=r95v17a0y2d8i13v",
-    sourcePublished: "Results notification dated 24 Sep 2025",
-    lastVerified: "4 Aug 2026, 16:00 IST",
+    sourcePublished: "Results notification dated 24 Sep 2025; TGPSC notification list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:40 IST",
     keywords: ["TGPSC Group 1", "TSPSC Group 1", "Telangana civil services exam"],
     featured: true,
   }),
@@ -983,7 +1002,7 @@ export const exams: Exam[] = [
       label: "Final selection list published",
       tone: "slate",
       nextAction: "Watch TGPSC for the next Group-II Services notification",
-      detail: "TGPSC's provisional selection notification for Notification 28/2022, dated 28 Sep 2025, filled 782 of the notified Group-II posts; the next Group-II cycle has not been notified.",
+      detail: "TGPSC's provisional selection notification for Notification 28/2022, dated 28 Sep 2025, filled 782 of the notified Group-II posts; the next Group-II cycle has not been notified. The Commission's notification list, re-read on 9 Sep 2026, carries nothing newer for this notification.",
     },
     summary: "Telangana's Group II combined competitive examination for executive and non-executive state posts. The 2022 cycle's final selection has been published.",
     vacancies: 782,
@@ -1011,8 +1030,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TGPSC Notification 28/2022 - Group-II Services Provisional Selection Notification",
     sourceUrl: "https://websitenew.tgpsc.gov.in/preview/UFJFU1NOT1RFL0dSMi0yODIwMjItU0VMLU5PVElGTjIwMjUwOTI4MTU0MDMxLnBkZg==r95v17a0y2d8i13v",
-    sourcePublished: "Provisional selection notification dated 28 Sep 2025",
-    lastVerified: "4 Aug 2026, 16:00 IST",
+    sourcePublished: "Provisional selection notification dated 28 Sep 2025; TGPSC notification list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:40 IST",
     keywords: ["TGPSC Group 2", "TSPSC Group 2", "Telangana Group 2 exam"],
     featured: true,
   }),
@@ -1035,11 +1054,11 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Answer-key objections until 31 Aug 2026, per schedule",
+      label: "Results due 15 Sep 2026, per the notified schedule",
       tone: "violet",
-      nextAction: "Check the portal for the initial key and send objections by 31 Aug 2026",
+      nextAction: "Watch the APTET portal for the final key and the result due on 15 Sep 2026",
       detail:
-        "The computer-based test finished on 21 Aug 2026. Per the schedule in Notification No.01-APTET-JUNE-2026, the initial key was due on 24 Aug 2026 and objections on it are received until 31 Aug 2026, with the final key due on 8 Sep 2026 and results on 15 Sep 2026; the department's portal has not been seen confirming the key's actual release.",
+        "The computer-based test finished on 21 Aug 2026. Per the schedule in Notification No.01-APTET-JUNE-2026 the initial key was due on 24 Aug 2026, objections on it until 31 Aug 2026 and the final key on 8 Sep 2026, with results on 15 Sep 2026. On 9 Sep 2026 the APTET/DSC portal returned only its shell without any notice list, and the Commissioner of School Education site carried no APTET June 2026 notice, so none of the key or objection stages could be confirmed as held; they are shown as scheduled dates from the notification rather than as completed events.",
     },
     summary:
       "Andhra Pradesh's teacher eligibility test for classes I to VIII, conducted as a computer-based test by the Department of School Education under RTE Act and NCTE norms.",
@@ -1057,9 +1076,9 @@ export const exams: Exam[] = [
       { label: "Online mock test available", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "Hall ticket download", date: "2026-07-25", displayDate: "25 Jul 2026 onwards", state: "completed" },
       { label: "Computer-based examination", date: "2026-08-05", displayDate: "5 to 21 Aug 2026", state: "completed", note: "Two sessions daily: 9.30 AM to 12.00 noon and 2.30 PM to 5.00 PM." },
-      { label: "Initial key release", date: "2026-08-24", displayDate: "24 Aug 2026", state: "scheduled", note: "Scheduled date under Para 19 of the notification; the portal has not been seen confirming the actual release." },
-      { label: "Objections on the initial key", date: "2026-08-25", displayDate: "25 to 31 Aug 2026", state: "current", note: "Window per the notified schedule." },
-      { label: "Final key released", date: "2026-09-08", displayDate: "8 Sep 2026", state: "scheduled" },
+      { label: "Initial key release", date: "2026-08-24", displayDate: "24 Aug 2026", state: "tentative", note: "Date under Para 19 of the notification; the portal could not be read on 9 Sep 2026 to confirm the release." },
+      { label: "Objections on the initial key", date: "2026-08-25", displayDate: "25 to 31 Aug 2026", state: "tentative", note: "Window per the notified schedule; not confirmed on the portal." },
+      { label: "Final key released", date: "2026-09-08", displayDate: "8 Sep 2026", state: "tentative", note: "Date per the notified schedule; not confirmed on the portal on 9 Sep 2026." },
       { label: "Final results", date: "2026-09-15", displayDate: "15 Sep 2026", state: "scheduled" },
     ],
     eligibility: [
@@ -1087,9 +1106,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "APTET-JUNE 2026 Notification No.01-APTET-JUNE-2026, Director of School Education, Andhra Pradesh",
     sourceUrl: "https://tet2dsc.apcfss.in/TET-PDF/APTET-2026%20Notification.pdf",
-    sourcePublished: "Notification dated 5 Jun 2026; its schedule re-read on the official PDF and the APTET portal re-checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:50 IST",
+    sourcePublished: "Notification dated 5 Jun 2026; APTET/DSC portal and the Commissioner of School Education site re-checked 9 Sep 2026, neither showing a key or result notice",
+    lastVerified: "9 Sep 2026, 17:32 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The notified dates for the initial key, the objection window and the final key have all passed without the APTET/DSC portal or the Commissioner of School Education site publishing anything to confirm them, so those three stages are no longer shown as scheduled or in progress but as notified dates awaiting confirmation. The status now points at the result due on 15 Sep 2026.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -1352,11 +1376,11 @@ export const exams: Exam[] = [
     education: ["10th"],
     verification: "verified",
     status: {
-      label: "Circle notifications published",
-      tone: "amber",
-      nextAction: "Read your circle's notification and apply on the Forest Department recruitment portal",
+      label: "Applications open until 30 Sep 2026",
+      tone: "green",
+      nextAction: "Apply on the Forest Department recruitment portal by 30 Sep 2026",
       detail:
-        "The department's latest-news list carries circle-wise Forest Watcher notifications dated 20 and 21 Jul 2026 and links an online application portal; the list itself publishes no application deadline or selection schedule.",
+        "The department's latest-news list, read on 9 Sep 2026, carries circle-wise prakatanes listed on 7 and 8 Sep 2026 that extend the last date for online applications to 30-09-2026 for the Hassan, Mysore, Bangalore, Mangalore, Kanara, Chikkamagalur, Kodagu, Chamarajanagara, Dharwad, Ballari, Kalaburagi, Shimoga and Belagavi circles; the recruitment portal shows the same last date under an application-deadline-extended banner. An earlier round of notices listed on 1 Sep 2026 had extended the date to 7 Sep 2026. No selection schedule is published.",
     },
     summary:
       "Circle-wise direct recruitment to D-Group Forest Watcher posts across the Karnataka Forest Department's territorial circles.",
@@ -1369,7 +1393,8 @@ export const exams: Exam[] = [
     pay: "Karnataka D-Group pay scale for Forest Watcher as stated in the circle notification.",
     timeline: [
       { label: "Circle-wise notifications published", date: "2026-07-20", displayDate: "20 and 21 Jul 2026", state: "completed" },
-      { label: "Application window", displayDate: "Dates sit in each circle's notification and are not announced on the department news list", state: "current" },
+      { label: "Extension of the last date to 7 Sep 2026", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed", note: "Circle-wise prakatanes listed on the department's latest-news page on 1 Sep 2026." },
+      { label: "Application deadline, as extended", date: "2026-09-30", displayDate: "30 Sep 2026", state: "current", note: "Circle-wise extension prakatanes listed on 7 and 8 Sep 2026 give 30-09-2026 as the last date, and the recruitment portal shows the same date." },
       { label: "Physical and merit stages", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -1396,8 +1421,16 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka Forest Department - circle-wise Forest Watcher notifications 2026-27",
     sourceUrl: "https://aranya.gov.in/aranyacms/English/Home.aspx",
-    sourcePublished: "Circle notifications dated 20 and 21 Jul 2026; latest-news list re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 14:58 IST",
+    sourcePublished:
+      "Circle notifications dated 20 and 21 Jul 2026; circle-wise extension prakatanes listed on the latest-news page on 1, 7 and 8 Sep 2026; latest-news list and recruitment portal re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The department's latest-news page now carries circle-wise prakatanes, listed on 7 and 8 Sep 2026, extending the last date for online applications to 30 Sep 2026 across thirteen circles, and the recruitment portal shows the same date. The record therefore gains a dated deadline and moves from notification-published to applications-open. An earlier extension to 7 Sep 2026, listed on 1 Sep 2026, is recorded as a completed stage.",
+      },
+    ],
     keywords: [
       "Karnataka Forest Watcher",
       "ಅರಣ್ಯ ವೀಕ್ಷಕ ನೇಮಕಾತಿ",
@@ -1431,11 +1464,11 @@ export const exams: Exam[] = [
     education: ["10th"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Deliver your application to the Mysuru Circle office by 5.30 pm on 3 Sep 2026",
+      label: "Applications closed; experience test and interview not announced",
+      tone: "amber",
+      nextAction: "Watch the department's latest-news page for the experience test and interview call",
       detail:
-        "The Conservator of Forests and Recruitment Authority, Mysuru Circle, issued this notification on 27 Jul 2026 and the department listed it on 6 Aug 2026. Applications are received from 10.00 am on 5 Aug 2026 until 5.30 pm on 3 Sep 2026, by hand or by post only.",
+        "Applications were received by hand or by post from 10.00 am on 5 Aug 2026 until 5.30 pm on 3 Sep 2026, so the window has closed. The department's latest-news page, read on 9 Sep 2026, carries no extension for this notification and no date for the elephant-handling experience test or the selection committee interview; its newest Mysuru Circle items are Forest Watcher extension notices for a different cadre.",
     },
     summary:
       "Direct recruitment to Group 'D' Elephant Kavadiga posts in the Mysuru Circle of the Karnataka Forest Department, for candidates with hands-on elephant-handling experience.",
@@ -1455,7 +1488,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
       { label: "Applications open", date: "2026-08-05", displayDate: "5 Aug 2026, 10:00 AM", state: "completed" },
-      { label: "Application deadline", date: "2026-09-03", displayDate: "3 Sep 2026, 5:30 PM", state: "current", note: "Applications reach the Conservator of Forests office, Mysuru Circle, Aranya Bhavana, Ashokapuram, Mysuru-570008 by hand or by post." },
+      { label: "Application deadline", date: "2026-09-03", displayDate: "3 Sep 2026, 5:30 PM", state: "completed", note: "Applications reached the Conservator of Forests office, Mysuru Circle, Aranya Bhavana, Ashokapuram, Mysuru-570008 by hand or by post; no extension was published." },
       { label: "Interview before the selection committee", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [
@@ -1482,8 +1515,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka Forest Department, Mysuru Circle - Elephant Kavadiga Group 'D' direct recruitment notification 2026-27",
     sourceUrl: "https://aranya.gov.in/aranyacms/downloads/latestNews/Notification%20dated%2006-08-2026_0001%20(1)_compressed_06-08-2026_08.15.31.pdf",
-    sourcePublished: "Notification dated 27 Jul 2026, listed on the department's latest-news page on 6 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:03 IST",
+    sourcePublished: "Notification dated 27 Jul 2026, listed on the department's latest-news page on 6 Aug 2026; that page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:22 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The 3 Sep 2026 application deadline has passed and the department's latest-news page carries no extension, so the window is shown as closed and the status moves from applications-open to awaiting the experience test and interview, which the notification leaves undated.",
+      },
+    ],
     keywords: [
       "Karnataka elephant kavadiga",
       "ಆನೆ ಕವಾಡಿಗ ನೇಮಕಾತಿ",
@@ -1511,11 +1551,11 @@ export const exams: Exam[] = [
     education: ["12th"],
     verification: "verified",
     status: {
-      label: "Provisional additional list published",
+      label: "Finalised 1:1 additional list published; documents called for",
       tone: "violet",
-      nextAction: "Check the 7 Aug 2026 provisional additional list on the Forest Department's latest-news list",
+      nextAction: "Check the finalised 1:1 additional list of 8 Sep 2026 and submit the documents it calls for",
       detail:
-        "Key answers for the written examination held on 20 Jul 2025 were published on 25 Jul 2025. On 7 Aug 2026 the department hosted a 1:1 provisional additional list of 14 candidates under this notification; no consolidated final result for the cycle is on the news list.",
+        "Key answers for the written examination held on 20 Jul 2025 were published on 25 Jul 2025 and a 1:1 provisional additional list of 14 candidates followed on 7 Aug 2026. The department's latest-news page, read on 9 Sep 2026, now carries a notice listed on 8 Sep 2026 on publication of the finalised 1:1 (post:candidate) tentative additional list, with the reply to final objections in signed copies, and on submission of documents under this 540-post notification. No consolidated final result for the cycle is on the news list.",
     },
     summary:
       "Direct recruitment to 540 Beat Forester (Forest Guard) posts in the Karnataka Forest Department, now past its written examination stage.",
@@ -1533,6 +1573,7 @@ export const exams: Exam[] = [
       { label: "Written examination", date: "2025-07-20", displayDate: "20 Jul 2025", state: "completed" },
       { label: "Key answers published", date: "2025-07-25", displayDate: "25 Jul 2025", state: "completed" },
       { label: "1:1 provisional additional list (14 candidates)", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
+      { label: "Finalised 1:1 additional list, objection replies and document submission", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed", note: "Listed on the department's latest-news page with the signed objection replies." },
       { label: "Result and remaining stages", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -1554,9 +1595,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka Forest Department - 540 Beat Forester recruitment notices",
     sourceUrl: "https://aranya.gov.in/aranyacms/English/Home.aspx",
-    sourcePublished: "Provisional additional list dated 7 Aug 2026",
-    lastVerified: "29 Aug 2026, 14:58 IST",
+    sourcePublished: "Provisional additional list dated 7 Aug 2026; finalised 1:1 additional list listed 8 Sep 2026; latest-news page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:24 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The department's latest-news page, re-read today, adds a notice listed on 8 Sep 2026 publishing the finalised 1:1 (post:candidate) tentative additional list with signed replies to the final objections and calling for documents under this notification. That stage is now shown on the timeline and in the status.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -1594,7 +1640,7 @@ export const exams: Exam[] = [
       tone: "slate",
       nextAction: "Watch the e-recruitment portal for the examination and scrutiny schedule",
       detail:
-        "The Administration's advertisement archive records Advertisement 1046, the Common Graduate Level Examination, with applications closing on 17 Dec 2025.",
+        "The Administration's advertisement archive records Advertisement 1046, the Common Graduate Level Examination, with applications closing on 17 Dec 2025. The A&N e-recruitment archive advertisement list, re-read on 9 Sep 2026, still carries this advertisement with the same dates and publishes no examination, result or selection notice for it.",
     },
     summary:
       "Common recruitment examination for graduate-level posts under the Andaman and Nicobar Administration, completing the matric and higher-secondary common recruitment set.",
@@ -1624,8 +1670,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Common Graduate Level (CGL) Examination, Advertisement 1046 - Archive Advertisement",
     sourceUrl: "https://erecruitment.andamannicobar.gov.in/Archiveadv.aspx",
-    sourcePublished: "Application dates recorded through 17 Dec 2025",
-    lastVerified: "4 Aug 2026, 16:55 IST",
+    sourcePublished: "Application dates recorded through 17 Dec 2025; archive advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:37 IST",
     keywords: [
       "Andaman Nicobar graduate government jobs",
       "A&N CGL examination",
@@ -1656,7 +1702,7 @@ export const exams: Exam[] = [
       tone: "slate",
       nextAction: "Watch the e-recruitment portal for the test and scrutiny schedule",
       detail:
-        "The Administration's advertisement archive records Advertisement 1051 for Group B (Non-Gazetted) and Group C posts in the Police Department, with applications closing on 25 Jun 2026.",
+        "The Administration's advertisement archive records Advertisement 1051 for Group B (Non-Gazetted) and Group C posts in the Police Department, with applications closing on 25 Jun 2026. The A&N e-recruitment archive advertisement list, re-read on 9 Sep 2026, still carries this advertisement with the same dates and publishes no examination, result or selection notice for it.",
     },
     summary:
       "Recruitment to Group B (Non-Gazetted) and Group C posts in the Andaman and Nicobar Police under the Administration's e-recruitment system.",
@@ -1686,8 +1732,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Group B (NG) and Group C posts, Police Department, Advertisement 1051 - Archive Advertisement",
     sourceUrl: "https://erecruitment.andamannicobar.gov.in/Archiveadv.aspx",
-    sourcePublished: "Application dates recorded through 25 Jun 2026",
-    lastVerified: "4 Aug 2026, 16:55 IST",
+    sourcePublished: "Application dates recorded through 25 Jun 2026; archive advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:37 IST",
     keywords: [
       "Andaman Nicobar police recruitment",
       "A&N police constable jobs",
@@ -1719,7 +1765,7 @@ export const exams: Exam[] = [
       tone: "slate",
       nextAction: "Watch the e-recruitment portal and newspapers for the Computer Based Test date",
       detail:
-        "The Directorate of Health Services notice dated 13 Apr 2026 closed online applications on 06 May 2026 and states that the date of the Computer Based Test shall be intimated later through newspaper or web portal.",
+        "The Directorate of Health Services notice dated 13 Apr 2026 closed online applications on 06 May 2026 and states that the date of the Computer Based Test shall be intimated later through newspaper or web portal. The A&N e-recruitment archive advertisement list, re-read on 9 Sep 2026, still carries this advertisement with the same dates and publishes no examination, result or selection notice for it.",
     },
     summary:
       "Open recruitment examination for Auxiliary Nurse Midwife posts in the Andaman and Nicobar Health Department, conducted by Computer Based Test and open to female candidates only.",
@@ -1768,8 +1814,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Notice of Vacancy for Recruitment in A&N Health Department - Auxiliary Nurse Midwife (ANM)",
     sourceUrl: "https://erecruitment.andamannicobar.gov.in/Advertisement/1052_3002da83-c350-4d05-97f2-afda84509126.pdf",
-    sourcePublished: "Notice dated 13 Apr 2026",
-    lastVerified: "4 Aug 2026, 23:20 IST",
+    sourcePublished: "Notice dated 13 Apr 2026; archive advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:38 IST",
     keywords: [
       "Andaman Nicobar ANM recruitment",
       "A&N health department nursing jobs",
@@ -1801,7 +1847,7 @@ export const exams: Exam[] = [
       tone: "slate",
       nextAction: "Watch the e-recruitment portal for the Physical Test schedule and admit cards",
       detail:
-        "The Divisional Forest Officer, Rangat (Nodal Officer, North & Middle Andaman) closed online applications on 06 May 2026; the vacancy notice states that Physical Test dates shall be published at a later stage.",
+        "The Divisional Forest Officer, Rangat (Nodal Officer, North & Middle Andaman) closed online applications on 06 May 2026; the vacancy notice states that Physical Test dates shall be published at a later stage. The A&N e-recruitment archive advertisement list, re-read on 9 Sep 2026, still carries this advertisement with the same dates and publishes no examination, result or selection notice for it.",
     },
     summary:
       "Common recruitment to the Group 'C' industrial post of Mazdoor in the forest divisions of North and Middle Andaman District under the Department of Environment and Forests.",
@@ -1851,8 +1897,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Vacancy Notice - Group 'C' Industrial post of Mazdoor, North & Middle Andaman District, Department of Environment & Forests",
     sourceUrl: "https://erecruitment.andamannicobar.gov.in/Advertisement/1050_f993df04-2fac-471f-8fcb-10c42c38cb2f.pdf",
-    sourcePublished: "Application window 23 Mar to 6 May 2026",
-    lastVerified: "4 Aug 2026, 23:30 IST",
+    sourcePublished: "Application window 23 Mar to 6 May 2026; archive advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:38 IST",
     keywords: [
       "Andaman forest mazdoor recruitment",
       "A&N environment and forests jobs",
@@ -1880,10 +1926,10 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate"],
     verification: "verified",
     status: {
-      label: "Kannada language result out; written examinations 4 and 25 Oct 2026",
+      label: "Kannada language marks list out; written examinations 4 and 25 Oct 2026",
       tone: "blue",
-      nextAction: "Check the Kannada language provisional result and object by the notified date; the written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka)",
-      detail: "Applications closed on 20 Aug 2026 under KEA's extension notice dated 17 Aug 2026, and notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026 further extended online fee payment to 4.00 pm on 26 Aug 2026. The compulsory Kannada language qualifying examination was held on 22 Aug 2026, its key answers were published the same day, and KEA hosted the provisional result with an objection link on 27 Aug 2026. The VAO written examination remains 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka).",
+      nextAction: "Check your compulsory Kannada language marks list on the KEA VAO-2026 page; the written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka)",
+      detail: "Applications closed on 20 Aug 2026 under KEA's extension notice dated 17 Aug 2026, and notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026 further extended online fee payment to 4.00 pm on 26 Aug 2026. The compulsory Kannada language qualifying examination was held on 22 Aug 2026, its key answers were published the same day, and the provisional result with an objection link followed on 27 Aug 2026. On 2 Sep 2026 KEA published the compulsory Kannada language examination result for 2026 as a marks list on the same page. The page, re-read on 9 Sep 2026, shows nothing newer, and the VAO written examination remains 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka).",
     },
     summary:
       "Recruitment of Village Administrative Officers for the Karnataka Revenue Department, conducted by the Karnataka Examinations Authority with separate Rest of Karnataka and Kalyana Karnataka processes.",
@@ -1907,7 +1953,8 @@ export const exams: Exam[] = [
       { label: "Last date for online application", date: "2026-08-20", displayDate: "20 Aug 2026", state: "completed", note: "As extended by KEA's notice dated 17 Aug 2026." },
       { label: "Compulsory Kannada language examination", date: "2026-08-22", displayDate: "22 Aug 2026", state: "completed", note: "KEA published the examination notification and key answers the same day." },
       { label: "Last date for online fee payment", date: "2026-08-26", displayDate: "26 Aug 2026, 4:00 PM", state: "completed", note: "Extended from 21 Aug 2026 by KEA notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026." },
-      { label: "Kannada language examination provisional result and objection link", date: "2026-08-27", displayDate: "27 Aug 2026", state: "current" },
+      { label: "Kannada language examination provisional result and objection link", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
+      { label: "Compulsory Kannada language examination result (marks list)", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed", note: "Hosted on the VAO-2026 (Rest of Karnataka) page as the 2026 marks list." },
       { label: "Written examination (Rest of Karnataka)", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled" },
       { label: "Written examination (Kalyana Karnataka)", date: "2026-10-25", displayDate: "25 Oct 2026", state: "scheduled" },
     ],
@@ -1939,9 +1986,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka Examinations Authority - Village Administrative Officer 2026 announcement pages",
     sourceUrl: "https://cetonline.karnataka.gov.in/kea/vaorpc2026.aspx",
-    sourcePublished: "KEA notices dated up to 27 Aug 2026 on the VAO-2026 (Rest of Karnataka) page, including the fee-extension notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026; upcoming exam calendar dated 15 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:49 IST",
+    sourcePublished: "KEA notices dated up to 2 Sep 2026 on the VAO-2026 (Rest of Karnataka) page, including the compulsory Kannada language marks list dated 2 Sep 2026 and the fee-extension notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026; page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:26 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "KEA published the compulsory Kannada language examination result for 2026 as a marks list on the VAO-2026 page on 2 Sep 2026, so the 27 Aug provisional result and objection stage is now complete and the marks list is added to the timeline. The written examination dates of 4 and 25 Oct 2026 are unchanged.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -1981,10 +2033,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th"],
     verification: "verified",
     status: {
-      detail: "KEA has moved the cycle past the answer-key stage. Revised answer keys dated 7 Aug 2026 were issued for both the Rest of Karnataka and the Kalyana Karnataka streams, the provisional marks list with an objection link followed on 15 Aug 2026, and district-wise provisional marks lists for the Rest of Karnataka stream were hosted on 21 Aug 2026. On 27 Aug 2026 KEA published the compulsory Kannada language examination's provisional result on the same page, with its own objection link. No final result has been published.",
-      label: "Provisional marks and Kannada language result published; objections invited",
+      detail: "KEA has moved the cycle past the answer-key stage. Revised answer keys dated 7 Aug 2026 were issued for both the Rest of Karnataka and the Kalyana Karnataka streams, the provisional marks list with an objection link followed on 15 Aug 2026, and district-wise provisional marks lists for the Rest of Karnataka stream were hosted on 21 Aug 2026. The compulsory Kannada language examination's provisional result went up on 27 Aug 2026 with its own objection link, and on 2 Sep 2026 KEA published that examination's 2026 result as a marks list on the same page. The page, re-read on 9 Sep 2026, shows nothing newer; no final result for the constable posts has been published.",
+      label: "Provisional marks published; Kannada language marks list out",
       tone: "violet",
-      nextAction: "Check your provisional marks and Kannada language result on the KEA page and file any objection within the notified window",
+      nextAction: "Check your provisional marks and the compulsory Kannada language marks list on the KEA page and wait for the final result",
     },
     summary:
       "Direct recruitment to Civil Police Constable posts in the Karnataka State Police, notified region-wise and examined by the Karnataka Examinations Authority.",
@@ -2007,7 +2059,8 @@ export const exams: Exam[] = [
       { label: "Revised answer keys (both streams)", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
       { label: "Provisional marks list published and objections invited", date: "2026-08-15", displayDate: "15 Aug 2026", state: "completed" },
       { label: "District-wise provisional marks lists hosted", date: "2026-08-21", displayDate: "21 Aug 2026", state: "completed" },
-      { label: "Kannada language examination provisional result and objection link", date: "2026-08-27", displayDate: "27 Aug 2026", state: "current" },
+      { label: "Kannada language examination provisional result and objection link", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
+      { label: "Compulsory Kannada language examination result (marks list)", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed", note: "Hosted on the KEA Civil Police Constable 2026 (Rest of Karnataka) page." },
       { label: "Final result", displayDate: "Not announced", state: "tentative" },
     ],
     eligibility: [
@@ -2029,9 +2082,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka State Police recruitment page, read with the KEA Civil Police Constable 2026 examination pages",
     sourceUrl: "https://ksp.karnataka.gov.in/info-3/Recruitment/en",
-    sourcePublished: "KEA notices dated up to 27 Aug 2026 on the Civil Police Constable 2026 (Rest of Karnataka) page",
-    lastVerified: "29 Aug 2026, 15:00 IST",
+    sourcePublished: "KEA notices dated up to 2 Sep 2026 on the Civil Police Constable 2026 (Rest of Karnataka) page; page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:28 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "KEA published the compulsory Kannada language examination's 2026 result as a marks list on the Civil Police Constable page on 2 Sep 2026, so the 27 Aug provisional result and objection stage is complete and the marks list joins the timeline. No final result for the constable posts has appeared.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -2075,7 +2133,7 @@ export const exams: Exam[] = [
       tone: "slate",
       nextAction: "Watch the KPTCL recruitment pages for the next notification",
       detail:
-        "KPTCL's Recruitment-2024 page carries the region-wise final selection lists of 6 Aug and 25 Aug 2025, counselling and appointment-order notices through 5 Jan 2026, and a candidature-cancellation notice dated 16 Apr 2026.",
+        "KPTCL's Recruitment-2024 page carries the region-wise final selection lists of 6 Aug and 25 Aug 2025, counselling and appointment-order notices through 5 Jan 2026, and a candidature-cancellation notice dated 16 Apr 2026. KPTCL's 2024 recruitment page, re-read on 9 Sep 2026, publishes nothing after its notice of 16 Apr 2026 on cancellation of candidature.",
     },
     summary:
       "Direct recruitment to Junior Station Attendant and Junior Powerman posts in the Karnataka Power Transmission Corporation, now at the selection and appointment stage.",
@@ -2115,8 +2173,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "KPTCL Recruitment-2024 notice list",
     sourceUrl: "https://kptcl.karnataka.gov.in/662/%E0%B2%A8%E0%B3%87%E0%B2%AE%E0%B2%95%E0%B2%BE%E0%B2%A4%E0%B2%BF-2024/kn",
-    sourcePublished: "Notices dated up to 16 Apr 2026",
-    lastVerified: "4 Aug 2026, 18:20 IST",
+    sourcePublished: "Notices dated up to 16 Apr 2026; KPTCL 2024 recruitment page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:42 IST",
     keywords: [
       "KPTCL recruitment",
       "Junior Station Attendant Karnataka",

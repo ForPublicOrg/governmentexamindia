@@ -242,7 +242,7 @@ export const exams: Exam[] = [
       label: "Applications open until 9 Sep 2026",
       tone: "green",
       nextAction: "Apply online through TNPSC's one-time registration by 9 Sep 2026",
-      detail: "TNPSC published the Group II / IIA notification on 11 Aug 2026. Press Release 94/2026 opens online applications from 11 Aug to 9 Sep 2026, allows the fee to be paid through UPI, and fixes the preliminary examination for 1 Nov 2026 — later than the 25 Oct 2026 date the tentative planner had shown.",
+      detail: "TNPSC published the Group II / IIA notification on 11 Aug 2026. Press Release 94/2026 opens online applications from 11 Aug to 9 Sep 2026, allows the fee to be paid through UPI, and fixes the preliminary examination for 1 Nov 2026 — later than the 25 Oct 2026 date the tentative planner had shown. TNPSC's press-release index and home page, re-read on 9 Sep 2026, carry nothing newer than Press Release 104/2026 of 7 Sep 2026 and no extension of the closing date, so 9 Sep 2026 remains the last day to apply.",
     },
     summary: "Tamil Nadu recruitment for Group II interview and Group IIA non-interview service posts.",
     vacancyLabel: "See the 11 Aug 2026 notification",
@@ -285,8 +285,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TNPSC Press Release 94/2026 — publication of the Combined Civil Services Examination II (Group II and IIA) notification",
     sourceUrl: "https://www.tnpsc.gov.in/Document/PressEnglish/Gr-ii.pdf",
-    sourcePublished: "Press release 94/2026 dated 11 Aug 2026; applications 11 Aug - 9 Sep 2026; preliminary exam 1 Nov 2026",
-    lastVerified: "29 Aug 2026, 15:50 IST",
+    sourcePublished: "Press release 94/2026 dated 11 Aug 2026; applications 11 Aug - 9 Sep 2026; preliminary exam 1 Nov 2026; TNPSC press-release index re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:40 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -329,7 +329,7 @@ export const exams: Exam[] = [
       label: "Prelims postponed to 27 Sep 2026",
       tone: "blue",
       nextAction: "Preliminary exam now scheduled for 27 Sep 2026",
-      detail: "TNPSC Press Release 83/2026 (16 Jul 2026) postponed the Notification No. 05/2026 preliminary exam from 6 Sep 2026 to 27 Sep 2026; use the cycle notification for candidate-specific rules.",
+      detail: "TNPSC Press Release 83/2026 (16 Jul 2026) postponed the Notification No. 05/2026 preliminary exam from 6 Sep 2026 to 27 Sep 2026; use the cycle notification for candidate-specific rules. The press-release index and home page, re-read on 9 Sep 2026, publish no further postponement and no hall-ticket notice, so the 27 Sep 2026 date stands.",
     },
     summary: "Tamil Nadu’s competitive examination for senior state service posts.",
     vacancyLabel: "See 2026 notification",
@@ -368,8 +368,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TNPSC Press Release 83/2026 — postponement of Group I preliminary exam",
     sourceUrl: "https://www.tnpsc.gov.in/Document/PressEnglish/press%20dt%2016.7.26%20(1).pdf",
-    sourcePublished: "16 Jul 2026; original planner published 3 Dec 2025",
-    lastVerified: "29 Aug 2026, 15:20 IST",
+    sourcePublished: "16 Jul 2026; original planner published 3 Dec 2025; TNPSC press-release index re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:41 IST",
     changeLog: [
       { date: "2026-07-16", displayDate: "16 Jul 2026", text: "Preliminary exam postponed from 6 Sep 2026 to 27 Sep 2026 per Press Release 83/2026." },
     ],
@@ -405,11 +405,11 @@ export const exams: Exam[] = [
     examTypes: ["Technical & Trades"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Examinations under way — sessions on 7-12 and 19 Sep 2026",
+      label: "Examinations under way — second block runs to 12 Sep 2026, third block 19 Sep 2026",
       tone: "blue",
       nextAction: "Download the Memorandum of Admission from your TNPSC one-time-registration dashboard for your session",
       detail:
-        "TNPSC invited applications under Notification No. 04/2026, dated 20 May 2026. Press Release 93/2026, dated 6 Aug 2026, fixes the Computer Based Test, Objective Type (OMR) and Descriptive Type examinations for 16-20 Aug 2026, 7-12 Sep 2026 and 19 Sep 2026, and hosts the hall ticket on the Commission's website for download through the candidate's OTR dashboard using the application number and date of birth.",
+        "TNPSC invited applications under Notification No. 04/2026, dated 20 May 2026. Press Release 93/2026, dated 6 Aug 2026, fixes the Computer Based Test, Objective Type (OMR) and Descriptive Type examinations for 16-20 Aug 2026, 7-12 Sep 2026 and 19 Sep 2026, and hosts the hall ticket on the Commission's website for download through the candidate's OTR dashboard using the application number and date of birth. The first block was held as fixed and the second block began on 7 Sep 2026 and runs to 12 Sep 2026; TNPSC's press-release index and home page, re-read on 9 Sep 2026, carry no postponement or change of session for this notification.",
     },
     summary:
       "The graduate-level stream of Tamil Nadu's combined technical recruitment, covering the technical posts for which no oral test is prescribed; the written examinations run in sessions across August and September 2026.",
@@ -423,7 +423,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification 04/2026", date: "2026-05-20", displayDate: "20 May 2026", state: "completed" },
       { label: "Examinations — first block", date: "2026-08-16", displayDate: "16-20 Aug 2026", state: "completed", note: "16 Aug FN to 20 Aug FN & AN" },
-      { label: "Examinations — second block", date: "2026-09-07", displayDate: "7-12 Sep 2026", state: "scheduled", note: "7 Sep FN & AN to 12 Sep AN" },
+      { label: "Examinations — second block", date: "2026-09-07", displayDate: "7-12 Sep 2026", state: "current", note: "7 Sep FN & AN to 12 Sep AN; under way as of 9 Sep 2026" },
       { label: "Examinations — third block", date: "2026-09-19", displayDate: "19 Sep 2026", state: "scheduled", note: "FN & AN" },
       { label: "Result and certificate verification", displayDate: "To be announced", state: "tentative" },
     ],
@@ -452,8 +452,13 @@ export const exams: Exam[] = [
     sourceTitle: "TNPSC Press Release 93/2026 — examination dates and hall ticket for the Combined Technical Services Examination (Non-Interview Posts), Notification No. 04/2026",
     sourceUrl: "https://www.tnpsc.gov.in/Document/PressEnglish/Press%20Release%20English.pdf",
     sourcePublished: "Press release 93/2026 dated 6 Aug 2026, cited from TNPSC's reusable 'Press Release English.pdf' slot for its latest English press release — the press-release index lists no date-stamped copy, so the URL's contents will change with the commission's next English release and must be re-verified rather than trusted; Notification No. 04/2026 dated 20 May 2026",
-    lastVerified: "29 Aug 2026, 15:55 IST",
+    lastVerified: "9 Sep 2026, 21:42 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The second block of examinations began on 7 Sep 2026 and runs to 12 Sep 2026, so that stage is now shown as under way rather than scheduled. TNPSC's press-release index, re-read on 9 Sep 2026, publishes no postponement or session change for Notification No. 04/2026, and the third block stays on 19 Sep 2026.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -470,6 +475,64 @@ export const exams: Exam[] = [
       "TNPSC Notification 04/2026",
       "TNPSC CTS hall ticket 2026",
       "TNPSC non interview technical posts",
+    ],
+  }),
+  listedExam({
+    slug: "tnpsc-technical-interview-2026",
+    title: "TNPSC Combined Technical Services Examination (Interview Posts) 2026 — Notification 08/2026",
+    shortTitle: "TNPSC CTS Interview Posts 2026",
+    aliases: ["TNPSC Notification 08/2026", "TNPSC CTS interview posts", "Tamil Nadu technical services interview posts 2026"],
+    organisation: "Tamil Nadu Public Service Commission",
+    governmentLevel: "State",
+    jurisdiction: "Tamil Nadu",
+    state: "Tamil Nadu",
+    stateCode: "TN",
+    regionCodes: ["TN"],
+    cycle: "2026 (Notification 08/2026)",
+    year: 2026,
+    notificationNumber: "08/2026",
+    sector: "Technical services",
+    examTypes: ["Technical & Trades"],
+    education: ["Graduate", "Professional degree"],
+    status: {
+      label: "Notification published — dates not read yet",
+      tone: "amber",
+      nextAction: "Open Notification 08/2026 on TNPSC\u2019s exam dashboard for the vacancies, application window and examination date",
+      detail:
+        "TNPSC\u2019s press-release index lists Press Release 103/2026, dated 31 Aug 2026, as the press release on the publication of the notification to the posts in the Combined Technical Services Examination (Interview Posts), and the Commission\u2019s exam dashboard lists that examination as Notification 08/2026. Neither the press release nor the notification could be opened on 9 Sep 2026, so this record asserts no vacancy count, no application window and no examination date — read them on the exam dashboard before applying.",
+    },
+    summary:
+      "The stream of Tamil Nadu\u2019s combined technical recruitment covering the technical posts for which TNPSC prescribes an oral test; notified on 31 Aug 2026 as Notification 08/2026, with the cycle\u2019s vacancies and dates still to be read from the notification.",
+    eligibility: [
+      "This is a combined examination: post-wise eligibility, age limits, qualifications and communal reservation are set out in Notification No. 08/2026 on TNPSC\u2019s exam dashboard.",
+      "Applications are made through the candidate\u2019s One Time Registration account on the Commission\u2019s website.",
+      "Confirm the scheme of examination and the post-wise syllabus in the notification; the annual planner\u2019s dates are tentative until the notification is published.",
+    ],
+    officialLinks: [
+      { label: "TNPSC exam dashboard — Notification 08/2026", url: "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5", type: "notice" },
+      { label: "TNPSC press releases (Press Release 103/2026, 31 Aug 2026)", url: "https://www.tnpsc.gov.in/English/press_releases.aspx", type: "website" },
+      { label: "TNPSC 2026 annual planner", url: "https://www.tnpsc.gov.in/English/annual_planner.html", type: "calendar" },
+      { label: "TNPSC official website", url: "https://www.tnpsc.gov.in/", type: "website" },
+    ],
+    sourceTitle: "TNPSC exam dashboard — Combined Technical Services Examination (Interview Posts), Notification 08/2026",
+    sourceUrl: "https://tnpsc.gov.in/examdashboard/web/index.aspx?key=ksojs2efre3WFDsw5",
+    sourcePublished: "Press Release 103/2026 dated 31 Aug 2026 on TNPSC\u2019s press-release index; the notification is listed as 08/2026 on the exam dashboard, both read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:58 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "New record. TNPSC Press Release 103/2026, dated 31 Aug 2026, announced the publication of the notification to the posts in the Combined Technical Services Examination (Interview Posts), and the Commission\u2019s exam dashboard lists it as Notification 08/2026. The notification itself could not be opened on 9 Sep 2026, so the record is listed rather than verified and carries no vacancies or dates.",
+      },
+    ],
+    keywords: [
+      "TNPSC CTS interview posts",
+      "\u0b92\u0bb0\u0bc1\u0b99\u0bcd\u0b95\u0bbf\u0ba3\u0bc8\u0ba8\u0bcd\u0ba4 \u0ba4\u0bca\u0bb4\u0bbf\u0bb2\u0bcd\u0ba8\u0bc1\u0b9f\u0bcd\u0baa \u0baa\u0ba3\u0bbf\u0b95\u0bb3\u0bcd \u0ba4\u0bc7\u0bb0\u0bcd\u0bb5\u0bc1",
+      "\u0ba8\u0bc7\u0bb0\u0bcd\u0bae\u0bc1\u0b95\u0ba4\u0bcd \u0ba4\u0bc7\u0bb0\u0bcd\u0bb5\u0bc1 \u0baa\u0ba3\u0bbf\u0b95\u0bb3\u0bcd",
+      "TNPSC Notification 08/2026",
+      "Combined Technical Services Interview Posts",
+      "TNPSC technical services 2026 notification",
+      "TNPSC interview posts recruitment",
     ],
   }),
   exam({
@@ -494,7 +557,7 @@ export const exams: Exam[] = [
       label: "Applications closed; next stage awaited",
       tone: "amber",
       nextAction: "Watch the OTR profile and Kerala PSC's examination calendar for confirmation of a test or the advice memo",
-      detail: "Applications for Category 44/2026 closed 5 Aug 2026. The 30 June extraordinary gazette batch page and the notification carry no corrigendum or extension, and no written/OMR test date has been published for this category.",
+      detail: "Applications for Category 44/2026 closed 5 Aug 2026. The 30 June extraordinary gazette batch page and the notification carry no corrigendum or extension, and no written/OMR test date has been published for this category. Kerala PSC's notifications page and home page, re-read on 9 Sep 2026, still show nothing for this category; the Commission's monthly examination-programme PDFs could not be downloaded on 9 Sep 2026, so confirm any test date in your One Time Registration profile.",
     },
     summary: "Direct recruitment for Assistant Engineer (Electrical) in the Kerala State Housing Board.",
     vacancies: 1,
@@ -525,8 +588,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Category No. 044/2026 — Assistant Engineer (Electrical), Kerala State Housing Board",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-06/noti-44-26.pdf",
-    sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026",
-    lastVerified: "20 Aug 2026, 04:00 IST",
+    sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026; Kerala PSC notifications page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:43 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 5 Aug 2026 with no corrigendum, extension or test date published on Kerala PSC's site; moved status from 'Applications open' (green) to 'next stage awaited' (amber) and marked the application-deadline event completed." },
     ],
@@ -565,7 +628,7 @@ export const exams: Exam[] = [
       label: "Applications closed; next stage awaited",
       tone: "amber",
       nextAction: "Watch the OTR profile and Kerala PSC's examination calendar for the confirmation window or the physical measurement/PET call",
-      detail: "Applications for Category 47/2026 closed 5 Aug 2026. The 30 June extraordinary gazette batch page and the notification carry no corrigendum or extension, and no examination or PET date has been published for this category.",
+      detail: "Applications for Category 47/2026 closed 5 Aug 2026. The 30 June extraordinary gazette batch page and the notification carry no corrigendum or extension, and no examination or PET date has been published for this category. Kerala PSC's notifications page and home page, re-read on 9 Sep 2026, still show nothing for this category; the Commission's monthly examination-programme PDFs could not be downloaded on 9 Sep 2026, so confirm any test or PET date in your One Time Registration profile.",
     },
     summary: "Kerala Fire and Rescue Services recruitment for Station Officer (Trainee).",
     vacancies: 1,
@@ -604,8 +667,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Category No. 047/2026 — Station Officer (Trainee), Fire and Rescue Services",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-06/noti-47-26.pdf",
-    sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026",
-    lastVerified: "20 Aug 2026, 04:00 IST",
+    sourcePublished: "Gazette date 30 Jun 2026; last date 5 Aug 2026; Kerala PSC notifications page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:44 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 5 Aug 2026 with no corrigendum, extension or test date published on Kerala PSC's site; moved status from 'Applications open' (green) to 'next stage awaited' (amber) and marked the application-deadline event completed." },
     ],
@@ -975,7 +1038,7 @@ export const exams: Exam[] = [
       label: "Stream I ranked list published",
       tone: "slate",
       nextAction: "Watch Kerala PSC's KAS page for Stream II/III progress and the next KAS notification",
-      detail: "Kerala PSC issued the Stream I (Category 001/2025) Ranked List No. 71/2026/SS VII on 30 Jan 2026, valid for one year; check Kerala PSC results for Stream II and Stream III updates.",
+      detail: "Kerala PSC issued the Stream I (Category 001/2025) Ranked List No. 71/2026/SS VII on 30 Jan 2026, valid for one year; check Kerala PSC results for Stream II and Stream III updates. The Commission's notifications and home pages, re-read on 9 Sep 2026, publish nothing further for this cycle.",
     },
     summary: "Kerala's flagship combined civil-service exam recruiting KAS Officer (Junior Time Scale) Trainees through three entry streams — open graduates, serving state employees below Gazetted rank, and serving Gazetted officers.",
     vacancies: 31,
@@ -1025,8 +1088,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Category No. 001/2025-003/2025 — KAS Officer (Junior Time Scale) Trainee Notification",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2025-03/noti-01-03-2025.pdf",
-    sourcePublished: "Gazette notification dated 7 Mar 2025; Stream I ranked list issued 30 Jan 2026",
-    lastVerified: "4 Aug 2026, 17:10 IST",
+    sourcePublished: "Gazette notification dated 7 Mar 2025; Stream I ranked list issued 30 Jan 2026; Kerala PSC notice boards re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:45 IST",
     keywords: [
       "KAS",
       "Kerala Administrative Service",
@@ -1235,10 +1298,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th"],
     verification: "verified",
     status: {
-      label: "Certificate verification in progress (Forest Guard / Forest Watcher, Phase X)",
+      label: "Onscreen certificate verification under way (Forest Watcher, Phase XI)",
       tone: "violet",
-      nextAction: "Watch TNPSC for further certificate-verification phases and Forest Guard/Watcher results",
-      detail: "TNPSC's Press Release 88/2026 (27 Jul 2026) summoned candidates for Physical Certificate Verification for Forest Guard and Forest Watcher posts under Notification 01/2024 on 3 Aug 2026 — Phase X of this multi-phase Group IV selection.",
+      nextAction: "If you are in the Phase XI list, upload your certificates through your TNPSC One Time Registration dashboard between 8 and 17 Sep 2026",
+      detail: "TNPSC Press Release 104/2026, dated 7 Sep 2026, says the eleventh-phase list of candidates provisionally admitted to onscreen certificate verification for the post of Forest Watcher under Notification No. 01/2024 was published on the Commission's website on 7 Sep 2026, drawn on overall rank number, the rule of reservation and the number of vacancies. Those candidates are asked to upload their certificates through the One Time Registration platform from 8 Sep 2026 to 17 Sep 2026, and the release warns that candidates who do not upload within the stipulated time will not be considered for the next stage. This follows the Phase X physical certificate verification of 3 Aug 2026 under Press Release 88/2026.",
     },
     summary: "Tamil Nadu's combined Group IV recruitment covering Village Administrative Officer, Forest Guard, Forest Watcher, Junior Assistant, Typist and other posts; currently in post-wise certificate-verification phases.",
     vacancyLabel: "See Notification 01/2024",
@@ -1251,6 +1314,8 @@ export const exams: Exam[] = [
       { label: "Notification", date: "2024-01-30", displayDate: "30 Jan 2024", state: "completed" },
       { label: "Preliminary (OMR) examination", date: "2024-06-09", displayDate: "9 Jun 2024", state: "completed" },
       { label: "Certificate verification — Forest Guard & Forest Watcher (Phase X)", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed", note: "Press Release 88/2026, dated 27 Jul 2026" },
+      { label: "Onscreen certificate verification list — Forest Watcher (Phase XI)", date: "2026-09-07", displayDate: "7 Sep 2026", state: "completed", note: "Press Release 104/2026, dated 7 Sep 2026" },
+      { label: "Certificate upload window — Forest Watcher (Phase XI)", date: "2026-09-08", displayDate: "8-17 Sep 2026", state: "current", note: "Through the TNPSC One Time Registration platform" },
     ],
     eligibility: [
       "This is a combined exam: post-wise eligibility (Village Administrative Officer, Forest Guard, Forest Watcher, Junior Assistant, Typist, Steno-Typist, Bill Collector, Field Surveyor and others) is set out in Notification 01/2024.",
@@ -1266,15 +1331,23 @@ export const exams: Exam[] = [
       "TNPSC's Group IV syllabus, published with Notification 01/2024, covers General Studies, Aptitude and language components common to Group IV posts; see the notification for the post-wise paper scheme.",
     ],
     officialLinks: [
+      { label: "Press Release 104/2026 — Forest Watcher onscreen certificate verification (Phase XI)", url: "https://www.tnpsc.gov.in/Document/PressEnglish/1%20-%20PRESS%20RELEASE(1).pdf", type: "notice" },
       { label: "Press Release 88/2026 — Forest Guard/Watcher certificate verification", url: "https://www.tnpsc.gov.in/Document/PressEnglish/2%20-%20PRESS%20RELEASE%2088_2026(1).pdf", type: "notice" },
       { label: "Press Release 73/2024 — Notification 01/2024 exam schedule", url: "https://www.tnpsc.gov.in/Document/PressEnglish/73-2024%20Press%20Release.pdf", type: "notice" },
       { label: "TNPSC press releases", url: "https://www.tnpsc.gov.in/English/press_releases.aspx", type: "website" },
       { label: "TNPSC official website", url: "https://www.tnpsc.gov.in/", type: "website" },
     ],
-    sourceTitle: "TNPSC Press Release 88/2026 — Group IV (Notification 01/2024) Forest Guard & Forest Watcher certificate verification",
-    sourceUrl: "https://www.tnpsc.gov.in/Document/PressEnglish/2%20-%20PRESS%20RELEASE%2088_2026(1).pdf",
-    sourcePublished: "27 Jul 2026; verification held 3 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourceTitle: "TNPSC Press Release 104/2026 — Group IV (Notification 01/2024) onscreen certificate verification for Forest Watcher, eleventh phase",
+    sourceUrl: "https://www.tnpsc.gov.in/Document/PressEnglish/1%20-%20PRESS%20RELEASE(1).pdf",
+    sourcePublished: "Press release 104/2026 dated 7 Sep 2026, listed under that number and date on TNPSC's press-release index; the file sits in an undated slot on the Commission's server, so re-verify it against the index rather than trusting the URL",
+    lastVerified: "9 Sep 2026, 21:47 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "TNPSC Press Release 104/2026, dated 7 Sep 2026, published the eleventh-phase list of candidates provisionally admitted to onscreen certificate verification for Forest Watcher under Notification 01/2024 and set a certificate-upload window of 8 to 17 Sep 2026 on the One Time Registration platform. Status moved from the Phase X physical certificate verification of 3 Aug 2026 to the Phase XI onscreen verification now under way.",
+      },
+    ],
     keywords: [
       "TNPSC Group 4",
       "VAO exam",
@@ -1311,7 +1384,7 @@ export const exams: Exam[] = [
       label: "PST/PET held; next stage awaited",
       tone: "violet",
       nextAction: "Watch the Puducherry recruitment portal for the PST/PET outcome and the written examination",
-      detail: "The IRBn Commandant's press release of 1 Aug 2026 recorded 1,871 applications received, admit cards downloadable from 18:00 hrs on 1 Aug 2026, and the Physical Standard Test / Physical Efficiency Test on 13 and 14 Aug 2026 at Police Ground, Gorimedu, Puducherry. Those dates have passed; the recruitment portal carries no postponement for this recruitment and no PST/PET result.",
+      detail: "The IRBn Commandant's press release of 1 Aug 2026 recorded 1,871 applications received, admit cards downloadable from 18:00 hrs on 1 Aug 2026, and the Physical Standard Test / Physical Efficiency Test on 13 and 14 Aug 2026 at Police Ground, Gorimedu, Puducherry. Those dates have passed; the recruitment portal's news and notification page, re-read on 9 Sep 2026, still carries no postponement, no PST/PET result and no written-examination date for this recruitment — its newest items are the CGL 2025 provisional shortlist of 29 Aug 2026 and the CGL and CHSL 2026 corrigenda of 2 Sep 2026.",
     },
     summary: "Puducherry Police direct recruitment to Sub-Inspector of Police (Male) in the India Reserve Battalion (IRBn), run through the Union Territory's Combined Graduate Level (CGL) exam process.",
     vacancies: 8,
@@ -1362,8 +1435,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Government of Puducherry, Police Department (IRBn) — Press Release dated 1 Aug 2026 on PST/PET admit cards",
     sourceUrl: "https://recruitment.py.gov.in/files/2193/press-release-for-issue-of-admit-card-for-pst-pet",
-    sourcePublished: "Press release 1 Aug 2026; application window was 18 May - 1 Jun 2026; portal re-read 20 Aug 2026",
-    lastVerified: "20 Aug 2026, 01:50 IST",
+    sourcePublished: "Press release 1 Aug 2026; application window was 18 May - 1 Jun 2026; portal news and notification page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:53 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1503,7 +1576,7 @@ export const exams: Exam[] = [
       label: "Reserve list published",
       tone: "slate",
       nextAction: "Watch TRB for appointment orders and any further list from the reserve list",
-      detail: "TRB published the provisional selection list on 22 Jan 2026 after certificate verification and the reserve list on 4 Jun 2026, completing the published stages of Notification 02/2025.",
+      detail: "TRB published the provisional selection list on 22 Jan 2026 after certificate verification and the reserve list on 4 Jun 2026, completing the published stages of Notification 02/2025. The Board's active results index, re-read on 9 Sep 2026, adds nothing further for this notification.",
     },
     summary: "Tamil Nadu's direct recruitment of higher-secondary teaching staff — Post Graduate Assistants in the notified subjects, Physical Director Grade-I and Computer Instructor Grade-I — in the Tamil Nadu Higher Secondary Educational Service.",
     vacancies: 1996,
@@ -1551,8 +1624,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Teachers Recruitment Board Notification No. 02/2025 — Post Graduate Assistant / Physical Director Grade-I / Computer Instructor Grade-I",
     sourceUrl: "https://trb.tn.gov.in/admin/pdf/1660068677PG%20Notification%20final%2009.07.2025.pdf",
-    sourcePublished: "Notified 10 Jul 2025; exam held 12 Oct 2025; reserve list published 4 Jun 2026",
-    lastVerified: "4 Aug 2026, 19:50 IST",
+    sourcePublished: "Notified 10 Jul 2025; exam held 12 Oct 2025; reserve list published 4 Jun 2026; TRB results index re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:52 IST",
     keywords: [
       "TRB PG Assistant",
       "முதுகலை ஆசிரியர்",
@@ -1589,7 +1662,7 @@ export const exams: Exam[] = [
       label: "Examination held 8-9 Aug 2026; result awaited",
       tone: "violet",
       nextAction: "Watch the K-TET website for the answer key and result",
-      detail: "The K-TET February 2026 examination was held on 8 and 9 Aug 2026 as notified. Pareeksha Bhavan's site does not yet list an answer key or result for this cycle; registration had earlier been reopened until 5 Jun 2026.",
+      detail: "The K-TET February 2026 examination was held on 8 and 9 Aug 2026 as notified. The K-TET notification and results pages, re-read on 9 Sep 2026, still list no answer key and no result for this cycle — the newest result on the site remains K-TET June 2025 — and no later K-TET notification has been published; registration had earlier been reopened until 5 Jun 2026.",
     },
     summary: "Kerala's teacher eligibility test, run by Pareeksha Bhavan under the Right to Education Act, in four categories covering Lower Primary, Upper Primary, High School and language/specialist/physical-education teachers.",
     vacancyLabel: "Eligibility test — no vacancies",
@@ -1628,8 +1701,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Kerala Pareeksha Bhavan — K-TET February 2026 notification and announcements",
     sourceUrl: "https://ktet.kerala.gov.in/downloads/feb2026/feb2026.pdf",
-    sourcePublished: "Application window 26 Feb - 21 Mar 2026, reopened to 5 Jun 2026; exam date changed to 8-9 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Application window 26 Feb - 21 Mar 2026, reopened to 5 Jun 2026; exam date changed to 8-9 Aug 2026; K-TET notification and results pages re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:51 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "The 8-9 Aug 2026 examination has taken place; marked the Examination timeline event completed and moved status from 'Exam scheduled' (blue) to 'Result awaited' (violet) since no answer key or result is yet published on the K-TET site." },
     ],
@@ -1669,10 +1742,10 @@ export const exams: Exam[] = [
     education: ["10th"],
     verification: "verified",
     status: {
-      label: "Applications open",
+      label: "Applications open until 30 Sep 2026",
       tone: "green",
-      nextAction: "Post the prescribed application form to the Kerala PSC District Office, Wayanad by 2 Sep 2026",
-      detail: "Category 97/2026 is part of Kerala PSC's 30 July 2026 extraordinary gazette batch; applications are accepted on paper only, until 5:00 PM on 2 Sep 2026.",
+      nextAction: "Post the prescribed application form to the Kerala PSC District Office, Wayanad by 30 Sep 2026",
+      detail: "Category 97/2026 is part of Kerala PSC's 30 July 2026 extraordinary gazette batch; applications are accepted on paper only. A Kerala PSC notice (അറിയിപ്പ്) linked from the Commission's home page and read on 9 Sep 2026 extends the last date for receipt of applications for this category from 2 Sep 2026 to 30 Sep 2026, and states that the other conditions of the notification are unchanged.",
     },
     summary: "Special recruitment of Forest Watchers in the Kerala Forest and Wildlife Department, reserved for forest-dependent Scheduled Tribe (Adivasi) men of Wayanad district under G.O.(MS) No.53/2013/F&WLD.",
     vacancies: 7,
@@ -1684,7 +1757,8 @@ export const exams: Exam[] = [
     pay: "Rs 23,000-50,200",
     timeline: [
       { label: "Extraordinary gazette notification", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed", note: "Cat.No.73/2026 to Cat.No.128/2026" },
-      { label: "Last date for applications", date: "2026-09-02", displayDate: "2 Sep 2026, 5:00 PM", state: "current" },
+      { label: "Last date for applications (superseded)", date: "2026-09-02", displayDate: "2 Sep 2026, 5:00 PM", state: "completed", note: "Extended by Kerala PSC's notice for Cat.No.097/2026" },
+      { label: "Extended last date for applications", date: "2026-09-30", displayDate: "30 Sep 2026", state: "current", note: "Kerala PSC notice extending the last date for Cat.No.097/2026" },
     ],
     eligibility: [
       "Only men of the Scheduled Tribe (Adivasi) community who depend solely on the forest for their livelihood may apply; applications from others are rejected without individual intimation.",
@@ -1715,13 +1789,21 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Category 97/2026 notification", url: "https://www.keralapsc.gov.in/sites/default/files/2026-08/noti-97-26.pdf", type: "notice" },
+      { label: "Notice extending the last date for Category 97/2026 to 30 Sep 2026", url: "https://www.keralapsc.gov.in/sites/default/files/inline-files/ariyippu-97-26.pdf", type: "notice" },
       { label: "Extraordinary gazette dated 30/07/2026", url: "https://www.keralapsc.gov.in/extra-ordinary-gazette-date-30072026", type: "notice" },
       { label: "Kerala PSC notifications", url: "https://www.keralapsc.gov.in/notifications", type: "website" },
     ],
     sourceTitle: "Category No. 097/2026 — Forest Watcher (Special Recruitment), Forest and Wildlife Department",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-08/noti-97-26.pdf",
-    sourcePublished: "Gazette date 30 Jul 2026; last date 2 Sep 2026, still shown against the Cat.No.73/2026-128/2026 batch on Kerala PSC's notifications page on 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:45 IST",
+    sourcePublished: "Gazette date 30 Jul 2026; original last date 2 Sep 2026, extended to 30 Sep 2026 by the Kerala PSC notice for Cat.No.097/2026 linked from the Commission's home page and read on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:48 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Kerala PSC extended the last date for receipt of applications for Category 097/2026, Forest Watcher (Special Recruitment), Wayanad, from 2 Sep 2026 to 30 Sep 2026, keeping every other condition of the notification unchanged. The 2 Sep deadline is now shown as superseded and applications remain open until 30 Sep 2026.",
+      },
+    ],
     keywords: [
       "Kerala Forest Watcher",
       "ഫോറസ്റ്റ് വാച്ചർ",
@@ -2082,7 +2164,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Submit the examination confirmation in your OTR profile and download the admission ticket from 16 Sep 2026",
       detail:
-        "Applications closed on 3 Jun 2026. Kerala PSC's modified September 2026 examination programme fixes the Category 21/2026 OMR test for Wednesday 30 Sep 2026, 7.00 AM to 8.50 AM, as a common test across all fourteen districts.",
+        "Applications closed on 3 Jun 2026. Kerala PSC's modified September 2026 examination programme fixes the Category 21/2026 OMR test for Wednesday 30 Sep 2026, 7.00 AM to 8.50 AM, as a common test across all fourteen districts. The Commission's home-page notice on OMR and online examination date changes, read on 9 Sep 2026, lists no change for Category 21/2026. Kerala PSC has since issued a further ‘Modified Examination Programme — September 2026 (Version 2)’, which could not be downloaded on 9 Sep 2026, so confirm your date and admission ticket in your One Time Registration profile.",
     },
     summary:
       "Kerala State Electricity Board Ltd's largest field cadre — Electricity Worker — recruited district-wise by Kerala PSC, with an SSLC plus Electrician/Wireman trade certificate and a pole-climbing practical test.",
@@ -2126,8 +2208,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Category No. 021/2026 — Electricity Worker, Kerala State Electricity Board Ltd.",
     sourceUrl: "https://www.keralapsc.gov.in/sites/default/files/2026-04/noti-21-26.pdf",
-    sourcePublished: "Gazette date 30 Apr 2026; last date 3 Jun 2026; examination fixed for 30 Sep 2026 in the modified September 2026 programme, re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:45 IST",
+    sourcePublished: "Gazette date 30 Apr 2026; last date 3 Jun 2026; examination fixed for 30 Sep 2026 in the modified September 2026 programme; Kerala PSC home page and its OMR/online date-change notice re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:49 IST",
     keywords: [
       "KSEB",
       "കെ എസ് ഇ ബി",
@@ -2469,7 +2551,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "If your register number is in the probability list, upload your certificates through your KDRB profile and wait for the certificate-verification call",
       detail:
-        "The objective-type examination for Category 39/2025 was held on 29 Mar 2026. KDRB published Probability List No. 03/2026 on 10 Aug 2026, together with an invalidation notification. The list names the register numbers found provisionally eligible to be called for verification of original documents, states that its order does not indicate rank, and says the date, time and venue of certificate verification will be intimated in due course. No ranked list is published yet.",
+        "The objective-type examination for Category 39/2025 was held on 29 Mar 2026. KDRB published Probability List No. 03/2026 on 10 Aug 2026, together with an invalidation notification. The list names the register numbers found provisionally eligible to be called for verification of original documents, states that its order does not indicate rank, and says the date, time and venue of certificate verification will be intimated in due course. KDRB's notification and home pages, re-read on 9 Sep 2026, publish nothing further for this category — their newest items are the Assistant Law Officer Gr.II (Cat. 43/2025) ranked list of 7 Sep 2026 and a Peon/Office Attendant provisional answer key of 6 Sep 2026 — so no certificate-verification date and no ranked list is published yet.",
     },
     summary:
       "The Kerala Devaswom Recruitment Board's largest clerical recruitment — Lower Division Clerk / Sub Group Officer Grade II in the Travancore Devaswom Board, part of the 1 Sep 2025 batch covering posts across the Travancore, Guruvayur, Cochin and Koodalmanikyam Devaswoms.",
@@ -2486,7 +2568,7 @@ export const exams: Exam[] = [
       { label: "Notification", date: "2025-09-01", displayDate: "1 Sep 2025", state: "completed", note: "No. 303/R1/2025/KDRB" },
       { label: "Last date for applications", date: "2025-09-30", displayDate: "30 Sep 2025", state: "completed" },
       { label: "Objective-type examination", date: "2026-03-29", displayDate: "29 Mar 2026", state: "completed" },
-      { label: "Probability list and invalidation notification", date: "2026-08-10", displayDate: "10 Aug 2026", state: "current", note: "Probability List No. 03/2026, issued after the provisional and final answer keys" },
+      { label: "Probability list and invalidation notification", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed", note: "Probability List No. 03/2026, issued after the provisional and final answer keys" },
       { label: "Certificate verification", displayDate: "Not announced — date, time and venue to be intimated in due course", state: "tentative" },
       { label: "Ranked list", displayDate: "To be announced", state: "tentative" },
     ],
@@ -2519,8 +2601,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "KDRB Probability List No. 03/2026 — Category No. 39/2025, LD Clerk / Sub Group Officer Gr.II, Travancore Devaswom Board",
     sourceUrl: "https://kdrb.kerala.gov.in/wp-content/uploads/2026/08/LDC-SGO-GR.II-TDB-PROBABILITY-LIST-DTD-10.08.2026.pdf",
-    sourcePublished: "Notified 1 Sep 2025; applications closed 30 Sep 2025; examination held 29 Mar 2026; probability list dated 10 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:25 IST",
+    sourcePublished: "Notified 1 Sep 2025; applications closed 30 Sep 2025; examination held 29 Mar 2026; probability list dated 10 Aug 2026; KDRB notification board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:50 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2765,10 +2847,10 @@ export const exams: Exam[] = [
     education: ["Graduate", "Postgraduate"],
     verification: "verified",
     status: {
-      detail: "The written examination was held from 21 to 23 Aug 2026 at centres in Puducherry, Karaikal, Mahe and Yanam, after a 14 Aug corrigendum shifted two Paper-II B sessions on 21 Aug and a 19 Aug notice clarified Paper-I centre allocation. On 23 Aug 2026 the Puducherry Examining Authority published the answer keys together with a notice on submitting an answer-key challenge, issued separately for each of the eight post codes; the notice accepted challenges through the recruitment portal only till 11:00 AM on Monday, 24 Aug 2026, so the challenge window is now closed, and says the results will be declared on the recruitment portal on completion of the challenge process.",
-      label: "Answer keys published; challenge window closed — results awaited",
+      detail: "The written examination was held from 21 to 23 Aug 2026 at centres in Puducherry, Karaikal, Mahe and Yanam, after a 14 Aug corrigendum shifted two Paper-II B sessions on 21 Aug and a 19 Aug notice clarified Paper-I centre allocation. The Puducherry Examining Authority published the answer keys and the key-challenge notices on 23 Aug 2026 and closed the challenge window at 11:00 AM on 24 Aug 2026. Its news and notification page, read on 9 Sep 2026, then carries ‘Provisional shortlist, Answer Key notice & Press release of written examination for Combined Graduate Level (CGL) Examination-2025, held on from 21.08.2026 to 23.08.2026’, dated 29 Aug 2026, and the question papers of that examination, dated 2 Sep 2026. The linked shortlist and press-release files could not be opened on 9 Sep 2026, so the number of candidates shortlisted and any certificate-verification dates are not restated here — read them on the portal.",
+      label: "Provisional shortlist published — certificate verification awaited",
       tone: "violet",
-      nextAction: "Watch the Puducherry recruitment portal for the results, which the 23 Aug 2026 notice says will be declared on completion of the answer-key challenge process",
+      nextAction: "Open the provisional shortlist and press release of 29 Aug 2026 on the Puducherry recruitment portal and watch it for the certificate-verification call",
     },
     summary:
       "Puducherry's combined graduate-level recruitment, run by the Puducherry Examining Authority for 327 posts across eight post codes including Upper Division Clerk, Statistical Inspector, Agriculture Officer and Library and Information Assistant.",
@@ -2796,8 +2878,9 @@ export const exams: Exam[] = [
       { label: "Written examination", date: "2026-08-21", displayDate: "21-23 Aug 2026", state: "completed" },
       { label: "Answer keys and answer-key challenge notice", date: "2026-08-23", displayDate: "23 Aug 2026", state: "completed", note: "Issued separately for each of the eight post codes" },
       { label: "Answer-key challenge window closed", date: "2026-08-24", displayDate: "24 Aug 2026, 11:00 AM", state: "completed", note: "The 23 Aug 2026 notice accepted challenges through the recruitment portal only till 11:00 AM on Monday, 24 Aug 2026" },
-      { label: "Result declaration", displayDate: "To be announced — the 23 Aug 2026 notice says results will be declared on the recruitment portal on completion of the challenge process", state: "current" },
-      { label: "Provisional short list and certificate verification", displayDate: "To be announced", state: "tentative" },
+      { label: "Provisional short list, answer-key notice and press release", date: "2026-08-29", displayDate: "29 Aug 2026", state: "completed", note: "Listed under that date on the recruitment portal’s news and notification page" },
+      { label: "Question papers of the written examination published", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed" },
+      { label: "Certificate verification and final selection", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Only applications successfully filed through the Puducherry online recruitment portal are accepted; candidature is provisional at every stage.",
@@ -2819,6 +2902,8 @@ export const exams: Exam[] = [
       "Minimum qualifying marks in each paper: 30% for UR, 25% for OBC/MBC/EBC/BCM/BT/EWS and 20% for SC/ST/PwBD/XSM.",
     ],
     officialLinks: [
+      { label: "Provisional short list — CGL 2025 written examination (29 Aug 2026)", url: "https://recruitment.py.gov.in/files/2213/cgl2025-shortlist", type: "result" },
+      { label: "Press release on the CGL 2025 provisional short list (29 Aug 2026)", url: "https://recruitment.py.gov.in/files/2214/cgl2025-pressrelease", type: "notice" },
       { label: "Answer key and key-challenge notice — Upper Division Clerk (23 Aug 2026)", url: "https://recruitment.py.gov.in/files/2212/cgl-udc", type: "result" },
       { label: "Answer key and key-challenge notice — Statistical Inspector (23 Aug 2026)", url: "https://recruitment.py.gov.in/files/2205/cglsi", type: "result" },
       { label: "Pre-examination press release (20 Aug 2026)", url: "https://recruitment.py.gov.in/files/2203/cgl-press-release", type: "notice" },
@@ -2827,11 +2912,16 @@ export const exams: Exam[] = [
       { label: "Puducherry recruitment news and notifications", url: "https://recruitment.py.gov.in/news-and-notification", type: "website" },
       { label: "Puducherry recruitment portal", url: "https://recruitment.py.gov.in/", type: "website" },
     ],
-    sourceTitle: "Puducherry Examining Authority — notice on submission of answer key challenge and the answer keys of the Combined Graduate Level Examination held from 21.08.2026 to 23.08.2026",
-    sourceUrl: "https://recruitment.py.gov.in/files/2212/cgl-udc",
-    sourcePublished: "Answer keys and key-challenge notices dated 23 Aug 2026; examination held 21-23 Aug 2026; challenge window closed 11:00 AM, 24 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:50 IST",
+    sourceTitle: "Puducherry Examining Authority — ‘Provisional shortlist, Answer Key notice & Press release of written examination for Combined Graduate Level (CGL) Examination-2025 held on from 21.08.2026 to 23.08.2026’, as listed on the recruitment portal’s news and notification page",
+    sourceUrl: "https://recruitment.py.gov.in/files/2213/cgl2025-shortlist",
+    sourcePublished: "Provisional short list, answer-key notice and press release listed on the portal under 29 Aug 2026, and the question papers under 2 Sep 2026; examination held 21-23 Aug 2026; portal news and notification page read 9 Sep 2026, when the linked shortlist and press-release files could not be opened",
+    lastVerified: "9 Sep 2026, 21:55 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Puducherry Examining Authority published the CGL 2025 provisional short list with an answer-key notice and a press release on 29 Aug 2026, and the question papers of the 21-23 Aug 2026 written examination on 2 Sep 2026. Status moved from ‘Answer keys published; challenge window closed — results awaited’ to ‘Provisional shortlist published — certificate verification awaited’. The linked files could not be opened on 9 Sep 2026, so no shortlist figures or verification dates are asserted.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -2884,7 +2974,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the Puducherry recruitment portal for the CGL 2026 examination schedule",
       detail:
-        "Advertisement No.01/CGL/PEA/2026 (No.A-34012/15/E-5/PEA/2025), dated 13 Mar 2026, opened online applications on 23 Mar 2026 and closed them at 3:00 PM on 13 Apr 2026, with the portal recording an extension to 20 Apr 2026. No written-examination date has been notified for this cycle.",
+        "Advertisement No.01/CGL/PEA/2026 (No.A-34012/15/E-5/PEA/2025), dated 13 Mar 2026, opened online applications on 23 Mar 2026 and closed them at 3:00 PM on 13 Apr 2026, with the portal recording an extension to 20 Apr 2026. On 2 Sep 2026 the recruitment portal published a ‘Corrigendum to Advertisement No. 1/CGL/PEA/2026 dated 13.03.2026 and 15.03.2026 and Addendum to Advertisement No. 1/CGL/PEA/2026 dated 13.03.2026’; that file could not be opened on 9 Sep 2026, so what it changes is not restated here — read it on the portal before relying on the vacancy, eligibility and scheme details below. No written-examination date has been notified for this cycle.",
     },
     summary:
       "Puducherry's 2026 combined graduate-level recruitment, run by the Puducherry Examining Authority for 351 posts across nineteen post codes — Junior Engineers, Draughtsmen, Museum Assistants, Upper Division Clerks, Welfare Inspectors and other Group-B and Group-C posts in Union Territory departments.",
@@ -2902,6 +2992,7 @@ export const exams: Exam[] = [
       { label: "Online application opens", date: "2026-03-23", displayDate: "23 Mar 2026, 10:00 AM", state: "completed" },
       { label: "Online application closes", date: "2026-04-13", displayDate: "13 Apr 2026, 3:00 PM", state: "completed", note: "Paras 3.2 and 6 and the portal instructions page give 13.04.2026; the advertisement's cover page prints 14.04.2026" },
       { label: "Extended closing date", date: "2026-04-20", displayDate: "20 Apr 2026, 3:00 PM", state: "completed", note: "Extension recorded against these post codes on the recruitment portal" },
+      { label: "Corrigendum and addendum to Advertisement No.01/CGL/PEA/2026", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed", note: "Listed on the recruitment portal’s news and notification page" },
       { label: "Written competitive examination", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
@@ -2930,6 +3021,7 @@ export const exams: Exam[] = [
       "Ties in the examination score are resolved first by date of birth, with the older candidate placed higher, and then by alphabetical order of names.",
     ],
     officialLinks: [
+      { label: "Corrigendum and addendum to Advertisement No.01/CGL/PEA/2026 (2 Sep 2026)", url: "https://recruitment.py.gov.in/files/2224/cgl2026-corrigendum", type: "notice" },
       { label: "Advertisement No.01/CGL/PEA/2026 (notification)", url: "https://recruitment.py.gov.in/recruitment/CGL2026001/show-notification", type: "notice" },
       { label: "Advertisement No.01/CGL/PEA/2026 (PDF)", url: "https://recruitment.py.gov.in/recruitment/CGL2026001/RenderNotification", type: "notice" },
       { label: "Steps to apply and instructions to applicants", url: "https://recruitment.py.gov.in/recruitment/cgl2026001/steps-to-apply-and-instructions-to-applicants", type: "apply" },
@@ -2938,8 +3030,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Advertisement No.01/CGL/PEA/2026, Combined Graduate Level Examination-2026",
     sourceUrl: "https://recruitment.py.gov.in/recruitment/CGL2026001/show-notification",
-    sourcePublished: "Advertisement dated 13 Mar 2026; applications 23 Mar to 13 Apr 2026, extended on the portal to 20 Apr 2026",
-    lastVerified: "20 Aug 2026, 04:00 IST",
+    sourcePublished: "Advertisement dated 13 Mar 2026; applications 23 Mar to 13 Apr 2026, extended on the portal to 20 Apr 2026; a corrigendum and addendum listed on the portal under 2 Sep 2026; news and notification page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:56 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Puducherry recruitment portal published a corrigendum and addendum to Advertisement No.01/CGL/PEA/2026 on 2 Sep 2026; the item is recorded in the timeline and linked here. The file itself could not be opened on 9 Sep 2026, so none of its changes are restated in this record. No examination date has been notified.",
+      },
+    ],
     keywords: [
       "Puducherry CGL 2026",
       "புதுச்சேரி CGL 2026",
@@ -2975,7 +3074,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the Puducherry recruitment portal for the CHSL 2026 examination date and venue",
       detail:
-        "Advertisement No.02/CHSL/PEA/2026 (No.A-34012/15/E-5/PEA/2025), dated 13 Mar 2026, opened online applications on 23 Mar 2026 and closed them at 3:00 PM on 13 Apr 2026, with the portal recording an extension to 20 Apr 2026. Para 18.4 says the exact date, time and venue of the examination will be intimated in due course on the recruitment website and in leading newspapers.",
+        "Advertisement No.02/CHSL/PEA/2026 (No.A-34012/15/E-5/PEA/2025), dated 13 Mar 2026, opened online applications on 23 Mar 2026 and closed them at 3:00 PM on 13 Apr 2026, with the portal recording an extension to 20 Apr 2026. On 2 Sep 2026 the recruitment portal published a ‘Corrigendum to Advertisement No.2/CHSL/PEA/2026 dated 15.03.2026’; that file could not be opened on 9 Sep 2026, so what it changes is not restated here — read it on the portal. Para 18.4 says the exact date, time and venue of the examination will be intimated in due course on the recruitment website and in leading newspapers.",
     },
     summary:
       "Puducherry's 2026 combined higher-secondary-level recruitment, run by the Puducherry Examining Authority for Lower Division Clerk, Junior Laboratory Assistant and Library Clerk posts in Union Territory departments.",
@@ -2993,6 +3092,7 @@ export const exams: Exam[] = [
       { label: "Online application opens", date: "2026-03-23", displayDate: "23 Mar 2026, 10:00 AM", state: "completed" },
       { label: "Online application closes", date: "2026-04-13", displayDate: "13 Apr 2026, 3:00 PM", state: "completed" },
       { label: "Extended closing date", date: "2026-04-20", displayDate: "20 Apr 2026, 3:00 PM", state: "completed", note: "Extension recorded against these post codes on the recruitment portal" },
+      { label: "Corrigendum to Advertisement No.02/CHSL/PEA/2026", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed", note: "Listed on the recruitment portal’s news and notification page" },
       { label: "Written competitive examination", displayDate: "To be announced", state: "tentative", note: "Date, time and venue to be intimated on the portal and in leading newspapers" },
     ],
     eligibility: [
@@ -3020,6 +3120,7 @@ export const exams: Exam[] = [
       "Ties in the examination score are resolved first by date of birth, with the older candidate placed higher, and then by alphabetical order of names.",
     ],
     officialLinks: [
+      { label: "Corrigendum to Advertisement No.02/CHSL/PEA/2026 (2 Sep 2026)", url: "https://recruitment.py.gov.in/files/2225/chsl2026-corrigendum", type: "notice" },
       { label: "Advertisement No.02/CHSL/PEA/2026 (notification)", url: "https://recruitment.py.gov.in/recruitment/CHSL202620/show-notification", type: "notice" },
       { label: "Advertisement No.02/CHSL/PEA/2026 (PDF)", url: "https://recruitment.py.gov.in/recruitment/CHSL202620/RenderNotification", type: "notice" },
       { label: "Steps to apply and instructions to applicants", url: "https://recruitment.py.gov.in/recruitment/chsl202620/steps-to-apply-and-instructions-to-applicants", type: "apply" },
@@ -3028,8 +3129,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Advertisement No.02/CHSL/PEA/2026, Combined Higher Secondary Level Examination-2026",
     sourceUrl: "https://recruitment.py.gov.in/recruitment/CHSL202620/show-notification",
-    sourcePublished: "Advertisement dated 13 Mar 2026; applications 23 Mar to 13 Apr 2026, extended on the portal to 20 Apr 2026",
-    lastVerified: "20 Aug 2026, 04:00 IST",
+    sourcePublished: "Advertisement dated 13 Mar 2026; applications 23 Mar to 13 Apr 2026, extended on the portal to 20 Apr 2026; a corrigendum listed on the portal under 2 Sep 2026; news and notification page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:57 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Puducherry recruitment portal published a corrigendum to Advertisement No.02/CHSL/PEA/2026 on 2 Sep 2026; the item is recorded in the timeline and linked here. The file itself could not be opened on 9 Sep 2026, so none of its changes are restated in this record. No examination date has been notified.",
+      },
+    ],
     keywords: [
       "Puducherry CHSL 2026",
       "புதுச்சேரி CHSL 2026",
@@ -3172,7 +3280,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Puducherry recruitment portal's news and notification page for the selection or engagement announcement",
       detail:
-        "Applications closed 7 Aug 2026 under Circular No.A-12011/31/2026/PEA/62504's extended deadline; the Department's news and notification page carries no update after 17 Jul 2026 and no interview or selection date has been published.",
+        "Applications closed 7 Aug 2026 under Circular No.A-12011/31/2026/PEA/62504's extended deadline; the Department's news and notification page, re-read on 9 Sep 2026, still carries no update on this engagement after the circular of 17 Jul 2026, and no interview or selection date has been published.",
     },
     summary:
       "Engagement of one retired Puducherry Government official as a full-time Consultant (Legal) on contract in the Puducherry Examining Authority, to monitor recruitment litigation before the CAT, the Madras High Court and the Supreme Court.",
@@ -3226,8 +3334,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Government of Puducherry, Puducherry Examining Authority — Circular No.A-12011/31/2026/PEA/62504 dated 17.07.2026, engagement of Consultant (Legal) on contract basis from retired Government officials",
     sourceUrl: "https://recruitment.py.gov.in/files/2186/consultant-legal-extn-of-time",
-    sourcePublished: "Circular dated 17 Jul 2026, published on the recruitment portal 26 Jul 2026; last date 7 Aug 2026",
-    lastVerified: "20 Aug 2026, 04:00 IST",
+    sourcePublished: "Circular dated 17 Jul 2026, published on the recruitment portal 26 Jul 2026; last date 7 Aug 2026; portal news and notification page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:54 IST",
     changeLog: [
       { date: "2026-08-10", displayDate: "10 Aug 2026", text: "Applications closed 7 Aug 2026 with no further update on the Department's news and notification page; moved status from 'Applications open' (green) to 'selection process awaited' (amber) and marked the deadline event completed." },
     ],

@@ -206,7 +206,7 @@ export const exams: Exam[] = [
       label: "Prelims rescheduled to 25 October",
       tone: "blue",
       nextAction: "Point the record at https://bpsc.bihar.gov.in/exam-calendar/ and watch for a dated prelims notice-cum-programme.",
-      detail: "BPSC's revised exam calendar, dated 14 Aug 2026, lists the Integrated 72nd CCE preliminary examination on 25 Oct 2026 against 1,189 vacancies. The calendar states all its dates are tentative.",
+      detail: "BPSC's revised exam calendar, dated 14 Aug 2026, lists the Integrated 72nd CCE preliminary examination on 25 Oct 2026 against 1,189 vacancies. The calendar states all its dates are tentative. The calendar page and the What's New notice board were re-read on 9 Sep 2026: the 14 Aug 2026 calendar is still the latest one published, and no prelims notice-cum-programme, admit card or further postponement has appeared.",
     },
     summary: "Bihar’s integrated competitive examination for multiple state services and posts.",
     vacancyLabel: "Current total under revision",
@@ -239,8 +239,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "BPSC What’s New and official exam calendar",
     sourceUrl: "https://bpsc.bihar.gov.in/whats-new/",
-    sourcePublished: "BPSC exam calendar dated 14 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "BPSC exam calendar dated 14 Aug 2026; calendar and What's New re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:05 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -283,7 +283,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch BPSC's notice board for the TRE-4 advertisement before planning around the calendar dates",
       detail:
-        "BPSC's revised exam calendar of 14 Aug 2026 lists the School Teacher Recruitment Examination (TRE-4) with 32,388 vacancies, moves it into the two-phase 'PT + Mains' group, and states that the preliminary-test date will be published only after the advertisement period ends. The September 2026 written-examination window carried by the earlier calendar of 17 Feb 2026 no longer appears. The calendar states that all of its dates are tentative, records no advertisement number for TRE-4, and BPSC's What's New notice board still carries no TRE-4 advertisement.",
+        "BPSC's revised exam calendar of 14 Aug 2026 lists the School Teacher Recruitment Examination (TRE-4) with 32,388 vacancies, moves it into the two-phase 'PT + Mains' group, and states that the preliminary-test date will be published only after the advertisement period ends. The September 2026 written-examination window carried by the earlier calendar of 17 Feb 2026 no longer appears. The calendar states that all of its dates are tentative, records no advertisement number for TRE-4, and BPSC's What's New notice board still carries no TRE-4 advertisement. Both pages were re-read on 9 Sep 2026 and are unchanged: the 14 Aug 2026 calendar is still the latest one published, it still shows 32,388 vacancies and the note that the date of the PT will be published after the advertisement period ends, and no TRE-4 advertisement has been issued.",
     },
     summary:
       "Bihar's school teacher recruitment examination conducted by BPSC; the fourth round is listed in the Commission's official exam calendar but its detailed advertisement is not yet published.",
@@ -327,16 +327,16 @@ export const exams: Exam[] = [
     officialLinks: [
       { label: "BPSC exam calendar", url: "https://bpsc.bihar.gov.in/exam-calendar/", type: "calendar" },
       {
-        label: "BPSC exam calendar PDF",
-        url: "https://bpsc.bihar.gov.in/wp-content/uploads/2025/04/Examination-Calendar-17.02.2026.pdf",
+        label: "BPSC exam calendar PDF (14 Aug 2026)",
+        url: "https://bpsc.bihar.gov.in/wp-content/uploads/2025/04/Examination-Calendar-14.08.2026.pdf",
         type: "calendar",
       },
       { label: "BPSC official notice board", url: "https://bpsc.bihar.gov.in/whats-new/", type: "notice" },
     ],
     sourceTitle: "BPSC exam calendar entry for the School Teacher Recruitment Examination (TRE-4)",
     sourceUrl: "https://bpsc.bihar.gov.in/exam-calendar/",
-    sourcePublished: "BPSC exam calendar revised 14 Aug 2026 (earlier calendar 17 Feb 2026)",
-    lastVerified: "20 Aug 2026, 02:40 IST",
+    sourcePublished: "BPSC exam calendar revised 14 Aug 2026 (earlier calendar 17 Feb 2026); calendar and What's New re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:10 IST",
     changeLog: [
       {
         date: "2026-08-14",
@@ -455,7 +455,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Open the Bihar School Examination Board's official website for the current STET notification",
       detail:
-        "The Secondary Teacher Eligibility Test is conducted by the Bihar School Examination Board and its notifications and results are published on the Board's official website. No current-cycle STET notification, schedule or fee is asserted here: the Board's website could not be retrieved during this check, so nothing beyond the conducting body and the official website is claimed.",
+        "The Secondary Teacher Eligibility Test is conducted by the Bihar School Examination Board and its notifications and results are published on the Board's official website. No current-cycle STET notification, schedule or fee is asserted here: the Board's website was retried on 9 Sep 2026 and again could not be retrieved (the connection was reset), so nothing beyond the conducting body and the official website is claimed.",
     },
     summary:
       "Bihar's eligibility test for secondary school teacher posts, conducted by the Bihar School Examination Board. Qualifying is an eligibility step, not an appointment.",
@@ -465,8 +465,8 @@ export const exams: Exam[] = [
     sourceTitle: "Bihar School Examination Board official website",
     sourceUrl: "https://biharboardonline.bihar.gov.in/",
     sourcePublished:
-      "Bihar School Examination Board official website; the site could not be retrieved during this check on 4 Aug 2026, so no current-cycle notice is cited",
-    lastVerified: "4 Aug 2026, 19:10 IST",
+      "Bihar School Examination Board official website; the site was retried on 9 Sep 2026 and again could not be retrieved (the connection was reset), so no current-cycle notice is cited",
+    lastVerified: "9 Sep 2026, 14:15 IST",
     keywords: [
       "STET",
       "Bihar STET",
@@ -500,7 +500,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Check the current BPSC teacher-recruitment advertisement for which eligibility test it accepts",
       detail:
-        "The Bihar Teacher Eligibility Test is conducted by the Bihar School Examination Board, which hosts BETET results on its official website. No current BETET cycle, schedule, class levels or fee is asserted here. Separately, BPSC's official exam calendar dated 2 Feb 2026 lists a School Teacher Recruitment Examination (TRE-4) for Bihar's school teacher posts, so candidates should confirm from the current recruitment advertisement which eligibility test it requires before preparing.",
+        "The Bihar Teacher Eligibility Test is conducted by the Bihar School Examination Board, which hosts BETET results on its official website. No current BETET cycle, schedule, class levels or fee is asserted here. The Board's website was retried on 9 Sep 2026 and again could not be retrieved (the connection was reset). Separately, BPSC's revised official exam calendar dated 14 Aug 2026, read on 9 Sep 2026, lists a School Teacher Recruitment Examination (TRE-4) for Bihar's school teacher posts, so candidates should confirm from the current recruitment advertisement which eligibility test it requires before preparing.",
     },
     summary:
       "Bihar's teacher eligibility test conducted by the Bihar School Examination Board. Qualifying is an eligibility step, not an appointment.",
@@ -510,8 +510,8 @@ export const exams: Exam[] = [
     sourceTitle: "Bihar School Examination Board official website",
     sourceUrl: "https://biharboardonline.bihar.gov.in/",
     sourcePublished:
-      "Bihar School Examination Board official website; the site could not be retrieved during this check on 4 Aug 2026, so no current-cycle notice is cited",
-    lastVerified: "4 Aug 2026, 19:10 IST",
+      "Bihar School Examination Board official website; the site was retried on 9 Sep 2026 and again could not be retrieved (the connection was reset), so no current-cycle notice is cited",
+    lastVerified: "9 Sep 2026, 14:15 IST",
     keywords: [
       "BETET",
       "Bihar TET",
@@ -1190,14 +1190,14 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications closed; written examination tentatively 27 Sep 2026",
+      label: "Written-examination stage; break-up and scribe notices published",
       tone: "blue",
-      nextAction: "Watch the OPSC portal for confirmation of the written examination, tentatively set for 27 Sep 2026",
-      detail: "OPSC's official advertisement opened online applications from 28 July through 28 August 2026 and tentatively schedules the written examination for 27 September.",
+      nextAction: "Read OPSC's category-wise break-up notice of 7 Sep 2026 and its scribe notice of 8 Sep 2026 on the Commission's notice page, then watch for the examination programme and admit card",
+      detail: "OPSC's official advertisement opened online applications from 28 July through 28 August 2026 and tentatively schedules the written examination for 27 September. The Commission's notice page, read on 9 Sep 2026, adds two notices for Advt. No. 06 of 2026-27: a 'Category wise break-up Notice' dated 7 Sep 2026 and a 'Notice for use of Scribe in the Written Examination' dated 8 Sep 2026. Both open only through the page's own postback links and could not be retrieved as files, so their contents - including any category-wise vacancy figures - are not restated here. OPSC has published no separate examination-programme, admit-card or date-change notice for this advertisement as of 9 Sep 2026.",
     },
     summary: "Recruitment of Assistant Horticulture Officers for Odisha through the state Public Service Commission.",
     vacancyLabel: "Not announced",
-    vacancyNote: "OPSC's advertisement 06 of 2026-27 does not carry a vacancy count in the notice reviewed here.",
+    vacancyNote: "OPSC's advertisement 06 of 2026-27 does not carry a vacancy count in the notice reviewed here. The Commission listed a category-wise break-up notice for this advertisement on 7 Sep 2026, but that notice could not be retrieved, so no figure is stated here.",
     age:
       "Per advertisement 06 of 2026-27, clause 3: a candidate must have attained 21 years and must not be above 42 years on the 1st day of January 2026, that is, must not have been born earlier than 2 January 1984 and not later than 1 January 2005. The upper age limit is relaxed by 5 years for Scheduled Castes, Scheduled Tribes, women and ex-servicemen and by 10 years for Persons with Disabilities whose permanent disability is 40% or more, with a cumulative relaxation of 15 years for Persons with Disabilities belonging to SC or ST. A candidate covered by more than one category gets only the single most beneficial relaxation, and save as provided the age limits cannot be relaxed. Only the date of birth entered in the High School Certificate or equivalent certificate issued by the concerned Board or Council is accepted by the Commission.",
     qualification: "Graduate qualification in Horticulture or an allied subject as prescribed in advertisement 06 of 2026-27; see the official notification for the exact degree list.",
@@ -1208,6 +1208,13 @@ export const exams: Exam[] = [
     ],
     timeline: [
       { label: "Application deadline", date: "2026-08-28", displayDate: "28 Aug 2026, 5 PM", state: "completed" },
+      { label: "Category-wise break-up notice", date: "2026-09-07", displayDate: "7 Sep 2026", state: "completed" },
+      {
+        label: "Notice on the use of a scribe in the written examination",
+        date: "2026-09-08",
+        displayDate: "8 Sep 2026",
+        state: "completed",
+      },
       { label: "Written examination", date: "2026-09-27", displayDate: "27 Sep 2026 (tentative)", state: "tentative" },
     ],
     eligibility: [
@@ -1235,8 +1242,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "OPSC Assistant Horticulture Officer advertisement 06 of 2026-27",
     sourceUrl: "https://opsc.gov.in/public/opsc/default.aspx",
-    sourcePublished: "Advertisement notice 4200/PSC dated 18 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:35 IST",
+    sourcePublished: "Advertisement notice 4200/PSC dated 18 Jul 2026; OPSC notice page re-read 9 Sep 2026, which adds notices dated 7 and 8 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "OPSC published a category-wise break-up notice (7 Sep 2026) and a notice on the use of scribes in the written examination (8 Sep 2026) for Advt. No. 06 of 2026-27. The tentative written-examination date of 27 Sep 2026 is unchanged and no admit-card notice has appeared.",
+      },
+    ],
     keywords: [
       "OPSC AHO",
       "Odisha horticulture officer",
@@ -1266,9 +1280,9 @@ export const exams: Exam[] = [
     status: {
       label: "Cycle complete; result and certificates published",
       tone: "slate",
-      nextAction: "Download the OTET-2025 digital certificate, and watch the Board's site for an OTET-2026 notification",
+      nextAction: "Download the OTET-2025 digital certificate; the Board's OTET 2026 Result entry of 2 Sep 2026 belongs to the separate OTET-2026 cycle",
       detail:
-        "The Board of Secondary Education, Odisha published the OTET-2025 result along with the final scoring keys, OMR view and digital certificates on 12 Feb 2026. The Board invited a tender for confidential materials for OTET Examination-2026 on 17 Apr 2026, but its dated notice list, re-read on 29 Aug 2026, still carries no OTET-2026 notification, schedule or fee. Do not confuse this with OSSTET-2026, the Board's separate secondary-level test, whose application form the Board opened on 11 Aug 2026.",
+        "The Board of Secondary Education, Odisha published the OTET-2025 result along with the final scoring keys, OMR view and digital certificates on 12 Feb 2026. The Board invited a tender for confidential materials for OTET Examination-2026 on 17 Apr 2026, and its dated notice list, re-read on 9 Sep 2026, now carries an OTET 2026 Result entry dated 2 Sep 2026 that opens a separate examination portal outside the Board's own domain. No OTET-2026 notification, schedule or fee appears on the Board's list, so nothing about that cycle is asserted here. Do not confuse either with OSSTET-2026, the Board's separate secondary-level test, whose application form the Board opened on 11 Aug 2026.",
     },
     summary:
       "Odisha's teacher eligibility test conducted by the Board of Secondary Education, Odisha, in two papers — the Board published OTET-2025 scoring keys for Paper I and for Paper II in two subject streams.",
@@ -1339,13 +1353,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Board of Secondary Education, Odisha dated notice list for OTET-2025",
     sourceUrl: "https://bseodisha.ac.in/",
-    sourcePublished: "OTET-2025 result and certificate notices dated 12 Feb 2026; OTET-2026 tender dated 17 Apr 2026; notice list re-read 29 Aug 2026 with no OTET-2026 notification",
-    lastVerified: "29 Aug 2026, 09:50 IST",
+    sourcePublished: "OTET-2025 result and certificate notices dated 12 Feb 2026; OTET-2026 tender dated 17 Apr 2026; notice list re-read 9 Sep 2026, which adds an OTET 2026 Result entry dated 2 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:45 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The Board's notice list still carries no OTET-2026 notification. The OSSTET-2026 application form the Board opened on 11 Aug 2026 is the separate secondary-level test, not OTET.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Board's Latest Updates list added an OTET 2026 Result entry on 2 Sep 2026, pointing at a separate examination portal. It belongs to the OTET-2026 cycle, not to OTET-2025, and the Board still publishes no OTET-2026 notification or schedule.",
       },
     ],
     keywords: [
@@ -1566,7 +1585,7 @@ export const exams: Exam[] = [
       "WBCS Group A B C D",
     ],
   }),
-  listedExam({
+  exam({
     slug: "wbpsc-miscellaneous-services-2024",
     title: "WBPSC Miscellaneous Services Recruitment Examination 2024",
     shortTitle: "WB Miscellaneous Services",
@@ -1580,17 +1599,19 @@ export const exams: Exam[] = [
     cycle: "2024-26",
     year: 2024,
     notificationNumber: "13/2024",
+    verification: "verified",
     sector: "Miscellaneous state services",
     examTypes: ["Civil Services & Administration"],
     education: ["Graduate"],
     status: {
-      label: "Detailed advertisement out; edit window notices active",
-      tone: "amber",
-      nextAction: "Use the latest WBPSC announcement for the application edit window and exam updates",
+      label: "Preliminary examination on 4 October 2026; e-admit card from 22 September",
+      tone: "blue",
+      nextAction: "Download the e-admit card from psc.wb.gov.in on or after 22 September 2026 and sit the preliminary examination on 4 October 2026",
       detail:
-        "WBPSC published the detailed advertisement for the Miscellaneous Services Recruitment Examination 2024 (Advt. No. 13/2024) on 20 May 2026, and followed it with edit-window announcements on 15 June and 22 June 2026. The detailed advertisement states that online applications ran from 30.04.2026 to 20.05.2026 (3 PM) with an edit window from 22.05.2026 to 28.05.2026, which the later announcements revisit. No preliminary examination date, vacancy count or result is confirmed from the announcements reviewed here.",
+        "WBPSC's Important Announcement dated 04.09.2026 for Advt. No. 13/2024, listed on the Commission's Notification & Announcement page on 3 Sep 2026 and read on 9 Sep 2026, states that the Commission will hold the Miscellaneous Services Recruitment (Preliminary) Examination, 2024 on the 4th October 2026 (Sunday) in one session from 12:00 noon to 1:30 p.m. at 26 centres across West Bengal including Kolkata, and that candidates may download their e-Admit Card from the Commission's website on and from the 22nd September 2026. WBPSC published the detailed advertisement on 20 May 2026 and followed it with edit-window announcements on 15 June and 22 June 2026; the advertisement states that online applications ran from 30.04.2026 to 20.05.2026 (3 PM) with an edit window from 22.05.2026 to 28.05.2026. The Commission separately announced an edit option for updating OBC sub-category/unreserved category details on 3 Sep 2026. No vacancy count is published for this cycle.",
     },
     summary: "Competitive recruitment to multiple miscellaneous services and posts under the Government of West Bengal.",
+    vacancyLabel: "Not announced",
     vacancyNote:
       "The detailed advertisement (Advt. No. 13/2024, published 20 May 2026) states that the number of vacancies will be announced later and that all appointments will initially be made on a temporary basis, so no figure is available for this cycle.",
     age:
@@ -1618,6 +1639,23 @@ export const exams: Exam[] = [
       "Paper-I English covers drafting a report from supplied points, translation into English, condensing a prose passage, and correct use of words, correction of sentences, common phrases, synonyms and antonyms.",
       "Paper-II Bengali/Hindi/Urdu/Nepali/Santali covers drafting a report, translation from English, condensing a prose passage and grammar; Papers I and II are of Higher Secondary (10+2) standard of the West Bengal Council for Higher Secondary Education.",
     ],
+    timeline: [
+      { label: "Detailed advertisement announced", date: "2026-05-20", displayDate: "20 May 2026", state: "completed" },
+      {
+        label: "Announcement of the preliminary examination date and e-admit card",
+        date: "2026-09-04",
+        displayDate: "4 Sep 2026",
+        state: "completed",
+      },
+      { label: "e-Admit card download opens", date: "2026-09-22", displayDate: "22 Sep 2026", state: "scheduled" },
+      {
+        label: "Preliminary examination",
+        date: "2026-10-04",
+        displayDate: "4 Oct 2026, 12:00 noon to 1:30 p.m.",
+        state: "scheduled",
+        note: "One session at 26 centres across West Bengal including Kolkata.",
+      },
+    ],
     officialLinks: [
       { label: "WBPSC notification announcements", url: "https://psc.wb.gov.in/notification_announcement.jsp", type: "notice" },
       { label: "WBPSC official website", url: "https://psc.wb.gov.in/", type: "website" },
@@ -1631,11 +1669,23 @@ export const exams: Exam[] = [
         url: "https://psc.wb.gov.in/Download?param1=20260425210212_SCHEME_SYLLABUS_13_2024.pdf&param2=advertisement",
         type: "notice",
       },
+      {
+        label: "Important announcement on the preliminary examination date and e-admit card (Advt. No. 13/2024)",
+        url: "https://psc.wb.gov.in/Download?param1=An_20260903195017_Imp_Announcement_Admitcard_MSRE_2024.pdf&param2=advertisement",
+        type: "notice",
+      },
     ],
-    sourceTitle: "WBPSC detailed advertisement and scheme & syllabus for Miscellaneous Services Recruitment Examination, 2024 (Advt. No. 13/2024)",
-    sourceUrl: "https://psc.wb.gov.in/Download?param1=Ad_20260425125928_Detailed_Advt_13_2024.pdf&param2=advertisement",
-    sourcePublished: "Detailed advertisement announced 20 May 2026; scheme and syllabus uploaded 25 Apr 2026; latest edit-window announcement 22 Jun 2026 — the announcements page was re-read on 29 Aug 2026 and carries no preliminary examination date",
-    lastVerified: "29 Aug 2026, 09:45 IST",
+    sourceTitle: "WBPSC Important Announcement dated 04.09.2026 on the Miscellaneous Services Recruitment (Preliminary) Examination, 2024 (Advt. No. 13/2024)",
+    sourceUrl: "https://psc.wb.gov.in/Download?param1=An_20260903195017_Imp_Announcement_Admitcard_MSRE_2024.pdf&param2=advertisement",
+    sourcePublished: "Important Announcement dated 4 Sep 2026, listed on the Commission's announcements page 3 Sep 2026 and read 9 Sep 2026; detailed advertisement announced 20 May 2026 and scheme and syllabus uploaded 25 Apr 2026",
+    lastVerified: "9 Sep 2026, 14:35 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "WBPSC fixed the Miscellaneous Services Recruitment (Preliminary) Examination, 2024 for 4 Oct 2026, 12:00 noon to 1:30 p.m., at 26 centres across West Bengal, with the e-admit card downloadable from 22 Sep 2026.",
+      },
+    ],
     keywords: [
       "WBPSC MSRE",
       "WB Misc exam",
@@ -1728,11 +1778,11 @@ export const exams: Exam[] = [
     education: ["Graduate", "Postgraduate"],
     verification: "verified",
     status: {
-      label: "Panel published; counselling and verification under way",
+      label: "Category-detail portal reopened for three days from 7 September",
       tone: "violet",
-      nextAction: "Check the Commission's notices for your class level before travelling for counselling or verification",
+      nextAction: "Use the Commission's notices of 3 and 7 Sep 2026 to update your OBC sub-category/unreserved and PwBD details inside the reopened window, then watch for the next counselling notice for your class level",
       detail:
-        "The Commission published the provisional panel and waiting list for Class Level XI-XII on 21 Jan 2026, ran first-phase counselling for that level from February 2026 with substitute-vacancy notices continuing to 17 Apr 2026, and issued verification and interview intimation letters for Class Level IX-X between March and April 2026. No final result for Class Level IX-X and no notice later than April 2026 is confirmed from the page reviewed here.",
+        "The Commission published the provisional panel and waiting list for Class Level XI-XII on 21 Jan 2026, ran first-phase counselling for that level from February 2026 with substitute-vacancy notices continuing to 17 Apr 2026, and issued verification and interview intimation letters for Class Level IX-X between March and April 2026. Its notice list, read on 9 Sep 2026, adds a verification notice for successful Class Level IX-X candidates (23 Jul 2026), a 1st phase (Part IV) counselling notice for Class Level XI-XII (4 Aug 2026), a notice cancelling counselling for Class Level XI-XII (11 Aug 2026), notices on updating OBC sub-category/unreserved category details for Class Level XI-XII (19 Aug 2026) and IX-X (21 Aug 2026), a PwBD category edit option for Class Level XI-XII (3 Sep 2026), and on 7 Sep 2026 both a reopening of the portal for three days for OBC sub-category/unreserved updates covering Class Levels IX-X and XI-XII and a PwBD edit option for Class Level IX-X. Every one of those notices is a scanned image, so the exact window dates, the reason for the cancellation and the effect on the panel are not restated here. The Commission's recruitment portal states that 2nd SLST (AT), 2025 notices are published on its older notice site, which is where these notices were read. No final result for Class Level IX-X is published.",
     },
     summary:
       "West Bengal's State Level Selection Test for Assistant Teachers in government-aided schools at Class Level IX-X and XI-XII, conducted by the West Bengal Central School Service Commission with the regional commissions.",
@@ -1774,7 +1824,52 @@ export const exams: Exam[] = [
         label: "Substitute-vacancy notice for first-phase (Part III) counselling",
         date: "2026-04-17",
         displayDate: "17 Apr 2026",
+        state: "completed",
+        note: "Issued for the counselling held on 20 Apr 2026 for Class Level XI-XII.",
+      },
+      {
+        label: "Verification of documents for successful candidates, Class Level IX-X",
+        date: "2026-07-23",
+        displayDate: "23 Jul 2026",
+        state: "completed",
+      },
+      {
+        label: "First-phase (Part IV) counselling notice, Class Level XI-XII",
+        date: "2026-08-04",
+        displayDate: "4 Aug 2026",
+        state: "completed",
+      },
+      {
+        label: "Notice cancelling counselling for Class Level XI-XII",
+        date: "2026-08-11",
+        displayDate: "11 Aug 2026",
+        state: "completed",
+        note: "The notice is a scanned image; its reasons and scope are not restated here.",
+      },
+      {
+        label: "OBC sub-category/unreserved category edit notice, Class Level XI-XII",
+        date: "2026-08-19",
+        displayDate: "19 Aug 2026",
+        state: "completed",
+      },
+      {
+        label: "OBC sub-category/unreserved category edit notice, Class Level IX-X",
+        date: "2026-08-21",
+        displayDate: "21 Aug 2026",
+        state: "completed",
+      },
+      {
+        label: "PwBD category edit option, Class Level XI-XII",
+        date: "2026-09-03",
+        displayDate: "3 Sep 2026",
+        state: "completed",
+      },
+      {
+        label: "Portal reopened for three days for OBC/unreserved updates (IX-X and XI-XII) and PwBD edit (IX-X)",
+        date: "2026-09-07",
+        displayDate: "7 Sep 2026",
         state: "current",
+        note: "The notices are scanned images; read them for the exact closing date of the three-day window.",
       },
     ],
     eligibility: [
@@ -1797,8 +1892,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "West Bengal Central School Service Commission notice list for the 2nd SLST (AT), 2025",
     sourceUrl: "https://www.westbengalssc.com/otr/recruitment/",
-    sourcePublished: "Latest substitute-vacancy notice dated 17 Apr 2026",
-    lastVerified: "4 Aug 2026, 19:45 IST",
+    sourcePublished: "Commission notice list for the 2nd SLST (AT), 2025 re-read 9 Sep 2026; latest notices dated 7 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:30 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Commission's notice list adds a Class Level IX-X verification notice (23 Jul 2026), a 1st phase (Part IV) counselling notice and then a counselling-cancellation notice for Class Level XI-XII (4 and 11 Aug 2026), OBC sub-category/unreserved edit notices for both class levels (19 and 21 Aug 2026), a PwBD edit option for Class Level XI-XII (3 Sep 2026) and, on 7 Sep 2026, a three-day reopening of the category-update portal for both class levels together with a PwBD edit option for Class Level IX-X.",
+      },
+    ],
     keywords: [
       "SLST",
       "WBSSC SLST",
@@ -2126,11 +2228,11 @@ export const exams: Exam[] = [
     education: ["10th"],
     verification: "verified",
     status: {
-      label: "Written result out; 254 candidates called for the PST",
+      label: "PST notified; admit card download open",
       tone: "violet",
-      nextAction: "Check the 18 Aug 2026 result notice for your roll number, then watch csbc-bih.bihar.gov.in for the Physical Standard Test programme",
+      nextAction: "Read CSBC's notice of 29 Aug 2026 on the Physical Standard Test and document verification, then download the PST admit card from the link on the Board's notice board",
       detail:
-        "CSBC published the written-examination result for Advt. 01/2026 on 18 Aug 2026. The notice records that the advertisement was published on 29 Jan 2026 for 83 posts of Constable (General Closed Cadre) in the Special Branch, that 2,24,429 valid applications were admitted, that the two-paper written examination was held on 24 Jun 2026 at 431 centres in 38 districts with about 64,410 candidates present, and that 254 candidates have been selected for the next stage, the Physical Standard Test. The Board has not announced the PST programme. A separate notice of the same date cancelled the candidature of candidates found guilty of impersonation or unfair means.",
+        "CSBC published the written-examination result for Advt. 01/2026 on 18 Aug 2026. The notice records that the advertisement was published on 29 Jan 2026 for 83 posts of Constable (General Closed Cadre) in the Special Branch, that 2,24,429 valid applications were admitted, that the two-paper written examination was held on 24 Jun 2026 at 431 centres in 38 districts with about 64,410 candidates present, and that 254 candidates have been selected for the next stage, the Physical Standard Test. A separate notice of the same date cancelled the candidature of candidates found guilty of impersonation or unfair means. The Board's notice board, re-read on 9 Sep 2026, then adds an important notice dated 29 Aug 2026 on the Physical Standard Test and document verification for Advt. 01/2026 and, on 4 Sep 2026, a link to download the PST admit card. The 29 Aug 2026 notice PDF could not be retrieved from the Board's server during this check, so the PST dates, venues and reporting instructions are not restated here.",
     },
     summary:
       "Recruitment of Constables to the General Closed Cadre of Bihar Police's Special Branch through the Central Selection Board of Constable, now past the written examination.",
@@ -2166,7 +2268,19 @@ export const exams: Exam[] = [
         displayDate: "18 Aug 2026",
         state: "completed",
       },
-      { label: "Physical Standard Test (PST)", displayDate: "Date not announced", state: "current" },
+      {
+        label: "Notice on the Physical Standard Test and document verification",
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        state: "completed",
+        note: "The notice PDF could not be retrieved during this check.",
+      },
+      { label: "PST admit card download opened", date: "2026-09-04", displayDate: "4 Sep 2026", state: "completed" },
+      {
+        label: "Physical Standard Test and document verification",
+        displayDate: "Date not announced here - it is in CSBC's notice of 29 Aug 2026, which could not be retrieved",
+        state: "current",
+      },
     ],
     eligibility: [
       "Recruitment runs under the Bihar Police Special Branch Constable (General Closed Cadre) Rules, 2024 as amended, whose rule 5 governs the appointment process (CSBC result notice dated 18 Aug 2026).",
@@ -2186,16 +2300,26 @@ export const exams: Exam[] = [
         url: "https://csbc-bih.bihar.gov.in/storage/notification/document/Results-01-2026-PST-18-08-2026.pdf",
         type: "result",
       },
+      {
+        label: "Notice on the Physical Standard Test and document verification (Advt. 01/2026)",
+        url: "https://csbc-bih.bihar.gov.in/storage/notification/document/Notice-01-2026-PST%20&%20DV-29-08-2026.pdf",
+        type: "notice",
+      },
     ],
     sourceTitle: "CSBC written-examination result notice for Advt. 01/2026, Constable (General Closed Cadre), Special Branch",
     sourceUrl: "https://csbc-bih.bihar.gov.in/storage/notification/document/Results-01-2026-PST-18-08-2026.pdf",
-    sourcePublished: "Result notice dated 18 Aug 2026, citing advertisement 01/2026 dated 29 Jan 2026",
-    lastVerified: "29 Aug 2026, 09:45 IST",
+    sourcePublished: "Result notice dated 18 Aug 2026, citing advertisement 01/2026 dated 29 Jan 2026; CSBC notice board re-read 9 Sep 2026, adding notices of 29 Aug and 4 Sep 2026",
+    lastVerified: "9 Sep 2026, 14:40 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Record added after CSBC published the written-examination result for Advt. 01/2026 on 18 Aug 2026, calling 254 candidates for the Physical Standard Test against 83 Special Branch constable posts.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "CSBC issued a notice on the Physical Standard Test and document verification for Advt. 01/2026 on 29 Aug 2026 and opened the PST admit card download on 4 Sep 2026; the notice PDF could not be retrieved, so no PST date is stated.",
       },
     ],
     keywords: [

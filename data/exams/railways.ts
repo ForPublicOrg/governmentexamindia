@@ -84,7 +84,7 @@ export const exams: Exam[] = [
       tone: "green",
       nextAction: "Apply online through rrbapply.gov.in before 23:59 on 13 Sep 2026",
       detail:
-        "The detailed CEN 04/2026 was published on the RRB websites on 13 Aug 2026 and online applications opened on 14 Aug 2026. Corrigendum No. 1 of 18 Aug 2026 adds vacancies, including a new Chemical & Metallurgical Assistant post.",
+        "The detailed CEN 04/2026 was published on the RRB websites on 13 Aug 2026 and online applications opened on 14 Aug 2026. Corrigendum No. 1 of 18 Aug 2026 adds vacancies, including a new Chemical & Metallurgical Assistant post. The portal's notice board was re-read on 9 Sep 2026: that corrigendum is still the newest CEN 04/2026 notice, so the closing date of 13 Sep 2026 has not been extended.",
     },
     summary:
       "Diploma and degree level recruitment for Junior Engineer and Depot Material Superintendent posts across the zonal railways and production units under CEN 04/2026.",
@@ -141,8 +141,8 @@ export const exams: Exam[] = [
     sourceTitle: "Detailed Centralised Employment Notification CEN No. 04/2026 (Junior Engineer and Depot Material Superintendent), served from the unified RRB portal",
     sourceUrl: "https://rrb.indianrailways.gov.in/chandigarh",
     sourcePublished:
-      "Detailed CEN 04/2026 published 13 Aug 2026; application link notice 15 Aug 2026; Corrigendum No. 1 published 18 Aug 2026; notice board re-checked 29 Aug 2026, which lists no further corrigendum or date change",
-    lastVerified: "29 Aug 2026, 15:20 IST",
+      "Detailed CEN 04/2026 published 13 Aug 2026; application link notice 15 Aug 2026; Corrigendum No. 1 published 18 Aug 2026; notice board re-read 9 Sep 2026, where Corrigendum No. 1 is still the newest CEN 04/2026 item and no extension notice has appeared",
+    lastVerified: "9 Sep 2026, 17:12 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -468,7 +468,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the unified RRB portal for the CEN 01/2025 CBT-2 answer key, result and CBAT notice",
       detail:
-        "CBT-1 was held from 13 to 18 Feb 2026 and on 11 Mar 2026, and its result and cut-off followed on 12 Jun 2026, shortlisting candidates for CBT-2. A notice dated 1 Jul 2026 set 28 Jul 2026 as the tentative CBT-2 date. The RRB notice board still publishes no CBT-2 result for this CEN, and this record does not assert the outcome of that sitting without a dated official confirmation.",
+        "CBT-1 was held from 13 to 18 Feb 2026 and on 11 Mar 2026, and its result and cut-off followed on 12 Jun 2026, shortlisting candidates for CBT-2. A notice dated 1 Jul 2026 set 28 Jul 2026 as the tentative CBT-2 date. The notice board was re-read on 9 Sep 2026 and still publishes no CBT-2 answer key or result for this CEN — the newest CEN 01/2025 item is the exam schedule of 1 Jul 2026 — so this record does not assert the outcome of that sitting without a dated official confirmation.",
     },
     summary:
       "The 2025 Assistant Loco Pilot cycle, whose vacancies were raised to 10,970 by Corrigendum No. 2, now past its first-stage CBT.",
@@ -500,7 +500,7 @@ export const exams: Exam[] = [
         date: "2026-07-28",
         displayDate: "28 Jul 2026",
         state: "tentative",
-        note: "From the tentative-schedule notice of 1 Jul 2026; a tentative schedule is not proof the stage was conducted.",
+        note: "From the tentative-schedule notice of 1 Jul 2026; a tentative schedule is not proof the stage was conducted. As of 9 Sep 2026 the RRB portal publishes nothing newer for this CEN.",
       },
       { label: "CBT-2 answer key / result", displayDate: "Awaited", state: "current" },
     ],
@@ -524,8 +524,8 @@ export const exams: Exam[] = [
     sourceTitle: "CEN No. 01/2025 (Assistant Loco Pilot) notices — Corrigendum No. 2 and the CBT-2 tentative-schedule notice on the unified RRB portal",
     sourceUrl: "https://rrb.indianrailways.gov.in/chandigarh",
     sourcePublished:
-      "Detailed CEN published Apr 2025; CBT-1 objection notice 18 Mar 2026; Corrigendum No. 2 dated 21 May 2026; CBT-1 result and cut-off 12 Jun 2026; CBT-2 tentative schedule 1 Jul 2026; notice board re-checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:42 IST",
+      "Detailed CEN published Apr 2025; CBT-1 objection notice 18 Mar 2026; Corrigendum No. 2 dated 21 May 2026; CBT-1 result and cut-off 12 Jun 2026; CBT-2 tentative schedule 1 Jul 2026; notice board re-read 9 Sep 2026, which carries no CBT-2 answer key or result for this CEN",
+    lastVerified: "9 Sep 2026, 17:28 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -770,9 +770,9 @@ export const exams: Exam[] = [
     status: {
       label: "Shortlisted for CBAT / typing test",
       tone: "violet",
-      nextAction: "Download the CBT-2 score card, then watch for the CBAT/CBTST exam city intimation",
+      nextAction: "Open the CBAT/CBTST examination notice of 2 Sep 2026 on your RRB's page, then watch for the exam city intimation",
       detail:
-        "The second-stage CBT was conducted from 10 Jul 2026. The RRBs published the CBT-2 result and cut-off on 27 Aug 2026 and shortlisted candidates for the Computer Based Aptitude Test and the typing skill test; the score-card link opened at 17:00 that day. The CBAT/CBTST is tentatively set for September 2026, with the exam city intimation about 10 days before it and the e-call letter 4 days before.",
+        "The second-stage CBT was conducted from 10 Jul 2026. The RRBs published the CBT-2 result and cut-off on 27 Aug 2026 and shortlisted candidates for the Computer Based Aptitude Test and the typing skill test; the score-card link opened at 17:00 that day. The notice board, re-read on 9 Sep 2026, adds a CBAT/CBTST examination notice for this CEN published on 2 Sep 2026; that PDF is served only inside a portal session and could not be opened from outside it, so this record does not restate the exam date it gives. Open it on your own RRB's page. The CBAT/CBTST remains tentatively set for September 2026, with the exam city intimation about 10 days before it and the e-call letter 4 days before.",
     },
     summary: "Recruitment for graduate-level non-technical railway posts across participating Railway Recruitment Boards.",
     vacancies: 5810,
@@ -807,7 +807,7 @@ export const exams: Exam[] = [
         sortMonth: "2026-09",
         displayDate: "September 2026 (tentative)",
         state: "tentative",
-        note: "The result notice of 27 Aug 2026 calls the September window tentative; the exam city intimation is released about 10 days before and the e-call letter 4 days before.",
+        note: "The result notice of 27 Aug 2026 calls the September window tentative; the exam city intimation is released about 10 days before and the e-call letter 4 days before. A CBAT/CBTST examination notice for this CEN was published on 2 Sep 2026 but is served only inside a portal session, so its exam date is not restated here.",
       },
     ],
     eligibility: [
@@ -833,9 +833,14 @@ export const exams: Exam[] = [
     sourceTitle: "Unified RRB recruitment portal (RRB Chandigarh zone) — CEN 06/2025 NTPC Graduate CBT-2 result and CBAT/CBTST shortlist",
     sourceUrl: "https://rrb.indianrailways.gov.in/chandigarh",
     sourcePublished:
-      "Recruitment notice 21 Oct 2025; CBT-1 result 11 Jun 2026; CBT-2 conducted from 10 Jul 2026; CBT-2 result, cut-off and CBAT/CBTST shortlist published 27 Aug 2026 (RRB-wise PDFs)",
-    lastVerified: "29 Aug 2026, 15:50 IST",
+      "Recruitment notice 21 Oct 2025; CBT-1 result 11 Jun 2026; CBT-2 conducted from 10 Jul 2026; CBT-2 result, cut-off and CBAT/CBTST shortlist published 27 Aug 2026 (RRB-wise PDFs); CBAT/CBTST examination notice published 2 Sep 2026; notice board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:24 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The RRB portal added a CBAT/CBTST examination notice for CEN 06/2025 on 2 Sep 2026. The notice PDF is served only inside a portal session, so the exam date it carries is not restated here — open it on your own RRB's page.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -875,11 +880,11 @@ export const exams: Exam[] = [
     examTypes: ["Railways"],
     education: ["12th"],
     status: {
-      label: "CBT-2 tentatively set for 17 Sep 2026",
+      label: "CBT-2 on 17 Sep 2026 — exam city link open",
       tone: "blue",
-      nextAction: "Download the CBT-1 score card, then watch for the CBT-2 exam city and date link",
+      nextAction: "Check your CBT-2 exam city and date on the RRB portal now; the e-call letter follows four days before the exam",
       detail:
-        "CBT-1 was conducted from 7 to 9 May 2026 and from 13 to 20 Jun 2026. The RRBs published the CBT-1 result and cut-off on 24 Aug 2026, shortlisting candidates for the second-stage CBT, and opened the score-card link at 17:00 on 26 Aug 2026. A schedule notice of 24 Aug 2026 sets 17 Sep 2026 as the tentative CBT-2 date; the exam city and date link opens 10 days before it and the e-call letter 4 days before.",
+        "CBT-1 was conducted from 7 to 9 May 2026 and from 13 to 20 Jun 2026. The RRBs published the CBT-1 result and cut-off on 24 Aug 2026, shortlisting candidates for the second-stage CBT, and opened the score-card link at 17:00 on 26 Aug 2026. A schedule notice of 24 Aug 2026 set 17 Sep 2026 as the CBT-2 date. The notice board, re-read on 9 Sep 2026, shows the exam city intimation and the mock test link for this CEN both published on 7 Sep 2026 — ten days before the exam, as that notice provided — so the sitting is going ahead on 17 Sep 2026. The e-call letter follows 4 days before the exam.",
     },
     summary: "Recruitment for 10+2-level non-technical railway posts across participating Railway Recruitment Boards.",
     vacancies: 3058,
@@ -908,11 +913,18 @@ export const exams: Exam[] = [
         note: "The score card and question-paper link opened at 17:00 on 26 Aug 2026.",
       },
       {
+        label: "Exam city and date intimation link",
+        date: "2026-09-07",
+        displayDate: "7 Sep 2026",
+        state: "completed",
+        note: "The portal published the exam city intimation and the CBT-2 mock test link for this CEN on the same day, ten days before the exam.",
+      },
+      {
         label: "CBT-2",
         date: "2026-09-17",
         displayDate: "17 Sep 2026",
-        state: "tentative",
-        note: "From the tentative CBT-2 schedule notice dated 24 Aug 2026; a tentative schedule can still be revised.",
+        state: "scheduled",
+        note: "Set by the CBT-2 schedule notice of 24 Aug 2026 and borne out by the exam city intimation released on 7 Sep 2026; the e-call letter opens 4 days before the exam.",
       },
     ],
     eligibility: [
@@ -927,18 +939,23 @@ export const exams: Exam[] = [
       rrbZoneNotices,
       rrbPortal,
       {
-        label: "CEN 07/2025 tentative CBT-2 schedule, 24 Aug 2026 (PDF)",
+        label: "CEN 07/2025 CBT-2 schedule, 24 Aug 2026 (PDF)",
         url: "https://rrb.indianrailways.gov.in/-/image/1787579200472CBT_2_Schedule_07-2025.pdf/examsDocuments",
         type: "notice",
       },
     ],
     sourceTitle:
-      "Unified RRB recruitment portal (RRB Chandigarh zone) — CEN 07/2025 NTPC Undergraduate CBT-1 result and tentative CBT-2 schedule",
+      "Unified RRB recruitment portal (RRB Chandigarh zone) — CEN 07/2025 NTPC Undergraduate CBT-1 result, CBT-2 schedule and exam city intimation",
     sourceUrl: "https://rrb.indianrailways.gov.in/chandigarh",
     sourcePublished:
-      "Recruitment notice 28 Oct 2025; CBT-1 conducted 7–9 May and 13–20 Jun 2026; CBT-1 result and cut-off published 24 Aug 2026; tentative CBT-2 schedule notice dated 24 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:36 IST",
+      "Recruitment notice 28 Oct 2025; CBT-1 conducted 7–9 May and 13–20 Jun 2026; CBT-1 result and cut-off published 24 Aug 2026; CBT-2 schedule notice dated 24 Aug 2026; exam city intimation and mock test link published 7 Sep 2026; notice board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:18 IST",
     changeLog: [
+      {
+        date: "2026-09-07",
+        displayDate: "7 Sep 2026",
+        text: "The exam city and date intimation link and the mock test link for CEN 07/2025 opened on 7 Sep 2026, ten days before the exam, confirming that CBT-2 goes ahead on 17 Sep 2026.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -1063,11 +1080,11 @@ export const exams: Exam[] = [
     examTypes: ["Railways", "Technical & Trades"],
     education: ["10th", "ITI / Diploma", "Professional degree"],
     status: {
-      label: "Document verification under way",
+      label: "Selection list published; further notices posted",
       tone: "violet",
-      nextAction: "Check the CEN 02/2025 grade-wise DV and medical notices for your RRB on the unified portal",
+      nextAction: "Open the CEN 02/2025 selection list of 25 Aug 2026 and the examination notice of 1 Sep 2026 for your RRB on the unified portal",
       detail:
-        "CBT results were published on 20 May 2026 for Technician Grade-I and 29 May 2026 for Technician Grade-III. RRB Chandigarh held its first document-verification round from 16 to 31 Jul 2026; other boards publish their own rounds.",
+        "CBT results were published on 20 May 2026 for Technician Grade-I and 29 May 2026 for Technician Grade-III. RRB Chandigarh held its first document-verification round from 16 to 31 Jul 2026; other boards publish their own rounds. The Chandigarh notice board, re-read on 9 Sep 2026, has since added a CEN 02/2025 selection list dated 25 Aug 2026 and a special notice on examination dated 1 Sep 2026. Both documents are served only inside a portal session and could not be opened from outside it, so their contents are not restated here.",
     },
     summary: "Recruitment for Technician Grade-I Signal and 29 Technician Grade-III categories under CEN 02/2025.",
     vacancies: 6238,
@@ -1097,6 +1114,20 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Each RRB publishes its own DV and medical rounds; this one is RRB Chandigarh's.",
       },
+      {
+        label: "Selection list published",
+        date: "2026-08-25",
+        displayDate: "25 Aug 2026",
+        state: "completed",
+        note: "Listed on the RRB Chandigarh notice board for CEN 02/2025; the document itself opens only inside a portal session.",
+      },
+      {
+        label: "Special notice on examination",
+        date: "2026-09-01",
+        displayDate: "1 Sep 2026",
+        state: "completed",
+        note: "Listed on the RRB Chandigarh notice board for CEN 02/2025; open it on the portal for its contents.",
+      },
       { label: "Further DV / medical rounds", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
@@ -1119,9 +1150,14 @@ export const exams: Exam[] = [
     sourceTitle: "Detailed CEN No. 02/2025 (Technician categories) and the RRB Chandigarh DV round-1 schedule, served from the unified RRB portal",
     sourceUrl: "https://rrb.indianrailways.gov.in/chandigarh",
     sourcePublished:
-      "Detailed CEN 02/2025 published 27 Jun 2025; CBT results 20 and 29 May 2026; DV round-1 schedule 2 Jul 2026; notice board re-checked 29 Aug 2026, where RRB Chandigarh has published no further round or panel",
-    lastVerified: "29 Aug 2026, 15:48 IST",
+      "Detailed CEN 02/2025 published 27 Jun 2025; CBT results 20 and 29 May 2026; DV round-1 schedule 2 Jul 2026; selection list 25 Aug 2026; special notice on examination 1 Sep 2026; notice board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:30 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The RRB Chandigarh notice board now lists a CEN 02/2025 selection list dated 25 Aug 2026 and a special notice on examination dated 1 Sep 2026. Both are served only inside a portal session, so only their titles and dates are recorded here.",
+      },
       {
         date: "2026-08-04",
         displayDate: "4 Aug 2026",
@@ -1402,8 +1438,8 @@ export const exams: Exam[] = [
     sourceTitle: "Railway Protection Force — official recruitment page, with the CEN RPF 02/2024 panel and zone-allotment notices on the unified RRB portal",
     sourceUrl: "https://rpf.indianrailways.gov.in/RPF/Recruitments/Upcoming.jsp",
     sourcePublished:
-      "CEN RPF-01/2024 & RPF-02/2024 master notice dated 2 Mar 2024; Constable panel and cut-off 16 Feb 2026; zone allotment and medical examination notice 23 Feb 2026; recruitment page checked 29 Aug 2026, where the 2024 combined notice is still the only one listed",
-    lastVerified: "29 Aug 2026, 15:52 IST",
+      "CEN RPF-01/2024 & RPF-02/2024 master notice dated 2 Mar 2024; Constable panel and cut-off 16 Feb 2026; zone allotment and medical examination notice 23 Feb 2026; recruitment page re-read 9 Sep 2026, where the 2024 combined notice is still the only one listed",
+    lastVerified: "9 Sep 2026, 17:34 IST",
     changeLog: [
       {
         date: "2026-08-04",
@@ -1485,8 +1521,8 @@ export const exams: Exam[] = [
     sourceTitle: "Railway Protection Force — official recruitment page, with the detailed CEN RPF 01/2024 on the unified RRB portal",
     sourceUrl: "https://rpf.indianrailways.gov.in/RPF/Recruitments/Upcoming.jsp",
     sourcePublished:
-      "CEN RPF-01/2024 & RPF-02/2024 master notice dated 2 Mar 2024; detailed CEN RPF 01/2024 dated 14 Apr 2024; normalised CBT cut-off for PET/PMT 3 Mar 2025; recruitment page checked 29 Aug 2026, where the 2024 combined notice is still the only one listed",
-    lastVerified: "29 Aug 2026, 15:54 IST",
+      "CEN RPF-01/2024 & RPF-02/2024 master notice dated 2 Mar 2024; detailed CEN RPF 01/2024 dated 14 Apr 2024; normalised CBT cut-off for PET/PMT 3 Mar 2025; recruitment page re-read 9 Sep 2026, where the 2024 combined notice is still the only one listed",
+    lastVerified: "9 Sep 2026, 17:34 IST",
     changeLog: [
       {
         date: "2026-08-04",

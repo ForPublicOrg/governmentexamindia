@@ -208,11 +208,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Preliminary examination 29 Aug 2026",
+      label: "Preliminary exam held 29 Aug 2026; result awaited",
       tone: "violet",
       nextAction: "Watch the IBPS site for the preliminary exam result and scorecard; the main examination is on 1 Nov 2026",
       detail:
-        "Applications are closed. IBPS released the online preliminary exam call letter, the English and Hindi information handouts and the scribe guidelines on 20 Aug 2026, and a corrigendum of 27 Aug 2026 raised the indicative vacancies to 1,043. The main examination follows on 1 Nov 2026. Qualification rules differ for each specialist post.",
+        "Applications are closed and the preliminary examination was held on 29 Aug 2026, the date IBPS issued call letters for on 20 Aug 2026. A corrigendum of 27 Aug 2026 raised the indicative vacancies to 1,043. The main examination follows on 1 Nov 2026. Qualification rules differ for each specialist post. The IBPS website could not be re-read on 9 Sep 2026 — both www.ibps.in pages timed out repeatedly — so no preliminary result had been confirmed as published at the time of this check.",
     },
     summary:
       "Recruitment for specialist roles including IT, agriculture, law, Rajbhasha, HR and marketing in public-sector banks.",
@@ -250,7 +250,13 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Indicative vacancies updated to 1,043 in Annexure I; all other terms of the 1 Jul 2026 notification unchanged.",
       },
-      { label: "Preliminary exam", date: "2026-08-29", displayDate: "29 Aug 2026", state: "current" },
+      {
+        label: "Preliminary exam",
+        date: "2026-08-29",
+        displayDate: "29 Aug 2026",
+        state: "completed",
+        note: "Held on the notified date, for which IBPS issued call letters on 20 Aug 2026.",
+      },
       { label: "Main exam", date: "2026-11-01", displayDate: "1 Nov 2026", state: "scheduled" },
       { label: "Provisional allotment", sortMonth: "2027-01", displayDate: "Jan 2027", state: "tentative", note: "Tentative month" },
     ],
@@ -275,9 +281,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "IBPS CRP SPL-XVI official notification and update page",
     sourceUrl: "https://www.ibps.in/index.php/specialist-officers-xvi/",
-    sourcePublished: "Notification 1 Jul 2026; call letter and handouts 20 Aug 2026; vacancy corrigendum dated 27 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:14 IST",
+    sourcePublished:
+      "Notification 1 Jul 2026; call letter and handouts 20 Aug 2026; vacancy corrigendum dated 27 Aug 2026; www.ibps.in unreachable when re-checked on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:52 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The preliminary examination of 29 Aug 2026 is now shown as held. IBPS had issued call letters for that date on 20 Aug 2026; no preliminary result has been confirmed, and the IBPS website could not be reached on 9 Sep 2026.",
+      },
       {
         date: "2026-08-27",
         displayDate: "27 Aug 2026",
@@ -598,11 +610,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Prelims result out; mains tentatively 12 Sep 2026",
+      label: "Main examination due 12 Sep 2026",
       tone: "violet",
-      nextAction: "Check the preliminary result on the SBI careers page and watch for the Main Examination call letter — the main exam is tentatively on 12 Sep 2026",
+      nextAction: "Download the Main Examination call letter from the SBI careers page — the main exam is due on 12 Sep 2026",
       detail:
-        "SBI has announced the Phase-I preliminary examination result and published the roll numbers of candidates shortlisted for the Main Examination, which the result document dates tentatively to 12 Sep 2026. Shortlisted candidates will be advised separately by SMS and e-mail; SBI notes that the marks display utility is still being prepared.",
+        "SBI has announced the Phase-I preliminary examination result and published the roll numbers of candidates shortlisted for the Main Examination, which the result document dates tentatively to 12 Sep 2026. SBI's acquaint-yourself booklet for the main examination under CRPD/PO/2026-27/09 also gives the online main exam as 12 Sep 2026. Shortlisted candidates are advised separately by SMS and e-mail. The SBI careers page could not be re-opened on 9 Sep 2026 — sbi.bank.in timed out — so any call-letter or postponement notice issued since 29 Aug 2026 is not reflected here.",
     },
     summary:
       "Recruitment of Probationary Officers in State Bank of India through a three-phase online examination, psychometric test and interview process.",
@@ -666,8 +678,9 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "SBI CRPD/PO/2026-27/09 detailed advertisement and preliminary examination result",
     sourceUrl: "https://sbi.bank.in/csfile/18062026_1_Detailed_Adv.2026.pdf",
-    sourcePublished: "Detailed advertisement dated 18 Jun 2026; preliminary result and Main Examination shortlist published on the SBI careers page by 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:22 IST",
+    sourcePublished:
+      "Detailed advertisement dated 18 Jun 2026; preliminary result and Main Examination shortlist published on the SBI careers page by 29 Aug 2026; sbi.bank.in unreachable when re-checked on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 21:54 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -890,11 +903,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Applications open until 7 September 2026",
+      label: "Applications open until 17 September 2026",
       tone: "green",
-      nextAction: "Apply on the Bank of Baroda careers page before 7 Sep 2026",
+      nextAction: "Apply on the Bank of Baroda careers page before 17 Sep 2026 (23:59), the extended last date",
       detail:
-        "Bank of Baroda opened online registration for 2,482 Local Bank Officer posts in JMG/S-I on 18 Aug 2026; registration and fee payment close on 7 Sep 2026. This is an experienced-entry post — a year as an officer in a scheduled commercial bank is mandatory — and a candidate may apply for one State only. The online test date will be advised separately.",
+        "Bank of Baroda opened online registration for 2,482 Local Bank Officer posts in JMG/S-I on 18 Aug 2026. An addendum to advertisement BOB/HRM/REC/ADVT/2026/16, dated 7 Sep 2026, extended the last date for the online application and fee payment to 17 Sep 2026 (23:59 hours) and said the online test will be scheduled tentatively in the first week of October 2026; all other terms of the 18 Aug 2026 advertisement are unchanged. This is an experienced-entry post — a year as an officer in a scheduled commercial bank is mandatory — and a candidate may apply for one State only.",
     },
     summary:
       "Recruitment of Local Bank Officers in Junior Management Grade / Scale-I at Bank of Baroda, filled State-wise against a local-language requirement and a minimum of one year's officer experience in a scheduled commercial bank.",
@@ -913,17 +926,25 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online registration opens", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
       {
-        label: "Applications close",
+        label: "Applications close (original last date)",
         date: "2026-09-07",
         displayDate: "7 Sep 2026",
+        state: "completed",
+        note: "Superseded by the addendum of 7 Sep 2026, which extended the last date.",
+      },
+      {
+        label: "Applications close (extended last date)",
+        date: "2026-09-17",
+        displayDate: "17 Sep 2026",
         state: "current",
-        note: "Registration is complete only when the fee is paid online on or before this date.",
+        note: "Extended by the addendum of 7 Sep 2026; registration is complete only when the fee is paid online by 23:59 hours on this date.",
       },
       {
         label: "Online test",
-        displayDate: "Date to be announced",
+        sortMonth: "2026-10",
+        displayDate: "First week of October 2026 (tentative)",
         state: "tentative",
-        note: "The advertisement says the date of the online test shall be advised separately, with call letters and an information handout on the Bank's website.",
+        note: "The addendum of 7 Sep 2026 says the online test will be scheduled tentatively in the first week of October 2026; call letters and an information handout follow on the Bank's website.",
       },
     ],
     eligibility: [
@@ -961,9 +982,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Bank of Baroda Local Bank Officer advertisement BOB/HRM/REC/ADVT/2026/16",
     sourceUrl: "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-08/Advertisement-18-04.pdf",
-    sourcePublished: "Advertisement opened registration 18 Aug 2026; all eligibility is reckoned as on the cut-off date of 1 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:31 IST",
+    sourcePublished:
+      "Advertisement opened registration 18 Aug 2026; addendum dated 7 Sep 2026 extended the last date to 17 Sep 2026; all eligibility is reckoned as on the cut-off date of 1 Aug 2026",
+    lastVerified: "9 Sep 2026, 21:56 IST",
     changeLog: [
+      {
+        date: "2026-09-07",
+        displayDate: "7 Sep 2026",
+        text: "An addendum to advertisement BOB/HRM/REC/ADVT/2026/16 extended the last date for the online application and fee payment from 7 Sep 2026 to 17 Sep 2026 (23:59 hours), and said the online test will be held tentatively in the first week of October 2026.",
+      },
       {
         date: "2026-08-18",
         displayDate: "18 Aug 2026",
@@ -1425,7 +1452,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the SEBI careers page for the next Grade A (Assistant Manager) notification",
       detail:
-        "The SEBI careers page showed the Officer Grade A 2025 cycle at its interview stage — interview call letters posted 17 Apr 2026 — and a separate Executive Director vacancy; no new Grade A notification was listed as of this review.",
+        "The SEBI vacancies page, re-read on 9 Sep 2026, showed the Officer Grade A 2025 cycle at its interview stage — interview call letters posted 17 Apr 2026 — and separate Executive Director and Security Coordinator engagements. Its newest entry is dated 14 Aug 2026 and no new Grade A notification is listed.",
     },
     summary: "Recruitment of Assistant Managers (Grade A) at SEBI across General, Legal, IT, Research, Engineering and Official Language streams.",
     vacancyNote:
@@ -1463,8 +1490,8 @@ export const exams: Exam[] = [
     sourceTitle: "SEBI careers page and the Officer Grade A 2025 detailed advertisement",
     sourceUrl: "https://www.sebi.gov.in/sebiweb/about/AboutAction.do?doVacancies=yes",
     sourcePublished:
-      "Careers page re-checked 29 Aug 2026, whose newest entries are a Security Coordinator engagement on contract dated 14 Aug 2026 and an Executive Director recruitment dated 26 Jun 2026 — no new Grade A notification; previous-cycle advertisement opened applications 30 Oct 2025",
-    lastVerified: "29 Aug 2026, 15:44 IST",
+      "Vacancies page re-read 9 Sep 2026, whose newest entries remain a Security Coordinator engagement on contract dated 14 Aug 2026 and an Executive Director recruitment dated 26 Jun 2026 — no new Grade A notification; previous-cycle advertisement opened applications 30 Oct 2025",
+    lastVerified: "9 Sep 2026, 21:58 IST",
     keywords: [
       "SEBI grade A",
       "assistant manager SEBI",
@@ -1499,7 +1526,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch for the final allotment communication",
       detail:
-        "Prelims and mains are complete and post-medical-examination shortlists have been published for the Generalist and specialist streams; a final result was not shown on the pages reviewed.",
+        "Prelims and mains are complete and post-medical-examination shortlists have been published for the Generalist and specialist streams; a final result was still not shown when the LIC careers page was re-read on 9 Sep 2026, whose newest entry for this cycle is dated 3 Aug 2026.",
     },
     summary:
       "Recruitment of Assistant Administrative Officers (Generalist, Specialist and Assistant Engineer streams) in the Life Insurance Corporation of India.",
@@ -1541,8 +1568,8 @@ export const exams: Exam[] = [
     sourceTitle: "LIC AAO Generalist 32nd batch notification",
     sourceUrl: "https://www.licindia.in/documents/d/guest/aao-generalist-notification-2025-final",
     sourcePublished:
-      "Notification dated 16 Aug 2025; the AAO 2025 recruitment page, last updated 24 Aug 2026, was re-checked on 29 Aug 2026 and still shows post-medical shortlists as the latest stage with no final allotment",
-    lastVerified: "29 Aug 2026, 15:46 IST",
+      "Notification dated 16 Aug 2025; the LIC careers page was re-read on 9 Sep 2026 and still shows post-medical shortlists as the latest stage with no final allotment, its AAO 2025 entry carrying the date 3 Aug 2026",
+    lastVerified: "9 Sep 2026, 21:59 IST",
     changeLog: [
       { date: "2025-08-16", displayDate: "16 Aug 2025", text: "Notification released for AAO Generalist, Specialist and Assistant Engineer posts." },
     ],
@@ -1577,7 +1604,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the LIC careers page for the next Apprentice Development Officer notification",
       detail:
-        "The LIC careers page listed the AAO 2025 cycle and a contractual Chief Financial Officer engagement but no current Apprentice Development Officer (ADO) notification as of this review; the last ADO cycle was notified zone-wise in January 2023.",
+        "The LIC careers page, re-read on 9 Sep 2026, still lists the AAO 2025 cycle as its newest recruitment entry and shows no current Apprentice Development Officer (ADO) notification; the last ADO cycle was notified zone-wise in January 2023.",
     },
     summary: "Recruitment of Apprentice Development Officers (ADO) at LIC, a field-sales role recruited on an irregular cycle.",
     vacancyNote:
@@ -1615,8 +1642,8 @@ export const exams: Exam[] = [
     sourceTitle: "LIC careers page and the 2022-23 Apprentice Development Officer employment notices",
     sourceUrl: "https://www.licindia.in/web/guest/careers",
     sourcePublished:
-      "Careers page re-checked 29 Aug 2026, still listing only the AAO 2025 recruitment and a contractual Chief Financial Officer engagement; last ADO employment notices opened registration 21 Jan 2023",
-    lastVerified: "29 Aug 2026, 15:47 IST",
+      "Careers page re-read 9 Sep 2026, whose newest recruitment entry is still the AAO 2025 exercise dated 3 Aug 2026 with no ADO notice; last ADO employment notices opened registration 21 Jan 2023",
+    lastVerified: "9 Sep 2026, 22:00 IST",
     keywords: [
       "LIC ADO",
       "apprentice development officer",

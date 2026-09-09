@@ -370,7 +370,7 @@ export const exams: Exam[] = [
       label: "Subject-wise notices active",
       tone: "violet",
       nextAction: "Check the UPPSC notice board for the selected subject",
-      detail: "UPPSC continues to publish subject-specific admit-card and result notices for this recruitment. Unannounced dates and totals are intentionally omitted here.",
+      detail: "UPPSC continues to publish subject-specific admit-card and result notices for this recruitment. The Commission's notice-alert board, re-read on 9 Sep 2026, carried nothing new for this recruitment - only the live application links for the Professor and Assistant Professor advertisement and the Miscellaneous Examination. Unannounced dates and totals are intentionally omitted here.",
     },
     summary: "Subject-wise recruitment of trained graduate grade assistant teachers through the Uttar Pradesh Public Service Commission.",
     officialLinks: [
@@ -379,8 +379,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPPSC current notices for Assistant Teacher Trained Graduate Grade Examination 2025",
     sourceUrl: "https://uppsc.up.nic.in/",
-    sourcePublished: "Subject-wise official notices visible in the 2026 notice stream",
-    lastVerified: "4 Aug 2026, 15:10 IST",
+    sourcePublished: "Subject-wise official notices visible in the 2026 notice stream; UPPSC notice-alert board re-read 9 Sep 2026 with no new notice for this recruitment",
+    lastVerified: "9 Sep 2026, 12:14 IST",
     keywords: [
       "UP TGT",
       "trained graduate teacher UP",
@@ -919,9 +919,9 @@ export const exams: Exam[] = [
     status: {
       label: "Screening test and SAT from 14 September 2026",
       tone: "blue",
-      nextAction: "Find the date fixed for the chosen discipline in the 27 August 2026 press note and watch for the admit card",
+      nextAction: "Open HPPSC's consolidated final schedule press note of 5 September 2026 for the date fixed against the chosen discipline, then download the e-admit card as directed by the press note of 7 September 2026",
       detail:
-        "HPPSC press note No.3-26/2026-PSC(R-I)-Vol.-I dated 27 August 2026 revises the tentative schedule it had notified on 21 August 2026 and fixes subject-wise dates for the Screening Test and Subject Aptitude Test (SAT) for Assistant Professor (College Cadre), Group-A (Job Trainee) under advertisements 33/6-2026 to 55/6-2026, running from 14 September to 18 October 2026.",
+        "HPPSC press note No.3-26/2026-PSC(R-I)-Vol.-I dated 27 August 2026 revises the tentative schedule it had notified on 21 August 2026 and fixes subject-wise dates for the Screening Test and Subject Aptitude Test (SAT) for Assistant Professor (College Cadre), Group-A (Job Trainee) under advertisements 33/6-2026 to 55/6-2026, running from 14 September to 18 October 2026. HPPSC's What's New board, re-read on 9 September 2026, adds a press note dated 5 September 2026 carrying the consolidated final schedule for these Screening Tests and SATs and a press note dated 7 September 2026 about their e-admit cards; neither file could be opened on 9 September 2026, so the subject-wise dates below remain those fixed on 27 August 2026 and must be confirmed against the 5 September consolidated schedule.",
     },
     summary: "Subject-wise Assistant Professor recruitment for the Himachal Pradesh Higher Education Department's college cadre.",
     qualification:
@@ -958,18 +958,33 @@ export const exams: Exam[] = [
         url: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgYGe1lQc0kPejyxoJaRy4bUNjKKeRoef8QQQN%2ByUznKo%3D",
         type: "notice",
       },
+      {
+        label: "Press note dated 5 Sep 2026 - consolidated final schedule for the Screening Test and SAT",
+        url: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQRfdkGlH8WWhtf16Yw5LgTOlwxyOpvLmUX1BNOuJTAJi42VEwc2%2BoXb8%3D",
+        type: "notice",
+      },
+      {
+        label: "Press note dated 7 Sep 2026 - e-admit cards for the Screening Test and SAT",
+        url: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQRfdkGlH8WWhtefidJozqGdKT4rtGckvwIcR9yrfK%2BT%2BPFORfPF8H%2B%2Bk%3D",
+        type: "notice",
+      },
       { label: "HPPSC current advertisements", url: "https://hppsc.hp.gov.in/Home/HomeWhatsNew", type: "notice" },
       { label: "HPPSC official website", url: "https://hppsc.hp.gov.in/", type: "website" },
     ],
     sourceTitle: "HPPSC press note dated 27 Aug 2026 revising the Screening Test and SAT schedule for Assistant Professor (College Cadre)",
     sourceUrl: "https://hppsc.hp.gov.in/Home/HomeWhatsNew",
-    sourcePublished: "Subject advertisements published 17 Jun 2026; extension notice 4 Jul 2026; tentative schedule 21 Aug 2026; revised schedule press note dated 27 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:34 IST",
+    sourcePublished: "Subject advertisements published 17 Jun 2026; extension notice 4 Jul 2026; tentative schedule 21 Aug 2026; revised schedule press note dated 27 Aug 2026; consolidated final schedule press note 5 Sep 2026 and e-admit card press note 7 Sep 2026 listed on the What's New board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 12:16 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "HPPSC has fixed subject-wise Screening Test and Subject Aptitude Test dates for Assistant Professor (College Cadre) under advertisements 33/6-2026 to 55/6-2026, running 14 Sep to 18 Oct 2026, by press note No.3-26/2026-PSC(R-I)-Vol.-I dated 27 Aug 2026, which supersedes the tentative schedule of 21 Aug 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "HPPSC has published a press note dated 5 Sep 2026 carrying the consolidated final schedule for the Screening Test and Subject Aptitude Test, followed by a press note dated 7 Sep 2026 on the e-admit cards for these tests; both are linked here and the consolidated schedule governs the date fixed for each discipline.",
       },
     ],
     keywords: [
@@ -1005,7 +1020,7 @@ export const exams: Exam[] = [
       tone: "green",
       nextAction: "Register through the Commission's One Time Registration portal and submit the online application before 22 September 2026, 11:59 PM",
       detail:
-        "Advertisement 59/8-2026 dated 26 August 2026 invites online recruitment applications for 22 posts to be filled through the H.P. Administrative Service Combined Competitive Examination-2026. The closing date for both the application and the fee is 22 September 2026, 11:59 PM. No preliminary-examination date has been announced.",
+        "Advertisement 59/8-2026 dated 26 August 2026 invites online recruitment applications for 22 posts to be filled through the H.P. Administrative Service Combined Competitive Examination-2026. The closing date for both the application and the fee is 22 September 2026, 11:59 PM. No preliminary-examination date has been announced. HPPSC's What's New board, re-read on 9 September 2026, still lists advertisement 59/8-2026 with no corrigendum and no change to the closing date.",
     },
     summary:
       "Himachal Pradesh's combined competitive examination for the HP Administrative Service and allied gazetted posts in the Rural Development, Food and Civil Supplies, Treasuries and Revenue departments.",
@@ -1063,8 +1078,8 @@ export const exams: Exam[] = [
     sourceTitle: "HPPSC advertisement 59/8-2026 for the H.P. Administrative Service Combined Competitive Examination 2026",
     sourceUrl:
       "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgJhsSzNLtXQgyrhjwChomkO7eONOEFu3udXmeG2YxYmM%3D",
-    sourcePublished: "Advertisement dated 26 Aug 2026; applications and fee close 22 Sep 2026, 11:59 PM",
-    lastVerified: "29 Aug 2026, 16:24 IST",
+    sourcePublished: "Advertisement dated 26 Aug 2026; applications and fee close 22 Sep 2026, 11:59 PM; What's New board re-read 9 Sep 2026 with the date unchanged",
+    lastVerified: "9 Sep 2026, 12:18 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1106,7 +1121,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Watch https://dsssb.delhi.gov.in/notice-of-exam for the e-admit card, and re-read the corrigendum for the chosen post code",
       detail:
-        "DSSSB's examination notification dated 24 August 2026 schedules online examinations for various post codes in the window 21 September to 24 October 2026, and Advertisement 01/2026 post code 804/26, Assistant Section Officer / Grade-II (GNCTDSS) for Services, DPCC and DUSIB, occupies most of the sittings in it. A corrigendum dated 22 July 2026 modified the Assistant Engineer (Civil) entry, post code 802/26. Post-code-specific conditions must still be read separately.",
+        "DSSSB's examination notification dated 24 August 2026 schedules online examinations for various post codes in the window 21 September to 24 October 2026, and Advertisement 01/2026 post code 804/26, Assistant Section Officer / Grade-II (GNCTDSS) for Services, DPCC and DUSIB, occupies most of the sittings in it. A corrigendum dated 22 July 2026 modified the Assistant Engineer (Civil) entry, post code 802/26. Post-code-specific conditions must still be read separately. DSSSB's notice-of-exam page, re-read on 9 September 2026, carries nothing later than that notification and no postponement of the window.",
     },
     summary: "Combined DSSSB recruitment covering Legal Assistant, civil-engineering and GNCTDSS administrative post codes.",
     pay: "See vacancy notice 01/2026; the pay level is stated against each post code.",
@@ -1136,8 +1151,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "DSSSB vacancy notice 01/2026 Combined Examinations 2026 and the examination notification dated 24 Aug 2026",
     sourceUrl: "https://dsssb.delhi.gov.in/dsssb/vacancy-notice-advertisement-no-012026-combined-examinations-2026-post-legal-assistant",
-    sourcePublished: "Vacancy notice dated 20 Feb 2026; corrigendum on post code 802/26 dated 22 Jul 2026; examination notification dated 24 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:36 IST",
+    sourcePublished: "Vacancy notice dated 20 Feb 2026; corrigendum on post code 802/26 dated 22 Jul 2026; examination notification dated 24 Aug 2026; notice-of-exam page re-read 9 Sep 2026 with nothing newer",
+    lastVerified: "9 Sep 2026, 12:22 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1228,10 +1243,10 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Technical & Trades", "Specialist & Professional"],
     education: ["12th", "ITI / Diploma", "Graduate", "Postgraduate", "Professional degree"],
     status: {
-      detail: "DSSSB has notified the computer-based examination for Advertisement 02/2026 post codes across 1–7 September 2026 (post codes 11/26, 17/26, 08/26, 04/26, 12/26, 10/26, 06/26, 18/26 and 02/26). A further examination notification dated 24 August 2026 places the remaining 02/2026 post codes - Assistant Manager (Tourism) 01/26, Assistant Manager (Accounts) 03/26, Assistant Manager (Air Ticketing) 05/26, Assistant Grade-I 07/26, Optometrist 09/26, Katib (Calligrapher) 13/26, Patwari 14/26 and Assistant Micro Photographist 20/26 - inside a 21 September to 24 October 2026 window. Exam centre, date and timing are shown on the e-admit card.",
-      label: "Examination from 1 Sep 2026",
+      detail: "DSSSB has notified the computer-based examination for Advertisement 02/2026 post codes across 1–7 September 2026 (post codes 11/26, 17/26, 08/26, 04/26, 12/26, 10/26, 06/26, 18/26 and 02/26). A further examination notification dated 24 August 2026 places the remaining 02/2026 post codes - Assistant Manager (Tourism) 01/26, Assistant Manager (Accounts) 03/26, Assistant Manager (Air Ticketing) 05/26, Assistant Grade-I 07/26, Optometrist 09/26, Katib (Calligrapher) 13/26, Patwari 14/26 and Assistant Micro Photographist 20/26 - inside a 21 September to 24 October 2026 window. Exam centre, date and timing are shown on the e-admit card. The 1-7 September 2026 sittings have been held: DSSSB's notice-of-exam page, re-read on 9 September 2026, publishes nothing later than 26 August 2026 and no postponement of that schedule, and no answer key or result for these post codes has appeared yet.",
+      label: "Remaining post codes examined from 21 September 2026",
       tone: "blue",
-      nextAction: "Watch https://dsssb.delhi.gov.in/notice-of-exam for the e-admit card link for the post code applied for.",
+      nextAction: "Candidates in the 1-7 September sittings await the answer key; for the remaining post codes watch https://dsssb.delhi.gov.in/notice-of-exam for the e-admit card.",
     },
     summary:
       "Delhi Subordinate Services Selection Board recruitment for post codes 01/26 to 20/26 across departments, local and autonomous bodies of the Government of NCT of Delhi.",
@@ -1250,7 +1265,13 @@ export const exams: Exam[] = [
       { label: "Online applications closed", date: "2026-03-28", displayDate: "28 Mar 2026, 11:59 PM", state: "completed" },
       { label: "Examination schedule notified", date: "2026-06-15", displayDate: "15 Jun 2026", state: "completed" },
       { label: "Corrigendum revising Junior Laboratory Assistant (18/26) vacancies", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
-      { label: "Online examination (CBT)", date: "2026-09-01", displayDate: "1–7 Sep 2026", state: "scheduled" },
+      {
+        label: "Online examination (CBT)",
+        date: "2026-09-01",
+        displayDate: "1–7 Sep 2026",
+        state: "completed",
+        note: "Held as notified on 15 Jun 2026; DSSSB published no postponement and the notice-of-exam page carried nothing later than 26 Aug 2026 when re-read on 9 Sep 2026",
+      },
       {
         label: "Online examination for the remaining 02/2026 post codes",
         date: "2026-09-21",
@@ -1285,9 +1306,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "DSSSB vacancy notice advertisement no. 02/2026",
     sourceUrl: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_02-2026_1.pdf",
-    sourcePublished: "Vacancy notice dated 25 Feb 2026; examination notifications dated 15 Jun 2026 (1 to 20 Sep 2026) and 24 Aug 2026 (21 Sep to 24 Oct 2026)",
-    lastVerified: "29 Aug 2026, 15:40 IST",
+    sourcePublished: "Vacancy notice dated 25 Feb 2026; examination notifications dated 15 Jun 2026 (1 to 20 Sep 2026) and 24 Aug 2026 (21 Sep to 24 Oct 2026); notice-of-exam page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 12:24 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The 1-7 Sep 2026 computer-based sittings for Advertisement 02/2026 are over; DSSSB notified no postponement and has not yet published an answer key or result, so the next dated stage is the 21 Sep to 24 Oct 2026 window for the remaining post codes.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -1328,10 +1354,10 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["10th"],
     status: {
-      detail: "The computer-based test for Multi Tasking Staff (Advt. 07/25, post code 803/25) is running in three shifts a day from 25 July 2026 to 1 September 2026. Exam centre, date and timing are given on each candidate's e-admit card. DSSSB's notice-of-exam page carried no postponement or revision of this schedule when re-read on 29 August 2026.",
-      label: "Examination under way",
+      detail: "The computer-based test for Multi Tasking Staff (Advt. 07/25, post code 803/25) is running in three shifts a day from 25 July 2026 to 1 September 2026. Exam centre, date and timing are given on each candidate's e-admit card. DSSSB's notice-of-exam page carried no postponement or revision of this schedule, and the last sitting was held on 1 September 2026. Re-read on 9 September 2026, that page publishes nothing later than 26 August 2026, so no answer key or result notice for post code 803/25 has appeared yet.",
+      label: "Examination over; answer key and result awaited",
       tone: "violet",
-      nextAction: "After 1 Sep 2026 watch for the answer key and result notice for post code 803/25.",
+      nextAction: "Watch https://dsssb.delhi.gov.in/notice-of-exam for the answer key and result notice for post code 803/25.",
     },
     summary:
       "Single combined DSSSB examination for Multi-Tasking Staff posts across departments, autonomous and local bodies of the Government of NCT of Delhi.",
@@ -1348,7 +1374,13 @@ export const exams: Exam[] = [
       { label: "Online applications opened", date: "2025-12-17", displayDate: "17 Dec 2025, 12:00 noon", state: "completed" },
       { label: "Online applications closed", date: "2026-01-15", displayDate: "15 Jan 2026, 11:59 PM", state: "completed" },
       { label: "Examination schedule notified", date: "2026-04-22", displayDate: "22 Apr 2026", state: "completed" },
-      { label: "Online examination (CBT)", date: "2026-07-25", displayDate: "25 Jul – 1 Sep 2026", state: "current" },
+      {
+        label: "Online examination (CBT)",
+        date: "2026-07-25",
+        displayDate: "25 Jul – 1 Sep 2026",
+        state: "completed",
+        note: "Ran to 1 Sep 2026 as notified on 22 Apr 2026; DSSSB published no postponement or revision",
+      },
     ],
     eligibility: [
       "Matriculation or equivalent pass is the essential educational qualification for the Multi-Tasking Staff post; no experience is required.",
@@ -1376,9 +1408,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "DSSSB vacancy notice advertisement no. 07/2025, Combined Examination 2025 for Multi-Tasking Staff",
     sourceUrl: "https://dsssb.delhi.gov.in/sites/default/files/DSSSB/circulars-orders/final_advt_no_07_2025_mts.pdf",
-    sourcePublished: "Examination notification No. F.55(438)/Exam/DSSSB/2025/PF dated 22 Apr 2026 covering June, July, August and 1 September 2026; vacancy notice dated 11 Dec 2025",
-    lastVerified: "29 Aug 2026, 15:42 IST",
+    sourcePublished: "Examination notification No. F.55(438)/Exam/DSSSB/2025/PF dated 22 Apr 2026 covering June, July, August and 1 September 2026; vacancy notice dated 11 Dec 2025; notice-of-exam page re-read 9 Sep 2026 with no answer key or result yet",
+    lastVerified: "9 Sep 2026, 12:26 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The MTS computer-based test for post code 803/25 finished its last sitting on 1 Sep 2026 as scheduled; DSSSB published no postponement and no answer key or result notice has appeared, so the cycle now waits on the answer key.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -1528,11 +1565,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education", "Specialist & Professional"],
     education: ["Postgraduate"],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Update the One Time Registration and submit the online application before 31 August 2026",
+      label: "Applications closed; examination schedule awaited",
+      tone: "amber",
+      nextAction: "Watch jkpsc.nic.in for the screening test or interview schedule for the discipline applied for",
       detail:
-        "Notification 05-PSC (DR-P) of 2026 dated 31 July 2026 opened the application form on 1 August 2026 with a last date of 31 August 2026 and an edit window from 1 to 3 September 2026. A corrigendum dated 7 August 2026 raised the age limit for in-service and Government candidates to 45 years and corrected the Level-10 pay range; the application dates are unchanged.",
+        "Notification 05-PSC (DR-P) of 2026 dated 31 July 2026 opened the application form on 1 August 2026 with a last date of 31 August 2026 and an edit window from 1 to 3 September 2026. A corrigendum dated 7 August 2026 raised the age limit for in-service and Government candidates to 45 years and corrected the Level-10 pay range; the application dates were unchanged. Both the application deadline of 31 August 2026 and the 1 to 3 September 2026 edit window have now passed, so the portal is closed. The Commission's website did not respond on 9 September 2026, so nothing published there after 29 August 2026 is reflected here.",
     },
     summary:
       "Direct recruitment to 205 posts of Assistant Professor, College Director of Physical Education & Sports and Librarian in Government Degree Colleges under the Higher Education Department, Jammu & Kashmir.",
@@ -1549,8 +1586,8 @@ export const exams: Exam[] = [
       { label: "Notification published", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
       { label: "Online application form available", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
       { label: "Corrigendum on age limit and pay level", date: "2026-08-07", displayDate: "7 Aug 2026", state: "completed" },
-      { label: "Last date for online applications and fee", date: "2026-08-31", displayDate: "31 Aug 2026", state: "current" },
-      { label: "Application edit window", date: "2026-09-01", displayDate: "1-3 Sep 2026", state: "scheduled" },
+      { label: "Last date for online applications and fee", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed" },
+      { label: "Application edit window", date: "2026-09-01", displayDate: "1-3 Sep 2026", state: "completed" },
     ],
     eligibility: [
       "Online applications are invited only from domiciles of the Union Territory of Jammu & Kashmir; a valid Domicile Certificate issued by the competent authority in the prescribed format is required, and certificates issued after the last date for submission of the online application form are not entertained (clause 6).",
@@ -1576,9 +1613,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKPSC notification 05-PSC (DR-P) of 2026 for Assistant Professor, College Director and Librarian posts",
     sourceUrl: "https://jkpsc.nic.in/PDF/AP_DIRECTOR_FRESH_2026.PDF",
-    sourcePublished: "Notification dated 31 Jul 2026; corrigendum dated 7 Aug 2026; applications 1 Aug to 31 Aug 2026, with no extension notice on the Commission's notice stream re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:44 IST",
+    sourcePublished: "Notification dated 31 Jul 2026; corrigendum dated 7 Aug 2026; applications 1 Aug to 31 Aug 2026, with no extension notice on the Commission's notice stream read 29 Aug 2026; jkpsc.nic.in did not respond on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 12:36 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications have closed: the last date of 31 Aug 2026 and the 1 to 3 Sep 2026 edit window notified in 05-PSC (DR-P) of 2026 have both passed, so the cycle now waits on the examination or interview schedule.",
+      },
       {
         date: "2026-08-07",
         displayDate: "7 Aug 2026",
@@ -1618,7 +1660,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Prepare the domicile and qualification certificates and apply on the JKSSB portal from 10 September 2026",
       detail:
-        "Advertisement Notification 08 of 2026 dated 4 August 2026 advertises 518 posts, with online applications from 10 September 2026 to 9 October 2026.",
+        "Advertisement Notification 08 of 2026 dated 4 August 2026 advertises 518 posts, with online applications from 10 September 2026 to 9 October 2026. JKSSB's advertisement listing, re-read on 9 September 2026, still shows Notification 08 of 2026 with no corrigendum and no change to those dates.",
     },
     summary:
       "JKSSB direct recruitment to 518 UT, Divisional and District Cadre posts in the Agriculture Production, Health and Medical Education, Higher Education and Labour and Employment Departments of Jammu & Kashmir.",
@@ -1660,8 +1702,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 08 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advertisement_08OF2026_04082026.pdf",
-    sourcePublished: "Notification dated 4 Aug 2026; applications 10 Sep to 9 Oct 2026; JKSSB's advertisement list and what's-new stream re-read 29 Aug 2026 with no corrigendum against 08 of 2026",
-    lastVerified: "29 Aug 2026, 15:45 IST",
+    sourcePublished: "Notification dated 4 Aug 2026; applications 10 Sep to 9 Oct 2026; JKSSB's advertisement list re-read 9 Sep 2026 with no corrigendum against 08 of 2026",
+    lastVerified: "9 Sep 2026, 12:32 IST",
     keywords: [
       "JKSSB 08 of 2026",
       "J&K SSB recruitment 2026",
@@ -1691,11 +1733,11 @@ export const exams: Exam[] = [
     examTypes: ["Technical & Trades", "Civil Services & Administration"],
     education: ["10th", "12th", "ITI / Diploma"],
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply on the JKSSB portal before the 30 August 2026 cut-off",
+      label: "Applications closed; written examination date awaited",
+      tone: "amber",
+      nextAction: "Watch the JKSSB website for the OMR written examination date, the syllabus notification and the admit card",
       detail:
-        "Advertisement Notification 06 of 2026 dated 6 July 2026 advertises 357 Divisional Cadre posts in the Public Works (R&B) Department, with online applications from 1 August 2026 to 30 August 2026.",
+        "Advertisement Notification 06 of 2026 dated 6 July 2026 advertises 357 Divisional Cadre posts in the Public Works (R&B) Department, with online applications from 1 August 2026 to 30 August 2026. That window has closed: JKSSB's advertisement listing, re-read on 9 September 2026, carries no extension or corrigendum against Notification 06 of 2026, and neither the syllabus nor the written examination date has been notified.",
     },
     summary:
       "JKSSB direct recruitment to 357 Divisional Cadre posts in the Public Works (Roads & Buildings) Department of Jammu & Kashmir, including Draftsman (Civil).",
@@ -1711,7 +1753,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement notification published", date: "2026-07-06", displayDate: "6 Jul 2026", state: "completed" },
       { label: "Online applications commenced", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
-      { label: "Last date for online applications", date: "2026-08-30", displayDate: "30 Aug 2026", state: "current" },
+      { label: "Last date for online applications", date: "2026-08-30", displayDate: "30 Aug 2026", state: "completed" },
     ],
     eligibility: [
       "Candidates must be domiciles of the Union Territory of Jammu & Kashmir and must possess a valid Domicile Certificate issued by the competent authority in the prescribed format on or before the cut-off date, i.e. the last date for submission of online application forms, which unless extended shall be 30.08.2026 (clause 02).",
@@ -1737,8 +1779,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 06 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advt_06OF2026_06072026.pdf",
-    sourcePublished: "Notification dated 6 Jul 2026; applications 1 Aug to 30 Aug 2026, with no extension notice on JKSSB's advertisement list or what's-new stream re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:46 IST",
+    sourcePublished: "Notification dated 6 Jul 2026; applications 1 Aug to 30 Aug 2026, with no extension notice on JKSSB's advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 12:28 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications have closed: the 1 Aug to 30 Aug 2026 window for Notification 06 of 2026 ended without an extension, and JKSSB's advertisement listing shows no corrigendum, so the cycle now waits on the OMR written examination date.",
+      },
+    ],
     keywords: [
       "JKSSB 06 of 2026",
       "J&K PWD recruitment",
@@ -1767,11 +1816,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Technical & Trades"],
     education: ["10th", "12th", "ITI / Diploma", "Graduate"],
     status: {
-      label: "Applications open until 8 September 2026",
-      tone: "green",
-      nextAction: "Obtain the migrant or Kashmiri Pandit certificate and apply on the JKSSB portal before 8 September 2026",
+      label: "Applications closed; written examination date awaited",
+      tone: "amber",
+      nextAction: "Watch the JKSSB website for the OMR written examination date, the syllabus notification and the admit card",
       detail:
-        "Advertisement Notification 07 of 2026 dated 8 July 2026 advertises 72 Divisional Cadre posts requisitioned under the PM Package. Online submission commenced on 10 August 2026 and the cut-off date stated in the notification is 8 September 2026; JKSSB's advertisement list carries no corrigendum against 07 of 2026.",
+        "Advertisement Notification 07 of 2026 dated 8 July 2026 advertises 72 Divisional Cadre posts requisitioned under the PM Package. Online submission commenced on 10 August 2026 and the cut-off date stated in the notification is 8 September 2026; That cut-off has passed: JKSSB's advertisement listing, re-read on 9 September 2026, carries no extension or corrigendum against Notification 07 of 2026, and neither the syllabus nor the written examination date has been notified.",
     },
     summary:
       "JKSSB recruitment to 72 Divisional Cadre posts requisitioned by the Disaster Management, Relief, Rehabilitation & Reconstruction Department under the Prime Minister's Package for Kashmiri Migrants and Non-Migrant Kashmiri Pandits.",
@@ -1787,7 +1836,7 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement notification published", date: "2026-07-08", displayDate: "8 Jul 2026", state: "completed" },
       { label: "Online applications commence", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
-      { label: "Last date for online applications", date: "2026-09-08", displayDate: "8 Sep 2026", state: "current" },
+      { label: "Last date for online applications", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed" },
     ],
     eligibility: [
       "Selection is carried out under SRO 412 dated 30.12.2009 read with SRO 425 dated 10.10.2017; only 'Migrants' as defined in SRO 412 of 2009 or 'Kashmiri Pandits' as defined in SRO 425 of 2017 are eligible to apply for these posts (clause 01).",
@@ -1813,9 +1862,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 07 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advt_07OF2026_08072026.pdf",
-    sourcePublished: "Notification dated 8 Jul 2026; applications 10 Aug to 8 Sep 2026; instructions for submitting the forms published 7 Aug 2026; advertisement list re-read 29 Aug 2026 with no corrigendum",
-    lastVerified: "29 Aug 2026, 15:47 IST",
+    sourcePublished: "Notification dated 8 Jul 2026; applications 10 Aug to 8 Sep 2026; instructions for submitting the forms published 7 Aug 2026; advertisement list re-read 9 Sep 2026 with no corrigendum",
+    lastVerified: "9 Sep 2026, 12:30 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications have closed: the PM Package window under Notification 07 of 2026 ended on 8 Sep 2026 without an extension, and JKSSB's advertisement listing shows no corrigendum, so the cycle now waits on the OMR written examination date.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -2412,11 +2466,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["10th"],
     status: {
-      label: "Applications reopened until 4 September 2026",
-      tone: "green",
-      nextAction: "Apply on sssb.punjab.gov.in before 4 September 2026; candidates who already applied under 04 of 2026 need not apply again",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch sssb.punjab.gov.in for the written examination date and the admit card for advertisement 04 of 2026",
       detail:
-        "The Board's corrigendum dated 24 August 2026 reopened the online portal for advertisement 04 of 2026 from 25 August to 4 September 2026, with 4 September 2026 as the last date for the fee as well, and set out 1,401 Group-D posts received from Punjab Government departments in Annexure-O (ਅਨੁਲੱਗ-ਓ). The same corrigendum withdrew the condition in paragraph 1(ii) and the note under serial 7(viii) about demand letters receivable up to 30 September 2026.",
+        "The Board's corrigendum dated 24 August 2026 reopened the online portal for advertisement 04 of 2026 from 25 August to 4 September 2026, with 4 September 2026 as the last date for the fee as well, and set out 1,401 Group-D posts received from Punjab Government departments in Annexure-O (ਅਨੁਲੱਗ-ਓ). The same corrigendum withdrew the condition in paragraph 1(ii) and the note under serial 7(viii) about demand letters receivable up to 30 September 2026. The reopened window closed on 4 September 2026 and no examination date has been notified. The Board's website did not respond on 9 September 2026, so nothing published there after 29 August 2026 is reflected here.",
     },
     summary:
       "Punjab Subordinate Services Selection Board's common-cadre Group-D recruitment - Sewadar, Chowkidar, Safai Sewak, attendant and baildar posts across Punjab Government departments - filled from a single objective written examination.",
@@ -2435,7 +2489,7 @@ export const exams: Exam[] = [
       { label: "Online applications and fee closed", date: "2026-03-20", displayDate: "20 Mar 2026", state: "completed" },
       { label: "Corrigendum reopening the application window", date: "2026-08-24", displayDate: "24 Aug 2026", state: "completed" },
       { label: "Online applications reopened", date: "2026-08-25", displayDate: "25 Aug 2026", state: "completed" },
-      { label: "Last date for online applications and fee in the reopened window", date: "2026-09-04", displayDate: "4 Sep 2026", state: "current" },
+      { label: "Last date for online applications and fee in the reopened window", date: "2026-09-04", displayDate: "4 Sep 2026", state: "completed" },
     ],
     eligibility: [
       "The benefit of reservation is available only to residents of Punjab, so the category and category code must be chosen carefully in the online form; neither can be changed at any later stage.",
@@ -2462,9 +2516,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "SSSB Punjab corrigendum dated 24 Aug 2026 and advertisement 04 of 2026 for Group-D common cadre posts",
     sourceUrl: "https://sssb.punjab.gov.in/wp-content/uploads/2026/08/42026New_merged.pdf",
-    sourcePublished: "Advertisement published 24 Feb 2026; corrigendum dated 24 Aug 2026 reopening applications from 25 Aug to 4 Sep 2026 for 1,401 posts",
-    lastVerified: "29 Aug 2026, 15:48 IST",
+    sourcePublished: "Advertisement published 24 Feb 2026; corrigendum dated 24 Aug 2026 reopening applications from 25 Aug to 4 Sep 2026 for 1,401 posts; sssb.punjab.gov.in did not respond on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 12:38 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications have closed: the window reopened by the corrigendum of 24 Aug 2026 ended on 4 Sep 2026, so advertisement 04 of 2026 now waits on a written examination date.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -2575,7 +2634,7 @@ export const exams: Exam[] = [
       label: "Skill test stage active",
       tone: "violet",
       nextAction: "Log in to the JKSSB candidate portal for the Junior Assistant skill-test admit card and schedule",
-      detail: "JKSSB's official site lists an active skill-test admit-card download for Junior Assistant advertisement 08 of 2025. No further-stage date is announced on the pages reviewed for this record.",
+      detail: "JKSSB's official site lists an active skill-test admit-card download for Junior Assistant advertisement 08 of 2025. Its advertisement listing and home page, re-read on 9 September 2026, still show that admit-card link and announce no further-stage date or result for this advertisement.",
     },
     summary: "Recruitment of Junior Assistants across Jammu and Kashmir government offices under JKSSB advertisement 08 of 2025.",
     vacancyLabel: "Not stated on the reviewed notice pages",
@@ -2603,8 +2662,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "JKSSB advertisement listing and Junior Assistant skill-test admit-card notice",
     sourceUrl: "https://jkssb.nic.in/Advertisement.html",
-    sourcePublished: "Advertisement 08 of 2025 dated 27 Sep 2025; skill-test admit-card stage active on the site checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 16:20 IST",
+    sourcePublished: "Advertisement 08 of 2025 dated 27 Sep 2025; skill-test admit-card stage still active on the advertisement listing and home page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 12:34 IST",
     keywords: [
       "JKSSB junior assistant",
       "J&K SSB clerk recruitment",
@@ -2635,10 +2694,10 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["10th", "12th", "Graduate"],
     status: {
-      detail: "Advertisement 16-Exam/2026 confirms registration/fee/online submission opened 3 Aug 2026 and closes 1 Sep 2026, with fee adjustment and application correction allowed until 8 Sep 2026. The Commission's examination calendar dated 3 Aug 2026 proposes the PET itself for October 2026 — the exam is no longer simply 'not announced', though no day has been fixed.",
-      label: "Applications open till 1 Sep 2026",
-      tone: "green",
-      nextAction: "Watch upsssc.gov.in for the exact PET date and the admit-card notice once applications close on 1 Sep 2026.",
+      detail: "Advertisement 16-Exam/2026 confirms registration/fee/online submission opened 3 Aug 2026 and closes 1 Sep 2026, with fee adjustment and application correction allowed until 8 Sep 2026. The Commission's examination calendar dated 3 Aug 2026 proposes the PET itself for October 2026 — the exam is no longer simply 'not announced', though no day has been fixed. Both dates have now passed - applications closed on 1 September 2026 and the fee-adjustment and correction window on 8 September 2026 - and the Commission's notification list, re-read on 9 September 2026, carries nothing further about PET 2026: its latest entries concern main-examination fees for advertisements 15-Exam/2026 and 12-Exam/2026 and the Cartographer result under 11-Exam/2023.",
+      label: "Applications closed; PET date awaited",
+      tone: "amber",
+      nextAction: "Watch upsssc.gov.in for the exact PET date and the admit-card notice.",
     },
     summary:
       "The Commission's common screening test; a valid PET score is the gate to the post-specific Group C main examinations UPSSSC advertises later.",
@@ -2655,8 +2714,8 @@ export const exams: Exam[] = [
       { label: "OTR correction facility notified", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
       { label: "Advertisement 16-Exam/2026 published", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
       { label: "Registration, fee payment and online application open", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
-      { label: "Applications close", date: "2026-09-01", displayDate: "1 Sep 2026", state: "current" },
-      { label: "Fee adjustment and application correction close", date: "2026-09-08", displayDate: "8 Sep 2026", state: "scheduled" },
+      { label: "Applications close", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed" },
+      { label: "Fee adjustment and application correction close", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed" },
       { label: "Preliminary Eligibility Test", sortMonth: "2026-10", displayDate: "Proposed in October 2026", state: "tentative" },
     ],
     eligibility: [
@@ -2689,9 +2748,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSSSC live-advertisement listing for the Preliminary Eligibility Test (PET) 2026",
     sourceUrl: "https://upsssc.gov.in/AllNotifications.aspx",
-    sourcePublished: "Advertisement 16-Exam/2026 published 1 Aug 2026; Commission examination calendar dated 3 Aug 2026; live-advertisement listing re-read 29 Aug 2026 with the 1 Sep and 8 Sep 2026 dates unchanged",
-    lastVerified: "29 Aug 2026, 15:58 IST",
+    sourcePublished: "Advertisement 16-Exam/2026 published 1 Aug 2026; Commission examination calendar dated 3 Aug 2026; notification list re-read 9 Sep 2026 with the 1 Sep and 8 Sep 2026 dates unchanged and no PET date yet",
+    lastVerified: "9 Sep 2026, 12:40 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "PET 2026 applications have closed: the 1 Sep 2026 application deadline and the 8 Sep 2026 fee-adjustment and correction deadline under advertisement 16-Exam/2026 have both passed, and UPSSSC has still not fixed a date for the test beyond the October 2026 proposal in its 3 Aug 2026 calendar.",
+      },
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
@@ -3372,11 +3436,11 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF"],
     education: ["12th"],
     status: {
-      label: "Applications open until 5 September 2026",
-      tone: "green",
-      nextAction: "Apply through the HPPSC One Time Registration portal before 5 September 2026, 11:59 PM",
+      label: "Applications closed; physical test schedule awaited",
+      tone: "amber",
+      nextAction: "Watch the HPPSC website for the Physical Standard Test and Physical Efficiency Test schedule and the admit card",
       detail:
-        "Advertisements 57/7-2026 (Male) and 58/7-2026 (Female). Addendum No.4-06/2024-PSC(R-III) dated 21 August 2026 grants Home Guards of Himachal Pradesh a one-time five-year relaxation in the upper age limit and extends the last date for online recruitment applications by a further 15 days to 5 September 2026, 11:59 PM, after which the link is disabled. Candidates who have already applied need not apply again, and the other terms of both advertisements are unchanged.",
+        "Advertisements 57/7-2026 (Male) and 58/7-2026 (Female). Addendum No.4-06/2024-PSC(R-III) dated 21 August 2026 grants Home Guards of Himachal Pradesh a one-time five-year relaxation in the upper age limit and extends the last date for online recruitment applications by a further 15 days to 5 September 2026, 11:59 PM, after which the link is disabled. Candidates who had already applied did not need to apply again. That extended window closed on 5 September 2026 and the online recruitment application link is disabled; HPPSC's What's New board, re-read on 9 September 2026, carries no further addendum for advertisements 57/7-2026 and 58/7-2026 and no Physical Standard Test or Physical Efficiency Test date.",
     },
     summary:
       "Recruitment of Class-III constables to the Himachal Pradesh Police Department under the HP Police Department (Recruitment of Constables) Rules 2024, advertised and examined by the state Public Service Commission.",
@@ -3404,7 +3468,7 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Moved the last date from 21 Aug 2026 to 5 Sep 2026, 11:59 PM",
       },
-      { label: "Last date for online recruitment applications", date: "2026-09-05", displayDate: "5 Sep 2026, 11:59 PM", state: "current" },
+      { label: "Last date for online recruitment applications", date: "2026-09-05", displayDate: "5 Sep 2026, 11:59 PM", state: "completed" },
       { label: "Physical Standard Test and Physical Efficiency Test", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [
@@ -3446,9 +3510,14 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "HPPSC advertisements 57/7-2026 and 58/7-2026 for Constables in the HP Police Department",
     sourceUrl: "https://hppsc.hp.gov.in/CommonControls/ViewCMSFile?qs=KI3gZ53zz1wSGo29lXLTBfw1DHezN8KfEg%2BrikZhi%2FLLqiZME0%2BQReThfPJPy%2BjgrmLJ%2B48MSfenisMCQ3fHXMZ0%2BajrVuV3AylOo9mGWYM%3D",
-    sourcePublished: "Advertisements dated 10 Jul 2026; addenda dated 3 Aug and 6 Aug 2026; addendum No.4-06/2024-PSC(R-III) dated 21 Aug 2026 extending applications to 5 Sep 2026",
-    lastVerified: "29 Aug 2026, 16:12 IST",
+    sourcePublished: "Advertisements dated 10 Jul 2026; addenda dated 3 Aug and 6 Aug 2026; addendum No.4-06/2024-PSC(R-III) dated 21 Aug 2026 extending applications to 5 Sep 2026; What's New board re-read 9 Sep 2026 with no later addendum",
+    lastVerified: "9 Sep 2026, 12:20 IST",
     changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications have closed: the window extended by the addendum of 21 Aug 2026 ended on 5 Sep 2026, 11:59 PM and no later addendum appears on HPPSC's What's New board, so the next step is the Physical Standard Test and Physical Efficiency Test, whose date is not announced.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",

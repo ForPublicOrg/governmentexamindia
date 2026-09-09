@@ -804,10 +804,10 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply by 31 Aug 2026",
-      detail: "Mizoram PSC's 2026-27 advertisement table lists the live deadline.",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch the Commission's admit-card notifications for the written examination date",
+      detail: "Applications closed on 31 Aug 2026. The Commission's 2026-27 advertisement table, re-read on 9 Sep 2026, still shows 31.08.2026 as the last date of submission with no extension or corrigendum. Its latest admit-card notification, No. 5 of 2026-2027 dated 2 Sep 2026, covers Advertisements 8, 9 and 11 of 2026-27 only, so no examination date has been published for Advertisement 21.",
     },
     summary: "State recruitment for Soil Conservation Ranger under the Government of Mizoram.",
     vacancyLabel: "See Advertisement 21",
@@ -818,7 +818,8 @@ export const exams: Exam[] = [
     pay: "Mizoram pay level stated in the advertisement.",
     timeline: [
       { label: "Advertisement", date: "2026-07-28", displayDate: "28 Jul 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed" },
+      { label: "Written examination", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "Degree in Forestry or Agriculture or Agriculture Engineering or Horticulture or Science from a recognized University; the selected candidate shall successfully complete Forest Ranger Training from a recognized Institution within the probation period.",
@@ -847,8 +848,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Mizoram PSC Advertisement 21 of 2026-27 - Soil Conservation Ranger",
     sourceUrl: "https://mpsc.mizoram.gov.in/page/advertisement-2026-2027",
-    sourcePublished: "28 Jul 2026; closes 31 Aug 2026, re-confirmed on the Commission's 2026-27 advertisement table on 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:30 IST",
+    sourcePublished: "28 Jul 2026; closed 31 Aug 2026, re-read on the Commission's 2026-27 advertisement table on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:35 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications closed on 31 Aug 2026 with no extension on the Commission's advertisement table, so the record moves from 'applications open' to 'applications closed; examination date awaited' and the deadline is marked completed.",
+      },
+    ],
     keywords: [
       "Mizoram ranger recruitment",
       "MPSC Mizoram soil conservation",
@@ -878,7 +886,7 @@ export const exams: Exam[] = [
       label: "Applications closed; examination date awaited",
       tone: "amber",
       nextAction: "Watch the Mizoram PSC advertisement table for the examination schedule",
-      detail: "The current Mizoram PSC advertisement table lists the application deadline.",
+      detail: "Applications closed on 28 Aug 2026. The Commission's 2026-27 advertisement table, re-read on 9 Sep 2026, still shows 28.08.2026 as the last date of submission for Advertisement No. 20 of 2026-27. Its latest admit-card notification, No. 5 of 2026-2027 dated 2 Sep 2026, covers Advertisements 8, 9 and 11 only, so no examination date has been published for this post.",
     },
     summary: "Mizoram recruitment for Assistant Sub-Inspector of Excise under the Excise and Narcotics Department.",
     vacancyLabel: "See Advertisement 20",
@@ -915,8 +923,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Mizoram PSC Advertisement 20 of 2026-27 - Assistant Sub-Inspector of Excise",
     sourceUrl: "https://mpsc.mizoram.gov.in/page/advertisement-2026-2027",
-    sourcePublished: "24 Jul 2026; closes 28 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "24 Jul 2026; closed 28 Aug 2026, re-read on the Commission's 2026-27 advertisement table on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:40 IST",
     keywords: [
       "Mizoram excise ASI",
       "MPSC Mizoram excise",
@@ -1609,10 +1617,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th"],
     verification: "verified",
     status: {
-      label: "Medical Fitness Test stage",
-      tone: "violet",
-      nextAction: "Shortlisted candidates should follow APSSB's Medical Fitness Test notice for the extended date",
-      detail: "APSSB advertised the drive on 13 Mar 2026 with applications closing on 10 Apr 2026. On 14 Aug 2026 the Board issued a notice on the extended date for the Medical Fitness Test - Stage III of the scheme - so the written examination and Stage-II physical and trade tests are behind this cycle. The notice is a scanned image, so the extended date itself is not restated here.",
+      label: "Final result declared; cycle complete",
+      tone: "slate",
+      nextAction: "Check the final result notice of 5 Sep 2026 and follow APSSB for appointment formalities",
+      detail: "APSSB advertised the drive on 13 Mar 2026 with applications closing on 10 Apr 2026, and issued the Medical Fitness Test extended-date notice on 14 Aug 2026. The Board then published a notice on the final result vide no. APSSB-13/6/2026/1342 dated 1 Sep 2026 and the final result notice dated 5 Sep 2026, so every stage of this drive is complete. Board home page and notice list re-read on 9 Sep 2026.",
     },
     summary: "Arunachal Pradesh's combined uniformed-services recruitment drive covering Constable (Civil Police, IRBn Band/Bugler), Fireman and Special Tiger Guard posts.",
     vacancyLabel: "See the Special Recruitment Drive advertisement",
@@ -1624,8 +1632,9 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement", date: "2026-03-13", displayDate: "13 Mar 2026", state: "completed" },
       { label: "Application deadline", date: "2026-04-10", displayDate: "10 Apr 2026", state: "completed" },
-      { label: "Medical Fitness Test - extended date notice", date: "2026-08-14", displayDate: "14 Aug 2026", state: "current" },
-      { label: "Final selection", displayDate: "Awaited", state: "tentative" },
+      { label: "Medical Fitness Test - extended date notice", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
+      { label: "Notice on final result (APSSB-13/6/2026/1342)", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed" },
+      { label: "Final result notice", date: "2026-09-05", displayDate: "5 Sep 2026", state: "completed" },
     ],
     eligibility: [
       "The candidate must be a citizen of India; the educational qualification, age and experience stipulated in the advertisement are determined as on the closing date of submission of application, 10.04.2026.",
@@ -1647,19 +1656,26 @@ export const exams: Exam[] = [
       "Stage-II (PST, PET and Trade Test) and Stage-III (Medical Fitness Test) are qualifying in nature only; the final merit is prepared on the basis of merit-cum-preference in the objective type written examination only. Ex-Servicemen are exempted from the PET and Trade Test but must qualify the PST.",
     ],
     officialLinks: [
+      { label: "Final result notice (5 Sep 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/FINAL_RESULT_NOTICE_DATED_05092026__SPECIAL_RECTT_DRIVE_FOR_UNIFORMED_SERVICES_COMBINED_EXAM_2026_20260905_120749.pdf", type: "result" },
+      { label: "Notice on final result issued vide no. APSSB-13/6/2026/1342 (1 Sep 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/NOTICE_regarding_Final_Result_Notice_issued_vide_noAPSSB13620261342_Dtd_01092026_Special_Recruitment_Drive_for_Uniformed_Services_Combined_Examination__2026_20260901_181229.pdf", type: "notice" },
       { label: "Medical Fitness Test extended-date notice (14 Aug 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/Color0014_20260814_131022.pdf", type: "notice" },
       { label: "Special Recruitment Drive advertisement", url: "https://apssb.nic.in/upload/files/RECINS001/SPECIAL_RECTT_DRIVE_UNIFORMED_SERVICES_2026_20260313_105904_1_20260313_155530.pdf", type: "notice" },
       { label: "APSSB home", url: "https://apssb.nic.in/", type: "website" },
     ],
-    sourceTitle: "Notice regarding extended date for Medical Fitness Test of Uniformed Special Recruitment Drive Examination - 2026",
-    sourceUrl: "https://apssb.nic.in/upload/files/RECINS001/Color0014_20260814_131022.pdf",
-    sourcePublished: "14 Aug 2026; advertisement dated 13 Mar 2026",
-    lastVerified: "29 Aug 2026, 16:50 IST",
+    sourceTitle: "Final result notice dated 05.09.2026 - Special Recruitment Drive for Uniformed Services Combined Examination 2026",
+    sourceUrl: "https://apssb.nic.in/upload/files/RECINS001/FINAL_RESULT_NOTICE_DATED_05092026__SPECIAL_RECTT_DRIVE_FOR_UNIFORMED_SERVICES_COMBINED_EXAM_2026_20260905_120749.pdf",
+    sourcePublished: "Final result notice of 5 Sep 2026; APSSB notice list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:25 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "APSSB's 14 Aug 2026 notice on the extended Medical Fitness Test date shows this drive has reached Stage III, so the record moves from 'notification issued' to the Medical Fitness Test stage and the 10 Apr 2026 application deadline is marked completed.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "APSSB published the final result notice on 5 Sep 2026, after its 1 Sep 2026 notice on the final result issued vide no. APSSB-13/6/2026/1342. The cycle is complete, so the record moves from the Medical Fitness Test stage to closed.",
       },
     ],
     keywords: [
@@ -3476,10 +3492,10 @@ export const exams: Exam[] = [
     vacancyLabel: "10 posts",
     vacancyNote: "Ten Assistant Sub-Inspector (Ministerial) posts in the Home Department, Group 'B' (Non-Gazetted).",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply on the MPSC online portal by 7 Sep 2026, 4:00 PM",
-      detail: "Mizoram PSC advertised the post on 6 Aug 2026 under Advertisement No. 22 of 2026-27; applications close on 7 Sep 2026 at 4:00 PM.",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch the Commission's admit-card notifications for the written examination date",
+      detail: "Mizoram PSC advertised the post on 6 Aug 2026 under Advertisement No. 22 of 2026-27 and applications closed on 7 Sep 2026 at 4:00 PM. The Commission's 2026-27 advertisement table, re-read on 9 Sep 2026, still shows 07.09.2026 as the last date of submission with no extension. Admit Card Download Notification No. 5 of 2026-2027 dated 2 Sep 2026 covers Advertisements 8, 9 and 11 only, so no examination date is published for Advertisement 22.",
     },
     summary: "Entry-grade clerical cadre of the Mizoram Police - receipt and despatch, typing, computer operation, records and initial correspondence.",
     age: "A candidate must not be less than 18 years and not more than 35 years of age on 1st August, 2026; the upper age limit is relaxable up to 5 years in case of ST/SC candidates or as may be notified by the Government from time to time.",
@@ -3488,7 +3504,8 @@ export const exams: Exam[] = [
     pay: "Level-6 in the Pay Matrix.",
     timeline: [
       { label: "Advertisement", date: "2026-08-06", displayDate: "6 Aug 2026", state: "completed" },
-      { label: "Application deadline", date: "2026-09-07", displayDate: "7 Sep 2026, 4:00 PM", state: "current" },
+      { label: "Application deadline", date: "2026-09-07", displayDate: "7 Sep 2026, 4:00 PM", state: "completed" },
+      { label: "Written examination", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "Bachelor's degree from a recognized University.",
@@ -3512,13 +3529,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Mizoram PSC Advertisement No. 22 of 2026-2027 - Assistant Sub-Inspector (Ministerial), Home Department",
     sourceUrl: "https://mpsc.mizoram.gov.in/uploads/attachments/2026/08/03ea5378e5c08e5012edace70204e62b/advertisement-no22-of-2026-27-assistant-sub-inspectorm-of-police.pdf",
-    sourcePublished: "6 Aug 2026; closes 7 Sep 2026",
-    lastVerified: "29 Aug 2026, 17:25 IST",
+    sourcePublished: "6 Aug 2026; closed 7 Sep 2026, re-read on the Commission's 2026-27 advertisement table on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:38 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Added from Mizoram PSC Advertisement No. 22 of 2026-2027 dated 6 Aug 2026, which opened applications for 10 Assistant Sub-Inspector (Ministerial) posts until 7 Sep 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications closed on 7 Sep 2026 with no extension on the Commission's advertisement table, so the record moves from 'applications open' to 'applications closed; examination date awaited'.",
       },
     ],
     keywords: [
@@ -3559,7 +3581,7 @@ export const exams: Exam[] = [
       label: "Applications open",
       tone: "green",
       nextAction: "Apply on the MPSC online portal by 16 Sep 2026, 4:00 PM",
-      detail: "Mizoram PSC advertised these Group 'A' (Gazetted) specialist posts on 19 Aug 2026 under Advertisement No. 23 of 2026-27; applications close on 16 Sep 2026 at 4:00 PM.",
+      detail: "Mizoram PSC advertised these Group 'A' (Gazetted) specialist posts on 19 Aug 2026 under Advertisement No. 23 of 2026-27; applications close on 16 Sep 2026 at 4:00 PM. The Commission's 2026-27 advertisement table, re-read on 9 Sep 2026, still shows 16.09.2026 as the last date of submission with no extension or corrigendum.",
     },
     summary: "Direct recruitment to the Senior Grade of the Mizoram Health Service (Specialist Sub-Cadre) in anaesthesiology, microbiology, orthopaedics and pathology.",
     age: "A candidate must not be less than 21 years and not more than 40 years of age on 1st August, 2026; the upper age limit is relaxable up to 5 years in case of ST/SC candidates or as may be notified by the Government from time to time.",
@@ -3592,8 +3614,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Mizoram PSC Advertisement No. 23 of 2026-2027 - Senior Grade of MHS (Specialist Sub-Cadre)",
     sourceUrl: "https://mpsc.mizoram.gov.in/uploads/attachments/2026/08/19e7bf6246ac0bee06a719286493446c/advertisement-no23-of-2026-27-sr-grade-of-mhsspecialist-sub-cadre.pdf",
-    sourcePublished: "19 Aug 2026; closes 16 Sep 2026",
-    lastVerified: "29 Aug 2026, 17:30 IST",
+    sourcePublished: "19 Aug 2026; closes 16 Sep 2026, re-read on the Commission's 2026-27 advertisement table on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:42 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -3638,7 +3660,7 @@ export const exams: Exam[] = [
       label: "Applications open",
       tone: "green",
       nextAction: "Apply on the MPSC online portal by 21 Sep 2026, 4:00 PM and record a post preference",
-      detail: "Mizoram PSC advertised both posts on 20 Aug 2026 under Advertisement No. 24 of 2026-27; applications close on 21 Sep 2026 at 4:00 PM and a post preference must be recorded in the application.",
+      detail: "Mizoram PSC advertised both posts on 20 Aug 2026 under Advertisement No. 24 of 2026-27; applications close on 21 Sep 2026 at 4:00 PM and a post preference must be recorded in the application. The Commission's 2026-27 advertisement table, re-read on 9 Sep 2026, still shows 21.09.2026 as the last date of submission with no extension or corrigendum.",
     },
     summary: "Combined Group 'B' recruitment for Junior Accounts Officer in Mizoram's Transport Department and Warden in the Social Welfare, Women & Child Development Department.",
     age: "A candidate must not be less than 18 years and not more than 35 years of age on 1st August, 2026; the upper age limit is relaxable up to 5 years in case of ST/SC candidates or as may be notified by the Government from time to time, and an Aadhaar Card is not accepted as proof of date of birth.",
@@ -3671,8 +3693,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Mizoram PSC Advertisement No. 24 of 2026-2027 - Junior Accounts Officer (Transport) and Warden (Social Welfare)",
     sourceUrl: "https://mpsc.mizoram.gov.in/uploads/attachments/2026/08/28e7415cae820c2fe662456ad4c6e18d/advertisement-no24-of-2026-27-jaotransport-wardensocial-welfare.pdf",
-    sourcePublished: "20 Aug 2026; closes 21 Sep 2026",
-    lastVerified: "29 Aug 2026, 17:35 IST",
+    sourcePublished: "20 Aug 2026; closes 21 Sep 2026, re-read on the Commission's 2026-27 advertisement table on 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:43 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -3706,10 +3728,10 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "Admit cards issued; examination stage",
-      tone: "blue",
-      nextAction: "Download the admit card from the APSSB portal and follow the Board's press releases",
-      detail: "APSSB opened admit-card download for the Combined Graduate Level Examination 2026 on 4 Aug 2026, issued a corrigendum the same day withdrawing 5 JICS/JACS vacancies under the Registrar of Cooperative Societies, and put out a press release on 28 Aug 2026. The advertisement and these notices are scanned images, so no vacancy total, age band or examination date is asserted here.",
+      label: "Provisional result declared; document verification stage",
+      tone: "violet",
+      nextAction: "Shortlisted candidates should read the batch-wise document verification schedule of 7 Sep 2026",
+      detail: "APSSB opened admit-card download on 4 Aug 2026, issued a corrigendum the same day withdrawing 5 JICS/JACS vacancies under the Registrar of Cooperative Societies, and put out a press release on 28 Aug 2026. Since then the Board issued an answer-key challenge notice on 3 Sep 2026, the provisional result notice for shortlisted candidates on 5 Sep 2026, and a batch-wise schedule for verification of documents on 7 Sep 2026. Those PDFs time out on download, so no verification date or shortlist count is asserted here; titles and dates are taken from the Board's own notice list, read on 9 Sep 2026.",
     },
     summary: "Arunachal Pradesh Staff Selection Board's combined recruitment examination for graduate-level state posts.",
     vacancyLabel: "See the CGLE 2026 advertisement",
@@ -3721,7 +3743,10 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Admit card download notice", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
       { label: "Corrigendum withdrawing 5 JICS/JACS vacancies", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
-      { label: "Press release", date: "2026-08-28", displayDate: "28 Aug 2026", state: "current" },
+      { label: "Press release", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
+      { label: "Answer key challenge notice", date: "2026-09-03", displayDate: "3 Sep 2026", state: "completed" },
+      { label: "Provisional result of shortlisted candidates", date: "2026-09-05", displayDate: "5 Sep 2026", state: "completed" },
+      { label: "Batch-wise document verification schedule", date: "2026-09-07", displayDate: "7 Sep 2026", state: "current" },
     ],
     eligibility: [
       "APSSB advertises the post-wise qualification, age band and cut-off date inside the Combined Graduate Level Examination 2026 advertisement; that PDF could not be read for this entry, so no condition is asserted here.",
@@ -3739,17 +3764,25 @@ export const exams: Exam[] = [
       { label: "Admit card download notice (4 Aug 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/Admit_Card_Notice_20260804_111348.pdf", type: "notice" },
       { label: "Corrigendum on JICS/JACS vacancies (4 Aug 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/BP50C36_20260804_134329_20260804_114844.pdf", type: "notice" },
       { label: "Press release (28 Aug 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/BP50C36_20260828_120849_20260828_095303.pdf", type: "notice" },
+      { label: "Answer key challenge notice for CGLE-2026 (3 Sep 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/BP50C45_20260903_160233_20260903_133232.pdf", type: "notice" },
+      { label: "Provisional result notice for shortlisted candidates (5 Sep 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/Provisional_Result_Notice_for_shortlisted_candidates_of_Combined_Graduate_Level__Examination__2026_20260905_121737.pdf", type: "result" },
+      { label: "Batch-wise document verification schedule (7 Sep 2026)", url: "https://apssb.nic.in/upload/files/RECINS001/Documents_Verification_Notice__CGLE2026_20260907_145510.pdf", type: "notice" },
       { label: "APSSB home", url: "https://apssb.nic.in/", type: "website" },
     ],
     sourceTitle: "Arunachal Pradesh Staff Selection Board - Combined Graduate Level Examination 2026 notices",
     sourceUrl: "https://apssb.nic.in/",
-    sourcePublished: "Advertisement listed on the Board's site; admit-card notice and corrigendum 4 Aug 2026 and press release 28 Aug 2026",
-    lastVerified: "29 Aug 2026, 17:40 IST",
+    sourcePublished: "Answer-key challenge notice 3 Sep 2026, provisional result 5 Sep 2026 and document verification schedule 7 Sep 2026; Board notice list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:28 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Added after APSSB's notice board showed the Combined Graduate Level Examination 2026 at the admit-card stage, with a corrigendum of 4 Aug 2026 withdrawing 5 JICS/JACS vacancies and a press release on 28 Aug 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "APSSB published the provisional result for shortlisted candidates on 5 Sep 2026 and a batch-wise document verification schedule on 7 Sep 2026, so the record moves from the admit-card stage to the result and verification stage.",
       },
     ],
     keywords: [
@@ -3759,7 +3792,7 @@ export const exams: Exam[] = [
       "Arunachal graduate level government job",
     ],
   }),
-  listedExam({
+  exam({
     slug: "apssb-combined-higher-secondary-level-2026",
     title: "APSSB Combined Higher Secondary Level Examination 2026",
     shortTitle: "APSSB CHSL 2026",
@@ -3775,15 +3808,26 @@ export const exams: Exam[] = [
     sector: "State higher-secondary-level posts",
     examTypes: ["Civil Services & Administration", "Technical & Trades"],
     education: ["12th"],
+    verification: "verified",
     status: {
-      label: "Admit cards issued; examination stage",
-      tone: "blue",
-      nextAction: "Download the admit card from the APSSB portal and watch the Board for the examination notice",
-      detail: "APSSB issued the admit-card download notice for the Combined Higher Secondary Level Examination 2026 on 21 Aug 2026. The advertisement and the notice are scanned images, so no vacancy total, age band or examination date is asserted here.",
+      label: "Admit cards issued; next stage awaited",
+      tone: "violet",
+      nextAction: "Watch the APSSB notice board for the answer key, press release or result for CHSLE 2026",
+      detail: "APSSB issued the admit-card download notice for the Combined Higher Secondary Level Examination 2026 on 21 Aug 2026. The Board's notice list re-read on 9 Sep 2026 carries nothing newer for this examination - every notice published since then concerns the Combined Graduate Level Examination 2026 and the Uniformed Services drive - so no answer key, press release or result has appeared. The advertisement and the notice are scanned images, so no vacancy total, age band or examination date is asserted here.",
     },
     summary: "Arunachal Pradesh Staff Selection Board's combined recruitment examination for higher-secondary-level state posts.",
+    vacancyLabel: "See the CHSLE 2026 advertisement",
+    vacancyNote: "The advertisement carries the post-wise vacancies; it is a scanned image, so no total is inferred here.",
+    age: "See the CHSLE 2026 advertisement; an age-limit clarification for Post Codes 16/26, 17/26, 20/26, 22/26 and 23/26 is published separately by the Board.",
+    qualification: "Higher-secondary-level qualification post by post, as prescribed in the CHSLE 2026 advertisement.",
+    fee: "See the CHSLE 2026 advertisement",
+    pay: "Post-specific Arunachal Pradesh pay levels as notified in the advertisement.",
+    syllabus: [
+      "Use the scheme and syllabus printed in the CHSLE 2026 advertisement; no paper or mark break-up is restated here.",
+    ],
     timeline: [
-      { label: "Admit card download notice", date: "2026-08-21", displayDate: "21 Aug 2026", state: "current" },
+      { label: "Admit card download notice", date: "2026-08-21", displayDate: "21 Aug 2026", state: "completed" },
+      { label: "Answer key / result", displayDate: "Awaited", state: "tentative" },
     ],
     eligibility: [
       "APSSB advertises the post-wise qualification, age band and cut-off date inside the Combined Higher Secondary Level Examination 2026 advertisement; that PDF could not be read for this entry, so no condition is asserted here.",
@@ -3800,13 +3844,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Arunachal Pradesh Staff Selection Board - Notice for downloading of Admit Cards for Combined Higher Secondary Level Examination - 2026",
     sourceUrl: "https://apssb.nic.in/upload/files/RECINS001/DocScanner_21Aug2026_1627_20260821_163241.pdf",
-    sourcePublished: "21 Aug 2026",
-    lastVerified: "29 Aug 2026, 17:45 IST",
+    sourcePublished: "Admit-card notice of 21 Aug 2026; APSSB notice list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:30 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Added after APSSB issued the admit-card download notice for the Combined Higher Secondary Level Examination 2026 on 21 Aug 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The 21 Aug 2026 admit-card notice is marked completed and the record moves to the result-awaited stage; APSSB's notice list published nothing further for CHSLE 2026 between 21 Aug and 9 Sep 2026.",
       },
     ],
     keywords: [

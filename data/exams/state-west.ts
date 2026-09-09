@@ -228,7 +228,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "If your subject list is out, file the online detailed application form inside its window",
       detail:
-        "RPSC is releasing this cycle subject by subject: it publishes a provisional list for eligibility checking and then opens an online detailed application form for the candidates on it. Its press note of 27 Aug 2026 gives the candidates of seven subjects who missed their own window a final chance to file the form between 28 Aug and 1 Sep 2026, and says no further chance will be given.",
+        "RPSC is releasing this cycle subject by subject: it publishes a provisional list for eligibility checking and then opens an online detailed application form for the candidates on it. The final chance its press note of 27 Aug 2026 gave the candidates of seven subjects closed on 1 Sep 2026, and that note said no further chance would be given. RPSC's own news list, re-read on 9 Sep 2026, carries further press notes opening detailed application form windows for more subjects that run into September 2026, so read the press note for your own subject; no consolidated result or scrutiny schedule for the cycle is published.",
     },
     summary: "Rajasthan recruitment for School Lecturer posts across 27 subjects in the School Education Department.",
     vacancies: 3225,
@@ -254,6 +254,12 @@ export const exams: Exam[] = [
         label: "Online detailed application form — final chance for seven subjects",
         date: "2026-08-28",
         displayDate: "28 Aug – 1 Sep 2026, 11:59 PM",
+        state: "completed",
+      },
+      {
+        label: "Subject-wise online detailed application form windows for further subjects",
+        sortMonth: "2026-09",
+        displayDate: "September 2026, subject by subject",
         state: "current",
       },
       { label: "Remaining subject-wise results and eligibility scrutiny", displayDate: "Subject-wise · awaited", state: "tentative" },
@@ -289,17 +295,23 @@ export const exams: Exam[] = [
         url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/FF75B4E6-79F4-4DB1-A1A9-396843C10543.pdf",
         type: "notice",
       },
+      { label: "RPSC latest news and press notes", url: "https://rpsc.rajasthan.gov.in/", type: "website" },
     ],
     sourceTitle: "RPSC School Lecturer 2025 advertisement, subject-wise lists and the press note of 27 Aug 2026",
     sourceUrl: "https://rpsc.rajasthan.gov.in/advertisements?Pie=343",
     sourcePublished:
-      "Advertisement 17 Jul 2025; subject-wise lists for eligibility checking issued from 7 Aug 2026; press note on the online detailed application form dated 27 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:20 IST",
+      "Advertisement 17 Jul 2025; subject-wise lists for eligibility checking issued from 7 Aug 2026; press note on the online detailed application form dated 27 Aug 2026; RPSC news and press-note list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:05 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The cycle has moved past the written exams: RPSC has been issuing subject-wise lists for eligibility checking since 7 Aug 2026 and calling those candidates to file an online detailed application form. Its press note of 27 Aug 2026 gives candidates of Hindi, English, Commerce, History, Chemistry, Physical Education and Coach (Volleyball) who missed their window a final chance from 28 Aug to 1 Sep 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The final-chance window for the seven subjects named in the press note of 27 Aug 2026 closed on 1 Sep 2026. RPSC's news list, re-read on 9 Sep 2026, shows it has gone on opening subject-wise online detailed application form windows into September 2026.",
       },
     ],
   }),
@@ -321,11 +333,11 @@ export const exams: Exam[] = [
     examTypes: ["Specialist & Professional"],
     education: ["Postgraduate", "Professional degree"],
     status: {
-      label: "Admit card out; exam on 30 Aug 2026",
-      tone: "blue",
-      nextAction: "Download the admit card and reach the centre well before the 60-minute entry cut-off",
+      label: "Exam held; model answer key published",
+      tone: "violet",
+      nextAction: "Check the model answer key and file any objection inside the window RPSC's press note allows",
       detail:
-        "RPSC's press note of 21 Aug 2026 confirms the examination on 30 Aug 2026 from 11:00 AM to 1:30 PM, with 10 minutes extra to fill the fifth option on the OMR sheet. Allotted exam-district information opened on the SSO portal on 23 Aug 2026 and admit cards were uploaded on 27 Aug 2026. No candidate is admitted to a centre later than 60 minutes before the exam begins.",
+        "The examination was held on 30 Aug 2026 from 11:00 AM to 1:30 PM as fixed by RPSC's press note of 21 Aug 2026, after exam-district information opened on the SSO portal on 23 Aug 2026 and admit cards were uploaded on 27 Aug 2026. On the day of the examination RPSC published the model answer key for the Statistical Officer (Statistics Department) Competitive Examination 2025 together with a press note on filing online objections to it. Its news list, re-read on 9 Sep 2026, publishes no result for the examination yet.",
     },
     summary: "Rajasthan recruitment examination for Statistical Officer posts in the Statistics Department.",
     vacancyLabel: "See advertisement 11/2025–26",
@@ -339,7 +351,14 @@ export const exams: Exam[] = [
       { label: "Advertisement", date: "2025-10-14", displayDate: "14 Oct 2025", state: "completed" },
       { label: "Exam-district information on the SSO portal", date: "2026-08-23", displayDate: "23 Aug 2026", state: "completed" },
       { label: "Admit card", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
-      { label: "Exam", date: "2026-08-30", displayDate: "30 Aug 2026, 11:00 AM – 1:30 PM", state: "scheduled" },
+      { label: "Exam", date: "2026-08-30", displayDate: "30 Aug 2026, 11:00 AM – 1:30 PM", state: "completed" },
+      {
+        label: "Model answer key and press note on online objections",
+        date: "2026-08-30",
+        displayDate: "30 Aug 2026",
+        state: "completed",
+      },
+      { label: "Result", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "Use the exact subject combinations and experience clauses in advertisement 11/2025–26.",
@@ -375,16 +394,23 @@ export const exams: Exam[] = [
         url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/BC0C0054-874B-4843-B8A6-769FF4A6FF4E.pdf",
         type: "notice",
       },
+      { label: "RPSC latest news and press notes", url: "https://rpsc.rajasthan.gov.in/", type: "website" },
     ],
     sourceTitle: "RPSC recruitment advertisement list, the consolidated 2026 calendar and the press note of 21 Aug 2026",
     sourceUrl: "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
-    sourcePublished: "Calendar released 26 Dec 2025; exam-district and admit-card press note dated 21 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:22 IST",
+    sourcePublished:
+      "Calendar released 26 Dec 2025; exam-district and admit-card press note dated 21 Aug 2026; model answer key and objection press note published 30 Aug 2026; RPSC news list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:05 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "RPSC's press note of 21 Aug 2026 confirmed the 30 Aug 2026 examination and added its timing (11:00 AM to 1:30 PM with 10 extra minutes for the fifth OMR option), the exam-district information opening on the SSO portal on 23 Aug 2026 and the admit card upload on 27 Aug 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The examination has been held. RPSC published the model answer key for the Statistical Officer Competitive Examination 2025 and a press note on filing online objections to it on 30 Aug 2026, so the record now sits at the result-awaited stage rather than showing an upcoming exam.",
       },
     ],
   }),
@@ -730,7 +756,7 @@ export const exams: Exam[] = [
     sourcePublished: "Revised scheme 20 May 2026; advertisement 25 Jun 2026; corrigenda 16, 22 and 27 Jul 2026; pattern announcement 1 Aug 2026",
     lastVerified: "4 Aug 2026, 19:15 IST",
   }),
-  listedExam({
+  exam({
     slug: "goa-psc-junior-scale-officer-2025",
     title: "Goa Civil Service Junior Scale Officer Recruitment 2025",
     shortTitle: "Goa Civil Service JSO",
@@ -744,23 +770,51 @@ export const exams: Exam[] = [
     cycle: "2025-26",
     year: 2025,
     notificationNumber: "09/2025",
+    verification: "verified",
     sector: "State civil services",
     examTypes: ["Civil Services & Administration"],
     education: ["Graduate"],
+    vacancyLabel: "See advertisement 09/2025",
+    vacancyNote: "Goa PSC publishes the post count inside advertisement 09/2025; no figure is asserted here.",
+    age: "As prescribed in Goa PSC advertisement 09/2025.",
+    qualification: "See Goa PSC advertisement 09/2025; no current-cycle qualification is asserted here.",
+    fee: "See Goa PSC advertisement 09/2025",
+    pay: "See Goa PSC advertisement 09/2025",
     status: {
-      label: "CBRT material published",
+      label: "Repeat pre-screening test held; provisional result out",
       tone: "violet",
-      nextAction: "Follow the Goa PSC advertisement and test-notice pages",
-      detail: "Goa PSC's official site published the Computer Based Recruitment Test syllabus for Junior Scale Officer of Goa Civil Service under advertisement 09/2025.",
+      nextAction: "Check the provisional result and mark statement for the 6 Sep 2026 repeat pre-screening test on the Commission's results page",
+      detail:
+        "Goa PSC held the pre-screening test for advertisement 09/2025 on 13 and 14 June 2026 and published its provisional mark statement together with two provisional lists — the candidates shortlisted for the screening test, and those shortlisted for a repeat pre-screening test. Its notice for the post said the new date for the repeat pre-screening test would be intimated by email once the final result of the pre-screening test was declared. The Commission then listed the post in its CBRT notice for 5 and 6 September 2026 and held the repeat test on 6 September 2026; its results page, read on 9 Sep 2026, carries the provisional result and the provisional mark statement for that test.",
     },
     summary: "Recruitment to Junior Scale Officer posts in the Goa Civil Service through the state Public Service Commission.",
+    timeline: [
+      { label: "Advertisement No. 9 of Year 2025", date: "2025-09-05", displayDate: "5 Sep 2025", state: "completed" },
+      { label: "CBRT syllabus published", date: "2026-05-13", displayDate: "13 May 2026", state: "completed" },
+      {
+        label: "Pre-screening test",
+        date: "2026-06-13",
+        displayDate: "13–14 Jun 2026",
+        state: "completed",
+        note: "Provisional mark statement and the provisional lists of candidates shortlisted for the screening test and for a repeat pre-screening test followed on the Commission's results page",
+      },
+      {
+        label: "Repeat pre-screening test",
+        date: "2026-09-06",
+        displayDate: "6 Sep 2026",
+        state: "completed",
+        note: "Held under the Commission's CBRT notice for 5 and 6 September 2026; provisional result and provisional mark statement published on its results page",
+      },
+      { label: "Screening test", displayDate: "Date not announced", state: "current" },
+    ],
     eligibility: [
       "Confirm education, age, nationality, domicile and category rules in Goa PSC's advertisement 09/2025.",
       "The pre-screening test is only a filter: Goa PSC's official CBRT syllabus for this advertisement sets category-wise qualifying marks of 65% for Unreserved and EWS, 60% for OBC, PwD and CFF, and 55% for SC and ST.",
     ],
     selectionStages: [
-      "Pre-screening Computer Based Recruitment Test (CBRT) — 60 marks in 75 minutes, per the syllabus Goa PSC uploaded on 13 May 2026 for advertisement 09/2025",
-      "Later stages as prescribed by Goa PSC for advertisement 09/2025",
+      "Pre-screening Computer Based Recruitment Test (CBRT) — 60 marks in 75 minutes, per the syllabus Goa PSC uploaded on 13 May 2026 for advertisement 09/2025; held on 13 and 14 Jun 2026",
+      "Repeat pre-screening test for the candidates the Commission shortlisted for it from the June test — held on 6 Sep 2026, with the provisional result and provisional mark statement published on the Commission's results page",
+      "Screening test for the candidates shortlisted from the pre-screening tests, and the later stages as prescribed by Goa PSC for advertisement 09/2025",
     ],
     syllabus: [
       "General intelligence, reasoning and numerical aptitude — 50 marks, covering number and letter series, analogies, verbal reasoning, statement-and-assumption, coding-decoding, seating and family-tree arrangements, Venn diagrams, ages, time and distance (official CBRT syllabus for advertisement 09/2025)",
@@ -775,13 +829,47 @@ export const exams: Exam[] = [
       "Goa PSC exam",
     ],
     officialLinks: [
+      {
+        label: "Provisional result — repeat pre-screening test of 6 Sep 2026",
+        url: "https://gpsc.goa.gov.in/wp-content/uploads/2026/09/7_REPEATPRESCREEN_PROVRES_GPSC0.pdf",
+        type: "result",
+      },
+      {
+        label: "Provisional mark statement — repeat pre-screening test of 6 Sep 2026",
+        url: "https://gpsc.goa.gov.in/wp-content/uploads/2026/09/7_REPEATPRESCREEN_PROVMKST_GPSC0.pdf",
+        type: "result",
+      },
+      {
+        label: "Notice regarding CBRT on 5 and 6 September 2026",
+        url: "https://gpsc.goa.gov.in/wp-content/uploads/2026/09/ADVT_CBRT-IN-SEPTEMBER.pdf",
+        type: "calendar",
+      },
+      {
+        label: "Notice regarding the post of Junior Scale Officer (Advt 9 of 2025)",
+        url: "https://gpsc.goa.gov.in/wp-content/uploads/2026/06/Notice-for-JSO-Newspaper.pdf",
+        type: "notice",
+      },
+      {
+        label: "Provisional result — candidates shortlisted for the screening test, pre-screening test of 13–14 Jun 2026",
+        url: "https://gpsc.goa.gov.in/wp-content/uploads/2026/06/PROVRES_JSO062026.pdf",
+        type: "result",
+      },
       { label: "Official CBRT syllabus", url: "https://gpsc.goa.gov.in/wp-content/uploads/2026/05/JSO_SYLLABUS_092025.pdf", type: "notice" },
+      { label: "Goa PSC results", url: "https://gpsc.goa.gov.in/results/", type: "result" },
       { label: "Goa PSC advertisements", url: "https://gpsc.goa.gov.in/advertisements/", type: "notice" },
     ],
-    sourceTitle: "Goa PSC CBRT syllabus for Junior Scale Officer of Goa Civil Service",
-    sourceUrl: "https://gpsc.goa.gov.in/wp-content/uploads/2026/05/JSO_SYLLABUS_092025.pdf",
-    sourcePublished: "Official syllabus uploaded 13 May 2026",
-    lastVerified: "4 Aug 2026, 16:05 IST",
+    sourceTitle: "Goa PSC provisional result of the repeat pre-screening test for Junior Scale Officer of Goa Civil Service, advertisement 09/2025",
+    sourceUrl: "https://gpsc.goa.gov.in/wp-content/uploads/2026/09/7_REPEATPRESCREEN_PROVRES_GPSC0.pdf",
+    sourcePublished:
+      "Advertisement published 5 Sep 2025; CBRT syllabus 13 May 2026; pre-screening test results June 2026; repeat pre-screening test held 6 Sep 2026 with its provisional result and mark statement on the Commission's results page, read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 17:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The cycle has moved well past the syllabus stage. Goa PSC held the pre-screening test on 13 and 14 Jun 2026, shortlisted candidates for a screening test and for a repeat pre-screening test, and held that repeat test on 6 Sep 2026 under its CBRT notice for 5 and 6 September 2026; the provisional result and provisional mark statement for it are on the Commission's results page.",
+      },
+    ],
   }),
   exam({
     slug: "goa-psc-advertisement-07-of-2026",
@@ -1652,11 +1740,11 @@ export const exams: Exam[] = [
     examTypes: ["Health & Medical", "Technical & Trades"],
     education: ["12th", "ITI / Diploma"],
     status: {
-      label: "Applications close 31 Aug 2026",
-      tone: "green",
-      nextAction: "Apply on OJAS before the 31 Aug 2026 deadline",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch gsssb.gujarat.gov.in for the examination date, call letter and any further notice",
       detail:
-        "GSSSB advertisement GSSSB/202627/455 fills Sanitary Inspector, Class III posts in the Health and Family Welfare Department. The OJAS listing shows the application window closing on 31 Aug 2026 and gives the age band and pay; the vacancy table, qualification and fee are in the detailed advertisement PDF linked from that listing.",
+        "GSSSB advertisement GSSSB/202627/455 fills Sanitary Inspector, Class III posts in the Health and Family Welfare Department. Applications closed on 31 Aug 2026 and the deadline was not extended — the OJAS current-advertisement list, re-read on 9 Sep 2026, no longer carries this advertisement. No examination date, call-letter notice or further notice for it is published as of 9 Sep 2026.",
     },
     summary:
       "Gujarat Subordinate Service Selection Board recruitment to Class III Sanitary Inspector posts in the Health and Family Welfare Department, applied for through the OJAS portal.",
@@ -1668,7 +1756,7 @@ export const exams: Exam[] = [
     fee: "See the official advertisement for the category-wise fee.",
     pay: "₹26,000 fixed monthly pay during a 5-year probation (Class III post), as stated on the official OJAS listing.",
     timeline: [
-      { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed" },
       { label: "Competitive examination", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [
@@ -1699,8 +1787,16 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "GSSSB advertisement GSSSB/202627/455 — Sanitary Inspector, Class III",
     sourceUrl: "https://ojas.gujarat.gov.in/AdvtDetails.aspx?sid=K3JOsteln/k=&yr=iNSQ32x8ipg=&ano=XFE6khxH6Yg=",
-    sourcePublished: "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:30 IST",
+    sourcePublished:
+      "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026; OJAS current-advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 16:50 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications closed. The window shut on 31 Aug 2026 with no extension — the OJAS current-advertisement list no longer carries GSSSB/202627/455 — so the record moves off applications-open and now waits on an examination date.",
+      },
+    ],
   }),
   exam({
     slug: "gsssb-municipal-accountant-2026",
@@ -1721,11 +1817,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Applications close 31 Aug 2026",
-      tone: "green",
-      nextAction: "Apply on OJAS before the 31 Aug 2026 deadline",
+      label: "Applications closed; examination date awaited",
+      tone: "amber",
+      nextAction: "Watch gsssb.gujarat.gov.in for the examination date, call letter and any further notice",
       detail:
-        "GSSSB advertisement GSSSB/202627/450 fills Municipal Accountant, Class III posts under the Urban Development and Urban Housing Department. The OJAS listing shows the application window closing on 31 Aug 2026 and gives the age band and pay; the vacancy table, qualification and fee are in the detailed advertisement PDF linked from that listing.",
+        "GSSSB advertisement GSSSB/202627/450 fills Municipal Accountant, Class III posts under the Urban Development and Urban Housing Department. Applications closed on 31 Aug 2026 and the deadline was not extended — the OJAS current-advertisement list, re-read on 9 Sep 2026, no longer carries this advertisement. No examination date, call-letter notice or further notice for it is published as of 9 Sep 2026.",
     },
     summary:
       "Gujarat Subordinate Service Selection Board recruitment to Class III Municipal Accountant posts in the state's urban local bodies, applied for through the OJAS portal.",
@@ -1737,7 +1833,7 @@ export const exams: Exam[] = [
     fee: "See the official advertisement for the category-wise fee.",
     pay: "₹49,600 fixed monthly pay during a 5-year probation (Class III post), as stated on the official OJAS listing.",
     timeline: [
-      { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "current" },
+      { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed" },
       { label: "Competitive examination", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [
@@ -1768,8 +1864,16 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "GSSSB advertisement GSSSB/202627/450 — Municipal Accountant, Class III",
     sourceUrl: "https://ojas.gujarat.gov.in/AdvtDetails.aspx?sid=K3JOsteln/k=&yr=iNSQ32x8ipg=&ano=I2C7ebTG4wc=",
-    sourcePublished: "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:32 IST",
+    sourcePublished:
+      "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026; OJAS current-advertisement list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 16:50 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications closed. The window shut on 31 Aug 2026 with no extension — the OJAS current-advertisement list no longer carries GSSSB/202627/450 — so the record moves off applications-open and now waits on an examination date.",
+      },
+    ],
   }),
   listedExam({
     slug: "reet-rajasthan-eligibility-examination-for-teachers",
@@ -2410,9 +2514,9 @@ export const exams: Exam[] = [
     status: {
       label: "General cycle awaited; special drive at verification",
       tone: "amber",
-      nextAction: "Special-drive candidates who missed certificate verification must attend at Gandhinagar on 1 Sep 2026",
+      nextAction: "Watch GPSSB's advertisement page for the general Talati cum Mantri cycle",
       detail:
-        "The general Talati cum Mantri advertisement is still awaited — GPSSB's current 2026-27 series does not include the post. Its special recruitment drive for candidates with disabilities does: under advertisement 14/2025-26 the board published the provisional merit list on 11 May 2026 and held certificate verification on 18 and 19 May 2026, and its notice of 27 Aug 2026 gives the candidates who stayed away a final chance to attend in person at the board's office on 1 Sep 2026.",
+        "The general Talati cum Mantri advertisement is still awaited — GPSSB's current 2026-27 series does not include the post. Its special recruitment drive for candidates with disabilities does: under advertisement 14/2025-26 the board published the provisional merit list on 11 May 2026 and held certificate verification on 18 and 19 May 2026, and its notice of 27 Aug 2026 gave the candidates who stayed away a final chance to attend in person at the board's office on 1 Sep 2026. That final date has passed, and GPSSB's advertisement page and notice list, re-read on 9 Sep 2026, publish nothing newer under advertisement 14/2025-26.",
     },
     summary:
       "Gujarat Panchayat Service Selection Board recruitment to Village Panchayat Secretary (Talati cum Mantri) Class III posts in the state's village panchayats.",
@@ -2420,13 +2524,7 @@ export const exams: Exam[] = [
     qualification:
       "Set by the Village Panchayat Secretary, Class III, Superior Panchayat Service Recruitment Rules 2013 and their 2016, 2021 and 2023 amendments, all published on GPSSB's own recruitment-rules page; the current cycle's advertisement will restate it with the cut-off date.",
     timeline: [
-      {
-        label: "Certificate verification — final chance under the special recruitment drive (Advt 14/2025-26)",
-        date: "2026-09-01",
-        displayDate: "1 Sep 2026",
-        state: "scheduled",
-        note: "In person at the GPSSB office, Gandhinagar; for candidates absent from the 18–19 May 2026 verification",
-      },
+      { label: "General Talati cum Mantri advertisement", displayDate: "Awaited", state: "tentative" },
     ],
     eligibility: [
       "The post is governed by the Village Panchayat Secretary, Class III, Superior Panchayat Service Recruitment Rules 2013 as amended in 2016, 2021 and 2023 — GPSSB publishes all four documents on its recruitment-rules page.",
@@ -2467,13 +2565,18 @@ export const exams: Exam[] = [
     sourceTitle: "GPSSB recruitment rules for Village Panchayat Secretary, the board's advertisement list and its notice of 27 Aug 2026",
     sourceUrl: "https://gpssb.gujarat.gov.in/recruitment-rule-details.htm?9",
     sourcePublished:
-      "Recruitment rules 2013 with 2016, 2021 and 2023 amendments; special-drive certificate-verification notice dated 27 Aug 2026; advertisement list re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:49 IST",
+      "Recruitment rules 2013 with 2016, 2021 and 2023 amendments; special-drive certificate-verification notice dated 27 Aug 2026; advertisement page and notice list re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 16:45 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The record no longer says only that the next advertisement is awaited: GPSSB's notice of 27 Aug 2026 shows its special recruitment drive for candidates with disabilities, advertisement 14/2025-26, is at certificate verification, with a final in-person date of 1 Sep 2026 at Gandhinagar.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The special drive's final certificate-verification date of 1 Sep 2026 has passed. GPSSB's advertisement page and notice list, re-read on 9 Sep 2026, carry nothing newer under advertisement 14/2025-26, and the general Talati cum Mantri advertisement is still awaited.",
       },
     ],
   }),
@@ -3287,10 +3390,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th", "Graduate"],
     status: {
       detail:
-        "GSSC's notice of 21 August 2026 hands the Physical Endurance Test and the Physical Standards and Physical Efficiency Tests to the Goa Police Department. The first part — height and chest measurement for men and height and weight for women — starts on 1 September 2026 from 08:30 hours at the Atal Stadium, Cujira, Bambolim, with the post-wise dates, times and other instructions on the Goa Police Department's own citizen portal. Candidates must bring the hard copy of the e-admit card issued for each post at CBT-I together with a valid photo ID; a replacement copy costs ₹100 at the venue, and anyone eligible for more than one post attends the PET once but carries a separate e-admit card for each.",
-      label: "Physical tests start 1 Sep 2026",
+        "GSSC's notice of 21 August 2026 hands the Physical Endurance Test and the Physical Standards and Physical Efficiency Tests to the Goa Police Department. The first part — height and chest measurement for men and height and weight for women — began on 1 September 2026 from 08:30 hours at the Atal Stadium, Cujira, Bambolim. The Commission's notice of 4 September 2026 reschedules the Physical Endurance Test and Physical Standards Test that had been fixed for 7 September 2026 to 11 September 2026; the remaining post-wise dates, times and other instructions stay on the Goa Police Department's own citizen portal. Candidates must bring the hard copy of the e-admit card issued for each post at CBT-I together with a valid photo ID; a replacement copy costs ₹100 at the venue, and anyone eligible for more than one post attends the PET once but carries a separate e-admit card for each.",
+      label: "Physical tests under way; 7 Sep session moved to 11 Sep",
       tone: "blue",
-      nextAction: "Carry your CBT-I e-admit card and photo ID to the Atal Stadium, Cujira from 1 Sep 2026",
+      nextAction: "If your test fell on 7 Sep 2026, attend on 11 Sep 2026 with your CBT-I e-admit card and photo ID",
     },
     summary:
       "Goa's single Group C advertisement covering Police Constable, Armed Police Constable, Constable Driver, Range Forest Officer, Round Forester, Forest Guard, prison and home-guard posts across the Police, Forest, Prisons, Sports and Women and Child Development departments.",
@@ -3334,8 +3437,21 @@ export const exams: Exam[] = [
         label: "Physical Endurance Test / Physical Standards and Efficiency Tests",
         date: "2026-09-01",
         displayDate: "From 1 Sep 2026, 8:30 AM",
-        state: "scheduled",
+        state: "current",
         note: "Atal Stadium, Cujira, Bambolim — post-wise dates and times published by the Goa Police Department",
+      },
+      {
+        label: "Notice rescheduling the physical tests fixed for 7 Sep",
+        date: "2026-09-04",
+        displayDate: "4 Sep 2026",
+        state: "completed",
+      },
+      {
+        label: "Rescheduled Physical Endurance Test / Physical Standards Test",
+        date: "2026-09-11",
+        displayDate: "11 Sep 2026",
+        state: "scheduled",
+        note: "For the candidates whose test had been fixed for 7 Sep 2026",
       },
     ],
     eligibility: [
@@ -3407,13 +3523,18 @@ export const exams: Exam[] = [
     sourceTitle: "Goa Staff Selection Commission Advertisement No. 2 of Year 2026 and its notice of 21 Aug 2026 fixing the physical tests",
     sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2026/02/Advertisement-No.-2-of-Year-2026_compressed.pdf",
     sourcePublished:
-      "Advertisement dated 20 Feb 2026; PET eligibility lists dated 10 Aug 2026; corrigenda and CBT final-result addendum dated 17 Aug 2026; notice No.1/115/2026-GSSC/822 fixing the physical tests dated 21 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:12 IST",
+      "Advertisement dated 20 Feb 2026; PET eligibility lists dated 10 Aug 2026; corrigenda and CBT final-result addendum dated 17 Aug 2026; notice No.1/115/2026-GSSC/822 fixing the physical tests dated 21 Aug 2026; notice for PET candidates rescheduling the 7 Sep tests dated 4 Sep 2026; Commission's notice board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 16:40 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The physical tests now have a start date: GSSC's notice of 21 Aug 2026 puts the Physical Endurance Test and Physical Standards and Efficiency Tests in the hands of the Goa Police Department and starts the measurement round on 1 Sep 2026 at 8:30 AM at the Atal Stadium, Cujira, Bambolim.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The physical tests are under way and part of them has moved: the Commission's notice for PET candidates dated 4 Sep 2026 reschedules the PET/PST that had been fixed for 7 Sep 2026 to 11 Sep 2026.",
       },
       {
         date: "2026-08-20",
@@ -3527,11 +3648,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Health & Medical", "Specialist & Professional"],
     education: ["12th", "ITI / Diploma", "Graduate", "Postgraduate"],
     status: {
-      label: "CBT-II under way; second sitting 30 Aug",
-      tone: "blue",
-      nextAction: "Second CBT-II sitting on 30 Aug 2026 at the venues in the notice of 3 Aug 2026",
+      label: "Both CBT-II sittings held; provisional results published",
+      tone: "violet",
+      nextAction: "Check the post-wise provisional CBT-II result for your post on the Commission's website",
       detail:
-        "The first CBT-II sitting was held on 23 Aug 2026, with a grievance notice the same day, and on 24 Aug 2026 the Commission published provisional results for Laboratory Technician, Laboratory Assistant, Junior Research Assistant and Fisheries Surveyor and separately for Assistant Archivist Grade II. The second sitting remains on 30 Aug 2026; the Commission has published no postponement for it.",
+        "Both CBT-II sittings have been held. The first, on 23 Aug 2026, was followed by provisional results on 24 Aug 2026 for Laboratory Technician, Laboratory Assistant, Junior Research Assistant and Fisheries Surveyor and separately for Assistant Archivist Grade II. The second sitting was held on 30 Aug 2026, and on 31 Aug 2026 the Commission published provisional CBT-II results for Searcher, Aval Karkun, Information Assistant, Industries Inspector, Store Keeper and Village Panchayat Secretary. Its notice board, re-read on 9 Sep 2026, publishes no final result for this advertisement yet.",
     },
     summary:
       "Goa's multi-department Group C advertisement covering Talathi, Village Panchayat Secretary, Investigator, Laboratory Assistant and Technician, Aval Karkun, Accounts Clerk, Junior Geologist, Fisheries and Legal Metrology posts across more than a dozen departments.",
@@ -3551,7 +3672,15 @@ export const exams: Exam[] = [
       { label: "CBT-II venue notice", date: "2026-08-03", displayDate: "3 Aug 2026", state: "completed" },
       { label: "Second-tier computer-based test — first sitting", date: "2026-08-23", displayDate: "23 Aug 2026", state: "completed" },
       { label: "Provisional CBT-II results for the 23 Aug sitting", date: "2026-08-24", displayDate: "24 Aug 2026", state: "completed" },
-      { label: "Second-tier computer-based test — second sitting", date: "2026-08-30", displayDate: "30 Aug 2026", state: "scheduled" },
+      { label: "Second-tier computer-based test — second sitting", date: "2026-08-30", displayDate: "30 Aug 2026", state: "completed" },
+      {
+        label: "Provisional CBT-II results for the 30 Aug sitting",
+        date: "2026-08-31",
+        displayDate: "31 Aug 2026",
+        state: "completed",
+        note: "Searcher, Aval Karkun, Information Assistant, Industries Inspector, Store Keeper and Village Panchayat Secretary",
+      },
+      { label: "Final result", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Applicants need a 15-year Goa residence certificate issued by the competent authority in Goa and registration with the Employment Exchange, Goa.",
@@ -3605,13 +3734,18 @@ export const exams: Exam[] = [
     sourceTitle: "Goa Staff Selection Commission Advertisement No. 3 of Year 2025 and its CBT-II notices and provisional results",
     sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2025/12/Advertisement-No.3-of-Year-2025.pdf",
     sourcePublished:
-      "Advertisement dated 5 Dec 2025; addendum 9 Dec 2025; CBT-II venue notice 3 Aug 2026; provisional CBT-II results for the 23 Aug sitting published 24 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:16 IST",
+      "Advertisement dated 5 Dec 2025; addendum 9 Dec 2025; CBT-II venue notice 3 Aug 2026; provisional CBT-II results for the 23 Aug sitting published 24 Aug 2026 and for the 30 Aug sitting published 31 Aug 2026; Commission's notice board re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 16:40 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The first CBT-II sitting of 23 Aug 2026 has been held and the Commission published its provisional results post-wise on 24 Aug 2026. The second sitting is still set for 30 Aug 2026, with no postponement published.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The second CBT-II sitting was held on 30 Aug 2026 and the Commission published its provisional results on 31 Aug 2026 for Searcher, Aval Karkun, Information Assistant, Industries Inspector, Store Keeper and Village Panchayat Secretary, so the record now sits at the result stage rather than showing an upcoming sitting.",
       },
     ],
   }),

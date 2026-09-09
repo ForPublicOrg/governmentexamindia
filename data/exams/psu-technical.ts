@@ -396,10 +396,10 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades", "Specialist & Professional"],
     education: ["ITI / Diploma", "Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Applications closed; selection updates awaited",
+      label: "CBT held 23 Aug 2026; result awaited",
       tone: "violet",
-      nextAction: "Track HPCL's job-opening page and candidate login for the next stage",
-      detail: "Online applications were accepted from 1 to 20 July 2026 for experienced roles and fresher Junior Executive positions including Chemical and Fire & Safety.",
+      nextAction: "Track HPCL's job-opening page and candidate login for the CBT result and the next position-specific stage",
+      detail: "Online applications were accepted from 1 to 20 July 2026 for experienced roles and fresher Junior Executive positions including Chemical and Fire & Safety. HPCL's job-opening page, re-read on 9 Sep 2026, states that the Computer-Based Test for Junior Executive – Chemical, Junior Executive – Fire & Safety and Assistant Manager / Manager – Projects was conducted on 23rd August 2026, and it carries the admit-card download, the selection methodology and post-wise syllabi for those positions. No result or cut-off has been published for this advertisement.",
     },
     summary: "Large multi-position HPCL officer and junior-executive recruitment covering experienced professional and fresher technical roles.",
     qualification: "Position-specific diploma, engineering, postgraduate or professional qualification plus experience where the advertisement requires it.",
@@ -408,7 +408,14 @@ export const exams: Exam[] = [
       { label: "Applications opened", date: "2026-07-01", displayDate: "1 Jul 2026", state: "completed" },
       { label: "Corrigendum/addendum", date: "2026-07-02", displayDate: "2 Jul 2026", state: "completed" },
       { label: "Applications closed", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
-      { label: "Selection stage", displayDate: "Exact official date awaited", state: "current" },
+      {
+        label: "Computer-Based Test",
+        date: "2026-08-23",
+        displayDate: "23 Aug 2026",
+        state: "completed",
+        note: "Junior Executive – Chemical, Junior Executive – Fire & Safety and Assistant Manager / Manager – Projects",
+      },
+      { label: "CBT result and later stages", displayDate: "Exact official date awaited", state: "current" },
     ],
     eligibility: [
       "Only Indian Nationals are eligible to apply, and all computations of age, relevant experience and qualification are made with respect to the last date of receipt of the online application, 20 Jul 2026.",
@@ -426,8 +433,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "HPCL Recruitment of Officers 2026–27",
     sourceUrl: "https://www.hindustanpetroleum.com/job-openings",
-    sourcePublished: "1 Jul 2026; addendum 2 Jul 2026",
-    lastVerified: "4 Aug 2026, 16:55 IST",
+    sourcePublished: "1 Jul 2026; addendum 2 Jul 2026; job-opening page re-read 9 Sep 2026, which records the CBT as conducted on 23 Aug 2026",
+    lastVerified: "9 Sep 2026, 18:28 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "HPCL's job-opening page now records that the Computer-Based Test for Junior Executive – Chemical, Junior Executive – Fire & Safety and Assistant Manager / Manager – Projects was conducted on 23 Aug 2026, with the admit card and post-wise syllabi published against it. No result has been posted.",
+      },
+    ],
     keywords: [
       "HPCL officers 2026-27",
       "HPCL junior executive",
@@ -462,7 +476,7 @@ export const exams: Exam[] = [
       label: "CBT result published; later stages follow",
       tone: "violet",
       nextAction: "Check candidate login and HPCL's current-opening page for the next position-specific stage",
-      detail: "HPCL reports that the CBT was held on 3 May 2026 and position-wise results/cut-offs are live.",
+      detail: "HPCL reports that the CBT was held on 3 May 2026 and position-wise results/cut-offs are live. Re-read on 9 Sep 2026, the job-opening page still carries the position-wise cut-off marks for the CBT of 3 May 2026 against ADVT. NO. HPCL/OPEN/HR/3/2025-26 and says results are viewable under Candidate Login; nothing later has been added for this advertisement.",
     },
     summary: "Earlier 2026 HPCL officer recruitment covering the positions in Advertisement HPCL/OPEN/HR/3/2025-26.",
     timeline: [
@@ -482,8 +496,8 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "Official HPCL job openings and result", url: "https://www.hindustanpetroleum.com/job-openings", type: "result" }],
     sourceTitle: "HPCL Recruitment of Officers 2026 — CBT result and cut-offs",
     sourceUrl: "https://www.hindustanpetroleum.com/job-openings",
-    sourcePublished: "CBT 3 May 2026; results live by Jul 2026",
-    lastVerified: "4 Aug 2026, 17:00 IST",
+    sourcePublished: "CBT 3 May 2026; results live by Jul 2026; job-opening page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 18:30 IST",
     keywords: [
       "HPCL CBT result 2026",
       "HPCL officer cut-off",
@@ -518,7 +532,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Track HPCL's job-opening page and the apprentice application portal for the merit list and document-verification call",
       detail:
-        "HPCL's live job-opening page carries two 2026–27 Graduate Apprentice (Engineering) advertisements: the Refineries Division engagement, whose HPCL-portal application window ran 25 Feb to 10 Mar 2026, and the all-India Marketing Division engagement, whose window ran 15 to 31 Jul 2026.",
+        "Both 2026–27 Graduate Apprentice (Engineering) application windows have closed — the Refineries Division engagement ran 25 Feb to 10 Mar 2026 and the all-India Marketing Division engagement ran 15 to 31 Jul 2026. Re-read on 9 Sep 2026, HPCL's job-opening page now lists only the Refineries Division engagement under 'Engagement of HPCL Graduate Apprentice Trainees (2026-27)'; the Marketing Division advertisement has been taken off the live list. No merit list or document-verification schedule is published for either engagement.",
     },
     summary:
       "One-year Graduate Apprentice (Engineering) engagement under the Apprentices Act, 1961 at HPCL's Mumbai and Visakh refineries and at its Marketing Division locations across India, selected on qualifying-degree merit with no written examination.",
@@ -565,8 +579,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Engagement of Graduate Apprentice Trainees (Engineering) as per the Apprentices Act, 1961 — 2026–27 Refineries and Marketing Division advertisements",
     sourceUrl: "https://www.hindustanpetroleum.com/documents/pdf/Advertisement%20of%20%20HPCL%20GAT%20-%20Refineries%20Division%20FY26-27.pdf",
-    sourcePublished: "Refineries window 25 Feb – 10 Mar 2026; Marketing window 15 – 31 Jul 2026; job-opening page checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 20:10 IST",
+    sourcePublished: "Refineries window 25 Feb – 10 Mar 2026; Marketing window 15 – 31 Jul 2026; job-opening page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 18:32 IST",
+    changeLog: [
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "HPCL's job-opening page now lists only the Refineries Division Graduate Apprentice engagement; the all-India Marketing Division advertisement, whose window closed on 31 Jul 2026, has been removed from the live list. No merit list or document-verification call has been published.",
+      },
+    ],
     keywords: [
       "HPCL graduate apprentice",
       "HPCL GAT 2026",
@@ -889,10 +910,10 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Professional degree", "Postgraduate"],
     status: {
-      label: "CBT call letter out; test on 6 Sep 2026",
-      tone: "blue",
-      nextAction: "Download the CBT call letter from the link on ONGC's recruitment-notice page and appear for the test on 6 Sep 2026",
-      detail: "Registration under Advt. No. 2/2026 (R&P) ran 17–31 Jul 2026 and is closed. On 22 Aug 2026 ONGC published the call letter for the Computer Based Test to be held on 6 September 2026, which fixes the date its earlier schedule had shown as tentative. Selection then runs CBT, interview and medical fitness; no result has been published.",
+      label: "CBT held on 6 Sep 2026; result awaited",
+      tone: "violet",
+      nextAction: "Watch ONGC's recruitment-notice page for the CBT result and the interview call letter",
+      detail: "Registration under Advt. No. 2/2026 (R&P) ran 17–31 Jul 2026 and is closed. ONGC issued the call letter on 22 Aug 2026 for the Computer Based Test held on 6 September 2026. The recruitment-notice page, re-read on 9 Sep 2026, carries nothing later than that call letter for this advertisement — no answer key, cut-off or result has been published — and its newest recruitment entry of any kind is dated 25 Aug 2026. Selection then runs CBT, interview and medical fitness.",
     },
     summary: "Direct recruitment of Graduate Trainees in Engineering and Geo-Sciences disciplines at E1 level in ONGC, based on a GATE score and ONGC's own selection process.",
     qualification: "Notified engineering discipline degree or postgraduate Geology qualification as specified in Advertisement No. 2/2026 (R&P); see the official advertisement for the exact discipline list and marks requirement.",
@@ -901,7 +922,8 @@ export const exams: Exam[] = [
       { label: "Online registration opened", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
       { label: "Online registration closed", date: "2026-07-31", displayDate: "31 Jul 2026, 23:59", state: "completed" },
       { label: "CBT call letter published", date: "2026-08-22", displayDate: "22 Aug 2026", state: "completed" },
-      { label: "Computer Based Test", date: "2026-09-06", displayDate: "6 Sep 2026", state: "scheduled" },
+      { label: "Computer Based Test", date: "2026-09-06", displayDate: "6 Sep 2026", state: "completed", note: "Held as notified in the call letter of 22 Aug 2026" },
+      { label: "CBT result", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
       "Advertisement No. 2/2026 (R&P) is titled 'Recruitment of Geologists and Engineers at E1 level through Computer Based Test (CBT)' and prescribes ONGC's own CBT — it does not use a GATE score at any stage of selection.",
@@ -911,21 +933,26 @@ export const exams: Exam[] = [
       "Only candidates who have already acquired the qualification on or before the last date of application are considered. The qualifications listed are sacrosanct and no equivalent is accepted — for example AMIE is not accepted where a graduate degree in engineering is required. Distance-learning or part-time qualifications are accepted only if recognised by the relevant statutory bodies for employment under the central Government.",
       "Registration fee is ₹1,000 for General, OBC and EWS candidates, payable online and excluding convenience or bank charges plus GST; SC, ST and PwBD candidates pay no charge.",
     ],
-    selectionStages: ["Valid GATE score", "ONGC shortlisting", "Selection stage specified by ONGC", "Medical/document verification"],
-    syllabus: ["Corresponding GATE engineering or geoscience paper; use the official advertisement for any additional assessment."],
+    selectionStages: ["ONGC Computer Based Test", "Interview for candidates shortlisted on the CBT", "Medical fitness and document verification"],
+    syllabus: ["Advt. No. 2/2026 (R&P) prescribes ONGC's own Computer Based Test in the discipline applied for; use the official advertisement for the scheme of examination."],
     officialLinks: [
       { label: "Official ONGC recruitment notices", url: "https://www.ongcindia.com/web/eng/career/recruitment-notice", type: "notice" },
       { label: "Advertisement detail page", url: "https://ongcindia.com/web/eng/detail?assetEntry=84777603&assetClassPK=84777498", type: "notice" },
     ],
     sourceTitle: "Recruitment of Geologists and Engineers at E1 Level — Advt. No. 2/2026 (R&P)",
     sourceUrl: "https://www.ongcindia.com/web/eng/career/recruitment-notice",
-    sourcePublished: "Advt. No. 2/2026 (R&P), listed on ONGC's recruitment-notice page 16 Jul 2026; CBT call letter notice posted 22 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:06 IST",
+    sourcePublished: "Advt. No. 2/2026 (R&P), listed on ONGC's recruitment-notice page 16 Jul 2026; CBT call letter notice posted 22 Aug 2026; recruitment-notice page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 18:05 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "ONGC's recruitment-notice page published the call letter for the Computer Based Test on 22 Aug 2026, confirming the 6 Sep 2026 test date that had previously been shown only as tentative.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Computer Based Test of 6 Sep 2026 is now shown as held; ONGC's recruitment-notice page publishes no result, answer key or cut-off for Advt. No. 2/2026 (R&P) as of 9 Sep 2026. The selection stages have also been corrected to ONGC's own CBT and interview — the advertisement uses no GATE score.",
       },
     ],
     keywords: [
@@ -1022,7 +1049,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Register for GATE-2027 in the Mining Engineering paper before 21 Sep 2026 — Coal India's detailed advertisement only follows in 2027",
       detail:
-        "Advertisement No. 06/2026 dated 17 Aug 2026 is an advance notice, not an application call. It says Coal India is looking for Mining Engineering graduates as Management Trainees on the GATE-2027 score, that candidates must appear in the GATE-2027 Mining Engineering paper, and that the GATE-2027 organising institute IIT Madras has kept its online application portal open from 14 Aug 2026 to 21 Sep 2026. Vacancies, age limits, fee and the selection process will only be published with the detailed advertisement in 2027.",
+        "Advertisement No. 06/2026 dated 17 Aug 2026 is an advance notice, not an application call. It says Coal India is looking for Mining Engineering graduates as Management Trainees on the GATE-2027 score, that candidates must appear in the GATE-2027 Mining Engineering paper, and that the GATE-2027 organising institute IIT Madras has kept its online application portal open from 14 Aug 2026 to 21 Sep 2026. Vacancies, age limits, fee and the selection process will only be published with the detailed advertisement in 2027. Coal India's Jobs at Coal India page, re-read on 9 Sep 2026, still carries this notice as a current entry and has added no corrigendum or detailed advertisement.",
     },
     summary:
       "Coal India's advance notice that its next Management Trainee intake in Mining Engineering will be made on the GATE-2027 score, so that candidates register for the right GATE paper in time.",
@@ -1068,8 +1095,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Recruitment of Management Trainees based on GATE-2027 score — Advertisement No. 06/2026",
     sourceUrl: "https://www.coalindia.in/career-cil/jobs-coal-india/recruitment-of-management-trainee-based-on-gate-2027-score/",
-    sourcePublished: "Advertisement No. 06/2026 dated 17 Aug 2026, published on Coal India's Jobs at Coal India page",
-    lastVerified: "29 Aug 2026, 15:35 IST",
+    sourcePublished: "Advertisement No. 06/2026 dated 17 Aug 2026, published on Coal India's Jobs at Coal India page; that page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 18:35 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1165,10 +1192,10 @@ export const exams: Exam[] = [
     vacancyLabel: "389 posts (Manager — 11 disciplines; Junior Executive — 4 disciplines)",
     vacancyNote: "Figure as published on AAI's official recruitment dashboard; see the detailed advertisement for the discipline-wise split.",
     status: {
-      label: "Applications open until 7 Sep 2026",
-      tone: "green",
-      nextAction: "Apply on aai.aero before 7 Sep 2026, then watch the site for the CBT date",
-      detail: "The detailed advertisement for Advt. No. 12/2026/CHQ/DR-CBT (389 posts) sets the online application window as 8 Aug 2026 to 7 Sep 2026, with 7 Sep 2026 also the eligibility cut-off date. The registration link is live on the AAI recruitment dashboard and post-wise syllabi were added on 13 Aug 2026; the CBT date is still to be announced.",
+      label: "Applications closed; CBT date awaited",
+      tone: "amber",
+      nextAction: "Watch the AAI recruitment dashboard for the Computer Based Test date and admit card for Advt. 12/2026/CHQ/DR-CBT",
+      detail: "The online application window for Advt. No. 12/2026/CHQ/DR-CBT (389 posts) ran 8 Aug 2026 to 7 Sep 2026, with 7 Sep 2026 also the eligibility cut-off date, and has now closed. The AAI recruitment dashboard, re-read on 9 Sep 2026, still carries the row with its registration link and post-wise syllabus but shows no extension corrigendum and no admit-card or CBT-date entry; the dashboard records 13 Aug 2026 as the last update against this advertisement.",
     },
     summary: "Direct recruitment of Managers across 11 disciplines and Junior Executives across 4 disciplines in the Airports Authority of India through a computer-based test and interview/physical test where applicable.",
     qualification: "Discipline-specific graduate, postgraduate or professional engineering qualification as listed against each Manager and Junior Executive discipline in Advt. 12/2026/CHQ/DR-CBT.",
@@ -1179,8 +1206,8 @@ export const exams: Exam[] = [
       { label: "Advertisement posted", date: "2026-07-22", displayDate: "22 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-08", displayDate: "8 Aug 2026", state: "completed" },
       { label: "Post-wise syllabus published", date: "2026-08-13", displayDate: "13 Aug 2026", state: "completed" },
-      { label: "Last date for online applications", date: "2026-09-07", displayDate: "7 Sep 2026", state: "current" },
-      { label: "Computer Based Test", displayDate: "To be announced on the AAI website", state: "tentative" },
+      { label: "Last date for online applications", date: "2026-09-07", displayDate: "7 Sep 2026", state: "completed" },
+      { label: "Computer Based Test", displayDate: "To be announced on the AAI website", state: "current" },
     ],
     eligibility: [
       "Manager posts require the discipline-specific qualification plus three years of post-qualification work experience in the corresponding field — for example a Bachelor's degree in Engineering or Technology in Civil or in Electrical for the two engineering Manager posts, and an MBA or PGDM with Finance specialisation, or a Cost Accountant, Chartered Accountant or Chartered Financial Analyst qualification, for Manager (Finance).",
@@ -1208,13 +1235,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Direct Recruitment of Managers and Junior Executives — Advt. 12/2026/CHQ/DR-CBT",
     sourceUrl: "https://www.aai.aero/en/careers/recruitment",
-    sourcePublished: "Advertisement posted 22 Jul 2026, detailed advertisement updated 3 Aug 2026; dashboard entry last updated 13 Aug 2026. The detailed advertisement's Important Dates table gives 08.08.2026 as the opening date and 07.09.2026 as the closing date, and says the tentative CBT date will be announced on the AAI website",
-    lastVerified: "29 Aug 2026, 15:09 IST",
+    sourcePublished: "Advertisement posted 22 Jul 2026, detailed advertisement updated 3 Aug 2026; dashboard entry last updated 13 Aug 2026. The detailed advertisement's Important Dates table gives 08.08.2026 as the opening date and 07.09.2026 as the closing date, and says the tentative CBT date will be announced on the AAI website. Recruitment dashboard re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 18:10 IST",
     changeLog: [
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "The detailed advertisement gives an 8 Aug - 7 Sep 2026 application window, so applications are now open; syllabus published 13 Aug 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications closed on 7 Sep 2026. AAI's recruitment dashboard shows no extension for Advt. 12/2026/CHQ/DR-CBT and has published no Computer Based Test date or admit card, so the record moves from applications-open to awaiting the CBT date.",
       },
     ],
     keywords: [
@@ -1312,11 +1344,11 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["10th", "ITI / Diploma"],
     status: {
-      label: "Applications open until 4 Sep 2026",
-      tone: "green",
-      nextAction: "Apply on the LPSC recruitment portal before 1400 hrs on 4 Sep 2026",
+      label: "Applications closed; written-test date awaited",
+      tone: "amber",
+      nextAction: "Watch the LPSC 02/2026 page on isro.gov.in for the written-test date and call letter",
       detail:
-        "Advertisement LPSC/02/2026 dated 15 Aug 2026 invites applications for 19 posts at the Liquid Propulsion Systems Centre. The online recruitment portal is open from 1400 hrs on 18 Aug 2026 to 1400 hrs on 4 Sep 2026, and applications are submitted at www.lpsc.gov.in.",
+        "Advertisement LPSC/02/2026 dated 15 Aug 2026 invited applications for 19 posts at the Liquid Propulsion Systems Centre, and its online portal ran from 1400 hrs on 18 Aug 2026 to 1400 hrs on 4 Sep 2026. Re-read on 9 Sep 2026, ISRO's LPSC 02/2026 page still gives 4 September 2026 as the last date for submission of applications online and carries no extension or corrigendum, so the window has closed. No written-test date has been published.",
     },
     summary:
       "Diploma and ITI level recruitment at ISRO's Liquid Propulsion Systems Centre for Technical Assistant, Technician 'B', Draughtsman 'B' and Fireman 'A' posts at Valiamala and Bengaluru.",
@@ -1342,8 +1374,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement published", date: "2026-08-15", displayDate: "15 Aug 2026", state: "completed" },
       { label: "Online application portal opens", date: "2026-08-18", displayDate: "18 Aug 2026, 1400 hrs", state: "completed" },
-      { label: "Last date for online applications", date: "2026-09-04", displayDate: "4 Sep 2026, 1400 hrs", state: "current" },
-      { label: "Written test", displayDate: "To be announced", state: "tentative" },
+      { label: "Last date for online applications", date: "2026-09-04", displayDate: "4 Sep 2026, 1400 hrs", state: "completed" },
+      { label: "Written test", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "The posts are temporary but likely to continue indefinitely, at LPSC units at Valiamala near Thiruvananthapuram and at Bengaluru.",
@@ -1371,13 +1403,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Advertisement No. LPSC/02/2026 dated 15 Aug 2026 — Liquid Propulsion Systems Centre",
     sourceUrl: "https://www.isro.gov.in/LPSCRecruitment13.html",
-    sourcePublished: "Advertisement dated 15 Aug 2026; detailed advertisement PDF uploaded 17 Aug 2026; LPSC recruitment page re-checked 29 Aug 2026 and still shows 4 Sep 2026 as the closing date",
-    lastVerified: "29 Aug 2026, 15:08 IST",
+    sourcePublished: "Advertisement dated 15 Aug 2026; detailed advertisement PDF uploaded 17 Aug 2026; LPSC recruitment page re-read 9 Sep 2026 and still shows 4 Sep 2026 as the last date for online submission, with no corrigendum",
+    lastVerified: "9 Sep 2026, 18:14 IST",
     changeLog: [
       {
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "Record added — ISRO published advertisement LPSC/02/2026 on 15 Aug 2026 and opened its application portal on 18 Aug 2026.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Applications closed at 1400 hrs on 4 Sep 2026. ISRO's LPSC 02/2026 page publishes no extension and no written-test date, so the record moves from applications-open to awaiting the written test.",
       },
     ],
     keywords: [
@@ -1501,7 +1538,7 @@ export const exams: Exam[] = [
       tone: "green",
       nextAction: "Apply on isro.gov.in before 11.55 PM on 16 Sep 2026, and pay the fee the same day",
       detail:
-        "Advertisement ISRO:ICRB:03(EMC):2026 dated 27 Aug 2026 invites online applications for 175 Scientist/Engineer 'SC' posts in Electronics, Mechanical and Computer Science. The registration portal on www.isro.gov.in is open from 27 Aug 2026 to 16 Sep 2026 at 11.55 PM, which is also the last date for paying the fee. Unlike ISRO's GATE-screened cycles, this one is decided by ISRO's own written test/CBT at 37 centres followed by an interview; the test date has not been announced.",
+        "Advertisement ISRO:ICRB:03(EMC):2026 dated 27 Aug 2026 invites online applications for 175 Scientist/Engineer 'SC' posts in Electronics, Mechanical and Computer Science. Re-read on 9 Sep 2026, ISRO's page for this advertisement still shows the status Open, the registration portal on www.isro.gov.in running 27 Aug 2026 to 16 Sep 2026 at 11.55 PM — also the last date for paying the fee — and no corrigendum. Unlike ISRO's GATE-screened cycles, this one is decided by ISRO's own written test/CBT at 37 centres followed by an interview; the test date has not been announced.",
     },
     summary:
       "Direct recruitment of 175 Scientist/Engineer 'SC' officers — Group A posts at Level 10 of the pay matrix — in Electronics, Mechanical and Computer Science, selected on ISRO's own written test and an interview rather than on a GATE score.",
@@ -1563,8 +1600,8 @@ export const exams: Exam[] = [
     sourceTitle:
       "Recruitment of Scientist/Engineer 'SC' with BE/B.Tech or equivalent degree in Electronics, Mechanical and Computer Science — Advt. ISRO:ICRB:03(EMC):2026",
     sourceUrl: "https://www.isro.gov.in/ICRB_Recruitment13.html",
-    sourcePublished: "Advertisement dated 27 Aug 2026; online registration portal open 27 Aug 2026 to 16 Sep 2026, 11.55 PM",
-    lastVerified: "29 Aug 2026, 15:36 IST",
+    sourcePublished: "Advertisement dated 27 Aug 2026; online registration portal open 27 Aug 2026 to 16 Sep 2026, 11.55 PM; ISRO advertisement page re-read 9 Sep 2026",
+    lastVerified: "9 Sep 2026, 18:16 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1775,7 +1812,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Check sailcareers.com for the GD/interview schedule and call letter for Advt. HR/REC/C-97/MTT/2025",
       detail:
-        "SAIL's official careers portal lists the GD/interview schedule, interview call letter and document checklist for MTT Advt. No. HR/REC/C-97/MTT/2025; the portal publishes no single common stage date, so none is asserted here.",
+        "SAIL's official careers portal, re-read on 9 Sep 2026, still lists the GD/interview schedule, the interview call letter and the bio-data and document checklist for MTT Advt. No. HR/REC/C-97/MTT/2025, together with the corrigendum of 12 Nov 2025 and the extension of the application last date to 15 Dec 2025. The portal publishes no single common stage date and no final result, so none is asserted here.",
     },
     summary:
       "SAIL's Management Trainee (Technical) recruitment to E1 grade across its integrated steel plants, units and mines, selected on a 200-mark computer-based test followed by a group discussion and interview.",
@@ -1791,8 +1828,8 @@ export const exams: Exam[] = [
         label: "Online computer-based test",
         sortMonth: "2026-01",
         displayDate: "January–February 2026 window",
-        state: "tentative",
-        note: "The advertisement gives this as a tentative window; SAIL published no exact CBT date on its careers portal",
+        state: "completed",
+        note: "The advertisement gave this as a tentative window and SAIL published no exact CBT date; the test is taken as held because the portal has since issued GD/interview shortlisting and call letters",
       },
       { label: "Group discussion and interview", displayDate: "Exact official date awaited", state: "current" },
     ],
@@ -1820,8 +1857,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Recruitment of 124 Management Trainees (Technical) in SAIL — Adv. No. HR/REC/C-97/MTT/2025",
     sourceUrl: "https://sailcareers.com/SAIL2025MT/Adv_Eng.pdf",
-    sourcePublished: "12 Nov 2025; careers portal re-checked 29 Aug 2026, still offering the GD/interview schedule, bio-data form and interview call letter with no common stage date",
-    lastVerified: "29 Aug 2026, 15:14 IST",
+    sourcePublished: "12 Nov 2025; careers portal re-read 9 Sep 2026, still offering the GD/interview schedule, bio-data form and interview call letter with no common stage date and no final result",
+    lastVerified: "9 Sep 2026, 18:38 IST",
     keywords: [
       "SAIL MT technical 2025",
       "SAIL management trainee",
@@ -2241,11 +2278,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "From the post table of Employment Notification No. 2026/04(O). GRSE reserves the right to fill the post on suitability, to increase or decrease the number of posts, or to cancel the recruitment.",
     status: {
-      label: "Applications open until 3 Sep 2026",
-      tone: "green",
-      nextAction: "Apply online through the career section of grse.in before 23:59 hrs on 3 Sep 2026",
+      label: "Applications closed on 3 Sep 2026; interview date awaited",
+      tone: "amber",
+      nextAction: "Watch the career section of grse.in for the interview call for Employment Notification No. 2026/04(O)",
       detail:
-        "Employment Notification No. 2026/04(O) advertises one permanent Chief General Manager (Finance) post in the E-8 grade for candidates holding CA or CMA with 24 years' post-qualification finance experience. Online registration opened on 7 Aug 2026 at 14:00 hrs. The detailed advertisement printed 27 Aug 2026 as the closing date, but GRSE's career page now shows 3 Sep 2026 at 23:59 hrs against a Corrigendum-I. Selection is by interview only and the interview date will be announced later.",
+        "Employment Notification No. 2026/04(O) advertises one permanent Chief General Manager (Finance) post in the E-8 grade for candidates holding CA or CMA with 24 years' post-qualification finance experience. Online registration opened on 7 Aug 2026 at 14:00 hrs; the detailed advertisement printed 27 Aug 2026 as the closing date and Corrigendum-I extended it to 3 Sep 2026 at 23:59 hrs, which has now passed. GRSE's career page did not respond on 9 Sep 2026 (repeated attempts timed out), so no later corrigendum or interview date could be read; nothing beyond the 3 Sep 2026 closing date is asserted. Selection is by interview only.",
     },
     summary:
       "Senior finance-cadre recruitment at Garden Reach Shipbuilders and Engineers, the Navratna Ministry of Defence warship builder at Kolkata, for a single Chief General Manager (Finance) post filled by interview alone.",
@@ -2274,9 +2311,10 @@ export const exams: Exam[] = [
         label: "Last date for online registration",
         date: "2026-09-03",
         displayDate: "3 Sep 2026, 23:59 hrs",
-        state: "current",
+        state: "completed",
+        note: "Extended date under Corrigendum-I; GRSE's career page was unreachable on 9 Sep 2026, so no further extension could be checked",
       },
-      { label: "Interview", displayDate: "To be announced", state: "tentative" },
+      { label: "Interview", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Applications are invited from qualified, talented and energetic Indian Nationals for one permanent officer post in the E-8 grade.",
@@ -2309,6 +2347,11 @@ export const exams: Exam[] = [
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Record added — GRSE opened Employment Notification 2026/04(O) for one Chief General Manager (Finance) post on 7 Aug 2026, and its career page now shows the closing date as 3 Sep 2026 rather than the 27 Aug 2026 printed in the advertisement.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "The Corrigendum-I closing date of 3 Sep 2026 has passed, so the record moves from applications-open to awaiting the interview. GRSE's career page did not respond on 9 Sep 2026, so no further extension or interview date could be confirmed.",
       },
     ],
     keywords: [
@@ -2598,11 +2641,11 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades", "Specialist & Professional"],
     education: ["Professional degree", "Postgraduate"],
     status: {
-      label: "Applications open; last dates run 31 Aug – 18 Sep 2026 (interns to 30 Oct)",
-      tone: "blue",
-      nextAction: "Open the vacancy notification for the post you want on cochinshipyard.in and apply before the last date shown against it",
+      label: "Applications open; last dates extended, now 10 Sep – 30 Oct 2026",
+      tone: "green",
+      nextAction: "Open the vacancy notification for the post you want on cochinshipyard.in and apply before the revised last date shown against it",
       detail:
-        "Cochin Shipyard's official career page, checked 29 Aug 2026, lists fourteen live openings. Closing 31 Aug 2026: Senior Project Officers & Project Officer and Project Assistant (Office) for the Andaman ship repair unit. Closing 1 Sep 2026: Graduate/Technician (Diploma) Apprentices at Kochi and Assistant Managers, Supervisors and Workmen on five-year contract at UCSL, Malpe. Closing 2 Sep 2026: Manager (Defence – Business Expansions) for Kochi and ship repair at Karwar/Vizag. Closing 4 Sep 2026: Production & Commissioning Assistants and Engineers, Ship Draftsman Trainees and Guarantee Engineer at the Karwar Ship Repair Facility. Closing 10 Sep 2026: Assistant Manager (Safety) for the Andaman unit. Closing 18 Sep 2026: Chief Executive Officer and Executives at ISTC. Closing 30 Oct 2026: Prime Minister Internship Scheme interns. Post-wise vacancy counts and eligibility are only in the linked notifications.",
+        "Cochin Shipyard's official career page, re-read on 9 Sep 2026 (the page records itself as last modified that day), carries a notice that 'the last dates of online job applications is extended due to technical snags in the job application portal' and that revised last dates are published separately. Nine openings are now live with these last dates: Assistant Manager (Safety) for the Andaman unit on 10 Sep 2026; Guarantee Engineer at the Karwar Ship Repair Facility and Senior Project Officers & Project Officer for the Andaman unit on 14 Sep 2026; Production & Commissioning Assistants and Engineers, Ship Draftsman Trainees, and the ISTC Chief Executive Officer and Executives on 18 Sep 2026; ITI Trade Apprentices for the Andaman unit on 21 Sep 2026; and Prime Minister Internship Scheme interns on 30 Oct 2026. The Graduate/Technician Apprentice, UCSL Malpe contract and Manager (Defence – Business Expansions) openings are no longer listed. Post-wise vacancy counts and eligibility are only in the linked notifications.",
     },
     summary:
       "Executive and Executive Trainee recruitment at Cochin Shipyard Limited, India's largest shipbuilding and maintenance facility, run against separate vacancy notifications on the company's own career page.",
@@ -2620,45 +2663,40 @@ export const exams: Exam[] = [
         state: "completed",
       },
       {
-        label: "Andaman ship repair unit posts close",
-        date: "2026-08-31",
-        displayDate: "31 Aug 2026",
-        state: "current",
-        note: "Senior Project Officers & Project Officer and Project Assistant (Office) for CANSRU",
-      },
-      {
-        label: "Graduate/Technician Apprentices and UCSL Malpe contract posts close",
-        date: "2026-09-01",
-        displayDate: "1 Sep 2026",
-        state: "scheduled",
-        note: "Assistant Managers, Supervisors and Workmen on five-year contract at UCSL, Malpe",
-      },
-      {
-        label: "Manager (Defence – Business Expansions) closes",
+        label: "Graduate/Technician Apprentices, UCSL Malpe contract posts and Manager (Defence – Business Expansions) closed",
         date: "2026-09-02",
-        displayDate: "2 Sep 2026",
-        state: "scheduled",
+        displayDate: "31 Aug – 2 Sep 2026",
+        state: "completed",
+        note: "These openings are no longer listed on the career page re-read on 9 Sep 2026",
       },
       {
-        label: "Production & Commissioning, Ship Draftsman Trainee and Karwar Guarantee Engineer posts close",
-        date: "2026-09-04",
-        displayDate: "4 Sep 2026",
-        state: "scheduled",
-      },
-      {
-        label: "Assistant Manager (Safety) for the Andaman unit closes",
+        label: "Last date — Assistant Manager (Safety) for the Andaman unit",
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
-        state: "scheduled",
+        state: "current",
       },
       {
-        label: "ISTC Chief Executive Officer and Executives close",
+        label: "Last date — Karwar Guarantee Engineer and Andaman Senior Project Officers/Project Officer",
+        date: "2026-09-14",
+        displayDate: "14 Sep 2026",
+        state: "scheduled",
+        note: "Extended from 4 Sep and 31 Aug 2026 respectively after the portal snag notice",
+      },
+      {
+        label: "Last date — Production & Commissioning, Ship Draftsman Trainee and ISTC Chief Executive Officer and Executives",
         date: "2026-09-18",
         displayDate: "18 Sep 2026",
         state: "scheduled",
+        note: "The Production & Commissioning and Ship Draftsman Trainee last dates were extended from 4 Sep 2026",
       },
       {
-        label: "Prime Minister Internship Scheme interns close",
+        label: "Last date — ITI Trade Apprentices for the Andaman unit",
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026",
+        state: "scheduled",
+      },
+      {
+        label: "Last date — Prime Minister Internship Scheme interns",
         date: "2026-10-30",
         displayDate: "30 Oct 2026",
         state: "scheduled",
@@ -2670,8 +2708,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Cochin Shipyard Limited — Careers",
     sourceUrl: "https://cochinshipyard.in/career",
-    sourcePublished: "Career page checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:04 IST",
+    sourcePublished: "Career page re-read 9 Sep 2026; the page records itself as last modified 9 Sep 2026 and carries the portal-snag extension notice",
+    lastVerified: "9 Sep 2026, 18:22 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2682,6 +2720,11 @@ export const exams: Exam[] = [
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "The executive vacancies that closed on 10 Aug 2026 have been replaced on Cochin Shipyard's career page by a new set closing between 27 Aug and 4 Sep 2026, including Production & Commissioning posts, Ship Draftsman Trainees and posts at the Andaman and Malpe units.",
+      },
+      {
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        text: "Cochin Shipyard extended the last dates for online applications because of technical snags in its job application portal. The Andaman Senior Project Officers/Project Officer posts moved from 31 Aug to 14 Sep 2026, and the Karwar Guarantee Engineer from 4 Sep to 14 Sep 2026; Production & Commissioning and Ship Draftsman Trainee moved from 4 Sep to 18 Sep 2026. ITI Trade Apprentices for the Andaman unit (21 Sep 2026) were added, and the Graduate/Technician Apprentice, UCSL Malpe contract and Manager (Defence – Business Expansions) openings have come off the list.",
       },
     ],
     keywords: [
@@ -2757,15 +2800,15 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Check the live vacancies table on RITES's official career page for the next advertisement",
       detail:
-        "RITES's official career page, checked 4 Aug 2026, shows an empty live-vacancies table alongside its archived vacancies, selection schedules and results sections; no current advertisement is listed.",
+        "RITES's official career page, re-read on 9 Sep 2026, still shows an empty Live Vacancies table alongside its Archived Vacancies tab; no current advertisement is listed.",
     },
     summary:
       "RITES Limited, the Ministry of Railways transport infrastructure consultancy, recruits engineers and professionals against dated vacancy notices published on its own career page.",
     officialLinks: [{ label: "Official RITES career page", url: "https://rites.com/Career", type: "website" }],
     sourceTitle: "RITES Limited — Career, vacancies",
     sourceUrl: "https://rites.com/Career",
-    sourcePublished: "Career page checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:16 IST",
+    sourcePublished: "Career page re-read 9 Sep 2026; the Live Vacancies table is still empty",
+    lastVerified: "9 Sep 2026, 18:40 IST",
     keywords: [
       "RITES recruitment",
       "RITES Limited vacancy",
