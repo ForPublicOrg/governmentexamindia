@@ -9,7 +9,7 @@ export const authorities: Authority[] = [
     name: "Staff Selection Commission",
     level: "Central",
     allowedHosts: ["ssc.gov.in","www.pib.gov.in","pib.gov.in"],
-    watchUrls: ["https://ssc.gov.in/"],
+    watchUrls: ["https://ssc.gov.in/", "https://ssc.gov.in/api/general-website/portal/lastUpdates", "https://ssc.gov.in/api/admin/5.1/liveExams"],
   },
 ];
 

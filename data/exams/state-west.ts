@@ -608,14 +608,16 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Specialist & Professional"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Preliminary results published",
-      tone: "violet",
-      nextAction: "Check the MPSC result and announcement pages for the selected service",
-      detail: "MPSC's official results page lists State, Civil Engineering and Veterinary service preliminary results under the combined advertisement.",
+      label: "Main examination notified for 3 Oct – 1 Nov 2026",
+      tone: "blue",
+      nextAction: "If you qualified the preliminary examination, submit the Main examination application by 23:59 on 10 Sep 2026 and pay the fee by 13 Sep 2026",
+      detail:
+        "MPSC notification 018/2026 of 25 Aug 2026 opens the State Services Main Examination 2026 for the candidates who qualified the preliminary examination held on 31 May 2026 under advertisement 132/2025. It states that the preliminary result declared on 22 Jun 2026 ran for 238 posts and that the Main examination will be held from 3 Oct to 1 Nov 2026 at the Amravati, Chhatrapati Sambhajinagar, Nagpur, Nashik, Navi Mumbai and Pune district centres. Applications are accepted online from 14:00 on 27 Aug 2026 to 23:59 on 10 Sep 2026, with the fee payable online only until 23:59 on 13 Sep 2026; challan payment is discontinued. A corrigendum of 2 Sep 2026 revises the disability particulars for Assistant Group Development Officer, Group-B and Accounts Officer, Group-B and paragraph 6.3 on final-year candidates. MPSC's advertisement and result streams, read on 10 Sep 2026, publish nothing newer under this cycle.",
     },
     summary: "Combined preliminary recruitment to Maharashtra gazetted Group A and Group B state, engineering and specialist services.",
-    vacancyLabel: NOT_ANNOUNCED,
-    vacancyNote: "Vacancies will be added only after an official notice publishes them.",
+    vacancyLabel: "238 posts in the State Services stream",
+    vacancyNote:
+      "Notification 018/2026 of 25 Aug 2026 states that the recruitment process for the State Services Main Examination 2026 will be run for 238 posts across various cadres, the figure the preliminary result of 22 Jun 2026 was processed against. MPSC publishes no combined total covering the Civil Engineering and Veterinary streams of advertisement 132/2025, so none is asserted here.",
     age: "Not asserted here — MPSC publishes advertisement 132/2025 and its corrigenda only as Marathi documents from which no age limit could be read; use the advertisement PDF linked below.",
     qualification:
       "See MPSC advertisement 132/2025; the combined advertisement covers general state services alongside service-specific streams — MPSC's own results page for this cycle lists State Services, Civil Engineering and Veterinary service results, so degree requirements differ by the service chosen.",
@@ -626,10 +628,13 @@ export const exams: Exam[] = [
     eligibility: [
       "Confirm education, age, nationality, domicile and category rules in the official current-cycle notice.",
       "MPSC issued a corrigendum on 6 May 2026 and a further corrigendum regarding posts on 17 Jun 2026 under advertisement 132/2025 — read both with the advertisement.",
+      "Notification 018/2026 states that the general conditions, age limit, educational qualification (other than the Accounts Officer, Group-B cadre), physical fitness and post-appointment conditions for the Main examination remain as set out in advertisement 132/2025 and its corrigendum of 17 Jun 2026.",
+      "Its corrigendum of 2 Sep 2026 revises paragraph 6.3: a candidate sitting the final year of a degree who qualifies the preliminary examination must have passed that degree examination by the last date for submitting the information or application for admission to the Main examination.",
     ],
     selectionStages: [
-      "Combined preliminary examination — service-wise results for this cycle were published on MPSC's official results page on 22 Jun 2026 (State Services and Veterinary Services) and 23 Jun 2026 (Civil Engineering Services)",
-      "Service-wise main examination and the later stages set out in MPSC's standing 'Scheme of Examination' for the Maharashtra Civil Services Gazetted Group-A and Group-B Examination, published 24 Dec 2025 and amended by a corrigendum of 27 Apr 2026",
+      "Combined preliminary examination — held on 31 May 2026, with service-wise results published on MPSC's official results page on 22 Jun 2026 (State Services and Veterinary Services) and 23 Jun 2026 (Civil Engineering Services)",
+      "State Services Main Examination 2026 under notification 018/2026 — nine papers held from 3 Oct to 1 Nov 2026, each in the 11:00 to 14:00 session, at the Amravati, Chhatrapati Sambhajinagar, Nagpur, Nashik, Navi Mumbai and Pune district centres, with cadre options submitted through MPSC's online application system between 27 Aug and 10 Sep 2026",
+      "Later stages set out in MPSC's standing 'Scheme of Examination' for the Maharashtra Civil Services Gazetted Group-A and Group-B Examination, published 24 Dec 2025 and amended by a corrigendum of 27 Apr 2026",
     ],
     syllabus: [
       "Use the service-wise syllabus documents MPSC publishes on its own 'Syllabus of Examination' page for this examination.",
@@ -649,23 +654,75 @@ export const exams: Exam[] = [
       { label: "Scheme of Examination published", date: "2025-12-24", displayDate: "24 Dec 2025", state: "completed" },
       { label: "Scheme of Examination corrigendum", date: "2026-04-27", displayDate: "27 Apr 2026", state: "completed" },
       { label: "Corrigendum", date: "2026-05-06", displayDate: "6 May 2026", state: "completed" },
+      { label: "Preliminary examination", date: "2026-05-31", displayDate: "31 May 2026", state: "completed" },
       { label: "Corrigendum regarding posts", date: "2026-06-17", displayDate: "17 Jun 2026", state: "completed" },
       { label: "Preliminary results — State and Veterinary Services", date: "2026-06-22", displayDate: "22 Jun 2026", state: "completed" },
       { label: "Preliminary result — Civil Engineering Services", date: "2026-06-23", displayDate: "23 Jun 2026", state: "completed" },
-      { label: "Main examination", displayDate: "Date not announced", state: "current" },
+      {
+        label: "State Services Main Examination notification 018/2026",
+        date: "2026-08-25",
+        displayDate: "25 Aug 2026",
+        state: "completed",
+        note: "Recruitment for 238 posts across various cadres",
+      },
+      {
+        label: "Main examination application window opens",
+        date: "2026-08-27",
+        displayDate: "27 Aug 2026, 2:00 PM",
+        state: "completed",
+      },
+      { label: "Corrigendum to notification 018/2026", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed" },
+      {
+        label: "Last date to submit the Main examination application",
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026, 11:59 PM",
+        state: "current",
+      },
+      {
+        label: "Last date to pay the Main examination fee online",
+        date: "2026-09-13",
+        displayDate: "13 Sep 2026, 11:59 PM",
+        state: "scheduled",
+        note: "Online payment only — debit card, credit card, net banking or UPI; challan payment is discontinued",
+      },
+      {
+        label: "State Services Main Examination 2026",
+        date: "2026-10-03",
+        displayDate: "3 Oct – 1 Nov 2026",
+        state: "scheduled",
+        note: "Language Paper 1 on 3 Oct, Language Paper 2 on 4 Oct, Essay Paper 3 on 5 Oct, General Studies Papers 4 to 7 on 10, 11, 17 and 18 Oct, and optional-subject Papers 8 and 9 on 31 Oct and 1 Nov 2026; every paper 11:00 to 14:00 at Amravati, Chhatrapati Sambhajinagar, Nagpur, Nashik, Navi Mumbai and Pune",
+      },
     ],
     officialLinks: [
       { label: "Advertisement 132/2025 (official PDF)", url: "https://mpsc.gov.in/downloadFile/english/12414", type: "notice" },
+      {
+        label: "Notification 018/2026 — State Services Main Examination 2026",
+        url: "https://mpsc.gov.in/downloadFile/english/14313",
+        type: "notice",
+      },
+      {
+        label: "Corrigendum of 2 Sep 2026 to notification 018/2026",
+        url: "https://mpsc.gov.in/downloadFile/english/14355",
+        type: "notice",
+      },
       { label: "Scheme of Examination — Civil Services Gazetted Group-A and Group-B", url: "https://mpsc.gov.in/downloadFile/english/12413", type: "notice" },
       { label: "MPSC Scheme of Examination page", url: "https://mpsc.gov.in/examination_scheme/17", type: "notice" },
       { label: "MPSC Syllabus of Examination page", url: "https://mpsc.gov.in/examination_syllabus/18", type: "notice" },
       { label: "MPSC official results", url: "https://mpsc.gov.in/result_of_exam/11", type: "result" },
       { label: "MPSC advertisements", url: "https://mpsc.gov.in/adv_notification/8", type: "notice" },
     ],
-    sourceTitle: "MPSC advertisement 132/2025, its Scheme of Examination and the service-wise preliminary results",
+    sourceTitle: "MPSC advertisement 132/2025 and notification 018/2026 for the State Services Main Examination 2026",
     sourceUrl: "https://mpsc.gov.in/downloadFile/english/12414",
-    sourcePublished: "Advertisement and scheme published 24 Dec 2025; corrigenda 27 Apr, 6 May and 17 Jun 2026; service-wise preliminary results 22-23 Jun 2026",
-    lastVerified: "20 Aug 2026, 03:25 IST",
+    sourcePublished:
+      "Advertisement and scheme published 24 Dec 2025; corrigenda 27 Apr, 6 May and 17 Jun 2026; service-wise preliminary results 22-23 Jun 2026; Main examination notification 018/2026 (No. CMA-0425/Pra.Kra.141/2025/Jahirat) dated 25 Aug 2026 and its corrigendum dated 2 Sep 2026; MPSC's advertisement and result streams re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:05 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The main examination now has dates and a notification. MPSC's notification 018/2026 of 25 Aug 2026 fixes the State Services Main Examination 2026 from 3 Oct to 1 Nov 2026 at six district centres, opens the online application from 27 Aug to 10 Sep 2026 with the fee payable until 13 Sep 2026, and records that the preliminary examination was held on 31 May 2026 and its result of 22 Jun 2026 processed for 238 posts. A corrigendum of 2 Sep 2026 revises the disability particulars for two Group-B cadres and the rule for final-year degree candidates.",
+      },
+    ],
   }),
   exam({
     slug: "mpsc-maharashtra-group-c-combined-2026",
@@ -686,16 +743,17 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["Graduate"],
     status: {
-      label: "Advertisement published; corrigenda active",
-      tone: "amber",
-      nextAction: "Read MPSC's corrigenda of 22 and 27 Jul 2026 and the 1 Aug 2026 exam-pattern announcement",
+      label: "Applications closed; preliminary examination moved to 3 Jan 2027",
+      tone: "blue",
+      nextAction: "Note the new preliminary examination date of 3 Jan 2027 and watch MPSC for the centre and admit-card notice",
       detail:
-        "MPSC published advertisement 017/2026 on 25 Jun 2026 and has since issued corrigenda on 16, 22 and 27 Jul 2026 plus a 1 Aug 2026 announcement on the examination pattern of the Maharashtra Group-C Services Examination 2026. No examination date is published on MPSC's own advertisement stream.",
+        "MPSC's corrigendum of 9 Sep 2026 moves the Maharashtra Group-C Services Combined Preliminary Examination 2026 from 25 Oct 2026 — the date its corrigendum of 16 Jul 2026 had fixed — to 3 Jan 2027 at all district centres, citing the availability of examination sub-centres, district administration reports, the State Services (Main) Examination 2026, the festival period, other recruiting bodies' timetables and the winter session. The examination stays in the conventional offline OMR-based mode. The corrigendum adds that the centre, admit card, examination time and centre-wise instructions will be published on MPSC's website in due course. Applications closed on 10 Aug 2026, with the fee payable until 13 Aug 2026.",
     },
     summary: "Combined preliminary examination for Maharashtra Group C services recruited through MPSC.",
-    vacancyLabel: NOT_ANNOUNCED,
+    vacancies: 5707,
+    vacancyLabel: "5,707 posts",
     vacancyNote:
-      "MPSC issued a corrigendum regarding posts on 22 Jul 2026 under this advertisement; no confirmed total is published in English, so none is asserted here.",
+      "MPSC's corrigendum of 5 Aug 2026 records that advertisement 017/2026 of 25 Jun 2026 was published to fill 2,619 vacant posts and that the corrigendum of 22 Jul 2026 added various new cadres, taking the recruitment to 5,707 posts in total. MPSC publishes no cadre-wise English break-up of that figure, so none is asserted here.",
     age: "Not asserted here — MPSC publishes advertisement 017/2026 only as a Marathi document from which no age limit could be read; use the advertisement PDF linked below.",
     qualification:
       "Not asserted here — advertisement 017/2026 groups several Group C services with different post-wise requirements and MPSC publishes it only in Marathi; use the advertisement PDF linked below.",
@@ -706,9 +764,11 @@ export const exams: Exam[] = [
     eligibility: [
       "Confirm education, age, nationality, domicile and category rules in the official current-cycle notice.",
       "MPSC extended the application-submission window and changed the posts by a corrigendum dated 22 Jul 2026, and issued a further corrigendum on 27 Jul 2026 about equivalent qualifications for the Assistant Motor Vehicle Inspector post.",
+      "The corrigendum of 5 Aug 2026 extended applications once more, to 10 Aug 2026, and fixed 10 Aug 2026 — the last date for accepting applications — as the date on which age is computed for the Gram Mahsul Adhikari (Talathi) cadre.",
+      "That corrigendum also opened the Talathi posts in Scheduled (PESA) areas, including newly available Scheduled Tribe posts in Chandrapur district, and invited fresh applications and options from candidates who had already applied. A PESA-area residence certificate issued by the Integrated Tribal Development Project office before 25 Oct 2026 is mandatory for those posts.",
     ],
     selectionStages: [
-      "Combined preliminary examination for the Group C services grouped under advertisement 017/2026",
+      "Combined preliminary examination for the Group C services grouped under advertisement 017/2026 — a conventional offline OMR-based paper, moved by the corrigendum of 9 Sep 2026 from 25 Oct 2026 to 3 Jan 2027 at all district centres",
       "Post-wise main examination and any skill test set out in MPSC's standing 'Maharashtra Group C Services Combined Examination — Revised Scheme of Examination', published 20 May 2026",
       "MPSC published a separate announcement on 1 Aug 2026 about the examination pattern of the Maharashtra Group-C Services Examination 2026 — read it before preparing",
     ],
@@ -736,15 +796,68 @@ export const exams: Exam[] = [
     ],
     timeline: [
       { label: "Revised Scheme of Examination", date: "2026-05-20", displayDate: "20 May 2026", state: "completed" },
-      { label: "Advertisement 017/2026", date: "2026-06-25", displayDate: "25 Jun 2026", state: "completed" },
-      { label: "Corrigendum", date: "2026-07-16", displayDate: "16 Jul 2026", state: "completed" },
-      { label: "Corrigendum on posts and application extension", date: "2026-07-22", displayDate: "22 Jul 2026", state: "completed" },
+      {
+        label: "Advertisement 017/2026",
+        date: "2026-06-25",
+        displayDate: "25 Jun 2026",
+        state: "completed",
+        note: "Published for 2,619 vacant posts",
+      },
+      {
+        label: "Corrigendum fixing the preliminary examination on 25 Oct 2026",
+        date: "2026-07-16",
+        displayDate: "16 Jul 2026",
+        state: "completed",
+        note: "Conventional offline OMR-based examination",
+      },
+      {
+        label: "Corrigendum on posts and application extension",
+        date: "2026-07-22",
+        displayDate: "22 Jul 2026",
+        state: "completed",
+        note: "Added new cadres, taking the recruitment to 5,707 posts",
+      },
       { label: "Corrigendum on AMVI equivalent qualifications", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
       { label: "Announcement on the examination pattern", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
-      { label: "Preliminary examination", displayDate: "Date not announced", state: "current" },
+      {
+        label: "Corrigendum on PESA Talathi posts and a further application extension",
+        date: "2026-08-05",
+        displayDate: "5 Aug 2026",
+        state: "completed",
+      },
+      { label: "Last date to apply", date: "2026-08-10", displayDate: "10 Aug 2026, 11:59 PM", state: "completed" },
+      {
+        label: "Last date to pay the examination fee online",
+        date: "2026-08-13",
+        displayDate: "13 Aug 2026, 11:59 PM",
+        state: "completed",
+      },
+      {
+        label: "Corrigendum revising the examination date",
+        date: "2026-09-09",
+        displayDate: "9 Sep 2026",
+        state: "completed",
+      },
+      {
+        label: "Preliminary examination",
+        date: "2027-01-03",
+        displayDate: "3 Jan 2027",
+        state: "scheduled",
+        note: "Moved from 25 Oct 2026; conventional offline OMR-based, at all district centres",
+      },
     ],
     officialLinks: [
       { label: "Advertisement 017/2026 (official PDF)", url: "https://mpsc.gov.in/downloadFile/english/13855", type: "notice" },
+      {
+        label: "Corrigendum of 9 Sep 2026 revising the examination date",
+        url: "https://mpsc.gov.in/downloadFile/english/14411",
+        type: "calendar",
+      },
+      {
+        label: "Corrigendum of 5 Aug 2026 on PESA Talathi posts and the application extension",
+        url: "https://mpsc.gov.in/downloadFile/english/14146",
+        type: "notice",
+      },
       { label: "Revised Scheme of Examination — Maharashtra Group C Services", url: "https://mpsc.gov.in/downloadFile/english/13501", type: "notice" },
       { label: "MPSC Scheme of Examination page", url: "https://mpsc.gov.in/examination_scheme/17", type: "notice" },
       { label: "MPSC Syllabus of Examination page", url: "https://mpsc.gov.in/examination_syllabus/18", type: "notice" },
@@ -753,8 +866,16 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "MPSC advertisement 017/2026, its corrigenda and the revised Group C Scheme of Examination",
     sourceUrl: "https://mpsc.gov.in/downloadFile/english/13855",
-    sourcePublished: "Revised scheme 20 May 2026; advertisement 25 Jun 2026; corrigenda 16, 22 and 27 Jul 2026; pattern announcement 1 Aug 2026",
-    lastVerified: "4 Aug 2026, 19:15 IST",
+    sourcePublished:
+      "Revised scheme 20 May 2026; advertisement 25 Jun 2026; corrigenda 16, 22 and 27 Jul and 5 Aug 2026; pattern announcement 1 Aug 2026; corrigendum No. CMA-0426/Pra.Kra.42/2026/Jahirat revising the examination date dated 9 Sep 2026; MPSC's advertisement stream re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:08 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "This cycle now has a published examination date, a post count and a closed application window. MPSC's corrigendum of 9 Sep 2026 moves the preliminary examination to 3 Jan 2027, from the 25 Oct 2026 its corrigendum of 16 Jul 2026 had fixed. Its corrigendum of 5 Aug 2026 records that the advertisement was published for 2,619 posts and that the 22 Jul 2026 corrigendum raised the recruitment to 5,707 posts, extends applications to 10 Aug 2026 with the fee payable to 13 Aug 2026, and opens Talathi posts in PESA areas.",
+      },
+    ],
   }),
   exam({
     slug: "goa-psc-junior-scale-officer-2025",
@@ -899,7 +1020,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Commission's website and your registered email for the interview or prescreening notice",
       detail:
-        "Applications for Advertisement No. 07 Year 2026 closed on 24 July 2026. The advertisement states that where the number of applications is large the Commission shortlists the candidates to be called for interview, and no shortlist or interview notice naming this advertisement has been published yet.",
+        "Applications for Advertisement No. 07 Year 2026 closed on 24 July 2026. The advertisement states that where the number of applications is large the Commission shortlists the candidates to be called for interview. The Commission's advertisement, qualified-list and result pages, re-read on 10 Sep 2026, still carry no qualified list, interview notice or Computer Based Recruitment Test notice naming this advertisement — the CBRT notice for the tests of 5 and 6 Sep 2026 covers Advertisements 09/2025, 01/2026, 02/2026 and 03/2026 only.",
     },
     summary:
       "Goa Public Service Commission recruitment to six professional and teaching posts across the Captain of Ports Department, Public Health Department, Directorate of Technical Education, Department of Archives and Directorate of Higher Education.",
@@ -965,8 +1086,9 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Goa Public Service Commission Advertisement No. 07 Year 2026",
     sourceUrl: "https://gpsc.goa.gov.in/wp-content/uploads/2026/07/Advt.-No.-07-Year-2026-website.pdf",
-    sourcePublished: "Published 10 Jul 2026 in the Navhind Times, Herald, Lokmat, Tarun Bharat, Gomantak and Bhangarbhuy; last date 24 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished:
+      "Published 10 Jul 2026 in the Navhind Times, Herald, Lokmat, Tarun Bharat, Gomantak and Bhangarbhuy; last date 24 Jul 2026; Commission's advertisement, qualified-list and result pages re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:10 IST",
   }),
   exam({
     slug: "dnhdd-disaster-management-professional-staff-2026",
@@ -1439,7 +1561,8 @@ export const exams: Exam[] = [
       label: "Prelims and Mains scheduled",
       tone: "blue",
       nextAction: "Preliminary examination scheduled for 6 Dec 2026",
-      detail: "RPSC's official proposed exam-date calendar lists the Preliminary examination on 6 Dec 2026 and the Main examination on 1–2 May 2027 for advertisement 02/2026-27.",
+      detail:
+        "RPSC's official proposed exam-date calendar, re-read on 10 Sep 2026, still lists the Preliminary examination on 6 Dec 2026 and the Main examination on 1–2 May 2027 for advertisement 02/2026-27, all three entries released 2 Jul 2026. The Commission's advertisement list carries no corrigendum for this examination.",
     },
     summary: "Rajasthan's flagship combined competitive examination recruiting Rajasthan Administrative Service, Rajasthan Police Service and other state and subordinate services in one cycle.",
     vacancyLabel: "See advertisement 02/2026-27",
@@ -1490,8 +1613,9 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "RPSC advertisement 02/2026-27 and proposed exam-date calendar for RAS 2026",
     sourceUrl: "https://rpsc.rajasthan.gov.in/proposedexamdate",
-    sourcePublished: "Advertisement released 27 May 2026; exam-date press note released 2 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished:
+      "Advertisement released 27 May 2026; exam-date press note released 2 Jul 2026; proposed exam-date calendar and advertisement list re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:24 IST",
   }),
   exam({
     slug: "rssb-cet-graduate-level-2026",
@@ -1515,7 +1639,8 @@ export const exams: Exam[] = [
       label: "Application window closed; CET scheduled",
       tone: "blue",
       nextAction: "CET (Graduation Level) scheduled for 1–3 Dec 2026",
-      detail: "RSSB's official advertisement listing shows the Graduation Level Common Eligibility Test detailed advertisement released 1 Jul 2026, with the qualifying test scheduled for December 2026.",
+      detail:
+        "Clause 9 of RSSB's detailed advertisement 09/2026, re-read on 10 Sep 2026, fixes the Common Eligibility Test (Graduation Level) 2026 from 1 to 3 December 2026, after an online application window that ran from 4 July to 2 August 2026. The Board's advertisement list carries no amended advertisement for this test, its newest entry of any kind being the Junior Engineer advertisement of 15 Aug 2026.",
     },
     summary: "Common Eligibility Test that qualifies graduates to apply for Patwari, Platoon Commander, Gram Sevak, Junior Accountant and other Rajasthan subordinate and ministerial graduate-level posts.",
     vacancyLabel: "Not applicable to this qualifying test",
@@ -1562,13 +1687,18 @@ export const exams: Exam[] = [
       "राजस्थान सीईटी",
     ],
     officialLinks: [
+      {
+        label: "Detailed advertisement 09/2026 — Common Eligibility Test (Graduation Level) 2026",
+        url: "https://rssb.rajasthan.gov.in/storage/advertisement_item/1782966142.pdf",
+        type: "notice",
+      },
       { label: "RSSB advertisement listing", url: "https://rssb.rajasthan.gov.in/advertisements", type: "notice" },
       { label: "RSSB official website", url: "https://rssb.rajasthan.gov.in/", type: "website" },
     ],
-    sourceTitle: "RSSB advertisement listing — Common Eligibility Test (Graduation Level) 2026",
-    sourceUrl: "https://rssb.rajasthan.gov.in/advertisements",
-    sourcePublished: "Detailed advertisement listed 1 Jul 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourceTitle: "RSSB detailed advertisement 09/2026 — Common Eligibility Test (Graduation Level) 2026",
+    sourceUrl: "https://rssb.rajasthan.gov.in/storage/advertisement_item/1782966142.pdf",
+    sourcePublished: "Detailed advertisement listed and digitally signed 1 Jul 2026; advertisement re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:26 IST",
   }),
   exam({
     slug: "maharashtra-police-constable-bharti-2024-25",
@@ -2138,7 +2268,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch RSSB's advertisement page for the Forest Guard detailed advertisement",
       detail:
-        "RSSB's short advertisement of 17 Jul 2025 for Forest Department direct recruitment announced Forester, Forest Guard and Surveyor posts. Only the Forester detailed advertisement has since been issued; the Forest Guard detailed advertisement, which carries the confirmed vacancy table and dates, is not yet on RSSB's advertisement list.",
+        "RSSB's short advertisement of 17 Jul 2025 for Forest Department direct recruitment announced Forester, Forest Guard and Surveyor posts. Only the Forester detailed advertisement, of 5 Jan 2026, has since been issued. The Board's advertisement list, re-read on 10 Sep 2026, still carries no Forest Guard detailed advertisement — the document that would bring the confirmed vacancy table and dates — and no Forest Department entry newer than that Forester advertisement.",
     },
     summary:
       "Rajasthan Staff Selection Board recruitment to Forest Guard (Vanrakshak) posts in the Rajasthan Forest Department, announced in the department's direct-recruitment short advertisement.",
@@ -2175,8 +2305,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "RSSB short advertisement — direct recruitment to various Forest Department posts, 2025",
     sourceUrl: "https://rssb.rajasthan.gov.in/storage/advertisement_item/1752765122.pdf",
-    sourcePublished: "Short advertisement listed 17 Jul 2025; advertisement list checked 4 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Short advertisement listed 17 Jul 2025; advertisement list re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:28 IST",
   }),
   exam({
     slug: "mahatet-maharashtra-teacher-eligibility-test-june-2026",
@@ -2303,7 +2433,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Revenue Department's Mahabhumi portal for the next Talathi advertisement",
       detail:
-        "The Revenue Department runs Talathi Direct Service Recruitment through its Mahabhumi portal, which currently publishes the revised district-wise merit lists of the 2023 cycle. No newer Talathi advertisement is published there.",
+        "The Revenue Department runs Talathi Direct Service Recruitment through its Mahabhumi portal, which currently publishes the revised district-wise merit lists of the 2023 cycle for all 36 districts. The portal, re-read on 10 Sep 2026, still publishes no newer Talathi advertisement.",
     },
     summary:
       "District-wise recruitment to Talathi, the village-level revenue officer post, run by the Revenue Department of the Government of Maharashtra through its Mahabhumi portal.",
@@ -2336,8 +2466,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Revenue Department, Government of Maharashtra — Talathi Direct Service Recruitment pages on Mahabhumi",
     sourceUrl: "https://mahabhumi.gov.in/Mahabhumilink/login/RevisedResult",
-    sourcePublished: "Revised district-wise merit lists for the 2023 cycle; portal checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:30 IST",
+    sourcePublished: "Revised district-wise merit lists for the 2023 cycle; portal re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:18 IST",
   }),
   listedExam({
     slug: "gujarat-teacher-eligibility-test-seb",
@@ -3750,6 +3880,119 @@ export const exams: Exam[] = [
     ],
   }),
   exam({
+    slug: "gssc-goa-group-c-clerical-cadres-2026",
+    title: "Goa Staff Selection Commission Group C Recruitment 2026 (Advertisement 3)",
+    shortTitle: "GSSC Goa Advt 3 of 2026",
+    aliases: [
+      "GSSC Advertisement No. 3 of Year 2026",
+      "Goa Lower Division Clerk recruitment 2026",
+      "Goa Recovery Clerk recruitment",
+      "Goa Data Entry Operator recruitment",
+      "गोवा लिपिक भरती",
+    ],
+    organisation: "Goa Staff Selection Commission",
+    governmentLevel: "State",
+    jurisdiction: "Goa",
+    state: "Goa",
+    stateCode: "GA",
+    regionCodes: ["GA"],
+    cycle: "2026",
+    year: 2026,
+    notificationNumber: "3 of 2026",
+    verification: "verified",
+    sector: "Clerical and ministerial services",
+    examTypes: ["Civil Services & Administration"],
+    education: ["12th"],
+    status: {
+      label: "Brief advertisement out; online portal opens by 11 Sep 2026",
+      tone: "blue",
+      nextAction: "Apply online through the Commission's website once the portal opens, on or before 2 Oct 2026",
+      detail:
+        "Brief Advertisement No. 3 of Year 2026, No.1/164/2026-GSSC/871 dated 4 Sep 2026 and uploaded the same day, invites online applications for 215 tentative Group C posts in various Government departments of Goa. The Commission states that the portal for submitting online applications will be available by 11 Sep 2026, that the detailed advertisement will be uploaded on its website by the same date, and that the last date for filling up the online application is 2 Oct 2026. Examination dates are to be intimated in due course through the Commission's website and publication in the local daily. Its advertisement list, read on 10 Sep 2026, carries the brief advertisement only.",
+    },
+    summary:
+      "Goa Staff Selection Commission recruitment to Lower Division Clerk/Recovery Clerk, Junior Assistant, Desktop Publishing Operator and Data Entry Operator posts across Government departments of Goa.",
+    vacancies: 215,
+    vacancyLabel: "215 posts (tentative)",
+    vacancyNote:
+      "The brief advertisement prints a post count against each of the four cadres but no grand total; 215 is the sum of those published figures, listed cadre-wise below. The advertisement states that the vacancies indicated are tentative and that the exact vacancies will be mentioned in the detailed advertisement.",
+    vacancyBreakdown: [
+      { label: "Lower Division Clerk / Recovery Clerk", ur: 109, st: 25, sc: 4, obc: 44, ews: 15, total: 197 },
+      { label: "Junior Assistant", ur: 7, st: 2, obc: 4, total: 13 },
+      { label: "Desktop Publishing Operator", ur: 3, total: 3 },
+      { label: "Data Entry Operator", ur: 2, total: 2 },
+    ],
+    age:
+      "Not asserted here — the brief advertisement of 4 Sep 2026 publishes no age limit or relaxation for any of the four cadres. Use the detailed advertisement the Commission is to upload by 11 Sep 2026.",
+    qualification:
+      "Not asserted here — the brief advertisement of 4 Sep 2026 publishes no educational qualification, experience or language requirement for any of the four cadres. Use the detailed advertisement the Commission is to upload by 11 Sep 2026.",
+    fee: "Not asserted here — the brief advertisement publishes no application fee; the detailed advertisement due by 11 Sep 2026 carries it.",
+    pay: "Not asserted here — the brief advertisement publishes no pay level for any of the four cadres.",
+    timeline: [
+      { label: "Brief Advertisement No. 3 of Year 2026", date: "2026-09-04", displayDate: "4 Sep 2026", state: "completed" },
+      {
+        label: "Online application portal available",
+        date: "2026-09-11",
+        displayDate: "By 11 Sep 2026",
+        state: "scheduled",
+      },
+      {
+        label: "Detailed advertisement to be uploaded",
+        date: "2026-09-11",
+        displayDate: "By 11 Sep 2026",
+        state: "scheduled",
+      },
+      { label: "Last date to apply online", date: "2026-10-02", displayDate: "2 Oct 2026", state: "scheduled" },
+      { label: "Examination", displayDate: "To be announced", state: "tentative" },
+    ],
+    eligibility: [
+      "Only online applications are accepted, through the Commission's website; the advertisement states that applications shall not be submitted through any other mode and that no correspondence will be entertained about it.",
+      "Of the 197 Lower Division Clerk/Recovery Clerk posts, 23 are reserved for persons with benchmark disabilities, 17 for ex-servicemen and 1 for meritorious sportsmen or sportspersons.",
+      "Of the 13 Junior Assistant posts, 3 are reserved for persons with benchmark disabilities and 1 for ex-servicemen.",
+      "Candidates are told to read the 'Instructions' available on the Commission's website before filling the application online, and to refer to the detailed advertisement to be uploaded by 11 Sep 2026.",
+      "The advertisement warns that ineligible candidates should not apply for the posts advertised, failing which strict action will be taken by the Commission against such a candidate.",
+    ],
+    selectionStages: [
+      "Not published in the brief advertisement — the Commission states only that the date of the examinations will be intimated in due course through its website and publication in the local daily; the detailed advertisement due by 11 Sep 2026 carries the scheme of selection.",
+    ],
+    syllabus: [
+      "Use the syllabus and scheme-of-examination annexure inside the detailed Advertisement No. 3 of Year 2026 once the Commission uploads it.",
+    ],
+    keywords: [
+      "Goa LDC recruitment",
+      "Goa lower division clerk bharti",
+      "GSSC advertisement 3 of 2026",
+      "Goa recovery clerk vacancy",
+      "Goa junior assistant recruitment",
+      "Goa data entry operator post",
+      "Goa desktop publishing operator",
+      "गोवा लिपिक भरती",
+      "goa group c clerk jobs",
+    ],
+    officialLinks: [
+      {
+        label: "Brief Advertisement No. 3 of Year 2026",
+        url: "https://gssc.goa.gov.in/wp-content/uploads/2026/09/advertisement-no.-3-of-year-2026-brief-advertisement-dated-04.09.2026_compressed.pdf",
+        type: "notice",
+      },
+      { label: "GSSC advertisements", url: "https://gssc.goa.gov.in/?page_id=1079", type: "notice" },
+      { label: "Goa Staff Selection Commission", url: "https://gssc.goa.gov.in/", type: "website" },
+    ],
+    sourceTitle: "Goa Staff Selection Commission Advertisement No. 3 of Year 2026 (Brief Advertisement)",
+    sourceUrl:
+      "https://gssc.goa.gov.in/wp-content/uploads/2026/09/advertisement-no.-3-of-year-2026-brief-advertisement-dated-04.09.2026_compressed.pdf",
+    sourcePublished:
+      "Brief Advertisement No.1/164/2026-GSSC/871 dated 4 Sep 2026 and uploaded 4 Sep 2026; Commission's advertisement list re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:15 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "New record. GSSC's Brief Advertisement No. 3 of Year 2026, dated 4 Sep 2026, invites online applications for 215 tentative Group C posts — 197 Lower Division Clerk/Recovery Clerk, 13 Junior Assistant, 3 Desktop Publishing Operator and 2 Data Entry Operator — with the online portal and the detailed advertisement due by 11 Sep 2026 and 2 Oct 2026 as the last date to apply.",
+      },
+    ],
+  }),
+  exam({
     slug: "rvunl-common-recruitment-state-power-companies-2026",
     title: "Common Recruitment in State Power Companies of Rajasthan 2026-27",
     shortTitle: "Rajasthan Power Companies 2026",
@@ -3770,7 +4013,8 @@ export const exams: Exam[] = [
       label: "Applications closed; examination date awaited",
       tone: "amber",
       nextAction: "Watch RVUN's Recruitment 2026-27 page for the examination schedule",
-      detail: "RVUN's Recruitment 2026-27 page carried the short and detailed advertisements alongside a link to the registration portal; the online application window opened as scheduled on 5 August 2026 and closed on 25 August 2026.",
+      detail:
+        "RVUN's Recruitment 2026-27 page carries the short and detailed advertisements alongside the registration link. The online application window opened as scheduled on 5 August 2026, and RVUN's notice of 25 August 2026 extended the last date from 25 August to 31 August 2026, 12:00 midnight, after which the link was to be deactivated with no further opportunity. Read again on 10 September 2026, the page lists that extension notice as its newest item and publishes no examination date.",
     },
     summary:
       "Single common recruitment for Rajasthan's five state power companies — the generation company RVUN, the transmission company RVPN and the distribution companies JVVN, AVVN and JdVVN — to Junior Engineer-I, Junior Accountant and Junior Assistant/Commercial Assistant-II posts.",
@@ -3787,7 +4031,20 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Detailed advertisement announced", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
       { label: "Online application window opens", date: "2026-08-05", displayDate: "5 Aug 2026", state: "completed" },
-      { label: "Online application deadline", date: "2026-08-25", displayDate: "25 Aug 2026", state: "completed" },
+      {
+        label: "Notice extending the online application deadline",
+        date: "2026-08-25",
+        displayDate: "25 Aug 2026",
+        state: "completed",
+        note: "Notice No. RRVUN/Ka. evam Prasha./Bharti 2026-27/Pa-103/Pre-197",
+      },
+      {
+        label: "Extended online application deadline",
+        date: "2026-08-31",
+        displayDate: "31 Aug 2026, 12:00 midnight",
+        state: "completed",
+        note: "Extended from 25 Aug 2026; the application link was to be deactivated afterwards",
+      },
     ],
     eligibility: [
       "This is a single common recruitment across RVUN, RVPN, JVVN, AVVN and JdVVN — one application covers the participating companies, and allotment follows the detailed advertisement.",
@@ -3834,13 +4091,18 @@ export const exams: Exam[] = [
     sourceTitle: "Rajasthan Rajya Vidyut Utpadan Nigam — common recruitment 2026-27 announcement and press release",
     sourceUrl: "https://energy.rajasthan.gov.in/rrvun/",
     sourcePublished:
-      "Portal announcement and press release dated 4 Aug 2026; Recruitment 2026-27 page shows a live Apply Online link and was last updated 7 Aug 2026",
-    lastVerified: "10 Aug 2026, 11:05 IST",
+      "Portal announcement and press release dated 4 Aug 2026; notice extending the last date to 31 Aug 2026 dated 25 Aug 2026; Recruitment 2026-27 page re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:12 IST",
     changeLog: [
       {
         date: "2026-08-10",
         displayDate: "10 Aug 2026",
         text: "RVUN's Recruitment 2026-27 page confirmed the online application window opened on schedule on 5 Aug 2026, with a live Apply Online link now shown; marked that timeline event completed and moved status from an upcoming opening to applications open against the 25 Aug 2026 deadline.",
+      },
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The application deadline was not 25 Aug 2026 after all: RVUN's notice of 25 Aug 2026, now listed on the Recruitment 2026-27 page, extended the last date for the online application to 31 Aug 2026, 12:00 midnight. Both dates are recorded in the timeline; no examination date is published yet.",
       },
     ],
   }),
@@ -3865,7 +4127,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the board's own recruitment-advertisements page for the next notice",
       detail:
-        "The board's own recruitment-advertisements page currently carries only the March 2025 call-letter notices and candidate handouts for the Apex Bank and Central Cooperative Banks recruitment and for RAJFED. No newer advertisement is listed.",
+        "The board's own recruitment-advertisements page carries only the March 2025 call-letter notices and candidate handouts for the Apex Bank and Central Cooperative Banks recruitment and for RAJFED. Re-read on 10 Sep 2026, its newest listed document is still dated 24 Mar 2025 and no newer advertisement appears.",
     },
     summary:
       "Statutory recruitment board that selects and recommends staff for Rajasthan's cooperative institutions, including the Apex Bank, the Central Cooperative Banks and RAJFED.",
@@ -3900,7 +4162,7 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Rajasthan Cooperative Recruitment Board — recruitment-advertisements and About Us pages",
     sourceUrl: "https://rajcrb.rajasthan.gov.in/RecruitmentAdvertisements.aspx?menu_id=13",
-    sourcePublished: "Latest listed documents dated 24 Mar 2025; pages checked 4 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Latest listed documents dated 24 Mar 2025; pages re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:22 IST",
   }),
 ];

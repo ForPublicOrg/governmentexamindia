@@ -83,8 +83,8 @@ export const authorities: Authority[] = [
     name: "West Bengal Central School Service Commission",
     level: "State",
     regionCodes: ["WB"],
-    allowedHosts: ["westbengalssc.com", "www.westbengalssc.com"],
-    watchUrls: ["https://www.westbengalssc.com/otr/recruitment/"],
+    allowedHosts: ["westbengalssc.com", "www.westbengalssc.com", "old.westbengalssc.com"],
+    watchUrls: ["https://www.westbengalssc.com/otr/recruitment/", "https://old.westbengalssc.com/sscorg/wbssc/home/"],
   },
   {
     id: "jssc",

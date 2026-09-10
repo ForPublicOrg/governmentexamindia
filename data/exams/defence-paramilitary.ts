@@ -1941,7 +1941,7 @@ export const exams: Exam[] = [
       label: "Notification published; application window not dated",
       tone: "amber",
       nextAction: "Register on the Join Indian Army portal after the NEET (UG) 2026 result is declared",
-      detail: "The official notification invites applications from female NEET (UG) 2026 qualified candidates but publishes no opening or closing date — it states that the Join Indian Army portal becomes accessible after the NEET (UG) 2026 result is declared. No date, seat count or screening schedule is asserted here.",
+      detail: "The official notification, re-read on 10 Sep 2026 and unchanged on the server since 17 Jul 2026, invites applications from female NEET (UG) 2026 qualified candidates but publishes no opening or closing date — para 8.1 states only that the Join Indian Army portal becomes accessible after the NEET (UG) 2026 result is declared. The Join Indian Army notice board itself could not be read on 10 Sep 2026 because the site puts its web pages behind a captcha gate, so nothing newer than this notification is confirmed. No date, seat count or screening schedule is asserted here.",
     },
     summary: "Commissions women officers into the Military Nursing Service after a four-year B.Sc (Nursing) course at Colleges of Nursing under the Armed Forces Medical Services.",
     vacancyNote:
@@ -1978,8 +1978,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Join Colleges of Nursing under AFMS — B.Sc (Nursing) Course 2026 notification",
     sourceUrl: "https://www.joinindianarmy.nic.in/writereaddata/Portal/NotificationPDF/webadvertisement_14_07_2026.pdf",
-    sourcePublished: "Notification file dated 14 Jul 2026 (per official filename)",
-    lastVerified: "4 Aug 2026, 16:50 IST",
+    sourcePublished: "Notification file dated 14 Jul 2026 (per official filename); re-read 10 Sep 2026, when the server still reported it last modified 17 Jul 2026",
+    lastVerified: "10 Sep 2026, 22:13 IST",
     keywords: [
       "Military Nursing Service officer",
       "MNS BSc Nursing",

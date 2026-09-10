@@ -129,7 +129,7 @@ export const authorities: Authority[] = [
     level: "State",
     regionCodes: ["JK"],
     allowedHosts: ["jkssb.nic.in"],
-    watchUrls: ["https://jkssb.nic.in/", "https://jkssb.nic.in/Advertisement.html"],
+    watchUrls: ["https://jkssb.nic.in/", "https://jkssb.nic.in/Advertisement.html", "https://jkssb.nic.in/Whatsnew.html"],
   },
   {
     id: "upsssc",
@@ -413,7 +413,8 @@ export const exams: Exam[] = [
       label: "Main-examination notices active",
       tone: "violet",
       nextAction: "Follow the UKPSC recruitment-notification stream",
-      detail: "The Commission's official site carries 2026 notices for the 2025 combined state civil-services cycle. No unannounced next-stage date is asserted here.",
+      detail:
+        "The Commission's official site carries 2026 notices for the 2025 combined state civil-services cycle. Its announcement stream, re-read on 10 September 2026 and running back to 1 August 2026, publishes nothing newer about this cycle, and the Exam Calendar 2026-27 updated on 1 September 2026 does not list it. No unannounced next-stage date is asserted here.",
     },
     summary: "Uttarakhand's combined competitive examination for state civil and upper subordinate services.",
     pay: "See the official notification; pay levels are fixed post-wise in the Commission's notification for the cycle.",
@@ -433,8 +434,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UKPSC notices for Combined State Civil / Upper Subordinate Services Examination 2025",
     sourceUrl: "https://psc.uk.gov.in/",
-    sourcePublished: "Official cycle notices current in April 2026",
-    lastVerified: "4 Aug 2026, 15:15 IST",
+    sourcePublished: "Official cycle notices current in April 2026; UKPSC announcement stream re-read 10 Sep 2026 with nothing newer for this cycle",
+    lastVerified: "10 Sep 2026, 22:11 IST",
     keywords: [
       "UK PCS",
       "Uttarakhand combined state exam",
@@ -584,6 +585,113 @@ export const exams: Exam[] = [
       "UKPSC VO 2026",
       "Uttarakhand animal husbandry recruitment",
       "BVSc AH government job",
+    ],
+  }),
+  exam({
+    slug: "ukpsc-combined-state-civil-services-2026",
+    title: "UKPSC Combined State Civil / Upper Subordinate Services Examination 2026",
+    shortTitle: "UKPSC PCS 2026",
+    aliases: [
+      "Uttarakhand PCS 2026",
+      "A-1/E-1/2026-27",
+      "UK PCS 2026",
+      "उत्तराखण्ड सम्मिलित राज्य सिविल/प्रवर अधीनस्थ सेवा परीक्षा 2026",
+    ],
+    organisation: "Uttarakhand Public Service Commission",
+    governmentLevel: "State",
+    jurisdiction: "Uttarakhand",
+    state: "Uttarakhand",
+    stateCode: "UK",
+    regionCodes: ["UK"],
+    cycle: "2026",
+    year: 2026,
+    verification: "verified",
+    notificationNumber: "A-1/E-1/2026-27",
+    sector: "State civil services",
+    examTypes: ["Civil Services & Administration", "Police & CAPF"],
+    education: ["Graduate", "Postgraduate"],
+    status: {
+      label: "Applications open until 29 September 2026",
+      tone: "green",
+      nextAction: "Apply online through the link on psc.uk.gov.in before 29 September 2026, 11:59:59 PM",
+      detail:
+        "Advertisement A-1/E-1/2026-27 dated 9 September 2026, announced the same day by the Commission's notification 116/06/E-01/DR/PCS/2026-27, invites online applications for 67 Group B posts across sixteen cadres in various Uttarakhand departments. Applications and the examination fee close on 29 September 2026, 11:59:59 PM, and a single edit and correction window runs from 7 to 16 October 2026, 11:59:59 PM. The advertisement itself does not fix an examination date and says the date, time and centre will be given on the online admit card; the Commission's Exam Calendar 2026-27 of 1 September 2026 lists 29 November 2026, a Sunday, only as the proposed preliminary-examination date. Read on the Commission's recruitment listing on 10 September 2026.",
+    },
+    summary:
+      "Uttarakhand's combined competitive examination for Group B state civil and upper subordinate posts, filled through an objective preliminary screening test, a written main examination and an interview.",
+    vacancies: 67,
+    vacancyLabel: "67 posts across 16 cadres",
+    vacancyNote:
+      "The advertisement records 67 vacancies and states that the number can be reduced or increased. Post-wise: Deputy Collector, Personnel and Vigilance Department 10; Police Deputy Superintendent, Home Department 14; District Commandant Home Guards, Home Department 2; Finance Officer or Treasury Officer, Finance Department 4; Assistant Director or Audit Officer, Finance Department 8; Assistant Commissioner State Tax, Finance Department 1; Assistant Municipal Commissioner or Executive Officer Grade-1, Urban Development Department 1; Block Development Officer, Rural Development Department 5; Deputy Education Officer, Staff Officer or Law Officer, School Education Department 1; Assistant Labour Commissioner, Labour Department 1; Assistant Director or Deputy Secretary, Sanskrit Education Department 4; Assistant Director Factory and Boiler, Labour Department 2; Assistant Regional Transport Officer, Transport Department 5; Nursery Development Officer Grade-2, Agriculture and Farmers Welfare Department 1; State Tax Officer, Finance Department 5; and Case Worker, Women Welfare Department 3. Horizontal sub-quotas are marked post-wise for Uttarakhand women, and one post each of Deputy Collector and Police Deputy Superintendent is marked for Uttarakhand state-movement agitators. Vertical and horizontal reservation is allowed only to candidates domiciled in Uttarakhand who enter the claim in the online application form.",
+    vacancyBreakdown: [
+      { label: "All 16 advertised cadres (advertisement total)", ur: 37, sc: 13, st: 0, obc: 11, ews: 6, total: 67 },
+    ],
+    age: "21 to 42 years with 1 July 2026 as the reference date: a candidate must have attained the minimum age and must not have attained the maximum age on that date, so the date of birth may not fall after 1 July 2005 or before 2 July 1984. Uttarakhand Scheduled Caste, Scheduled Tribe and Other Backward Class candidates get five years' relaxation in the maximum age under Government order 1399 dated 21 May 2005; Uttarakhand divyang candidates and dependants of Uttarakhand freedom fighters get five years under Government order 1244 of the same date. Under Government order 17/2/1981-Karmik-2 dated 28 February 1985 ex-servicemen, including Emergency and Short Service Commissioned Officers, who have served at least five years get up to five years computed on their period of service, and so do those due to be released within six months, except where they were dismissed for misconduct or inefficiency or released for a disability treated as a demerit. Only the date of birth entered on the High School certificate or marksheet is accepted.",
+    qualification:
+      "A Bachelor's degree from a recognised university established by law in India is the essential qualification for post codes 1, 2, 3, 4, 6, 7, 8, 13 and 15. Special qualifications apply to the rest: Assistant Director or Audit Officer needs a Bachelor's degree in Commerce or a Chartered Accountant qualification from the Institute of Chartered Accountants; Deputy Education Officer, Staff Officer or Law Officer needs a postgraduate degree; Assistant Labour Commissioner needs a Bachelor's degree with one of Economics, Sociology, Commerce, Law, Labour Relations, Labour Welfare, Labour Law, Social Work or Welfare, Business Management or Personnel Management; Assistant Director or Deputy Secretary in the Sanskrit Education Department needs a postgraduate degree in Sanskrit or its equivalent together with a Shiksha Shastri B.Ed.; Assistant Director Factory and Boiler needs a Bachelor's degree in Mechanical or Electrical engineering or a Government-recognised equivalent; Nursery Development Officer Grade-2 needs a Bachelor of Science in Horticulture or Agriculture or an equivalent horticulture degree; and Case Worker needs a postgraduate degree in Sociology, Applied Sociology or Social Work. The qualification must be held on or before 29 September 2026, and the date of acquiring it is fixed by the marksheet issuing date or the result declaration date, which must be entered in the application form. Police Deputy Superintendent and District Commandant Home Guards additionally carry the height, chest, weight and vision standards printed in the advertisement.",
+    fee: "Application fee, payable only by net banking, debit card, credit card or UPI: unreserved, Uttarakhand Other Backward Class and Uttarakhand Economically Weaker Section candidates ₹150 plus a processing fee of ₹16.36 including tax (₹166.36 in all); Uttarakhand Scheduled Caste, Scheduled Tribe and identified-category divyang candidates ₹60 plus ₹16.36 (₹76.36); orphan children of Uttarakhand pay nothing at all. Dependants of Uttarakhand freedom fighters and Uttarakhand women, ex-servicemen, skilled sportspersons and state-movement agitators pay the fee fixed for their own vertical category. A separate main-examination fee is collected later from candidates who clear the preliminary examination: ₹250 for the general category, ₹150 for Uttarakhand Other Backward Class and Economically Weaker Section candidates, ₹100 for Uttarakhand Scheduled Caste and Scheduled Tribe candidates and identified-category divyang candidates, and nothing from orphan children of Uttarakhand. A fee once paid is never refunded, and an application carrying less than the prescribed fee is treated as cancelled.",
+    pay: "Pay Level-10 (₹56,100-1,77,500) for post codes 1 to 14, Pay Level-07 (₹44,900-1,42,400) for State Tax Officer and Pay Level-06 (₹35,400-1,12,400) for Case Worker. Post codes 1 to 6, 8 to 10, 12 and 14 to 16 are gazetted and permanent, post codes 11 and 13 gazetted and temporary and post code 7 non-gazetted and permanent; all carry the contributory pension scheme.",
+    timeline: [
+      { label: "Advertisement A-1/E-1/2026-27 published and online applications opened", date: "2026-09-09", displayDate: "9 Sep 2026", state: "completed" },
+      { label: "Last date for online applications and the examination fee", date: "2026-09-29", displayDate: "29 Sep 2026, 11:59:59 PM", state: "current" },
+      { label: "Application edit and correction window", date: "2026-10-07", displayDate: "7 to 16 Oct 2026, 11:59:59 PM", state: "scheduled" },
+      {
+        label: "Preliminary examination (objective)",
+        date: "2026-11-29",
+        displayDate: "29 Nov 2026, Sunday (proposed)",
+        state: "tentative",
+        note: "Proposed date from the Commission's Exam Calendar 2026-27 of 1 September 2026, whose column is headed 'proposed examination date'. The advertisement of 9 September 2026 does not confirm it and says the date will be given on the online admit card.",
+      },
+      { label: "Main written examination and interview", displayDate: "Dates not announced", state: "tentative" },
+    ],
+    eligibility: [
+      "Nationality follows the service rule: an Indian citizen, or a Tibetan refugee who came to India before 1 January 1962 intending to settle permanently, or a person of Indian origin who migrated from Pakistan, Burma, Sri Lanka or an East African country intending to settle permanently, the last two categories needing an eligibility certificate from the State Government.",
+      "Vertical and horizontal reservation is allowed only to candidates domiciled in Uttarakhand; a candidate of any reserved category who is not domiciled in Uttarakhand gets no reservation benefit and competes against unreserved posts.",
+      "Every category and sub-category claimed must be entered in the online application form, and the reservation certificate must be held on or before 29 September 2026; a claim not made in the form is not considered later, following the High Court order of 8 June 2010 in Special Appeal 79/2010 and the Supreme Court order in SLP (Civil) 19532/2010.",
+      "More than one application for the advertised examination is not permitted. A candidate may instead cancel an application and apply afresh before the closing date, but the fee already paid is not carried over.",
+      "The Uttarakhand Public Examinations (Measures for Prevention and Prohibition of Unfair Means in Recruitment) Act 2023, notified vide 168/XXXVI(3)/2023/10(01)/2023 dated 27 April 2023, applies; a candidate applying on forged certificates can be debarred from the Commission's examinations for up to five years and prosecuted.",
+      "Because a combined examination is being held, no additional 25 per cent waiting list will be prepared for these posts under rule 6(5) of Government order 1/160592 dated 10 October 2023.",
+    ],
+    selectionStages: [
+      "Preliminary examination of objective type at examination centres in the twenty-four towns listed at Appendix-1, used only as a screening test whose marks are not added to the later stages",
+      "Main written examination for candidates who clear the preliminary examination, held only at centres in Haldwani and Haridwar",
+      "Interview or personality test of 150 marks for candidates provisionally declared successful in the main examination",
+      "Verification by the Commission, before the interview, of the educational, reservation and preferential claims made in the online application",
+      "Final merit from the 1,500-mark main examination and the 150-mark interview, a total of 1,650 marks, subject to the minimum qualifying percentages fixed category-wise at Appendix-7",
+    ],
+    syllabus: [
+      "Preliminary examination: Paper I General Studies, 150 objective questions of one mark each in two hours, of which at least one third must relate to Uttarakhand; Paper II General Aptitude, 100 objective questions of 1.5 marks each in two hours, qualifying at 33 per cent for every category. One quarter of the marks fixed for a question is deducted for a wrong answer or for more than one answer, and the preliminary result is drawn only from Paper I.",
+      "Main examination: eight compulsory papers of three hours each - General Hindi 150 marks, Essay 150 marks and General Studies I to VI of 200 marks each, with General Studies V and VI on Uttarakhand - totalling 1,500 marks, and a minimum of 35 per cent is required in General Hindi.",
+      "The examination scheme and syllabus are printed at Appendix-2 of advertisement A-1/E-1/2026-27, the minimum qualifying percentages at Appendix-7 and the document checklist at Appendix-8. Use only the Commission's own appendices for this cycle; no third-party topic list is asserted here.",
+    ],
+    officialLinks: [
+      { label: "Advertisement A-1/E-1/2026-27 (Combined State Civil / Upper Subordinate Services Examination 2026)", url: "https://psc.uk.gov.in/public/uploads/recruitment/386866072.pdf", type: "notice" },
+      { label: "Notification 116/06/E-01/DR/PCS/2026-27 of 9 September 2026", url: "https://psc.uk.gov.in/public/uploads/recruitment/1247631101.pdf", type: "notice" },
+      { label: "UKPSC Exam Calendar 2026-27 (updated 1 September 2026)", url: "https://psc.uk.gov.in/public/uploads/pdf/1788267804.pdf", type: "calendar" },
+      { label: "UKPSC recruitment listing", url: "https://psc.uk.gov.in/candidate-corner/recruitment", type: "notice" },
+      { label: "UKPSC official website", url: "https://psc.uk.gov.in/", type: "website" },
+    ],
+    sourceTitle: "UKPSC advertisement A-1/E-1/2026-27 for the Uttarakhand Combined State Civil / Upper Subordinate Services Examination 2026",
+    sourceUrl: "https://psc.uk.gov.in/public/uploads/recruitment/386866072.pdf",
+    sourcePublished: "Notification 116/06/E-01/DR/PCS/2026-27 and advertisement A-1/E-1/2026-27 both dated 9 Sep 2026; applications and fee close 29 Sep 2026 and the edit window runs 7 to 16 Oct 2026; Exam Calendar 2026-27 of 1 Sep 2026 proposes 29 Nov 2026 for the preliminary examination",
+    lastVerified: "10 Sep 2026, 22:40 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "New record: UKPSC opened the Uttarakhand Combined State Civil / Upper Subordinate Services Examination 2026 through advertisement A-1/E-1/2026-27 dated 9 Sep 2026 for 67 Group B posts in sixteen cadres, with online applications and the examination fee closing on 29 Sep 2026 and an edit window from 7 to 16 Oct 2026.",
+      },
+    ],
+    keywords: [
+      "UKPSC PCS 2026",
+      "Uttarakhand PCS 2026",
+      "उत्तराखंड पीसीएस 2026",
+      "उत्तराखण्ड सम्मिलित राज्य सिविल सेवा",
+      "uk pcs pre 2026",
+      "Uttarakhand upper subordinate services 2026",
+      "UKPSC deputy collector recruitment",
+      "Uttarakhand DySP recruitment",
+      "उत्तराखण्ड लोक सेवा आयोग भर्ती",
     ],
   }),
   exam({
@@ -1452,7 +1560,8 @@ export const exams: Exam[] = [
       label: "Main-cycle notices active",
       tone: "violet",
       nextAction: "Follow the JKPSC home-page notice stream",
-      detail: "JKPSC's official site carries 2026 main-examination application and accessibility notices for the 2025 combined competitive cycle.",
+      detail:
+        "JKPSC's official site carries 2026 main-examination application and accessibility notices for the 2025 combined competitive cycle - the admit card for the Combined Competitive (Mains) Examination 2025 on 16 June 2026 and the notice on its conduct on 28 June 2026. The Commission's notice stream, Forthcoming Examinations page and Active Examinations page, re-read on 10 September 2026, publish nothing newer about this cycle.",
     },
     summary: "Combined competitive recruitment to Jammu and Kashmir administrative and allied services.",
     age: "Under the Jammu and Kashmir Combined Competitive Examination Rules, 2018 (SRO-103 dated 23 February 2018), which the Commission publishes as the standing rules for this examination, a candidate must have attained 21 but not 32 years on 1 January of the year the notification is issued, with an upper limit of 34 years for SC, ST, RBA, Social Castes and ALC candidates and for candidates holding a civil post in a substantive capacity, and 35 years for physically challenged candidates; the current cycle's own notification is not published on the reviewed pages, so no cycle-specific age window is asserted.",
@@ -1477,14 +1586,21 @@ export const exams: Exam[] = [
       "The main examination's paper list is set out in Part B of Appendix-I to the rules with the detailed syllabus in Appendix-II; use the Commission's current-cycle notification alongside the rules.",
     ],
     officialLinks: [
-      { label: "J&K Combined Competitive Examination Rules 2018 (SRO-103) with the CCE Main syllabus", url: "https://www.jkpsc.nic.in/pdf/SRO_103_CCE_2018.pdf", type: "notice" },
-      { label: "JKPSC current notices", url: "https://www.jkpsc.nic.in/Default.aspx", type: "notice" },
-      { label: "JKPSC forthcoming examinations", url: "https://www.jkpsc.nic.in/Default.aspx/documents/Static/forms/Forth_Comming_Exams.html", type: "calendar" },
+      { label: "J&K Combined Competitive Examination Rules 2018 (SRO-103) with the CCE Main syllabus", url: "https://jkpsc.nic.in/pdf/SRO_103_CCE_2018.pdf", type: "notice" },
+      { label: "JKPSC current notices", url: "https://jkpsc.nic.in/Default.aspx", type: "notice" },
+      { label: "JKPSC forthcoming examinations", url: "https://jkpsc.nic.in/Static/forms/Forth_Comming_Exams.html", type: "calendar" },
     ],
     sourceTitle: "JKPSC Combined Competitive Examination 2025 notices and the Commission's published CCE Rules 2018 (SRO-103)",
-    sourceUrl: "https://www.jkpsc.nic.in/Default.aspx",
-    sourcePublished: "Official main-cycle notices current in March and June 2026; SRO-103 dated 23 Feb 2018 published as the standing rules",
-    lastVerified: "4 Aug 2026, 21:45 IST",
+    sourceUrl: "https://jkpsc.nic.in/Default.aspx",
+    sourcePublished: "Official main-cycle notices current in March and June 2026; SRO-103 dated 23 Feb 2018 published as the standing rules; JKPSC notice stream re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:10 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "Official links now point at jkpsc.nic.in rather than www.jkpsc.nic.in, whose certificate does not cover that name, and the Forthcoming Examinations link has been corrected to the Commission's real path. The cycle's own facts are unchanged.",
+      },
+    ],
     keywords: [
       "JKAS",
       "J&K combined competitive exam",
@@ -1516,7 +1632,8 @@ export const exams: Exam[] = [
       label: "Main examination stage",
       tone: "violet",
       nextAction: "Check JKPSC for the detailed main-examination programme",
-      detail: "The Commission's official preliminary result admits qualified candidates to the 2025 main examination and says the detailed date sheet will be notified separately.",
+      detail:
+        "The Commission's official preliminary result admits qualified candidates to the 2025 main examination and says the detailed date sheet will be notified separately. JKPSC has since published general instructions for candidates appearing in the Prosecuting Officer (G) (Main) Examination on 30 June 2026 and the mains admit card on 8 July 2026. The Commission's notice stream, re-read on 10 September 2026, publishes nothing newer about this cycle.",
     },
     summary: "Competitive recruitment of Prosecuting Officers for the Jammu and Kashmir prosecution service.",
     pay: "See the official notification; the Prosecuting Officer pay level is fixed in the Commission's notification for this recruitment.",
@@ -1531,12 +1648,19 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Official preliminary result notice", url: "https://jkpsc.nic.in/Pdf/Downloader1.ashx?nid=17921&type=n", type: "result" },
-      { label: "JKPSC current notices", url: "https://www.jkpsc.nic.in/Default.aspx", type: "notice" },
+      { label: "JKPSC current notices", url: "https://jkpsc.nic.in/Default.aspx", type: "notice" },
     ],
     sourceTitle: "JKPSC Prosecuting Officer Preliminary Examination 2025 result notice",
     sourceUrl: "https://jkpsc.nic.in/Pdf/Downloader1.ashx?nid=17921&type=n",
-    sourcePublished: "Official preliminary result dated 15 Jun 2026",
-    lastVerified: "4 Aug 2026, 15:40 IST",
+    sourcePublished: "Official preliminary result dated 15 Jun 2026; mains instructions 30 Jun 2026 and mains admit card 8 Jul 2026; JKPSC notice stream re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:10 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The Commission's notice stream shows general instructions for the Prosecuting Officer (G) (Main) Examination published 30 Jun 2026 and the mains admit card released 8 Jul 2026, so the mains is proceeding; the detailed date sheet is still not published. The link to the Commission's notices now uses jkpsc.nic.in, whose certificate is valid.",
+      },
+    ],
     keywords: [
       "J&K prosecuting officer",
       "JKPSC PO recruitment",
@@ -1656,11 +1780,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Health & Medical", "Teaching & Education"],
     education: ["10th", "12th", "ITI / Diploma", "Graduate"],
     status: {
-      label: "Applications open 10 September 2026",
-      tone: "blue",
-      nextAction: "Prepare the domicile and qualification certificates and apply on the JKSSB portal from 10 September 2026",
+      label: "Applications open until 9 October 2026",
+      tone: "green",
+      nextAction: "Register on the JKSSB portal and submit the online form with the fee before 11:59 PM on 9 October 2026",
       detail:
-        "Advertisement Notification 08 of 2026 dated 4 August 2026 advertises 518 posts, with online applications from 10 September 2026 to 9 October 2026. JKSSB's advertisement listing, re-read on 9 September 2026, still shows Notification 08 of 2026 with no corrigendum and no change to those dates.",
+        "Advertisement Notification 08 of 2026 dated 4 August 2026 advertises 518 posts. JKSSB's notice of 9 September 2026 giving instructions for submitting the forms confirms the window: applications and the online fee are accepted from 12:00 AM on 10 September 2026 to 11:59 PM on 9 October 2026, through the JKSSB portal only. Candidates register through the 'Log-in (Apply on Various Posts)' tab, complete the One-Time Registration form and then apply from the 'Active Advertisement' tab.",
     },
     summary:
       "JKSSB direct recruitment to 518 UT, Divisional and District Cadre posts in the Agriculture Production, Health and Medical Education, Higher Education and Labour and Employment Departments of Jammu & Kashmir.",
@@ -1675,8 +1799,9 @@ export const exams: Exam[] = [
     pay: "Post-wise pay level printed against each post in Annexure-A of the notification.",
     timeline: [
       { label: "Advertisement notification published", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
-      { label: "Online applications commence", date: "2026-09-10", displayDate: "10 Sep 2026", state: "scheduled" },
-      { label: "Last date for online applications", date: "2026-10-09", displayDate: "9 Oct 2026", state: "scheduled" },
+      { label: "Instructions for submission of application forms published", date: "2026-09-09", displayDate: "9 Sep 2026", state: "completed" },
+      { label: "Online applications commenced", date: "2026-09-10", displayDate: "10 Sep 2026, 12:00 AM", state: "completed" },
+      { label: "Last date for online applications and fee", date: "2026-10-09", displayDate: "9 Oct 2026, 11:59 PM", state: "current" },
     ],
     eligibility: [
       "Candidates must be domiciles of the Union Territory of Jammu & Kashmir and must possess a valid Domicile Certificate issued by the competent authority in the prescribed format on or before the cut-off date, i.e. the last date for submission of online application forms (clause 02).",
@@ -1697,13 +1822,21 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Advertisement Notification 08 of 2026", url: "https://jkssb.nic.in/Pdf/Advertisement_08OF2026_04082026.pdf", type: "notice" },
+      { label: "Instructions for submission of application forms for the 518 posts", url: "https://jkssb.nic.in/Pdf/notice_09092026.pdf", type: "notice" },
       { label: "JKSSB advertisement listing", url: "https://jkssb.nic.in/Advertisement.html", type: "notice" },
       { label: "JKSSB official website", url: "https://jkssb.nic.in/", type: "website" },
     ],
-    sourceTitle: "JKSSB Advertisement Notification No. 08 of 2026",
+    sourceTitle: "JKSSB Advertisement Notification No. 08 of 2026 with the Board's instructions of 9 September 2026 for submitting the application forms",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advertisement_08OF2026_04082026.pdf",
-    sourcePublished: "Notification dated 4 Aug 2026; applications 10 Sep to 9 Oct 2026; JKSSB's advertisement list re-read 9 Sep 2026 with no corrigendum against 08 of 2026",
-    lastVerified: "9 Sep 2026, 12:32 IST",
+    sourcePublished: "Notification dated 4 Aug 2026; submission instructions dated 9 Sep 2026 confirming applications and fee from 10 Sep 2026 12:00 AM to 9 Oct 2026 11:59 PM; JKSSB What's New re-read 10 Sep 2026 with no corrigendum against 08 of 2026",
+    lastVerified: "10 Sep 2026, 22:15 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "Applications are open. JKSSB's notice of 9 Sep 2026 giving instructions for submitting the forms confirms the window for the 518 posts under Notification 08 of 2026 as 10 Sep 2026 12:00 AM to 9 Oct 2026 11:59 PM, for both the form and the online fee.",
+      },
+    ],
     keywords: [
       "JKSSB 08 of 2026",
       "J&K SSB recruitment 2026",
@@ -1712,6 +1845,92 @@ export const exams: Exam[] = [
       "JKSSB junior theatre technician",
       "JKSSB various posts",
       "jkssb advertisement 2026",
+    ],
+  }),
+  exam({
+    slug: "jkssb-class-iv-mts-sanitation-worker-09-2026",
+    title: "JKSSB Class-IV (MTS) and Sanitation Worker Recruitment - Advertisement Notification 09 of 2026",
+    shortTitle: "JKSSB Advt 09/2026",
+    aliases: ["JKSSB 09 of 2026", "J&K SSB Class-IV 2026", "JKSSB Sanitation Worker 2026", "जेकेएसएसबी कक्षा-चार भर्ती 09/2026"],
+    organisation: "Jammu and Kashmir Services Selection Board",
+    governmentLevel: "State",
+    jurisdiction: "Jammu and Kashmir",
+    state: "Jammu and Kashmir",
+    stateCode: "JK",
+    regionCodes: ["JK"],
+    cycle: "2026",
+    year: 2026,
+    verification: "verified",
+    notificationNumber: "09 of 2026",
+    sector: "Subordinate services",
+    examTypes: ["Civil Services & Administration"],
+    education: ["10th", "12th"],
+    status: {
+      label: "Applications open 5 October 2026",
+      tone: "blue",
+      nextAction: "Get the domicile, category and qualification certificates ready and apply on the JKSSB portal from 5 October 2026",
+      detail:
+        "Advertisement Notification 09 of 2026 dated 1 September 2026 advertises 2,863 Class-IV (MTS) and Sanitation Worker posts in the UT, Divisional and District cadres of various Jammu & Kashmir departments, with online applications from 5 October 2026 to 3 November 2026. JKSSB's advertisement listing and What's New page, read on 10 September 2026, carry the notification with no corrigendum. Clause 10 records that the examination date and centres will be notified separately.",
+    },
+    summary:
+      "JKSSB direct recruitment to 2,863 Class-IV (Multi Tasking Staff) and Sanitation Worker posts across the UT, Divisional and District cadres of Jammu & Kashmir, requisitioned through the General Administration Department.",
+    vacancies: 2863,
+    vacancyLabel: "2,863 Class-IV (MTS) and Sanitation Worker posts",
+    vacancyNote:
+      "Annexure-A gives the cadre-wise and department-wise break-up: 105 posts in the UT cadre, 1,990 in the Divisional cadres (1,093 Jammu and 897 Kashmir) and 768 in the District cadres, a grand total of 2,863. Clause 03 records that the actual number of posts may increase or decrease before or during the selection process, and that the notification is subject to the outcome of any writ petition or O.A. pending before a competent court.",
+    age: "As on 1 January 2026 under clause 04: Open Merit 40 years (not born before 01.01.1986); SC, ST-1, ST-2, RBA, ALC/IB, EWS and Other Backward Classes 43 years (not born before 01.01.1983); Physically Challenged Persons 42 years (not born before 01.01.1984). In every category the candidate must not be born after 01.01.2008. Every ex-serviceman is allowed to deduct the period of service in the Armed Forces from his actual age, and if the resultant age does not exceed the maximum age limit prescribed for the post by more than 3 years he is deemed to satisfy the age condition. The note to clause 04 adds a five-year relaxation in the upper age limit for candidates claiming the additional weightage available to casual workers as defined in the Jammu & Kashmir Appointment to Class IV (Special Recruitment) Rules, 2020 notified vide S.O. 184 of 04.06.2020.",
+    qualification:
+      "Clause 05: for Class-IV (MTS) posts, S.O. 184 of 2020 dated 04-06-2020 read with SRO 99 of 2008 dated 07.04.2008 prescribes \"Minimum Matric and Maximum 10+2\"; for Sanitation Worker posts, S.O. 132 of 2022 dated 29-03-2022 prescribes \"Minimum 8th Pass and Maximum 10+2\". A candidate holding a qualification other than the one prescribed is not eligible, and certificates must be produced in original at document verification as proof of having acquired the prescribed qualification strictly on or before the cut-off date for filling the online application forms.",
+    fee: "Rs. 600 (Rupees Six Hundred only); Rs. 500 for candidates belonging to SC, ST-1, ST-2, EWS and PwBD categories, payable only online through net banking, credit or debit card (clause 09).",
+    pay: "Pay level is printed post-wise in Annexure-D of the notification, which also carries the qualification and the criteria for selection.",
+    timeline: [
+      { label: "Advertisement notification published", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed" },
+      { label: "Online applications commence", date: "2026-10-05", displayDate: "5 Oct 2026", state: "scheduled" },
+      { label: "Last date for online applications", date: "2026-11-03", displayDate: "3 Nov 2026", state: "scheduled" },
+    ],
+    eligibility: [
+      "Candidates must be domiciles of the Union Territory of Jammu & Kashmir and must possess a valid Domicile Certificate issued by the competent authority in the prescribed format on or before the cut-off date, i.e. the last date for submission of online application forms, which unless otherwise extended shall be 03.11.2026 (clause 02).",
+      "Appointment and other service conditions of candidates selected through this process are governed by the extant rules and regulations of the Government of the UT of J&K (clause 01).",
+      "Reservation applies as per the category-wise break-up conveyed by the indenting department and the Jammu & Kashmir Reservation Act and Rules; a candidate seeking a reserved category must hold a valid category certificate in the prescribed format strictly as on the cut-off date, and a certificate in any other format will not be entertained (clause 06).",
+      "Horizontal reservation for Ex-Servicemen and Persons with Benchmark Disabilities applies to the extent allowed under the rules, cutting across the vertical reservation (clause 07).",
+      "Candidature is accepted only provisionally - the Board does not undertake detailed scrutiny of eligibility before the written/OMR examination, and an ineligible candidate is not allowed to participate in later stages (clause 13).",
+      "The number of posts may increase or decrease before or during the selection process, and the notification is subject to the outcome of any writ petition or O.A. pending before a competent court (clause 03).",
+    ],
+    selectionStages: [
+      "Objective type, multiple-choice written/OMR examination, whose date and centres the Board will notify separately (clause 10)",
+      "Overall merit determined from the written test marks plus the additional points allocated under S.O. 184 of 2020 dated 04-06-2020 (clause 08)",
+      "Document verification",
+      "Allocation of cadre and department by the merit-cum-preference method, on the preferences the candidate indicates in the online form or at a later stage; the allocation once notified is final (clause 08)",
+    ],
+    syllabus: [
+      "Clause 11 (Scheme of Examination): the examination consists of objective type, multiple choice questions and the questions are set in English language only.",
+      "There is negative marking for each wrong answer to the extent of one-fourth of the marks assigned to that question.",
+      "Clause 12 (Syllabus for the posts): the syllabus shall be notified separately and made available on the official website of JKSSB, so no topic list is published with this advertisement.",
+    ],
+    officialLinks: [
+      { label: "Advertisement Notification 09 of 2026", url: "https://jkssb.nic.in/Pdf/ADVT_09OF2026_01092026.pdf", type: "notice" },
+      { label: "JKSSB advertisement listing", url: "https://jkssb.nic.in/Advertisement.html", type: "notice" },
+      { label: "JKSSB official website", url: "https://jkssb.nic.in/", type: "website" },
+    ],
+    sourceTitle: "JKSSB Advertisement Notification No. 09 of 2026",
+    sourceUrl: "https://jkssb.nic.in/Pdf/ADVT_09OF2026_01092026.pdf",
+    sourcePublished: "Notification dated 1 Sep 2026; applications 5 Oct to 3 Nov 2026; JKSSB's advertisement list and What's New page read 10 Sep 2026 with no corrigendum against 09 of 2026",
+    lastVerified: "10 Sep 2026, 22:18 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "New record. JKSSB Advertisement Notification 09 of 2026 dated 1 Sep 2026 advertises 2,863 Class-IV (MTS) and Sanitation Worker posts across the UT, Divisional and District cadres, with online applications from 5 Oct 2026 to 3 Nov 2026 and age reckoned as on 1 Jan 2026.",
+      },
+    ],
+    keywords: [
+      "JKSSB 09 of 2026",
+      "J&K SSB Class IV recruitment",
+      "JKSSB sanitation worker vacancy",
+      "JKSSB MTS 2026",
+      "जेकेएसएसबी सफाई कर्मचारी भर्ती",
+      "Jammu Kashmir multi tasking staff",
+      "jkssb 2863 posts",
     ],
   }),
   exam({
@@ -1733,11 +1952,11 @@ export const exams: Exam[] = [
     examTypes: ["Technical & Trades", "Civil Services & Administration"],
     education: ["10th", "12th", "ITI / Diploma"],
     status: {
-      label: "Applications closed; written examination date awaited",
-      tone: "amber",
-      nextAction: "Watch the JKSSB website for the OMR written examination date, the syllabus notification and the admit card",
+      label: "Applications open until 24 September 2026",
+      tone: "green",
+      nextAction: "Submit the online application on the JKSSB portal before the extended cut-off of 24 September 2026",
       detail:
-        "Advertisement Notification 06 of 2026 dated 6 July 2026 advertises 357 Divisional Cadre posts in the Public Works (R&B) Department, with online applications from 1 August 2026 to 30 August 2026. That window has closed: JKSSB's advertisement listing, re-read on 9 September 2026, carries no extension or corrigendum against Notification 06 of 2026, and neither the syllabus nor the written examination date has been notified.",
+        "Advertisement Notification 06 of 2026 dated 6 July 2026 advertises 357 Divisional Cadre posts in the Public Works (R&B) Department, with online applications from 1 August 2026. JKSSB's notice of 29 August 2026, read on 10 September 2026, extends the last date for submitting online application forms to 24 September 2026 instead of 30 August 2026, so the window is still open. Neither the syllabus nor the written examination date has been notified.",
     },
     summary:
       "JKSSB direct recruitment to 357 Divisional Cadre posts in the Public Works (Roads & Buildings) Department of Jammu & Kashmir, including Draftsman (Civil).",
@@ -1753,10 +1972,11 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement notification published", date: "2026-07-06", displayDate: "6 Jul 2026", state: "completed" },
       { label: "Online applications commenced", date: "2026-08-01", displayDate: "1 Aug 2026", state: "completed" },
-      { label: "Last date for online applications", date: "2026-08-30", displayDate: "30 Aug 2026", state: "completed" },
+      { label: "Original last date for online applications", date: "2026-08-30", displayDate: "30 Aug 2026", state: "completed" },
+      { label: "Extended last date for online applications", date: "2026-09-24", displayDate: "24 Sep 2026", state: "current" },
     ],
     eligibility: [
-      "Candidates must be domiciles of the Union Territory of Jammu & Kashmir and must possess a valid Domicile Certificate issued by the competent authority in the prescribed format on or before the cut-off date, i.e. the last date for submission of online application forms, which unless extended shall be 30.08.2026 (clause 02).",
+      "Candidates must be domiciles of the Union Territory of Jammu & Kashmir and must possess a valid Domicile Certificate issued by the competent authority in the prescribed format on or before the cut-off date, i.e. the last date for submission of online application forms; clause 02 of the notification fixed that date as 30.08.2026 unless extended, and JKSSB's notice of 29 August 2026 has extended it to 24.09.2026.",
       "Appointment and other service conditions of candidates selected through this process are governed by the extant rules and regulations of the Government of the UT of J&K (clause 01).",
       "The prescribed educational qualification must be acquired strictly on or before the cut-off date fixed for filling the online application forms, and originals must be produced at document verification (clause 05).",
       "Candidature is accepted only provisionally; the Board does not undertake detailed scrutiny of eligibility before the written/OMR examination (clause 12).",
@@ -1774,18 +1994,24 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Advertisement Notification 06 of 2026", url: "https://jkssb.nic.in/Pdf/Advt_06OF2026_06072026.pdf", type: "notice" },
+      { label: "Notice extending the last date to 24 September 2026", url: "https://jkssb.nic.in/Pdf/Notice_29082026.pdf", type: "notice" },
       { label: "JKSSB advertisement listing", url: "https://jkssb.nic.in/Advertisement.html", type: "notice" },
       { label: "JKSSB official website", url: "https://jkssb.nic.in/", type: "website" },
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 06 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advt_06OF2026_06072026.pdf",
-    sourcePublished: "Notification dated 6 Jul 2026; applications 1 Aug to 30 Aug 2026, with no extension notice on JKSSB's advertisement list re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 12:28 IST",
+    sourcePublished: "Notification dated 6 Jul 2026; applications opened 1 Aug 2026 and the last date was extended to 24 Sep 2026 by JKSSB's notice of 29 Aug 2026, read on the Board's What's New page 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:16 IST",
     changeLog: [
       {
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "Applications have closed: the 1 Aug to 30 Aug 2026 window for Notification 06 of 2026 ended without an extension, and JKSSB's advertisement listing shows no corrigendum, so the cycle now waits on the OMR written examination date.",
+      },
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "Correction: applications are still open. JKSSB's notice of 29 Aug 2026, carried on the Board's What's New page rather than its advertisement listing, extends the last date for submitting online application forms under Notification 06 of 2026 to 24 Sep 2026 instead of 30 Aug 2026. The 9 Sep 2026 entry above, which read the advertisement listing alone, was wrong to record the window as closed.",
       },
     ],
     keywords: [
@@ -1816,11 +2042,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Technical & Trades"],
     education: ["10th", "12th", "ITI / Diploma", "Graduate"],
     status: {
-      label: "Applications closed; written examination date awaited",
-      tone: "amber",
-      nextAction: "Watch the JKSSB website for the OMR written examination date, the syllabus notification and the admit card",
+      label: "Applications open until 24 September 2026",
+      tone: "green",
+      nextAction: "Submit the online application on the JKSSB portal before the extended cut-off of 24 September 2026",
       detail:
-        "Advertisement Notification 07 of 2026 dated 8 July 2026 advertises 72 Divisional Cadre posts requisitioned under the PM Package. Online submission commenced on 10 August 2026 and the cut-off date stated in the notification is 8 September 2026; That cut-off has passed: JKSSB's advertisement listing, re-read on 9 September 2026, carries no extension or corrigendum against Notification 07 of 2026, and neither the syllabus nor the written examination date has been notified.",
+        "Advertisement Notification 07 of 2026 dated 8 July 2026 advertises 72 Divisional Cadre posts requisitioned under the PM Package. Online submission commenced on 10 August 2026 against a cut-off of 8 September 2026, and JKSSB's notice of 8 September 2026, read on 10 September 2026, extends the last date for submitting online application forms to 24 September 2026, so the window is still open. Neither the syllabus nor the written examination date has been notified.",
     },
     summary:
       "JKSSB recruitment to 72 Divisional Cadre posts requisitioned by the Disaster Management, Relief, Rehabilitation & Reconstruction Department under the Prime Minister's Package for Kashmiri Migrants and Non-Migrant Kashmiri Pandits.",
@@ -1836,7 +2062,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Advertisement notification published", date: "2026-07-08", displayDate: "8 Jul 2026", state: "completed" },
       { label: "Online applications commence", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
-      { label: "Last date for online applications", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed" },
+      { label: "Original last date for online applications", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed" },
+      { label: "Extended last date for online applications", date: "2026-09-24", displayDate: "24 Sep 2026", state: "current" },
     ],
     eligibility: [
       "Selection is carried out under SRO 412 dated 30.12.2009 read with SRO 425 dated 10.10.2017; only 'Migrants' as defined in SRO 412 of 2009 or 'Kashmiri Pandits' as defined in SRO 425 of 2017 are eligible to apply for these posts (clause 01).",
@@ -1857,13 +2084,14 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Advertisement Notification 07 of 2026", url: "https://jkssb.nic.in/Pdf/Advt_07OF2026_08072026.pdf", type: "notice" },
+      { label: "Notice extending the last date to 24 September 2026", url: "https://jkssb.nic.in/Pdf/Extension_Notice_08092026.pdf", type: "notice" },
       { label: "JKSSB advertisement listing", url: "https://jkssb.nic.in/Advertisement.html", type: "notice" },
       { label: "JKSSB official website", url: "https://jkssb.nic.in/", type: "website" },
     ],
     sourceTitle: "JKSSB Advertisement Notification No. 07 of 2026",
     sourceUrl: "https://jkssb.nic.in/Pdf/Advt_07OF2026_08072026.pdf",
-    sourcePublished: "Notification dated 8 Jul 2026; applications 10 Aug to 8 Sep 2026; instructions for submitting the forms published 7 Aug 2026; advertisement list re-read 9 Sep 2026 with no corrigendum",
-    lastVerified: "9 Sep 2026, 12:30 IST",
+    sourcePublished: "Notification dated 8 Jul 2026; applications opened 10 Aug 2026; instructions for submitting the forms published 7 Aug 2026; last date extended to 24 Sep 2026 by JKSSB's notice of 8 Sep 2026, read on the Board's What's New page 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:16 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -1874,6 +2102,11 @@ export const exams: Exam[] = [
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "Online submission opened on 10 Aug 2026 as notified, so this cycle is now open with an 8 Sep 2026 cut-off; JKSSB's advertisement list shows no corrigendum against Notification 07 of 2026.",
+      },
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "Correction: applications are still open. JKSSB's notice of 8 Sep 2026, carried on the Board's What's New page rather than its advertisement listing, extends the last date for submitting online application forms under Notification 07 of 2026 to 24 Sep 2026 instead of 8 Sep 2026. The 9 Sep 2026 entry above, which read the advertisement listing alone, was wrong to record the window as closed.",
       },
     ],
     keywords: [
@@ -3721,11 +3954,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Technical & Trades"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Applications closed; examination date awaited",
-      tone: "amber",
-      nextAction: "Watch the Board's recruitment and announcement pages for the examination schedule",
+      label: "Examination 17 to 21 September 2026",
+      tone: "blue",
+      nextAction: "Download the admit card from the Board's website and sit the online examination on the date and shift shown for your post",
       detail:
-        "The Board's official recruitment listing shows advertisement A-2/G.R./2026 dated 14 April 2026 with an application window from 25 April to 15 May 2026. No examination date is published on the pages reviewed for this record.",
+        "The Board's special notice of 5 September 2026 fixes the online examination for advertisement A-2/G.R./2026 on 17, 18, 19, 20 and 21 September 2026, in three shifts a day (08:00-10:00, 12:00-14:00 and 16:00-18:00), with each post assigned to a named shift. Under clause 6(2.1) of the advertisement the examination is held in a single stage that counts as the main examination, and the notice records that no preliminary examination will be conducted.",
     },
     summary:
       "General recruitment to officer, clerical and technical cadres of Uttar Pradesh's district co-operative banks and allied co-operative institutions through the state Co-operative Institutional Service Board.",
@@ -3740,16 +3973,22 @@ export const exams: Exam[] = [
       { label: "Advertisement A-2/G.R./2026 published", date: "2026-04-14", displayDate: "14 Apr 2026", state: "completed" },
       { label: "Online applications opened", date: "2026-04-25", displayDate: "25 Apr 2026", state: "completed" },
       { label: "Online applications closed", date: "2026-05-15", displayDate: "15 May 2026", state: "completed" },
-      { label: "Written examination", displayDate: "Date not announced", state: "tentative" },
+      { label: "Examination programme notified", date: "2026-09-05", displayDate: "5 Sep 2026", state: "completed" },
+      { label: "Online main examination", date: "2026-09-17", displayDate: "17-21 Sep 2026", state: "scheduled" },
     ],
     eligibility: [
       "The Board was constituted under section 122(1) of the U.P. Co-operative Societies Act 1965 read with rule 389(A) of the U.P. Co-operative Societies Rules 1968, and recruits for co-operative institutions rather than for a government department.",
       "Confirm education, age, Uttar Pradesh domicile and category-certificate cut-offs in advertisement A-2/G.R./2026 for the specific post applied for.",
+      "The special notice of 5 September 2026 defers further selection action on the 12 posts of Junior Assistant of U.P. Rajya Nirman Evam Shram Vikas Sahkari Sangh Limited advertised under A-2/G.R./2026, in compliance with the order dated 26 May 2026 of the High Court of Judicature at Allahabad, Lucknow Bench, in writ petition A/5555/2026.",
     ],
-    selectionStages: ["Written examination as prescribed in advertisement A-2/G.R./2026", "Document verification", "Final merit"],
+    selectionStages: [
+      "Online examination held in a single stage, which counts as the main examination under clause 6(2.1) of advertisement A-2/G.R./2026 - the special notice of 5 September 2026 records that no preliminary examination will be conducted",
+      "Document verification",
+      "Final merit, to which the main examination marks are added",
+    ],
     syllabus: [
-      "Preliminary examination (if required): 100 objective multiple-choice questions, 100 marks, 1:30 hours, with 1/4 (25%) minus marking - Numerical Ability/Quantitative Aptitude 35 questions, Reasoning Ability/Mental Ability 35, Hindi Language and General English/English Language 20, Cooperative 10.",
-      "Main examination: 120 objective multiple-choice questions, 200 marks, 02 hours, with 1/4 (25%) minus marking - Reasoning Ability/Mental Ability 20, Numerical Ability/Quantitative Aptitude 20, General Awareness 15, Cooperative 15, Language (Hindi & English) 10, and a Subject section of 40 questions carrying 120 marks.",
+      "Preliminary examination: the advertisement provides for one only if required, and the Board's special notice of 5 September 2026 records that no preliminary examination will be conducted in any of these online examinations. Where held, its pattern is 100 objective multiple-choice questions, 100 marks, 1:30 hours, with 1/4 (25%) minus marking - Numerical Ability/Quantitative Aptitude 35 questions, Reasoning Ability/Mental Ability 35, Hindi Language and General English/English Language 20, Cooperative 10.",
+      "Main examination, which is the single online paper being held from 17 to 21 September 2026: 120 objective multiple-choice questions, 200 marks, 02 hours, with 1/4 (25%) minus marking - Reasoning Ability/Mental Ability 20, Numerical Ability/Quantitative Aptitude 20, General Awareness 15, Cooperative 15, Language (Hindi & English) 10, and a Subject section of 40 questions carrying 120 marks.",
       "The Subject section is any one of the following according to the essential educational qualification and syllabus of the respective post: (a) Civil Engineering, (b) Electrical Engineering, (c) Computer Science and Information Technology, (d) Managerial Skill - Banking 30 questions and Computer Knowledge 10 questions.",
       "Reasoning Ability/Mental Ability: Alphabetical order and misc. series, Coding Decoding, Direction and Distance, Blood Relation, Order and Ranking, Sitting Arrangement, Puzzle, Data Sufficiency, Syllogism, Input Output, Data Inequality, Decision Making, Problem and Course of Action, Statement and Assumption, Cause and Effect, Statement and Argument, Combined logical, Clock, Calendar, Cube and Dice, Figure Series, Odd one Out Figure, Images and Water images, Figure Matrix, Paper Folding/Cutting/unfolding, Non Verbal reasoning.",
       "Numerical Ability/Quantitative Aptitude: Simplification, Number series, Percentage, Profit and Loss/Discount, Simple and Compound Interest, Average, Ratio and Proportion, Problems on Ages, Partnership, Mixture and Allegation, Time and Work, Speed/Time and Distance, Pipe and Cistern, Problems based on Trains, Boat and Stream, Inequality, Permutation and Combination, Probability, Mensuration (Cone, Sphere, Cylinder), Data Sufficiency, Data Interpretation, Quadratic Equation, Basic Algebra, Basic Trigonometry, Measure of Central Tendency, Indices and Logarithms.",
@@ -3758,14 +3997,22 @@ export const exams: Exam[] = [
       "Co-operative: Origin and Development of Cooperatives; National Level Important Cooperatives; Formation of the Union Ministry of Cooperation; Prosperity through co-operation; Development of Cooperatives in the State of Uttar Pradesh; Co-operative Societies in the State of Uttar Pradesh; Innovations in Cooperatives.",
     ],
     officialLinks: [
+      { label: "Examination programme notice for A-2/G.R./2026", url: "https://upcisb.upsdc.gov.in/Home/DownloadNoticeBoard/35", type: "notice" },
       { label: "UPCISB recruitment listing", url: "https://upcisb.upsdc.gov.in/UPCIBS/ViewRecruitment", type: "notice" },
       { label: "UPCISB announcements", url: "https://upcisb.upsdc.gov.in/UPCIBS/Announcement", type: "notice" },
       { label: "UPCISB official website", url: "https://upcisb.upsdc.gov.in/", type: "website" },
     ],
-    sourceTitle: "UPCISB official recruitment listing for advertisement A-2/G.R./2026",
-    sourceUrl: "https://upcisb.upsdc.gov.in/",
-    sourcePublished: "Advertisement dated 14 Apr 2026; applications 25 Apr to 15 May 2026",
-    lastVerified: "4 Aug 2026, 21:10 IST",
+    sourceTitle: "UPCISB special notice of 5 September 2026 fixing the examination programme for advertisement A-2/G.R./2026",
+    sourceUrl: "https://upcisb.upsdc.gov.in/Home/DownloadNoticeBoard/35",
+    sourcePublished: "Special notice dated 5 Sep 2026 carrying the shift-wise examination programme; Board notice board re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:25 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The Board's special notice of 5 Sep 2026 fixes the online examination on 17 to 21 Sep 2026 in three shifts a day, so this cycle is no longer waiting on a date. The notice also records that no preliminary examination will be held - the single online paper is the main examination - and defers selection action on the 12 Junior Assistant posts of U.P. Rajya Nirman Evam Shram Vikas Sahkari Sangh Limited under a High Court order of 26 May 2026.",
+      },
+    ],
     keywords: [
       "UP Cooperative Bank recruitment",
       "UPCISB",
@@ -3795,11 +4042,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Technical & Trades"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Applications closed; examination date awaited",
-      tone: "amber",
-      nextAction: "Watch the Board's recruitment and announcement pages for the examination schedule",
+      label: "Examination held; result awaited",
+      tone: "violet",
+      nextAction: "Watch the Board's notice board and results pages for the answer key and result",
       detail:
-        "The Board's official recruitment listing shows advertisement A-1/S.R./2026 dated 24 March 2026 with an application window from 25 March to 15 April 2026. No examination date is published on the pages reviewed for this record.",
+        "The Board's important notice of 31 August 2026 fixed the online examination for advertisement A-1/S.R./2026 on 7 and 8 September 2026 and recorded that examination-city information had been sent that day to each candidate's registered e-mail and mobile number. Admit cards were downloadable from 5 to 8 September 2026 and that window has now closed. No answer key or result is published on the pages reviewed on 10 September 2026.",
     },
     summary:
       "Special (backlog) recruitment to co-operative banking and technical posts in Uttar Pradesh's district co-operative banks and the state construction co-operative federation, run separately from the Board's general recruitment.",
@@ -3814,7 +4061,9 @@ export const exams: Exam[] = [
       { label: "Advertisement A-1/S.R./2026 published", date: "2026-03-24", displayDate: "24 Mar 2026", state: "completed" },
       { label: "Online applications opened", date: "2026-03-25", displayDate: "25 Mar 2026", state: "completed" },
       { label: "Online applications closed", date: "2026-04-15", displayDate: "15 Apr 2026", state: "completed" },
-      { label: "Written examination", displayDate: "Date not announced", state: "tentative" },
+      { label: "Examination city intimation sent to candidates", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed" },
+      { label: "Admit card download window", date: "2026-09-05", displayDate: "5 to 8 Sep 2026", state: "completed" },
+      { label: "Online examination", date: "2026-09-07", displayDate: "7-8 Sep 2026", state: "completed" },
     ],
     eligibility: [
       "A special recruitment drive fills reserved-category backlog posts, so category eligibility is central; read the reservation clause of advertisement A-1/S.R./2026 before applying.",
@@ -3833,13 +4082,21 @@ export const exams: Exam[] = [
       "Civil Engineering (for the post of Assistant Engineer (Civil)): Engineering Mechanics; Strength Of Materials; Structural Analysis; Structural steel; Reinforced Concrete; Building Materials; Construction Technology, Planning and Management; Geo Technical Engineering and Foundation Engineering; Fluid Mechanics; Hydraulic Machines and Hydropower; Hydrology; Ground Water flow; Highway Engineering; Railway Engineering; Environmental Engineering.",
     ],
     officialLinks: [
+      { label: "Important notice fixing the examination dates for A-1/S.R./2026", url: "https://upcisb.upsdc.gov.in/Home/DownloadNoticeBoard/25", type: "notice" },
       { label: "UPCISB recruitment listing", url: "https://upcisb.upsdc.gov.in/UPCIBS/ViewRecruitment", type: "notice" },
       { label: "UPCISB official website", url: "https://upcisb.upsdc.gov.in/", type: "website" },
     ],
-    sourceTitle: "UPCISB official recruitment listing for advertisement A-1/S.R./2026",
-    sourceUrl: "https://upcisb.upsdc.gov.in/",
-    sourcePublished: "Advertisement dated 24 Mar 2026; applications 25 Mar to 15 Apr 2026",
-    lastVerified: "4 Aug 2026, 21:10 IST",
+    sourceTitle: "UPCISB important notice of 31 August 2026 fixing the examination dates for advertisement A-1/S.R./2026",
+    sourceUrl: "https://upcisb.upsdc.gov.in/Home/DownloadNoticeBoard/25",
+    sourcePublished: "Important notice dated 31 Aug 2026 fixing the online examination on 7 and 8 Sep 2026; Board notice board re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:25 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The Board's important notice of 31 Aug 2026 fixed the online examination on 7 and 8 Sep 2026, and the admit-card download window of 5 to 8 Sep 2026 has closed, so this cycle has moved from awaiting a date to awaiting a result.",
+      },
+    ],
     keywords: [
       "UPCISB special recruitment",
       "UP cooperative bank backlog",
@@ -3870,7 +4127,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Open the Corporation's vacancy and results page and read the notice for the specific post",
       detail:
-        "The Corporation's official vacancy page lists post-specific notices and their extensions rather than a single recruitment cycle. No current-cycle date, vacancy count, fee or qualification is asserted here.",
+        "The Corporation's official vacancy page lists post-specific notices and their extensions rather than a single recruitment cycle. Re-read on 10 September 2026, it stamps itself last updated 18 August 2026 and its newest entry is the extension of the application date for the Company Secretary post under advertisement 03/VSA/2025/CS. No current-cycle date, vacancy count, fee or qualification is asserted here.",
     },
     summary:
       "Recruitment by Uttar Pradesh's power distribution and transmission corporation, covering technician, junior engineer, assistant and specialist posts advertised individually on its vacancy page.",
@@ -3891,8 +4148,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Uttar Pradesh Power Corporation Limited vacancy and results page",
     sourceUrl: "https://www.upenergy.in/uppcl/en/page/vacancy-results",
-    sourcePublished: "Official vacancy page checked 4 Aug 2026",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Official vacancy page re-read 10 Sep 2026; the page stamps itself last updated 18 Aug 2026 and carries no new recruitment cycle",
+    lastVerified: "10 Sep 2026, 22:12 IST",
     keywords: [
       "UPPCL",
       "UP Power Corporation recruitment",
@@ -3924,7 +4181,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Nigam's recruitment-notices page for the next direct-recruitment advertisement",
       detail:
-        "The Nigam's recruitment-notices page checked on 4 August 2026 carried departmental promotion and deployment circulars rather than an open direct-recruitment advertisement. No current-cycle date, vacancy count, fee or qualification is asserted here.",
+        "The Nigam's recruitment-notices page, re-read on 10 September 2026, still carries departmental promotion and deployment circulars rather than an open direct-recruitment advertisement; its newest entry is the P4/P5/P6 document-verification circular of 20 May 2026. No current-cycle date, vacancy count, fee or qualification is asserted here.",
     },
     summary:
       "Direct recruitment to Uttar Pradesh's state power generation corporation, which advertises Assistant Engineer, Junior Engineer, Technician Grade-II and office posts through its own service board (UPRVUSA).",
@@ -3946,8 +4203,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPRVUNL recruitment-notices page",
     sourceUrl: "https://www.uprvunl.org/recruitment-notices",
-    sourcePublished: "Recruitment-notices page checked 4 Aug 2026; no open direct-recruitment advertisement was listed",
-    lastVerified: "20 Aug 2026, 02:30 IST",
+    sourcePublished: "Recruitment-notices page re-read 10 Sep 2026; no open direct-recruitment advertisement was listed, the newest circular being dated 20 May 2026",
+    lastVerified: "10 Sep 2026, 22:12 IST",
     keywords: [
       "UPRVUNL",
       "UP Rajya Vidyut Utpadan Nigam",

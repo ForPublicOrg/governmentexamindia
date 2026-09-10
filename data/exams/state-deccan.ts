@@ -22,7 +22,7 @@ export const authorities: Authority[] = [
     regionCodes: ["KA"],
     allowedHosts: ["sts.karnataka.gov.in", "schooleducation.karnataka.gov.in"],
     watchUrls: [
-      "https://sts.karnataka.gov.in/GPSTRNHK/TETHOME.aspx",
+      "https://sts.karnataka.gov.in/GPSTRNHK/",
       "https://sts.karnataka.gov.in/TET/",
       "https://schooleducation.karnataka.gov.in/cacell/en",
     ],
@@ -231,7 +231,7 @@ export const authorities: Authority[] = [
     level: "State",
     regionCodes: ["TG"],
     allowedHosts: ["mhsrb.telangana.gov.in"],
-    watchUrls: ["https://mhsrb.telangana.gov.in/"],
+    watchUrls: ["https://mhsrb.telangana.gov.in/", "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/public/news?category=regular"],
   },
 ];
 
@@ -265,7 +265,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Watch the Commission's notification page for the preliminary examination admission ticket",
       detail:
-        "The Commission's notification page, read on 9 Sep 2026, carries a corrigendum notification extending the date for submission of the online application for Gazetted Probationers 2026-27 till 07-09-2026, so the window that the 31 Jul 2026 final notification closed on 31 Aug 2026 has now closed a week later. The final notification puts the preliminary examination tentatively on 15 Nov 2026; no admission-ticket or examination notice for it has been published yet.",
+        "The Commission's notification page, re-read on 10 Sep 2026, carries a corrigendum notification extending the date for submission of the online application for Gazetted Probationers 2026-27 till 07-09-2026, so the window that the 31 Jul 2026 final notification closed on 31 Aug 2026 has now closed a week later. The final notification puts the preliminary examination tentatively on 15 Nov 2026; no admission-ticket or examination notice for it has been published yet.",
     },
     summary: "Karnataka's competitive recruitment to notified Group A and Group B gazetted services.",
     age: "Service- and category-specific under the final notification.",
@@ -309,8 +309,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Gazetted Probationers 2026-27 Final Notification",
     sourceUrl: "https://kpsc.kar.nic.in/GP%202026-27%20Final%20Notification%20with%20PH%20Schedules%20HOSTED%20ON%2031-07-2026.pdf",
-    sourcePublished: "Final notification of 31 Jul 2026; notification page re-read 9 Sep 2026, where the corrigendum extending the application date till 07-09-2026 is listed",
-    lastVerified: "9 Sep 2026, 17:36 IST",
+    sourcePublished: "Final notification of 31 Jul 2026; notification page re-read 10 Sep 2026, where the corrigendum extending the application date till 07-09-2026 is still the latest entry for this cycle",
+    lastVerified: "10 Sep 2026, 22:20 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -320,6 +320,188 @@ export const exams: Exam[] = [
     ],
     keywords: ["Karnataka Administrative Service", "KAS recruitment", "KPSC Group A Group B posts"],
     featured: true,
+  }),
+  exam({
+    slug: "kpsc-audit-officer-hk-2026",
+    title: "KPSC Audit Officer (Hyderabad-Karnataka) Recruitment 2026",
+    shortTitle: "KPSC Audit Officer (HK)",
+    aliases: [
+      "KPSC SAAD HK 2026",
+      "Karnataka State Audit and Accounts Department Audit Officer HK",
+      "Kalyana Karnataka Audit Officer recruitment 2026",
+    ],
+    organisation: "Karnataka Public Service Commission",
+    governmentLevel: "State",
+    jurisdiction: "Karnataka",
+    state: "Karnataka",
+    stateCode: "KA",
+    regionCodes: ["KA"],
+    cycle: "2026",
+    year: 2026,
+    notificationNumber: "KPSCKA/EXA2/PRSL/11/2026-EXAM2/252",
+    sector: "State civil services",
+    examTypes: ["Civil Services & Administration", "Specialist & Professional"],
+    education: ["Postgraduate", "Professional degree"],
+    verification: "verified",
+    status: {
+      label: "Applications open",
+      tone: "green",
+      nextAction: "Apply online through the Commission's portal by 26 Sep 2026",
+      detail:
+        "Notification KPSCKA/EXA2/PRSL/11/2026-EXAM2/252 dated 27 Aug 2026, listed on the Commission's notification page and read there on 10 Sep 2026, invites online applications for 15 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Hyderabad-Karnataka cadre. The notification fixes 28 Aug 2026 as the opening date, 26 Sep 2026 as the last date for applications, and 29 Nov 2026 as the tentative date of the preliminary examination.",
+    },
+    summary:
+      "Direct recruitment of Group B Audit Officers in the Karnataka State Audit and Accounts Department for the Hyderabad-Karnataka (Kalyana Karnataka) cadre, through the Commission's competitive examination.",
+    vacancies: 15,
+    vacancyLabel: "15 posts",
+    vacancyNote:
+      "The notification's post table shows 13 Audit Officer posts and 2 Audit Officer backlog posts in the Karnataka State Audit and Accounts Department, with a printed total of 15, all in the Hyderabad-Karnataka cadre.",
+    vacancyBreakdown: [
+      { label: "Audit Officer, Karnataka State Audit and Accounts Department", total: 13 },
+      { label: "Audit Officer - backlog posts", total: 2 },
+    ],
+    age: "Minimum 21 years. Under the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 the upper limit is 35 years for general merit candidates, 38 years for Category 2A, 2B, 3A and 3B candidates and 40 years for Scheduled Caste, Scheduled Tribe and Category-1 candidates. The notification records that Government Order No. ಸಿಆಸುಇ 262 ಸೇನೆನಿ 2025, dated 29 Jan 2026, raises each of those upper limits by five years as a one-time measure, so the limits prescribed in this notification are 21 to 40 years for general merit, 43 years for Category 2A, 2B, 3A and 3B and 45 years for Scheduled Caste, Scheduled Tribe and Category-1 candidates, to be satisfied as on the last date fixed for submitting applications. The notification allows a further relaxation of three years plus the length of service rendered for ex-servicemen, ten years for candidates with disabilities and ten years for widows who produce the prescribed certificate.",
+    qualification:
+      "A Master's degree in Commerce (M.Com.), or an M.B.A. (Finance), M.B.A. (Financial Management) or M.B.A./M.Com. (Financial Analysis), or any other Master's degree notified by the University Grants Commission with Finance as one of the subjects, from a university established by law in India; or membership of the Institute of Chartered Accountants of India, or associate membership of the Institute of Cost Accountants of India. Candidates who have appeared for an examination the passing of which would make them educationally qualified, but whose results have not been declared, are also eligible for admission to the preliminary examination; proof of passing must be uploaded with the main examination application, failing which the candidate is not admitted to the main examination.",
+    fee: "Rs 600 for general merit candidates, Rs 300 for candidates of Category 2A, 2B, 3A and 3B and Rs 50 for ex-servicemen. Scheduled Caste, Scheduled Tribe, Category-1 and candidates with disabilities are exempt from the fee. The fee is payable online by net banking, debit card, credit card or UPI; it is not refunded and is not carried over to any other examination or recruitment of the Commission, and demand drafts, postal orders and money orders are not accepted.",
+    pay: "Rs 69,250-1,34,200 for the Audit Officer post under the notification.",
+    timeline: [
+      { label: "Notification issued", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
+      { label: "Online applications open", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
+      { label: "Last date for online applications", date: "2026-09-26", displayDate: "26 Sep 2026", state: "current" },
+      { label: "Preliminary examination", date: "2026-11-29", displayDate: "29 Nov 2026", state: "scheduled", note: "Tentative in notification" },
+    ],
+    eligibility: [
+      "Recruitment is made under the Karnataka State Accounts Services (Recruitment) Rules, 2011 and the Karnataka State Audit and Accounts Department Services (Recruitment) (Amendment) Rules, 2015 and 2023; Rules 5 and 7 of the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 apply to the conduct of the competitive examination.",
+      "The posts notified here belong to the Hyderabad-Karnataka (Kalyana Karnataka) cadre.",
+      "The candidate must be a citizen of India.",
+      "A male candidate who has more than one living wife, and a female candidate who has married a person already having a living wife, are not eligible for appointment without the prior permission of the Government.",
+      "The candidate must be mentally and physically healthy and free from any physical defect likely to interfere with the efficient discharge of the duties of the post.",
+      "A person permanently debarred from the examinations or recruitments of the Union Public Service Commission, the Karnataka Public Service Commission or any other State Public Service Commission is not eligible.",
+      "Applications are made through the Commission's one-time registration (OTR) process; a completed one-time registration alone is not an application, and the candidate must also use the Apply to Post tab for this notification and pay the fee before the last date.",
+    ],
+    selectionStages: [
+      "Preliminary examination on the date fixed by the Commission",
+      "Main examination for candidates declared qualified in the preliminary examination",
+      "Document verification against the certificates uploaded with the application",
+    ],
+    syllabus: [
+      "This record does not restate the examination scheme; the notification applies Rules 5 and 7 of the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 and directs candidates to the scheme and syllabus published by the Commission for this recruitment.",
+    ],
+    officialLinks: [
+      { label: "Audit Officer (HK) Notification dated 27 Aug 2026 (PDF)", url: "https://kpsc.kar.nic.in/SAAD%20HK%20Notification%20dt%2027-08-2026.pdf", type: "notice" },
+      { label: "KPSC notification board", url: "https://kpsc.kar.nic.in/notification.html", type: "website" },
+      { label: "KPSC online application portal", url: "https://kpsconline.karnataka.gov.in/", type: "apply" },
+    ],
+    sourceTitle: "KPSC Notification KPSCKA/EXA2/PRSL/11/2026-EXAM2/252 dated 27 Aug 2026 - Audit Officer, Karnataka State Audit and Accounts Department (Hyderabad-Karnataka)",
+    sourceUrl: "https://kpsc.kar.nic.in/SAAD%20HK%20Notification%20dt%2027-08-2026.pdf",
+    sourcePublished: "Notification dated 27 Aug 2026, listed on the Commission's notification page; the scanned notification and the notification page were read on 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "New record. The Commission's notification page lists Notification KPSCKA/EXA2/PRSL/11/2026-EXAM2/252 dated 27 Aug 2026 for 15 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Hyderabad-Karnataka cadre, with online applications from 28 Aug 2026 to 26 Sep 2026 and a tentative preliminary examination on 29 Nov 2026.",
+      },
+    ],
+    keywords: [
+      "KPSC Audit Officer 2026",
+      "ಲೆಕ್ಕ ಪರಿಶೋಧನಾಧಿಕಾರಿ",
+      "Karnataka State Audit and Accounts Department recruitment",
+      "KPSC SAAD HK notification",
+      "Kalyana Karnataka audit officer posts",
+    ],
+  }),
+  exam({
+    slug: "kpsc-assistant-controller-audit-officer-rpc-2026",
+    title: "KPSC Assistant Controller and Audit Officer (Residual Parent Cadre) Recruitment 2026",
+    shortTitle: "KPSC Assistant Controller and Audit Officer (RPC)",
+    aliases: [
+      "KPSC SAAD RPC 2026",
+      "Karnataka Assistant Controller recruitment 2026",
+      "Karnataka State Audit and Accounts Department RPC posts",
+    ],
+    organisation: "Karnataka Public Service Commission",
+    governmentLevel: "State",
+    jurisdiction: "Karnataka",
+    state: "Karnataka",
+    stateCode: "KA",
+    regionCodes: ["KA"],
+    cycle: "2026",
+    year: 2026,
+    notificationNumber: "KPSCKA/EXA2/PRSL/10/2026-EXAM2/251",
+    sector: "State civil services",
+    examTypes: ["Civil Services & Administration", "Specialist & Professional"],
+    education: ["Postgraduate", "Professional degree"],
+    verification: "verified",
+    status: {
+      label: "Applications open",
+      tone: "green",
+      nextAction: "Apply online through the Commission's portal by 26 Sep 2026",
+      detail:
+        "Notification KPSCKA/EXA2/PRSL/10/2026-EXAM2/251 dated 27 Aug 2026, listed on the Commission's notification page and read there on 10 Sep 2026, invites online applications for Group A Assistant Controller and Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Residual Parent Cadre. The notification fixes 28 Aug 2026 as the opening date, 26 Sep 2026 as the last date for applications, and 6 Dec 2026 as the tentative date of the preliminary examination.",
+    },
+    summary:
+      "Direct recruitment of Group A Assistant Controllers and Group B Audit Officers in the Karnataka State Audit and Accounts Department for the Residual Parent Cadre, through the Commission's competitive examination.",
+    vacancies: 68,
+    vacancyLabel: "68 posts",
+    vacancyNote:
+      "The notification's post table shows 15 Group A Assistant Controller posts and 53 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department, all in the Residual Parent Cadre. The table prints the two figures without a total row; they add to 68.",
+    vacancyBreakdown: [
+      { label: "Assistant Controller (Group A), Karnataka State Audit and Accounts Department", total: 15 },
+      { label: "Audit Officer (Group B), Karnataka State Audit and Accounts Department", total: 53 },
+    ],
+    age: "Minimum 21 years. Under the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 the upper limit is 35 years for general merit candidates, 38 years for Category 2A, 2B, 3A and 3B candidates and 40 years for Scheduled Caste, Scheduled Tribe and Category-1 candidates. The notification records that Government Order No. ಸಿಆಸುಇ 262 ಸೇನೆನಿ 2025, dated 29 Jan 2026, raises each of those upper limits by five years as a one-time measure, so the limits prescribed in this notification are 21 to 40 years for general merit, 43 years for Category 2A, 2B, 3A and 3B and 45 years for Scheduled Caste, Scheduled Tribe and Category-1 candidates, to be satisfied as on the last date fixed for submitting applications. The notification allows a further relaxation of three years plus the length of service rendered for ex-servicemen, ten years for candidates with disabilities and ten years for widows who produce the prescribed certificate.",
+    qualification:
+      "The same qualification is prescribed for both the Assistant Controller and the Audit Officer post: a Master's degree in Commerce (M.Com.), or an M.B.A. (Finance), M.B.A. (Financial Management) or M.B.A./M.Com. (Financial Analysis), or any other Master's degree notified by the University Grants Commission with Finance as one of the subjects, from a university established by law in India; or membership of the Institute of Chartered Accountants of India, or associate membership of the Institute of Cost Accountants of India. Candidates who have appeared for an examination the passing of which would make them educationally qualified, but whose results have not been declared, are also eligible for admission to the preliminary examination; proof of passing must be uploaded with the main examination application, failing which the candidate is not admitted to the main examination.",
+    fee: "Rs 600 for general merit candidates, Rs 300 for candidates of Category 2A, 2B, 3A and 3B and Rs 50 for ex-servicemen. Scheduled Caste, Scheduled Tribe, Category-1 and candidates with disabilities are exempt from the fee. The fee is payable online by net banking, debit card, credit card or UPI; it is not refunded and is not carried over to any other examination or recruitment of the Commission, and demand drafts, postal orders and money orders are not accepted.",
+    pay: "Rs 83,700-1,55,200 for Assistant Controller and Rs 69,250-1,34,200 for Audit Officer, under the notification.",
+    timeline: [
+      { label: "Notification issued", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
+      { label: "Online applications open", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
+      { label: "Last date for online applications", date: "2026-09-26", displayDate: "26 Sep 2026", state: "current" },
+      { label: "Preliminary examination", date: "2026-12-06", displayDate: "6 Dec 2026", state: "scheduled", note: "Tentative in notification" },
+    ],
+    eligibility: [
+      "Recruitment is made under the Karnataka State Accounts Services (Recruitment) Rules, 2011 and the Karnataka State Audit and Accounts Department Services (Recruitment) (Amendment) Rules, 2015 and 2023; Rules 5 and 7 of the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 apply to the conduct of the competitive examination.",
+      "The posts notified here belong to the Residual Parent Cadre; the Hyderabad-Karnataka cadre posts are notified separately on the same date.",
+      "The candidate must be a citizen of India.",
+      "A male candidate who has more than one living wife, and a female candidate who has married a person already having a living wife, are not eligible for appointment without the prior permission of the Government.",
+      "The candidate must be mentally and physically healthy and free from any physical defect likely to interfere with the efficient discharge of the duties of the post.",
+      "A person permanently debarred from the examinations or recruitments of the Union Public Service Commission, the Karnataka Public Service Commission or any other State Public Service Commission is not eligible.",
+      "Applications are made through the Commission's one-time registration (OTR) process; a completed one-time registration alone is not an application, and the candidate must also use the Apply to Post tab for this notification and pay the fee before the last date.",
+    ],
+    selectionStages: [
+      "Preliminary examination on the date fixed by the Commission",
+      "Main examination for candidates declared qualified in the preliminary examination",
+      "Document verification against the certificates uploaded with the application",
+    ],
+    syllabus: [
+      "This record does not restate the examination scheme; the notification applies Rules 5 and 7 of the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 and directs candidates to the scheme and syllabus published by the Commission for this recruitment.",
+    ],
+    officialLinks: [
+      { label: "Assistant Controller and Audit Officer (RPC) Notification dated 27 Aug 2026 (PDF)", url: "https://kpsc.kar.nic.in/SAAD%20RPC%20Notification%20dt%2027-08-2026.pdf", type: "notice" },
+      { label: "KPSC notification board", url: "https://kpsc.kar.nic.in/notification.html", type: "website" },
+      { label: "KPSC online application portal", url: "https://kpsconline.karnataka.gov.in/", type: "apply" },
+    ],
+    sourceTitle: "KPSC Notification KPSCKA/EXA2/PRSL/10/2026-EXAM2/251 dated 27 Aug 2026 - Assistant Controller and Audit Officer, Karnataka State Audit and Accounts Department (Residual Parent Cadre)",
+    sourceUrl: "https://kpsc.kar.nic.in/SAAD%20RPC%20Notification%20dt%2027-08-2026.pdf",
+    sourcePublished: "Notification dated 27 Aug 2026, listed on the Commission's notification page; the scanned notification and the notification page were read on 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "New record. The Commission's notification page lists Notification KPSCKA/EXA2/PRSL/10/2026-EXAM2/251 dated 27 Aug 2026 for 15 Group A Assistant Controller posts and 53 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Residual Parent Cadre, with online applications from 28 Aug 2026 to 26 Sep 2026 and a tentative preliminary examination on 6 Dec 2026.",
+      },
+    ],
+    keywords: [
+      "KPSC Assistant Controller 2026",
+      "ಸಹಾಯಕ ನಿಯಂತ್ರಕರು",
+      "Karnataka audit officer RPC recruitment",
+      "KPSC SAAD RPC notification",
+      "Karnataka State Audit and Accounts Department jobs",
+    ],
   }),
   exam({
     slug: "karnataka-pu-lecturer-promotion-eligibility-test-2026",
@@ -2595,7 +2777,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the board's notices for the merit list and web counselling; the final sports-category verification was called for 4 Aug 2026",
       detail:
-        "The board's public notice issued a final call for sports-category certificate verification for Civil Assistant Surgeon posts on a regular basis under Notification No.13/2025 dated 4 Sep 2025, at the Sports Authority of Andhra Pradesh office in Vijayawada on 4 Aug 2026, for candidates who did not attend on 23 Jul 2026.",
+        "The board's public notice issued a final call for sports-category certificate verification for Civil Assistant Surgeon posts on a regular basis under Notification No.13/2025 dated 4 Sep 2025, at the Sports Authority of Andhra Pradesh office in Vijayawada on 4 Aug 2026, for candidates who did not attend on 23 Jul 2026. The board's home page and notification list were re-read on 10 Sep 2026: the list still shows Notification No.13/2025 with its 11 Sep to 10 Oct 2025 application window, and nothing newer about the merit list or web counselling for this recruitment is published as of 10 Sep 2026.",
     },
     summary:
       "Direct recruitment of Civil Assistant Surgeons on a regular basis by the Andhra Pradesh Medical Services Recruitment Board.",
@@ -2631,8 +2813,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Andhra Pradesh Medical Services Recruitment Board - public notice and notification list",
     sourceUrl: "https://apmsrb.ap.gov.in/",
-    sourcePublished: "Public notice for the 4 Aug 2026 final sports certificate verification",
-    lastVerified: "4 Aug 2026, 19:00 IST",
+    sourcePublished: "Public notice for the 4 Aug 2026 final sports certificate verification; board home page and notification list re-read 10 Sep 2026 with nothing newer on this recruitment",
+    lastVerified: "10 Sep 2026, 22:20 IST",
     keywords: [
       "APMSRB",
       "AP Civil Assistant Surgeon",
@@ -2668,9 +2850,9 @@ export const exams: Exam[] = [
     status: {
       label: "Applications open",
       tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 9 Sep 2026",
+      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
       detail:
-        "The Board's press note dated 1 Aug 2026 opened online applications for all four of its 29 Jul 2026 notifications from 8 a.m. on 19 Aug 2026 until 5 p.m. on 9 Sep 2026. A further press note dated 15 Aug 2026 adds two years to the upper age limit, on top of the five already allowed.",
+        "The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. A Second Supplementary Notification dated 10 Sep 2026 adds a further three years to the upper age limit for Constable-level posts, and its press note repeats the 16 Sep 2026 deadline.",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Police Constables and equivalent posts across the Telangana Police, Special Protection Force, Fire and Disaster Response, and Prisons and Correctional Services departments.",
@@ -2687,7 +2869,7 @@ export const exams: Exam[] = [
       { label: "Warder (Male), Prisons and Correctional Services", total: 196 },
       { label: "Warder (Female), Prisons and Correctional Services", total: 12 },
     ],
-    age: "18 to 22 years as on 1 Jul 2026 under Notification Rc No.189/Rect./Rect.-2/2026. The notification records that GO Ms No.87, General Administration (Services-A) Department, dated 18 May 2026 raised the upper age limit for direct recruitment to uniformed services by five years, in addition to that limit, and allows a further five years for SC, ST, BC and EWS candidates and three years plus service rendered for ex-servicemen and NCC instructors. The Board's press note dated 15 Aug 2026 adds two more years: G.O.Ms.No.122, General Administration (Services-A) Department, dated 14 Aug 2026 raised the upper age limit for direct recruitment to uniformed services in the Police, Fire Services, Prisons and Special Protection Force departments by a further two years, over and above the five years under G.O.Ms.No.87, and that relaxation applies to Para 15-B (i), (ii) and (iii) of this notification.",
+    age: "18 to 22 years as on 1 Jul 2026 under Notification Rc No.189/Rect./Rect.-2/2026. The notification records that GO Ms No.87, General Administration (Services-A) Department, dated 18 May 2026 raised the upper age limit for direct recruitment to uniformed services by five years, in addition to that limit, and allows a further five years for SC, ST, BC and EWS candidates and three years plus service rendered for ex-servicemen and NCC instructors. The Board's press note dated 15 Aug 2026 adds two more years: G.O.Ms.No.122, General Administration (Services-A) Department, dated 14 Aug 2026 raised the upper age limit for direct recruitment to uniformed services in the Police, Fire Services, Prisons and Special Protection Force departments by a further two years, over and above the five years under G.O.Ms.No.87, and that relaxation applies to Para 15-B (i), (ii) and (iii) of this notification. The Board's Second Supplementary Notification in Rc No.189 & 234, dated 10 Sep 2026, adds three more years: G.O.Ms.No.129 of the same department, dated 9 Sep 2026, raised the upper age limit for direct recruitment by a further three years over and above the seven already raised by G.O.Ms.No.87 and G.O.Ms.No.122, for the posts of Constables and equivalent posts in the Police, Fire Services, Prisons and Special Protection Force departments, and that relaxation too applies to Para 15-B (i), (ii) and (iii) of this notification.",
     qualification:
       "Must have passed Intermediate or an equivalent examination recognised by the State Government as on the date of notification, 29 Jul 2026, per Notification Rc No.189/Rect./Rect.-2/2026. For Fire Fighter (Post Code 26) a valid Light Motor Vehicle driving licence as on the notification date is also required.",
     fee: "Rs 600 for SC and ST candidates who are local to Telangana and Rs 1,200 for all others, per the fee table in the Board's press note dated 1 Aug 2026. The fee is one-time and covers the whole end-to-end process - Application Part-I, the Preliminary Written Test, Application Part-II, the Physical Measurement and Efficiency Test, the Final Written Examination, certificate verification and result processing. A candidate who applies under more than one of the Board's common procedure regimens is refunded Rs 100 (Rs 50 for SC and ST candidates) for each additional regimen, because the physical test is held only once.",
@@ -2695,7 +2877,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
-      { label: "Application deadline", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
       { label: "Preliminary Written Test", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -2724,17 +2907,24 @@ export const exams: Exam[] = [
       { label: "SCT PC (Civil and equivalent) Notification 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/PC%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 1 Aug 2026 - application window and fees (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
+      { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
+      { label: "Second Supplementary Notification dated 10 Sep 2026 - further three-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Second%20Supplementary%20Notification%202026%20%20dated10%20Sep%202026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.189/Rect./Rect.-2/2026, read with the Board's press notes of 1 and 15 Aug 2026",
+    sourceTitle: "TSLPRB Notification Rc No.189/Rect./Rect.-2/2026, read with the Board's press notes of 1 and 15 Aug and 8 Sep 2026 and the Second Supplementary Notification of 10 Sep 2026",
     sourceUrl: "https://www.tgprb.in/SI_PC_2026/PC%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:00 IST",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026; Second Supplementary Notification dated 10 Sep 2026, all read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:20 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The application dates are no longer awaited. The Board's press note dated 1 Aug 2026 opens online applications from 8 a.m. on 19 Aug 2026 until 5 p.m. on 9 Sep 2026 and publishes the fee - Rs 600 for SC and ST candidates local to Telangana and Rs 1,200 for all others. A press note dated 15 Aug 2026 adds a further two years to the upper age limit under G.O.Ms.No.122 dated 14 Aug 2026.",
+      },
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday, and records that 2,76,085 candidates had applied across 3,80,762 candidatures against the 7,437 vacancies notified on 29 Jul 2026. The Board's Second Supplementary Notification in Rc No.189 & 234 dated 10 Sep 2026 also adds a further three years to the upper age limit under G.O.Ms.No.129 dated 9 Sep 2026, on top of the seven years already granted.",
       },
     ],
     keywords: [
@@ -2774,9 +2964,9 @@ export const exams: Exam[] = [
     status: {
       label: "Applications open",
       tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 9 Sep 2026",
+      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
       detail:
-        "The Board's press note dated 1 Aug 2026 opened online applications for all four of its 29 Jul 2026 notifications from 8 a.m. on 19 Aug 2026 until 5 p.m. on 9 Sep 2026. A further press note dated 15 Aug 2026 adds two years to the upper age limit, on top of the five already allowed.",
+        "The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. The three-year age relaxation notified on 10 Sep 2026 applies only to Constable-level posts and not to this notification.",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Sub Inspectors and equivalent posts across the Telangana Police, Special Protection Force, Fire and Disaster Response, and Prisons and Correctional Services departments.",
@@ -2802,7 +2992,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
-      { label: "Application deadline", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
       { label: "Preliminary Written Test", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -2833,17 +3024,23 @@ export const exams: Exam[] = [
       { label: "SCT SI (Civil and equivalent) Notification 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/SI%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 1 Aug 2026 - application window and fees (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
+      { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.225/Rect./Rect.-1/2026, read with the Board's press notes of 1 and 15 Aug 2026",
+    sourceTitle: "TSLPRB Notification Rc No.225/Rect./Rect.-1/2026, read with the Board's press notes of 1 and 15 Aug and 8 Sep 2026",
     sourceUrl: "https://www.tgprb.in/SI_PC_2026/SI%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:00 IST",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026, all read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:20 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The application dates are no longer awaited. The Board's press note dated 1 Aug 2026 opens online applications from 8 a.m. on 19 Aug 2026 until 5 p.m. on 9 Sep 2026 and publishes the fee - Rs 750 for SC and ST candidates local to Telangana and Rs 1,500 for all others. A press note dated 15 Aug 2026 adds a further two years to the upper age limit under G.O.Ms.No.122 dated 14 Aug 2026.",
+      },
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday, and records that 2,76,085 candidates had applied across 3,80,762 candidatures against the 7,437 vacancies notified on 29 Jul 2026.",
       },
     ],
     keywords: [
@@ -2881,9 +3078,9 @@ export const exams: Exam[] = [
     status: {
       label: "Applications open",
       tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 9 Sep 2026",
+      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
       detail:
-        "Notification Rc No.234/Rect./Rect.3/2026 dated 29 Jul 2026 notifies 27 technical constable posts. The Board's press note dated 1 Aug 2026 opened online applications from 8 a.m. on 19 Aug 2026 until 5 p.m. on 9 Sep 2026, and a press note dated 15 Aug 2026 adds two years to the upper age limit.",
+        "Notification Rc No.234/Rect./Rect.3/2026 dated 29 Jul 2026 notifies 27 technical constable posts. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. A Second Supplementary Notification dated 10 Sep 2026 adds a further three years to the upper age limit for Post Code 35 (Mechanic) but expressly not for Post Code 36 (Driver).",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Police Constables in the Mechanic and Driver technical cadres of the Telangana Police Transport Organization, open to men only.",
@@ -2895,7 +3092,7 @@ export const exams: Exam[] = [
       { label: "SCT Police Constable (Mechanics) (Men)", total: 7 },
       { label: "SCT Police Constable (Driver) (Men)", total: 20 },
     ],
-    age: "For Post Code 35, 18 to 22 years as on 1 Jul 2026; for Post Code 36, 21 to 25 years as on 1 Jul 2026. Serving Home Guards with at least 360 days of duty in the preceding two years may apply up to 40 years. G.O.Ms.No.87, General Administration (Services-A) Department, dated 18 May 2026 adds five years to the upper limit for uniformed services, and the Board's press note dated 15 Aug 2026 records that G.O.Ms.No.122 of the same department, dated 14 Aug 2026, adds a further two years to Para 14-B (i) of this notification. Relaxation is also available for the length of regular service up to five years for Telangana State Government employees, three years plus service rendered for ex-servicemen and NCC instructors, and five years for SC, ST, BC and EWS candidates.",
+    age: "For Post Code 35, 18 to 22 years as on 1 Jul 2026; for Post Code 36, 21 to 25 years as on 1 Jul 2026. Serving Home Guards with at least 360 days of duty in the preceding two years may apply up to 40 years. G.O.Ms.No.87, General Administration (Services-A) Department, dated 18 May 2026 adds five years to the upper limit for uniformed services, and the Board's press note dated 15 Aug 2026 records that G.O.Ms.No.122 of the same department, dated 14 Aug 2026, adds a further two years to Para 14-B (i) of this notification. The Board's Second Supplementary Notification in Rc No.189 & 234, dated 10 Sep 2026, adds three more years under G.O.Ms.No.129 of the same department, dated 9 Sep 2026, over and above the seven already raised - but that relaxation applies to Para 14-B (i) only for the post of SCT Police Constable (Mechanic) under Post Code 35 and expressly excludes the post of SCT Police Constable (Driver) under Post Code 36. Relaxation is also available for the length of regular service up to five years for Telangana State Government employees, three years plus service rendered for ex-servicemen and NCC instructors, and five years for SC, ST, BC and EWS candidates.",
     qualification:
       "For Post Code 35 (Mechanics): SSC or an equivalent examination recognised by the State Government, plus an Industrial Training Institute certificate in Auto Electrician, Mechanic Motor Vehicle, Mechanic Diesel or Fitter, held as on the notification date of 29 Jul 2026. For Post Code 36 (Driver): Intermediate or an equivalent examination recognised by the State Board of Intermediate Education, or SSC with one of the same ITI certificates, held as on 29 Jul 2026, together with the technical driving qualification set out in the notification.",
     fee: "Rs 600 for SC and ST candidates who are local to Telangana and Rs 1,200 for all others, per the fee table in the Board's press note dated 1 Aug 2026. The fee is one-time and covers the physical tests, the trade or driving test, the written examination, certificate verification and result processing, with a rebate of Rs 100 (Rs 50 for SC and ST candidates) for each additional common procedure regimen applied for.",
@@ -2903,7 +3100,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
-      { label: "Application deadline", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
       { label: "Physical Measurement and Efficiency Test", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -2933,12 +3131,21 @@ export const exams: Exam[] = [
       { label: "SCT PC (Driver and Mechanic) Notification 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/PC%20Driver%20&%20Mechanic%20Notification%202026%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 1 Aug 2026 - application window and fees (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
+      { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
+      { label: "Second Supplementary Notification dated 10 Sep 2026 - further three-year age relaxation for Post Code 35 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Second%20Supplementary%20Notification%202026%20%20dated10%20Sep%202026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.234/Rect./Rect.3/2026 - SCT Police Constable (Mechanics) and (Driver)",
+    sourceTitle: "TSLPRB Notification Rc No.234/Rect./Rect.3/2026 - SCT Police Constable (Mechanics) and (Driver), read with the Board's press note of 8 Sep 2026 and the Second Supplementary Notification of 10 Sep 2026",
     sourceUrl: "https://www.tgprb.in/SI_PC_2026/PC%20Driver%20&%20Mechanic%20Notification%202026%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:00 IST",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026; Second Supplementary Notification dated 10 Sep 2026, all read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday. The Board's Second Supplementary Notification in Rc No.189 & 234 dated 10 Sep 2026 also adds a further three years to the upper age limit under G.O.Ms.No.129 dated 9 Sep 2026, on top of the seven years already granted - for Post Code 35 (Mechanic) only, expressly not for Post Code 36 (Driver).",
+      },
+    ],
     keywords: [
       "Telangana police driver constable",
       "తెలంగాణ పోలీస్ డ్రైవర్ కానిస్టేబుల్",
@@ -2973,9 +3180,9 @@ export const exams: Exam[] = [
     status: {
       label: "Applications open",
       tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 9 Sep 2026",
+      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
       detail:
-        "Notification Rc No.279/Rect./Rect-3/2026 dated 29 Jul 2026 notifies 23 Assistant Sub Inspector posts in the Finger Print Bureau. The Board's press note dated 1 Aug 2026 opened online applications from 8 a.m. on 19 Aug 2026 until 5 p.m. on 9 Sep 2026, and a press note dated 15 Aug 2026 adds two years to the upper age limit.",
+        "Notification Rc No.279/Rect./Rect-3/2026 dated 29 Jul 2026 notifies 23 Assistant Sub Inspector posts in the Finger Print Bureau. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. The three-year age relaxation notified on 10 Sep 2026 applies only to Constable-level posts and not to this notification.",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Assistant Sub Inspectors for the Finger Print Bureau of the Telangana Police, a computing and forensic technical cadre open to men and women.",
@@ -3000,7 +3207,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
-      { label: "Application deadline", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
       { label: "Physical Measurement and Efficiency Test", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -3029,12 +3237,20 @@ export const exams: Exam[] = [
       { label: "SCT ASI (FPB) Notification 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/ASI%20(FPB)%202026%20Notification%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 1 Aug 2026 - application window and fees (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
+      { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.279/Rect./Rect-3/2026 - SCT Assistant Sub Inspector, Finger Print Bureau",
+    sourceTitle: "TSLPRB Notification Rc No.279/Rect./Rect-3/2026 - SCT Assistant Sub Inspector, Finger Print Bureau, read with the Board's press note of 8 Sep 2026",
     sourceUrl: "https://www.tgprb.in/SI_PC_2026/ASI%20(FPB)%202026%20Notification%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:00 IST",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026, all read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday, and records that 2,76,085 candidates had applied across 3,80,762 candidatures against the 7,437 vacancies notified on 29 Jul 2026.",
+      },
+    ],
     keywords: [
       "Telangana ASI finger print bureau",
       "తెలంగాణ వేలిముద్రల విభాగం ఏఎస్ఐ",
@@ -3181,17 +3397,18 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Selection notification published",
+      label: "Selection in progress, specialty by specialty",
       tone: "violet",
-      nextAction: "Check the final merit list and selection notification on the Board's notice list and watch for the remaining specialties",
+      nextAction: "Check the Board's notice list for the final merit list and selection notification for the ten specialties verified in August 2026",
       detail:
-        "The Board's notice list published the provisional merit list and certificate-verification schedule for the Civil Assistant Surgeon (Specialists) recruitment on 15 Jul 2026, rescheduled verification on 17 and 20 Jul 2026, and issued the final merit list and selection notification for General Medicine, General Surgery, Radiology and Orthopaedics on 28 Jul 2026.",
+        "The Board's notice list, re-read on 10 Sep 2026, published the provisional merit list and certificate-verification schedule for the Civil Assistant Surgeon (Specialists) recruitment on 15 Jul 2026, rescheduled verification on 17 and 20 Jul 2026, and issued the final merit list and selection notification for General Medicine, General Surgery, Radiology and Orthopaedics on 28 Jul 2026. On 11 Aug 2026 it released provisional merit lists for a further ten specialties - Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology - and shortlisted applicants in the ratio of 1:2 for certificate verification on 13 and 14 Aug 2026, with 17 Aug 2026 as the reserve day. No final merit list or selection notification for those ten specialties is published as of 10 Sep 2026.",
     },
     summary:
       "Recruitment of Civil Assistant Surgeon (Specialists) for Telangana's public health services by the Medical and Health Services Recruitment Board, now at the specialty-wise selection stage.",
-    vacancyLabel: "See the CASS recruitment notification",
+    vacancies: 1623,
+    vacancyLabel: "1,623 posts across 24 specialties",
     vacancyNote:
-      "The Board's notice list publishes specialty-wise merit and selection notifications rather than a vacancy total, so no number is asserted here.",
+      "The Board's selection notification of 28 Jul 2026 records that Notification No.04/2025, dated 22 Aug 2025, was issued for filling 1,623 posts of Civil Assistant Surgeon Specialists under TVVP and Medical Officer Specialist in TGSRTC, divided into 24 specialties across the two organisations. The Board publishes specialty-wise merit and selection notifications rather than a specialty-wise vacancy table, so no per-specialty split is asserted here.",
     age: "The CASS recruitment notification prescribes the age limits; the Board's notice list does not restate them.",
     qualification:
       "The CASS recruitment notification prescribes the postgraduate medical qualification and registration required for each specialty; the Board's notice list does not restate them.",
@@ -3202,6 +3419,8 @@ export const exams: Exam[] = [
       { label: "Certificate verification of 18 Jul postponed and rescheduled", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
       { label: "Reserve-day certificate verification rescheduled to 21 Jul 2026", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
       { label: "Final merit list and selection notification (General Medicine, General Surgery, Radiology, Orthopaedics)", date: "2026-07-28", displayDate: "28 Jul 2026", state: "completed" },
+      { label: "Provisional merit lists for ten further specialties", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed", note: "Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology; shortlisting in the ratio of 1:2 of the notified vacancies." },
+      { label: "Certificate verification for the ten further specialties", date: "2026-08-13", displayDate: "13 and 14 Aug 2026", state: "completed", note: "At the Indian Institute of Health and Family Welfare, Vengal Rao Nagar, Hyderabad, with 17 Aug 2026 as the reserve day." },
       { label: "Selection for the remaining specialties", displayDate: "Not announced", state: "tentative" },
     ],
     eligibility: [
@@ -3216,12 +3435,21 @@ export const exams: Exam[] = [
     ],
     syllabus: ["Selection is not by written examination for this recruitment; no syllabus is published on the Board's notice list."],
     officialLinks: [
+      { label: "Web notice of 11 Aug 2026 - provisional merit lists and certificate verification for ten specialties (PDF)", url: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1786454361292", type: "notice" },
+      { label: "Selection notification of 28 Jul 2026 - General Medicine, General Surgery, Radiology, Orthopaedics (PDF)", url: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1785248415107", type: "result" },
       { label: "MHSRB Telangana notice board", url: "https://mhsrb.telangana.gov.in/", type: "website" },
     ],
-    sourceTitle: "Medical and Health Services Recruitment Board, Telangana - dated notice list",
-    sourceUrl: "https://mhsrb.telangana.gov.in/",
-    sourcePublished: "Selection notification dated 28 Jul 2026",
-    lastVerified: "4 Aug 2026, 19:25 IST",
+    sourceTitle: "MHSRB Telangana web notice of 11 Aug 2026 under Notification No.04/2025, read with the selection notification of 28 Jul 2026",
+    sourceUrl: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1786454361292",
+    sourcePublished: "Web notice dated 11 Aug 2026 and selection notification dated 28 Jul 2026; the Board's notice list re-read 10 Sep 2026",
+    lastVerified: "10 Sep 2026, 22:20 IST",
+    changeLog: [
+      {
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        text: "The selection has moved on to ten more specialties. The Board's web notice of 11 Aug 2026 released provisional merit lists for Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology, and called shortlisted applicants for certificate verification on 13 and 14 Aug 2026 with 17 Aug 2026 as the reserve day. The Board's selection notification of 28 Jul 2026 also names the parent notice - Notification No.04/2025 dated 22 Aug 2025, for 1,623 posts across 24 specialties - so the record now carries that total.",
+      },
+    ],
     keywords: [
       "MHSRB Telangana",
       "తెలంగాణ సివిల్ అసిస్టెంట్ సర్జన్",

@@ -786,12 +786,24 @@
       "CG"
     ],
     "allowedHosts": [
-      "www.cspdcl.co.in"
+      "web.cspdcl.co.in",
+      "www.cspdcl.co.in",
+      "escapi.cspdcl.co.in"
     ],
     "watchUrls": [
       {
         "id": "cg-state-power-companies-1",
+        "url": "https://web.cspdcl.co.in/#/FrmViewRecruitment",
+        "cadenceHours": 24
+      },
+      {
+        "id": "cg-state-power-companies-2",
         "url": "https://www.cspdcl.co.in/cseb/frmViewRecruitment.aspx",
+        "cadenceHours": 24
+      },
+      {
+        "id": "cg-state-power-companies-3",
+        "url": "https://escapi.cspdcl.co.in/api/api/recruitment/pagination?page=1&limit=10",
         "cadenceHours": 24
       }
     ]
@@ -2099,6 +2111,11 @@
         "id": "jkssb-2",
         "url": "https://jkssb.nic.in/Advertisement.html",
         "cadenceHours": 24
+      },
+      {
+        "id": "jkssb-3",
+        "url": "https://jkssb.nic.in/Whatsnew.html",
+        "cadenceHours": 24
       }
     ]
   },
@@ -2324,7 +2341,7 @@
     "watchUrls": [
       {
         "id": "karnataka-school-education-1",
-        "url": "https://sts.karnataka.gov.in/GPSTRNHK/TETHOME.aspx",
+        "url": "https://sts.karnataka.gov.in/GPSTRNHK/",
         "cadenceHours": 24
       },
       {
@@ -3339,6 +3356,11 @@
     "watchUrls": [
       {
         "id": "pgimer-1",
+        "url": "https://pgimer.edu.in/PGIMER_PORTAL/PGIMERPORTAL/Vacancies/JSP/VIEW_CALL.jsp?aflag=0",
+        "cadenceHours": 24
+      },
+      {
+        "id": "pgimer-2",
         "url": "https://pgimer.edu.in/PGIMER_PORTAL/PGIMERPORTAL/Vacancies/JSP/VACANCIE_VIEW.jsp?countt=0",
         "cadenceHours": 24
       }
@@ -3863,6 +3885,16 @@
         "id": "ssc-1",
         "url": "https://ssc.gov.in/",
         "cadenceHours": 24
+      },
+      {
+        "id": "ssc-2",
+        "url": "https://ssc.gov.in/api/general-website/portal/lastUpdates",
+        "cadenceHours": 24
+      },
+      {
+        "id": "ssc-3",
+        "url": "https://ssc.gov.in/api/admin/5.1/liveExams",
+        "cadenceHours": 24
       }
     ]
   },
@@ -4179,6 +4211,11 @@
       {
         "id": "telangana-mhsrb-1",
         "url": "https://mhsrb.telangana.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "telangana-mhsrb-2",
+        "url": "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/public/news?category=regular",
         "cadenceHours": 24
       }
     ]
@@ -4708,12 +4745,18 @@
     ],
     "allowedHosts": [
       "westbengalssc.com",
-      "www.westbengalssc.com"
+      "www.westbengalssc.com",
+      "old.westbengalssc.com"
     ],
     "watchUrls": [
       {
         "id": "wbssc-1",
         "url": "https://www.westbengalssc.com/otr/recruitment/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "wbssc-2",
+        "url": "https://old.westbengalssc.com/sscorg/wbssc/home/",
         "cadenceHours": 24
       }
     ]
