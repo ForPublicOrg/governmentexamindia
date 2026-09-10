@@ -1,67 +1,67 @@
 {
   "aiims-exams-1": {
     "hash": "20607bd3a8dc0795f90d5c8e8e800c49a5a92d932916f1e9e767680abe8cb2be",
-    "checkedAt": "2026-09-09T16:37:00.500Z"
+    "checkedAt": "2026-09-10T17:16:07.919Z"
   },
   "ladakh-administration-1": {
-    "hash": "d87efeee29bd00aeae757b111520d523163bc97d6e2ccd6ae01e1865a555d10c",
-    "checkedAt": "2026-09-09T16:37:00.687Z"
+    "hash": "21f97fbef12c8d788d8366071b0bf2c903c21fc6ba3daa2967f6349a78410900",
+    "checkedAt": "2026-09-10T17:16:08.003Z"
   },
   "aai-1": {
-    "hash": "84834fcd4bbe831fb0cb545f845d812aa4c6af31ea74747da05ffb2f0f80ba80",
-    "checkedAt": "2026-09-09T16:37:08.240Z"
+    "hash": "975250ce068f2ce66e5238b5d08ad9b10fac5aa438a3624b1e229e31c794220b",
+    "checkedAt": "2026-09-10T17:16:12.145Z"
   },
   "abvims-rmlh-1": {
-    "hash": "d07984402812ae434a532b23bc34e143a93e0930bd1c12b4187ee09b22c3458f",
+    "hash": "dbd70760b48db4f3c938d6f8d441c7239b1053b3dd16cd520a35d90c4fdd9c2a",
     "etag": "None",
-    "checkedAt": "2026-09-09T16:37:12.016Z"
+    "checkedAt": "2026-09-10T17:16:17.270Z"
   },
   "andaman-nicobar-administration-1": {
-    "hash": "b4a8a2e03bd1bac173ceb3ad218f88eb40b0f3886c20577e7551b3f1e69abf7e",
-    "checkedAt": "2026-09-09T16:37:12.564Z"
+    "hash": "5d9ba7910ebe1ed6207a38148b0a5f1aa19998cbdbe66191c984cb86d43242db",
+    "checkedAt": "2026-09-10T17:16:18.796Z"
   },
   "andhra-pradesh-grama-ward-sachivalayam-2": {
-    "hash": "693f948cc9b19390760949b1abef74b37791954412dfdc7b363abbb0f2ac12b7",
-    "checkedAt": "2026-09-09T16:37:12.456Z"
+    "hash": "d3c8e8463f414d5f7bb7b32985fab0064f1d66e929e7dfe754f95cbcf68cd35f",
+    "checkedAt": "2026-09-10T17:16:18.616Z"
   },
   "andhra-pradesh-grama-ward-sachivalayam-1": {
-    "hash": "75496adda936de1b89d52783945f8035bbe10378969bf6121c11374aa21e2633",
-    "checkedAt": "2026-09-09T16:37:12.406Z"
+    "hash": "4ad72337be85a9dd89155d625e796733825b56ed072dab1e2384fce784f5e084",
+    "checkedAt": "2026-09-10T17:16:18.615Z"
   },
   "andhra-pradesh-msrb-1": {
     "hash": "42fe0f4c6e65b00098e9e4b64c750ac6d0cbdb25ec58fe44d477c8d8bc468757",
-    "checkedAt": "2026-09-09T16:37:12.710Z"
+    "checkedAt": "2026-09-10T17:16:18.887Z"
   },
   "andaman-nicobar-administration-2": {
-    "hash": "ee8c5b4f15b99fa43e0d99842552b1a432786e39414c20b9278726dc4e7ba4c0",
-    "lastModified": "Wed, 09 Sep 2026 16:33:16 GMT",
-    "checkedAt": "2026-09-09T16:37:12.665Z"
+    "hash": "ef5970fb17b59a4ffc7eb3efb127d3a9b3eae92ca69e746e220a2e5f1f49ab53",
+    "lastModified": "Thu, 10 Sep 2026 17:12:20 GMT",
+    "checkedAt": "2026-09-10T17:16:18.979Z"
   },
   "apepdcl-1": {
-    "hash": "1b200aef183853fbcf48937748d28e15dfb36f989ff26754bb034e9b1e4a864e",
-    "checkedAt": "2026-09-09T16:37:13.080Z"
+    "hash": "e05e4c15bf4d59579b139d361f21d4ba0e725230d6971d9f53ba887011d665e5",
+    "checkedAt": "2026-09-10T17:16:19.505Z"
   },
   "andhra-pradesh-msrb-2": {
     "hash": "42fe0f4c6e65b00098e9e4b64c750ac6d0cbdb25ec58fe44d477c8d8bc468757",
-    "checkedAt": "2026-09-09T16:37:13.163Z"
+    "checkedAt": "2026-09-10T17:16:19.594Z"
   },
   "andhra-pradesh-psc-2": {
     "hash": "68150ac2bfdc415417981d5139988cf5d19c51c749c9e08058a065095c0f3a3b",
     "checkedAt": "2026-08-29T10:31:24.165Z"
   },
   "andhra-pradesh-school-education-1": {
-    "hash": "d28b704b96a6f060c23c2343f4c642f22057e66fb4fea34ca14d6c95df46e7cb",
-    "checkedAt": "2026-09-09T16:37:13.554Z"
+    "hash": "709eb57ddf3e33223e6891f63229ea311f3502a60205311840e7bc7dc10f8ff0",
+    "checkedAt": "2026-09-10T17:16:20.144Z"
   },
   "andhra-pradesh-slprb-1": {
-    "hash": "acdbb98f9928f712ca1c24fb6c89bca48caf66fb7f693e412702bcd4b90fc55c",
-    "checkedAt": "2026-09-09T16:37:13.555Z"
+    "hash": "1b2d1e29180005205369d8a9d84aaed00b4e842562690a806dc1076d0015e246",
+    "checkedAt": "2026-09-10T17:16:20.142Z"
   },
   "andhra-pradesh-school-education-2": {
-    "hash": "55e1093691b0d3f55c15a1effb380bda4fca6475f500a04b9e25eb7e67a83199",
-    "etag": "\"4f1176262f271f3838d6c51e80a9f7cb\"",
-    "lastModified": "Mon, 24 Aug 2026 18:40:31 GMT",
-    "checkedAt": "2026-09-09T16:37:13.791Z"
+    "hash": "6610ef6a56754f21a9a61d3925368d748e0d8a802ac62139cc2cb31aa309be2b",
+    "etag": "\"dfdf678c0c7e3a103d960118d9e7ed51\"",
+    "lastModified": "Thu, 10 Sep 2026 11:01:58 GMT",
+    "checkedAt": "2026-09-10T17:16:20.714Z"
   },
   "andhra-pradesh-psc-1": {
     "hash": "28b43d7c93a45c6287011fec0fbb8e40e75e2e36f67b56cb3311809702d2b571",
@@ -71,576 +71,576 @@
     "hash": "c0972c38d2080b049f5d1c30aaed3a1ec1b0e8bb0e0b19142d434b3eb0692af8",
     "etag": "\"1788943487-gzip\"",
     "lastModified": "Wed, 09 Sep 2026 08:44:47 GMT",
-    "checkedAt": "2026-09-09T16:37:13.971Z"
+    "checkedAt": "2026-09-10T17:16:21.128Z"
   },
   "arunachal-police-2": {
     "hash": "881efb228b3ebcdb70692d4b63641f7aa7b811a61eaf7d33b2674a77f30eae87",
     "etag": "\"80164d7a5031dd1:0\"",
     "lastModified": "Fri, 21 Aug 2026 09:36:01 GMT",
-    "checkedAt": "2026-09-09T16:37:14.031Z"
+    "checkedAt": "2026-09-10T17:16:21.290Z"
   },
   "arunachal-police-1": {
     "hash": "5e1a95393cb93e28d99dc6e8282983c306b2cefdb1f1cf66418f5be3a829f0b7",
     "etag": "\"0deac25435dd1:0\"",
     "lastModified": "Wed, 26 Aug 2026 12:16:44 GMT",
-    "checkedAt": "2026-09-09T16:37:14.031Z"
+    "checkedAt": "2026-09-10T17:16:21.290Z"
   },
   "arunachal-pradesh-psc-2": {
-    "hash": "b071c3ab54c145a07628d645b15081f94126cf52c8c9b80390a4aef6f1d65a7b",
-    "checkedAt": "2026-09-09T16:37:14.540Z"
+    "hash": "8bafeb39f04101b2f4018655307e6f33565d1d2bf2ae1f3ebfdf7d267becd057",
+    "checkedAt": "2026-09-10T17:16:21.562Z"
   },
   "arunachal-pradesh-psc-1": {
-    "hash": "85476817351bd8a189d97257a4ddfff032e00f31becf7bc7d2bec545233d4d9d",
-    "checkedAt": "2026-09-09T16:37:18.383Z"
+    "hash": "d5b8c3dc1b6482fd8887d34c2fe55fbd71ca3bb7f3755a0a3eed003ae0928d89",
+    "checkedAt": "2026-09-10T17:16:21.659Z"
   },
   "arunachal-apssb-1": {
-    "hash": "b1d197eb3b3ad5e5e1727ad3c39dbc1a1f2d78bfc650854a0df50693f7c1c6cc",
-    "checkedAt": "2026-09-09T16:37:15.484Z"
+    "hash": "8d535b7586ade4df3c0dca4bbc5328983e73bebb24b164ede1c2423f5bbe62e8",
+    "checkedAt": "2026-09-10T17:16:22.516Z"
   },
   "barc-1": {
     "hash": "7051a5bdb10b624fac74849e1c89722a7bd638c7403ca67316c9ea0c42ba0e4d",
     "etag": "\"9071-65af6ebc0b115\"",
     "lastModified": "Tue, 08 Sep 2026 11:20:23 GMT",
-    "checkedAt": "2026-09-09T16:37:20.396Z"
+    "checkedAt": "2026-09-10T17:16:24.962Z"
   },
   "assam-psc-1": {
     "hash": "9e11a18f054ac6e72c2980dfe401c3123c41f86874936281ef5d3007e63832c2",
-    "checkedAt": "2026-09-09T16:37:18.881Z"
+    "checkedAt": "2026-09-10T17:16:23.063Z"
   },
   "assam-psc-2": {
     "hash": "cc55fc8a0a285df3fb57cc11ffcf9f1ddb06c17c4ab0d803d4f7e1867df63393",
-    "checkedAt": "2026-09-09T16:37:18.795Z"
+    "checkedAt": "2026-09-10T17:16:22.971Z"
   },
   "bescom-1": {
-    "hash": "3c02350896f59da23ced649c2b37f8d25681d8757a2e5a916b92fc7d8b864b24",
-    "checkedAt": "2026-09-09T16:37:19.886Z"
+    "hash": "22555fa7b4620cfed7235426dd29b7831f1d98fc56ee142fa9fee2f24feb8d19",
+    "checkedAt": "2026-09-10T17:16:24.428Z"
   },
   "bescom-2": {
-    "hash": "4bfd9adcc42a5404656f642356a063342aea9254641c2ed3487dab7854db7541",
-    "checkedAt": "2026-09-09T16:37:20.044Z"
+    "hash": "f3d8197f91ff915c0348abc31f1d99c58d821c85d5567fc239dbc9869cd5d2e3",
+    "checkedAt": "2026-09-10T17:16:24.609Z"
   },
   "assam-rifles-1": {
     "hash": "e760746d2f3fc8f89574de7e2221c34408848ff38cf51e1522bd4fae747a8e02",
     "etag": "\"9ea02d9fcd10db1:0\"",
     "lastModified": "Fri, 27 Sep 2024 11:08:46 GMT",
-    "checkedAt": "2026-09-09T16:37:18.758Z"
+    "checkedAt": "2026-09-10T17:16:22.884Z"
   },
   "bel-1": {
-    "hash": "f34130c0a984a9aa18891a32c3a90561ef088d02ad86556a1597a442a84c34b7",
-    "checkedAt": "2026-09-09T16:37:21.244Z"
+    "hash": "548c3a86592a658d46bd1895e9732d36c5d7ef2ffa2fbf71d813e21c7a5e7227",
+    "checkedAt": "2026-09-10T17:16:25.943Z"
   },
   "bpssc-1": {
     "hash": "ebf3a6bc3bff319d216cef93e054575eaa867e61ac986500c413bac209730a13",
     "etag": "\"0449debd136dd1:0\"",
     "lastModified": "Fri, 28 Aug 2026 09:45:12 GMT",
-    "checkedAt": "2026-09-09T16:37:20.366Z"
+    "checkedAt": "2026-09-10T17:16:25.143Z"
   },
   "bpsc-1": {
-    "hash": "188e2e8c1557442045f7a2a3e8d8f0cc7f7d747f9775678df96d1a39bd4d570d",
-    "etag": "\"0027a207d05c895e764af4f3696c06c2\"",
-    "lastModified": "Wed, 09 Sep 2026 16:37:19 GMT",
-    "checkedAt": "2026-09-09T16:37:20.429Z"
+    "hash": "26025723cfc1525948d5476c57440b6defbe4ae6c0f4f9098fe9e32f9e0654d3",
+    "etag": "\"9283ed853ab2bc54d782faeef1f9d9d9\"",
+    "lastModified": "Thu, 10 Sep 2026 17:16:22 GMT",
+    "checkedAt": "2026-09-10T17:16:25.219Z"
   },
   "bhel-haridwar-1": {
-    "hash": "5dd4ab10c1d0fdc287bad3aeeaf660d16576049f1e2beaffccd5a7aa1850b72d",
-    "checkedAt": "2026-09-09T16:37:20.659Z"
+    "hash": "2f0f31317a79c7b4b47448c1bb17e096975906c9ecfbbbff53193bd7828f82b2",
+    "checkedAt": "2026-09-10T17:16:25.297Z"
   },
   "bpcl-1": {
-    "hash": "b19d7cede907459c0d3da7f3278b3b92880de342029e68d131b615c0bdce2c2c",
-    "checkedAt": "2026-09-09T16:37:21.214Z"
+    "hash": "e3eeea8539326cae628a2e420e9e562d5602b36ffa67562f6bfc5798d814fdf1",
+    "checkedAt": "2026-09-10T17:16:26.030Z"
   },
   "bser-2": {
     "hash": "73dfc73d97ec1d64556ae36944a25d6b85d1622ff63be419f76e89ed9993691a",
     "etag": "\"e47e323b19a1d11:0\"",
     "lastModified": "Thu, 28 Apr 2016 06:43:10 GMT",
-    "checkedAt": "2026-09-09T16:37:31.708Z"
+    "checkedAt": "2026-09-10T17:16:37.291Z"
   },
   "bser-1": {
     "hash": "eaf200462aad24d6e0a87703653859774779ee97dad9e99336e4195b8c6c0550",
     "etag": "\"05e17ff4855dc1:0\"",
     "lastModified": "Fri, 14 Nov 2025 09:28:12 GMT",
-    "checkedAt": "2026-09-09T16:37:21.721Z"
+    "checkedAt": "2026-09-10T17:16:26.586Z"
   },
   "bsphcl-1": {
-    "hash": "567da3ceaad872aabb9281a60d31e9c53e4275575cfa97937f2a53808343a7ee",
-    "checkedAt": "2026-09-09T16:37:22.036Z"
+    "hash": "7a56954a2744535b2b571ae50504931e419470f9abe73df390b9811098ec1234",
+    "checkedAt": "2026-09-10T17:16:27.303Z"
   },
   "bse-odisha-1": {
     "hash": "d081582e50e6914c5b783c51029c1999a4d838b085cf4a364ddb2bc2c8e1027b",
     "etag": "\"0b68a176b3fdd1:0\"",
     "lastModified": "Tue, 08 Sep 2026 08:21:48 GMT",
-    "checkedAt": "2026-09-09T16:37:21.635Z"
+    "checkedAt": "2026-09-10T17:16:26.575Z"
   },
   "bseh-1": {
-    "hash": "532ec355d15242dcc1c82a8eecb4abce61c5a24f31e3b2d80523e05b95baa9f2",
-    "checkedAt": "2026-09-09T16:37:22.198Z"
+    "hash": "3c6e73a4f3c7f35702376a8a3155d2980802b4513c73b4a28aa9a994eeea29b5",
+    "checkedAt": "2026-09-10T17:16:27.152Z"
   },
   "bssc-1": {
     "hash": "01c1727c7b12db8705b74369ffe9463e155838aab92005102b4c55ce326af7bd",
     "etag": "\"6ca91-65a0bbaf9b0c7\"",
     "lastModified": "Thu, 27 Aug 2026 18:44:48 GMT",
-    "checkedAt": "2026-09-09T16:37:21.587Z"
+    "checkedAt": "2026-09-10T17:16:26.489Z"
   },
   "bsf-1": {
-    "hash": "f99f26dd2f034c65fb8f5ec2f1b232a1bb76c787f776048fb58a05e5609cc4b2",
-    "checkedAt": "2026-09-09T16:37:31.795Z"
+    "hash": "9fa8324286d19942b74622194feccec70c7e7aa6814b9155e7b3b74037cb768c",
+    "checkedAt": "2026-09-10T17:16:36.601Z"
   },
   "crpf-1": {
     "hash": "3cf2dc129f21aed00683dd42a35e9403d21d2ebbaab41ea331a9d71082a605d8",
     "etag": "\"vnsk0pv6jl25gb\"",
-    "checkedAt": "2026-09-09T16:37:31.911Z"
+    "checkedAt": "2026-09-10T17:16:36.773Z"
   },
   "chandigarh-administration-1": {
     "hash": "ffe68aeb52246b1270aac8b6949473b681b711290c3eaf8d92e953ec1861c67b",
-    "checkedAt": "2026-09-09T16:37:32.955Z"
+    "checkedAt": "2026-09-10T17:16:37.653Z"
   },
   "cbse-ctet-1": {
     "hash": "fd7d1c1283b1dd9e20c1ab79d370417edb12af8dfc411581558f734e0fcf03b1",
-    "checkedAt": "2026-09-09T16:37:32.013Z"
+    "checkedAt": "2026-09-10T17:16:36.690Z"
   },
   "csbc-1": {
-    "hash": "f62836e9f7c8cae92cc3da8976e7b9cdfb59c2c3320a2d9cede091d58ab9fb1f",
-    "checkedAt": "2026-09-09T16:37:32.747Z"
+    "hash": "0c53cdef1e98a7c5a517cf325ed5782c28d4f74ddc533ebbe0a810db170f1c12",
+    "checkedAt": "2026-09-10T17:16:37.456Z"
   },
   "cisf-1": {
-    "hash": "1d49409a51ab9050b848d6702dfd0a1c14bb309d8c50ec21fa7da0b91b906852",
-    "checkedAt": "2026-09-09T16:37:32.377Z"
+    "hash": "ebf1a635419ff93b353c6197ac5093530c7c8f9e7177fb5f9dece63af05c21af",
+    "checkedAt": "2026-09-10T17:16:36.862Z"
   },
   "cg-vyapam-1": {
-    "hash": "0c37a37428f7198d21c332fea72a1a7e190b8bee570bf4dbccfb4dd594d04582",
-    "checkedAt": "2026-09-09T16:37:32.988Z"
+    "hash": "5119384e17fc91df0bfa2b225c1f7c427fb13967ab11f2c38caa53e50b9d9329",
+    "checkedAt": "2026-09-10T17:16:37.669Z"
   },
   "cg-vyapam-2": {
-    "hash": "688a5b03933556686ea1ea6ad82df7d099685aeb882f95c639590779c4e3706e",
-    "checkedAt": "2026-09-09T16:37:33.089Z"
+    "hash": "b7bbb21b4b38224f75cfe4b5201f21df38fc675faa49b736de92727dfbfa67cd",
+    "checkedAt": "2026-09-10T17:16:37.744Z"
   },
   "coal-india-1": {
-    "hash": "e2f858d03afda5b959868ce61737889d3f25864518a600d1eec528d3a81ec682",
-    "checkedAt": "2026-09-09T16:37:37.213Z"
+    "hash": "b72c32ce25e103b7992dc5aaf711c775b7ae7ec55ef87db285e334490007d303",
+    "checkedAt": "2026-09-10T17:16:38.733Z"
   },
   "cgpsc-2": {
     "hash": "c8a154e476131a19e5899fd2b07f4d2b2a4413c65ef7f6e9c713669926f55690",
-    "checkedAt": "2026-09-09T16:37:33.252Z"
+    "checkedAt": "2026-09-10T17:16:38.007Z"
   },
   "cgpsc-1": {
-    "hash": "3c2f3a86831607d04089cd7d44c13f68e916811229f7d19596ace907469a7bfb",
-    "checkedAt": "2026-09-09T16:37:33.295Z"
+    "hash": "f71753b02951eabb262cd2bc9865660e9cffb8e97490c7c0ea099ba72bf0094b",
+    "checkedAt": "2026-09-10T17:16:37.988Z"
   },
   "cg-state-power-companies-1": {
     "hash": "a539a73319d589c1243e90ac3cc3001d68d9bd958e88b89c524d42711118b07c",
     "etag": "\"6a9fd154-4cb\"",
     "lastModified": "Tue, 08 Sep 2026 09:11:48 GMT",
-    "checkedAt": "2026-09-09T16:37:33.777Z"
+    "checkedAt": "2026-09-10T17:16:37.938Z"
   },
   "drdo-1": {
-    "hash": "321988ac05e09ac3ec8b113817cbfd5c536bc3037b65d3f7ad1291c73c5e12ef",
-    "etag": "\"1788952645\"",
-    "lastModified": "Wed, 09 Sep 2026 11:17:25 GMT",
-    "checkedAt": "2026-09-09T16:37:35.205Z"
+    "hash": "19179dc14807522aa5455160fa46e0367c918763fcda71437da0ca6a7829537e",
+    "etag": "\"1789042868\"",
+    "lastModified": "Thu, 10 Sep 2026 12:21:08 GMT",
+    "checkedAt": "2026-09-10T17:16:39.607Z"
   },
   "dsssb-2": {
-    "hash": "a5689aae07e3d6c6941a558c0b998c36f22cff6f8e8016ca8db728f1b8a73d6e",
-    "etag": "\"1788971857-gzip\"",
-    "lastModified": "Wed, 09 Sep 2026 16:37:37 GMT",
-    "checkedAt": "2026-09-09T16:37:39.130Z"
+    "hash": "629741bc490f0b07cfd3e2345cf8c65b15ee96c6a73a35900e1ef18e92d110d3",
+    "etag": "\"1789060597-gzip\"",
+    "lastModified": "Thu, 10 Sep 2026 17:16:37 GMT",
+    "checkedAt": "2026-09-10T17:16:41.035Z"
   },
   "dsssb-1": {
-    "hash": "bcaea2f4f9c54ea38bcb94b58bd98ff8324ba3a3dbe0c81687dd773219cf2c24",
-    "etag": "\"1788971853-gzip\"",
-    "lastModified": "Wed, 09 Sep 2026 16:37:33 GMT",
-    "checkedAt": "2026-09-09T16:37:35.475Z"
+    "hash": "0fcc4404c1e6b4ff327729e68a21b3b49ef575763febfd17354762eec845e625",
+    "etag": "\"1789060596-gzip\"",
+    "lastModified": "Thu, 10 Sep 2026 17:16:36 GMT",
+    "checkedAt": "2026-09-10T17:16:39.770Z"
   },
   "cochin-shipyard-1": {
-    "hash": "4ded9fb7da4ca455a3f44ffdbcb1bcb2656cccbe1ca0441b3744f3e464ff1541",
-    "checkedAt": "2026-09-09T16:37:35.660Z"
+    "hash": "5094400ba2c9061c9eea758f73612d728e6cb7783429882b6fd8645b23db3bc8",
+    "checkedAt": "2026-09-10T17:16:38.878Z"
   },
   "karnataka-health-family-welfare-services-1": {
-    "hash": "00b139f10dad5de6b89e87dec27bf2f0ede33d6ebd193a07fe91d7d743201252",
-    "checkedAt": "2026-09-09T16:37:38.501Z"
+    "hash": "f7fdd1ececa594ab898385354d1a9da00feb5c0eda9618130d52b18c736c33ee",
+    "checkedAt": "2026-09-10T17:16:39.126Z"
   },
   "karnataka-health-family-welfare-services-2": {
-    "hash": "48c0d1ef2c473258e19d7c0a7ad0decebe59e1178b93441f29577cb42fd85841",
-    "checkedAt": "2026-09-09T16:37:38.508Z"
+    "hash": "cbac62f39a305e87f51320efd77b774c3f2a6b991479dbe19ced4ddf381486d6",
+    "checkedAt": "2026-09-10T17:16:39.320Z"
   },
   "meghalaya-dert-1": {
     "hash": "55e38e5ed34b89f665afb628d9611f5ddc5d702aef642d77f581f260a8b071f4",
     "lastModified": "Thu, 03 Sep 2026 06:27:27 GMT",
-    "checkedAt": "2026-09-09T16:37:39.133Z"
+    "checkedAt": "2026-09-10T17:16:42.400Z"
   },
   "assam-school-education-tet-1": {
     "hash": "4d10f3ac51148c1751e604b094f6175a6f93a9d7930a90db6c70d0236789ad12",
     "etag": "W/\"6a8d2ef9-e6f9\"",
     "lastModified": "Tue, 25 Aug 2026 05:58:17 GMT",
-    "checkedAt": "2026-09-09T16:37:40.062Z"
+    "checkedAt": "2026-09-10T17:16:39.778Z"
   },
   "puducherry-dopar-1": {
-    "hash": "a2d30e78d6191918a577ea5ed5325ec0ba9b8851e6ee4b373775ab098e8b3bac",
-    "checkedAt": "2026-09-09T16:37:39.272Z"
+    "hash": "e5f731415c5a5fac3e9ee8030decbe041cc58f5ae8b7b6318fe421c6fd642fee",
+    "checkedAt": "2026-09-10T17:16:39.872Z"
   },
   "manipur-health-directorate-1": {
     "hash": "e82e64cfa53e6ac4f97b7428688ca56466412f29be4f977646a3bd00ed47e6d2",
-    "checkedAt": "2026-09-09T16:37:40.395Z"
+    "checkedAt": "2026-09-10T17:16:41.300Z"
   },
   "assam-school-education-tet-2": {
-    "hash": "9435c45525411f527b8d8ce2bf0e9d2e787213c70028b567daf0029b3c91750d",
-    "lastModified": "Wed, 09 Sep 2026 16:28:04 GMT",
-    "checkedAt": "2026-09-09T16:37:39.314Z"
+    "hash": "643ba105a78a70b03994d63bd09769fdd6f52f0c3f9f5330f529a375ae108991",
+    "lastModified": "Thu, 10 Sep 2026 17:07:04 GMT",
+    "checkedAt": "2026-09-10T17:16:41.767Z"
   },
   "puducherry-dopar-2": {
-    "hash": "e77ed5cf3ed45038350d5c267db548e514e11e0ab4f98ef799cd4cbce0d295ff",
-    "checkedAt": "2026-09-09T16:37:39.365Z"
+    "hash": "e42fe3cb74f7001ae3e39c4605cac896302fb650e75b3deb6c580f638cdc7e5f",
+    "checkedAt": "2026-09-10T17:16:40.975Z"
   },
   "manipur-health-directorate-2": {
-    "hash": "adc53e192bade31ea6883a524e323ebf863dd6d449609eef03b6c7b0e4b49368",
-    "checkedAt": "2026-09-09T16:37:40.471Z"
+    "hash": "037219a64bf1d1323b7d3f8300e7fe8d5222179e210535811806033308997fb9",
+    "checkedAt": "2026-09-10T17:16:41.422Z"
   },
   "sikkim-education-department-1": {
     "hash": "d50c7dc9f0b0e6c90fff8d6dc803bd782414b005f15f9cb2d553099b41a1b107",
-    "checkedAt": "2026-09-09T16:37:40.584Z"
+    "checkedAt": "2026-09-10T17:16:41.497Z"
   },
   "ecil-1": {
-    "hash": "a1220f4c694fd183bc16ab6594465d0fcc421259ce2d60bc58cecad61518f456",
-    "checkedAt": "2026-09-09T16:37:40.644Z"
+    "hash": "81a7799c01be21ba69d480f4ef393369b76eace8677bfe17c70326d27aa3bc91",
+    "checkedAt": "2026-09-10T17:16:42.913Z"
   },
   "puducherry-school-education-1": {
     "hash": "43830497cbd9b34b9cb566065bfef5bf149776c27624b10642f6cdb3fd63084d",
     "etag": "\"96babd1c42ddd1:0\"",
     "lastModified": "Mon, 06 Jul 2026 12:22:29 GMT",
-    "checkedAt": "2026-09-09T16:37:40.477Z"
+    "checkedAt": "2026-09-10T17:16:41.360Z"
   },
   "epfo-1": {
-    "hash": "3fd934f73d9ade54c881572919f191f28fd35e8ede4bfafe3c18e815d8de7773",
-    "checkedAt": "2026-09-09T16:37:40.680Z"
+    "hash": "375231e8fcbc74f28a45343c82b84d98f588fd13e3aaae97d17e1b8b553e94a9",
+    "checkedAt": "2026-09-10T17:16:42.886Z"
   },
   "esic-1": {
-    "hash": "1b3c419d8338ef216961da8f75f08c5451b57deecde151e13562789222152d34",
-    "checkedAt": "2026-09-09T16:37:41.492Z"
+    "hash": "a7d2f87d71eee217bd4436d02ae2e57ccb6189e225af7f390fc518dbf8ca9212",
+    "checkedAt": "2026-09-10T17:16:43.053Z"
   },
   "gail-1": {
     "hash": "84cc23f791ef8807274dd784546ea67908456c60dccd02d174f8ab9d6d439af3",
-    "etag": "\"875cedb82d40dd1:0\"",
+    "etag": "\"8040dab82d40dd1:0\"",
     "lastModified": "Wed, 09 Sep 2026 07:35:01 GMT",
-    "checkedAt": "2026-09-09T16:37:43.221Z"
+    "checkedAt": "2026-09-10T17:16:42.903Z"
   },
   "goa-psc-1": {
-    "hash": "bca2c5d72e82f15fb956f9bb3ed76488c7ca63a4b6598df104e5a813e3701e53",
-    "checkedAt": "2026-09-09T16:37:53.380Z"
+    "hash": "edb89f7d9f495fedb1668f2df4e8010b2dbc34d063d828bf718ea89e1d31a541",
+    "checkedAt": "2026-09-10T17:16:43.892Z"
   },
   "goa-ssc-1": {
-    "hash": "83180aca3e1d57ec122e6a9dee8431f2457fe031604f63310d5bdc6a583fe52d",
-    "checkedAt": "2026-09-09T16:37:53.427Z"
+    "hash": "46cb39da8dbe516a5694299b87c23914c9ae786c32c8662556854772231f2f30",
+    "checkedAt": "2026-09-10T17:16:43.977Z"
   },
   "gauhati-high-court-1": {
-    "hash": "36a0e08953dc7478ea05774b1928557fa321be1a099b8168d8e57c2569d362d3",
-    "checkedAt": "2026-09-09T16:37:41.549Z"
+    "hash": "ede040c47fdd6ea54c2cba4522b6877413a0bfc018778028c3904f18552a4a2f",
+    "checkedAt": "2026-09-10T17:16:44.867Z"
   },
   "grse-1": {
-    "hash": "b96b2ed6de2bd61f29fe16bebb5e098200542d2e19980342756168bb01234a25",
-    "checkedAt": "2026-09-09T16:37:48.860Z"
+    "hash": "f0dfaae63e212247d4c5c1a478a7c7e26583e8c7102e42b756c3c761bb4aaf8e",
+    "checkedAt": "2026-09-10T17:16:50.276Z"
   },
   "eil-1": {
-    "hash": "2a7d6f9e8ceff5a069c812615a68624b654755f1f7c24a630513fe8fa310bca1",
-    "checkedAt": "2026-08-29T10:32:02.828Z"
+    "hash": "7f66ebe2c551ba9586e9380289eb89a7ddd856e288c1bdb38248082323015c70",
+    "checkedAt": "2026-09-10T17:16:42.649Z"
   },
   "goa-ssc-2": {
     "hash": "6d5cab6bf4c6522e96fbb758afb3db6bdd94bf64c6bad96752b8337f4d12b520",
-    "checkedAt": "2026-09-09T16:37:53.217Z"
+    "checkedAt": "2026-09-10T17:16:43.783Z"
   },
   "gprb-2": {
-    "hash": "b29fe98ac438d4e85ee1261cb99468393c39283779f78d08687b9495a4eb5f94",
+    "hash": "00fc77550232df3605f9b69ae6e075b45703540d86fcc3f72b554d6fa76c8d2d",
     "etag": ".",
-    "checkedAt": "2026-09-09T16:37:53.609Z"
+    "checkedAt": "2026-09-10T17:16:50.910Z"
   },
   "gprb-1": {
-    "hash": "b1c6757dcb59572563071e52c9ed7b8e069eaede32931289461a2b143efe8ca0",
+    "hash": "61bf88e821634c17f08f07e9256a63dddfc09c3cf826b1b2a914dc8b3b4555b0",
     "etag": ".",
-    "checkedAt": "2026-09-09T16:37:53.131Z"
+    "checkedAt": "2026-09-10T17:16:50.912Z"
   },
   "gpssb-2": {
-    "hash": "b5684f123fedb27f78fa3f793f06d619fd1841f4c40e4b1898360a67774e3c04",
-    "checkedAt": "2026-09-09T16:37:53.130Z"
+    "hash": "c8b972b4ec9e80c218c55d2721cc60adee6c53d44e36dddc1e2841c9adb7b2f7",
+    "checkedAt": "2026-09-10T17:16:50.913Z"
   },
   "gpssb-1": {
-    "hash": "d800fbe3e4230b3788dc7287491750f98ecfa9bc496fe15345762f09d828de0a",
-    "checkedAt": "2026-09-09T16:37:53.436Z"
+    "hash": "8b35ae6b11891a81b65b27bf185ebc80e915dd4d881b86e878f54331f83257ad",
+    "checkedAt": "2026-09-10T17:16:43.949Z"
   },
   "gujarat-psc-1": {
-    "hash": "b84233b52f163536571498bfa19fe9751e98b0fa97d23381154e33662c4b79dc",
-    "checkedAt": "2026-09-09T16:37:54.237Z"
+    "hash": "556d56820872a3a39326696341e84cb3e0d80d7a6ac688ddfa95e5f18cc455c0",
+    "checkedAt": "2026-09-10T17:16:51.915Z"
   },
   "gsrtc-1": {
     "hash": "9b08f564661414151ba37c05802de630b84baaf2621ce705e121862819f82c1f",
     "etag": "W/\"6a9fe051-2588b\"",
     "lastModified": "Tue, 08 Sep 2026 10:15:45 GMT",
-    "checkedAt": "2026-09-09T16:37:53.723Z"
+    "checkedAt": "2026-09-10T17:16:50.817Z"
   },
   "guvnl-1": {
-    "hash": "8d26952a0c5d1b7b1ab5caab2f9a3be017cbfe94bbbe9b0ab6ded225a95c47a0",
-    "checkedAt": "2026-09-09T16:37:54.123Z"
+    "hash": "f6c2cfc6d2b2ef23ab91445ca410c3ad426446dba02684ded98c7f7be75704db",
+    "checkedAt": "2026-09-10T17:16:52.730Z"
   },
   "gsssb-2": {
-    "hash": "a794b07550b5ec016ff3b68d56e7c9610e04b3ce854d02674334e1b0b4939d6f",
+    "hash": "44ee5964dd11db2001f5d50f34b87e02bb68f18dd5ea4c9988e8b89d282cd7f7",
     "etag": "None",
-    "checkedAt": "2026-09-09T16:37:53.814Z"
+    "checkedAt": "2026-09-10T17:16:52.463Z"
   },
   "hkrn-1": {
-    "hash": "24540fc644362cd433ce11f20dd46288b389ee6eb48e6088acd7e4970ad25035",
-    "checkedAt": "2026-09-09T16:37:54.900Z"
+    "hash": "d63b95564601e5110219e8ac5ab2093549a16777437ec5005678cf2a8bf5586b",
+    "checkedAt": "2026-09-10T17:16:52.645Z"
   },
   "hkrn-2": {
-    "hash": "44ab75f77bf0270446cf4c5d97861b25542af0f54b62f272e512092b291b1961",
-    "checkedAt": "2026-09-09T16:37:54.934Z"
+    "hash": "276e23813bb83fcfae711f3ee23f07817ee73afb2a31ab8d6dd54f34d88d930f",
+    "checkedAt": "2026-09-10T17:16:52.906Z"
   },
   "gsssb-1": {
-    "hash": "863c66348978862e91ed04bd153d31d7462437413e645f6677dbcf6574588f71",
-    "checkedAt": "2026-09-09T16:37:53.941Z"
+    "hash": "eb6b655a70b17df240512bf66e0a5143f15aec8c6f0923898e121f70676f1e46",
+    "checkedAt": "2026-09-10T17:16:51.099Z"
   },
   "hssc-2": {
-    "hash": "6a5882aeda915381065cc79c3355d795a5383600334697a0b8762c6a73d8f6d5",
-    "checkedAt": "2026-09-09T16:37:54.653Z"
+    "hash": "c85792def357ed029512425a2c4d192bc6ec52115679ffcb20b422435497cf21",
+    "checkedAt": "2026-09-10T17:16:53.758Z"
   },
   "hssc-1": {
-    "hash": "9f997399ff154bb8c1f58a69a0a4be0df324e4ccd19be4e131909dbfbe95d7dd",
-    "checkedAt": "2026-09-09T16:37:54.653Z"
+    "hash": "96b4382375fd46e6e7cdc796f8668648af1969def4f766168437583de4c3a3e8",
+    "checkedAt": "2026-09-10T17:16:53.762Z"
   },
   "haryana-power-utilities-2": {
-    "hash": "cda86d5c9765189e973c2e4d6c707afe7bfb11eb4e579e788064aa041d031944",
-    "etag": "\"6eb8d1fb\"",
-    "checkedAt": "2026-09-09T16:37:54.758Z"
+    "hash": "c4680af684e8daea11b2a2585ca740d1a7a20f4d69a583cd3541f87c1a379e47",
+    "etag": "\"91cea5e2\"",
+    "checkedAt": "2026-09-10T17:16:52.989Z"
   },
   "haryana-power-utilities-1": {
-    "hash": "c24ebb8a62ee24fe41144b76bf0f67d395b441718c4cbe988e04c88069db077b",
-    "etag": "\"9e42606d\"",
-    "checkedAt": "2026-09-09T16:37:55.210Z"
+    "hash": "5b6b79994d208939d6283f66b9317357a04cab23aae242708d3ed05ad8eaacb8",
+    "etag": "\"1c159eda\"",
+    "checkedAt": "2026-09-10T17:16:53.492Z"
   },
   "mizoram-health-family-welfare-2": {
-    "hash": "b4fbdc7ed7ad19eb2e36e9aab7cab44a410d253f4f01ef69f3e39274e2433eec",
-    "checkedAt": "2026-09-09T16:37:55.923Z"
+    "hash": "ee1bfd435dc07bc30f691b603a34ad9b05797615de76c7ce073f3f7ff33c94db",
+    "checkedAt": "2026-09-10T17:16:54.342Z"
   },
   "mizoram-health-family-welfare-1": {
-    "hash": "ed22bfd5ad14ff63cf425420fef76d8253169874cb19c13a497d2a5f10b6f438",
-    "checkedAt": "2026-09-09T16:37:55.906Z"
+    "hash": "d6fa3f867e00680688e6254ce561cc7117ed55beb163d3fe5367b9c05d5e8e3e",
+    "checkedAt": "2026-09-10T17:16:55.317Z"
   },
   "telangana-high-court-1": {
-    "hash": "84abd4f5ad75339dcf9f94358d3d577265dc9af6c5fe6da81a2a3b9297620f99",
-    "checkedAt": "2026-09-09T16:37:55.942Z"
+    "hash": "bbc62f959c4cebc5c3c03857678f643bee45d8bc474d1aae8681f3d9cb273e75",
+    "checkedAt": "2026-09-10T17:16:56.768Z"
   },
   "tripura-health-family-welfare-1": {
-    "hash": "bd797b496dea5937460294a0ae821882268b000a798990035cd7fd77f5f9a767",
-    "checkedAt": "2026-09-09T16:37:55.702Z"
+    "hash": "98a0648e1a33a9a46f4709498c4c8074226b87073f7c011b38b5808262735dd6",
+    "checkedAt": "2026-09-10T17:16:54.309Z"
   },
   "tripura-health-family-welfare-2": {
-    "hash": "50b0482f8fc684972eca887ab0f08bb29f1f74340e2b43e57e07cffb1effc765",
-    "checkedAt": "2026-09-09T16:37:55.991Z"
+    "hash": "be89a78ddfded8d588d5705ffedbe588e4358e273463f7589839e75b7233eb6f",
+    "checkedAt": "2026-09-10T17:16:54.259Z"
   },
   "andhra-pradesh-high-court-1": {
-    "hash": "cb71e5e0762b4e36aa41a6342105acd9c281b02d093d499a1570d012dc8fa6db",
-    "checkedAt": "2026-09-09T16:37:57.579Z"
+    "hash": "57fbeaaff0f8b2734d269926c3d3c99782b776a6f4b8288dc896ee766d2e3066",
+    "checkedAt": "2026-09-10T17:16:56.854Z"
   },
   "gujarat-high-court-1": {
-    "hash": "6a8cdd045d43b7db47bdc4787eb55af895428a7ed91bcd660021a239f1403290",
-    "etag": "\"1788962585-0-gzip\"",
-    "lastModified": "Wed, 09 Sep 2026 14:03:05 GMT",
-    "checkedAt": "2026-09-09T16:37:56.490Z"
+    "hash": "4a2d70d68360052e10ec8446e626d3ee8ec18a7abe6d3e77c05f322517043c59",
+    "etag": "\"1789041055-0-gzip\"",
+    "lastModified": "Thu, 10 Sep 2026 11:50:55 GMT",
+    "checkedAt": "2026-09-10T17:16:55.795Z"
   },
   "delhi-high-court-1": {
-    "hash": "0a6d2b708be26f06091ae4e50c271378a3d32504eed9995487be3ce6bf2419da",
-    "etag": "\"1788962039\"",
-    "lastModified": "Wed, 09 Sep 2026 13:53:59 GMT",
-    "checkedAt": "2026-09-09T16:37:56.547Z"
+    "hash": "17d3b7ebc7e2b71c771b17b13e96a6ec8b3939c2ff407734119e71a92e06d01e",
+    "etag": "\"1789057615\"",
+    "lastModified": "Thu, 10 Sep 2026 16:26:55 GMT",
+    "checkedAt": "2026-09-10T17:16:55.776Z"
   },
   "jk-ladakh-high-court-1": {
     "hash": "de597a1a762e1173716691ae03e1644e23d786baf449cd1b5c6b1be291819007",
-    "checkedAt": "2026-09-09T16:37:56.468Z"
+    "checkedAt": "2026-09-10T17:16:57.165Z"
   },
   "allahabad-high-court-1": {
     "hash": "ea2d691e4fe4a03c26a2d9d84e2763c09a1b5859d962ed162be36874f62a8fcb",
-    "checkedAt": "2026-09-09T16:38:06.067Z"
+    "checkedAt": "2026-09-10T17:16:57.269Z"
   },
   "jharkhand-high-court-1": {
-    "hash": "9816e6ae51592e04c8733f007be8ab6815ab26d4dc4fa6df82e9e42ecd8c84b7",
-    "checkedAt": "2026-09-09T16:37:59.457Z"
+    "hash": "ce2f8939e79be31f2af788d7d0774131b98377f2de33c405a1298ed4747d69fc",
+    "checkedAt": "2026-09-10T17:16:57.426Z"
   },
   "karnataka-high-court-1": {
-    "hash": "8a492d4461876520933a7c56159ec878cd90294fa31ea8fc05bd84a9f53ac7ba",
-    "checkedAt": "2026-09-09T16:37:59.925Z"
+    "hash": "63a81a6b668fc30fff1378081c72e7dddc7702d02b3aacf709885e1b438f951b",
+    "checkedAt": "2026-09-10T17:17:07.991Z"
   },
   "patna-high-court-1": {
-    "hash": "fd977fc33ba424366adf11257256c9aecbd06ecd4d7f6b1d35043fc0358076e1",
-    "checkedAt": "2026-09-09T16:38:00.112Z"
+    "hash": "6792cc44b803cd5921c208cc2994f700c106e2417c8f74f7d318d058e12a2e02",
+    "checkedAt": "2026-09-10T17:16:57.493Z"
   },
   "rajasthan-high-court-1": {
-    "hash": "1a84ce40e7ccb5de12576a49213983e86cce0b5edf6867d4e107d3f6eadfe089",
-    "checkedAt": "2026-09-09T16:38:00.387Z"
+    "hash": "190ce9ff813a4f49f7598a0680313ceb311f3ee19a6fd97159549f749350a981",
+    "checkedAt": "2026-09-10T17:16:57.656Z"
   },
   "kerala-high-court-1": {
-    "hash": "685ea10e044f2e6273f9b976b449562f107d4cac2eb608ba93ba6846dc7e0232",
-    "lastModified": "Wed, 09 Sep 2026 16:37:59 GMT",
-    "checkedAt": "2026-09-09T16:38:00.417Z"
+    "hash": "e5b34649a0ebf41deafb1963a16020573d4a2cf954e522f399e545f16552082f",
+    "lastModified": "Thu, 10 Sep 2026 17:17:05 GMT",
+    "checkedAt": "2026-09-10T17:17:08.646Z"
   },
   "madras-high-court-1": {
-    "hash": "5c4ae0a8cacf5d7c86180d3450cee749c78c362aefedf19a63e858378e55f4c9",
-    "checkedAt": "2026-09-09T16:38:11.555Z"
+    "hash": "dbaa53690d3790ab912ce56b4242fe7261bf852375d2a5696dab3a05263705d3",
+    "checkedAt": "2026-09-10T17:17:08.807Z"
   },
   "madhya-pradesh-high-court-1": {
-    "hash": "f7f8aeaeb8d17bf2ded08b625a3ce1664b802741a463a952e8f19789dc130582",
-    "checkedAt": "2026-09-09T16:38:13.325Z"
+    "hash": "6397b642c26f9ff4521398ba17ecca0ff8eab91f7f156f42a628d4d32a380ad4",
+    "checkedAt": "2026-09-10T17:17:09.361Z"
   },
   "orissa-high-court-1": {
-    "hash": "5d6a2a0d5419c3009c172afbf695875a4ec227562ecf5ff791ecbe4b1a08757f",
-    "checkedAt": "2026-09-09T16:38:10.535Z"
+    "hash": "865c13633ddc8de1b5c855119d38a9417ac2ea6c83519585e5a0119a1d7daf7c",
+    "checkedAt": "2026-09-10T17:17:07.903Z"
   },
   "punjab-haryana-high-court-1": {
-    "hash": "fd5187f3dc92391f98bf2d341e5e3dbecf4c8304f384fe72081e874c606e3357",
-    "checkedAt": "2026-09-09T16:38:10.838Z"
+    "hash": "097599a98e9a39ffd0f3f720def2c6f0e45f4e94f602400936c3493d8b02c045",
+    "checkedAt": "2026-09-10T17:17:08.176Z"
   },
   "uttarakhand-high-court-1": {
-    "hash": "b28b434affe021172452409d8079430822057d769c3f853e47e7da891388ff87",
-    "checkedAt": "2026-09-09T16:38:10.749Z"
+    "hash": "7bd362b12a38e9efe9eec00425c3652cc12fd08ea25707374e5ed20f615494d5",
+    "checkedAt": "2026-09-10T17:17:09.738Z"
   },
   "hpcl-1": {
     "hash": "b64072ee2ef388eac7e250891892c7375c8ace69d7786f09168b1f019fbe8bf7",
     "lastModified": "Tue, 01 Sep 2026 04:19:17 GMT",
-    "checkedAt": "2026-09-09T16:38:14.460Z"
+    "checkedAt": "2026-09-10T17:17:10.189Z"
   },
   "indian-air-force-1": {
-    "hash": "bdb122f04c0b28d9f3bb75eb3e58ea097aeb124a01a68f6898465c25a1abd3cc",
-    "etag": "W/\"c8c3434c2840dd1:0\"",
-    "lastModified": "Wed, 09 Sep 2026 06:56:11 GMT",
-    "checkedAt": "2026-09-09T16:38:14.418Z"
+    "hash": "a1b9a26f0543659b4da330303868e26f8df4cbcf17b86c4f3b776e3872f91e46",
+    "etag": "W/\"d17aa6971141dd1:0\"",
+    "lastModified": "Thu, 10 Sep 2026 10:46:10 GMT",
+    "checkedAt": "2026-09-10T17:17:10.111Z"
   },
   "hal-1": {
     "hash": "286838b3e4f5aa49e1e85eed845575b43d425ce45f33d63d97eff5ec9b88be47",
     "etag": "\"4e3b-65ae31af15702\"",
     "lastModified": "Mon, 07 Sep 2026 11:41:56 GMT",
-    "checkedAt": "2026-09-09T16:38:13.801Z"
+    "checkedAt": "2026-09-10T17:17:12.336Z"
   },
   "hpsebl-1": {
     "hash": "2d36c860d94249eae9fe62606638c4851bd7a68e17a61d0b23d2575acf77de21",
-    "checkedAt": "2026-09-09T16:38:14.118Z"
+    "checkedAt": "2026-09-10T17:17:10.368Z"
   },
   "isro-1": {
-    "hash": "f8d633472a047570ef5639cba10c95127efaf15ba328cf9a649c26bea0ef5b46",
-    "lastModified": "Mon, 31 Aug 2026 11:11:45 GMT",
-    "checkedAt": "2026-09-09T16:38:15.063Z"
+    "hash": "1ef10553c3947be59f961bcf41702372d4ffe6b017073928f62beb2be5f91a16",
+    "lastModified": "Thu, 10 Sep 2026 11:59:44 GMT",
+    "checkedAt": "2026-09-10T17:17:12.464Z"
   },
   "indian-army-1": {
-    "hash": "0454ccc29c5eb67aa0d413c93cd4c5b04aaf3357763a9ae39d41dde985cb9f65",
-    "checkedAt": "2026-09-09T16:38:14.368Z"
+    "hash": "ea8cb80fb2075d46f575c4827f3e0f42a7a42f02de0b4b45eb81abfba22e5c9a",
+    "checkedAt": "2026-09-10T17:17:10.090Z"
   },
   "icar-1": {
-    "hash": "cb3cf668e240c84e68acc4595a8c2be496b5f93ff1467a8750509c6fd4f50c82",
-    "checkedAt": "2026-09-09T16:38:14.426Z"
+    "hash": "cd3075e11e78e480f1979cbb8279de46bd25577cae8b52b5b47a077748ca2fff",
+    "checkedAt": "2026-09-10T17:17:12.556Z"
   },
   "indian-navy-1": {
-    "hash": "f44f6b51f993145dd420e8b7352563ef9c6880494ad81d8c118d1a61e55af070",
-    "checkedAt": "2026-09-09T16:38:14.848Z"
+    "hash": "57143929f1d9f4cdb38055fae661eb265d73769fd5ede697ee1d628d63221777",
+    "checkedAt": "2026-09-10T17:17:13.002Z"
   },
   "ibps-1": {
-    "hash": "4ae2b846f24b87451b6043d0c0807043579ca82d15f3fcd54259bd786989e26b",
-    "checkedAt": "2026-09-09T16:38:15.764Z"
+    "hash": "2c82cafd82ce378bb6df6027da0b9709cd7ae0462ba3e3fcd03b8ddb2ede5c15",
+    "checkedAt": "2026-09-10T17:17:13.091Z"
   },
   "jkssb-1": {
-    "hash": "6620e2accd9c733d86b3bc50ba70be022767d6b4be7f0a9b052b9c725e4a436f",
-    "lastModified": "Mon, 07 Sep 2026 09:22:04 GMT",
-    "checkedAt": "2026-09-09T16:38:15.163Z"
+    "hash": "4d8d99847f8f26aef335bb89e41c4d5d3578c82be85b1cf88f107dd88bc2eff2",
+    "lastModified": "Thu, 10 Sep 2026 15:11:09 GMT",
+    "checkedAt": "2026-09-10T17:17:15.087Z"
   },
   "jkssb-2": {
     "hash": "6984330cb16b9eec2d91807cedc4e17b34fe384d1306b6c5fbf58f9782fa176e",
     "lastModified": "Tue, 01 Sep 2026 12:55:39 GMT",
-    "checkedAt": "2026-09-09T16:38:17.558Z"
+    "checkedAt": "2026-09-10T17:17:16.072Z"
   },
   "jipmer-1": {
-    "hash": "7e1006b3ad5df2a09ca45a64375d5d1098a4ce454aa31a4973c1d9014f58895b",
-    "etag": "\"1788961960-1\"",
-    "lastModified": "Wed, 09 Sep 2026 13:52:40 GMT",
-    "checkedAt": "2026-09-09T16:38:17.993Z"
+    "hash": "9e9b784cc2f2fdfdded7295752b0c61f3b5da3fd13d39070f3122303a91475eb",
+    "etag": "\"1789059143-1\"",
+    "lastModified": "Thu, 10 Sep 2026 16:52:23 GMT",
+    "checkedAt": "2026-09-10T17:17:15.258Z"
   },
   "jkpsc-1": {
     "hash": "5b9b187c316bb0599f0da95525af1c836e6bb71e8804e636cb79d2fb6c93fac6",
     "checkedAt": "2026-08-09T21:10:02.344Z"
   },
   "itbp-1": {
-    "hash": "89a27ff9f5260684154962c09630410b1885e9be8372ec70ac86fde4862f7d26",
-    "checkedAt": "2026-09-09T16:38:17.507Z"
+    "hash": "01f12293f7e88604400bb8974ec23d575bad131bbed063b24f06ea628467b8e0",
+    "checkedAt": "2026-09-10T17:17:14.704Z"
   },
   "jpsc-1": {
     "hash": "d52d39673fa1a4aee46222dd148771e578717cee4a18df17274334024ff19e97",
-    "checkedAt": "2026-09-09T16:38:17.917Z"
+    "checkedAt": "2026-09-10T17:17:16.632Z"
   },
   "jpsc-2": {
     "hash": "15d48c63f77177ee7ed72d9861239bd8ac22a2236158bf222803cc41c707ce5c",
-    "checkedAt": "2026-09-09T16:38:17.896Z"
+    "checkedAt": "2026-09-10T17:17:16.628Z"
   },
   "jbvnl-1": {
-    "hash": "c7ac1860f8bea39097baa1ce30bb4dd710e7bc7daac23c96052fa0e87af03164",
-    "checkedAt": "2026-09-09T16:38:17.968Z"
+    "hash": "a9d1ab39fd9f579b6fddf3ea7aa0a6a880fc33102d872423b0007f987b83b4f9",
+    "checkedAt": "2026-09-10T17:17:16.899Z"
   },
   "jssc-1": {
-    "hash": "b138f3ad8c66a3712ff6ed7fa258d34d256978a14d25ebe919404903347047d1",
-    "etag": "\"1788966354-1\"",
-    "lastModified": "Wed, 09 Sep 2026 15:05:54 GMT",
-    "checkedAt": "2026-09-09T16:38:18.329Z"
+    "hash": "db72cb1601c993acd3af8ce8b536abba31b1ecc56aecabbf26b7ea835d8bf6c4",
+    "etag": "\"1789053340-1\"",
+    "lastModified": "Thu, 10 Sep 2026 15:15:40 GMT",
+    "checkedAt": "2026-09-10T17:17:17.537Z"
   },
   "jrhms-jharkhand-1": {
     "hash": "f9a682f4e21f0dd6a316ff6e523ec52adf8c7d9433d6e684d85f2c9c9d50ee6d",
-    "checkedAt": "2026-09-09T16:38:18.528Z"
+    "checkedAt": "2026-09-10T17:17:16.898Z"
   },
   "jac-1": {
     "hash": "6c68b5382b1b6fd5795d8ffc7972c5d76229a2fbd8e90c044290f6aea4de6f63",
     "etag": "\"b8f2f075c620dd1:0\"",
     "lastModified": "Fri, 31 Jul 2026 08:27:44 GMT",
-    "checkedAt": "2026-09-09T16:38:17.838Z"
+    "checkedAt": "2026-09-10T17:17:15.169Z"
   },
   "karnataka-examinations-authority-1": {
     "hash": "6e5ce6783f8f7eb800421282c2885659e6a3ef5b37894ec093b49e3f139385d5",
     "etag": "\"09c54fde3ddd1:0\"",
     "lastModified": "Sat, 05 Sep 2026 08:17:28 GMT",
-    "checkedAt": "2026-09-09T16:38:18.331Z"
+    "checkedAt": "2026-09-10T17:17:16.556Z"
   },
   "karnataka-forest-department-2": {
-    "hash": "1e66b681e7df71d08853ce25cda4637e173c941904bccd62a32d04ea2bc09d20",
-    "checkedAt": "2026-09-09T16:38:18.569Z"
+    "hash": "3947a673ea45ab3ef91c7439e69e7780cb0435430f8079643b35963c402f3fd0",
+    "checkedAt": "2026-09-10T17:17:18.316Z"
   },
   "karnataka-examinations-authority-2": {
-    "hash": "96a188c369c5727402fd273992e179c8d77fcb75a48e82b2cc8a9f3d66617c36",
-    "checkedAt": "2026-09-09T16:38:18.634Z"
+    "hash": "704a49dd69276f7940d0b412db6316ea6339ba1d8fa9fab1487c352a81586a98",
+    "checkedAt": "2026-09-10T17:17:18.693Z"
   },
   "karnataka-forest-department-1": {
-    "hash": "ca8d352c4a7f7e8c62bdf41edc6201d33d4a354e332499a379954e16cbb1cc88",
-    "checkedAt": "2026-09-09T16:38:18.893Z"
+    "hash": "db7a8d191eec7b410acb16f6841e8160a0fb2f858482435b5ea7c343b0111838",
+    "checkedAt": "2026-09-10T17:17:18.696Z"
   },
   "kptcl-1": {
-    "hash": "ff2a2ccc0bfc22ea1acb337d74f3777132499a91b626ecd9df6b968624d9d7c0",
-    "checkedAt": "2026-09-09T16:38:19.418Z"
+    "hash": "e84b901f544b51240eb8bb42621988b7630bb5e93a2bb5722d9d40f94d561573",
+    "checkedAt": "2026-09-10T17:17:19.496Z"
   },
   "kptcl-2": {
-    "hash": "850a2cb7d6c6671edbc57ac37df72e058d78002ded91722d3426fdff1d10f8e7",
-    "checkedAt": "2026-09-09T16:38:19.529Z"
+    "hash": "2e93576cec75351f630827138446741769bb1d26f8573c5380879c9b06864c99",
+    "checkedAt": "2026-09-10T17:17:18.315Z"
   },
   "karnataka-school-education-1": {
-    "hash": "8cd2729590bd3be2d7ec2638cb5bf7f16ff59ff37b9a4398392319d03f172db5",
-    "checkedAt": "2026-08-09T21:10:06.237Z"
+    "hash": "1f05f002119ba59b0739e2589677df7eb99d8de361f4a602b76374a078ba2f45",
+    "checkedAt": "2026-09-10T17:17:19.777Z"
   },
   "karnataka-school-education-2": {
-    "hash": "9be3d5175001e3cf47d9284527b3ded342140f7040d126ffe7df0c39b2e3cc65",
-    "checkedAt": "2026-09-09T16:38:19.328Z"
+    "hash": "9166d0ebb55bafc849c24bc2d4bb6de381e9138489ec97c93a1e6a268c663a41",
+    "checkedAt": "2026-09-10T17:17:20.764Z"
   },
   "karnataka-state-police-1": {
-    "hash": "8e14e1e515ccf95aa8e7555b69087d956dfc24e12c7e88e27ae3abdaf6304d31",
-    "checkedAt": "2026-09-09T16:38:20.186Z"
+    "hash": "ce9bbd24e29f7578efb1a43e9ce57e56e5770bb0969ecbcfabd0951aeb96dc9d",
+    "checkedAt": "2026-09-10T17:17:20.610Z"
   },
   "karnataka-school-education-3": {
-    "hash": "0c3027ee753ca8e731d8d0dc835d8dd26ae39066d03ee59c89f76dbfc7927298",
-    "checkedAt": "2026-09-09T16:38:20.568Z"
+    "hash": "a79e81d1282a1b494695c16eb6dfdd0272b87da0c0cb487c504de678c9d647e4",
+    "checkedAt": "2026-09-10T17:17:21.378Z"
   },
   "karnataka-state-police-2": {
-    "hash": "87f0328a10dc86d7499811428c0431d905813cd742b5ed733a3a3aef83e2d7d5",
-    "checkedAt": "2026-09-09T16:38:19.887Z"
+    "hash": "0569827d1b339468161a13ddc547fff42f0687a06470822c6af584e211260c73",
+    "checkedAt": "2026-09-10T17:17:21.385Z"
   },
   "kerala-pareeksha-bhavan-1": {
     "hash": "5b63be395926627a22456b0ca043cfb964738e47afcc52628446e00e1e11469c",
-    "checkedAt": "2026-09-09T16:38:30.926Z"
+    "checkedAt": "2026-09-10T17:17:22.367Z"
   },
   "kvs-nvs-1": {
     "hash": "b632e19e264d4f026c7f6836f362843517567f20019d08abdf049a2ea96a858f",
@@ -650,246 +650,246 @@
     "hash": "31bc81bae0575e8a7d0685eeff896b3cd3ee83f5682162e0862c627dd666ca9d",
     "etag": "\"6a9fc43b-374\"",
     "lastModified": "Tue, 08 Sep 2026 08:15:55 GMT",
-    "checkedAt": "2026-09-09T16:38:19.785Z"
+    "checkedAt": "2026-09-10T17:17:21.539Z"
   },
   "kdrb-1": {
-    "hash": "1a9200bd1ae9ac1aad698ea61fd0ee6fbc089813b34912ee28b8d265e1fdfe5e",
-    "checkedAt": "2026-09-09T16:38:21.482Z"
+    "hash": "a5041815ea0c53fe1eb6371d7aacd59a455f7faa9c96d197d2fcdd9170df29e0",
+    "checkedAt": "2026-09-10T17:17:23.013Z"
   },
   "kdrb-2": {
-    "hash": "d92dffa7e317ce19abf5cf09495bc6ee31270603d2b0ca2c4dd674e4213b0fcc",
-    "checkedAt": "2026-09-09T16:38:32.188Z"
+    "hash": "9e49bde497e19ef80f671dbc319f82c9da915031cf6fe057f091cb893f906f55",
+    "checkedAt": "2026-09-10T17:17:23.731Z"
   },
   "kerala-psc-1": {
-    "hash": "eca7a791dd3beffa098b19049abaeb855e01834bbe67e50dddfb327a33f42f82",
-    "checkedAt": "2026-09-09T16:38:30.701Z"
+    "hash": "9807abd3e09d86c3d566708a3b1c3725af1b7a8e947aca2ef23dc457fbdaaa8a",
+    "checkedAt": "2026-09-10T17:17:32.358Z"
   },
   "lahdc-leh-ssrb-1": {
     "hash": "e7fcdec42c600e2805d6f32a430c30cb18203298bc9100730ce8f36af3a380d9",
-    "checkedAt": "2026-09-09T16:38:32.580Z"
+    "checkedAt": "2026-09-10T17:17:32.446Z"
   },
   "kerala-psc-2": {
-    "hash": "366dfbc630fdcae9515c080d0f4fd9135d938dd898ebf4f0e3679427a267f36e",
-    "checkedAt": "2026-09-09T16:38:30.699Z"
+    "hash": "880ef1a96f214df23f1fcc784559c953b8340de83d017828255b268233a899b2",
+    "checkedAt": "2026-09-10T17:17:32.350Z"
   },
   "kerala-pareeksha-bhavan-2": {
     "hash": "aeb0268408c0f3c5a524ec8b0991619bbb2eb43c6df4f99ddedd70d13ff61762",
-    "checkedAt": "2026-09-09T16:38:30.846Z"
+    "checkedAt": "2026-09-10T17:17:22.368Z"
   },
   "lakshadweep-administration-1": {
     "hash": "8d28b35329482047d189be91bee4f3de52857c5e46e9e727a671c8f6bf675391",
-    "checkedAt": "2026-09-09T16:38:30.639Z"
+    "checkedAt": "2026-09-10T17:17:32.523Z"
   },
   "lakshadweep-administration-2": {
     "hash": "005047334fe44d95e342792950e088545701d8fae54d310afdb1ad959102006e",
-    "checkedAt": "2026-09-09T16:38:32.358Z"
+    "checkedAt": "2026-09-10T17:17:32.605Z"
   },
   "lic-1": {
-    "hash": "cd2973509d3ed76acd925b3e74a191245192fb9dd1ca914be8db471525f7d0d7",
-    "checkedAt": "2026-09-09T16:38:32.488Z"
+    "hash": "8a0d95d2894f35751de1fcaf388905c8b2eacf64847a063df880b76c85a683ec",
+    "checkedAt": "2026-09-10T17:17:33.135Z"
   },
   "lahdc-leh-ssrb-2": {
     "hash": "097015ddb207492269e259ee43854f7e405356ba1a23ac3e73fb57196c5d5f9a",
-    "checkedAt": "2026-09-09T16:38:32.654Z"
+    "checkedAt": "2026-09-10T17:17:32.606Z"
   },
   "mpsc-1": {
     "hash": "5c95f61d745055a42fc7a6e1245c1ff2623a4b88eb48c6f58b152504d99e6775",
     "etag": "\"6a7950d6-12ec\"",
     "lastModified": "Mon, 10 Aug 2026 04:17:26 GMT",
-    "checkedAt": "2026-09-09T16:38:32.855Z"
+    "checkedAt": "2026-09-10T17:17:33.018Z"
   },
   "mppsc-1": {
-    "hash": "aec2d9638577b1f1fc8986e9e43d1e3f02c04da84945100be5a5bca7b6e91c3b",
-    "checkedAt": "2026-09-09T16:38:32.578Z"
+    "hash": "f391da0a74b9d553046b0da3394706935df8c22f45432445cdf48cbf0306b9bc",
+    "checkedAt": "2026-09-10T17:17:33.133Z"
   },
   "mp-esb-1": {
-    "hash": "b98c20ff7fd201c1b4f6ba33fb159b9174dfc0d35afa40ed5c5bb091b751d9fb",
-    "etag": "\"80465dfb4840dd1:0\"",
-    "lastModified": "Wed, 09 Sep 2026 10:50:09 GMT",
-    "checkedAt": "2026-09-09T16:38:32.464Z"
+    "hash": "065fd84acef73d84a5fac95dda34b55bad296c4b4823f7e4ae434dd43e98f11f",
+    "etag": "\"03f32552341dd1:0\"",
+    "lastModified": "Thu, 10 Sep 2026 12:53:10 GMT",
+    "checkedAt": "2026-09-10T17:17:33.014Z"
   },
   "mpsc-2": {
     "hash": "5c95f61d745055a42fc7a6e1245c1ff2623a4b88eb48c6f58b152504d99e6775",
     "etag": "\"6a7950d6-12ec\"",
     "lastModified": "Mon, 10 Aug 2026 04:17:26 GMT",
-    "checkedAt": "2026-09-09T16:38:32.860Z"
+    "checkedAt": "2026-09-10T17:17:33.020Z"
   },
   "msce-pune-2": {
-    "hash": "696ce5c0eef6d0c50f258432739e0c798c0e4eb3d6cac24f70992fc15eec8004",
-    "checkedAt": "2026-09-09T16:38:33.100Z"
+    "hash": "9c9360becf2b05560d104a20e3b8be2f67bce0a6ae4fdf97cb37739d1a4e6a81",
+    "checkedAt": "2026-09-10T17:17:33.446Z"
   },
   "msce-pune-1": {
-    "hash": "d48027a927385e1260925721462df5896b2f046b1a071fd2b0fdd7a2d331b1d9",
-    "checkedAt": "2026-09-09T16:38:33.101Z"
+    "hash": "2b78ff70efd932b186d3db9e67b0ea163c40bb9551bf130f3a2ed420581f89cb",
+    "checkedAt": "2026-09-10T17:17:33.449Z"
   },
   "msce-pune-3": {
     "hash": "cc632e767f3a2afb79106640ed38ea63b51c36cd0bca5bf0ed6ee4711f8b35b0",
     "etag": "\"cfa872b86e3fdd1:0\"",
     "lastModified": "Tue, 08 Sep 2026 08:47:46 GMT",
-    "checkedAt": "2026-09-09T16:38:33.201Z"
+    "checkedAt": "2026-09-10T17:17:33.371Z"
   },
   "msetcl-1": {
-    "hash": "9e7655e003daf6030352404eb915e83a375e669cfc432cd6756a931c5b998a65",
-    "checkedAt": "2026-09-09T16:38:33.789Z"
+    "hash": "13a6d529c97f5780bb6f60380cdad30fcac893d0707942b87b35cf7ebf85a086",
+    "checkedAt": "2026-09-10T17:17:33.768Z"
   },
   "msedcl-1": {
-    "hash": "e7c44307ceaeae7296ab8ee8a347bc8edcf871531553e86875e0c314d4cdab75",
-    "checkedAt": "2026-09-09T16:38:35.100Z"
+    "hash": "0efef4f749f4fe79625e47980d47ced75f41ac4e7f391fbda7a373737e1b0763",
+    "checkedAt": "2026-09-10T17:17:35.058Z"
   },
   "msrtc-1": {
-    "hash": "af6732b132ea7812e7f4dd6cf17a75a1d5c565a37d7dadfffe9f97afb1e8e88f",
-    "checkedAt": "2026-09-09T16:38:33.671Z"
+    "hash": "0d89480b3c9eb347e80878d3c405a016a4fe2feeefd4cd4cfc34390f959036a8",
+    "checkedAt": "2026-09-10T17:17:44.118Z"
   },
   "mazagon-dock-1": {
-    "hash": "33563c6ce80db6e4ae49dfc11a8d145a7c62ea75700157c009a7ec48bf7a2e1b",
-    "checkedAt": "2026-09-09T16:38:43.382Z"
+    "hash": "afc12c5da469a57cd59e4ffcfc76cc04aa4fcc4edc2e59c08a3855395290bc67",
+    "checkedAt": "2026-09-10T17:17:44.300Z"
   },
   "manipur-police-1": {
-    "hash": "a2d476824f4ba496fd77858d60faf8a37cbdfe1cca5a0658ff34623ba61dcc3a",
-    "checkedAt": "2026-09-09T16:38:43.013Z"
+    "hash": "bca9ac1111afa988ff0309e7afd052204e74d6a7f024f13902dbdd2862111e98",
+    "checkedAt": "2026-09-10T17:17:52.179Z"
   },
   "assam-mhrb-2": {
-    "hash": "4bfe0dd5a2d2a234e1c51dc6bf6bda0fbea5405d0e3d964491f5630e8401a372",
-    "checkedAt": "2026-09-09T16:38:43.685Z"
+    "hash": "bdb53928965623808746cd35f03066327cb5f861a9eb0bf62209d07733368f5f",
+    "checkedAt": "2026-09-10T17:17:52.860Z"
   },
   "assam-mhrb-1": {
-    "hash": "a4a4b56e877a475630a7fe90ad6a4b0462e82d105cc46facaebe61c05c955f61",
-    "lastModified": "Wed, 09 Sep 2026 16:40:33 GMT",
-    "checkedAt": "2026-09-09T16:38:43.762Z"
+    "hash": "494e229dad4399958da3b8d1088ce4c51ae9a0f68ce9175ed38b76b72c77e5e7",
+    "lastModified": "Thu, 10 Sep 2026 17:19:32 GMT",
+    "checkedAt": "2026-09-10T17:17:44.475Z"
   },
   "meghalaya-meecl-1": {
-    "hash": "5b2392ae827fbc23da175a3e81dfd5d908dcd9c488e95f90a5cd8c8a014f6669",
-    "checkedAt": "2026-09-09T16:38:45.451Z"
+    "hash": "361c43c4d948e6374c8e13858dbb1b130bc2da678dd2fb881153ffdeef73cfdb",
+    "checkedAt": "2026-09-10T17:17:54.177Z"
   },
   "meghalaya-meecl-2": {
-    "hash": "643abda80c5416ab4759e99d3a9e489c3f566ed4269db81e5f8840075e64b49e",
-    "checkedAt": "2026-09-09T16:38:45.074Z"
+    "hash": "5eeaba604b414a80e31230725d6e31a0bda894822f391bb8eb37e75334bd60db",
+    "checkedAt": "2026-09-10T17:17:54.926Z"
   },
   "meghalaya-police-1": {
-    "hash": "7fb33fdf70f0a006d609382947f8054146a06e5761f4923f15ae6ef8c7a9a9fd",
-    "checkedAt": "2026-09-09T16:38:47.632Z"
+    "hash": "1fa1f16f2d86f0325bbf5660574a5d7f0a7c73e6c1bfb6a971ec7399d820331f",
+    "checkedAt": "2026-09-10T17:17:54.721Z"
   },
   "meghalaya-psc-2": {
     "hash": "880862849401cb31c0f3be3fe4e10bc5eb4d0dce2d4e994c1f2f49c424cc2192",
     "etag": "\"10024-654fc61e2a8c0-gzip\"",
     "lastModified": "Wed, 24 Jun 2026 09:20:11 GMT",
-    "checkedAt": "2026-09-09T16:38:46.009Z"
+    "checkedAt": "2026-09-10T17:17:52.838Z"
   },
   "mizoram-psc-1": {
-    "hash": "d4628dd6752dd9176e92162b5a37663f808c95d7d475a7b953d96b0568546985",
-    "checkedAt": "2026-09-09T16:38:46.099Z"
+    "hash": "a3e2ceb88f3c1a22f05502dd0ac1c2f7594647080b71e9071eb6a99f1e50cb57",
+    "checkedAt": "2026-09-10T17:17:57.452Z"
   },
   "mizoram-psc-2": {
-    "hash": "91ad2195e678ceeb3ba02ceea19c84d71f0dcae1d6ba13179d489326a0552fda",
-    "checkedAt": "2026-09-09T16:38:47.889Z"
+    "hash": "86e7b3a24fd2b8e94f8e0301ab05574f02cbb66acef8b0a455d8847cd74310d2",
+    "checkedAt": "2026-09-10T17:17:57.338Z"
   },
   "mizoram-mbse-1": {
-    "hash": "b733af6312f3e8f4356d2de9b6fc7420b18a08a5a05784d1db0a643906eaff0e",
-    "checkedAt": "2026-09-09T16:38:46.463Z"
+    "hash": "117bcf55a9e0b354ad560b61950f073a533ba0bc50d26951980b6a59a6f7488e",
+    "checkedAt": "2026-09-10T17:17:56.540Z"
   },
   "nagaland-police-2": {
     "hash": "9eac531fdc8e248bf7a96e2f05f100702c4a4e13ab9e00a7531ea7ca2156797e",
-    "checkedAt": "2026-09-09T16:38:48.315Z"
+    "checkedAt": "2026-09-10T17:17:58.032Z"
   },
   "nagaland-police-1": {
     "hash": "281c009030d65620691af9a6bd1694eccf27516a783d4600d1c27f1558d2a186",
-    "checkedAt": "2026-09-09T16:38:49.135Z"
+    "checkedAt": "2026-09-10T17:17:58.092Z"
   },
   "nagaland-psc-1": {
-    "hash": "340081328341c07f3e42913461d8bd4d5ff1cb9fae7f13eac82b4963ac4b85a5",
-    "checkedAt": "2026-09-09T16:38:48.825Z"
+    "hash": "c2af88ca770f9d1f155e4b3c8812cccc286200f8ab048dd3bfe8a789936ff768",
+    "checkedAt": "2026-09-10T17:17:58.091Z"
   },
   "nagaland-psc-2": {
-    "hash": "9be48f5f6f35356c5cc070d5dc53e92fe60a893d802859050e48234b490b1341",
-    "checkedAt": "2026-09-09T16:38:49.538Z"
+    "hash": "35379270a3f496b167b57eee31e992bcbc5dec80151dc6b0781fa145caef8c2a",
+    "checkedAt": "2026-09-10T17:17:58.121Z"
   },
   "munitions-india-1": {
-    "hash": "3eef44c1dcf259f1af381e9cbcb5ed3707f8ac933d4984f4535500be992b6b5d",
-    "checkedAt": "2026-09-09T16:38:49.271Z"
+    "hash": "32292f5735b82d7a1e1148f2e6ef8797745215b2b2ab1165bdf695eda2f89cba",
+    "checkedAt": "2026-09-10T17:17:56.846Z"
   },
   "nagaland-nssb-1": {
-    "hash": "8d167249ad7e6760c7784e176cff1349c9a9ca9b13d86af934e8174549e4cfa2",
-    "checkedAt": "2026-09-09T16:38:50.542Z"
+    "hash": "c0e63060ac3f3311ba4e080951695eb50481f67d44c61d10480c02258313451e",
+    "checkedAt": "2026-09-10T17:17:59.312Z"
   },
   "nbems-1": {
-    "hash": "42acd283b2373eae7f73928a30d63cd18d1fc911cd01fa27cbd7b404960159f4",
-    "checkedAt": "2026-09-09T16:38:53.066Z"
+    "hash": "2ac02ba90fdb7e21d6778ee40e2aed665d7394db6ddda4ec9453ad5bef3965f2",
+    "checkedAt": "2026-09-10T17:18:02.712Z"
   },
   "nalco-1": {
     "hash": "c9374b30ba0f0a77c3ef97195cb51042cbe0bdb8f099d4ad087188e4372181c6",
-    "checkedAt": "2026-09-09T16:38:49.859Z"
+    "checkedAt": "2026-09-10T17:18:00.299Z"
   },
   "nabard-1": {
-    "hash": "f577d5a316bd19c3627f61de0ce58fe67258e810a2c3c6ac3749f2660a5944d3",
-    "checkedAt": "2026-09-09T16:38:50.055Z"
+    "hash": "a9ec2fdf886c92c97f363d190a3d44d29ae26abc19018f7fc003247b3d1cf53e",
+    "checkedAt": "2026-09-10T17:18:00.020Z"
   },
   "nagaland-nssb-2": {
-    "hash": "5534f828bfe271b9ee8fcf8d5079c755b64404157e876f889f00527644c5a09a",
-    "checkedAt": "2026-09-09T16:38:51.544Z"
+    "hash": "74b17e56c0b96a812102e58689116b33efae5534777762678e5bf4cb6afca5fe",
+    "checkedAt": "2026-09-10T17:17:59.690Z"
   },
   "nta-1": {
-    "hash": "070123e00ddc9eab6bd82a2bc3a536eb7fa28598a9dd08a33a2be993e31a68d2",
-    "lastModified": "Wed, 09 Sep 2026 16:37:49 GMT",
-    "checkedAt": "2026-09-09T16:38:52.076Z"
+    "hash": "0b1440322b474f6bf302863516261426d702e842aab28756e78773a6860e7f14",
+    "lastModified": "Thu, 10 Sep 2026 17:16:51 GMT",
+    "checkedAt": "2026-09-10T17:18:03.712Z"
   },
   "nicl-1": {
-    "hash": "84f7a637a83235073e329bbf76bbf823d45d16609825e5e79e0b5c03cff389d2",
-    "etag": "\"1788945648\"",
-    "lastModified": "Wed, 09 Sep 2026 09:20:48 GMT",
-    "checkedAt": "2026-09-09T16:38:52.667Z"
+    "hash": "36339fdcfb0e08ab8600b4a60fb7f2b02db064801a841166ee50ab60bb0bc444",
+    "etag": "\"1789040605\"",
+    "lastModified": "Thu, 10 Sep 2026 11:43:25 GMT",
+    "checkedAt": "2026-09-10T17:18:00.733Z"
   },
   "ntpc-1": {
-    "hash": "118ff225d775fe03e5db1c2eb817f2ce7dab0143bcb4dce4bec84d6fd1e9a67f",
-    "checkedAt": "2026-09-09T16:38:53.980Z"
+    "hash": "d80aa03098448291247be13ce71069758a09ea01905b160744a7c9b233b74c11",
+    "checkedAt": "2026-09-10T17:18:05.027Z"
   },
   "nfr-1": {
     "hash": "cc92c2e21443117e56198e96cbf39284f8862f19943cd50c0fb37e4a51ee7f4b",
-    "checkedAt": "2026-09-09T16:38:54.821Z"
+    "checkedAt": "2026-09-10T17:18:05.442Z"
   },
   "optcl-1": {
-    "hash": "f91989a59a9fd74b079fa88cf1b27210ba3b58a016109e332789f635a06084c5",
-    "checkedAt": "2026-09-09T16:38:53.589Z"
+    "hash": "3f7d711e7985bfee6a8cb75bbc965b08cf1797fc9cf3b82222cc99e840a8c0a2",
+    "checkedAt": "2026-09-10T17:18:05.940Z"
   },
   "npcil-1": {
-    "hash": "ebb92d1a60260c9d41f8157f56a58f1e487e830de9f4e339ededaac1ca2564c2",
-    "checkedAt": "2026-09-09T16:38:53.744Z"
+    "hash": "5aac5aa584d89618a92bac636b81b9e6e099eef90014ae932e5bfbf05fec9873",
+    "checkedAt": "2026-09-10T17:18:05.337Z"
   },
   "opsc-2": {
-    "hash": "5ef737f3f1cb4280baab75bd6934ffc4ecf25d0cfec9e8d77b46f6883068b50f",
-    "checkedAt": "2026-09-09T16:38:53.968Z"
+    "hash": "b71804512219df4b44102ac437e7d5642261cfa0ecee8299fad19482106337e4",
+    "checkedAt": "2026-09-10T17:18:06.181Z"
   },
   "osssc-1": {
-    "hash": "582a81d4624265b5a364075997daa478f862896b4b96cb8420628fadd986dc7b",
-    "checkedAt": "2026-09-09T16:38:57.031Z"
+    "hash": "95ec52a72c0570b3f691d0c09657b64dd028f5922c7e0eece7cecb67601795d7",
+    "checkedAt": "2026-09-10T17:18:06.634Z"
   },
   "opsc-1": {
-    "hash": "9be98de90663682b55e182323bfab5f24f3c79a47a67344ba023aab21cb76aa2",
-    "checkedAt": "2026-09-09T16:38:54.347Z"
+    "hash": "1524c107920c8f1212a4829f29a9f46fbf6f192e639cb92759d42c605d08fd68",
+    "checkedAt": "2026-09-10T17:18:06.497Z"
   },
   "ossc-1": {
-    "hash": "6470c3f85cd2dafa1a3af085673cad89fb9dd2c4c3beaf47790e87a27a59fae5",
-    "checkedAt": "2026-09-09T16:38:56.218Z"
+    "hash": "54c057acf820f72c9fae276aeb80c777e815798b2f106b7c7e8560dff2eb6af1",
+    "checkedAt": "2026-09-10T17:18:06.689Z"
   },
   "tn-registrar-cooperative-societies-2": {
     "hash": "84f1f751219be79ef268468f4c0b1206003280c670f48f2cb4edbd219cbadffd",
-    "checkedAt": "2026-09-09T16:38:55.183Z"
+    "checkedAt": "2026-09-10T17:18:06.766Z"
   },
   "tn-registrar-cooperative-societies-1": {
     "hash": "5be3de7226eaf7ea04700aeb3d38f7f3276ce8fecf9be415d35429017eb7109e",
-    "checkedAt": "2026-09-09T16:38:55.183Z"
+    "checkedAt": "2026-09-10T17:18:05.781Z"
   },
   "pgimer-1": {
-    "hash": "79f71ceb945f4c50e50e2b539333662b457f0ae0107a4d516edefdb05212f4b7",
-    "checkedAt": "2026-09-09T16:39:02.159Z"
+    "hash": "4cc67081a5de061010649f1adae53ac80680d601949c6f3c3d22faa05517c4cd",
+    "checkedAt": "2026-09-10T17:18:07.208Z"
   },
   "oil-india-1": {
-    "hash": "69f7baf89aa9c5ef55459c69c41ee52e3e19cab51d405e6974af83482c30e1a9",
-    "lastModified": "Wed, 09 Sep 2026 16:38:45 GMT",
-    "checkedAt": "2026-09-09T16:38:55.947Z"
+    "hash": "3b7870b982a254d276b0ed7faae1e7d141337cac4469caad7b17fba338d4c124",
+    "lastModified": "Thu, 10 Sep 2026 17:17:54 GMT",
+    "checkedAt": "2026-09-10T17:18:08.165Z"
   },
   "powergrid-1": {
-    "hash": "84580d35b2cbc102068117a4c6a0f89a6e9dcee5bd9e36569d9b461de76123d8",
-    "checkedAt": "2026-09-09T16:39:02.965Z"
+    "hash": "8ee8536f3ac43e6a5932efa912f2b0c589d4e376f91f5f3aa4f6e5dbb9cf6507",
+    "checkedAt": "2026-09-10T17:18:07.629Z"
   },
   "ongc-1": {
     "hash": "574c6f36d94475e995277cf28924ca1861236c301d617fdb94a3e4567d71152e",
@@ -899,240 +899,240 @@
     "hash": "d8176d7f320d4081b7ab9451baa4efa7970748b8e9c094c2ae806e6655ea45bd",
     "etag": "\"05c3ddf7a3cdd1:0\"",
     "lastModified": "Fri, 04 Sep 2026 14:37:12 GMT",
-    "checkedAt": "2026-09-09T16:39:02.451Z"
+    "checkedAt": "2026-09-10T17:18:19.144Z"
   },
   "wbpsc-1": {
-    "hash": "ea6d427ac59d4aa4c183d5b059b4c7ff2458237274353a4427eee9e07f2320dd",
-    "checkedAt": "2026-09-09T16:39:02.450Z"
+    "hash": "806fe18e4519d8763cea4f1e46c156a108d1d200526c5c1bdade4de13383bde2",
+    "checkedAt": "2026-09-10T17:18:22.053Z"
   },
   "puducherry-police-1": {
-    "hash": "12f127caf660739673458600f3bac506da10c47707cd2b78b833cf7ceb8bb1b4",
-    "checkedAt": "2026-09-09T16:39:02.604Z"
+    "hash": "72e6c806d44c88230fb0dab78dca281453f03ab4f5f31a2918f60904a1a23af9",
+    "checkedAt": "2026-09-10T17:18:21.786Z"
   },
   "wbpsc-2": {
     "hash": "7c061d47c4b605d9dbc741d01c5f30596702107b98e149a956946ed5d0345143",
-    "checkedAt": "2026-09-09T16:39:03.017Z"
+    "checkedAt": "2026-09-10T17:18:21.519Z"
   },
   "ppsc-1": {
-    "hash": "6b8336de02c5d5014dfda251f02ab9e195e3cbaf0465cf868ad59e2edc4fd16a",
-    "checkedAt": "2026-09-09T16:39:03.721Z"
+    "hash": "a793bcb3b36caa47c4db4311946892b303bd7ff36bc927c65c0a160fddf7d13a",
+    "checkedAt": "2026-09-10T17:18:22.514Z"
   },
   "pspcl-1": {
-    "hash": "054e6e612ee3f0c1b3a8c3f50f6ea6b511a889536cbe4e212a732e1b52ebcafc",
-    "checkedAt": "2026-09-09T16:39:05.520Z"
+    "hash": "43f677c80173b7dfcc8783559dd6d4e672bcdd66961b5c79b9e9f391a06362b1",
+    "checkedAt": "2026-09-10T17:18:23.352Z"
   },
   "rpf-1": {
-    "hash": "9b0ee26c5580fa0ded9caf48fbb7c84376a48c4911f490ab96f5f7cf2073b940",
-    "checkedAt": "2026-09-09T16:39:04.004Z"
+    "hash": "4f5763fd715d2539115f1881ca1425001c1110304029fd3739a17a08623e9065",
+    "checkedAt": "2026-09-10T17:18:23.509Z"
   },
   "rrb-1": {
-    "hash": "b15efdfabed35a9e0d78f574b221dd9bf1c8292f861dcbdd46a98cef1cf95c74",
-    "checkedAt": "2026-09-09T16:39:04.029Z"
+    "hash": "97cc4c95b30be26128ec2f283a4baada7a552ad9104518d1adbbb5f1cd3f9ea7",
+    "checkedAt": "2026-09-10T17:18:23.510Z"
   },
   "railtel-1": {
     "hash": "c7a1a2cad61b466514016d32f4130e935909c9ecd25a561594d8d725af9d6b4d",
-    "lastModified": "Wed, 09 Sep 2026 16:39:03 GMT",
-    "checkedAt": "2026-09-09T16:39:04.193Z"
+    "lastModified": "Thu, 10 Sep 2026 17:18:20 GMT",
+    "checkedAt": "2026-09-10T17:18:23.655Z"
   },
   "rajcrb-1": {
     "hash": "9f630f94e82513f89d6c3bbd67da0a05e8d26365a42f57dfdf836534164c188a",
-    "checkedAt": "2026-09-09T16:39:05.821Z"
+    "checkedAt": "2026-09-10T17:18:23.693Z"
   },
   "rpsc-1": {
-    "hash": "6467f30fb94f968ec5e677c7763feb5cf9d49c04149ffef90c8d9404495c927a",
-    "checkedAt": "2026-09-09T16:39:07.467Z"
+    "hash": "6d46f100943f3a1106a3f6ab038a78cb4e330361aff359d4090189e5b25cedbd",
+    "checkedAt": "2026-09-10T17:18:24.223Z"
   },
   "rpsc-2": {
-    "hash": "18a478d0fee0ea7b87e3324d7835f4548cbbe1188626bfe006fa54b43755834a",
-    "checkedAt": "2026-09-09T16:39:05.969Z"
+    "hash": "b10372f0ddac7d6978788ef1f70f87e77930f784edeed30adb64a2f5b2275a37",
+    "checkedAt": "2026-09-10T17:18:24.571Z"
   },
   "rvunl-1": {
     "hash": "03cba1dedf80b4ad925022d6a7394cc5591074490a2e37cf0bf6729cfb1d3fe6",
     "etag": "\"0e315ca6426dd1:0\"",
     "lastModified": "Fri, 07 Aug 2026 12:03:42 GMT",
-    "checkedAt": "2026-09-09T16:39:05.968Z"
+    "checkedAt": "2026-09-10T17:18:24.586Z"
   },
   "rinl-vizag-steel-1": {
     "hash": "6bba0922d64243122f8b719c9e7dc83fc6a2bf819871f3bcbd15946b83627776",
-    "checkedAt": "2026-09-09T16:39:05.986Z"
+    "checkedAt": "2026-09-10T17:18:24.785Z"
   },
   "rbi-2": {
-    "hash": "01e9a589ad3dbf96be3be0e372bc79e786ea07f14fd6b23bc2be8503b1626d9d",
-    "checkedAt": "2026-09-09T16:39:08.021Z"
+    "hash": "dd29e0f0bf25bac56d0945bdbeb119b417dfd064a2931b61235bc503ba66768a",
+    "checkedAt": "2026-09-10T17:18:24.704Z"
   },
   "rbi-1": {
-    "hash": "8b3893c7760199a4647de0c687bf37a418bd90cb7bf4208ea125f56f0ac90d16",
-    "checkedAt": "2026-09-09T16:39:07.815Z"
+    "hash": "13ae6007c1ddc8e12c53f8ccf87487f46818f88b02ff63e6af2c2172d35f32c6",
+    "checkedAt": "2026-09-10T17:18:24.560Z"
   },
   "maharashtra-revenue-1": {
     "hash": "79af38de325e744f3afdc66af5c62b4d7a35098a099ade40691ed2192fc3da71",
     "etag": "\"d0a3896ff26ed51:0\"",
     "lastModified": "Thu, 19 Sep 2019 13:59:20 GMT",
-    "checkedAt": "2026-09-09T16:39:07.669Z"
+    "checkedAt": "2026-09-10T17:18:25.064Z"
   },
   "ssb-1": {
-    "hash": "5b389af42aa2dfa0ce4227ff74a20fd43d530070d07fe6ca0ecfa1bbba453944",
-    "checkedAt": "2026-09-09T16:39:07.926Z"
+    "hash": "2a090469c74c2e9d9cf0bc9866f7713861a494942e4c1c311171e2977511a2d6",
+    "checkedAt": "2026-09-10T17:18:25.152Z"
   },
   "sebi-1": {
-    "hash": "ae788ff06b3c8ef0beb602a54bd125c61de1685328e0cf8c8062cbc04d832dd6",
-    "checkedAt": "2026-09-09T16:39:08.619Z"
+    "hash": "aa515ff08512732a9451712a403d1fbfd849916a70d66e0df33fcf49a44e0646",
+    "checkedAt": "2026-09-10T17:18:25.472Z"
   },
   "maharashtra-rural-development-1": {
-    "hash": "ba30bbcc1433bf446d0bf78d797e225c6f9a07d01429aece6f2c8e07bbc48309",
-    "checkedAt": "2026-09-09T16:39:08.025Z"
+    "hash": "7a79e1330dd2b32aadaa688529fea40a2ebe02b598b6f221c644031e80263589",
+    "checkedAt": "2026-09-10T17:18:25.491Z"
   },
   "sikkim-psc-1": {
     "hash": "39dabd055bdb9e9b7105bbb043fcbdf472f4560046565164b0b58a60b25d727b",
     "etag": "\"4f96a912340dd1:0\"",
     "lastModified": "Wed, 09 Sep 2026 06:22:19 GMT",
-    "checkedAt": "2026-09-09T16:39:08.425Z"
+    "checkedAt": "2026-09-10T17:18:25.236Z"
   },
   "apspdcl-1": {
     "hash": "7ab5b863a08f6aa55510132c59ba2e96a2037252a8b02f31c348f2974981e58a",
-    "checkedAt": "2026-09-09T16:39:08.581Z"
+    "checkedAt": "2026-09-10T17:18:25.968Z"
   },
   "sjvn-1": {
     "hash": "c420b191cd626156519845c6f19b7a4b19068f02f242ac6f43c9fba0d54e08f8",
     "checkedAt": "2026-09-09T16:39:08.427Z"
   },
   "sbi-1": {
-    "hash": "d2259e97476d368705242a6dc11b6eb052b50d43be76948ce5e0d53a54d5c25a",
-    "checkedAt": "2026-09-09T16:39:09.514Z"
+    "hash": "af49306bdc6020de525e66782a71ecab9ebf4b88d2fa509894e03a2df5bd525c",
+    "checkedAt": "2026-09-10T17:18:27.084Z"
   },
   "sikkim-psc-2": {
     "hash": "1f43efd5c072211885ce188082ec56f34bb52fd67fa630c6d6f3ebf4cdd6d855",
     "etag": "\"aefde9f57e3fdd1:0\"",
     "lastModified": "Tue, 08 Sep 2026 10:44:01 GMT",
-    "checkedAt": "2026-09-09T16:39:08.486Z"
+    "checkedAt": "2026-09-10T17:18:25.871Z"
   },
   "ssc-1": {
-    "hash": "89fbdf30856a52b21f411c49bc0d7cd496fa99aa1eb3473dc85adb0c5f9d12ce",
-    "etag": "W/\"6a71c5d8-13b09\"",
-    "lastModified": "Tue, 04 Aug 2026 10:58:32 GMT",
-    "checkedAt": "2026-09-09T16:39:09.463Z"
+    "hash": "1977256554521f2a6f93f875236fec2324c60e63cf6d3a46a9f06bac0cd4f400",
+    "etag": "W/\"6aa25022-13b09\"",
+    "lastModified": "Thu, 10 Sep 2026 06:37:22 GMT",
+    "checkedAt": "2026-09-10T17:18:26.350Z"
   },
   "tgspdcl-1": {
     "hash": "de59a947de7f9cb9e263a65ff5a35add5ad9cb256ffa80f516bed65db142ea8d",
-    "checkedAt": "2026-09-09T16:39:09.082Z"
+    "checkedAt": "2026-09-10T17:18:26.602Z"
   },
   "assam-slprb-1": {
-    "hash": "409736d88002fea6a063ea0770e93eb8c08d6d72ec6d6bf8da32c72f3229f96f",
-    "lastModified": "Wed, 09 Sep 2026 16:39:10 GMT",
-    "checkedAt": "2026-09-09T16:39:11.172Z"
+    "hash": "876ed2baaa10c32881abd13656aa1809fea4460e22b53a95f5bf8a4ec1cc5275",
+    "lastModified": "Thu, 10 Sep 2026 17:18:36 GMT",
+    "checkedAt": "2026-09-10T17:18:39.204Z"
   },
   "nagaland-scert-2": {
     "hash": "7a64c697863fee113dc89559f16a5148b7fd1f832871d4073a758ccdde2fee48",
-    "checkedAt": "2026-09-09T16:39:10.741Z"
+    "checkedAt": "2026-09-10T17:18:27.131Z"
   },
   "nagaland-scert-1": {
     "hash": "4499dd9a1000f101140f5750af8053b8bf981695b768bb3abc32569d437ac10b",
-    "checkedAt": "2026-09-09T16:39:09.641Z"
+    "checkedAt": "2026-09-10T17:18:27.121Z"
   },
   "gujarat-seb-1": {
     "hash": "937c5c5a0585dea5fab6997a22b8fba39843d6b4ebf0d4e6ccb53932f41f8814",
     "checkedAt": "2026-09-09T16:39:09.555Z"
   },
   "shs-bihar-1": {
-    "hash": "68c2d6bd4e776cded46e78d1628f86e79575e53473fa54ec03293e1b502f221e",
-    "checkedAt": "2026-09-09T16:39:10.507Z"
+    "hash": "7e32e279354ad7893aab7669c25a32485d88c79bfe1b018910e3131f2f3b5356",
+    "checkedAt": "2026-09-10T17:18:27.614Z"
   },
   "assam-slrc-1": {
-    "hash": "3f4b0bc134037042d2139b5e941e2525def765af846e5d1378d56e90302264d8",
-    "etag": "\"1788971468-gzip\"",
-    "lastModified": "Wed, 09 Sep 2026 16:31:08 GMT",
-    "checkedAt": "2026-09-09T16:39:13.428Z"
+    "hash": "fc12ff75c24bc9d51bac4df211c1ce144dee0ac650d2983a361ef3a533f72079",
+    "etag": "\"1789060233-gzip\"",
+    "lastModified": "Thu, 10 Sep 2026 17:10:33 GMT",
+    "checkedAt": "2026-09-10T17:18:41.057Z"
   },
   "sail-1": {
-    "hash": "3ca2281a40952fb843413a3558b433d887725a7fcde2e85657ce7a8c548d47e3",
-    "checkedAt": "2026-09-09T16:39:11.033Z"
+    "hash": "96cac6ec74d4d249ad24198c5cdf30a0b2b84cb43343c1ead98fd35c245fc2f9",
+    "checkedAt": "2026-09-10T17:18:39.118Z"
   },
   "tangedco-1": {
-    "hash": "74190e34940a98f4782f6c5b344129a999fd16048e03cfcc9d9d0130693ae4a6",
-    "checkedAt": "2026-09-09T16:39:13.966Z"
+    "hash": "1f6a7981c2d3a5509978af645dac254555fb75d211f9f25d166b8b8094e65caf",
+    "checkedAt": "2026-09-10T17:18:41.600Z"
   },
   "mrb-tamil-nadu-2": {
-    "hash": "010c3fb1667a9bdda27424cd595d6d7d7b43d8a3a9c217a783129d3afb25acb4",
-    "checkedAt": "2026-09-09T16:39:13.753Z"
+    "hash": "8cf7a5dbef51a7271706fb615ae78c7e355f8712373f3032a2b11fb2e7bbbdee",
+    "checkedAt": "2026-09-10T17:18:41.467Z"
   },
   "mrb-tamil-nadu-1": {
-    "hash": "beeae2a6ed9f265a1298b77356cfc7f175d3cb8ae8d438a1fa63df7b023c281a",
-    "checkedAt": "2026-09-09T16:39:11.488Z"
+    "hash": "557584302c83b894c5a0e42ecb2d92d9844b1f33e761d73966fb8c724fd39625",
+    "checkedAt": "2026-09-10T17:18:39.959Z"
   },
   "assam-slrc-2": {
-    "hash": "604cf66e02381805d9c2cc7b3bfda9d0f4b55479ef7ab9656dec0eee3f0c16c2",
-    "etag": "\"1788971468-gzip\"",
-    "lastModified": "Wed, 09 Sep 2026 16:31:08 GMT",
-    "checkedAt": "2026-09-09T16:39:13.431Z"
+    "hash": "3efe3b9264f585ea4bae2770cbfe0222788836dc87f52882954666ed944846e1",
+    "etag": "\"1789060233-gzip\"",
+    "lastModified": "Thu, 10 Sep 2026 17:10:33 GMT",
+    "checkedAt": "2026-09-10T17:18:41.205Z"
   },
   "tnusrb-1": {
-    "hash": "cdee988166f7fccc622e5cc5b284afe9171842192eedd60d8383b4b6d0df3364",
-    "checkedAt": "2026-09-09T16:39:14.537Z"
+    "hash": "bcd29fe4783f996302bba3a600b25bb488c0b58a49c8f49325b6d4f5a48b690f",
+    "checkedAt": "2026-09-10T17:18:42.239Z"
   },
   "tnusrb-2": {
     "hash": "67809c3dad6be3e157f619e0607fd84e096d69e574487baf0bb9c1d61068fb7c",
     "lastModified": "Thu, 09 Jul 2026 12:03:02 GMT",
-    "checkedAt": "2026-09-09T16:39:14.458Z"
+    "checkedAt": "2026-09-10T17:18:42.175Z"
   },
   "tnpsc-2": {
     "hash": "6b3d2df4ece243b39f26c5902e8ede62175c8a2c5aba716574262f47ad3fc6a1",
     "etag": "\"3be6fedd72fdd1:0\"",
     "lastModified": "Wed, 19 Aug 2026 12:40:33 GMT",
-    "checkedAt": "2026-09-09T16:39:13.954Z"
+    "checkedAt": "2026-09-10T17:18:41.683Z"
   },
   "tangedco-2": {
-    "hash": "bcd72f24f017c9ac7c01699db81c69744da64766988e9bf291813f28952b6bca",
-    "checkedAt": "2026-09-09T16:39:14.153Z"
+    "hash": "9f3cded7e7aa4476474c31f2a493ed8eb4aa9a214e80ae85f284645b5bc84207",
+    "checkedAt": "2026-09-10T17:18:41.922Z"
   },
   "tnpsc-1": {
-    "hash": "a5d26b67723ac393429a3d59c6adf1ce8b310c4291c80cebf4f7df6f8d8d1894",
-    "checkedAt": "2026-09-09T16:39:14.100Z"
+    "hash": "ce0453eeb0ed43f862cad20412ff82fa2d74689f1cceab1e7d33d6c7364c1201",
+    "checkedAt": "2026-09-10T17:18:41.780Z"
   },
   "tnpsc-3": {
-    "hash": "66581baaeb34f2a01045022fe05abc008ec666db210d2cd1dadc5cd0a4b83af3",
-    "checkedAt": "2026-09-09T16:39:14.101Z"
+    "hash": "bba735a63dc2a61281ddf35144a7b956ec36f8a02a4256367f9905aafab23f76",
+    "checkedAt": "2026-09-10T17:18:41.777Z"
   },
   "trb-tamil-nadu-1": {
     "hash": "9e9963870bdf906b40a62f5e316148cd78738ee2fa04e685daf772f46549edd8",
-    "checkedAt": "2026-09-09T16:39:14.757Z"
+    "checkedAt": "2026-09-10T17:18:42.390Z"
   },
   "trb-tamil-nadu-2": {
     "hash": "fc16df095d90842c6276bd31d970d5e45322a42cc8753ddfac157d4bb36cee0c",
-    "checkedAt": "2026-09-09T16:39:15.537Z"
+    "checkedAt": "2026-09-10T17:18:42.669Z"
   },
   "telangana-mhsrb-1": {
     "hash": "4b9c7cd6a1cc9cf8c9e88137ce3ea816edca3fad25f7b1ce55545e2287e715b6",
     "etag": "\"6a63deec-1ba\"",
     "lastModified": "Fri, 24 Jul 2026 21:53:48 GMT",
-    "checkedAt": "2026-09-09T16:39:17.604Z"
+    "checkedAt": "2026-09-10T17:18:43.296Z"
   },
   "telangana-psc-1": {
-    "hash": "0fe66c1a8b4adfe70e3d7e34c8a9966bf2a66b6c168e11320d263e9c4cea3eab",
-    "checkedAt": "2026-09-09T16:39:17.683Z"
+    "hash": "094d58a6693a80c4241a27df8108a5ea26d7b58511e99895c4d8dbe1f6f2c04c",
+    "checkedAt": "2026-09-10T17:18:43.696Z"
   },
   "tripura-trb-1": {
-    "hash": "5d6722c435b77a3ebdb95c078675671f6f0495610341cd8951ed9e99646d87f0",
-    "checkedAt": "2026-09-09T16:39:17.353Z"
+    "hash": "07a2ec9024460ec357101d1595a53ca992cf5aa2780552c8cb75e31607e25b94",
+    "checkedAt": "2026-09-10T17:18:43.129Z"
   },
   "tripura-trb-2": {
-    "hash": "55d8e7059fbbe03d2ae965ba545b45dd17f56e15a2b836595328a656e0da8537",
-    "checkedAt": "2026-09-09T16:39:17.232Z"
+    "hash": "c07a99b0ace47b362470e05dc984007d25b5916e67bf00839b3de60992f3b88f",
+    "checkedAt": "2026-09-10T17:18:43.044Z"
   },
   "telangana-psc-2": {
-    "hash": "bc0ff1f7fa372363e261df4543f4ad4b2d4ca5ea23957a49530d7b3a0e1cda98",
-    "checkedAt": "2026-09-09T16:39:17.664Z"
+    "hash": "c0cb6b2c1c1f91ff872c3183f0e6d0cf5525adbf59a6607b8dc3d4a7684b983b",
+    "checkedAt": "2026-09-10T17:18:43.454Z"
   },
   "telangana-treirb-2": {
     "hash": "8c83d797b14161ed3387b6935905017b173e7cc02aed535d1b7b41121970e3ca",
     "etag": "W/\"89-1707392617000\"",
     "lastModified": "Thu, 08 Feb 2024 11:43:37 GMT",
-    "checkedAt": "2026-09-09T16:39:17.955Z"
+    "checkedAt": "2026-09-10T17:18:43.645Z"
   },
   "telangana-slprb-1": {
-    "hash": "03c1e3d1fb0b63415f2716329ee772967362b0684b5053eedd60491094b790e0",
-    "etag": "\"105d611623fdd1:0\"",
-    "lastModified": "Tue, 08 Sep 2026 07:16:45 GMT",
-    "checkedAt": "2026-09-09T16:39:20.980Z"
+    "hash": "25629cb178301cdea4e36db6c559612d0c6446fca4f28fe2d464dde47fed2067",
+    "etag": "W/\"38cbbfa0e740dd1:0\"",
+    "lastModified": "Thu, 10 Sep 2026 05:45:46 GMT",
+    "checkedAt": "2026-09-10T17:18:43.971Z"
   },
   "territorial-army-1": {
     "hash": "7c6a1a878380eab4511fff551b8875f3d9f2ed9bd5d91a7a0daa42613b0d3d90",
@@ -1140,11 +1140,11 @@
   },
   "telangana-treirb-1": {
     "hash": "3f5f1aab850bec83846d5175e08575dfa2bfea3585c0bf6e3c00e560f6fb9f86",
-    "checkedAt": "2026-09-09T16:39:17.911Z"
+    "checkedAt": "2026-09-10T17:18:43.688Z"
   },
   "telangana-school-education-1": {
-    "hash": "2aa1ba6ef5f463b348ecf0924fbd525dba568fcc1fbcf6740040cdac8b65139e",
-    "checkedAt": "2026-09-09T16:39:20.572Z"
+    "hash": "f233ca4484ddce9def81d7156c3e8674672d0b39826b0d2d1860dd075f979b06",
+    "checkedAt": "2026-09-10T17:18:44.894Z"
   },
   "upsc-1": {
     "hash": "a885f8fd9fcd4803839d598a68f0e8e1440b98327a254b458be037d1826e9bef",
@@ -1153,145 +1153,145 @@
     "checkedAt": "2026-08-09T21:11:40.840Z"
   },
   "tripura-police-2": {
-    "hash": "1355a114a4eaf05347a70aa6321b127af4e9d57df9504fefdfadc4d218302de4",
-    "checkedAt": "2026-09-09T16:39:21.129Z"
+    "hash": "7f23a8518e99c56dc764b509da4387d5fb404eb82a936131809964ce67d5ddfd",
+    "checkedAt": "2026-09-10T17:18:44.310Z"
   },
   "tripura-police-1": {
-    "hash": "9de481ae4022628748ec4155e1ec300336cc8ef45d45781a8f63f22a7820b621",
-    "checkedAt": "2026-09-09T16:39:21.085Z"
+    "hash": "916ad8bc32920b7da99cfd44a1fcb5ecaf902c090d79d14e87f3df139358d8b3",
+    "checkedAt": "2026-09-10T17:18:44.311Z"
   },
   "tripura-psc-2": {
-    "hash": "4ee33d7009416a1302eae50e289ad7b412a9fec4f2b7a5dbe4e3a49e87218b5c",
-    "checkedAt": "2026-09-09T16:39:25.381Z"
+    "hash": "bd07689f142486fdd1f8051b3e65ae2143998c68f195267eb3ea6cdada0297bb",
+    "checkedAt": "2026-09-10T17:18:49.057Z"
   },
   "tripura-psc-1": {
-    "hash": "e287567daeedb1d7289c2699ac5232041c9010efd65c56ddb42e1d560f38313f",
-    "checkedAt": "2026-09-09T16:39:21.391Z"
+    "hash": "5c0889f37443d653e0e5e75132af9921e2de14f3631b8ba96a7938fd95dc7de1",
+    "checkedAt": "2026-09-10T17:18:49.019Z"
   },
   "niacl-1": {
-    "hash": "0635e6ff12f96082f34b4a13b46a0e606ac4a61f0606842feb6c89d5d459d40e",
-    "etag": "W/\"411539-YeSW3fGL7eqJC+UyrkNPhEqCm+k-gzip\"",
-    "checkedAt": "2026-09-09T16:39:24.523Z"
+    "hash": "84c13e3d42278a3f1ea948be118098ed2e48ab0b77e8496db4118406cc941717",
+    "etag": "W/\"412f95-+KcC6iJzM86YxD633zXaMKJ++JE-gzip\"",
+    "checkedAt": "2026-09-10T17:18:48.281Z"
   },
   "up-pariksha-niyamak-pradhikari-2": {
     "hash": "7c457871335818a6eb58a678c63a3043a553a7fe642d4cffc9aa6bc964bc73c6",
-    "checkedAt": "2026-09-09T16:39:35.310Z"
+    "checkedAt": "2026-09-10T17:18:59.304Z"
   },
   "upcisb-2": {
     "hash": "610059a11fab31bfd874d20f7e83e429caf9003077cd3e28f6f80f2822c188da",
-    "checkedAt": "2026-09-09T16:39:24.922Z"
+    "checkedAt": "2026-09-10T17:18:59.217Z"
   },
   "up-pariksha-niyamak-pradhikari-1": {
-    "hash": "331b3cda39f4b6f96cb683324e18de7d736f959c7a61ad273c252b212bbca313",
-    "checkedAt": "2026-09-09T16:39:35.426Z"
+    "hash": "c3024851cfba0a347cb6470f0ab72e025c4bbd8351ea0e72d8a25c83a40aa5d0",
+    "checkedAt": "2026-09-10T17:18:59.578Z"
   },
   "upcisb-1": {
     "hash": "4585df13e1e63b8012484979ffa06c92ad3c4189e1098fcf80e3b144e5dd9a3e",
-    "checkedAt": "2026-09-09T16:39:25.011Z"
+    "checkedAt": "2026-09-10T17:18:48.927Z"
   },
   "dnhdd-administration-1": {
     "hash": "3228477626a6eee00370b4aba957c090bdeb518d9e9366d578e549359579f7d8",
-    "checkedAt": "2026-09-09T16:39:25.040Z"
+    "checkedAt": "2026-09-10T17:18:49.013Z"
   },
   "uppbpb-2": {
     "hash": "38d18ce69187bf633bc3a4dd207c0e553f5ded25220b98388dd3d2a646c163dd",
-    "checkedAt": "2026-09-09T16:39:35.668Z"
+    "checkedAt": "2026-09-10T17:18:59.578Z"
   },
   "uppcl-2": {
-    "hash": "a5823acec2f6ca6d16f13b365efc94a5073a84ff4b81c87937f3731b3bcbeb22",
-    "checkedAt": "2026-09-09T16:39:35.573Z"
+    "hash": "e3d77f207bb1ed74f2165f6f6e4ccecce6c02f1246c41e5e8530fe12282d3049",
+    "checkedAt": "2026-09-10T17:19:00.695Z"
   },
   "uprvunl-1": {
-    "hash": "22e495ad5120e82ec1d0a59d78105da9f0daf7f62b9616bf659f4cace11720e8",
-    "checkedAt": "2026-09-09T16:39:37.847Z"
+    "hash": "c458f9be7edb293fdaee859c4c5634272b5b320d6964f0b8bae3443406df679b",
+    "checkedAt": "2026-09-10T17:19:00.891Z"
   },
   "uppsc-1": {
-    "hash": "cfdd1558c7ef478525eecc98339041065e2873f1c3e6dd622591d46b90ed0277",
-    "checkedAt": "2026-09-09T16:39:36.583Z"
+    "hash": "0ccb6b906afc12f6883b144d6b4c7696c3ba726fb7b3681d735d858d52aad6c5",
+    "checkedAt": "2026-09-10T17:19:00.626Z"
   },
   "uppcl-1": {
-    "hash": "b9b2a736bec83142b9555932c4df6330c935d31694c3d7cd25017a1189d38ef2",
-    "checkedAt": "2026-09-09T16:39:36.206Z"
+    "hash": "dcf949dbda7825031d58d307bdeecd67f07e10349580ca4c5a6f863589d2b155",
+    "checkedAt": "2026-09-10T17:19:00.133Z"
   },
   "uppbpb-1": {
-    "hash": "13dda8adde4bc76d01e488d7866be3294fdd123c12c6dfec0712c0aa6620c9cb",
-    "checkedAt": "2026-09-09T16:39:35.767Z"
+    "hash": "418505833794318384f4fed8f199c6ed727236e0d5eba53f2fe31dfa1bad30ff",
+    "checkedAt": "2026-09-10T17:18:59.670Z"
   },
   "uprvunl-2": {
-    "hash": "cf7a8664bb288cc9a9c48e3ff16aeb9e1af8c4522d920e1303959a511720b46f",
-    "checkedAt": "2026-09-09T16:39:37.410Z"
+    "hash": "ff714517a3083c5fec88b2d466dab5d95339ac9d2a9731ccae8935ded7fae759",
+    "checkedAt": "2026-09-10T17:19:00.738Z"
   },
   "ukmssb-2": {
-    "hash": "953cf8fdb19acb3c07d333295b7b6ee39cceca44766738af42877a135961288f",
-    "checkedAt": "2026-09-09T16:39:38.329Z"
+    "hash": "3601074f1aa477f336c4cbd10d059392f849625d0b8e76c34f0eaae43baccd4a",
+    "checkedAt": "2026-09-10T17:19:01.481Z"
   },
   "ukmssb-1": {
-    "hash": "c88dd462d9529a45745543623018fad1aeef4b37dd68650beb46de822260b0fb",
-    "checkedAt": "2026-09-09T16:39:38.383Z"
+    "hash": "70c15a6e1234dd381f235b962f3be4734b88913f95134350b9b137bbb7f63fb8",
+    "checkedAt": "2026-09-10T17:19:01.484Z"
   },
   "ubse-1": {
-    "hash": "e2bf45d9ddd711d58dbf4e11611791dab28558acf4d8246ac4750bf99d051305",
-    "checkedAt": "2026-09-09T16:39:37.409Z"
+    "hash": "8ae244f7a3a9ab494ff9333799312cf2265189ec9f9a03fd1f24634a73d2929a",
+    "checkedAt": "2026-09-10T17:19:01.574Z"
   },
   "uksssc-2": {
     "hash": "240b0b5fbbc38e510034aec9e4d13297cad3eeed900cd4c1ee721efda578848d",
-    "checkedAt": "2026-09-09T16:39:40.958Z"
+    "checkedAt": "2026-09-10T17:19:02.935Z"
   },
   "ukpsc-2": {
-    "hash": "596aeb3e6dc318f9f85d4d254dfe0928a8c00a12605856bb1f4e98c601128497",
-    "checkedAt": "2026-09-09T16:39:40.478Z"
+    "hash": "929fa32f31ac21abe085454b518417db76e607d553ba2791c2334a7a37fc0fe5",
+    "checkedAt": "2026-09-10T17:19:03.754Z"
   },
   "uksssc-1": {
-    "hash": "7b442671df947682f66c65967bdd088b59835d9828b3259b5228b9efd94c06c1",
-    "checkedAt": "2026-09-09T16:39:41.107Z"
+    "hash": "884fcc8c07bcc0e5e0c1cada9bc75856262d7aa1588ade91804c549486170a2f",
+    "checkedAt": "2026-09-10T17:19:03.022Z"
   },
   "ukpsc-1": {
-    "hash": "0a70302f8c168d7b5d9d23b15f86c79680b2e267b6f69d016ef41e2f4c3724c0",
-    "checkedAt": "2026-09-09T16:39:40.260Z"
+    "hash": "3fde71d6d7d1a83dd262515d627a0eaece8db828b578551b7fdd5577c84a2d20",
+    "checkedAt": "2026-09-10T17:19:02.383Z"
   },
   "vmmc-safdarjung-1": {
-    "hash": "7308c62e468ce7e1182440f3b36ee5f82b23449244ea8e025e368d8790702623",
-    "etag": "\"1788951226-gzip\"",
-    "lastModified": "Wed, 09 Sep 2026 10:53:46 GMT",
-    "checkedAt": "2026-09-09T16:39:41.768Z"
+    "hash": "54ad0f0950b17a98ea2ea49a0709020bb7252f2883bcc4677001f1cd4211e1d6",
+    "etag": "\"1789025120-gzip\"",
+    "lastModified": "Thu, 10 Sep 2026 07:25:20 GMT",
+    "checkedAt": "2026-09-10T17:19:02.931Z"
   },
   "wbssc-1": {
-    "hash": "8642888a859d752bb9ef85a5a653fc9b912f8e5a7f720d15301b51a98723870e",
-    "checkedAt": "2026-09-09T16:39:40.953Z"
+    "hash": "0371210ddcf0df810d5cfdefa7be76fb7b7de8526da344e3f49292f6fd070907",
+    "checkedAt": "2026-09-10T17:19:03.112Z"
   },
   "wbsedcl-1": {
     "hash": "60baf7ec140668efa52c751e86521af12a357c740a9bb14c72a4171c66f24267",
-    "checkedAt": "2026-09-09T16:39:42.628Z"
+    "checkedAt": "2026-09-10T17:19:04.799Z"
   },
   "yantra-india-1": {
-    "hash": "54f6154e7aaedb3701fede3043047ca3fcb47476bdca41a2ac7821eb972e2c87",
-    "checkedAt": "2026-09-09T16:39:42.525Z"
+    "hash": "366cc9e13713475c041a370807e89ab099bae31f80efa69198dc390e665499f2",
+    "checkedAt": "2026-09-10T17:19:04.747Z"
   },
   "ladakh-administration-2": {
     "hash": "a079783070fc53da15e58d815c3dc31e7acf7ffd940d2b3bd0f8b74d6053d178",
     "etag": "\"3af5318b3bdd1:0\"",
     "lastModified": "Thu, 03 Sep 2026 10:01:31 GMT",
-    "checkedAt": "2026-09-09T16:37:00.627Z"
+    "checkedAt": "2026-09-10T17:16:07.914Z"
   },
   "hpbose-1": {
-    "hash": "37bfcb88ce27821ea7faf01ab412c45ba042324ffab1f2a444da72b943b53417",
-    "checkedAt": "2026-09-09T16:38:10.636Z"
+    "hash": "d1557aba02f220ee2806722a442571294619964a4317b0e2bbdb3700855929ae",
+    "checkedAt": "2026-09-10T17:17:09.787Z"
   },
   "hprca-1": {
     "hash": "bb6ea38f91707e865879ef0b7899bcb74a9e58034e1f762160d75fad12a08b7f",
     "etag": "W/\"6a8ef8ad-8bf0\"",
     "lastModified": "Wed, 26 Aug 2026 14:31:09 GMT",
-    "checkedAt": "2026-09-09T16:38:13.829Z"
+    "checkedAt": "2026-09-10T17:17:09.796Z"
   },
   "hprca-2": {
     "hash": "bb6ea38f91707e865879ef0b7899bcb74a9e58034e1f762160d75fad12a08b7f",
     "etag": "W/\"6a8ef8ad-8bf0\"",
     "lastModified": "Wed, 26 Aug 2026 14:31:09 GMT",
-    "checkedAt": "2026-09-09T16:38:13.875Z"
+    "checkedAt": "2026-09-10T17:17:09.833Z"
   },
   "indian-coast-guard-1": {
-    "hash": "7b6e99ad511b1a640bfe44c5ba635ec36e368f0b743c3c1142cdc4e93faddf75",
-    "checkedAt": "2026-09-09T16:38:14.416Z"
+    "hash": "6cfc682d30173379dfe69db485bf1882238ce48fa98c27ca5fd46de41bb2e5d1",
+    "checkedAt": "2026-09-10T17:17:10.124Z"
   },
   "iocl-1": {
     "hash": "f029527e962ab784aa42e6603382b649ec9823d36076b82b9a078d0fed96eef8",
@@ -1302,36 +1302,88 @@
     "checkedAt": "2026-09-09T16:38:33.475Z"
   },
   "meghalaya-psc-3": {
-    "hash": "37333b6400bc90b2f2475b7e3c13a27ca1be286985387f6bb1e0c2c5225d59b4",
-    "checkedAt": "2026-09-09T16:38:46.161Z"
+    "hash": "25603b233aeee734f1ed972a1805e03f8d9dae27b2531020b116ed348f6b7981",
+    "checkedAt": "2026-09-10T17:17:55.718Z"
   },
   "epfo-2": {
-    "hash": "20ccce13610a305d110e8c81f54b4fcb20bdeea7bf10a61b68f3c6095e383523",
-    "checkedAt": "2026-09-09T16:37:41.902Z"
+    "hash": "8fa3e5ca1f49aa9f7bffeb9cf81f1b6c7b85fb938dd9bd2d0247897348282496",
+    "checkedAt": "2026-09-10T17:16:43.260Z"
   },
   "chhattisgarh-high-court-1": {
-    "hash": "9633e1a70da76f3bb09b83fb5e7babea304a0c9a51b8e7f34ece44a4a22a9b1d",
-    "checkedAt": "2026-09-09T16:37:57.601Z"
+    "hash": "447453a17b12fadc4de8379623c3e14d5c05a1a627229f6c10a95f2c8d157210",
+    "checkedAt": "2026-09-10T17:16:56.011Z"
   },
   "nagaland-nssb-3": {
-    "hash": "515b1d90a2c6f77cf87ea2671984be51e5d8a4cf42a4b4430648b9bf2a081630",
-    "checkedAt": "2026-09-09T16:38:50.467Z"
+    "hash": "2074e9e76466980e3d6dc773d1ec2137a9c8d618369c031c1adb94a82171b34f",
+    "checkedAt": "2026-09-10T17:18:00.978Z"
   },
   "nhm-madhya-pradesh-1": {
-    "hash": "303f18c16edde85a172ae2e728b5917944711c9ebabe46f6cf430f613b1a3d9b",
-    "checkedAt": "2026-09-09T16:38:51.896Z"
+    "hash": "cac1216204467c102c393a5eb8cb5a52117941d8017b959ca68aa6157f831674",
+    "checkedAt": "2026-09-10T17:18:00.104Z"
   },
   "nhpc-1": {
-    "hash": "106b404f3e59e1c077fb1d5da920d69ce9e3ca067d8a11f7e41cedcf70aeab07",
-    "lastModified": "Wed, 09 Sep 2026 16:38:51 GMT",
-    "checkedAt": "2026-09-09T16:38:52.467Z"
+    "hash": "31f73d685df1704b7187de33ccd414220320b2b558e33d236d5be58abef40a49",
+    "lastModified": "Thu, 10 Sep 2026 17:18:00 GMT",
+    "checkedAt": "2026-09-10T17:18:04.678Z"
   },
   "bank-of-baroda-1": {
-    "hash": "0b54e82c2ca84512ec6561668ce2976f894da1058699579a02478d874887b769",
-    "checkedAt": "2026-09-09T16:37:19.928Z"
+    "hash": "15e2c3c68449128ca7213b4f99178ee7d536e3ef9de2ee2ec32e1e7e3eee947d",
+    "checkedAt": "2026-09-10T17:16:24.268Z"
   },
   "rites-1": {
-    "hash": "2908610b6b90441f158ee25f3e300199ac41322b625bc26f9e8ab5acd0054d86",
-    "checkedAt": "2026-09-09T16:39:07.841Z"
+    "hash": "288bb9c2d0a27e19a39e552660b9200eb97020ec8dc74cbee957e7722ae67466",
+    "checkedAt": "2026-09-10T17:18:25.129Z"
+  },
+  "cg-state-power-companies-2": {
+    "hash": "a539a73319d589c1243e90ac3cc3001d68d9bd958e88b89c524d42711118b07c",
+    "etag": "\"6a9fd154-4cb\"",
+    "lastModified": "Tue, 08 Sep 2026 09:11:48 GMT",
+    "checkedAt": "2026-09-10T17:16:38.541Z"
+  },
+  "cg-state-power-companies-3": {
+    "hash": "80bf1f3b1323dce02db2cfd7f28bce460c231398ab2e92585c190d30b1ce8799",
+    "etag": "W/\"23c4-liysEAr/o18vqj28FmkW/zcjP1g\"",
+    "checkedAt": "2026-09-10T17:16:38.586Z"
+  },
+  "jkssb-3": {
+    "hash": "37ab87c2dc76e89b2d827571c626843640b3bfd07e9b4752a45d948ea743924f",
+    "lastModified": "Thu, 10 Sep 2026 15:11:10 GMT",
+    "checkedAt": "2026-09-10T17:17:15.456Z"
+  },
+  "manipur-psc-1": {
+    "hash": "1fd757d54673b3f67b5a2f2a791783ee1599a65d93a5585a2e3b329872ab504f",
+    "etag": "\"43bd5d92d936dd1:0\"",
+    "lastModified": "Fri, 28 Aug 2026 10:39:58 GMT",
+    "checkedAt": "2026-09-10T17:17:44.117Z"
+  },
+  "manipur-psc-2": {
+    "hash": "4c9d272479fadebb5d10e8306e726f169ef1abab06a0e9a9c4e4c614ee677d23",
+    "etag": "\"cbc8c820daf7dc1:0\"",
+    "lastModified": "Tue, 09 Jun 2026 06:35:13 GMT",
+    "checkedAt": "2026-09-10T17:17:44.118Z"
+  },
+  "pgimer-2": {
+    "hash": "79f71ceb945f4c50e50e2b539333662b457f0ae0107a4d516edefdb05212f4b7",
+    "checkedAt": "2026-09-10T17:18:07.020Z"
+  },
+  "ssc-2": {
+    "hash": "7ee00011829a7cdaf5640870d9c0ba8fccc95893698a3e2d74cd68b4d82e3fd7",
+    "etag": "W/\"66-9iXr7R4Ws/513yszF5U70b/w+Es\"",
+    "checkedAt": "2026-09-10T17:18:26.141Z"
+  },
+  "ssc-3": {
+    "hash": "d5b8bfeffcf68311331ad7f8aa4991251ebfa9a69708ff4fd4247c3cdd945800",
+    "etag": "W/\"1662-QQCWGGQ0kTHlRBW2O3W0XvZvzWM\"",
+    "checkedAt": "2026-09-10T17:18:26.775Z"
+  },
+  "telangana-mhsrb-2": {
+    "hash": "0658277748f152e616057cabffbeedd8f872804939ba673998da385eea243dda",
+    "etag": "W/\"ef99-AOba5K5+YWqmEwNBsL9lyMggq8c\"",
+    "checkedAt": "2026-09-10T17:18:43.396Z"
+  },
+  "wbssc-2": {
+    "hash": "a1fbe0da65da3a6e4c9032e0b994475e875610c8e74031bf9ec2edb3de40a400",
+    "lastModified": "Mon, 07 Sep 2026 17:57:45 GMT",
+    "checkedAt": "2026-09-10T17:19:04.483Z"
   }
 }
