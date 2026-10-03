@@ -21,6 +21,15 @@ function normalize(contentType: string, body: Buffer) {
   return Buffer.from(body.toString("utf8").replace(/\s+/g, " ").trim());
 }
 
+// fetch reports every network-level failure as "fetch failed"; what actually
+// went wrong (connect timeout, TLS handshake, DNS) is only on the cause.
+function failureDetail(error: unknown) {
+  if (!(error instanceof Error)) return String(error);
+  if (!(error.cause instanceof Error)) return error.message;
+  const code = (error.cause as { code?: unknown }).code;
+  return `${error.message}: ${typeof code === "string" ? code : error.cause.message}`;
+}
+
 async function checkSource(authority: (typeof sourceRegistry)[number], source: (typeof authority.watchUrls)[number]) {
   const old = previous[source.id];
   const elapsedHours = old ? (Date.now() - Date.parse(old.checkedAt)) / 3_600_000 : Number.POSITIVE_INFINITY;
@@ -71,18 +80,30 @@ async function checkSource(authority: (typeof sourceRegistry)[number], source: (
     next[source.id] = snapshot;
     results.push({ id: source.id, authority: authority.name, state, url: source.url });
   } catch (error) {
-    results.push({ id: source.id, authority: authority.name, state: "unreachable", url: source.url, detail: error instanceof Error ? error.message : String(error) });
+    results.push({ id: source.id, authority: authority.name, state: "unreachable", url: source.url, detail: failureDetail(error) });
   } finally {
     clearTimeout(timeout);
   }
 }
 
 const jobs = sourceRegistry.flatMap((authority) => authority.watchUrls.map((source) => ({ authority, source })));
-for (let index = 0; index < jobs.length; index += MAX_CONCURRENCY) {
-  await Promise.all(
-    jobs.slice(index, index + MAX_CONCURRENCY).map(({ authority, source }) => checkSource(authority, source)),
-  );
-}
+// A pool, not lock-step batches. A batch lasted as long as its slowest host, so
+// every page that hung until its timeout left the other slots idle — on the
+// GitHub runner, where many official hosts never answer, that stretched the
+// run to within seconds of the job's time limit.
+let nextJob = 0;
+await Promise.all(
+  Array.from({ length: MAX_CONCURRENCY }, async () => {
+    while (nextJob < jobs.length) {
+      const { authority, source } = jobs[nextJob++];
+      await checkSource(authority, source);
+    }
+  }),
+);
+// Results arrive in completion order; report them in registry order so one
+// day's report lines up with the next.
+const registryOrder = new Map(jobs.map(({ source }, index) => [source.id, index]));
+results.sort((a, b) => registryOrder.get(a.id)! - registryOrder.get(b.id)!);
 
 if (shouldWrite) await writeFile(statePath, `${JSON.stringify(next, null, 2)}\n`, "utf8");
 console.log(JSON.stringify({ checkedAt: new Date().toISOString(), writeState: shouldWrite, results }, null, 2));
