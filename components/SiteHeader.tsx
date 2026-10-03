@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { InstallApp } from "@/components/InstallApp";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const navItems = [
@@ -41,6 +42,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="header-actions">
+          <InstallApp variant="header" />
           <ThemeToggle />
           <Link className="header-search" href="/search" prefetch={false} aria-label="Search the exam index">
             <span aria-hidden="true">⌕</span>
@@ -54,6 +56,7 @@ export function SiteHeader() {
                   {item.label}
                 </Link>
               ))}
+              <InstallApp variant="menu" />
             </nav>
           </details>
         </div>

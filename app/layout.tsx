@@ -19,6 +19,39 @@ const themeBootstrap = `
   })();
 `;
 
+/**
+ * Chromium fires `beforeinstallprompt` once, possibly before React hydrates,
+ * so it is caught here and kept for the Install app button
+ * (components/InstallApp.tsx). Holding it also stops the browser's own
+ * mini-infobar, since the header offers the same thing.
+ */
+const installBootstrap = `
+  (function () {
+    function changed() { window.dispatchEvent(new Event("installpromptchange")); }
+    window.addEventListener("beforeinstallprompt", function (event) {
+      event.preventDefault();
+      window.__installPrompt = event;
+      changed();
+    });
+    window.addEventListener("appinstalled", function () {
+      window.__installPrompt = null;
+      changed();
+    });
+  })();
+`;
+
+/**
+ * Only production builds get the service worker: `next dev` serves unhashed
+ * chunks under /_next/static/, which public/sw.js would pin in its cache.
+ */
+const serviceWorkerBootstrap = `
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("/sw.js").catch(function () {});
+    });
+  }
+`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
@@ -87,6 +120,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en-IN" suppressHydrationWarning>
       <body>
         <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
+        <script dangerouslySetInnerHTML={{ __html: installBootstrap }} />
+        {process.env.NODE_ENV === "production" && (
+          <script dangerouslySetInnerHTML={{ __html: serviceWorkerBootstrap }} />
+        )}
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

@@ -120,6 +120,42 @@ test("ships one brand mark that is also the favicon", async () => {
   }
 });
 
+test("can be installed as an app and still opens offline", async () => {
+  const html = await (await render()).text();
+  assert.match(html, /<link[^>]+rel="manifest"[^>]+href="\/manifest\.webmanifest"/);
+  assert.match(html, /addEventListener\("beforeinstallprompt"/, "the install prompt must be caught before hydration");
+  assert.match(html, /navigator\.serviceWorker\.register\("\/sw\.js"\)/);
+
+  const manifest = JSON.parse(await readFile(new URL("manifest.webmanifest", outputRoot), "utf8"));
+  assert.ok(manifest.name && manifest.short_name, "an installable app needs a name and a short name");
+  assert.equal(manifest.display, "standalone");
+  assert.equal(manifest.start_url, "/");
+  for (const sizes of ["192x192", "512x512"]) {
+    assert.ok(
+      manifest.icons.some((icon) => icon.sizes === sizes && (icon.purpose ?? "any").split(" ").includes("any")),
+      `the manifest needs a ${sizes} icon`,
+    );
+  }
+  assert.ok(manifest.icons.some((icon) => icon.purpose === "maskable"), "Android launchers need a maskable icon");
+  for (const icon of manifest.icons) {
+    const { size } = await stat(new URL(icon.src.replace(/^\//, ""), outputRoot));
+    assert.ok(size > 500, `${icon.src} should be a real generated icon`);
+  }
+  for (const shortcut of manifest.shortcuts ?? []) {
+    await access(new URL(`${shortcut.url.replace(/^\//, "")}index.html`, outputRoot));
+  }
+
+  // The worker precaches its offline page and that page's stylesheets, found by
+  // the same pattern it uses here, so the page renders styled with no network.
+  const worker = await readFile(new URL("sw.js", outputRoot), "utf8");
+  const offlineUrl = worker.match(/const OFFLINE_URL = "([^"]+)"/)?.[1];
+  assert.ok(offlineUrl?.endsWith("/"), "the offline page must be the served URL, not a redirect");
+  const offline = await readFile(new URL(`${offlineUrl.replace(/^\//, "")}index.html`, outputRoot), "utf8");
+  assert.match(offline, /You are offline/);
+  assert.match(offline, /<meta[^>]+name="robots"[^>]+content="noindex/);
+  assert.match(offline, /href="\/_next\/static\/[^"]+\.css"/);
+});
+
 test("exports the searchable catalogue as useful HTML before JavaScript", async () => {
   const response = await render("/exams");
   assert.equal(response.status, 200);
