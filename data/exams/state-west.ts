@@ -224,11 +224,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["Postgraduate", "Professional degree"],
     status: {
-      label: "Subject-wise lists and detailed application forms",
+      label: "Detailed application windows closed; document scrutiny awaited",
       tone: "violet",
-      nextAction: "If your subject list is out, file the online detailed application form inside its window",
+      nextAction: "Keep two printed copies of your detailed application form and watch for the Secondary Education Department's document-verification call",
       detail:
-        "RPSC is releasing this cycle subject by subject: it publishes a provisional list for eligibility checking and then opens an online detailed application form for the candidates on it. The final chance its press note of 27 Aug 2026 gave the candidates of seven subjects closed on 1 Sep 2026, and that note said no further chance would be given. RPSC's own news list, re-read on 9 Sep 2026, carries further press notes opening detailed application form windows for more subjects that run into September 2026, so read the press note for your own subject; no consolidated result or scrutiny schedule for the cycle is published.",
+        "RPSC released this cycle subject by subject: a provisional list for eligibility checking, then an online detailed application form for the candidates on it. Its press notes of 9 Sep 2026 opened the window for Maths, Urdu and Rajasthani from 10 to 16 Sep and a second chance for Geography and Physics from 10 to 14 Sep, and its press note of 17 Sep 2026 gave three candidates of Geography, Drawing and Sanskrit a final chance from 18 to 22 Sep 2026, saying no further chance would be given. RPSC says the forms and documents will be verified by the Secondary Education Department, Bikaner, which will call candidates itself. Its news list, re-read on 3 Oct 2026, shows no newer subject list or window and no final result.",
     },
     summary: "Rajasthan recruitment for School Lecturer posts across 27 subjects in the School Education Department.",
     vacancies: 3225,
@@ -260,9 +260,17 @@ export const exams: Exam[] = [
         label: "Subject-wise online detailed application form windows for further subjects",
         sortMonth: "2026-09",
         displayDate: "September 2026, subject by subject",
-        state: "current",
+        state: "completed",
+        note: "Sanskrit 8–14 Sep, Drawing 9–15 Sep, Maths, Urdu and Rajasthani 10–16 Sep, and a second chance for Geography and Physics 10–14 Sep 2026",
       },
-      { label: "Remaining subject-wise results and eligibility scrutiny", displayDate: "Subject-wise · awaited", state: "tentative" },
+      {
+        label: "Online detailed application form — final chance for Geography, Drawing and Sanskrit",
+        date: "2026-09-18",
+        displayDate: "18–22 Sep 2026, 11:59 PM",
+        state: "completed",
+        note: "Press note of 17 Sep 2026, for three named candidates; closed as notified, with no further chance on RPSC's news list when re-read on 3 Oct 2026",
+      },
+      { label: "Document verification by the Secondary Education Department and final results", displayDate: "Subject-wise · awaited", state: "tentative" },
     ],
     eligibility: [
       "Relevant postgraduate subject must match the advertised lecturer subject.",
@@ -291,17 +299,27 @@ export const exams: Exam[] = [
       { label: "Official advertisement PDF", url: "https://rpsc.rajasthan.gov.in/Static/RecruitmentAdvertisements/9C26ACB4C6014924AF100B4D7FE67C27.pdf", type: "notice" },
       { label: "Official exam dates", url: "https://rpsc.rajasthan.gov.in/proposedexamdate?Pie=343", type: "calendar" },
       {
+        label: "Press note on the online detailed application form, 17 Sep 2026",
+        url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/AECFABA6-CDF8-4FF2-86FF-89EC318CEE84.pdf",
+        type: "notice",
+      },
+      {
+        label: "Press note on Maths, Urdu and Rajasthani forms, 9 Sep 2026",
+        url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/7CBAACC8-851B-4AE2-96C4-77BCE0344264.pdf",
+        type: "notice",
+      },
+      {
         label: "Press note on the online detailed application form, 27 Aug 2026",
         url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/FF75B4E6-79F4-4DB1-A1A9-396843C10543.pdf",
         type: "notice",
       },
       { label: "RPSC latest news and press notes", url: "https://rpsc.rajasthan.gov.in/", type: "website" },
     ],
-    sourceTitle: "RPSC School Lecturer 2025 advertisement, subject-wise lists and the press note of 27 Aug 2026",
-    sourceUrl: "https://rpsc.rajasthan.gov.in/advertisements?Pie=343",
+    sourceTitle: "RPSC School Lecturer 2025 advertisement, subject-wise lists and its press notes of 27 Aug, 9 Sep and 17 Sep 2026",
+    sourceUrl: "https://rpsc.rajasthan.gov.in/Static/PressNotes/AECFABA6-CDF8-4FF2-86FF-89EC318CEE84.pdf",
     sourcePublished:
-      "Advertisement 17 Jul 2025; subject-wise lists for eligibility checking issued from 7 Aug 2026; press note on the online detailed application form dated 27 Aug 2026; RPSC news and press-note list re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:05 IST",
+      "Advertisement 17 Jul 2025; subject-wise lists for eligibility checking issued 7 Aug – 3 Sep 2026; press notes on the online detailed application form dated 27 Aug, 9 Sep and 17 Sep 2026; RPSC news and press-note list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:18 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -312,6 +330,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "The final-chance window for the seven subjects named in the press note of 27 Aug 2026 closed on 1 Sep 2026. RPSC's news list, re-read on 9 Sep 2026, shows it has gone on opening subject-wise online detailed application form windows into September 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The detailed application windows have closed. RPSC's press notes of 9 Sep 2026 ran the Maths, Urdu and Rajasthani window from 10 to 16 Sep and a second chance for Geography and Physics to 14 Sep, and its press note of 17 Sep 2026 gave three candidates a last chance to 22 Sep 2026. RPSC says the Secondary Education Department, Bikaner will verify the forms and documents and call candidates itself.",
       },
     ],
   }),
@@ -333,11 +356,11 @@ export const exams: Exam[] = [
     examTypes: ["Specialist & Professional"],
     education: ["Postgraduate", "Professional degree"],
     status: {
-      label: "Exam held; model answer key published",
+      label: "Answer-key objections closed; result awaited",
       tone: "violet",
-      nextAction: "Check the model answer key and file any objection inside the window RPSC's press note allows",
+      nextAction: "Wait for RPSC to publish the result; the answer-key objection window closed on 10 Sep 2026",
       detail:
-        "The examination was held on 30 Aug 2026 from 11:00 AM to 1:30 PM as fixed by RPSC's press note of 21 Aug 2026, after exam-district information opened on the SSO portal on 23 Aug 2026 and admit cards were uploaded on 27 Aug 2026. On the day of the examination RPSC published the model answer key for the Statistical Officer (Statistics Department) Competitive Examination 2025 together with a press note on filing online objections to it. Its news list, re-read on 9 Sep 2026, publishes no result for the examination yet.",
+        "The examination was held on 30 Aug 2026 from 11:00 AM to 1:30 PM as fixed by RPSC's press note of 21 Aug 2026, after exam-district information opened on the SSO portal on 23 Aug 2026 and admit cards were uploaded on 27 Aug 2026. On 7 Sep 2026 RPSC published the model answer key with a press note allowing online objections from 8 to 10 Sep 2026 at ₹100 per question. Its news list, re-read on 3 Oct 2026, publishes no result for the examination yet.",
     },
     summary: "Rajasthan recruitment examination for Statistical Officer posts in the Statistics Department.",
     vacancyLabel: "See advertisement 11/2025–26",
@@ -354,9 +377,16 @@ export const exams: Exam[] = [
       { label: "Exam", date: "2026-08-30", displayDate: "30 Aug 2026, 11:00 AM – 1:30 PM", state: "completed" },
       {
         label: "Model answer key and press note on online objections",
-        date: "2026-08-30",
-        displayDate: "30 Aug 2026",
+        date: "2026-09-07",
+        displayDate: "7 Sep 2026",
         state: "completed",
+      },
+      {
+        label: "Online objection window",
+        date: "2026-09-08",
+        displayDate: "8–10 Sep 2026, to midnight",
+        state: "completed",
+        note: "₹100 per question; closed as notified, with no extension on RPSC's news list when re-read on 3 Oct 2026",
       },
       { label: "Result", displayDate: "To be announced", state: "tentative" },
     ],
@@ -394,13 +424,18 @@ export const exams: Exam[] = [
         url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/BC0C0054-874B-4843-B8A6-769FF4A6FF4E.pdf",
         type: "notice",
       },
+      {
+        label: "Press note on online objections to the model answer key, 7 Sep 2026",
+        url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/C578123D-2427-4E41-A08C-F88E266E48CF.pdf",
+        type: "notice",
+      },
       { label: "RPSC latest news and press notes", url: "https://rpsc.rajasthan.gov.in/", type: "website" },
     ],
     sourceTitle: "RPSC recruitment advertisement list, the consolidated 2026 calendar and the press note of 21 Aug 2026",
     sourceUrl: "https://rpsc.rajasthan.gov.in/forthcomingexaminations",
     sourcePublished:
-      "Calendar released 26 Dec 2025; exam-district and admit-card press note dated 21 Aug 2026; model answer key and objection press note published 30 Aug 2026; RPSC news list re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:05 IST",
+      "Calendar released 26 Dec 2025; exam-district and admit-card press note dated 21 Aug 2026; model answer key and objection press note published 7 Sep 2026; RPSC news list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:41 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -411,6 +446,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "The examination has been held. RPSC published the model answer key for the Statistical Officer Competitive Examination 2025 and a press note on filing online objections to it on 30 Aug 2026, so the record now sits at the result-awaited stage rather than showing an upcoming exam.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Correction: RPSC published the model answer key and its objection press note on 7 Sep 2026, not on the exam day as stated on 9 Sep. Online objections ran from 8 to 10 Sep 2026 and that window has closed; the result is awaited.",
       },
     ],
   }),
@@ -439,7 +479,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch GPSC's notice stream for the main-examination date after the court rules",
       detail:
-        "The main-examination form and document-upload window closed on 27 Aug 2026. GPSC's important notice of the same day says petitions challenging some answers in the preliminary final answer key are pending before the High Court, that the court's judgment will bind every candidate of this advertisement, and that the main written examination will be held after it. No main-examination date is published.",
+        "The main-examination form and document-upload window closed on 27 Aug 2026. GPSC's important notice of the same day says petitions challenging some answers in the preliminary final answer key are pending before the High Court, that the court's judgment will bind every candidate of this advertisement, and that the main written examination will be held after it. GPSC's advertisement page and notice stream, re-read on 3 Oct 2026, publish no main-examination date.",
     },
     summary: "Combined recruitment to Gujarat Administrative Service Class I, Gujarat Civil Services Class I and II, and Municipal Chief Officer Service Class II.",
     vacancies: 213,
@@ -502,8 +542,8 @@ export const exams: Exam[] = [
     sourceTitle: "GPSC advertisement 05/2026-27 detail page and its linked documents",
     sourceUrl: "https://gpsc.gujarat.gov.in/AdvertisementDetail?no=2333&tab=Advertisement",
     sourcePublished:
-      "Mains form-filling and document-upload notice dated 6 Aug 2026; language-selection notice for main question papers dated 12 Aug 2026; important notice on the pending High Court petitions dated 27 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:25 IST",
+      "Mains form-filling and document-upload notice dated 6 Aug 2026; language-selection notice for main question papers dated 12 Aug 2026; important notice on the pending High Court petitions dated 27 Aug 2026; advertisement page and notice stream re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:01 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -535,7 +575,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch GPSC's notice stream for the final main answer key and the result",
       detail:
-        "GPSC's provisional main answer key for advertisement 01/2026-27 was published on 1 Aug 2026 for the examination its own answer-key sheet dates 19 Jul 2026. The online objection window ran from 3 Aug 2026 and closed at 4:00 PM on 6 Aug 2026, at ₹100 an objection. No final answer key or result for this advertisement had appeared on GPSC's notice stream when this record was checked.",
+        "GPSC's provisional main answer key for advertisement 01/2026-27 was published on 1 Aug 2026 for the examination its own answer-key sheet dates 19 Jul 2026. The online objection window ran from 3 Aug 2026 and closed at 4:00 PM on 6 Aug 2026, at ₹100 an objection. No final main answer key or result had appeared on GPSC's page for this advertisement when it was re-read on 3 Oct 2026.",
     },
     summary:
       "Class I and II civil-engineering service recruitment for Gujarat's Narmada, Water Resources, Water Supply and Kalpsar Department and Road and Building Department, as named on GPSC's own answer-key sheet for advertisement 01/2026-27.",
@@ -579,8 +619,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "GPSC provisional main answer key for advertisement 01/2026-27, Gujarat Engineering Service (Civil)",
     sourceUrl: "https://gpsc.gujarat.gov.in/Documents/AdvertismentDocument/PAKE(Mains)-01-2026-27.pdf",
-    sourcePublished: "Provisional main answer key published 1 Aug 2026 for the examination it dates 19 Jul 2026; objections closed 6 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:28 IST",
+    sourcePublished: "Provisional main answer key published 1 Aug 2026 for the examination it dates 19 Jul 2026; advertisement page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 16:56 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -608,11 +648,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Specialist & Professional"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Main examination notified for 3 Oct – 1 Nov 2026",
-      tone: "blue",
-      nextAction: "If you qualified the preliminary examination, submit the Main examination application by 23:59 on 10 Sep 2026 and pay the fee by 13 Sep 2026",
+      label: "Main examination postponed; revised dates awaited",
+      tone: "red",
+      nextAction: "Wait for MPSC to announce the revised State Services Main Examination dates; the 3 Oct – 1 Nov 2026 schedule no longer stands",
       detail:
-        "MPSC notification 018/2026 of 25 Aug 2026 opens the State Services Main Examination 2026 for the candidates who qualified the preliminary examination held on 31 May 2026 under advertisement 132/2025. It states that the preliminary result declared on 22 Jun 2026 ran for 238 posts and that the Main examination will be held from 3 Oct to 1 Nov 2026 at the Amravati, Chhatrapati Sambhajinagar, Nagpur, Nashik, Navi Mumbai and Pune district centres. Applications are accepted online from 14:00 on 27 Aug 2026 to 23:59 on 10 Sep 2026, with the fee payable online only until 23:59 on 13 Sep 2026; challan payment is discontinued. A corrigendum of 2 Sep 2026 revises the disability particulars for Assistant Group Development Officer, Group-B and Accounts Officer, Group-B and paragraph 6.3 on final-year candidates. MPSC's advertisement and result streams, read on 10 Sep 2026, publish nothing newer under this cycle.",
+        "MPSC's press note of 28 Sep 2026 postpones the State Services Main Examination 2026, which notification 018/2026 of 25 Aug 2026 had fixed from 3 Oct to 1 Nov 2026 for the candidates who qualified the preliminary examination of 31 May 2026 under advertisement 132/2025, along with the Maharashtra Civil Engineering Main Examination 2026 and the Group-B (Non-Gazetted) Main Examination 2026. It cites the Commission's decision to re-evaluate the State Services Main Examination 2025 answer sheets, the expected recommendations of the State Government's high-level committee on examination systems, and representations from students, parents and public representatives, and says the revised dates will be announced separately. The Main examination application closed on 10 Sep 2026 and the online fee window on 13 Sep 2026, with no extension. A note of 21 Sep 2026 says the Main examination will use a question-cum-answer booklet. MPSC's advertisement and announcement streams, read on 3 Oct 2026, publish no revised dates.",
     },
     summary: "Combined preliminary recruitment to Maharashtra gazetted Group A and Group B state, engineering and specialist services.",
     vacancyLabel: "238 posts in the State Services stream",
@@ -633,7 +673,7 @@ export const exams: Exam[] = [
     ],
     selectionStages: [
       "Combined preliminary examination — held on 31 May 2026, with service-wise results published on MPSC's official results page on 22 Jun 2026 (State Services and Veterinary Services) and 23 Jun 2026 (Civil Engineering Services)",
-      "State Services Main Examination 2026 under notification 018/2026 — nine papers held from 3 Oct to 1 Nov 2026, each in the 11:00 to 14:00 session, at the Amravati, Chhatrapati Sambhajinagar, Nagpur, Nashik, Navi Mumbai and Pune district centres, with cadre options submitted through MPSC's online application system between 27 Aug and 10 Sep 2026",
+      "State Services Main Examination 2026 under notification 018/2026 — nine papers notified for 3 Oct to 1 Nov 2026, each in the 11:00 to 14:00 session, at the Amravati, Chhatrapati Sambhajinagar, Nagpur, Nashik, Navi Mumbai and Pune district centres, with cadre options submitted online between 27 Aug and 10 Sep 2026; postponed by MPSC's press note of 28 Sep 2026, with revised dates to be announced",
       "Later stages set out in MPSC's standing 'Scheme of Examination' for the Maharashtra Civil Services Gazetted Group-A and Group-B Examination, published 24 Dec 2025 and amended by a corrigendum of 27 Apr 2026",
     ],
     syllabus: [
@@ -676,24 +716,33 @@ export const exams: Exam[] = [
         label: "Last date to submit the Main examination application",
         date: "2026-09-10",
         displayDate: "10 Sep 2026, 11:59 PM",
-        state: "current",
+        state: "completed",
+        note: "Closed as notified; no extension on MPSC's board when re-read on 3 Oct 2026",
       },
       {
-        label: "Last date to pay the Main examination fee online",
+        label: "Main examination online fee payment window ends",
         date: "2026-09-13",
         displayDate: "13 Sep 2026, 11:59 PM",
-        state: "scheduled",
-        note: "Online payment only — debit card, credit card, net banking or UPI; challan payment is discontinued",
+        state: "completed",
+        note: "Online payment only; closed as notified, with no extension on MPSC's board when re-read on 3 Oct 2026",
       },
+      { label: "Announcement on the question-cum-answer booklet", date: "2026-09-21", displayDate: "21 Sep 2026", state: "completed" },
+      { label: "Press note postponing the Main examination", date: "2026-09-28", displayDate: "28 Sep 2026", state: "completed" },
       {
         label: "State Services Main Examination 2026",
         date: "2026-10-03",
         displayDate: "3 Oct – 1 Nov 2026",
-        state: "scheduled",
-        note: "Language Paper 1 on 3 Oct, Language Paper 2 on 4 Oct, Essay Paper 3 on 5 Oct, General Studies Papers 4 to 7 on 10, 11, 17 and 18 Oct, and optional-subject Papers 8 and 9 on 31 Oct and 1 Nov 2026; every paper 11:00 to 14:00 at Amravati, Chhatrapati Sambhajinagar, Nagpur, Nashik, Navi Mumbai and Pune",
+        state: "postponed",
+        note: "Postponed by MPSC's press note of 28 Sep 2026; nine papers had been notified for 3, 4, 5, 10, 11, 17, 18 and 31 Oct and 1 Nov 2026 at six district centres",
       },
+      { label: "Revised Main examination dates", displayDate: "To be announced", state: "tentative" },
     ],
     officialLinks: [
+      {
+        label: "Press note of 28 Sep 2026 postponing the Main examination",
+        url: "https://mpsc.gov.in/downloadFile/english/14452",
+        type: "notice",
+      },
       { label: "Advertisement 132/2025 (official PDF)", url: "https://mpsc.gov.in/downloadFile/english/12414", type: "notice" },
       {
         label: "Notification 018/2026 — State Services Main Examination 2026",
@@ -711,16 +760,21 @@ export const exams: Exam[] = [
       { label: "MPSC official results", url: "https://mpsc.gov.in/result_of_exam/11", type: "result" },
       { label: "MPSC advertisements", url: "https://mpsc.gov.in/adv_notification/8", type: "notice" },
     ],
-    sourceTitle: "MPSC advertisement 132/2025 and notification 018/2026 for the State Services Main Examination 2026",
-    sourceUrl: "https://mpsc.gov.in/downloadFile/english/12414",
+    sourceTitle: "MPSC press note of 28 Sep 2026 postponing the State Services Main Examination 2026, with notification 018/2026 and advertisement 132/2025",
+    sourceUrl: "https://mpsc.gov.in/downloadFile/english/14452",
     sourcePublished:
-      "Advertisement and scheme published 24 Dec 2025; corrigenda 27 Apr, 6 May and 17 Jun 2026; service-wise preliminary results 22-23 Jun 2026; Main examination notification 018/2026 (No. CMA-0425/Pra.Kra.141/2025/Jahirat) dated 25 Aug 2026 and its corrigendum dated 2 Sep 2026; MPSC's advertisement and result streams re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:05 IST",
+      "Advertisement and scheme published 24 Dec 2025; corrigenda 27 Apr, 6 May and 17 Jun 2026; service-wise preliminary results 22-23 Jun 2026; Main examination notification 018/2026 (No. CMA-0425/Pra.Kra.141/2025/Jahirat) dated 25 Aug 2026 and its corrigendum dated 2 Sep 2026; answer-booklet note of 21 Sep 2026; postponement press note dated 28 Sep 2026; MPSC's advertisement and announcement streams re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:01 IST",
     changeLog: [
       {
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "The main examination now has dates and a notification. MPSC's notification 018/2026 of 25 Aug 2026 fixes the State Services Main Examination 2026 from 3 Oct to 1 Nov 2026 at six district centres, opens the online application from 27 Aug to 10 Sep 2026 with the fee payable until 13 Sep 2026, and records that the preliminary examination was held on 31 May 2026 and its result of 22 Jun 2026 processed for 238 posts. A corrigendum of 2 Sep 2026 revises the disability particulars for two Group-B cadres and the rule for final-year degree candidates.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The State Services Main Examination 2026 is postponed. MPSC's press note of 28 Sep 2026 withdraws the 3 Oct – 1 Nov 2026 schedule set by notification 018/2026, together with the Civil Engineering and Group-B (Non-Gazetted) Main examinations 2026, and says revised dates will be announced separately. The Main examination application and fee windows closed on 10 and 13 Sep 2026 without extension.",
       },
     ],
   }),
@@ -827,7 +881,7 @@ export const exams: Exam[] = [
       },
       { label: "Last date to apply", date: "2026-08-10", displayDate: "10 Aug 2026, 11:59 PM", state: "completed" },
       {
-        label: "Last date to pay the examination fee online",
+        label: "Online examination fee payment window ends",
         date: "2026-08-13",
         displayDate: "13 Aug 2026, 11:59 PM",
         state: "completed",
@@ -867,8 +921,8 @@ export const exams: Exam[] = [
     sourceTitle: "MPSC advertisement 017/2026, its corrigenda and the revised Group C Scheme of Examination",
     sourceUrl: "https://mpsc.gov.in/downloadFile/english/13855",
     sourcePublished:
-      "Revised scheme 20 May 2026; advertisement 25 Jun 2026; corrigenda 16, 22 and 27 Jul and 5 Aug 2026; pattern announcement 1 Aug 2026; corrigendum No. CMA-0426/Pra.Kra.42/2026/Jahirat revising the examination date dated 9 Sep 2026; MPSC's advertisement stream re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:08 IST",
+      "Revised scheme 20 May 2026; advertisement 25 Jun 2026; corrigenda 16, 22 and 27 Jul and 5 Aug 2026; pattern announcement 1 Aug 2026; corrigendum No. CMA-0426/Pra.Kra.42/2026/Jahirat revising the examination date dated 9 Sep 2026; MPSC's advertisement and announcement streams re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:01 IST",
     changeLog: [
       {
         date: "2026-09-10",
@@ -906,7 +960,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Check the provisional result and mark statement for the 6 Sep 2026 repeat pre-screening test on the Commission's results page",
       detail:
-        "Goa PSC held the pre-screening test for advertisement 09/2025 on 13 and 14 June 2026 and published its provisional mark statement together with two provisional lists — the candidates shortlisted for the screening test, and those shortlisted for a repeat pre-screening test. Its notice for the post said the new date for the repeat pre-screening test would be intimated by email once the final result of the pre-screening test was declared. The Commission then listed the post in its CBRT notice for 5 and 6 September 2026 and held the repeat test on 6 September 2026; its results page, read on 9 Sep 2026, carries the provisional result and the provisional mark statement for that test.",
+        "Goa PSC held the pre-screening test for advertisement 09/2025 on 13 and 14 June 2026 and published its provisional mark statement together with two provisional lists — the candidates shortlisted for the screening test, and those shortlisted for a repeat pre-screening test. Its notice for the post said the new date for the repeat pre-screening test would be intimated by email once the final result of the pre-screening test was declared. The Commission then listed the post in its CBRT notice for 5 and 6 September 2026 and held the repeat test on 6 September 2026; its results and advertisement pages, re-read on 3 Oct 2026, carry only the provisional result and mark statement for that test and no screening-test date.",
     },
     summary: "Recruitment to Junior Scale Officer posts in the Goa Civil Service through the state Public Service Commission.",
     timeline: [
@@ -982,8 +1036,8 @@ export const exams: Exam[] = [
     sourceTitle: "Goa PSC provisional result of the repeat pre-screening test for Junior Scale Officer of Goa Civil Service, advertisement 09/2025",
     sourceUrl: "https://gpsc.goa.gov.in/wp-content/uploads/2026/09/7_REPEATPRESCREEN_PROVRES_GPSC0.pdf",
     sourcePublished:
-      "Advertisement published 5 Sep 2025; CBRT syllabus 13 May 2026; pre-screening test results June 2026; repeat pre-screening test held 6 Sep 2026 with its provisional result and mark statement on the Commission's results page, read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:20 IST",
+      "Advertisement published 5 Sep 2025; CBRT syllabus 13 May 2026; pre-screening test results June 2026; repeat pre-screening test held 6 Sep 2026 with its provisional result and mark statement on the Commission's results page, re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:17 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -1020,7 +1074,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Commission's website and your registered email for the interview or prescreening notice",
       detail:
-        "Applications for Advertisement No. 07 Year 2026 closed on 24 July 2026. The advertisement states that where the number of applications is large the Commission shortlists the candidates to be called for interview. The Commission's advertisement, qualified-list and result pages, re-read on 10 Sep 2026, still carry no qualified list, interview notice or Computer Based Recruitment Test notice naming this advertisement — the CBRT notice for the tests of 5 and 6 Sep 2026 covers Advertisements 09/2025, 01/2026, 02/2026 and 03/2026 only.",
+        "Applications for Advertisement No. 07 Year 2026 closed on 24 July 2026. The advertisement states that where the number of applications is large the Commission shortlists the candidates to be called for interview. The Commission's advertisement, qualified-list and result pages, re-read on 3 Oct 2026, still carry no qualified list, interview notice or Computer Based Recruitment Test notice naming this advertisement — the CBRT notice for the tests of 5 and 6 Sep 2026 covers Advertisements 09/2025, 01/2026, 02/2026 and 03/2026 only.",
     },
     summary:
       "Goa Public Service Commission recruitment to six professional and teaching posts across the Captain of Ports Department, Public Health Department, Directorate of Technical Education, Department of Archives and Directorate of Higher Education.",
@@ -1087,8 +1141,8 @@ export const exams: Exam[] = [
     sourceTitle: "Goa Public Service Commission Advertisement No. 07 Year 2026",
     sourceUrl: "https://gpsc.goa.gov.in/wp-content/uploads/2026/07/Advt.-No.-07-Year-2026-website.pdf",
     sourcePublished:
-      "Published 10 Jul 2026 in the Navhind Times, Herald, Lokmat, Tarun Bharat, Gomantak and Bhangarbhuy; last date 24 Jul 2026; Commission's advertisement, qualified-list and result pages re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:10 IST",
+      "Published 10 Jul 2026 in the Navhind Times, Herald, Lokmat, Tarun Bharat, Gomantak and Bhangarbhuy; last date 24 Jul 2026; Commission's advertisement, qualified-list and result pages re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:52 IST",
   }),
   exam({
     slug: "dnhdd-disaster-management-professional-staff-2026",
@@ -1112,7 +1166,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch ddd.gov.in for the interview date and time",
       detail:
-        "Applications closed on 7 August 2026 and the notice has since dropped off the UT Administration's live recruitment listing. Notice No. 27/UTEOC/DM/SFDRR/2023-24/01 states the interview date and time will be uploaded on ddd.gov.in; no such date had been published when this record was re-checked on 29 Aug 2026.",
+        "Applications closed on 7 August 2026 and the notice has since dropped off the UT Administration's live recruitment listing. Notice No. 27/UTEOC/DM/SFDRR/2023-24/01 states the interview date and time will be uploaded on ddd.gov.in; no such date was on the listing, its archive or the latest updates when re-read on 3 Oct 2026.",
     },
     summary: "Professional staff recruitment for the Union Territory Disaster Management Cell under the Revenue and Disaster Management Secretariat.",
     vacancyLabel: NOT_ANNOUNCED,
@@ -1161,8 +1215,8 @@ export const exams: Exam[] = [
     sourceTitle: "DNHDD recruitment notice for Disaster Management Cell professional staff",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/20260716628244246.pdf",
     sourcePublished:
-      "Official listing open 16 Jul to 7 Aug 2026; ddd.gov.in recruitment listing re-read 29 Aug 2026 no longer carries the notice and shows no interview date",
-    lastVerified: "29 Aug 2026, 15:30 IST",
+      "Official listing open 16 Jul to 7 Aug 2026; ddd.gov.in recruitment listing and archive re-read 3 Oct 2026 show no interview date",
+    lastVerified: "3 Oct 2026, 17:01 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1204,7 +1258,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the UT Administration's recruitment listing for the engagement order",
       detail:
-        "The Directorate of Education published this notice on 3 August 2026 and held the walk-in-interview at Shiksha Sadan, Moti Daman on 10 August 2026. The notice has since dropped off the UT Administration's live recruitment listing and no selection or engagement order has been published for it.",
+        "The Directorate of Education published this notice on 3 August 2026 and held the walk-in-interview at Shiksha Sadan, Moti Daman on 10 August 2026. The notice has since dropped off the UT Administration's live recruitment listing, and no selection or engagement order was on the listing or its archive when re-read on 3 Oct 2026.",
     },
     summary:
       "Walk-in-interview by the Directorate of Education under Samagra Shiksha to engage Trained Graduate Teachers and Post Graduate Teachers on short-term contract in government schools of the Dadra and Nagar Haveli and Daman districts.",
@@ -1265,8 +1319,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Directorate of Education, Samagra Shiksha, Moti Daman — walk-in-interview notice for TGTs and PGTs",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/08/20260803608077527.pdf",
-    sourcePublished: "Notice dated 3 Aug 2026; UT listing ran 3 Aug to 10 Aug 2026 and was re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:31 IST",
+    sourcePublished: "Notice dated 3 Aug 2026; UT listing ran 3 Aug to 10 Aug 2026; listing and archive re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 17:01 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1302,7 +1356,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch ddd.gov.in for the shortlist and interview schedule — no call letters are posted",
       detail:
-        "The Office of the Principal, Government Engineering College, Daman published this advertisement on 21 July 2026 and accepted applications from 22 July 2026 up to 5:00 PM on 21 August 2026. That deadline has passed with no extension, the notice has dropped off the UT Administration's live recruitment listing, and no shortlist or interview schedule has been published.",
+        "The Office of the Principal, Government Engineering College, Daman published this advertisement on 21 July 2026 and accepted applications from 22 July 2026 up to 5:00 PM on 21 August 2026. That deadline passed with no extension and no shortlist or interview schedule was on the listing or its archive when re-read on 3 Oct 2026. GEC's new advertisement of 9 Sep 2026 is for a different post (Bio-Medical Engineering).",
     },
     summary:
       "Recruitment of one Assistant Professor in English at Government Engineering College, Daman, on short term contract for a period of six months under the UT Administration.",
@@ -1349,8 +1403,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Government Engineering College, Daman — advertisement No. 1.0-EST-GEC/Volume-III/2026-27/413",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/202607211982098225.pdf",
-    sourcePublished: "Advertisement dated 21 Jul 2026; applications 22 Jul to 21 Aug 2026; ddd.gov.in listing re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:32 IST",
+    sourcePublished: "Advertisement dated 21 Jul 2026; applications 22 Jul to 21 Aug 2026; ddd.gov.in listing re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 17:01 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1383,18 +1437,18 @@ export const exams: Exam[] = [
     examTypes: ["Health & Medical", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Applications closed 8 Aug; interview awaited",
-      tone: "violet",
-      nextAction: "Watch ddd.gov.in and the NHM office for the interview schedule",
+      label: "Advertisement cancelled on 19 Sep 2026",
+      tone: "red",
+      nextAction: "Nothing more to do for this advertisement — watch ddd.gov.in for any fresh ABDM posting",
       detail:
-        "Applications closed on 8 August 2026 and the advertisement has since dropped off the UT Administration's live recruitment listing. Advertisement No. NHM/ABDM/Interview/2025-26/2017 provides for an interview under the same file number; no interview date had been published when this record was re-checked on 29 Aug 2026.",
+        "The Department of Health and Family Welfare cancelled advertisement No. NHM/ABDM/Interview/2025-26/2017 of 30 July 2026, for all three positions, by a cancellation notice dated 19 September 2026 that cites administrative reasons; no interview date had been published. The notice mentions no fresh advertisement, and none was on the UT recruitment listing when re-read on 3 Oct 2026.",
     },
     summary:
-      "Short term contract engagement of a Project Manager (IT), an MIS/Data Analyst and a Project Manager (Coordination) under the Ayushman Bharat Digital Mission in the UT Department of Health and Family Welfare.",
+      "Short term contract engagement of a Project Manager (IT), an MIS/Data Analyst and a Project Manager (Coordination) under the Ayushman Bharat Digital Mission in the UT Department of Health and Family Welfare; cancelled on 19 Sep 2026.",
     vacancies: 3,
-    vacancyLabel: "3 posts",
+    vacancyLabel: "3 posts (cancelled)",
     vacancyNote:
-      "Advertisement No. NHM/ABDM/Interview/2025-26/2017 dated 30 July 2026 lists one vacancy against each of the three positions in its post table.",
+      "Advertisement No. NHM/ABDM/Interview/2025-26/2017 dated 30 July 2026 listed one vacancy against each of the three positions; the cancellation notice of 19 September 2026 cancels all three.",
     vacancyBreakdown: [
       { label: "Project Manager (IT)", total: 1 },
       { label: "MIS / Data Analyst", total: 1 },
@@ -1412,7 +1466,7 @@ export const exams: Exam[] = [
       { label: "Advertisement published", date: "2026-07-30", displayDate: "30 Jul 2026", state: "completed" },
       { label: "Age reckoned as on", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
       { label: "Last date to submit the application", date: "2026-08-08", displayDate: "8 Aug 2026 (Saturday)", state: "completed" },
-      { label: "Interview", displayDate: "Date to be announced", state: "tentative" },
+      { label: "Advertisement cancelled", date: "2026-09-19", displayDate: "19 Sep 2026", state: "completed", note: "Cancellation notice of the Department of Health and Family Welfare, citing administrative reasons" },
     ],
     eligibility: [
       "The three positions are filled on short term contract basis under the Ayushman Bharat Digital Mission in the Department of Health and Family Welfare of the UT of Dadra and Nagar Haveli and Daman and Diu.",
@@ -1425,6 +1479,7 @@ export const exams: Exam[] = [
       "Submission of the application in the given Annexure I format, with self-attested copies of the educational-qualification and experience certificates, before 8 August 2026 at the Office of the National Health Mission, 6th floor, P.W.D. Building, Moti Daman, Daman",
       "Interview — the advertisement is issued under file No. NHM/ABDM/Interview/2025-26/2017 and its notes state that no TA/DA will be paid to candidates for attending the interview",
       "The advertisement records that the Mission Director (NHM) reserves the right to terminate the selection process without assigning any reason",
+      "Cancelled — the Department cancelled the advertisement for all three positions on 19 September 2026, citing administrative reasons",
     ],
     syllabus: [
       "Not applicable — the advertisement fills these short term contract positions on the basis of applications and an interview, and publishes no written examination or syllabus.",
@@ -1440,17 +1495,22 @@ export const exams: Exam[] = [
     officialLinks: [
       { label: "DNHDD current recruitments", url: "https://ddd.gov.in/notice-category/recruitments/?sortby=start_date", type: "notice" },
       {
+        label: "Cancellation notice of 19 Sep 2026 for the ABDM advertisement",
+        url: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/09/20260921387195837.pdf",
+        type: "notice",
+      },
+      {
         label: "Advertisement for recruitment on short term contract under ABDM",
         url: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/20260730144737518.pdf",
         type: "notice",
       },
     ],
     sourceTitle:
-      "Department of Health and Family Welfare, UT of DNH and DD — advertisement No. NHM/ABDM/Interview/2025-26/2017",
-    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/07/20260730144737518.pdf",
+      "Department of Health and Family Welfare, UT of DNH and DD — cancellation notice for advertisement No. NHM/ABDM/Interview/2025-26/2017",
+    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/09/20260921387195837.pdf",
     sourcePublished:
-      "Advertisement dated 30 Jul 2026; UT listing open 30 Jul to 8 Aug 2026; ddd.gov.in recruitment listing re-read 29 Aug 2026 no longer carries it and shows no interview date",
-    lastVerified: "29 Aug 2026, 15:33 IST",
+      "Cancellation notice dated 19 Sep 2026 on ddd.gov.in's latest updates; advertisement of 30 Jul 2026; recruitment listing re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 17:02 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1461,6 +1521,11 @@ export const exams: Exam[] = [
         date: "2026-08-10",
         displayDate: "10 Aug 2026",
         text: "Application deadline of 8 Aug 2026 passed with no extension shown on the UT recruitment listing; marked the deadline event completed and moved status from applications-open to applications-closed with the interview date awaited, per advertisement No. NHM/ABDM/Interview/2025-26/2017.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The Department of Health and Family Welfare cancelled the advertisement for all three ABDM positions by a notice dated 19 Sep 2026, citing administrative reasons. The status now shows the cancellation and the awaited interview is removed.",
       },
     ],
   }),
@@ -1473,6 +1538,7 @@ export const exams: Exam[] = [
       "Daman specialist doctor recruitment",
       "CMO Daman doctor vacancy",
       "Directorate of Medical and Health Services Daman recruitment",
+      "NAMO Hospital Daman specialist walk-in",
       "દમણ તબીબી ભરતી",
     ],
     organisation: "UT Administration of Dadra and Nagar Haveli and Daman and Diu",
@@ -1487,32 +1553,37 @@ export const exams: Exam[] = [
     examTypes: ["Health & Medical", "Specialist & Professional"],
     education: ["Professional degree", "Postgraduate"],
     status: {
-      label: "Applications closed 28 Aug",
-      tone: "amber",
-      nextAction: "Watch ddd.gov.in for the engagement or interview notice",
+      label: "Specialist walk-in on 15 Oct; apply by 10 Oct",
+      tone: "green",
+      nextAction: "Send the application and a five-minute presentation to NAMO Hospital, Daman by 5:30 PM on 10 Oct 2026, then attend the 15 Oct walk-in",
       detail:
-        "The Office of the Deputy Director / Chief Medical Officer, Daman ran this engagement on the UT Administration's own recruitment listing from 14 August to 28 August 2026. The notice itself is published as a scanned image, so nothing beyond those listing dates is asserted here.",
+        "NAMO Hospital, Daman's walk-in notice of 21 Sep 2026 calls an interview on 15 Oct 2026 for Anaesthetist, Ophthalmic Surgeon, Paediatrician, Orthopaedic Surgeon and General Surgeon posts, with applications due by 5:30 PM on 10 Oct 2026. It follows the Chief Medical Officer's advertisement of 14 Aug 2026 for 12 specialities (applications to 28 Aug) and a walk-in on 8 Sep 2026. No change was on ddd.gov.in when re-read on 3 Oct 2026.",
     },
     summary:
-      "Engagement of specialist doctors on short term contract by the Directorate of Medical and Health Services, Office of the Deputy Director and Chief Medical Officer, Daman.",
-    vacancyLabel: NOT_ANNOUNCED,
+      "Engagement of specialist doctors on short term contract at NAMO Hospital, Daman, by the Office of the Chief Medical Officer, Daman and the hospital's Medical Superintendent.",
+    vacancyLabel: "Five specialities (see note)",
     vacancyNote:
-      "The UT recruitment listing publishes no post count for this engagement and the notice PDF is a scanned image whose post table could not be read; no number is asserted here.",
-    age: "Not asserted here — the notice is published as a scanned image; read the PDF linked below.",
-    qualification: "Not asserted here — the notice is published as a scanned image; read the PDF linked below for the speciality-wise requirements.",
-    fee: "Not asserted here — the notice is published as a scanned image; read the PDF linked below.",
-    pay: "Not asserted here — the notice is published as a scanned image; read the PDF linked below.",
+      "The 21 Sep 2026 notice lists Anaesthetist 2, Ophthalmic Surgeon 2, Paediatrician 2, Orthopaedic Surgeon 1 and General Surgeon 1, with no total. The 14 Aug advertisement and the 8 Sep walk-in covered 12 specialities; each notice says the actual number may vary as per requirements.",
+    age: "No age limit is printed in the notices; the 21 Sep application form asks for the candidate's age as on 15 Oct 2026.",
+    qualification:
+      "MBBS with a PG degree or diploma (MS/MD/DNB) in the respective subject from an NMC/MCI-recognised institute, and registration with the National Medical Council or a State Medical Council; experience and knowledge of the local language are desirable.",
+    fee: "No application fee is mentioned in the notices.",
+    pay: "Gross ₹1,50,000 a month for a fresh degree holder and ₹1,15,000 for a diploma holder (each including a ₹25,000 incentive); ₹2,00,000 and ₹1,50,000 with more than five years' experience.",
     timeline: [
-      { label: "Notice published on the UT recruitment listing", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
-      { label: "Closing date on the UT recruitment listing", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
-      { label: "Interview or engagement notice", displayDate: "Date not announced", state: "current" },
+      { label: "Advertisement for specialist posts", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
+      { label: "Last date to apply under the 14 Aug advertisement", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
+      { label: "Walk-in interview (8 Sep)", date: "2026-09-08", displayDate: "8 Sep 2026, 11:00 AM", state: "completed", note: "Notice of 3 Sep 2026; no postponement on ddd.gov.in, and NAMO Hospital re-notified five specialities on 21 Sep 2026" },
+      { label: "Walk-in notice for five specialities", date: "2026-09-21", displayDate: "21 Sep 2026", state: "completed" },
+      { label: "Last date to apply for the 15 Oct walk-in", date: "2026-10-10", displayDate: "10 Oct 2026, 5:30 PM", state: "current" },
+      { label: "Walk-in interview (15 Oct)", date: "2026-10-15", displayDate: "15 Oct 2026, 11:00 AM", state: "scheduled", note: "Reporting 10:00 AM, Conference Hall, NAMO Hospital, Daman" },
     ],
     eligibility: [
-      "The advertising office is the Directorate of Medical and Health Services, Office of the Deputy Director / Chief Medical Officer, Daman, per the UT Administration's own recruitment listing.",
-      "The engagement is on short term contract; confirm the speciality, qualification, experience and remuneration conditions in the notice PDF linked below before acting on this record.",
+      "The 14 Aug 2026 advertisement came from the Office of the Deputy Director (MHS) / Chief Medical Officer, Daman; the walk-in notices of 3 and 21 Sep 2026 come from the Medical Superintendent, NAMO Hospital, Daman.",
+      "Posts are on short term contract at NAMO Hospital, Daman. A person previously terminated from any government organisation is not considered, and no TA/DA is paid for attending the interview.",
     ],
     selectionStages: [
-      "See the notice PDF linked below — it is published as a scanned image, so no selection stages are asserted here.",
+      "Walk-in interview at the Conference Hall, NAMO Hospital, Daman, with attested copies of qualification and experience certificates, all originals for verification and a five-minute PPT presentation on professional achievements",
+      "Only eligible candidates are called for interview, and the administration reserves the right to terminate the selection process",
     ],
     syllabus: [
       "Not applicable — this is a short term contract engagement of specialist doctors and the UT listing publishes no written examination or syllabus.",
@@ -1528,16 +1599,33 @@ export const exams: Exam[] = [
     officialLinks: [
       { label: "DNHDD current recruitments", url: "https://ddd.gov.in/notice-category/recruitments/?sortby=start_date", type: "notice" },
       {
-        label: "Engagement of specialist doctors on short term contract",
+        label: "Walk-in notice of 21 Sep 2026 (interview on 15 Oct)",
+        url: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/09/202609222113125409.pdf",
+        type: "notice",
+      },
+      {
+        label: "Walk-in notice of 3 Sep 2026 (interview on 8 Sep)",
+        url: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/09/20260903864776404.pdf",
+        type: "notice",
+      },
+      {
+        label: "Advertisement of 14 Aug 2026 for specialist posts",
         url: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/08/202608141663012346.pdf",
         type: "notice",
       },
     ],
     sourceTitle:
-      "Directorate of Medical and Health Services, Daman — engagement of specialist doctors on short term contract, on the UT recruitment listing",
-    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/08/202608141663012346.pdf",
-    sourcePublished: "UT recruitment listing shows a start date of 14 Aug 2026 and a closing date of 28 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:35 IST",
+      "NAMO Hospital, Daman — walk-in-interview notice No. NAMO/DMN/Specialist/Walk-in-interview/2026-27/1517 for specialist posts",
+    sourceUrl: "https://cdnbbsr.s3waas.gov.in/s371e09b16e21f7b6919bbfc43f6a5b2f0/uploads/2026/09/202609222113125409.pdf",
+    sourcePublished: "Walk-in notice dated 21 Sep 2026, after the advertisement of 14 Aug and walk-in notice of 3 Sep 2026; ddd.gov.in listing re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:41 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Read the scanned notices: the 14 Aug 2026 advertisement listed specialist posts in 12 specialities at NAMO Hospital, Daman, with a walk-in on 8 Sep 2026. A walk-in notice of 21 Sep 2026 calls an interview on 15 Oct 2026 for five specialities, applications due 10 Oct 2026, so the status is now applications open.",
+      },
+    ],
   }),
   exam({
     slug: "rpsc-ras-combined-competitive-exam-2026",
@@ -1562,7 +1650,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Preliminary examination scheduled for 6 Dec 2026",
       detail:
-        "RPSC's official proposed exam-date calendar, re-read on 10 Sep 2026, still lists the Preliminary examination on 6 Dec 2026 and the Main examination on 1–2 May 2027 for advertisement 02/2026-27, all three entries released 2 Jul 2026. The Commission's advertisement list carries no corrigendum for this examination.",
+        "RPSC's official proposed exam-date calendar, re-read on 3 Oct 2026, still lists the Preliminary examination on 6 Dec 2026 and the Main examination on 1–2 May 2027 for advertisement 02/2026-27, all three entries released 2 Jul 2026. Its press note of 23 Sep 2026 restates the 6 Dec 2026 preliminary date and ran an online application-correction window (₹500 fee) and a withdrawal window from 24 to 30 Sep 2026. The Commission's advertisement list carries no corrigendum for this examination.",
     },
     summary: "Rajasthan's flagship combined competitive examination recruiting Rajasthan Administrative Service, Rajasthan Police Service and other state and subordinate services in one cycle.",
     vacancyLabel: "See advertisement 02/2026-27",
@@ -1574,6 +1662,13 @@ export const exams: Exam[] = [
     pay: "Rajasthan pay matrix for RAS and allied posts as stated in the advertisement.",
     timeline: [
       { label: "Advertisement", date: "2026-05-27", displayDate: "27 May 2026", state: "completed" },
+      {
+        label: "Online application correction and withdrawal window",
+        date: "2026-09-24",
+        displayDate: "24–30 Sep 2026",
+        state: "completed",
+        note: "Press note of 23 Sep 2026; corrections cost ₹500; closed as notified, with no extension on RPSC's news list when re-read on 3 Oct 2026",
+      },
       { label: "Preliminary examination", date: "2026-12-06", displayDate: "6 Dec 2026", state: "scheduled" },
       { label: "Main examination", date: "2027-05-01", displayDate: "1–2 May 2027", state: "scheduled" },
     ],
@@ -1610,12 +1705,24 @@ export const exams: Exam[] = [
       { label: "RPSC advertisement listing", url: "https://rpsc.rajasthan.gov.in/advertisements", type: "notice" },
       { label: "Official advertisement PDF", url: "https://rpsc.rajasthan.gov.in/Static/RecruitmentAdvertisements/76C02A7D61A54708AFFCDD7A2A60DBB2.pdf", type: "notice" },
       { label: "Official proposed exam dates", url: "https://rpsc.rajasthan.gov.in/proposedexamdate", type: "calendar" },
+      {
+        label: "Press note on application correction and withdrawal, 23 Sep 2026",
+        url: "https://rpsc.rajasthan.gov.in/Static/PressNotes/490A21A9-492A-49C9-9F96-565C621B53EE.pdf",
+        type: "notice",
+      },
     ],
-    sourceTitle: "RPSC advertisement 02/2026-27 and proposed exam-date calendar for RAS 2026",
-    sourceUrl: "https://rpsc.rajasthan.gov.in/proposedexamdate",
+    sourceTitle: "RPSC advertisement 02/2026-27, proposed exam-date calendar and press note of 23 Sep 2026 for RAS 2026",
+    sourceUrl: "https://rpsc.rajasthan.gov.in/Static/PressNotes/490A21A9-492A-49C9-9F96-565C621B53EE.pdf",
     sourcePublished:
-      "Advertisement released 27 May 2026; exam-date press note released 2 Jul 2026; proposed exam-date calendar and advertisement list re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:24 IST",
+      "Advertisement released 27 May 2026; exam-date press note released 2 Jul 2026; correction and withdrawal press note dated 23 Sep 2026; proposed exam-date calendar and advertisement list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:25 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "RPSC's press note of 23 Sep 2026 restates the 6 Dec 2026 preliminary date and ran an online application-correction window (₹500) and a withdrawal window from 24 to 30 Sep 2026; both have closed. The exam dates are unchanged.",
+      },
+    ],
   }),
   exam({
     slug: "rssb-cet-graduate-level-2026",
@@ -1640,7 +1747,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "CET (Graduation Level) scheduled for 1–3 Dec 2026",
       detail:
-        "Clause 9 of RSSB's detailed advertisement 09/2026, re-read on 10 Sep 2026, fixes the Common Eligibility Test (Graduation Level) 2026 from 1 to 3 December 2026, after an online application window that ran from 4 July to 2 August 2026. The Board's advertisement list carries no amended advertisement for this test, its newest entry of any kind being the Junior Engineer advertisement of 15 Aug 2026.",
+        "Clause 9 of RSSB's detailed advertisement 09/2026 fixes the Common Eligibility Test (Graduation Level) 2026 from 1 to 3 December 2026, after an online application window that ran from 4 July to 2 August 2026. The Board's advertisement list and press notes, re-read on 3 Oct 2026, carry no amended advertisement or date change for this test, the newest advertisement of any kind still being the Junior Engineer advertisement of 15 Aug 2026.",
     },
     summary: "Common Eligibility Test that qualifies graduates to apply for Patwari, Platoon Commander, Gram Sevak, Junior Accountant and other Rajasthan subordinate and ministerial graduate-level posts.",
     vacancyLabel: "Not applicable to this qualifying test",
@@ -1697,8 +1804,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "RSSB detailed advertisement 09/2026 — Common Eligibility Test (Graduation Level) 2026",
     sourceUrl: "https://rssb.rajasthan.gov.in/storage/advertisement_item/1782966142.pdf",
-    sourcePublished: "Detailed advertisement listed and digitally signed 1 Jul 2026; advertisement re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:26 IST",
+    sourcePublished: "Detailed advertisement listed and digitally signed 1 Jul 2026; advertisement list and press notes re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:28 IST",
   }),
   exam({
     slug: "maharashtra-police-constable-bharti-2024-25",
@@ -1720,8 +1827,8 @@ export const exams: Exam[] = [
     status: {
       label: "Selection process underway",
       tone: "violet",
-      nextAction: "Track district/unit-wise physical and written test results on the recruitment portal",
-      detail: "The official recruitment portal is publishing physical-test, written-exam and provisional-selection results component-wise and district-wise for Police Constable, Driver, SRPF, Prison Constable and Bandsman posts under this cycle.",
+      nextAction: "Track unit-wise selection lists and appointment orders on Maharashtra Police's results page",
+      detail: "Maharashtra Police's unit-wise results page, re-read on 3 Oct 2026, carries 2024-25 final selection and waiting lists (latest June 2026) and an SRPF Group 7 Daund appointment order of 11 Sep 2026 for Armed Police Constable. No new cycle is announced. The 2024-25 portal's security certificate expired on 21 Sep 2026.",
     },
     summary: "State-wide recruitment to Police Constable, Police Constable Driver, SRPF Armed Police Constable, Prison Constable and Bandsman posts across Maharashtra's police units.",
     vacancyLabel: "See component-wise vacancy notices",
@@ -1734,8 +1841,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online application opens", date: "2025-10-29", displayDate: "29 Oct 2025, 6:00 PM", state: "completed" },
       { label: "Application deadline", date: "2025-12-07", displayDate: "7 Dec 2025, 11:59 PM", state: "completed" },
-      { label: "Fee payment deadline", date: "2025-12-10", displayDate: "10 Dec 2025, 11:59 PM", state: "completed" },
-      { label: "Physical and written test results", displayDate: "District/unit-wise — further dates awaited", state: "current" },
+      { label: "Fee payment window ends", date: "2025-12-10", displayDate: "10 Dec 2025, 11:59 PM", state: "completed" },
+      { label: "Unit-wise results, selection lists and appointment orders", displayDate: "District/unit-wise — further dates awaited", state: "current" },
     ],
     eligibility: [
       "Maharashtra domicile and post-specific physical/educational standards as prescribed in the official notice.",
@@ -1757,12 +1864,20 @@ export const exams: Exam[] = [
       { label: "Recruitment portal", url: "https://policerecruitment2025.mahait.org/", type: "website" },
       { label: "Maharashtra Police recruitment page", url: "https://www.mahapolice.gov.in/police-recru.php/", type: "notice" },
       { label: "Component-wise vacancy notices", url: "https://www.mahapolice.gov.in/police-recru-vacancy.php", type: "notice" },
+      { label: "Unit-wise recruitment results", url: "https://www.mahapolice.gov.in/police-recruitment.php", type: "result" },
     ],
-    sourceTitle: "Maharashtra Police Constable Bharti 2024-25 recruitment portal",
-    sourceUrl: "https://policerecruitment2025.mahait.org/",
+    sourceTitle: "Maharashtra Police unit-wise recruitment results page (Police Bharti 2024-25)",
+    sourceUrl: "https://www.mahapolice.gov.in/police-recruitment.php",
     sourcePublished:
-      "Application window 29 Oct – 7 Dec 2025; district-wise results published through 2026; Maharashtra Police recruitment page re-read 29 Aug 2026 and still carries only the 2024-25 cycle",
-    lastVerified: "29 Aug 2026, 15:36 IST",
+      "Application window 29 Oct – 7 Dec 2025; unit-wise results through 2026, latest an appointment order of 11 Sep 2026; recruitment and results pages re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 17:10 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Units have moved on to final selection lists and appointment orders: the results page carries final lists from June 2026 and an SRPF Group 7 Daund appointment order of 11 Sep 2026. The source is now that results page, as the 2024-25 portal's certificate expired on 21 Sep 2026.",
+      },
+    ],
   }),
   exam({
     slug: "gsssb-multi-purpose-health-worker-male-2026",
@@ -1786,7 +1901,7 @@ export const exams: Exam[] = [
       label: "Applications closed; exam date awaited",
       tone: "amber",
       nextAction: "Watch gsssb.gujarat.gov.in for the competitive-examination date and admit card",
-      detail: "Applications for GSSSB advertisement GSSSB/202627/441, Multi Purpose Health Worker (Male), Class III, closed on 15 Aug 2026 after the board's extension notice of 1 Aug 2026. The advertisement has since left the OJAS current-advertisement list and no examination date has been published for it.",
+      detail: "Applications for GSSSB advertisement GSSSB/202627/441, Multi Purpose Health Worker (Male), Class III, closed on 15 Aug 2026 after the board's extension notice of 1 Aug 2026. OJAS marks the advertisement's time limit as over, and GSSSB's news list carried no examination date for it when re-read on 3 Oct 2026.",
     },
     summary: "Gujarat Subordinate Service Selection Board recruitment to a Class III Multi Purpose Health Worker (Male) post in the Health and Family Welfare Department.",
     vacancyLabel: "See official advertisement GSSSB/202627/441",
@@ -1836,8 +1951,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "GSSSB advertisement GSSSB/202627/441 — Multi Purpose Health Worker (Male)",
     sourceUrl: "https://ojas.gujarat.gov.in/AdvtDetails.aspx?sid=K3JOsteln/k=&yr=iNSQ32x8ipg=&ano=lYLAyZ8UKKE=",
-    sourcePublished: "OJAS listing with deadline 15 Aug 2026; OJAS current-advertisement list re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:38 IST",
+    sourcePublished: "OJAS listing with deadline 15 Aug 2026; OJAS page and GSSSB news list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 17:14 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1874,7 +1989,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch gsssb.gujarat.gov.in for the examination date, call letter and any further notice",
       detail:
-        "GSSSB advertisement GSSSB/202627/455 fills Sanitary Inspector, Class III posts in the Health and Family Welfare Department. Applications closed on 31 Aug 2026 and the deadline was not extended — the OJAS current-advertisement list, re-read on 9 Sep 2026, no longer carries this advertisement. No examination date, call-letter notice or further notice for it is published as of 9 Sep 2026.",
+        "GSSSB advertisement GSSSB/202627/455 fills Sanitary Inspector, Class III posts in the Health and Family Welfare Department. Applications closed on 31 Aug 2026 and the deadline was not extended. On 26 Sep 2026 GSSSB published the list of applications rejected for an unpaid examination fee or duplicate registration; its news list, re-read on 3 Oct 2026, gives no examination date or call-letter notice yet.",
     },
     summary:
       "Gujarat Subordinate Service Selection Board recruitment to Class III Sanitary Inspector posts in the Health and Family Welfare Department, applied for through the OJAS portal.",
@@ -1887,6 +2002,7 @@ export const exams: Exam[] = [
     pay: "₹26,000 fixed monthly pay during a 5-year probation (Class III post), as stated on the official OJAS listing.",
     timeline: [
       { label: "Application deadline", date: "2026-08-31", displayDate: "31 Aug 2026", state: "completed" },
+      { label: "List of applications rejected for unpaid fee or duplication", date: "2026-09-26", displayDate: "26 Sep 2026", state: "completed" },
       { label: "Competitive examination", displayDate: "Date not announced", state: "tentative" },
     ],
     eligibility: [
@@ -1918,13 +2034,18 @@ export const exams: Exam[] = [
     sourceTitle: "GSSSB advertisement GSSSB/202627/455 — Sanitary Inspector, Class III",
     sourceUrl: "https://ojas.gujarat.gov.in/AdvtDetails.aspx?sid=K3JOsteln/k=&yr=iNSQ32x8ipg=&ano=XFE6khxH6Yg=",
     sourcePublished:
-      "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026; OJAS current-advertisement list re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 16:50 IST",
+      "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026; rejected-applications list 26 Sep 2026; GSSSB news list and OJAS listing re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:15 IST",
     changeLog: [
       {
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "Applications closed. The window shut on 31 Aug 2026 with no extension — the OJAS current-advertisement list no longer carries GSSSB/202627/455 — so the record moves off applications-open and now waits on an examination date.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "GSSSB published the list of applications rejected for an unpaid examination fee or duplicate registration on 26 Sep 2026. No examination date has been announced yet.",
       },
     ],
   }),
@@ -1951,7 +2072,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch gsssb.gujarat.gov.in for the examination date, call letter and any further notice",
       detail:
-        "GSSSB advertisement GSSSB/202627/450 fills Municipal Accountant, Class III posts under the Urban Development and Urban Housing Department. Applications closed on 31 Aug 2026 and the deadline was not extended — the OJAS current-advertisement list, re-read on 9 Sep 2026, no longer carries this advertisement. No examination date, call-letter notice or further notice for it is published as of 9 Sep 2026.",
+        "GSSSB advertisement GSSSB/202627/450 fills Municipal Accountant, Class III posts under the Urban Development and Urban Housing Department. Applications closed on 31 Aug 2026 and the deadline was not extended. GSSSB's news list, re-read on 3 Oct 2026, carries no examination date, call-letter notice or further notice for this advertisement.",
     },
     summary:
       "Gujarat Subordinate Service Selection Board recruitment to Class III Municipal Accountant posts in the state's urban local bodies, applied for through the OJAS portal.",
@@ -1995,8 +2116,8 @@ export const exams: Exam[] = [
     sourceTitle: "GSSSB advertisement GSSSB/202627/450 — Municipal Accountant, Class III",
     sourceUrl: "https://ojas.gujarat.gov.in/AdvtDetails.aspx?sid=K3JOsteln/k=&yr=iNSQ32x8ipg=&ano=I2C7ebTG4wc=",
     sourcePublished:
-      "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026; OJAS current-advertisement list re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 16:50 IST",
+      "OJAS advertisement listing showing a last date of 31 Aug 2026, read 29 Aug 2026; GSSSB news list and OJAS listing re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:15 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -2026,7 +2147,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Board's own RTET/REET section for the next notification",
       detail:
-        "The Board of Secondary Education, Rajasthan runs REET from its official RTET/REET section; that section currently carries only past-cycle press notes, answer keys and results, and no current-cycle notification.",
+        "The Board of Secondary Education, Rajasthan runs REET from its official RTET/REET section; re-read on 3 Oct 2026, that section, the Board's news and its REET 2024 portal carry only past-cycle material and no new-cycle notification.",
     },
     summary:
       "Rajasthan's statewide teacher eligibility test, conducted by the Board of Secondary Education at Ajmer in two levels — Level 1 for Classes 1 to 5 and Level 2 for Classes 6 to 8.",
@@ -2066,8 +2187,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Board of Secondary Education Rajasthan — official RTET/REET section",
     sourceUrl: "https://rajeduboard.rajasthan.gov.in/RTET-REET/RTET-REET.htm",
-    sourcePublished: "Official RTET/REET section re-read 29 Aug 2026 — it still carries only past-cycle press notes, answer keys and results",
-    lastVerified: "29 Aug 2026, 15:39 IST",
+    sourcePublished: "Official RTET/REET section re-read 3 Oct 2026 — it still carries only past-cycle press notes, answer keys and results",
+    lastVerified: "3 Oct 2026, 17:16 IST",
   }),
   exam({
     slug: "rssb-patwar-direct-recruitment-2025",
@@ -2176,7 +2297,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Read the merit-order result of 14 Aug 2026 together with the corrigendum of 19 Aug 2026",
       detail:
-        "RSSB's corrigendum of 19 Aug 2026 corrects its merit-order result of 14 Aug 2026 for this recruitment: the advertisement is to be read as dated 5 Jan 2026 and the examination as held on 28 Jun 2026, and note 2 of the result is to be read as five times instead of three times. The rest of the result stands. RSSB has not yet published the schedule for the physical and document stages.",
+        "RSSB's corrigendum of 19 Aug 2026 corrects its merit-order result of 14 Aug 2026 for this recruitment: the advertisement is to be read as dated 5 Jan 2026 and the examination as held on 28 Jun 2026, and note 2 of the result is to be read as five times instead of three times. The rest of the result stands. RSSB's news list and results section, re-read on 3 Oct 2026, carry no schedule yet for the physical and document stages.",
     },
     summary:
       "Rajasthan Staff Selection Board recruitment to Forester (Vanpal) posts in the Rajasthan Forest Department, open only to candidates who qualified the Common Eligibility Test (Senior Secondary Level) 2024.",
@@ -2237,8 +2358,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "RSSB detailed advertisement 01/2026 and the corrigendum of 19 Aug 2026 to its Forester result",
     sourceUrl: "https://rssb.rajasthan.gov.in/storage/advertisement_item/1767617460.pdf",
-    sourcePublished: "Detailed advertisement listed 5 Jan 2026; result in order of merit 14 Aug 2026; corrigendum 19 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:41 IST",
+    sourcePublished: "Detailed advertisement listed 5 Jan 2026; result in order of merit 14 Aug 2026; corrigendum 19 Aug 2026; news and results re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 17:18 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2268,7 +2389,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch RSSB's advertisement page for the Forest Guard detailed advertisement",
       detail:
-        "RSSB's short advertisement of 17 Jul 2025 for Forest Department direct recruitment announced Forester, Forest Guard and Surveyor posts. Only the Forester detailed advertisement, of 5 Jan 2026, has since been issued. The Board's advertisement list, re-read on 10 Sep 2026, still carries no Forest Guard detailed advertisement — the document that would bring the confirmed vacancy table and dates — and no Forest Department entry newer than that Forester advertisement.",
+        "RSSB's short advertisement of 17 Jul 2025 for Forest Department direct recruitment announced Forester, Forest Guard and Surveyor posts. Only the Forester detailed advertisement, of 5 Jan 2026, has since been issued. The Board's advertisement list, re-read on 3 Oct 2026, still carries no Forest Guard detailed advertisement — the document that would bring the confirmed vacancy table and dates — and no Forest Department entry newer than that Forester advertisement.",
     },
     summary:
       "Rajasthan Staff Selection Board recruitment to Forest Guard (Vanrakshak) posts in the Rajasthan Forest Department, announced in the department's direct-recruitment short advertisement.",
@@ -2305,8 +2426,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "RSSB short advertisement — direct recruitment to various Forest Department posts, 2025",
     sourceUrl: "https://rssb.rajasthan.gov.in/storage/advertisement_item/1752765122.pdf",
-    sourcePublished: "Short advertisement listed 17 Jul 2025; advertisement list re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:28 IST",
+    sourcePublished: "Short advertisement listed 17 Jul 2025; advertisement list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:31 IST",
   }),
   exam({
     slug: "mahatet-maharashtra-teacher-eligibility-test-june-2026",
@@ -2328,9 +2449,9 @@ export const exams: Exam[] = [
     status: {
       label: "Examination postponed",
       tone: "red",
-      nextAction: "Watch mahatet.in for the rescheduled Paper I and Paper II dates",
+      nextAction: "Watch mahatet.in and mscepune.in for the rescheduled Paper I and Paper II dates",
       detail:
-        "The Council's public notice postponing the June 2026 MAHATET examination is dated 27 Jun 2026, and its official timetable still shows both paper dates as not announced even though admit-card printing ran from 16 to 28 Jun 2026. The Council's own site warns candidates not to believe rumours or forged letters circulating on social media about a replacement date.",
+        "By a public notice dated 27 Jun 2026 the Council postponed the MAHATET it had scheduled for 28 Jun 2026. Its main site mscepune.in, re-read on 3 Oct 2026, still gives no new date and warns candidates not to believe forged letters about one on social media; mahatet.in itself could not be reached that day.",
     },
     summary:
       "Maharashtra's statewide teacher eligibility test, conducted by the Maharashtra State Council of Examination — Paper I certifies eligibility to teach Classes I to V and Paper II Classes VI to VIII.",
@@ -2347,6 +2468,7 @@ export const exams: Exam[] = [
       { label: "Extended application deadline", date: "2026-04-24", displayDate: "24 Apr 2026, 11:59 PM", state: "completed" },
       { label: "Admit card printing window", date: "2026-06-16", displayDate: "16–28 Jun 2026", state: "completed" },
       { label: "Public notice postponing the examination", date: "2026-06-27", displayDate: "27 Jun 2026", state: "completed" },
+      { label: "Paper I and Paper II examination (original date)", date: "2026-06-28", displayDate: "28 Jun 2026", state: "postponed" },
       { label: "Paper I and Paper II examination", displayDate: "Postponed — new date awaited", state: "current" },
     ],
     eligibility: [
@@ -2382,6 +2504,7 @@ export const exams: Exam[] = [
     officialLinks: [
       { label: "MAHATET official timetable", url: "https://mahatet.in/Notices/TimeTable/ShowTimeTable", type: "calendar" },
       { label: "MAHATET official website", url: "https://mahatet.in/", type: "website" },
+      { label: "Maharashtra State Council of Examination (main site)", url: "https://mscepune.in/", type: "website" },
       { label: "Official examination fee", url: "https://mahatet.in/Notices/ExamFee", type: "notice" },
       {
         label: "Public notice postponing the June 2026 examination",
@@ -2402,13 +2525,18 @@ export const exams: Exam[] = [
     sourceTitle: "Maharashtra State Council of Examination — MAHATET June 2026 timetable, fee page and postponement notice",
     sourceUrl: "https://mahatet.in/Notices/TimeTable/ShowTimeTable",
     sourcePublished:
-      "Application window 27 Mar – 24 Apr 2026; postponement notice dated 27 Jun 2026; official timetable re-read 29 Aug 2026 still shows both paper dates unannounced",
-    lastVerified: "29 Aug 2026, 15:43 IST",
+      "Application window 27 Mar – 24 Apr 2026; postponement notice dated 27 Jun 2026; Council's main site re-read 3 Oct 2026 shows no new date (mahatet.in unreachable)",
+    lastVerified: "3 Oct 2026, 17:20 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Dated the postponement notice to 27 Jun 2026 from the Council's own notice list. The official timetable still shows no Paper I or Paper II date, and the Council warns against social-media claims of a replacement date.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Added the original examination date, 28 Jun 2026, now shown as postponed, from the Council's own notice. No new date had been announced as of 3 Oct 2026.",
       },
     ],
   }),
@@ -2429,21 +2557,21 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["Graduate"],
     status: {
-      label: "Next-cycle notice awaited",
+      label: "No separate Talathi notice; current intake via MPSC Group C 2026",
       tone: "amber",
-      nextAction: "Watch the Revenue Department's Mahabhumi portal for the next Talathi advertisement",
+      nextAction: "If you applied for Gram Mahsul Adhikari (Talathi) through MPSC, follow this catalogue's MPSC Group C 2026 record for its dates",
       detail:
-        "The Revenue Department runs Talathi Direct Service Recruitment through its Mahabhumi portal, which currently publishes the revised district-wise merit lists of the 2023 cycle for all 36 districts. The portal, re-read on 10 Sep 2026, still publishes no newer Talathi advertisement.",
+        "MPSC's corrigendum of 5 Aug 2026 to its Maharashtra Group-C Services Combined Preliminary Examination 2026 (advertisement 017/2026) covers the Gram Mahsul Adhikari (Talathi) cadre, including posts in Scheduled (PESA) areas, so the current Talathi intake runs through that MPSC recruitment, whose applications closed on 10 Aug 2026. The Revenue Department's Mahabhumi portal, re-read on 3 Oct 2026, is now a land-records services page: the 2023 cycle's district-wise results page no longer opens and no separate Talathi advertisement is published.",
     },
     summary:
       "District-wise recruitment to Talathi, the village-level revenue officer post, run by the Revenue Department of the Government of Maharashtra through its Mahabhumi portal.",
     eligibility: [
-      "Talathi is a village-level revenue post filled district-wise across Maharashtra's 36 districts — the department's Mahabhumi portal publishes a separate merit list for each district.",
+      "Talathi is a village-level revenue post filled district-wise across Maharashtra's 36 districts — the department's Mahabhumi portal published a separate merit list for each district in the 2023 cycle.",
       "Confirm education, age, domicile and category rules in the Revenue Department's official current-cycle advertisement; nothing about the next cycle is asserted here.",
     ],
     selectionStages: [
       "Written examination conducted for the Talathi Direct Service Recruitment",
-      "District-wise merit list, waiting list and document verification — the 2023 cycle's revised district-wise lists are published on the Mahabhumi portal",
+      "District-wise merit list, waiting list and document verification — the 2023 cycle's revised district-wise lists were published on the Mahabhumi portal",
     ],
     syllabus: ["Use only the syllabus published inside the Revenue Department's own Talathi advertisement for the current cycle."],
     keywords: [
@@ -2456,18 +2584,19 @@ export const exams: Exam[] = [
       "talathi merit list",
       "talathe",
     ],
-    officialLinks: [
+    officialLinks: [{ label: "Mahabhumi portal (Revenue Department)", url: "https://mahabhumi.gov.in/", type: "website" }],
+    sourceTitle: "Revenue Department, Government of Maharashtra — Mahabhumi portal",
+    sourceUrl: "https://mahabhumi.gov.in/",
+    sourcePublished:
+      "Portal re-read 3 Oct 2026, its 2023 Talathi results page no longer online; the MPSC corrigendum of 5 Aug 2026 is linked from the MPSC Group C 2026 record",
+    lastVerified: "3 Oct 2026, 16:02 IST",
+    changeLog: [
       {
-        label: "Talathi Direct Service Recruitment 2023 revised district-wise results",
-        url: "https://mahabhumi.gov.in/Mahabhumilink/login/RevisedResult",
-        type: "result",
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Talathi posts are now being filled through MPSC: its corrigendum of 5 Aug 2026 to the Group-C Services Combined Preliminary Examination 2026 covers the Gram Mahsul Adhikari (Talathi) cadre, with applications closed on 10 Aug 2026. The Mahabhumi page that carried the 2023 cycle's results no longer opens, so its link is removed.",
       },
-      { label: "Mahabhumi portal (Revenue Department)", url: "https://mahabhumi.gov.in/", type: "website" },
     ],
-    sourceTitle: "Revenue Department, Government of Maharashtra — Talathi Direct Service Recruitment pages on Mahabhumi",
-    sourceUrl: "https://mahabhumi.gov.in/Mahabhumilink/login/RevisedResult",
-    sourcePublished: "Revised district-wise merit lists for the 2023 cycle; portal re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:18 IST",
   }),
   listedExam({
     slug: "gujarat-teacher-eligibility-test-seb",
@@ -2490,7 +2619,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the State Examination Board's notice list for the next TET notification",
       detail:
-        "The Board's own notice list shows the TET-I 2025 notification from October 2025 and its result notification from January 2026, and a special-educator Sp.TET-II 2025 result notification from November 2025. No newer TET notification is listed.",
+        "The Board's own notice list shows the TET-I 2025 notification from October 2025 and its result notification from January 2026, and a special-educator Sp.TET-II 2025 result notification from November 2025. Re-read on 3 Oct 2026, it lists no newer TET notification.",
     },
     summary:
       "Gujarat's teacher eligibility test, conducted by the State Examination Board at Gandhinagar — TET-I certifies eligibility for primary-school teaching posts, with a separate special-educator TET-II.",
@@ -2527,8 +2656,8 @@ export const exams: Exam[] = [
     sourceTitle: "State Examination Board, Gujarat — official notice list and TET-I 2025 result notification",
     sourceUrl: "https://www.sebexam.org/",
     sourcePublished:
-      "TET-I 2025 result notification published January 2026; Board notice list re-read 29 Aug 2026 and still carries no newer TET notification",
-    lastVerified: "29 Aug 2026, 15:44 IST",
+      "TET-I 2025 result notification published January 2026; Board notice list re-read 3 Oct 2026 and still carries no newer TET notification",
+    lastVerified: "3 Oct 2026, 20:00 IST",
   }),
   exam({
     slug: "gujarat-teacher-aptitude-test-higher-secondary-2026",
@@ -2553,7 +2682,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the Board's notice list for the TAT-HS main-examination result",
       detail:
-        "The Board held the preliminary test on 12 Apr 2026 and published its result on 16 Jun 2026. Its circular of 10 Jul 2026 fixed the Gujarati-medium main examination for 2 Aug 2026 and opened hall tickets on 20 Jul 2026; its circular of 31 Jul 2026 moved the examination to Saturday 8 Aug 2026 because of the heavy-rain forecast across the state, keeping the same time and centre and the same hall ticket. No result of the main examination has been published yet.",
+        "The Board held the preliminary test on 12 Apr 2026 and published its result on 16 Jun 2026. Its circular of 10 Jul 2026 fixed the Gujarati-medium main examination for 2 Aug 2026 and opened hall tickets on 20 Jul 2026; its circular of 31 Jul 2026 moved the examination to Saturday 8 Aug 2026 because of the heavy-rain forecast across the state, keeping the same time and centre and the same hall ticket. The Board's notice list, re-read on 3 Oct 2026, carries no main-examination result yet.",
     },
     summary:
       "Two-tier aptitude test conducted by the State Examination Board, Gujarat, for candidates seeking higher-secondary teaching posts in government and grant-in-aid schools, introduced under the education department's resolution implementing NEP 2020.",
@@ -2615,8 +2744,8 @@ export const exams: Exam[] = [
     sourceTitle: "State Examination Board, Gujarat — TAT-HS 2026 notification and its main-examination circulars 7838 and 7839",
     sourceUrl: "https://sebexam.org/AdvertiseFiles/2026/tat%20-%20hs%202026%20notification_022026.pdf",
     sourcePublished:
-      "Notification RAPBO/TAT-HS/2026/2042-2082 dated 5 Feb 2026; main-examination circulars RAPBO/TAT-HS MAINS/2026/7838 dated 10 Jul 2026 and 7839 dated 31 Jul 2026",
-    lastVerified: "29 Aug 2026, 15:46 IST",
+      "Notification RAPBO/TAT-HS/2026/2042-2082 dated 5 Feb 2026; main-examination circulars RAPBO/TAT-HS MAINS/2026/7838 dated 10 Jul 2026 and 7839 dated 31 Jul 2026; notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:00 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2646,7 +2775,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch GPSSB's advertisement page for the general Talati cum Mantri cycle",
       detail:
-        "The general Talati cum Mantri advertisement is still awaited — GPSSB's current 2026-27 series does not include the post. Its special recruitment drive for candidates with disabilities does: under advertisement 14/2025-26 the board published the provisional merit list on 11 May 2026 and held certificate verification on 18 and 19 May 2026, and its notice of 27 Aug 2026 gave the candidates who stayed away a final chance to attend in person at the board's office on 1 Sep 2026. That final date has passed, and GPSSB's advertisement page and notice list, re-read on 9 Sep 2026, publish nothing newer under advertisement 14/2025-26.",
+        "The general Talati cum Mantri advertisement is still awaited — GPSSB's current 2026-27 series does not include the post. Its special recruitment drive for candidates with disabilities does: under advertisement 14/2025-26 the board published the provisional merit list on 11 May 2026 and held certificate verification on 18 and 19 May 2026, and its notice of 27 Aug 2026 gave the candidates who stayed away a final chance to attend in person at the board's office on 1 Sep 2026. That final date has passed, and GPSSB's advertisement page and notice list, re-read on 3 Oct 2026, publish nothing newer under advertisement 14/2025-26.",
     },
     summary:
       "Gujarat Panchayat Service Selection Board recruitment to Village Panchayat Secretary (Talati cum Mantri) Class III posts in the state's village panchayats.",
@@ -2695,8 +2824,8 @@ export const exams: Exam[] = [
     sourceTitle: "GPSSB recruitment rules for Village Panchayat Secretary, the board's advertisement list and its notice of 27 Aug 2026",
     sourceUrl: "https://gpssb.gujarat.gov.in/recruitment-rule-details.htm?9",
     sourcePublished:
-      "Recruitment rules 2013 with 2016, 2021 and 2023 amendments; special-drive certificate-verification notice dated 27 Aug 2026; advertisement page and notice list re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 16:45 IST",
+      "Recruitment rules 2013 with 2016, 2021 and 2023 amendments; special-drive certificate-verification notice dated 27 Aug 2026; advertisement page and notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:12 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2733,7 +2862,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Watch GPSSB's website for the exact CBRT date and the call letter",
       detail:
-        "GPSSB published advertisement 03/2026-27 for the Gram Sevak cadre on 16 Apr 2026. Its notice of 25 Aug 2026 says the competitive examination will be a Computer Based Response Test of multiple-choice questions and is expected in October 2026, with the exact date and the detailed announcement to follow on the board's website. The board adds that it may change the examination programme in unavoidable circumstances.",
+        "GPSSB published advertisement 03/2026-27 for the Gram Sevak cadre on 16 Apr 2026. Its notice of 25 Aug 2026 says the competitive examination will be a Computer Based Response Test of multiple-choice questions and is expected in October 2026, with the exact date and the detailed announcement to follow on the board's website. The board adds that it may change the examination programme in unavoidable circumstances. Its home page and advertisement page, re-read on 3 Oct 2026, carry no exact date or call letter yet.",
     },
     summary:
       "Gujarat Panchayat Service Selection Board direct recruitment to the Gram Sevak cadre in the state's panchayat service, under its 2026-27 Class III advertisement series.",
@@ -2777,8 +2906,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "GPSSB advertisement 03/2026-27 and its notice on the tentative month of the Gram Sevak competitive examination",
     sourceUrl: "https://gpssb.gujarat.gov.in/writereaddata/Portal/EventActivity/93/1425_1_1_GS_Tentative_Exam_Programme.pdf",
-    sourcePublished: "Advertisement listed 16 Apr 2026; notice on the tentative examination month dated 25 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:52 IST",
+    sourcePublished: "Advertisement listed 16 Apr 2026; notice on the tentative examination month dated 25 Aug 2026; home page and advertisement page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:57 IST",
   }),
   exam({
     slug: "msedcl-technical-cadre-direct-recruitment-2025",
@@ -2803,7 +2932,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch MSEDCL's career page for the online-test call-letter notice",
       detail:
-        "MSEDCL reopened the application link for advertisement 02/2025 from 3 to 18 Feb 2026 as a final opportunity. Its career archive has published no online-test date or call-letter notice for this advertisement since; the August 2026 entries there are about other posts.",
+        "MSEDCL reopened the application link for advertisement 02/2025 from 3 to 18 Feb 2026 as a final opportunity. Its career archive, re-read on 3 Oct 2026, has published no online-test date or call-letter notice for this advertisement since; its entries through September 2026 are about other posts.",
     },
     summary:
       "Direct recruitment by Maharashtra's state power distribution company to Additional Executive Engineer and Deputy Executive Engineer posts in the distribution and civil streams.",
@@ -2873,8 +3002,8 @@ export const exams: Exam[] = [
     sourceTitle: "MSEDCL advertisement 02/2025 and its 3 Feb 2026 notification reopening the application link",
     sourceUrl: "https://www.mahadiscom.in/wp-content/uploads/2025/06/MSEDCL-Advt.-No_02_2025_FOR-VARIOUS-POSTS-IN-TECHNICAL-CADRE_27062025cr.pdf",
     sourcePublished:
-      "Advertisement dated 27 Jun 2025; reopening notification dated 3 Feb 2026; MSEDCL career archive re-read 29 Aug 2026 with no online-test date for this advertisement",
-    lastVerified: "29 Aug 2026, 15:54 IST",
+      "Advertisement dated 27 Jun 2025; reopening notification dated 3 Feb 2026; MSEDCL career archive re-read 3 Oct 2026 with no online-test date for this advertisement",
+    lastVerified: "3 Oct 2026, 20:03 IST",
   }),
   listedExam({
     slug: "msetcl-mahatransco-direct-recruitment",
@@ -2897,7 +3026,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch MahaTransco's own careers page for the next direct-recruitment advertisement",
       detail:
-        "MSETCL's active careers page still carries only division-wise apprenticeship notices and closing-stage documents for earlier advertisements — a revised selection list for Executive Engineer (Trans) and Additional Executive Engineer (Trans) under advertisements 03/2024 and 04/2024 dated 27 Jul 2026, a corrigendum to that Additional Executive Engineer result dated 21 Aug 2026, document verification under advertisement 18/2024 for Assistant Engineer (Civil), and apprenticeship notices of 21 and 24 Aug 2026. The only new advertisement there, MSEBHCL 10/2026, is for Director (Finance) of MSEDCL rather than an MSETCL cadre.",
+        "MSETCL's active careers page still carries only division-wise apprenticeship notices and closing-stage documents for earlier advertisements — a revised selection list for Executive Engineer (Trans) and Additional Executive Engineer (Trans) under advertisements 03/2024 and 04/2024 dated 27 Jul 2026, a corrigendum to that Additional Executive Engineer result dated 21 Aug 2026, document verification under advertisement 18/2024 for Assistant Engineer (Civil), and division-wise apprenticeship notices up to 28 Sep 2026 (re-read 3 Oct 2026). The only new advertisement there, MSEBHCL 10/2026, is for Director (Finance) of MSEDCL rather than an MSETCL cadre.",
     },
     summary:
       "Direct recruitment to engineering and technical posts in Maharashtra's state transmission utility, published on MSETCL's own careers page along with its division-wise apprenticeship intake.",
@@ -2938,8 +3067,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "MSETCL (MahaTransco) active careers page",
     sourceUrl: "https://www.mahatransco.in/career/active",
-    sourcePublished: "Careers page re-read 29 Aug 2026; latest cadre document is the corrigendum of 21 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:55 IST",
+    sourcePublished: "Careers page re-read 3 Oct 2026; latest cadre document is still the corrigendum of 21 Aug 2026",
+    lastVerified: "3 Oct 2026, 20:03 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2969,7 +3098,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Rural Development Department's own news feed for the next ZP Group C notification",
       detail:
-        "The department's own site carries the Zilla Parishad Group-C Direct Service Recruitment Process 2023 notification together with the revised examination schedule and the IBPS-supplied time table. No newer Zilla Parishad recruitment notification is published there.",
+        "The department's own site carries the Zilla Parishad Group-C Direct Service Recruitment Process 2023 notification together with the revised examination schedule and the IBPS-supplied time table. Re-read on 3 Oct 2026, its notices and notifications list no newer Zilla Parishad recruitment notification.",
     },
     summary:
       "District-wise recruitment to Group C posts in Maharashtra's 36 Zilla Parishads, run by the Rural Development and Panchayat Raj Department with the written examination conducted through IBPS.",
@@ -3015,8 +3144,8 @@ export const exams: Exam[] = [
     sourceTitle: "Rural Development and Panchayat Raj Department — Zilla Parishad recruitment notices",
     sourceUrl: "https://rdd.maharashtra.gov.in/en/",
     sourcePublished:
-      "Zilla Parishad Group-C 2023-cycle notices published Sep 2024; department news feed re-read 29 Aug 2026 and still carries no newer Zilla Parishad notification",
-    lastVerified: "29 Aug 2026, 15:56 IST",
+      "Zilla Parishad Group-C 2023-cycle notices published Sep 2024; department news feed re-read 3 Oct 2026 and still carries no newer Zilla Parishad notification",
+    lastVerified: "3 Oct 2026, 20:04 IST",
   }),
   listedExam({
     slug: "msrtc-direct-recruitment",
@@ -3039,7 +3168,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch MSRTC's own recruitment page for the next advertisement",
       detail:
-        "The corporation's own recruitment page currently carries advertisement 2024:10:67 for Legal Advisor, Class-1 (contract), whose application date was extended to 17 Apr 2026, alongside archived 2019 driver-and-conductor and officer advertisements. No open statewide driver or conductor advertisement is published there. Widely circulated 'mega bharti' figures do not appear on the corporation's own pages and are not repeated here.",
+        "The corporation's own recruitment page currently carries advertisement 2024:10:67 for Legal Advisor, Class-1 (contract), whose application date was extended to 17 Apr 2026, alongside archived 2019 driver-and-conductor and officer advertisements. Re-read on 3 Oct 2026, it shows no open statewide driver or conductor advertisement. Widely circulated 'mega bharti' figures do not appear on the corporation's own pages and are not repeated here.",
     },
     summary:
       "Recruitment to driver, conductor, technical and officer posts in Maharashtra's state road transport corporation, published on the corporation's own recruitment page.",
@@ -3071,8 +3200,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Maharashtra State Road Transport Corporation — official recruitment page",
     sourceUrl: "https://msrtc.maharashtra.gov.in/GeneralPages/Recruitment.aspx",
-    sourcePublished: "Recruitment page re-read 29 Aug 2026; latest listed advertisement is still the one extended to 17 Apr 2026",
-    lastVerified: "29 Aug 2026, 15:57 IST",
+    sourcePublished: "Recruitment page re-read 3 Oct 2026; latest listed advertisement is still the one extended to 17 Apr 2026",
+    lastVerified: "3 Oct 2026, 20:04 IST",
   }),
   exam({
     slug: "maha-tait-teacher-aptitude-intelligence-test-2025",
@@ -3092,11 +3221,11 @@ export const exams: Exam[] = [
     examTypes: ["Teaching & Education"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Scores now in use for Pavitra-portal recruitment",
-      tone: "blue",
-      nextAction: "Preference locking closed on 11 Aug 2026 — watch mscepune.in for the recruitment rounds",
+      label: "Without-interview selection recommendations published",
+      tone: "violet",
+      nextAction: "If recommended, contact your appointing authority; others watch mscepune.in for the converted round",
       detail:
-        "The Council declared the TAIT 2025 result on 18 Aug 2025 and opened score-card download on 9 Sep 2025. Its notice of 6 Aug 2026 then opened preference generation on the Pavitra teacher-recruitment portal for these scores and gave candidates from 6 to 11 Aug 2026 to lock their preferences, separately for the with-interview and without-interview routes; the without-interview regular round is run first. No TAIT 2026 notification is listed on the Council's site.",
+        "The Council's press note of 27 Aug 2026 says preferences on the Pavitra teacher-recruitment portal were taken from 6 to 16 Aug 2026 and that the without-interview merit list was published that evening, recommending candidates for 13,119 of 19,754 without-interview posts. Posts left vacant in the parallel reservations are to be filled through a converted round, not yet dated. Its circular of 7 Sep 2026 says no duplicate score cards are issued — scores are checked against the mark lists on its site — and, re-read on 3 Oct 2026, the site lists no TAIT 2026 notification.",
     },
     summary:
       "Maharashtra's teacher aptitude and intelligence test, conducted by the Maharashtra State Council of Examination — a separate examination from MAHATET, the Council's teacher eligibility test, and one that produces a score card rather than an eligibility certificate.",
@@ -3114,7 +3243,21 @@ export const exams: Exam[] = [
       { label: "Result for reserved candidates", date: "2025-09-02", displayDate: "2 Sep 2025", state: "completed" },
       { label: "Score-card download opened", date: "2025-09-09", displayDate: "9 Sep 2025", state: "completed" },
       { label: "Further press note", date: "2025-09-16", displayDate: "16 Sep 2025", state: "completed" },
-      { label: "Preference generation and locking on the Pavitra portal", date: "2026-08-06", displayDate: "6–11 Aug 2026", state: "completed" },
+      {
+        label: "Preference generation and locking on the Pavitra portal",
+        date: "2026-08-06",
+        displayDate: "6–16 Aug 2026",
+        state: "completed",
+        note: "The notice of 6 Aug 2026 set 6–11 Aug; the press note of 27 Aug 2026 records preferences taken to 16 Aug",
+      },
+      {
+        label: "Without-interview merit list and selection recommendations",
+        date: "2026-08-27",
+        displayDate: "27 Aug 2026",
+        state: "completed",
+        note: "13,119 of 19,754 without-interview posts recommended, per the Council's press note",
+      },
+      { label: "Converted round for unfilled parallel-reservation posts", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "TAIT is separate from MAHATET: MAHATET certifies eligibility to teach under the NCTE norms, while TAIT produces the aptitude-and-intelligence score used in Maharashtra teacher recruitment.",
@@ -3125,8 +3268,8 @@ export const exams: Exam[] = [
     selectionStages: [
       "Single objective test conducted by the Maharashtra State Council of Examination — held online from 27 to 30 May and 2 to 5 Jun 2025, with 2,28,808 candidates registered and 2,11,308 present, per the Council's notice of 6 Aug 2026",
       "Result and score card published by the Council — the 2025 result was declared on 18 Aug 2025, with a separate reserved-candidate result on 2 Sep 2025 and score-card download from 9 Sep 2025",
-      "Preference generation and locking on the state's Pavitra teacher-recruitment portal, opened by the Council's notice of 6 Aug 2026 and closing on 11 Aug 2026, separately for the with-interview and without-interview advertisements",
-      "TAIT itself makes no appointment; the appointment rounds are run through the Pavitra portal, the without-interview regular round first",
+      "Preference generation and locking on the state's Pavitra teacher-recruitment portal, opened by the Council's notice of 6 Aug 2026 and run to 16 Aug 2026, separately for the with-interview and without-interview advertisements",
+      "TAIT itself makes no appointment; the rounds run through the Pavitra portal, and the without-interview merit list and recommendations followed on 27 Aug 2026",
     ],
     syllabus: ["Use only the syllabus published by the Council with its TAIT notification for the current cycle."],
     keywords: [
@@ -3161,17 +3304,32 @@ export const exams: Exam[] = [
         url: "https://mscepune.in/TAIT/TAIT2025/Candidate%20suchana%2006.08.2026.pdf",
         type: "notice",
       },
+      {
+        label: "Press note on without-interview recommendations, 27 Aug 2026",
+        url: "https://mscepune.in/Press%20Note_Pavitra%20portal%2027.08.2028.pdf",
+        type: "result",
+      },
+      {
+        label: "Circular on duplicate score cards, 7 Sep 2026",
+        url: "https://mscepune.in/TAIT/TAIT2025/TAIT%20BABAT.pdf",
+        type: "notice",
+      },
     ],
-    sourceTitle: "Maharashtra State Council of Examination — TAIT 2025 notices on mscepune.in",
-    sourceUrl: "https://mscepune.in/",
+    sourceTitle: "Maharashtra State Council of Examination — press note of 27 Aug 2026 on Pavitra-portal recommendations",
+    sourceUrl: "https://mscepune.in/Press%20Note_Pavitra%20portal%2027.08.2028.pdf",
     sourcePublished:
-      "TAIT 2025 press notes dated 18 Aug, 2 Sep, 9 Sep and 16 Sep 2025; general instructions on Pavitra-portal preferences dated 6 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:59 IST",
+      "TAIT 2025 press notes dated 18 Aug, 2 Sep, 9 Sep and 16 Sep 2025; Pavitra-portal notices dated 6 Aug and 27 Aug 2026; circular on duplicate score cards dated 7 Sep 2026; site re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:41 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The cycle is not finished after all — the Council's notice of 6 Aug 2026 opened preference generation on the Pavitra teacher-recruitment portal for TAIT 2025 scores and set 6 to 11 Aug 2026 to lock them. The notice also dates the test itself to 27–30 May and 2–5 Jun 2025 and records 2,28,808 registered and 2,11,308 present candidates.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The Council's press note of 27 Aug 2026 published the without-interview merit list, recommending candidates for 13,119 of 19,754 posts, and records preferences taken to 16 Aug 2026 rather than 11 Aug; unfilled parallel-reservation posts go to a converted round. Its circular of 7 Sep 2026 says no duplicate TAIT score cards are issued.",
       },
     ],
   }),
@@ -3194,11 +3352,11 @@ export const exams: Exam[] = [
     examTypes: ["Police & CAPF"],
     education: ["12th", "Graduate"],
     status: {
-      label: "Document-verification list out for the Lokrakshak cadre",
+      label: "First-phase document verification under way",
       tone: "violet",
-      nextAction: "Check the male, female or ex-servicemen document-verification list on the board's website",
+      nextAction: "Download your call letter from the board's website and attend on the date it gives, with original certificates and one self-attested copy of each",
       detail:
-        "On 14 Aug 2026 the board published the list of Lokrakshak-cadre candidates qualified for document verification: 18,322 candidates against 12,733 vacancies in the first phase, with twice the vacancies called in the general category and one times in the reserved categories. The same notice records that the rechecking of the written marks produced no change in the final answer key of 8 Jul 2026, and that the date and other details of the document verification will be published on the board's website shortly.",
+        "On 14 Aug 2026 the board listed 18,322 Lokrakshak-cadre candidates for the first phase of document verification against 12,733 vacancies. Its notice of 10 Sep 2026 set that verification to begin on 30 Sep 2026, with call letters from 24 Sep 2026; certificates must be issued on or before 23 Dec 2025, the last date of application. On 8 Sep 2026 it disqualified 385 candidates for malpractice seen on the written-examination CCTV, dropping them from the list; on 26 Sep 2026 it accepted 10 of 25 representations. Its notice page, re-read on 3 Oct 2026, shows no postponement.",
     },
     summary:
       "Gujarat Police Recruitment Board's combined recruitment to the Lokrakshak (constable) cadre and the Police Sub-Inspector cadre under advertisement GPRB/202526/1.",
@@ -3221,19 +3379,23 @@ export const exams: Exam[] = [
       { label: "Marks published with rechecking facility", date: "2026-07-11", displayDate: "11 Jul 2026", state: "completed" },
       { label: "Rechecking notice", date: "2026-08-04", displayDate: "4 Aug 2026", state: "completed" },
       { label: "Document-verification list — Lokrakshak cadre", date: "2026-08-14", displayDate: "14 Aug 2026", state: "completed" },
-      { label: "Document verification", displayDate: "Date and venue to be announced on the board's website", state: "current" },
+      { label: "385 candidates disqualified for written-examination malpractice", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed" },
+      { label: "Document-verification call letters available", date: "2026-09-24", displayDate: "From 24 Sep 2026", state: "completed" },
+      { label: "Representations decided — 10 of 25 accepted", date: "2026-09-26", displayDate: "26 Sep 2026", state: "completed" },
+      { label: "First-phase document verification begins", date: "2026-09-30", displayDate: "From 30 Sep 2026", state: "completed", note: "Began as notified; the board's notice page showed no postponement when re-read on 3 Oct 2026" },
+      { label: "Next stage after document verification", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "The advertisement covers both the PSI cadre and the Lokrakshak cadre, and the board ran their physical tests on separate schedules — check which cadre you applied for.",
       "Confirm education, age, physical standards, domicile and category rules in advertisement GPRB/202526/1 itself.",
       "The Lokrakshak document-verification list was built on the written marks plus the additional marks allowed by the rules for sportspersons, widows, an NCC 'C' certificate and a degree or diploma of the Rakshashakti University or the National Forensic Sciences University; the board's notice of 14 Aug 2026 warns that those extra marks are cancelled if the certificate is not produced at verification.",
       "Reserved-category candidates who took neither the age relaxation nor, for ST candidates, the height relaxation and scored at or above the general cut-off were placed in the general list.",
-      "The board's notice of 14 Aug 2026 records that the CCTV recordings of every examination room are still being checked and that candidature will be cancelled where an irregularity is found.",
+      "After checking the CCTV recordings of the written examination, the board disqualified 385 candidates on 8 Sep 2026 under the Home Department's examination rules of 7 Feb 2024; on 26 Sep 2026 it accepted 10 of the 25 in-person representations received by 14 Sep 2026 and rejected the rest.",
     ],
     selectionStages: [
       "Physical test — the board published cadre-wise physical-test results on 25 Feb 2026 (PSI) and 2 Apr 2026 (Lokrakshak)",
       "Written examination — held for the Lokrakshak cadre on 14 Jun 2026, with a final answer key on 8 Jul 2026 that the rechecking left unchanged; 39,225 candidates scored the required 40% separately in Part-A and Part-B",
-      "Document verification — the board published male, female and ex-servicemen lists on 14 Aug 2026 with category-wise cut-offs of 125.00 (men) and 104.75 (women) for General, 114.50 and 80.50 for EWS, 119.25 and 98.50 for SEBC, 113.75 and 94.50 for SC and 95.75 and 84.50 for ST; all 41 qualifying ex-servicemen are included",
+      "Document verification — the board published male, female and ex-servicemen lists on 14 Aug 2026 with category-wise cut-offs of 125.00 (men) and 104.75 (women) for General, 114.50 and 80.50 for EWS, 119.25 and 98.50 for SEBC, 113.75 and 94.50 for SC and 95.75 and 84.50 for ST; all 41 qualifying ex-servicemen are included; the first phase began on 30 Sep 2026",
       "The later stages prescribed in advertisement GPRB/202526/1 and in the Home Department's examination rules of 7 Feb 2024",
     ],
     syllabus: ["Use only the syllabus the board publishes for this advertisement on its own website."],
@@ -3258,18 +3420,38 @@ export const exams: Exam[] = [
         url: "https://gprb.gujarat.gov.in/ViewDocument.aspx?CDID=f8305635f906ed949c15af7e3623fff5",
         type: "result",
       },
+      {
+        label: "Document-verification checklist and schedule, 10 Sep 2026",
+        url: "https://gprb.gujarat.gov.in/ViewDocument.aspx?CDID=90b3c7a8077f350c706b80c5285d720c",
+        type: "notice",
+      },
+      {
+        label: "Disqualification for written-examination malpractice, 8 Sep 2026",
+        url: "https://gprb.gujarat.gov.in/ViewDocument.aspx?CDID=cec82b510b07ea1a9a9eec3a45fc6502",
+        type: "notice",
+      },
+      {
+        label: "Decision on representations, 26 Sep 2026",
+        url: "https://gprb.gujarat.gov.in/ViewDocument.aspx?CDID=7c6062a93f6e11f9dec323f6dcdde018",
+        type: "notice",
+      },
       { label: "GPRB advertisements", url: "https://gprb.gujarat.gov.in/advertisements.htm", type: "notice" },
       { label: "GPRB latest notices", url: "https://gprb.gujarat.gov.in/notice.htm", type: "notice" },
     ],
-    sourceTitle: "Gujarat Police Recruitment Board — advertisement GPRB/202526/1 and its document-verification notice of 14 Aug 2026",
-    sourceUrl: "https://gprb.gujarat.gov.in/advertisements.htm",
-    sourcePublished: "Advertisement dated 3 Dec 2025; rechecking notice 4 Aug 2026; Lokrakshak document-verification list 14 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:02 IST",
+    sourceTitle: "Gujarat Police Recruitment Board — Lokrakshak cadre (2025-26) document-verification notice of 10 Sep 2026",
+    sourceUrl: "https://gprb.gujarat.gov.in/ViewDocument.aspx?CDID=90b3c7a8077f350c706b80c5285d720c",
+    sourcePublished: "Advertisement dated 3 Dec 2025; document-verification list 14 Aug 2026; disqualification notice 8 Sep, verification notice 10 Sep and representations notice 26 Sep 2026; notice page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:08 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The Lokrakshak cadre moved from rechecking to document verification: the board's notice of 14 Aug 2026 says the rechecking left the final answer key unchanged and publishes the list of 18,322 candidates qualified for document verification against 12,733 vacancies, with category-wise cut-offs. The vacancy figure for the Lokrakshak cadre is now shown; the document-verification date is still awaited.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Document verification has started: the board's notice of 10 Sep 2026 set the first phase to begin on 30 Sep 2026, with call letters from 24 Sep 2026. On 8 Sep 2026 it disqualified 385 candidates for malpractice in the written examination, and on 26 Sep 2026 it accepted 10 of 25 representations against that.",
       },
     ],
   }),
@@ -3299,7 +3481,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the board's website for the advertisement, expected around September or October 2026",
       detail:
-        "The Gujarat Police Recruitment Board published an advance job alert on 29 Aug 2026 for a fresh Lokrakshak cadre direct recruitment covering the Unarmed, Armed and SRPF constable streams. It gives Std 12 pass as the qualification, says the advertisement is expected around September or October 2026, the physical test around December 2026 or January 2027 and the written examination around March or April 2027, and asks candidates to keep watching the board's website. Every one of those timings is described in the notice itself as probable.",
+        "The Gujarat Police Recruitment Board published an advance job alert on 29 Aug 2026 for a fresh Lokrakshak cadre direct recruitment covering the Unarmed, Armed and SRPF constable streams. It gives Std 12 pass as the qualification, says the advertisement is expected around September or October 2026, the physical test around December 2026 or January 2027 and the written examination around March or April 2027, and asks candidates to keep watching the board's website. Every one of those timings is described in the notice itself as probable, and the board's advertisement and notice pages, re-read on 3 Oct 2026, carry no advertisement yet.",
     },
     summary:
       "Fresh direct recruitment to the Gujarat Police Lokrakshak (constable) cadre across the Unarmed Police, Armed Police and State Reserve Police Force streams, announced in advance by the Gujarat Police Recruitment Board.",
@@ -3312,7 +3494,13 @@ export const exams: Exam[] = [
     fee: "Not announced — see the advertisement when the board issues it.",
     pay: "Not announced — see the advertisement when the board issues it.",
     timeline: [
-      { label: "Advertisement", sortMonth: "2026-09", displayDate: "Probably September or October 2026", state: "tentative" },
+      {
+        label: "Advertisement",
+        sortMonth: "2026-09",
+        displayDate: "Probably September or October 2026",
+        state: "tentative",
+        note: "A probable timing from the advance notice, not a confirmed date; no advertisement is published as of 3 Oct 2026",
+      },
       { label: "Physical test", sortMonth: "2026-12", displayDate: "Probably December 2026 or January 2027", state: "tentative" },
       { label: "Written examination", sortMonth: "2027-03", displayDate: "Probably March or April 2027", state: "tentative" },
     ],
@@ -3345,8 +3533,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Gujarat Police Recruitment Board — advance notice 'GPRB New Job Alert: Lokrakshak Cadre Recruitment-2026-27'",
     sourceUrl: "https://gprb.gujarat.gov.in/ViewDocument.aspx?CDID=e5dc33d6b8c19d603330059e3e692046",
-    sourcePublished: "Advance notice dated 29 Aug 2026; the advertisement itself is not yet published",
-    lastVerified: "29 Aug 2026, 16:05 IST",
+    sourcePublished: "Advance notice dated 29 Aug 2026; advertisement and notice pages re-read 3 Oct 2026, with the advertisement itself not yet published",
+    lastVerified: "3 Oct 2026, 14:43 IST",
   }),
   listedExam({
     slug: "gsrtc-driver-conductor-direct-recruitment",
@@ -3367,9 +3555,9 @@ export const exams: Exam[] = [
     status: {
       label: "Direct-recruitment series active on the corporation's page",
       tone: "amber",
-      nextAction: "Use GSRTC's own recruitment page for the current advertisement and test notices",
+      nextAction: "Use GSRTC's own recruitment page for the answer keys, objection notice and later test notices",
       detail:
-        "GSRTC's own recruitment page lists direct-recruitment advertisements GSRTC-202627-1 for the Driver class and GSRTC-202627-32 for the Conductor class along with driving-test, merit-list and document-verification notices, plus advertisement GSRTC-202425-47 for Helper (Mechanical). The corporation hosts the advertisement PDFs off its own domain, so no dates or vacancy counts are asserted here.",
+        "GSRTC's own recruitment page, re-read on 3 Oct 2026, lists advertisements GSRTC-202627-1 (Driver), GSRTC-202627-32 (Conductor) and GSRTC_202627_47 (Helper, Mechanical). It carries provisional answer keys and an objection notice for the Conductor and Helper OMR written examination it dates to 20 Sep 2026, a final list of Driver candidates called to an OMR written test and a revised Conductor advertisement of 3 Oct 2026 changing the posts reserved for candidates with disabilities. The advertisement PDFs sit off the corporation's domain, so no vacancy counts are asserted here.",
     },
     summary:
       "Direct recruitment to Driver, Conductor and Helper classes in Gujarat's state road transport corporation, run advertisement-wise from the corporation's own recruitment page.",
@@ -3380,9 +3568,9 @@ export const exams: Exam[] = [
       "Confirm education, age, driving-licence, domicile and category rules in the specific GSRTC advertisement before applying.",
     ],
     selectionStages: [
-      "For the Driver class — document verification followed by a driving test, which GSRTC notifies through its recruitment page",
+      "For the Driver class — GSRTC's page lists a final list of candidates called to an OMR-based objective written test under advertisement GSRTC-202627-1; driving-test and document-verification notices follow through the same page",
       "For the Helper (Mechanical) class — an OMR-based written examination followed by document verification, as reflected in the notices GSRTC has published for advertisement GSRTC-202425-47",
-      "For the Conductor class — read the selection procedure inside advertisement GSRTC-202627-32; no stages are asserted here",
+      "For the Conductor class — an OMR written examination, dated 20 Sep 2026 on the page's provisional answer key; read advertisement GSRTC-202627-32 for the remaining stages",
     ],
     syllabus: ["Use only the syllabus published inside the relevant GSRTC advertisement."],
     keywords: [
@@ -3400,8 +3588,15 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Gujarat State Road Transport Corporation — official recruitment page",
     sourceUrl: "https://www.gsrtc.in/site/downloads/innerPages/recruitment.html",
-    sourcePublished: "Recruitment page re-read 29 Aug 2026; the page itself records a last update of 21 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:07 IST",
+    sourcePublished: "Recruitment page re-read 3 Oct 2026, including a revised Conductor advertisement (GSRTC/202627/32) dated 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:41 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "GSRTC's recruitment page now carries provisional answer keys and an objection notice for the Conductor and Helper OMR written examination of 20 Sep 2026, a final list of Driver candidates called to an OMR written test, a new Helper (Mechanical) advertisement, GSRTC_202627_47, and a revised Conductor advertisement of 3 Oct 2026 on posts for candidates with disabilities.",
+      },
+    ],
   }),
   exam({
     slug: "guvnl-vidyut-sahayak-junior-engineer-electrical-2026",
@@ -3421,7 +3616,7 @@ export const exams: Exam[] = [
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
     education: ["Graduate", "Professional degree"],
     status: {
-      detail: "MGVCL, the lead company for this centralised recruitment, scheduled the first-tier examination for 9 Aug 2026 by a notice of 7 Jul 2026, with hall tickets live from 31 Jul 2026. Its notice of 1 Aug 2026 postponed that examination because of the weather across Gujarat and says the next date will be announced subsequently. MGVCL's career page still publishes no revised date.",
+      detail: "MGVCL, the lead company for this centralised recruitment, scheduled the first-tier examination for 9 Aug 2026 by a notice of 7 Jul 2026, with hall tickets live from 31 Jul 2026. Its notice of 1 Aug 2026 postponed that examination because of the weather across Gujarat and says the next date will be announced subsequently. MGVCL's career page, re-read on 3 Oct 2026, still publishes no revised date.",
       label: "First-tier examination postponed",
       tone: "red",
       nextAction: "Watch MGVCL's career page for the rescheduled first-tier examination date",
@@ -3490,8 +3685,8 @@ export const exams: Exam[] = [
     sourceTitle: "MGVCL centralised advertisement for Vidyut Sahayak (Junior Engineer - Electrical) on behalf of all DISCOMs and GETCO",
     sourceUrl: "https://www.mgvcl.com/Upload/jobs/Centralised%20Rec.%20Advertisement_%20VS_JE-%20Electrical.pdf",
     sourcePublished:
-      "Advertisement 10 Jun 2026; examination schedule 7 Jul 2026; postponement notice 1 Aug 2026; MGVCL career page re-read 29 Aug 2026 with no revised date",
-    lastVerified: "29 Aug 2026, 16:08 IST",
+      "Advertisement 10 Jun 2026; examination schedule 7 Jul 2026; postponement notice 1 Aug 2026; MGVCL career page re-read 3 Oct 2026 with no revised date",
+    lastVerified: "3 Oct 2026, 20:09 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -3520,10 +3715,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th", "Graduate"],
     status: {
       detail:
-        "GSSC's notice of 21 August 2026 hands the Physical Endurance Test and the Physical Standards and Physical Efficiency Tests to the Goa Police Department. The first part — height and chest measurement for men and height and weight for women — began on 1 September 2026 from 08:30 hours at the Atal Stadium, Cujira, Bambolim. The Commission's notice of 4 September 2026 reschedules the Physical Endurance Test and Physical Standards Test that had been fixed for 7 September 2026 to 11 September 2026; the remaining post-wise dates, times and other instructions stay on the Goa Police Department's own citizen portal. Candidates must bring the hard copy of the e-admit card issued for each post at CBT-I together with a valid photo ID; a replacement copy costs ₹100 at the venue, and anyone eligible for more than one post attends the PET once but carries a separate e-admit card for each.",
-      label: "Physical tests under way; 7 Sep session moved to 11 Sep",
-      tone: "blue",
-      nextAction: "If your test fell on 7 Sep 2026, attend on 11 Sep 2026 with your CBT-I e-admit card and photo ID",
+        "GSSC's notice of 21 August 2026 hands the Physical Endurance Test and the Physical Standards and Physical Efficiency Tests to the Goa Police Department and calls the measurement round — height and chest for men, height and weight for women — the first part. That round ran from 1 September 2026 at the Atal Stadium, Cujira, Bambolim, with the 7 September session moved to 11 September by the Commission's notice of 4 September 2026, and a Goa Police notice of 9 September 2026 let candidates who had missed their slot appear on 12 September 2026. Neither GSSC's website nor the Goa Police recruitment page, re-read on 3 October 2026, gives a date for the physical efficiency tests or CBT-II. Candidates must bring the hard copy of the e-admit card issued for each post at CBT-I together with a valid photo ID.",
+      label: "Measurement round held; efficiency-test dates awaited",
+      tone: "amber",
+      nextAction: "Watch GSSC's website and the Goa Police citizen portal for the physical efficiency test schedule; keep your CBT-I e-admit card",
     },
     summary:
       "Goa's single Group C advertisement covering Police Constable, Armed Police Constable, Constable Driver, Range Forest Officer, Round Forester, Forest Guard, prison and home-guard posts across the Police, Forest, Prisons, Sports and Women and Child Development departments.",
@@ -3564,10 +3759,10 @@ export const exams: Exam[] = [
       { label: "Corrigenda to PET eligibility lists and addendum to CBT final result", date: "2026-08-17", displayDate: "17 Aug 2026", state: "completed" },
       { label: "Notice fixing the physical tests", date: "2026-08-21", displayDate: "21 Aug 2026", state: "completed" },
       {
-        label: "Physical Endurance Test / Physical Standards and Efficiency Tests",
+        label: "Physical Standards Test — first part (measurements)",
         date: "2026-09-01",
         displayDate: "From 1 Sep 2026, 8:30 AM",
-        state: "current",
+        state: "completed",
         note: "Atal Stadium, Cujira, Bambolim — post-wise dates and times published by the Goa Police Department",
       },
       {
@@ -3580,9 +3775,17 @@ export const exams: Exam[] = [
         label: "Rescheduled Physical Endurance Test / Physical Standards Test",
         date: "2026-09-11",
         displayDate: "11 Sep 2026",
-        state: "scheduled",
-        note: "For the candidates whose test had been fixed for 7 Sep 2026",
+        state: "completed",
+        note: "For the candidates whose test had been fixed for 7 Sep 2026; held as notified, with no further change on GSSC's website when re-read on 3 Oct 2026",
       },
+      {
+        label: "Physical Standards Test for candidates who missed their slot",
+        date: "2026-09-12",
+        displayDate: "12 Sep 2026, 8:30 AM",
+        state: "completed",
+        note: "Goa Police notice of 9 Sep 2026; candidates who had already appeared could not repeat the test",
+      },
+      { label: "Physical efficiency tests and CBT-II", displayDate: "Awaited", state: "tentative" },
     ],
     eligibility: [
       "Applicants need a valid 15-year Goa residence certificate issued by the competent authority in Goa and registration with the Employment Exchange, Goa, alongside the birth, caste or social-status, EWS and experience certificates relevant to their claim.",
@@ -3653,8 +3856,8 @@ export const exams: Exam[] = [
     sourceTitle: "Goa Staff Selection Commission Advertisement No. 2 of Year 2026 and its notice of 21 Aug 2026 fixing the physical tests",
     sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2026/02/Advertisement-No.-2-of-Year-2026_compressed.pdf",
     sourcePublished:
-      "Advertisement dated 20 Feb 2026; PET eligibility lists dated 10 Aug 2026; corrigenda and CBT final-result addendum dated 17 Aug 2026; notice No.1/115/2026-GSSC/822 fixing the physical tests dated 21 Aug 2026; notice for PET candidates rescheduling the 7 Sep tests dated 4 Sep 2026; Commission's notice board re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 16:40 IST",
+      "Advertisement dated 20 Feb 2026; PET eligibility lists dated 10 Aug 2026; corrigenda and CBT final-result addendum dated 17 Aug 2026; notice No.1/115/2026-GSSC/822 fixing the physical tests dated 21 Aug 2026; notice for PET candidates rescheduling the 7 Sep tests dated 4 Sep 2026; Goa Police make-up session notice No. CS-I(DR)/D-506/PST&PET/GSSC/2026/10340 dated 9 Sep 2026 on its recruitment page; Commission's notice board and results page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:41 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -3670,6 +3873,11 @@ export const exams: Exam[] = [
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "GSSC republished the withdrawn PET eligibility lists on 10 Aug 2026 and issued corrigenda for four posts on 17 Aug 2026; the PET date itself is still to be intimated.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The measurement round of the physical tests is over: it ran from 1 Sep 2026, with the 7 Sep session held on 11 Sep and a Goa Police make-up session on 12 Sep 2026 for candidates who missed their slot. No date is published yet for the physical efficiency tests or CBT-II.",
       },
     ],
   }),
@@ -3696,7 +3904,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Commission's notice list for the CBT schedule for this advertisement",
       detail:
-        "Applications for Advertisement No. 1 of Year 2026 closed on 20 Feb 2026. The Commission's notice list carries no examination or result notice naming this advertisement.",
+        "Applications for Advertisement No. 1 of Year 2026 closed on 20 Feb 2026. Re-read on 3 Oct 2026, the Commission's notice list carries no examination or result notice naming this advertisement.",
     },
     summary:
       "Goa Staff Selection Commission recruitment to Government Primary School Teacher posts in the Directorate of Education, in the Marathi and Konkani mediums.",
@@ -3719,7 +3927,7 @@ export const exams: Exam[] = [
       { label: "Computer-based test", displayDate: "Date not announced", state: "current" },
     ],
     eligibility: [
-      "Applicants need a 15-year Goa residence certificate, Employment Exchange registration in Goa and a Teacher Eligibility Test certificate recognised by the Government of Goa; the Commission's notice list carried no examination or result notice naming this advertisement when it was re-read on 29 Aug 2026.",
+      "Applicants need a 15-year Goa residence certificate, Employment Exchange registration in Goa and a Teacher Eligibility Test certificate recognised by the Government of Goa; the Commission's notice list carried no examination or result notice naming this advertisement when it was re-read on 3 Oct 2026.",
       "Vacancies are medium-specific — a candidate must apply against the Marathi or the Konkani medium row.",
       "The eligibility cut-off for qualifications, age and experience is the last date of application.",
     ],
@@ -3756,8 +3964,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Goa Staff Selection Commission Advertisement No. 1 of Year 2026 — Government Primary School Teacher",
     sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2026/01/Advertisement-No.1-of-Year-2026_compressed.pdf",
-    sourcePublished: "Advertisement dated 30 Jan 2026 with a last date of 20 Feb 2026; Commission notice list re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 16:14 IST",
+    sourcePublished: "Advertisement dated 30 Jan 2026 with a last date of 20 Feb 2026; Commission notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:12 IST",
   }),
   exam({
     slug: "gssc-goa-group-c-multi-department-2025",
@@ -3778,11 +3986,11 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration", "Health & Medical", "Specialist & Professional"],
     education: ["12th", "ITI / Diploma", "Graduate", "Postgraduate"],
     status: {
-      label: "Both CBT-II sittings held; provisional results published",
-      tone: "violet",
-      nextAction: "Check the post-wise provisional CBT-II result for your post on the Commission's website",
+      label: "Final results out; option exercise on 9 Oct 2026",
+      tone: "blue",
+      nextAction: "If you are on the list of candidates called (due by 5 Oct 2026), exercise your option in Panaji on 9 Oct 2026 with your CBT-II e-admit card and photo ID",
       detail:
-        "Both CBT-II sittings have been held. The first, on 23 Aug 2026, was followed by provisional results on 24 Aug 2026 for Laboratory Technician, Laboratory Assistant, Junior Research Assistant and Fisheries Surveyor and separately for Assistant Archivist Grade II. The second sitting was held on 30 Aug 2026, and on 31 Aug 2026 the Commission published provisional CBT-II results for Searcher, Aval Karkun, Information Assistant, Industries Inspector, Store Keeper and Village Panchayat Secretary. Its notice board, re-read on 9 Sep 2026, publishes no final result for this advertisement yet.",
+        "The Commission published final CBT-II results for the 23 Aug 2026 sitting on 11 Sep 2026 and for the 30 Aug sitting on 25 Sep 2026, with an addendum on 1 Oct 2026, plus selection and wait lists for Investigator, Inspector Legal Metrology, Junior Geologist and Assistant Archivist Grade II on 25 Sep 2026. Its notice of 1 Oct 2026 calls candidates for the posts that shared a common CBT-II to exercise their option at the Institute Menezes Braganza, Panaji, on 9 Oct 2026 between 10 am and 4 pm only, and will publish the list of those called by 5 Oct 2026. Re-read on 3 Oct 2026.",
     },
     summary:
       "Goa's multi-department Group C advertisement covering Talathi, Village Panchayat Secretary, Investigator, Laboratory Assistant and Technician, Aval Karkun, Accounts Clerk, Junior Geologist, Fisheries and Legal Metrology posts across more than a dozen departments.",
@@ -3810,7 +4018,18 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Searcher, Aval Karkun, Information Assistant, Industries Inspector, Store Keeper and Village Panchayat Secretary",
       },
-      { label: "Final result", displayDate: "To be announced", state: "current" },
+      { label: "Final CBT-II results for the 23 Aug sitting", date: "2026-09-11", displayDate: "11 Sep 2026", state: "completed" },
+      {
+        label: "Final CBT-II results for the 30 Aug sitting; first selection lists",
+        date: "2026-09-25",
+        displayDate: "25 Sep 2026",
+        state: "completed",
+        note: "Selection and wait lists for Investigator, Inspector Legal Metrology, Junior Geologist and Assistant Archivist Grade II",
+      },
+      { label: "Notice for exercising option", date: "2026-10-01", displayDate: "1 Oct 2026", state: "completed" },
+      { label: "List of candidates called to exercise option", date: "2026-10-05", displayDate: "By 5 Oct 2026", state: "scheduled" },
+      { label: "Option exercise, Institute Menezes Braganza, Panaji", date: "2026-10-09", displayDate: "9 Oct 2026, 10 am – 4 pm", state: "scheduled" },
+      { label: "Selection lists for the posts in the option round", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
       "Applicants need a 15-year Goa residence certificate issued by the competent authority in Goa and registration with the Employment Exchange, Goa.",
@@ -3821,7 +4040,7 @@ export const exams: Exam[] = [
       "Two-tier computer-based test with no negative marking; CBT-I is for shortlisting and screening only",
       "Eligibility lists for CBT-II published post-wise, with corrigenda issued on 29 Jul 2026 for Talathi, Village Panchayat Secretary, Investigator and Laboratory Assistant",
       "CBT-II on 23 and 30 Aug 2026 at the venues in the Commission's notice of 3 Aug 2026 — provisional results for the first sitting were published post-wise on 24 Aug 2026",
-      "Selection on merit, with the post-wise notices the Commission continues to publish under this advertisement",
+      "Final results and post-wise selection and wait lists; where one CBT-II served a group of posts, candidates exercise an option between them (on 9 Oct 2026 for this advertisement), and the recommending department then verifies documents",
     ],
     syllabus: ["Use the syllabus and scheme-of-examination annexure inside Advertisement No. 3 of Year 2025."],
     keywords: [
@@ -3859,13 +4078,24 @@ export const exams: Exam[] = [
         url: "https://gssc.goa.gov.in/wp-content/uploads/2026/08/provisional-result-cbt-ii-23.08.2026-assistant-archivist-grade-ii_compressed.pdf",
         type: "result",
       },
+      {
+        label: "Final CBT-II result, 30 Aug 2026 sitting — Searcher, Aval Karkun and other posts",
+        url: "https://gssc.goa.gov.in/wp-content/uploads/2026/09/final-result-cbt-ii-30.08.2026-searcher-aval-karkun-etc_compressed.pdf",
+        type: "result",
+      },
+      {
+        label: "Notice for exercising option, 1 Oct 2026",
+        url: "https://gssc.goa.gov.in/wp-content/uploads/2026/10/Notice-for-Exercising-Option-Advertisement-No.-3-of-Year-2025.pdf",
+        type: "notice",
+      },
+      { label: "GSSC selection lists and results", url: "https://gssc.goa.gov.in/?page_id=1297", type: "result" },
       { label: "GSSC advertisements", url: "https://gssc.goa.gov.in/?page_id=1079", type: "notice" },
     ],
-    sourceTitle: "Goa Staff Selection Commission Advertisement No. 3 of Year 2025 and its CBT-II notices and provisional results",
-    sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2025/12/Advertisement-No.3-of-Year-2025.pdf",
+    sourceTitle: "Goa Staff Selection Commission — notice for exercising option under Advertisement No. 3 of Year 2025",
+    sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2026/10/Notice-for-Exercising-Option-Advertisement-No.-3-of-Year-2025.pdf",
     sourcePublished:
-      "Advertisement dated 5 Dec 2025; addendum 9 Dec 2025; CBT-II venue notice 3 Aug 2026; provisional CBT-II results for the 23 Aug sitting published 24 Aug 2026 and for the 30 Aug sitting published 31 Aug 2026; Commission's notice board re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 16:40 IST",
+      "Advertisement dated 5 Dec 2025; addendum 9 Dec 2025; CBT-II venue notice 3 Aug 2026; provisional CBT-II results for the 23 Aug sitting published 24 Aug 2026 and for the 30 Aug sitting published 31 Aug 2026; final results 11 and 25 Sep 2026; option notice 1 Oct 2026; notice board re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:12 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -3876,6 +4106,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "The second CBT-II sitting was held on 30 Aug 2026 and the Commission published its provisional results on 31 Aug 2026 for Searcher, Aval Karkun, Information Assistant, Industries Inspector, Store Keeper and Village Panchayat Secretary, so the record now sits at the result stage rather than showing an upcoming sitting.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Final CBT-II results are out — on 11 Sep 2026 for the 23 Aug sitting and on 25 Sep 2026 for the 30 Aug sitting, with first selection and wait lists on 25 Sep. The Commission's notice of 1 Oct 2026 calls candidates for the posts that shared a common CBT-II to exercise their option in Panaji on 9 Oct 2026.",
       },
     ],
   }),
@@ -3904,59 +4139,76 @@ export const exams: Exam[] = [
     examTypes: ["Civil Services & Administration"],
     education: ["12th"],
     status: {
-      label: "Brief advertisement out; online portal opens by 11 Sep 2026",
-      tone: "blue",
-      nextAction: "Apply online through the Commission's website once the portal opens, on or before 2 Oct 2026",
+      label: "Applications closed; CBT date awaited",
+      tone: "amber",
+      nextAction: "Watch GSSC's website and the local dailies for the CBT-I date; applications closed on 2 Oct 2026",
       detail:
-        "Brief Advertisement No. 3 of Year 2026, No.1/164/2026-GSSC/871 dated 4 Sep 2026 and uploaded the same day, invites online applications for 215 tentative Group C posts in various Government departments of Goa. The Commission states that the portal for submitting online applications will be available by 11 Sep 2026, that the detailed advertisement will be uploaded on its website by the same date, and that the last date for filling up the online application is 2 Oct 2026. Examination dates are to be intimated in due course through the Commission's website and publication in the local daily. Its advertisement list, read on 10 Sep 2026, carries the brief advertisement only.",
+        "GSSC's detailed Advertisement No. 3 of Year 2026 (No.1/164/2026-GSSC/883, dated and uploaded 11 Sep 2026) invited online applications until 2 Oct 2026 for Group C posts in Government departments of Goa: 3 Desktop Publishing Operator, 204 Lower Division Clerk/Recovery Clerk, 2 Data Entry Operator and 13 Junior Assistant. A supplementary note of 21 Sep 2026 cuts the Directorate of Education's clerk posts from 17 to 16, making 203 clerk posts, and revises the CBT-II shortlisting ratio. Selection is by a two-tier computer-based test and a qualifying typing test, and the Commission says the examination date will be intimated through its website and the local daily. Its advertisement list, re-read on 3 Oct 2026, shows no extension of the 2 Oct 2026 deadline and no examination date.",
     },
     summary:
       "Goa Staff Selection Commission recruitment to Lower Division Clerk/Recovery Clerk, Junior Assistant, Desktop Publishing Operator and Data Entry Operator posts across Government departments of Goa.",
-    vacancies: 215,
-    vacancyLabel: "215 posts (tentative)",
+    vacancies: 221,
+    vacancyLabel: "221 posts",
     vacancyNote:
-      "The brief advertisement prints a post count against each of the four cadres but no grand total; 215 is the sum of those published figures, listed cadre-wise below. The advertisement states that the vacancies indicated are tentative and that the exact vacancies will be mentioned in the detailed advertisement.",
+      "The detailed advertisement of 11 Sep 2026 prints a total for each of the four posts but no grand total; 221 is the sum of those totals after the supplementary note of 21 Sep 2026 cut the Lower Division Clerk/Recovery Clerk posts from 204 to 203 (Unreserved 110), listed post-wise below.",
     vacancyBreakdown: [
-      { label: "Lower Division Clerk / Recovery Clerk", ur: 109, st: 25, sc: 4, obc: 44, ews: 15, total: 197 },
+      { label: "Lower Division Clerk / Recovery Clerk", ur: 110, st: 26, sc: 4, obc: 47, ews: 16, total: 203 },
       { label: "Junior Assistant", ur: 7, st: 2, obc: 4, total: 13 },
       { label: "Desktop Publishing Operator", ur: 3, total: 3 },
       { label: "Data Entry Operator", ur: 2, total: 2 },
     ],
     age:
-      "Not asserted here — the brief advertisement of 4 Sep 2026 publishes no age limit or relaxation for any of the four cadres. Use the detailed advertisement the Commission is to upload by 11 Sep 2026.",
+      "Not exceeding 45 years for all four posts, relaxable up to five years for Government servants and others under Government orders. Reserved categories get 5 years (SC/ST), 3 years (OBC) and 10 years (PwD), or 15 and 13 years for PwD candidates from SC/ST and OBC, and ex-servicemen as per rules, subject to a maximum of 56 years. Age is reckoned on the last date of application, 2 Oct 2026.",
     qualification:
-      "Not asserted here — the brief advertisement of 4 Sep 2026 publishes no educational qualification, experience or language requirement for any of the four cadres. Use the detailed advertisement the Commission is to upload by 11 Sep 2026.",
-    fee: "Not asserted here — the brief advertisement publishes no application fee; the detailed advertisement due by 11 Sep 2026 carries it.",
-    pay: "Not asserted here — the brief advertisement publishes no pay level for any of the four cadres.",
+      "Clerk, Data Entry Operator, Junior Assistant: HSSC or State Board diploma, six-month computer course, 30 wpm English typing, one year's experience and Konkani. Desktop Publishing Operator: HSSC, DTP trade training, three years' experience, 40 wpm typing and Konkani.",
+    fee: "₹200 for Unreserved, ₹100 for OBC and EWS, ₹50 for SC/ST and nil for PwD candidates for the Level-2 clerk, Data Entry Operator and Junior Assistant posts; ₹400, ₹200, ₹100 and nil for the Level-5 Desktop Publishing Operator post. Online payment only.",
+    pay: "Pay Level 5 for Desktop Publishing Operator and Pay Level 2 for Lower Division Clerk/Recovery Clerk, Data Entry Operator and Junior Assistant, as printed in the detailed advertisement; no rupee figure is given.",
     timeline: [
       { label: "Brief Advertisement No. 3 of Year 2026", date: "2026-09-04", displayDate: "4 Sep 2026", state: "completed" },
       {
         label: "Online application portal available",
         date: "2026-09-11",
         displayDate: "By 11 Sep 2026",
-        state: "scheduled",
+        state: "completed",
+        note: "The detailed advertisement of 11 Sep 2026 invites online applications through the Commission's website",
       },
       {
-        label: "Detailed advertisement to be uploaded",
+        label: "Detailed Advertisement No. 3 of Year 2026 uploaded",
         date: "2026-09-11",
-        displayDate: "By 11 Sep 2026",
-        state: "scheduled",
+        displayDate: "11 Sep 2026",
+        state: "completed",
       },
-      { label: "Last date to apply online", date: "2026-10-02", displayDate: "2 Oct 2026", state: "scheduled" },
-      { label: "Examination", displayDate: "To be announced", state: "tentative" },
+      {
+        label: "Supplementary note to Advertisement No. 3",
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026",
+        state: "completed",
+        note: "Clerk posts cut to 203; CBT-II shortlisting ratio revised",
+      },
+      {
+        label: "Last date to apply online",
+        date: "2026-10-02",
+        displayDate: "2 Oct 2026",
+        state: "completed",
+        note: "Closed as notified; no extension on GSSC's website when re-read on 3 Oct 2026",
+      },
+      { label: "CBT-I examination", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
-      "Only online applications are accepted, through the Commission's website; the advertisement states that applications shall not be submitted through any other mode and that no correspondence will be entertained about it.",
-      "Of the 197 Lower Division Clerk/Recovery Clerk posts, 23 are reserved for persons with benchmark disabilities, 17 for ex-servicemen and 1 for meritorious sportsmen or sportspersons.",
-      "Of the 13 Junior Assistant posts, 3 are reserved for persons with benchmark disabilities and 1 for ex-servicemen.",
-      "Candidates are told to read the 'Instructions' available on the Commission's website before filling the application online, and to refer to the detailed advertisement to be uploaded by 11 Sep 2026.",
-      "The advertisement warns that ineligible candidates should not apply for the posts advertised, failing which strict action will be taken by the Commission against such a candidate.",
+      "Only online applications were accepted, through the Commission's website; the cut-off date for qualification, age and experience is the last date of application.",
+      "Of the 203 Lower Division Clerk/Recovery Clerk posts, 22 are reserved for persons with benchmark disabilities, 17 for ex-servicemen and 1 for meritorious sportsmen; of the 13 Junior Assistant posts, 3 for persons with benchmark disabilities and 1 for ex-servicemen.",
+      "Candidates with a degree or diploma in computers, IT or electronics, or an ITI Computer Operator and Programming Assistant certificate, are exempt from the computer course certificate; PwD candidates are exempt from the experience requirement.",
+      "A valid 15-year Goa residence certificate and Employment Exchange registration are among the documents candidates must hold.",
     ],
     selectionStages: [
-      "Not published in the brief advertisement — the Commission states only that the date of the examinations will be intimated in due course through its website and publication in the local daily; the detailed advertisement due by 11 Sep 2026 carries the scheme of selection.",
+      "CBT-I — a common screening test for all four posts, used only for shortlisting.",
+      "CBT-II — 15 times the posts per category for Desktop Publishing Operator and Data Entry Operator and 5 times for clerk and Junior Assistant (supplementary note of 21 Sep 2026); one common CBT-II for the clerk, Data Entry Operator and Junior Assistant posts, a separate one for Desktop Publishing Operator.",
+      "Qualifying typing/skill test — 30 wpm in English (40 wpm for Desktop Publishing Operator); selection is on CBT-II marks, followed by post and department options by merit.",
     ],
     syllabus: [
-      "Use the syllabus and scheme-of-examination annexure inside the detailed Advertisement No. 3 of Year 2026 once the Commission uploads it.",
+      "CBT-I — 60 marks in 75 minutes: English and comprehension 20, numerical ability 10, reasoning 20 and Konkani language 10; a minimum of 4 marks in Konkani is mandatory.",
+      "CBT-II — 80 marks in 100 minutes: English and comprehension 30, numerical ability 10, reasoning 20 and basic computer proficiency 20.",
+      "No negative marking; minimum pass marks are 45% for Unreserved, 40% for OBC and 35% for SC/ST/PwD candidates.",
     ],
     keywords: [
       "Goa LDC recruitment",
@@ -3971,6 +4223,16 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       {
+        label: "Advertisement No. 3 of Year 2026 (detailed, 11 Sep 2026)",
+        url: "https://gssc.goa.gov.in/wp-content/uploads/2026/09/advertisement-no.-3-of-year-2026_compressed.pdf",
+        type: "notice",
+      },
+      {
+        label: "Supplementary note of 21 Sep 2026",
+        url: "https://gssc.goa.gov.in/wp-content/uploads/2026/09/supplementary-note-to-advertisement-no.-3-of-year-2026_compressed.pdf",
+        type: "notice",
+      },
+      {
         label: "Brief Advertisement No. 3 of Year 2026",
         url: "https://gssc.goa.gov.in/wp-content/uploads/2026/09/advertisement-no.-3-of-year-2026-brief-advertisement-dated-04.09.2026_compressed.pdf",
         type: "notice",
@@ -3978,17 +4240,21 @@ export const exams: Exam[] = [
       { label: "GSSC advertisements", url: "https://gssc.goa.gov.in/?page_id=1079", type: "notice" },
       { label: "Goa Staff Selection Commission", url: "https://gssc.goa.gov.in/", type: "website" },
     ],
-    sourceTitle: "Goa Staff Selection Commission Advertisement No. 3 of Year 2026 (Brief Advertisement)",
-    sourceUrl:
-      "https://gssc.goa.gov.in/wp-content/uploads/2026/09/advertisement-no.-3-of-year-2026-brief-advertisement-dated-04.09.2026_compressed.pdf",
+    sourceTitle: "Goa Staff Selection Commission Advertisement No. 3 of Year 2026 (detailed) and its supplementary note",
+    sourceUrl: "https://gssc.goa.gov.in/wp-content/uploads/2026/09/advertisement-no.-3-of-year-2026_compressed.pdf",
     sourcePublished:
-      "Brief Advertisement No.1/164/2026-GSSC/871 dated 4 Sep 2026 and uploaded 4 Sep 2026; Commission's advertisement list re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:15 IST",
+      "Brief advertisement No.1/164/2026-GSSC/871 dated and uploaded 4 Sep 2026; detailed advertisement No.1/164/2026-GSSC/883 dated and uploaded 11 Sep 2026; supplementary note No.1/164/2026-GSSC/892 dated and uploaded 21 Sep 2026; Commission's advertisement list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:18 IST",
     changeLog: [
       {
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "New record. GSSC's Brief Advertisement No. 3 of Year 2026, dated 4 Sep 2026, invites online applications for 215 tentative Group C posts — 197 Lower Division Clerk/Recovery Clerk, 13 Junior Assistant, 3 Desktop Publishing Operator and 2 Data Entry Operator — with the online portal and the detailed advertisement due by 11 Sep 2026 and 2 Oct 2026 as the last date to apply.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications have closed and the post count is now 221. GSSC's detailed advertisement of 11 Sep 2026 lists 204 clerk posts, 13 Junior Assistant, 3 Desktop Publishing Operator and 2 Data Entry Operator posts, with age, qualification, fee, pay level and a two-tier CBT scheme; a supplementary note of 21 Sep 2026 cuts the clerk posts to 203. Applications closed on 2 Oct 2026 with no extension, and the CBT date is awaited.",
       },
     ],
   }),
@@ -4014,7 +4280,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch RVUN's Recruitment 2026-27 page for the examination schedule",
       detail:
-        "RVUN's Recruitment 2026-27 page carries the short and detailed advertisements alongside the registration link. The online application window opened as scheduled on 5 August 2026, and RVUN's notice of 25 August 2026 extended the last date from 25 August to 31 August 2026, 12:00 midnight, after which the link was to be deactivated with no further opportunity. Read again on 10 September 2026, the page lists that extension notice as its newest item and publishes no examination date.",
+        "RVUN's Recruitment 2026-27 page carries the short and detailed advertisements alongside the registration link. The online application window opened as scheduled on 5 August 2026, and RVUN's notice of 25 August 2026 extended the last date from 25 August to 31 August 2026, 12:00 midnight, after which the link was to be deactivated with no further opportunity. Read again on 3 October 2026, the page lists that extension notice as its newest item and publishes no examination date.",
     },
     summary:
       "Single common recruitment for Rajasthan's five state power companies — the generation company RVUN, the transmission company RVPN and the distribution companies JVVN, AVVN and JdVVN — to Junior Engineer-I, Junior Accountant and Junior Assistant/Commercial Assistant-II posts.",
@@ -4091,8 +4357,8 @@ export const exams: Exam[] = [
     sourceTitle: "Rajasthan Rajya Vidyut Utpadan Nigam — common recruitment 2026-27 announcement and press release",
     sourceUrl: "https://energy.rajasthan.gov.in/rrvun/",
     sourcePublished:
-      "Portal announcement and press release dated 4 Aug 2026; notice extending the last date to 31 Aug 2026 dated 25 Aug 2026; Recruitment 2026-27 page re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:12 IST",
+      "Portal announcement and press release dated 4 Aug 2026; notice extending the last date to 31 Aug 2026 dated 25 Aug 2026; Recruitment 2026-27 page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 16:01 IST",
     changeLog: [
       {
         date: "2026-08-10",
@@ -4127,7 +4393,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the board's own recruitment-advertisements page for the next notice",
       detail:
-        "The board's own recruitment-advertisements page carries only the March 2025 call-letter notices and candidate handouts for the Apex Bank and Central Cooperative Banks recruitment and for RAJFED. Re-read on 10 Sep 2026, its newest listed document is still dated 24 Mar 2025 and no newer advertisement appears.",
+        "The board's own recruitment-advertisements page carries only the March 2025 call-letter notices and candidate handouts for the Apex Bank and Central Cooperative Banks recruitment and for RAJFED. Re-read on 3 Oct 2026, its newest listed document is still dated 24 Mar 2025 and no newer advertisement appears.",
     },
     summary:
       "Statutory recruitment board that selects and recommends staff for Rajasthan's cooperative institutions, including the Apex Bank, the Central Cooperative Banks and RAJFED.",
@@ -4162,7 +4428,7 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Rajasthan Cooperative Recruitment Board — recruitment-advertisements and About Us pages",
     sourceUrl: "https://rajcrb.rajasthan.gov.in/RecruitmentAdvertisements.aspx?menu_id=13",
-    sourcePublished: "Latest listed documents dated 24 Mar 2025; pages re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:22 IST",
+    sourcePublished: "Latest listed documents dated 24 Mar 2025; pages re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:59 IST",
   }),
 ];

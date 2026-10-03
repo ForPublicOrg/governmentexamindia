@@ -144,7 +144,7 @@ export const authorities: Authority[] = [
     allowedHosts: ["hfwcom.karnataka.gov.in"],
     watchUrls: [
       "https://hfwcom.karnataka.gov.in/english",
-      "https://hfwcom.karnataka.gov.in/page/Recruitment+(DRC)/Direct+Recruitment+Cell+(DRC)/en",
+      "https://hfwcom.karnataka.gov.in/17/direct-recruitment-cell-%28drc%29/en",
     ],
   },
   {
@@ -160,13 +160,11 @@ export const authorities: Authority[] = [
     name: "Andhra Pradesh Grama Ward Sachivalayam Department",
     level: "State",
     regionCodes: ["AP"],
-    // gramawardsachivalayam.ap.gov.in serves the department's GSWS application,
-    // which also answers on sgsw.ap.gov.in; both are Government of AP hosts.
+    // sgsw.ap.gov.in now serves the department's GSWS application; the old
+    // gramawardsachivalayam.ap.gov.in host returned NXDOMAIN from 1.1.1.1 and
+    // 8.8.8.8 on 3 Oct 2026 and stays allowed only for older links.
     allowedHosts: ["gramawardsachivalayam.ap.gov.in", "sgsw.ap.gov.in"],
-    watchUrls: [
-      "https://gramawardsachivalayam.ap.gov.in/GSWS/Home/Main",
-      "https://sgsw.ap.gov.in/GSWS/Home/Main",
-    ],
+    watchUrls: ["https://sgsw.ap.gov.in/GSWS/Home/Main"],
   },
   {
     id: "apepdcl",
@@ -182,9 +180,10 @@ export const authorities: Authority[] = [
     name: "Southern Power Distribution Company of Andhra Pradesh Limited",
     level: "State",
     regionCodes: ["AP"],
-    // apspdcl.in is APSPDCL's own official corporate domain.
-    allowedHosts: ["www.apspdcl.in", "apspdcl.in"],
-    watchUrls: ["https://www.apspdcl.in/careers.php"],
+    // apspdcl.in is APSPDCL's own official corporate domain. Notification
+    // No.1/2026 names apvidyutrecruitment.apcfss.in as the common recruitment portal.
+    allowedHosts: ["www.apspdcl.in", "apspdcl.in", "apvidyutrecruitment.apcfss.in"],
+    watchUrls: ["https://www.apspdcl.in/careers.php", "https://apvidyutrecruitment.apcfss.in/"],
   },
   {
     id: "andhra-pradesh-msrb",
@@ -265,7 +264,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Watch the Commission's notification page for the preliminary examination admission ticket",
       detail:
-        "The Commission's notification page, re-read on 10 Sep 2026, carries a corrigendum notification extending the date for submission of the online application for Gazetted Probationers 2026-27 till 07-09-2026, so the window that the 31 Jul 2026 final notification closed on 31 Aug 2026 has now closed a week later. The final notification puts the preliminary examination tentatively on 15 Nov 2026; no admission-ticket or examination notice for it has been published yet.",
+        "The Commission's notification page, re-read on 3 Oct 2026, carries a corrigendum notification extending the date for submission of the online application for Gazetted Probationers 2026-27 till 07-09-2026, so the window that the 31 Jul 2026 final notification closed on 31 Aug 2026 has now closed a week later. The final notification puts the preliminary examination tentatively on 15 Nov 2026; no admission-ticket or examination notice for it has been published yet.",
     },
     summary: "Karnataka's competitive recruitment to notified Group A and Group B gazetted services.",
     age: "Service- and category-specific under the final notification.",
@@ -309,8 +308,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Gazetted Probationers 2026-27 Final Notification",
     sourceUrl: "https://kpsc.kar.nic.in/GP%202026-27%20Final%20Notification%20with%20PH%20Schedules%20HOSTED%20ON%2031-07-2026.pdf",
-    sourcePublished: "Final notification of 31 Jul 2026; notification page re-read 10 Sep 2026, where the corrigendum extending the application date till 07-09-2026 is still the latest entry for this cycle",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourcePublished: "Final notification of 31 Jul 2026; notification page re-read 3 Oct 2026, where the corrigendum extending the application date till 07-09-2026 is still the latest entry for this cycle",
+    lastVerified: "3 Oct 2026, 12:55 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -344,11 +343,11 @@ export const exams: Exam[] = [
     education: ["Postgraduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online through the Commission's portal by 26 Sep 2026",
+      label: "Applications closed on 26 Sep 2026; preliminary examination tentatively 29 Nov 2026",
+      tone: "blue",
+      nextAction: "Watch the Commission's notification and time-table pages for the preliminary examination admission ticket",
       detail:
-        "Notification KPSCKA/EXA2/PRSL/11/2026-EXAM2/252 dated 27 Aug 2026, listed on the Commission's notification page and read there on 10 Sep 2026, invites online applications for 15 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Hyderabad-Karnataka cadre. The notification fixes 28 Aug 2026 as the opening date, 26 Sep 2026 as the last date for applications, and 29 Nov 2026 as the tentative date of the preliminary examination.",
+        "Notification KPSCKA/EXA2/PRSL/11/2026-EXAM2/252 dated 27 Aug 2026 invited online applications for 15 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department, Hyderabad-Karnataka cadre, from 28 Aug to 26 Sep 2026. The Commission's notification, press-note and time-table pages, re-read on 3 Oct 2026, show no extension. Its tentative time table signed on 27 Aug 2026 keeps the preliminary examination on 29 Nov 2026.",
     },
     summary:
       "Direct recruitment of Group B Audit Officers in the Karnataka State Audit and Accounts Department for the Hyderabad-Karnataka (Kalyana Karnataka) cadre, through the Commission's competitive examination.",
@@ -368,8 +367,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
-      { label: "Last date for online applications", date: "2026-09-26", displayDate: "26 Sep 2026", state: "current" },
-      { label: "Preliminary examination", date: "2026-11-29", displayDate: "29 Nov 2026", state: "scheduled", note: "Tentative in notification" },
+      { label: "Last date for online applications", date: "2026-09-26", displayDate: "26 Sep 2026", state: "completed", note: "Closed as notified; no extension on the Commission's notification page when re-read on 3 Oct 2026" },
+      { label: "Preliminary examination", date: "2026-11-29", displayDate: "29 Nov 2026", state: "scheduled", note: "Tentative in the notification and the Commission's time table" },
     ],
     eligibility: [
       "Recruitment is made under the Karnataka State Accounts Services (Recruitment) Rules, 2011 and the Karnataka State Audit and Accounts Department Services (Recruitment) (Amendment) Rules, 2015 and 2023; Rules 5 and 7 of the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 apply to the conduct of the competitive examination.",
@@ -390,18 +389,24 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Audit Officer (HK) Notification dated 27 Aug 2026 (PDF)", url: "https://kpsc.kar.nic.in/SAAD%20HK%20Notification%20dt%2027-08-2026.pdf", type: "notice" },
+      { label: "Tentative time table for the 2026 SAAD posts, signed 27 Aug 2026 (PDF)", url: "https://kpsc.kar.nic.in/TIMETABLE%20AC%20(RPC)%20AUDITOR%20(HK%20BACKLOG)%20IN%20KSAAD.pdf", type: "notice" },
       { label: "KPSC notification board", url: "https://kpsc.kar.nic.in/notification.html", type: "website" },
       { label: "KPSC online application portal", url: "https://kpsconline.karnataka.gov.in/", type: "apply" },
     ],
     sourceTitle: "KPSC Notification KPSCKA/EXA2/PRSL/11/2026-EXAM2/252 dated 27 Aug 2026 - Audit Officer, Karnataka State Audit and Accounts Department (Hyderabad-Karnataka)",
     sourceUrl: "https://kpsc.kar.nic.in/SAAD%20HK%20Notification%20dt%2027-08-2026.pdf",
-    sourcePublished: "Notification dated 27 Aug 2026, listed on the Commission's notification page; the scanned notification and the notification page were read on 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourcePublished: "Notification and tentative time table dated 27 Aug 2026; the Commission's notification, press-note and time-table pages re-read 3 Oct 2026 with no extension of the 26 Sep 2026 last date",
+    lastVerified: "3 Oct 2026, 12:55 IST",
     changeLog: [
       {
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "New record. The Commission's notification page lists Notification KPSCKA/EXA2/PRSL/11/2026-EXAM2/252 dated 27 Aug 2026 for 15 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Hyderabad-Karnataka cadre, with online applications from 28 Aug 2026 to 26 Sep 2026 and a tentative preliminary examination on 29 Nov 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications closed on 26 Sep 2026 and the Commission's notification, press-note and time-table pages show no extension, so the record no longer shows applications as open. The Commission's tentative time table keeps the preliminary examination on 29 Nov 2026.",
       },
     ],
     keywords: [
@@ -435,11 +440,11 @@ export const exams: Exam[] = [
     education: ["Postgraduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online through the Commission's portal by 26 Sep 2026",
+      label: "Applications closed on 26 Sep 2026; preliminary examination tentatively 6 Dec 2026",
+      tone: "blue",
+      nextAction: "Watch the Commission's notification and time-table pages for the preliminary examination admission ticket",
       detail:
-        "Notification KPSCKA/EXA2/PRSL/10/2026-EXAM2/251 dated 27 Aug 2026, listed on the Commission's notification page and read there on 10 Sep 2026, invites online applications for Group A Assistant Controller and Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Residual Parent Cadre. The notification fixes 28 Aug 2026 as the opening date, 26 Sep 2026 as the last date for applications, and 6 Dec 2026 as the tentative date of the preliminary examination.",
+        "Notification KPSCKA/EXA2/PRSL/10/2026-EXAM2/251 dated 27 Aug 2026 invited online applications for 15 Group A Assistant Controller and 53 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department, Residual Parent Cadre, from 28 Aug to 26 Sep 2026. The Commission's notification, press-note and time-table pages, re-read on 3 Oct 2026, show no extension. Its tentative time table signed on 27 Aug 2026 keeps the preliminary examination on 6 Dec 2026.",
     },
     summary:
       "Direct recruitment of Group A Assistant Controllers and Group B Audit Officers in the Karnataka State Audit and Accounts Department for the Residual Parent Cadre, through the Commission's competitive examination.",
@@ -459,8 +464,8 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Notification issued", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-28", displayDate: "28 Aug 2026", state: "completed" },
-      { label: "Last date for online applications", date: "2026-09-26", displayDate: "26 Sep 2026", state: "current" },
-      { label: "Preliminary examination", date: "2026-12-06", displayDate: "6 Dec 2026", state: "scheduled", note: "Tentative in notification" },
+      { label: "Last date for online applications", date: "2026-09-26", displayDate: "26 Sep 2026", state: "completed", note: "Closed as notified; no extension on the Commission's notification page when re-read on 3 Oct 2026" },
+      { label: "Preliminary examination", date: "2026-12-06", displayDate: "6 Dec 2026", state: "scheduled", note: "Tentative in the notification and the Commission's time table" },
     ],
     eligibility: [
       "Recruitment is made under the Karnataka State Accounts Services (Recruitment) Rules, 2011 and the Karnataka State Audit and Accounts Department Services (Recruitment) (Amendment) Rules, 2015 and 2023; Rules 5 and 7 of the Karnataka Gazetted Probationers (Recruitment by Competitive Examinations) Rules, 1997 apply to the conduct of the competitive examination.",
@@ -481,18 +486,24 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "Assistant Controller and Audit Officer (RPC) Notification dated 27 Aug 2026 (PDF)", url: "https://kpsc.kar.nic.in/SAAD%20RPC%20Notification%20dt%2027-08-2026.pdf", type: "notice" },
+      { label: "Tentative time table for the 2026 SAAD posts, signed 27 Aug 2026 (PDF)", url: "https://kpsc.kar.nic.in/TIMETABLE%20AC%20(RPC)%20AUDITOR%20(HK%20BACKLOG)%20IN%20KSAAD.pdf", type: "notice" },
       { label: "KPSC notification board", url: "https://kpsc.kar.nic.in/notification.html", type: "website" },
       { label: "KPSC online application portal", url: "https://kpsconline.karnataka.gov.in/", type: "apply" },
     ],
     sourceTitle: "KPSC Notification KPSCKA/EXA2/PRSL/10/2026-EXAM2/251 dated 27 Aug 2026 - Assistant Controller and Audit Officer, Karnataka State Audit and Accounts Department (Residual Parent Cadre)",
     sourceUrl: "https://kpsc.kar.nic.in/SAAD%20RPC%20Notification%20dt%2027-08-2026.pdf",
-    sourcePublished: "Notification dated 27 Aug 2026, listed on the Commission's notification page; the scanned notification and the notification page were read on 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourcePublished: "Notification and tentative time table dated 27 Aug 2026; the Commission's notification, press-note and time-table pages re-read 3 Oct 2026 with no extension of the 26 Sep 2026 last date",
+    lastVerified: "3 Oct 2026, 12:55 IST",
     changeLog: [
       {
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "New record. The Commission's notification page lists Notification KPSCKA/EXA2/PRSL/10/2026-EXAM2/251 dated 27 Aug 2026 for 15 Group A Assistant Controller posts and 53 Group B Audit Officer posts in the Karnataka State Audit and Accounts Department in the Residual Parent Cadre, with online applications from 28 Aug 2026 to 26 Sep 2026 and a tentative preliminary examination on 6 Dec 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications closed on 26 Sep 2026 and the Commission's notification, press-note and time-table pages show no extension, so the record no longer shows applications as open. The Commission's tentative time table keeps the preliminary examination on 6 Dec 2026.",
       },
     ],
     keywords: [
@@ -722,7 +733,7 @@ export const exams: Exam[] = [
       label: "Applications closed; examination date awaited",
       tone: "amber",
       nextAction: "Watch the TGPSC direct-recruitment board for the examination schedule",
-      detail: "The TGPSC direct-recruitment board listed the application window, which closed at 5:00 PM on 22 Aug 2026.",
+      detail: "Applications closed at 5:00 PM on 22 Aug 2026; re-read on 3 Oct 2026, neither the board nor TGPSC's 28 Sep 2026 exam schedule dates this notification.",
     },
     summary: "Direct recruitment for Town Planning Assistant posts in Telangana.",
     vacancyLabel: "See Notification 06/G/TP/2026",
@@ -762,8 +773,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TGPSC Direct Recruitment - Town Planning Assistant 06/G/TP/2026",
     sourceUrl: "https://websitenew.tgpsc.gov.in/directRecruitment",
-    sourcePublished: "Application window listed 15 Jul to 22 Aug 2026; listing re-read 29 Aug 2026 with no examination date shown",
-    lastVerified: "29 Aug 2026, 15:06 IST",
+    sourcePublished: "Application window listed 15 Jul to 22 Aug 2026; listing re-read 3 Oct 2026 with no examination date shown",
+    lastVerified: "3 Oct 2026, 20:17 IST",
     keywords: [
       "TGPSC Town Planning Assistant",
       "TSPSC town planning assistant",
@@ -795,7 +806,7 @@ export const exams: Exam[] = [
       label: "Applications closed; exam date awaited",
       tone: "amber",
       nextAction: "Watch the TGPSC direct-recruitment page for the examination date",
-      detail: "TGPSC's direct-recruitment listing gives 10 Jul 2026 to 17 Aug 2026, 5:00 PM as the application window for Notification 05/G/TP/2026. That window has closed and the listing shows no examination date for this notification.",
+      detail: "Applications for Notification 05/G/TP/2026 closed at 5:00 PM on 17 Aug 2026; re-read on 3 Oct 2026, neither TGPSC's listing nor its 28 Sep 2026 exam schedule dates this notification.",
     },
     summary: "Telangana direct recruitment for Assistant Director of Town Planning.",
     vacancyLabel: "See Notification 05/G/TP/2026",
@@ -837,8 +848,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TGPSC Direct Recruitment - Assistant Director of Town Planning 05/G/TP/2026",
     sourceUrl: "https://websitenew.tgpsc.gov.in/directRecruitment",
-    sourcePublished: "Application window listed 10 Jul to 17 Aug 2026; listing re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:06 IST",
+    sourcePublished: "Application window listed 10 Jul to 17 Aug 2026; listing re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:17 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1236,11 +1247,11 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Results due 15 Sep 2026, per the notified schedule",
+      label: "Final keys released; result not yet confirmed",
       tone: "violet",
-      nextAction: "Watch the APTET portal for the final key and the result due on 15 Sep 2026",
+      nextAction: "Check the APTET portal, through the candidate login, for the result the notification scheduled for 15 Sep 2026",
       detail:
-        "The computer-based test finished on 21 Aug 2026. Per the schedule in Notification No.01-APTET-JUNE-2026 the initial key was due on 24 Aug 2026, objections on it until 31 Aug 2026 and the final key on 8 Sep 2026, with results on 15 Sep 2026. On 9 Sep 2026 the APTET/DSC portal returned only its shell without any notice list, and the Commissioner of School Education site carried no APTET June 2026 notice, so none of the key or objection stages could be confirmed as held; they are shown as scheduled dates from the notification rather than as completed events.",
+        "The computer-based test finished on 21 Aug 2026. Re-read on 3 Oct 2026, the APTET/DSC portal announces 'APTET Final Answer Keys Released' and lists an initial and a final key for every paper and shift, so the key and objection stages have run. Notification No.01-APTET-JUNE-2026 set 15 Sep 2026 for results, but the portal shows marks only after candidate login and publishes no result notice, and the Commissioner of School Education site carries none, so the result could not be confirmed as declared.",
     },
     summary:
       "Andhra Pradesh's teacher eligibility test for classes I to VIII, conducted as a computer-based test by the Department of School Education under RTE Act and NCTE norms.",
@@ -1258,10 +1269,10 @@ export const exams: Exam[] = [
       { label: "Online mock test available", date: "2026-07-15", displayDate: "15 Jul 2026", state: "completed" },
       { label: "Hall ticket download", date: "2026-07-25", displayDate: "25 Jul 2026 onwards", state: "completed" },
       { label: "Computer-based examination", date: "2026-08-05", displayDate: "5 to 21 Aug 2026", state: "completed", note: "Two sessions daily: 9.30 AM to 12.00 noon and 2.30 PM to 5.00 PM." },
-      { label: "Initial key release", date: "2026-08-24", displayDate: "24 Aug 2026", state: "tentative", note: "Date under Para 19 of the notification; the portal could not be read on 9 Sep 2026 to confirm the release." },
-      { label: "Objections on the initial key", date: "2026-08-25", displayDate: "25 to 31 Aug 2026", state: "tentative", note: "Window per the notified schedule; not confirmed on the portal." },
-      { label: "Final key released", date: "2026-09-08", displayDate: "8 Sep 2026", state: "tentative", note: "Date per the notified schedule; not confirmed on the portal on 9 Sep 2026." },
-      { label: "Final results", date: "2026-09-15", displayDate: "15 Sep 2026", state: "scheduled" },
+      { label: "Initial key release", date: "2026-08-24", displayDate: "24 Aug 2026", state: "completed", note: "The portal's APTET-2026 key list carries the initial key for every paper and shift; date under Para 19 of the notification." },
+      { label: "Objections on the initial key", date: "2026-08-25", displayDate: "25 to 31 Aug 2026", state: "completed", note: "Window per the notified schedule; the final keys that follow it are published." },
+      { label: "Final key released", date: "2026-09-08", displayDate: "8 Sep 2026", state: "completed", note: "The portal announces 'APTET Final Answer Keys Released' without stating the release date, so the notified date is shown." },
+      { label: "Final results", date: "2026-09-15", displayDate: "15 Sep 2026", state: "tentative", note: "Notified date; a notified schedule is not proof of release, and no public result notice is published as of 3 Oct 2026." },
     ],
     eligibility: [
       "Candidates aiming to teach classes I to V appear for Paper-1A, and classes VI to VIII for Paper-2A; Paper-1B and Paper-2B are the corresponding papers for special schools.",
@@ -1288,8 +1299,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "APTET-JUNE 2026 Notification No.01-APTET-JUNE-2026, Director of School Education, Andhra Pradesh",
     sourceUrl: "https://tet2dsc.apcfss.in/TET-PDF/APTET-2026%20Notification.pdf",
-    sourcePublished: "Notification dated 5 Jun 2026; APTET/DSC portal and the Commissioner of School Education site re-checked 9 Sep 2026, neither showing a key or result notice",
-    lastVerified: "9 Sep 2026, 17:32 IST",
+    sourcePublished: "Notification dated 5 Jun 2026; APTET/DSC portal and the Commissioner of School Education site re-read 3 Oct 2026, the portal announcing the final answer keys and neither carrying a public result notice",
+    lastVerified: "3 Oct 2026, 13:25 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -1305,6 +1316,11 @@ export const exams: Exam[] = [
         date: "2026-08-10",
         displayDate: "10 Aug 2026",
         text: "Marked the computer-based examination as in progress within its published 5 to 21 Aug 2026 window. Checked the APTET/DSC portal and the Commissioner of School Education website for a postponement notice and found none.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The APTET/DSC portal now announces 'APTET Final Answer Keys Released' and lists initial and final keys for every paper and shift, so the initial key, objection window and final key are shown as completed. The 15 Sep 2026 result date has passed with no public result notice; marks are shown only after candidate login, so that stage stays unconfirmed.",
       },
     ],
     keywords: [
@@ -1339,40 +1355,40 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the AP TET-to-DSC portal for the next DSC notification",
       detail:
-        "No dated current-cycle DSC notification is published on the department's portals; the older Mega DSC recruitment site now redirects to the combined AP TET-to-DSC portal.",
+        "No dated current-cycle DSC notification is published. Re-read on 3 Oct 2026, the AP TET-to-DSC portal still carries the Mega DSC-2025 notification of 20 Apr 2025 as its latest DSC notification, beside only a DSC-2026 syllabus for School Assistant (Special Education).",
     },
     summary:
       "District Selection Committee recruitment of Secondary Grade Teachers, School Assistants and other teaching posts in Andhra Pradesh government, local-body and aided schools, run by the Department of School Education.",
-    age: "18 to 44 years as on 1 July of the notification year, with the maximum raised to 49 for SC, ST, BC and EWS candidates and 54 for physically challenged candidates, and ex-servicemen allowed to deduct their armed-forces service plus three years, in the previous cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024 for the AP Teacher Recruitment Test); the current cycle's age rule is not published yet.",
+    age: "18 to 44 years as on 1 July of the notification year, with the maximum raised to 49 for SC, ST, BC and EWS candidates and 54 for physically challenged candidates, and ex-servicemen allowed to deduct their armed-forces service plus three years, in the 2024 cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024 for the AP Teacher Recruitment Test); the current cycle's age rule is not published yet.",
     qualification:
-      "In the previous cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024) post-wise qualifications were those prescribed in G.O.Ms.No.11, School Education (Exams) Department dated 12 Feb 2024 and set out in the Information Bulletin, and hall tickets were generated only for candidates who had qualified in the AP TET. Candidates also had to have passed SSC in the medium applied for, or Intermediate or a degree with that medium or language. The current cycle's qualifications are not published yet.",
-    fee: "Rs 750 for each post applied for, paid separately through the payment gateway, in the previous cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024); the current cycle's fee is not published yet.",
-    pay: "In the previous cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024) every selected candidate was first appointed as an apprentice teacher for two years on a monthly stipend prescribed by the Government, and placed in a regular post with a regular pay scale only on satisfactory completion of the apprenticeship; the current cycle's terms are not published yet.",
+      "In the 2024 cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024) post-wise qualifications were those prescribed in G.O.Ms.No.11, School Education (Exams) Department dated 12 Feb 2024 and set out in the Information Bulletin, and hall tickets were generated only for candidates who had qualified in the AP TET. Candidates also had to have passed SSC in the medium applied for, or Intermediate or a degree with that medium or language. The current cycle's qualifications are not published yet.",
+    fee: "Rs 750 for each post applied for, paid separately through the payment gateway, in the 2024 cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024); the current cycle's fee is not published yet.",
+    pay: "In the 2024 cycle (Notification No.02/TRC-1/2024 dated 12 Feb 2024) every selected candidate was first appointed as an apprentice teacher for two years on a monthly stipend prescribed by the Government, and placed in a regular post with a regular pay scale only on satisfactory completion of the apprenticeship; the current cycle's terms are not published yet.",
     eligibility: [
       "A pass in the Andhra Pradesh Teacher Eligibility Test is one of the minimum qualifications for appointment as a teacher for classes I to VIII under the RTE Act 2009 and NCTE norms, as restated in APTET Notification No.01-APTET-JUNE-2026 dated 5 Jun 2026.",
       "That notification also warns that qualifying in APTET confers no right to appear in the Teacher Recruitment Test without the qualifications prescribed in the statutory recruitment rules.",
-      "In the previous cycle (Notification No.02/TRC-1/2024) candidates chose among Government, Zilla Parishad, Mandal Parishad, Municipal, Municipal Corporation and Tribal Welfare Ashram schools after selection, and no waiting list was maintained.",
+      "In the 2024 cycle (Notification No.02/TRC-1/2024) candidates chose among Government, Zilla Parishad, Mandal Parishad, Municipal, Municipal Corporation and Tribal Welfare Ashram schools after selection, and no waiting list was maintained.",
       "Confirm the post list, age, local-cadre and category rules in the current-cycle DSC notice when it is published.",
     ],
     selectionStages: [
       "Written Teacher Recruitment Test (TRT) for the post applied for",
       "Merit list drawn with 20% weightage for the APTET score and 80% for the TRT written test, per APTET Notification No.01-APTET-JUNE-2026 dated 5 Jun 2026",
-      "In the previous cycle (Notification No.02/TRC-1/2024) the TRT was a computer-based test held district-wise, lasting two and a half hours, or three hours for School Assistant (Physical Education)",
+      "In the 2024 cycle (Notification No.02/TRC-1/2024) the TRT was a computer-based test held district-wise, lasting two and a half hours, or three hours for School Assistant (Physical Education)",
       "Certificate verification under the current-cycle notification",
     ],
     syllabus: [
-      "In the previous cycle the syllabus for the Teacher Recruitment Test was hosted on the Commissioner of School Education's website and the notification described it as suggestive and indicative rather than exhaustive (Notification No.02/TRC-1/2024 dated 12 Feb 2024); use the current cycle's syllabus when it is published.",
+      "In the 2024 cycle the syllabus for the Teacher Recruitment Test was hosted on the Commissioner of School Education's website and the notification described it as suggestive and indicative rather than exhaustive (Notification No.02/TRC-1/2024 dated 12 Feb 2024); use the current cycle's syllabus when it is published.",
       "The structure and syllabus for each category of post are published in the Information Bulletin issued with the notification.",
     ],
     officialLinks: [
       { label: "AP TET-to-DSC portal", url: "https://tet2dsc.apcfss.in/", type: "website" },
       { label: "Commissioner of School Education, Andhra Pradesh", url: "https://cse.ap.gov.in/", type: "website" },
-      { label: "Previous cycle - Teacher Recruitment Test Notification No.02/TRC-1/2024 (PDF)", url: "https://cse.ap.gov.in/MISdownload/MIS_REPORT_NOTIFICATION/DSC-2024_SC_EDN_NOTIFICATION.pdf", type: "notice" },
+      { label: "2024 cycle - Teacher Recruitment Test Notification No.02/TRC-1/2024 (PDF)", url: "https://cse.ap.gov.in/MISdownload/MIS_REPORT_NOTIFICATION/DSC-2024_SC_EDN_NOTIFICATION.pdf", type: "notice" },
     ],
-    sourceTitle: "Commissioner of School Education, Andhra Pradesh - departmental portal, read with the previous cycle's Notification No.02/TRC-1/2024",
+    sourceTitle: "Commissioner of School Education, Andhra Pradesh - departmental portal, read with the 2024 cycle's Notification No.02/TRC-1/2024",
     sourceUrl: "https://cse.ap.gov.in/",
-    sourcePublished: "Departmental portal checked 29 Aug 2026; previous-cycle notification dated 12 Feb 2024",
-    lastVerified: "29 Aug 2026, 14:56 IST",
+    sourcePublished: "Departmental portals re-read 3 Oct 2026; 2024 TRT notification dated 12 Feb 2024",
+    lastVerified: "3 Oct 2026, 21:45 IST",
     keywords: [
       "AP DSC",
       "AP Mega DSC",
@@ -1405,7 +1421,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Telangana School Education Department portal for the next TG TET notice",
       detail:
-        "The department's portal currently carries a TG TET link for in-service teachers (2026). No dated schedule for a fresh open TG TET cycle is published on the department's own site, so none is asserted here.",
+        "Re-read on 3 Oct 2026, the department's portal still links only the TG TET for in-service teachers (2026), whose result is now out. No dated schedule for a fresh open TG TET cycle is published on the department's own site, so none is asserted here.",
     },
     summary:
       "Telangana's teacher eligibility test, a minimum qualification for appointment as a teacher for classes I to VIII in the state's schools.",
@@ -1422,8 +1438,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Department of School Education, Telangana - departmental portal",
     sourceUrl: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/",
-    sourcePublished: "Departmental portal checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 14:59 IST",
+    sourcePublished: "Departmental portal re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:01 IST",
     keywords: [
       "TS TET",
       "TG TET",
@@ -1456,7 +1472,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Telangana School Education Department portal for the next DSC notification",
       detail:
-        "The department's DSC page currently carries archive material from earlier cycles; no dated current-cycle DSC notification is published there.",
+        "Re-read on 3 Oct 2026, the department's DSC page still carries only archive material from earlier cycles (DSC-2008); no dated current-cycle DSC notification is published there or on the portal.",
     },
     summary:
       "District Selection Committee recruitment of Secondary Grade Teachers, School Assistants and other teaching posts in Telangana government and local-body schools.",
@@ -1470,8 +1486,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Department of School Education, Telangana - departmental portal",
     sourceUrl: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/",
-    sourcePublished: "Departmental portal checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 14:59 IST",
+    sourcePublished: "Departmental portal and DSC page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:01 IST",
     keywords: [
       "TG DSC",
       "TS DSC",
@@ -1504,7 +1520,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the CA Cell notices page for the next KARTET notification",
       detail:
-        "The department's TET portal currently publishes KARTET-2025 results and eligibility certificates; no next-cycle KARTET notification is published on the CA Cell notices page.",
+        "Re-read on 3 Oct 2026, the department's TET portal still publishes only KARTET-2025 results and eligibility certificates; no next-cycle KARTET notification is on the CA Cell notices page.",
     },
     summary:
       "Karnataka's teacher eligibility test, conducted by the Department of School Education through its CA Cell for the primary and upper-primary teaching stages.",
@@ -1527,8 +1543,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka School Education Department - KARTET process page",
     sourceUrl: "https://schooleducation.karnataka.gov.in/500/kartet-process/en",
-    sourcePublished: "TET portal and CA Cell notices page checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:01 IST",
+    sourcePublished: "TET portal and CA Cell notices page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:03 IST",
     keywords: [
       "KARTET",
       "Karnataka TET",
@@ -1558,11 +1574,11 @@ export const exams: Exam[] = [
     education: ["10th"],
     verification: "verified",
     status: {
-      label: "Applications open until 30 Sep 2026",
+      label: "Applications open; last date extended to 30 Oct 2026",
       tone: "green",
-      nextAction: "Apply on the Forest Department recruitment portal by 30 Sep 2026",
+      nextAction: "Apply for your circle on the Forest Department's recruitment portal by 30 Oct 2026",
       detail:
-        "The department's latest-news list, read on 9 Sep 2026, carries circle-wise prakatanes listed on 7 and 8 Sep 2026 that extend the last date for online applications to 30-09-2026 for the Hassan, Mysore, Bangalore, Mangalore, Kanara, Chikkamagalur, Kodagu, Chamarajanagara, Dharwad, Ballari, Kalaburagi, Shimoga and Belagavi circles; the recruitment portal shows the same last date under an application-deadline-extended banner. An earlier round of notices listed on 1 Sep 2026 had extended the date to 7 Sep 2026. No selection schedule is published.",
+        "Letter No. KFD/HOFF/B9(RCT)/5/2026-PnR of the Head of Forest Force, dated 29 Sep 2026 and listed on the department's latest news on 30 Sep 2026, extends the last date for online Forest Watcher applications in all circles to 30 Oct 2026, after earlier extensions to 7 Sep and 30 Sep 2026. The recruitment portal, re-read on 3 Oct 2026, shows the same last date. No physical-test schedule is published yet.",
     },
     summary:
       "Circle-wise direct recruitment to D-Group Forest Watcher posts across the Karnataka Forest Department's territorial circles.",
@@ -1576,7 +1592,9 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Circle-wise notifications published", date: "2026-07-20", displayDate: "20 and 21 Jul 2026", state: "completed" },
       { label: "Extension of the last date to 7 Sep 2026", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed", note: "Circle-wise prakatanes listed on the department's latest-news page on 1 Sep 2026." },
-      { label: "Application deadline, as extended", date: "2026-09-30", displayDate: "30 Sep 2026", state: "current", note: "Circle-wise extension prakatanes listed on 7 and 8 Sep 2026 give 30-09-2026 as the last date, and the recruitment portal shows the same date." },
+      { label: "Extension of the last date to 30 Oct 2026", date: "2026-09-29", displayDate: "29 Sep 2026", state: "completed", note: "Head of Forest Force's letter for all circles, listed on the department's latest news on 30 Sep 2026." },
+      { label: "Application deadline, as extended", date: "2026-09-30", displayDate: "30 Sep 2026", state: "completed", note: "Last date in the circle-wise prakatanes listed on 7 and 8 Sep 2026; extended again to 30 Oct 2026 on 29 Sep 2026." },
+      { label: "Application deadline, as further extended", date: "2026-10-30", displayDate: "30 Oct 2026", state: "current", note: "Per the letter dated 29 Sep 2026; the recruitment portal showed the same last date on 3 Oct 2026." },
       { label: "Physical and merit stages", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -1598,19 +1616,25 @@ export const exams: Exam[] = [
       "The notification adds that the dates of those tests are published from time to time under the 'Recruitment' heading on the department's official website and that no correspondence is entered into with candidates about them.",
     ],
     officialLinks: [
+      { label: "Extension of the last date to 30 Oct 2026, letter dated 29 Sep 2026 (PDF)", url: "https://aranya.gov.in/aranyacms/downloads/latestNews/Forest%20watchers%20extension%20for%20all%20circles%202026-27_30-09-2026_05.23.38.pdf", type: "notice" },
       { label: "Karnataka Forest Department latest news", url: "https://aranya.gov.in/aranyacms/English/Home.aspx", type: "notice" },
       { label: "Forest Watcher online application portal", url: "https://recruitment.aranya.gov.in/", type: "apply" },
     ],
-    sourceTitle: "Karnataka Forest Department - circle-wise Forest Watcher notifications 2026-27",
-    sourceUrl: "https://aranya.gov.in/aranyacms/English/Home.aspx",
+    sourceTitle: "Karnataka Forest Department - Forest Watcher 2026-27 last-date extension to 30 Oct 2026 (letter dated 29 Sep 2026)",
+    sourceUrl: "https://aranya.gov.in/aranyacms/downloads/latestNews/Forest%20watchers%20extension%20for%20all%20circles%202026-27_30-09-2026_05.23.38.pdf",
     sourcePublished:
-      "Circle notifications dated 20 and 21 Jul 2026; circle-wise extension prakatanes listed on the latest-news page on 1, 7 and 8 Sep 2026; latest-news list and recruitment portal re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:20 IST",
+      "Circle notifications dated 20 and 21 Jul 2026; extension letter dated 29 Sep 2026 listed on the latest-news page on 30 Sep 2026; latest news and recruitment portal re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:39 IST",
     changeLog: [
       {
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "The department's latest-news page now carries circle-wise prakatanes, listed on 7 and 8 Sep 2026, extending the last date for online applications to 30 Sep 2026 across thirteen circles, and the recruitment portal shows the same date. The record therefore gains a dated deadline and moves from notification-published to applications-open. An earlier extension to 7 Sep 2026, listed on 1 Sep 2026, is recorded as a completed stage.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "A Head of Forest Force letter dated 29 Sep 2026, listed on the department's latest news on 30 Sep 2026, extends the last date for online applications in all circles from 30 Sep to 30 Oct 2026; the recruitment portal shows the same date.",
       },
     ],
     keywords: [
@@ -1646,11 +1670,11 @@ export const exams: Exam[] = [
     education: ["10th"],
     verification: "verified",
     status: {
-      label: "Applications closed; experience test and interview not announced",
-      tone: "amber",
-      nextAction: "Watch the department's latest-news page for the experience test and interview call",
+      label: "Interview held; selection list awaited",
+      tone: "violet",
+      nextAction: "Watch the department's latest-news page for the Elephant Kavadiga selection list",
       detail:
-        "Applications were received by hand or by post from 10.00 am on 5 Aug 2026 until 5.30 pm on 3 Sep 2026, so the window has closed. The department's latest-news page, read on 9 Sep 2026, carries no extension for this notification and no date for the elephant-handling experience test or the selection committee interview; its newest Mysuru Circle items are Forest Watcher extension notices for a different cadre.",
+        "Applications closed on 3 Sep 2026. A notice of the Mysuru Circle selection authority, signed on 19 Sep 2026, called eligible candidates for the 26 posts plus one backlog post to an interview with original documents on 30 Sep and 1 Oct 2026 at the Mathigodu Elephant Camp, Anechowkur, Kodagu. Re-read on 3 Oct 2026, the department's latest news shows no postponement and no selection list yet.",
     },
     summary:
       "Direct recruitment to Group 'D' Elephant Kavadiga posts in the Mysuru Circle of the Karnataka Forest Department, for candidates with hands-on elephant-handling experience.",
@@ -1671,7 +1695,8 @@ export const exams: Exam[] = [
       { label: "Notification issued", date: "2026-07-27", displayDate: "27 Jul 2026", state: "completed" },
       { label: "Applications open", date: "2026-08-05", displayDate: "5 Aug 2026, 10:00 AM", state: "completed" },
       { label: "Application deadline", date: "2026-09-03", displayDate: "3 Sep 2026, 5:30 PM", state: "completed", note: "Applications reached the Conservator of Forests office, Mysuru Circle, Aranya Bhavana, Ashokapuram, Mysuru-570008 by hand or by post; no extension was published." },
-      { label: "Interview before the selection committee", displayDate: "Date not announced", state: "tentative" },
+      { label: "Interview with original documents", date: "2026-09-30", displayDate: "30 Sep and 1 Oct 2026", state: "completed", note: "Held as notified at the Mathigodu Elephant Camp, Anechowkur, Virajpet taluk; the department published no postponement when re-read on 3 Oct 2026." },
+      { label: "Selection list", displayDate: "Not announced", state: "tentative" },
     ],
     eligibility: [
       "The applicant must be a citizen of India, or a Tibetan refugee who came to India before 1 Jan 1962 with the intention of permanently settling, or a person of Indian origin who migrated from Pakistan, Myanmar, Sri Lanka, Kenya, Uganda, Tanzania, the United Republic of Tanganyika and Zanzibar, Zambia, Malawi, Zaire, Ethiopia or Vietnam intending to settle permanently in India; candidates in the last two groups must produce a certificate from the District Magistrate or District Judge of the district in which they live, without which they are not eligible.",
@@ -1692,18 +1717,24 @@ export const exams: Exam[] = [
       "What is tested is practical: compulsory experience in elephant handling, assessed through the experience test and the interview described in the notification.",
     ],
     officialLinks: [
+      { label: "Interview notice signed 19 Sep 2026 (PDF)", url: "https://aranya.gov.in/aranyacms/downloads/Recruitment/Mysore%20Ane%20kavadi%20direct%20interview_19-09-2026_05.48.08.pdf", type: "notice" },
       { label: "Elephant Kavadiga notification dated 27 Jul 2026 (PDF)", url: "https://aranya.gov.in/aranyacms/downloads/latestNews/Notification%20dated%2006-08-2026_0001%20(1)_compressed_06-08-2026_08.15.31.pdf", type: "notice" },
       { label: "Karnataka Forest Department latest news", url: "https://aranya.gov.in/aranyacms/English/Home.aspx", type: "website" },
     ],
-    sourceTitle: "Karnataka Forest Department, Mysuru Circle - Elephant Kavadiga Group 'D' direct recruitment notification 2026-27",
-    sourceUrl: "https://aranya.gov.in/aranyacms/downloads/latestNews/Notification%20dated%2006-08-2026_0001%20(1)_compressed_06-08-2026_08.15.31.pdf",
-    sourcePublished: "Notification dated 27 Jul 2026, listed on the department's latest-news page on 6 Aug 2026; that page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:22 IST",
+    sourceTitle: "Karnataka Forest Department, Mysuru Circle - Elephant Kavadiga interview notice signed 19 Sep 2026",
+    sourceUrl: "https://aranya.gov.in/aranyacms/downloads/Recruitment/Mysore%20Ane%20kavadi%20direct%20interview_19-09-2026_05.48.08.pdf",
+    sourcePublished: "Notification dated 27 Jul 2026; interview notice signed 19 Sep 2026; latest-news page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:20 IST",
     changeLog: [
       {
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "The 3 Sep 2026 application deadline has passed and the department's latest-news page carries no extension, so the window is shown as closed and the status moves from applications-open to awaiting the experience test and interview, which the notification leaves undated.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "A Mysuru Circle notice signed 19 Sep 2026 called eligible candidates to an interview with original documents on 30 Sep and 1 Oct 2026 at the Mathigodu Elephant Camp, Kodagu. No postponement was published, so the interview is shown as held and the status now awaits the selection list.",
       },
     ],
     keywords: [
@@ -1737,7 +1768,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Check the finalised 1:1 additional list of 8 Sep 2026 and submit the documents it calls for",
       detail:
-        "Key answers for the written examination held on 20 Jul 2025 were published on 25 Jul 2025 and a 1:1 provisional additional list of 14 candidates followed on 7 Aug 2026. The department's latest-news page, read on 9 Sep 2026, now carries a notice listed on 8 Sep 2026 on publication of the finalised 1:1 (post:candidate) tentative additional list, with the reply to final objections in signed copies, and on submission of documents under this 540-post notification. No consolidated final result for the cycle is on the news list.",
+        "Key answers for the written examination held on 20 Jul 2025 were published on 25 Jul 2025 and a 1:1 provisional additional list of 14 candidates followed on 7 Aug 2026. The department's latest-news page, re-read on 3 Oct 2026, still leads for this notification with a notice listed on 8 Sep 2026 on publication of the finalised 1:1 (post:candidate) tentative additional list, with the reply to final objections in signed copies, and on submission of documents under this 540-post notification. No consolidated final result for the cycle is on the news list.",
     },
     summary:
       "Direct recruitment to 540 Beat Forester (Forest Guard) posts in the Karnataka Forest Department, now past its written examination stage.",
@@ -1777,8 +1808,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Karnataka Forest Department - 540 Beat Forester recruitment notices",
     sourceUrl: "https://aranya.gov.in/aranyacms/English/Home.aspx",
-    sourcePublished: "Provisional additional list dated 7 Aug 2026; finalised 1:1 additional list listed 8 Sep 2026; latest-news page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:24 IST",
+    sourcePublished: "Provisional additional list dated 7 Aug 2026; finalised 1:1 additional list listed 8 Sep 2026; latest-news page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:20 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -2108,10 +2139,10 @@ export const exams: Exam[] = [
     education: ["12th", "Graduate"],
     verification: "verified",
     status: {
-      label: "Kannada language marks list out; written examinations 4 and 25 Oct 2026",
+      label: "Rest of Karnataka exam 4 Oct 2026 (admit cards out); Kalyana Karnataka 25 Oct 2026",
       tone: "blue",
-      nextAction: "Check your compulsory Kannada language marks list on the KEA VAO-2026 page; the written examination is on 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka)",
-      detail: "Applications closed on 20 Aug 2026 under KEA's extension notice dated 17 Aug 2026, and notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026 further extended online fee payment to 4.00 pm on 26 Aug 2026. The compulsory Kannada language qualifying examination was held on 22 Aug 2026, its key answers were published the same day, and the provisional result with an objection link followed on 27 Aug 2026. On 2 Sep 2026 KEA published the compulsory Kannada language examination result for 2026 as a marks list on the same page. The page, re-read on 9 Sep 2026, shows nothing newer, and the VAO written examination remains 4 Oct 2026 (Rest of Karnataka) and 25 Oct 2026 (Kalyana Karnataka).",
+      nextAction: "Download the admit card from the KEA exam portal; Paper-1 is at 10.30 am and Paper-2 at 2.30 pm on 4 Oct 2026 (Rest of Karnataka), and Kalyana Karnataka sits on 25 Oct 2026",
+      detail: "Applications closed on 20 Aug 2026 and online fee payment at 4.00 pm on 26 Aug 2026. The compulsory Kannada language examination was held on 22 Aug 2026 and its marks list published on 2 Sep 2026. Re-read on 3 Oct 2026, the VAO-2026 (Rest of Karnataka) page links the admit card download from 28 Sep 2026 and a bell-timings notice of 30 Sep 2026 fixing Paper-1 at 10.30 am to 12.30 pm and Paper-2 at 2.30 to 4.30 pm on 4 Oct 2026. KEA notice No. ED/KEA/32/NE.VI/2026 dated 1 Oct 2026 sets a Kannada language test on 8 Oct 2026, 3 to 5 pm, for VAO candidates who, in its words, applied after 22 Aug 2026. Kalyana Karnataka remains on 25 Oct 2026, with no admit card link yet.",
     },
     summary:
       "Recruitment of Village Administrative Officers for the Karnataka Revenue Department, conducted by the Karnataka Examinations Authority with separate Rest of Karnataka and Kalyana Karnataka processes.",
@@ -2134,10 +2165,12 @@ export const exams: Exam[] = [
       { label: "Kannada language exam admit card link opened", date: "2026-08-18", displayDate: "18 Aug 2026", state: "completed" },
       { label: "Last date for online application", date: "2026-08-20", displayDate: "20 Aug 2026", state: "completed", note: "As extended by KEA's notice dated 17 Aug 2026." },
       { label: "Compulsory Kannada language examination", date: "2026-08-22", displayDate: "22 Aug 2026", state: "completed", note: "KEA published the examination notification and key answers the same day." },
-      { label: "Last date for online fee payment", date: "2026-08-26", displayDate: "26 Aug 2026, 4:00 PM", state: "completed", note: "Extended from 21 Aug 2026 by KEA notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026." },
+      { label: "Online fee payment window ended", date: "2026-08-26", displayDate: "26 Aug 2026, 4:00 PM", state: "completed", note: "Extended from 21 Aug 2026 by KEA notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026." },
       { label: "Kannada language examination provisional result and objection link", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
       { label: "Compulsory Kannada language examination result (marks list)", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed", note: "Hosted on the VAO-2026 (Rest of Karnataka) page as the 2026 marks list." },
-      { label: "Written examination (Rest of Karnataka)", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled" },
+      { label: "Admit card download link (Rest of Karnataka)", date: "2026-09-28", displayDate: "28 Sep 2026", state: "completed" },
+      { label: "Written examination (Rest of Karnataka)", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled", note: "Paper-1 10.30 am to 12.30 pm and Paper-2 2.30 to 4.30 pm, per KEA's bell-timings notice of 30 Sep 2026." },
+      { label: "Kannada language test for VAO applicants after 22 Aug 2026", date: "2026-10-08", displayDate: "8 Oct 2026, 3:00 to 5:00 PM", state: "scheduled", note: "KEA notice No. ED/KEA/32/NE.VI/2026 dated 1 Oct 2026, after the first test of 22 Aug 2026; qualifying, minimum 50 of 150 marks." },
       { label: "Written examination (Kalyana Karnataka)", date: "2026-10-25", displayDate: "25 Oct 2026", state: "scheduled" },
     ],
     eligibility: [
@@ -2163,13 +2196,15 @@ export const exams: Exam[] = [
     officialLinks: [
       { label: "VAO 2026 - Rest of Karnataka", url: "https://cetonline.karnataka.gov.in/kea/vaorpc2026.aspx", type: "notice" },
       { label: "VAO 2026 - Kalyana Karnataka", url: "https://cetonline.karnataka.gov.in/kea/vaokk2026.aspx", type: "notice" },
+      { label: "Bell timings for the 4 Oct 2026 examination, notice of 30 Sep 2026 (PDF)", url: "https://cetonline.karnataka.gov.in/keawebentry456/vaorpc2026/Bell_Timings_04_10_2026kannada.pdf", type: "notice" },
+      { label: "Kannada language test on 8 Oct 2026, notice of 1 Oct 2026 (PDF)", url: "https://cetonline.karnataka.gov.in/keawebentry456/vaorpc2026/Kannada_Language_test_08_10_26kannada.pdf", type: "notice" },
       { label: "KEA recruitment application portal", url: "https://cetonline.karnataka.gov.in/kearecruitment2026app/login", type: "apply" },
       { label: "Karnataka Examinations Authority", url: "https://cetonline.karnataka.gov.in/kea/", type: "website" },
     ],
     sourceTitle: "Karnataka Examinations Authority - Village Administrative Officer 2026 announcement pages",
     sourceUrl: "https://cetonline.karnataka.gov.in/kea/vaorpc2026.aspx",
-    sourcePublished: "KEA notices dated up to 2 Sep 2026 on the VAO-2026 (Rest of Karnataka) page, including the compulsory Kannada language marks list dated 2 Sep 2026 and the fee-extension notice No. ED/KEA/26 NE.VI/2026 (R.P.C) dated 25 Aug 2026; page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:26 IST",
+    sourcePublished: "KEA notices dated up to 1 Oct 2026 on the VAO-2026 pages, including the admit-card link of 28 Sep 2026, the bell-timings notice of 30 Sep 2026 and Kannada language test notice No. ED/KEA/32/NE.VI/2026 dated 1 Oct 2026; Rest of Karnataka and Kalyana Karnataka pages re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:43 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -2185,6 +2220,11 @@ export const exams: Exam[] = [
         date: "2026-08-20",
         displayDate: "20 Aug 2026",
         text: "The deadline is no longer unknown: KEA's 6 Aug 2026 notice sets 20 Aug 2026 for applications and 21 Aug 2026 for fees, and the 15 Aug 2026 exam calendar fixes the VAO written exam for 4 Oct 2026 (RPC) and 25 Oct 2026 (KK), with the Kannada language exam on 22 Aug 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "KEA opened the admit card download for the 4 Oct 2026 Rest of Karnataka written examination on 28 Sep 2026 and published bell timings on 30 Sep 2026: Paper-1 10.30 am to 12.30 pm and Paper-2 2.30 to 4.30 pm. Its notice dated 1 Oct 2026 adds a Kannada language test on 8 Oct 2026 for VAO candidates who applied after 22 Aug 2026. Kalyana Karnataka stays on 25 Oct 2026.",
       },
     ],
     keywords: [
@@ -2215,10 +2255,10 @@ export const exams: Exam[] = [
     education: ["10th", "12th"],
     verification: "verified",
     status: {
-      detail: "KEA has moved the cycle past the answer-key stage. Revised answer keys dated 7 Aug 2026 were issued for both the Rest of Karnataka and the Kalyana Karnataka streams, the provisional marks list with an objection link followed on 15 Aug 2026, and district-wise provisional marks lists for the Rest of Karnataka stream were hosted on 21 Aug 2026. The compulsory Kannada language examination's provisional result went up on 27 Aug 2026 with its own objection link, and on 2 Sep 2026 KEA published that examination's 2026 result as a marks list on the same page. The page, re-read on 9 Sep 2026, shows nothing newer; no final result for the constable posts has been published.",
-      label: "Provisional marks published; Kannada language marks list out",
+      detail: "After the written examinations, KEA published the provisional marks list on 15 Aug 2026 and the compulsory Kannada language examination's marks list on 2 Sep 2026. The DGP (Recruitment) letter of 15 Sep 2026, posted by KEA on 16 Sep, schedules the Physical Standard and Endurance Tests unit-wise from 28 Sep to 6 Oct 2026 for the Rest of Karnataka (3,395 posts) and on 8 and 12 to 15 Oct 2026 for Kalyana Karnataka (596 posts); KEA issued admission letters on 20 Sep 2026. Re-read on 3 Oct 2026, the KEA pages show no postponement and no final result.",
+      label: "Physical standard and endurance tests under way",
       tone: "violet",
-      nextAction: "Check your provisional marks and the compulsory Kannada language marks list on the KEA page and wait for the final result",
+      nextAction: "Download your PST and ET admission letter from KEA and attend on your unit's date: 28 Sep to 6 Oct 2026 (Rest of Karnataka) or 8 and 12 to 15 Oct 2026 (Kalyana Karnataka)",
     },
     summary:
       "Direct recruitment to Civil Police Constable posts in the Karnataka State Police, notified region-wise and examined by the Karnataka Examinations Authority.",
@@ -2243,6 +2283,10 @@ export const exams: Exam[] = [
       { label: "District-wise provisional marks lists hosted", date: "2026-08-21", displayDate: "21 Aug 2026", state: "completed" },
       { label: "Kannada language examination provisional result and objection link", date: "2026-08-27", displayDate: "27 Aug 2026", state: "completed" },
       { label: "Compulsory Kannada language examination result (marks list)", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed", note: "Hosted on the KEA Civil Police Constable 2026 (Rest of Karnataka) page." },
+      { label: "Physical test schedule published", date: "2026-09-16", displayDate: "16 Sep 2026", state: "completed", note: "DGP (Recruitment) letter No.02/Nemakati-4/2026-27 dated 15 Sep 2026, posted on both KEA pages." },
+      { label: "PST and ET admission letters", date: "2026-09-20", displayDate: "20 Sep 2026", state: "completed" },
+      { label: "Physical Standard and Endurance Tests (Rest of Karnataka)", date: "2026-09-28", displayDate: "28 Sep to 6 Oct 2026 (unit-wise)", state: "current", note: "Under way at unit grounds per the schedule; KEA showed no postponement on 3 Oct 2026." },
+      { label: "Physical Standard and Endurance Tests (Kalyana Karnataka)", date: "2026-10-08", displayDate: "8 Oct and 12 to 15 Oct 2026 (unit-wise)", state: "scheduled" },
       { label: "Final result", displayDate: "Not announced", state: "tentative" },
     ],
     eligibility: [
@@ -2253,19 +2297,21 @@ export const exams: Exam[] = [
       "Online application through the Karnataka Examinations Authority portal",
       "Written examination conducted by KEA",
       "Provisional answer key, objections and final key",
-      "Remaining stages as set out in each region's 2026-27 notification; no common selection schedule is published on the KEA announcement list",
+      "Physical Standard Test and Endurance Test at unit grounds, scheduled by the DGP (Recruitment) and called through KEA",
+      "Remaining stages as set out in each region's 2026-27 notification",
     ],
     syllabus: ["Use the scheme published with the region's 2026-27 Civil Police Constable notification."],
     officialLinks: [
+      { label: "PST and ET schedule, DGP (Recruitment) letter dated 15 Sep 2026 (PDF)", url: "https://cetonline.karnataka.gov.in/keawebentry456/cpcrpc2026/20260916181455kannada.pdf", type: "notice" },
       { label: "Karnataka State Police recruitment notifications", url: "https://ksp.karnataka.gov.in/info-3/Recruitment/en", type: "notice" },
       { label: "Civil Police Constable 2026-27 - non-Kalyana Karnataka (PDF)", url: "https://ksp.karnataka.gov.in/storage/pdf-files/Police%20Constable%20(Civil)%20Recruitment%202026%E2%80%9327-3395%20Posts.pdf", type: "notice" },
       { label: "KEA Civil Police Constable 2026 - Rest of Karnataka", url: "https://cetonline.karnataka.gov.in/kea/cpcrpc2026", type: "website" },
       { label: "KEA Civil Police Constable 2026 - Kalyana Karnataka", url: "https://cetonline.karnataka.gov.in/kea/cpckk2026", type: "website" },
     ],
-    sourceTitle: "Karnataka State Police recruitment page, read with the KEA Civil Police Constable 2026 examination pages",
-    sourceUrl: "https://ksp.karnataka.gov.in/info-3/Recruitment/en",
-    sourcePublished: "KEA notices dated up to 2 Sep 2026 on the Civil Police Constable 2026 (Rest of Karnataka) page; page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:28 IST",
+    sourceTitle: "DGP (Recruitment) PST and ET schedule for Civil Police Constable 2026-27, posted by KEA, read with the KSP recruitment page",
+    sourceUrl: "https://cetonline.karnataka.gov.in/keawebentry456/cpcrpc2026/20260916181455kannada.pdf",
+    sourcePublished: "PST and ET schedule letter dated 15 Sep 2026, posted by KEA 16 Sep; admission letters 20 Sep 2026; KEA and KSP pages re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:26 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -2281,6 +2327,11 @@ export const exams: Exam[] = [
         date: "2026-08-19",
         displayDate: "19 Aug 2026",
         text: "KEA published revised answer keys for both the Rest of Karnataka and Kalyana Karnataka streams on 7 Aug 2026, the provisional marks list with an objection link on 15 Aug 2026, and district-wise provisional marks lists for the Rest of Karnataka stream on 19 Aug 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "KEA posted the DGP (Recruitment) schedule of Physical Standard and Endurance Tests on 16 Sep 2026 and issued admission letters on 20 Sep: unit-wise tests run 28 Sep to 6 Oct 2026 for the Rest of Karnataka posts and on 8 and 12 to 15 Oct 2026 for Kalyana Karnataka. The tests are added to the timeline and the status.",
       },
     ],
     keywords: [
@@ -2455,9 +2506,9 @@ export const exams: Exam[] = [
     status: {
       label: "Walk-in interview held",
       tone: "violet",
-      nextAction: "Watch the Direct Recruitment Cell page for the provisional list for these posts",
+      nextAction: "Watch the Commissionerate's latest-news list for the provisional list for these posts",
       detail:
-        "The walk-in interview for the AMPK and PM-ABHIM posts was held at 11.00 am on 20 Aug 2026 as notified. The Commissionerate's Direct Recruitment Cell page still carries that notification but has published no provisional list for these four posts; its most recent posting is a provisional list for the separate VCCM posts interviewed on 28 Aug 2026.",
+        "The walk-in interview for the AMPK and PM-ABHIM posts was held at 11.00 am on 20 Aug 2026 as notified. Re-read on 3 Oct 2026, the Commissionerate's latest-news list still carries that notification but no provisional or final list for these four posts; its newest such posting is the final list for the separate VCCM posts interviewed on 28 Aug 2026.",
     },
     summary:
       "Walk-in recruitment by the Karnataka Commissionerate of Health and Family Welfare Services for contractual posts under the state's Arogya Mandira and PM-ABHIM programmes, run through its Direct Recruitment Cell.",
@@ -2487,14 +2538,14 @@ export const exams: Exam[] = [
     ],
     syllabus: ["No written examination syllabus is published for this walk-in; selection is by interview under the notification."],
     officialLinks: [
-      { label: "Direct Recruitment Cell (DRC)", url: "https://hfwcom.karnataka.gov.in/page/Recruitment+(DRC)/Direct+Recruitment+Cell+(DRC)/en", type: "notice" },
       { label: "AMPK and PM-ABHIM walk-in notification (PDF)", url: "https://hfwcom.karnataka.gov.in/uploads/AMPK%20&%20PM-ABHIM%20Website%20Notification__1785565941.pdf", type: "notice" },
-      { label: "Commissionerate of Health and Family Welfare Services", url: "https://hfwcom.karnataka.gov.in/english", type: "website" },
+      { label: "Commissionerate of Health and Family Welfare Services (latest news)", url: "https://hfwcom.karnataka.gov.in/english", type: "website" },
+      { label: "Direct Recruitment Cell (DRC)", url: "https://hfwcom.karnataka.gov.in/17/direct-recruitment-cell-%28drc%29/en", type: "website" },
     ],
-    sourceTitle: "Commissionerate of Health and Family Welfare Services, Karnataka - Direct Recruitment Cell notifications",
-    sourceUrl: "https://hfwcom.karnataka.gov.in/page/Recruitment+(DRC)/Direct+Recruitment+Cell+(DRC)/en",
-    sourcePublished: "Walk-in notification No. AMPK/NUT//2026-27 dated 31 Jul 2026; Direct Recruitment Cell page re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:02 IST",
+    sourceTitle: "Walk-in notification No. AMPK/NUT//2026-27, Karnataka State Health & Family Welfare Society",
+    sourceUrl: "https://hfwcom.karnataka.gov.in/uploads/AMPK%20&%20PM-ABHIM%20Website%20Notification__1785565941.pdf",
+    sourcePublished: "Walk-in notification No. AMPK/NUT//2026-27 dated 31 Jul 2026; Commissionerate latest-news list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:12 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2597,9 +2648,9 @@ export const exams: Exam[] = [
     status: {
       label: "Notification awaited",
       tone: "amber",
-      nextAction: "Watch the Grama Ward Sachivalayam portal for the next recruitment notification",
+      nextAction: "Watch the Grama Ward Sachivalayam (SGSW) portal for the next recruitment notification",
       detail:
-        "The department's portal currently carries only citizen-service and employee applications; it publishes no current recruitment notification, and district-level vacancy and priority lists from earlier cycles sit on individual district collectorate sites rather than here.",
+        "Re-read on 3 Oct 2026, the department's portal, now branded Swarna Gramam Swarna Wardu, carries only citizen-service and employee applications and no recruitment notification; the old gramawardsachivalayam.ap.gov.in address did not resolve on 3 Oct 2026. Earlier cycles' district lists sit on district collectorate sites.",
     },
     summary:
       "Recruitment to Grama and Ward Sachivalayam posts such as Panchayat Secretary, Welfare and Education Assistant and Village Agriculture Assistant, run by the Andhra Pradesh Grama Ward Sachivalayam Department.",
@@ -2607,13 +2658,12 @@ export const exams: Exam[] = [
       "Sachivalayam posts are recruited post-wise with separate qualification, age and local-cadre conditions; confirm them in the current-cycle notification when it is published.",
     ],
     officialLinks: [
-      { label: "Grama Ward Sachivalayam portal", url: "https://gramawardsachivalayam.ap.gov.in/GSWS/Home/Main", type: "website" },
-      { label: "GSWS department application", url: "https://sgsw.ap.gov.in/GSWS/Home/Main", type: "website" },
+      { label: "Grama Ward Sachivalayam (SGSW) portal", url: "https://sgsw.ap.gov.in/GSWS/Home/Main", type: "website" },
     ],
-    sourceTitle: "Andhra Pradesh Grama Ward Sachivalayam - departmental portal",
-    sourceUrl: "https://gramawardsachivalayam.ap.gov.in/GSWS/Home/Main",
-    sourcePublished: "Departmental portal checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:04 IST",
+    sourceTitle: "Andhra Pradesh Grama Ward Sachivalayam (Swarna Gramam Swarna Wardu) - departmental portal",
+    sourceUrl: "https://sgsw.ap.gov.in/GSWS/Home/Main",
+    sourcePublished: "Departmental portal re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:15 IST",
     keywords: [
       "AP Sachivalayam",
       "గ్రామ వార్డు సచివాలయం",
@@ -2641,11 +2691,11 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Examination under way",
-      tone: "blue",
-      nextAction: "Appear on your allotted date inside the 22 to 29 Aug 2026 window, then watch the careers page for the key and results",
+      label: "Examination scores released",
+      tone: "violet",
+      nextAction: "Check your score through the result link on APEPDCL's careers page, then watch it for certificate verification",
       detail:
-        "APEPDCL's careers page carries the detailed notification for recruitment in its engineering services, with the online application window 30 Jun to 20 Jul 2026 and the examination on 22 to 29 Aug 2026. The page carries no answer key or result notice for this recruitment yet.",
+        "APEPDCL's careers page, re-read on 3 Oct 2026, now carries a 'Candidate Wise Examination Scores for AP Vidyut Recruitment 2026' entry linking to the results on the common AP Vidyut recruitment portal. No certificate-verification or selection notice is published yet.",
     },
     summary:
       "Direct recruitment to Assistant Executive Engineer posts in the engineering services of the Andhra Pradesh Eastern Power Distribution Company.",
@@ -2660,8 +2710,9 @@ export const exams: Exam[] = [
     timeline: [
       { label: "Online applications open", date: "2026-06-30", displayDate: "30 Jun 2026", state: "completed" },
       { label: "Application deadline", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
-      { label: "Written examination", date: "2026-08-22", displayDate: "22 to 29 Aug 2026", state: "current" },
-      { label: "Answer key and results", displayDate: "Not announced", state: "tentative" },
+      { label: "Written examination", date: "2026-08-22", displayDate: "22 to 29 Aug 2026", state: "completed", note: "Held in the notified window; candidate-wise scores are now published." },
+      { label: "Candidate-wise examination scores", displayDate: "Published; release date not announced", state: "current" },
+      { label: "Certificate verification and selection", displayDate: "Not announced", state: "tentative" },
     ],
     eligibility: [
       "This record covers candidates who applied under the APEPDCL engineering services notification during the 30 Jun to 20 Jul 2026 window.",
@@ -2692,13 +2743,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "APEPDCL careers page - detailed notification for recruitment in engineering services",
     sourceUrl: "https://www.apeasternpower.com/careers",
-    sourcePublished: "Application window 30 Jun to 20 Jul 2026; examination 22 to 29 Aug 2026; careers page re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:06 IST",
+    sourcePublished: "Application window 30 Jun to 20 Jul 2026; examination 22 to 29 Aug 2026; careers page re-read 3 Oct 2026, carrying the candidate-wise examination scores entry",
+    lastVerified: "3 Oct 2026, 13:54 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "The written examination is running inside its published 22 to 29 Aug 2026 window. The careers page still shows the same dates and has published no answer key or result for this recruitment.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The 22 to 29 Aug 2026 examination is over, and APEPDCL's careers page now carries a 'Candidate Wise Examination Scores for AP Vidyut Recruitment 2026' entry with a result link, so the examination is shown as completed and the status points at the scores and the selection stages that follow.",
       },
     ],
     keywords: [
@@ -2710,48 +2766,91 @@ export const exams: Exam[] = [
       "APEPDCL notification 2026",
     ],
   }),
-  listedExam({
+  exam({
     slug: "apspdcl-recruitment-next-cycle",
-    title: "APSPDCL Recruitment - Next Cycle",
-    shortTitle: "APSPDCL Recruitment",
-    aliases: ["AP Southern Power Distribution recruitment", "APSPDCL jobs"],
+    title: "APSPDCL Assistant Executive Engineer Recruitment 2026",
+    shortTitle: "APSPDCL AEE 2026",
+    aliases: ["AP Southern Power Distribution recruitment", "APSPDCL jobs", "APSPDCL Notification No.1/2026"],
     organisation: "Southern Power Distribution Company of Andhra Pradesh Limited",
     governmentLevel: "State",
     jurisdiction: "Andhra Pradesh",
     state: "Andhra Pradesh",
     stateCode: "AP",
     regionCodes: ["AP"],
-    cycle: "Next cycle",
+    cycle: "2026",
     year: 2026,
+    notificationNumber: "1/2026",
     sector: "Power distribution",
     examTypes: ["Public Sector Undertakings", "Technical & Trades"],
-    education: ["ITI / Diploma", "Graduate", "Professional degree"],
+    education: ["Professional degree"],
+    verification: "verified",
     status: {
-      label: "Notification awaited",
-      tone: "amber",
-      nextAction: "Watch the APSPDCL careers page for the next recruitment notification",
+      label: "Examination scores released",
+      tone: "violet",
+      nextAction: "Check your score on the AP Vidyut recruitment portal, then watch it for certificate verification",
       detail:
-        "APSPDCL's careers page currently carries only an alert stating that no notifications are issued at present for office attendant or any other posts, and warning candidates about fake recruitment material circulating in the company's name.",
+        "APSPDCL Notification No.1/2026 dated 25 Jun 2026 took applications from 30 Jun to 20 Jul 2026 through the common AP Vidyut recruitment portal and set the common computer-based test for 22 to 29 Aug 2026. Re-read on 3 Oct 2026, the portal says candidate-wise examination scores for AP Vidyut Recruitment 2026 are released; no certificate-verification or selection list is published yet. APSPDCL's own careers page does not list this notification.",
     },
     summary:
-      "Recruitment to engineering, technical and support posts in the Southern Power Distribution Company of Andhra Pradesh, published on the company's own careers page.",
+      "Direct recruitment to Assistant Executive Engineer (Electrical, Telecom and Civil) posts in the Southern Power Distribution Company of Andhra Pradesh, through the AP power utilities' common computer-based test.",
+    vacancyLabel: "125 AEE (Electrical), 6 AEE (Civil), 4 AEE (Telecom)",
+    vacancyNote:
+      "Notification No.1/2026 lists 125 AEE (Electrical) posts, including one backlog post, 6 AEE (Civil) and 4 AEE (Telecom), and says the vacancies are provisional and may increase or decrease.",
+    vacancyBreakdown: [
+      { label: "AEE (Electrical)", total: 125 },
+      { label: "AEE (Civil)", total: 6 },
+      { label: "AEE (Telecom)", total: 4 },
+    ],
+    age: "18 to 42 years as on 1 Jul 2026; up to 47 years for SC, ST, BC and EWS candidates and 52 years for persons with benchmark disabilities, per Notification No.1/2026.",
+    qualification:
+      "A degree in Electrical or Electrical & Electronics Engineering (AEE Electrical), Telecommunications, Electronics or Electronics & Communication Engineering (AEE Telecom) or Civil Engineering (AEE Civil) from a recognised university, as on the date of the notification.",
+    fee: "Rs 1,000 application fee, paid online from 30 Jun to 20 Jul 2026; not refundable.",
+    pay: "A consolidated Rs 75,000 a month during the two-year probation, then the time scale of pay Rs 86,245-2,08,915 (RPS-2022), per Notification No.1/2026.",
+    timeline: [
+      { label: "Notification issued", date: "2026-06-25", displayDate: "25 Jun 2026", state: "completed" },
+      { label: "Online applications open", date: "2026-06-30", displayDate: "30 Jun 2026", state: "completed" },
+      { label: "Application deadline", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
+      { label: "Common computer-based test", date: "2026-08-22", displayDate: "22 to 29 Aug 2026", state: "completed", note: "Common test for the AEE posts of APTRANSCO, APEPDCL, APCPDCL, APSPDCL and APGENCO; candidate-wise scores are now published." },
+      { label: "Candidate-wise examination scores", displayDate: "Published; release date not announced", state: "current" },
+      { label: "Certificate verification and selection", displayDate: "Not announced", state: "tentative" },
+    ],
     eligibility: [
-      "APSPDCL's careers page warns that only notifications published on its official website and in leading newspapers are genuine; verify any circulating advertisement against that page.",
+      "Candidates applied once, through the common portal, with preferences across APTRANSCO, APEPDCL, APCPDCL, APSPDCL and APGENCO; allotment follows merit, reservation, local status and those preferences.",
+      "Appointees must serve in field offices, preferably in rural and remote areas, for at least five years from first appointment, per the notification.",
+    ],
+    selectionStages: [
+      "Online application through the common AP Vidyut recruitment portal",
+      "Common computer-based test of 100 marks with no negative marking",
+      "Merit list on CBT marks, with minimum qualifying marks of 40% (OC/EWS), 35% (BC) and 30% (SC/ST/PwBD)",
+      "Certificate verification in the ratio 1:1 and allotment",
+    ],
+    syllabus: [
+      "Each post's 100-mark test has 70 marks of core engineering plus General Intelligence & Reasoning (5), General Awareness (7), English (5), Quantitative Aptitude (8) and Computer Knowledge (5); the post-wise syllabus is in Para 10 of Notification No.1/2026.",
     ],
     officialLinks: [
+      { label: "APSPDCL Notification No.1/2026 dated 25 Jun 2026 (PDF)", url: "https://apvidyutrecruitment.apcfss.in/DSC-PDF/Notifications/APSPDCL%20Notification-2026.pdf", type: "notice" },
+      { label: "AP Vidyut common recruitment portal (scores)", url: "https://apvidyutrecruitment.apcfss.in/", type: "result" },
       { label: "APSPDCL careers page", url: "https://www.apspdcl.in/careers.php", type: "website" },
-      { label: "APSPDCL official website", url: "https://www.apspdcl.in/", type: "website" },
     ],
-    sourceTitle: "APSPDCL careers page",
-    sourceUrl: "https://www.apspdcl.in/careers.php",
-    sourcePublished: "Careers page checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:01 IST",
+    sourceTitle: "APSPDCL Notification No.1/2026 dated 25 Jun 2026",
+    sourceUrl: "https://apvidyutrecruitment.apcfss.in/DSC-PDF/Notifications/APSPDCL%20Notification-2026.pdf",
+    sourcePublished: "Notification dated 25 Jun 2026; AP Vidyut portal re-read 3 Oct 2026, showing the candidate-wise scores",
+    lastVerified: "3 Oct 2026, 21:41 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Replaced the 'notification awaited' placeholder with APSPDCL Notification No.1/2026 dated 25 Jun 2026 for 125 AEE (Electrical), 6 AEE (Civil) and 4 AEE (Telecom) posts, published on the common AP Vidyut recruitment portal: applications ran 30 Jun to 20 Jul 2026, the common test was held 22 to 29 Aug 2026 and candidate-wise scores are released.",
+      },
+    ],
     keywords: [
       "APSPDCL recruitment",
       "ఏపీఎస్‌పీడీసీఎల్ నియామకం",
       "AP Southern Power Distribution jobs",
       "apspdcl careers",
       "AP DISCOM recruitment Tirupati",
+      "APSPDCL AEE",
+      "apvidyutrecruitment",
     ],
   }),
   exam({
@@ -2777,7 +2876,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the board's notices for the merit list and web counselling; the final sports-category verification was called for 4 Aug 2026",
       detail:
-        "The board's public notice issued a final call for sports-category certificate verification for Civil Assistant Surgeon posts on a regular basis under Notification No.13/2025 dated 4 Sep 2025, at the Sports Authority of Andhra Pradesh office in Vijayawada on 4 Aug 2026, for candidates who did not attend on 23 Jul 2026. The board's home page and notification list were re-read on 10 Sep 2026: the list still shows Notification No.13/2025 with its 11 Sep to 10 Oct 2025 application window, and nothing newer about the merit list or web counselling for this recruitment is published as of 10 Sep 2026.",
+        "The board's public notice issued a final call for sports-category certificate verification for Civil Assistant Surgeon posts on a regular basis under Notification No.13/2025 dated 4 Sep 2025, at the Sports Authority of Andhra Pradesh office in Vijayawada on 4 Aug 2026, for candidates who did not attend on 23 Jul 2026. The board's home page and notification list were re-read on 3 Oct 2026: the list still shows Notification No.13/2025 with its 11 Sep to 10 Oct 2025 application window, and nothing newer about the merit list or web counselling for this recruitment is published as of 3 Oct 2026.",
     },
     summary:
       "Direct recruitment of Civil Assistant Surgeons on a regular basis by the Andhra Pradesh Medical Services Recruitment Board.",
@@ -2813,8 +2912,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Andhra Pradesh Medical Services Recruitment Board - public notice and notification list",
     sourceUrl: "https://apmsrb.ap.gov.in/",
-    sourcePublished: "Public notice for the 4 Aug 2026 final sports certificate verification; board home page and notification list re-read 10 Sep 2026 with nothing newer on this recruitment",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourcePublished: "Public notice for the 4 Aug 2026 final sports certificate verification; board home page and notification list re-read 3 Oct 2026 with nothing newer on this recruitment",
+    lastVerified: "3 Oct 2026, 14:36 IST",
     keywords: [
       "APMSRB",
       "AP Civil Assistant Surgeon",
@@ -2848,11 +2947,11 @@ export const exams: Exam[] = [
     education: ["12th"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
+      label: "Applications closed; Preliminary Written Test tentatively 20 Dec 2026",
+      tone: "blue",
+      nextAction: "Watch tgprb.in for the Preliminary Written Test hall tickets; the Board expects to hold the test on 20 Dec 2026",
       detail:
-        "The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. A Second Supplementary Notification dated 10 Sep 2026 adds a further three years to the upper age limit for Constable-level posts, and its press note repeats the 16 Sep 2026 deadline.",
+        "The Board's press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read on tgprb.in on 3 Oct 2026, records that online applications closed on 16 Sep 2026, with 3,89,356 applications for the SCT PC Civil and equivalent posts, and says their Preliminary Written Test is likely to be held on 20 Dec 2026 (Sunday) forenoon at 15 to 18 locations, including the erstwhile 10 district headquarters. No hall-ticket notice is published yet.",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Police Constables and equivalent posts across the Telangana Police, Special Protection Force, Fire and Disaster Response, and Prisons and Correctional Services departments.",
@@ -2878,8 +2977,8 @@ export const exams: Exam[] = [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
       { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
-      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
-      { label: "Preliminary Written Test", displayDate: "Schedule not announced", state: "tentative" },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "completed", note: "Closed as extended; the Board's press note of 17 Sep 2026 records that the online application process concluded on 16 Sep 2026." },
+      { label: "Preliminary Written Test", date: "2026-12-20", displayDate: "20 Dec 2026", state: "tentative", note: "Likely date in the Board's press note of 17 Sep 2026" },
     ],
     eligibility: [
       "Vacancies are split between Limited Recruitment (backlog) posts reserved for local candidates of the district or commissionerate concerned and Direct Recruitment posts, per Notification Rc No.189/Rect./Rect.-2/2026.",
@@ -2909,12 +3008,13 @@ export const exams: Exam[] = [
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
       { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
       { label: "Second Supplementary Notification dated 10 Sep 2026 - further three-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Second%20Supplementary%20Notification%202026%20%20dated10%20Sep%202026.pdf", type: "notice" },
+      { label: "Press note dated 17 Sep 2026 - applications closed, tentative test dates (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.189/Rect./Rect.-2/2026, read with the Board's press notes of 1 and 15 Aug and 8 Sep 2026 and the Second Supplementary Notification of 10 Sep 2026",
-    sourceUrl: "https://www.tgprb.in/SI_PC_2026/PC%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026; Second Supplementary Notification dated 10 Sep 2026, all read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourceTitle: "TSLPRB press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read with Notification Rc No.189/Rect./Rect.-2/2026 and its press notes and supplementary notifications",
+    sourceUrl: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug, 8 and 17 Sep 2026; Second Supplementary Notification dated 10 Sep 2026; Board's notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:01 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2925,6 +3025,11 @@ export const exams: Exam[] = [
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday, and records that 2,76,085 candidates had applied across 3,80,762 candidatures against the 7,437 vacancies notified on 29 Jul 2026. The Board's Second Supplementary Notification in Rc No.189 & 234 dated 10 Sep 2026 also adds a further three years to the upper age limit under G.O.Ms.No.129 dated 9 Sep 2026, on top of the seven years already granted.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications closed on 16 Sep 2026. The Board's press note dated 17 Sep 2026 records 3,89,356 applications for the SCT PC Civil and equivalent posts and says their Preliminary Written Test is likely on 20 Dec 2026, so the record no longer shows applications as open and now shows that tentative date.",
       },
     ],
     keywords: [
@@ -2962,11 +3067,11 @@ export const exams: Exam[] = [
     education: ["Graduate"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
+      label: "Applications closed; Preliminary Written Test tentatively 29 Nov 2026",
+      tone: "blue",
+      nextAction: "Watch tgprb.in for the Preliminary Written Test hall tickets; the Board expects to hold the test on 29 Nov 2026",
       detail:
-        "The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. The three-year age relaxation notified on 10 Sep 2026 applies only to Constable-level posts and not to this notification.",
+        "The Board's press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read on tgprb.in on 3 Oct 2026, records that online applications closed on 16 Sep 2026, with 1,60,756 applications for the SCT SI Civil and equivalent posts, and says their Preliminary Written Test is likely to be held on 29 Nov 2026 (Sunday) forenoon at all the erstwhile 10 district headquarters of Telangana. No hall-ticket notice is published yet.",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Sub Inspectors and equivalent posts across the Telangana Police, Special Protection Force, Fire and Disaster Response, and Prisons and Correctional Services departments.",
@@ -2993,8 +3098,8 @@ export const exams: Exam[] = [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
       { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
-      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
-      { label: "Preliminary Written Test", displayDate: "Schedule not announced", state: "tentative" },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "completed", note: "Closed as extended; the Board's press note of 17 Sep 2026 records that the online application process concluded on 16 Sep 2026." },
+      { label: "Preliminary Written Test", date: "2026-11-29", displayDate: "29 Nov 2026", state: "tentative", note: "Likely date in the Board's press note of 17 Sep 2026" },
     ],
     eligibility: [
       "Post Codes 11, 12, 16 and 17 are open to men and women; Post Codes 13, 14 and 18 are open to men only and Post Code 19 to women only, per Notification Rc No.225/Rect./Rect.-1/2026.",
@@ -3025,12 +3130,13 @@ export const exams: Exam[] = [
       { label: "Press note dated 1 Aug 2026 - application window and fees (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
       { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
+      { label: "Press note dated 17 Sep 2026 - applications closed, tentative test dates (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.225/Rect./Rect.-1/2026, read with the Board's press notes of 1 and 15 Aug and 8 Sep 2026",
-    sourceUrl: "https://www.tgprb.in/SI_PC_2026/SI%20(Civil%20et%20al)%202026%20Notification%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026, all read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourceTitle: "TSLPRB press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read with Notification Rc No.225/Rect./Rect.-1/2026 and its press notes",
+    sourceUrl: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug, 8 and 17 Sep 2026; Board's notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:01 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -3041,6 +3147,11 @@ export const exams: Exam[] = [
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday, and records that 2,76,085 candidates had applied across 3,80,762 candidatures against the 7,437 vacancies notified on 29 Jul 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications closed on 16 Sep 2026. The Board's press note dated 17 Sep 2026 records 1,60,756 applications for the SCT SI Civil and equivalent posts and says their Preliminary Written Test is likely on 29 Nov 2026, so the record no longer shows applications as open and now shows that tentative date.",
       },
     ],
     keywords: [
@@ -3076,11 +3187,11 @@ export const exams: Exam[] = [
     education: ["10th", "12th", "ITI / Diploma"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
+      label: "Applications closed; physical test dates awaited",
+      tone: "amber",
+      nextAction: "Watch tgprb.in for the Physical Measurement and Efficiency Test schedule and admit cards",
       detail:
-        "Notification Rc No.234/Rect./Rect.3/2026 dated 29 Jul 2026 notifies 27 technical constable posts. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. A Second Supplementary Notification dated 10 Sep 2026 adds a further three years to the upper age limit for Post Code 35 (Mechanic) but expressly not for Post Code 36 (Driver).",
+        "Notification Rc No.234/Rect./Rect.3/2026 dated 29 Jul 2026 notifies 27 technical constable posts. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read on tgprb.in on 3 Oct 2026, records that online applications closed on 16 Sep 2026, with 12,495 applications for SCT PC Driver and 2,465 for SCT PC Mechanic. For these technical posts selection starts with the Physical Measurement and Efficiency Test, for which the press note gives no date; none is published as of 3 Oct 2026.",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Police Constables in the Mechanic and Driver technical cadres of the Telangana Police Transport Organization, open to men only.",
@@ -3101,7 +3212,7 @@ export const exams: Exam[] = [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
       { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
-      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "completed", note: "Closed as extended; the Board's press note of 17 Sep 2026 records that the online application process concluded on 16 Sep 2026." },
       { label: "Physical Measurement and Efficiency Test", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -3133,17 +3244,23 @@ export const exams: Exam[] = [
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
       { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
       { label: "Second Supplementary Notification dated 10 Sep 2026 - further three-year age relaxation for Post Code 35 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Second%20Supplementary%20Notification%202026%20%20dated10%20Sep%202026.pdf", type: "notice" },
+      { label: "Press note dated 17 Sep 2026 - applications closed, next stages (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.234/Rect./Rect.3/2026 - SCT Police Constable (Mechanics) and (Driver), read with the Board's press note of 8 Sep 2026 and the Second Supplementary Notification of 10 Sep 2026",
-    sourceUrl: "https://www.tgprb.in/SI_PC_2026/PC%20Driver%20&%20Mechanic%20Notification%202026%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026; Second Supplementary Notification dated 10 Sep 2026, all read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourceTitle: "TSLPRB press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read with Notification Rc No.234/Rect./Rect.3/2026 - SCT Police Constable (Mechanics) and (Driver)",
+    sourceUrl: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug, 8 and 17 Sep 2026; Second Supplementary Notification dated 10 Sep 2026; Board's notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:01 IST",
     changeLog: [
       {
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday. The Board's Second Supplementary Notification in Rc No.189 & 234 dated 10 Sep 2026 also adds a further three years to the upper age limit under G.O.Ms.No.129 dated 9 Sep 2026, on top of the seven years already granted - for Post Code 35 (Mechanic) only, expressly not for Post Code 36 (Driver).",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications closed on 16 Sep 2026. The Board's press note dated 17 Sep 2026 records 12,495 applications for SCT PC Driver and 2,465 for SCT PC Mechanic and says selection for these technical posts starts with the Physical Measurement and Efficiency Test, for which no date is published yet.",
       },
     ],
     keywords: [
@@ -3178,11 +3295,11 @@ export const exams: Exam[] = [
     education: ["Graduate", "Professional degree"],
     verification: "verified",
     status: {
-      label: "Applications open",
-      tone: "green",
-      nextAction: "Apply online at tgprb.in by 5 p.m. on 16 Sep 2026",
+      label: "Applications closed; physical test dates awaited",
+      tone: "amber",
+      nextAction: "Watch tgprb.in for the Physical Measurement and Efficiency Test schedule and admit cards",
       detail:
-        "Notification Rc No.279/Rect./Rect-3/2026 dated 29 Jul 2026 notifies 23 Assistant Sub Inspector posts in the Finger Print Bureau. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026, read on the Board's notice pages on 10 Sep 2026, extends the last date for online applications to 5 p.m. on 16 Sep 2026, Wednesday, in place of the 9 Sep 2026 date set by the press note of 1 Aug 2026. The three-year age relaxation notified on 10 Sep 2026 applies only to Constable-level posts and not to this notification.",
+        "Notification Rc No.279/Rect./Rect-3/2026 dated 29 Jul 2026 notifies 23 Assistant Sub Inspector posts in the Finger Print Bureau. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read on tgprb.in on 3 Oct 2026, records that online applications closed on 16 Sep 2026, with 11,992 applications for SCT ASI FPB. For this technical post selection starts with the Physical Measurement and Efficiency Test, for which the press note gives no date; none is published as of 3 Oct 2026.",
     },
     summary:
       "Direct recruitment of Stipendiary Cadet Trainee Assistant Sub Inspectors for the Finger Print Bureau of the Telangana Police, a computing and forensic technical cadre open to men and women.",
@@ -3208,7 +3325,7 @@ export const exams: Exam[] = [
       { label: "Notification issued", date: "2026-07-29", displayDate: "29 Jul 2026", state: "completed" },
       { label: "Online applications open", date: "2026-08-19", displayDate: "19 Aug 2026, 8:00 AM", state: "completed" },
       { label: "Application deadline in the press note of 1 Aug 2026", date: "2026-09-09", displayDate: "9 Sep 2026, 5:00 PM", state: "completed", note: "Superseded by the Board's press note dated 8 Sep 2026, which extended the last date to 16 Sep 2026." },
-      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "current" },
+      { label: "Application deadline, as extended by the press note of 8 Sep 2026", date: "2026-09-16", displayDate: "16 Sep 2026, 5:00 PM", state: "completed", note: "Closed as extended; the Board's press note of 17 Sep 2026 records that the online application process concluded on 16 Sep 2026." },
       { label: "Physical Measurement and Efficiency Test", displayDate: "Schedule not announced", state: "tentative" },
     ],
     eligibility: [
@@ -3238,17 +3355,23 @@ export const exams: Exam[] = [
       { label: "Press note dated 1 Aug 2026 - application window and fees (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Application%20Dates%202026%20Press%20Note%20dated%2029-07-2026.pdf", type: "notice" },
       { label: "Press note dated 15 Aug 2026 - further two-year age relaxation (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20Supplementary%20Notification%202026%20%20dated%2015-08-2026.pdf", type: "notice" },
       { label: "Press note dated 8 Sep 2026 - last date extended to 16 Sep 2026 (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2008-09-2026.pdf", type: "notice" },
+      { label: "Press note dated 17 Sep 2026 - applications closed, next stages (PDF)", url: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf", type: "notice" },
       { label: "Telangana State Level Police Recruitment Board", url: "https://www.tgprb.in/", type: "apply" },
     ],
-    sourceTitle: "TSLPRB Notification Rc No.279/Rect./Rect-3/2026 - SCT Assistant Sub Inspector, Finger Print Bureau, read with the Board's press note of 8 Sep 2026",
-    sourceUrl: "https://www.tgprb.in/SI_PC_2026/ASI%20(FPB)%202026%20Notification%20dated%2029-07-2026.pdf",
-    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug 2026 and 8 Sep 2026, all read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourceTitle: "TSLPRB press note in Rc Nos.189, 225, 234 and 279 dated 17 Sep 2026, read with Notification Rc No.279/Rect./Rect-3/2026 - SCT Assistant Sub Inspector, Finger Print Bureau",
+    sourceUrl: "https://www.tgprb.in/SI_PC_2026/Press%20Note%20dated%2017-09-2026.pdf",
+    sourcePublished: "Notification dated 29 Jul 2026; press notes dated 1 and 15 Aug, 8 and 17 Sep 2026; Board's notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:01 IST",
     changeLog: [
       {
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "The application deadline is extended. The Board's press note in Rc Nos.189, 225, 234 and 279 dated 8 Sep 2026 moves the last date for online applications from 9 Sep 2026 to 5 p.m. on 16 Sep 2026, Wednesday, and records that 2,76,085 candidates had applied across 3,80,762 candidatures against the 7,437 vacancies notified on 29 Jul 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications closed on 16 Sep 2026. The Board's press note dated 17 Sep 2026 records 11,992 applications for SCT ASI FPB and says selection for this technical post starts with the Physical Measurement and Efficiency Test, for which no date is published yet.",
       },
     ],
     keywords: [
@@ -3337,7 +3460,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the TREI-RB notifications page for the next detailed notification",
       detail:
-        "The Board's notifications page currently carries provisional selection lists and certificate-verification notices for the Music and Craft Teacher posts of an earlier cycle, alongside the detailed notifications for that cycle. It publishes no dated notice for a fresh cycle, and its Web Notes page is empty.",
+        "Re-read on 3 Oct 2026, the Board's notifications page still leads with provisional selection lists and certificate-verification notices for the Music and Craft Teacher posts of an earlier cycle. It publishes no dated notice for a fresh cycle, and its Web Notes page is empty.",
     },
     summary:
       "Direct recruitment of Trained Graduate Teachers, Post Graduate Teachers, Junior and Degree Lecturers, Physical Directors, Librarians and Art, Craft and Music Teachers for Telangana's social welfare, tribal welfare, backward classes, minorities and general residential educational institutions societies.",
@@ -3367,8 +3490,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "TREI-RB notifications page, read with the previous cycle's Trained Graduate Teacher notification No.09/2023",
     sourceUrl: "https://treirb.cgg.gov.in/getMenuContent/75",
-    sourcePublished: "Notifications page checked 29 Aug 2026; previous-cycle notification dated 5 Apr 2023",
-    lastVerified: "29 Aug 2026, 15:03 IST",
+    sourcePublished: "Notifications page re-read 3 Oct 2026; previous-cycle notification dated 5 Apr 2023",
+    lastVerified: "3 Oct 2026, 20:13 IST",
     keywords: [
       "TREIRB",
       "Telangana Gurukulam recruitment",
@@ -3397,11 +3520,11 @@ export const exams: Exam[] = [
     education: ["Professional degree"],
     verification: "verified",
     status: {
-      label: "Selection in progress, specialty by specialty",
+      label: "TVVP specialty selections out; TGSRTC selection awaited",
       tone: "violet",
-      nextAction: "Check the Board's notice list for the final merit list and selection notification for the ten specialties verified in August 2026",
+      nextAction: "Check the Board's 16 Sep 2026 selection notifications for your specialty, and watch its notice list for the TGSRTC Medical Officer Specialist selection",
       detail:
-        "The Board's notice list, re-read on 10 Sep 2026, published the provisional merit list and certificate-verification schedule for the Civil Assistant Surgeon (Specialists) recruitment on 15 Jul 2026, rescheduled verification on 17 and 20 Jul 2026, and issued the final merit list and selection notification for General Medicine, General Surgery, Radiology and Orthopaedics on 28 Jul 2026. On 11 Aug 2026 it released provisional merit lists for a further ten specialties - Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology - and shortlisted applicants in the ratio of 1:2 for certificate verification on 13 and 14 Aug 2026, with 17 Aug 2026 as the reserve day. No final merit list or selection notification for those ten specialties is published as of 10 Sep 2026.",
+        "The Board's notice list published the provisional merit list and certificate-verification schedule for the Civil Assistant Surgeon (Specialists) recruitment on 15 Jul 2026, rescheduled verification on 17 and 20 Jul 2026, and issued the final merit list and selection notification for General Medicine, General Surgery, Radiology and Orthopaedics on 28 Jul 2026. On 11 Aug 2026 it released provisional merit lists for ten further specialties - Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology - verified on 13 and 14 Aug 2026. Re-read on 3 Oct 2026, the list adds selection notifications with cut-offs dated 16 Sep 2026 for all ten, so all 17 TVVP specialties now have selections (the first three on 6 Apr 2026); none is listed yet for the seven TGSRTC specialties.",
     },
     summary:
       "Recruitment of Civil Assistant Surgeon (Specialists) for Telangana's public health services by the Medical and Health Services Recruitment Board, now at the specialty-wise selection stage.",
@@ -3421,7 +3544,8 @@ export const exams: Exam[] = [
       { label: "Final merit list and selection notification (General Medicine, General Surgery, Radiology, Orthopaedics)", date: "2026-07-28", displayDate: "28 Jul 2026", state: "completed" },
       { label: "Provisional merit lists for ten further specialties", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed", note: "Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology; shortlisting in the ratio of 1:2 of the notified vacancies." },
       { label: "Certificate verification for the ten further specialties", date: "2026-08-13", displayDate: "13 and 14 Aug 2026", state: "completed", note: "At the Indian Institute of Health and Family Welfare, Vengal Rao Nagar, Hyderabad, with 17 Aug 2026 as the reserve day." },
-      { label: "Selection for the remaining specialties", displayDate: "Not announced", state: "tentative" },
+      { label: "Selection notifications with cut-offs for the ten further specialties", date: "2026-09-16", displayDate: "16 Sep 2026", state: "completed", note: "One web notice per specialty listed on 11 Aug 2026, each signed by the Member Secretary on 16 Sep 2026." },
+      { label: "TGSRTC Medical Officer Specialist selection", displayDate: "Not announced", state: "tentative" },
     ],
     eligibility: [
       "This record covers candidates registered under the Board's Civil Assistant Surgeon (Specialists) recruitment; selections are notified specialty by specialty.",
@@ -3437,17 +3561,23 @@ export const exams: Exam[] = [
     officialLinks: [
       { label: "Web notice of 11 Aug 2026 - provisional merit lists and certificate verification for ten specialties (PDF)", url: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1786454361292", type: "notice" },
       { label: "Selection notification of 28 Jul 2026 - General Medicine, General Surgery, Radiology, Orthopaedics (PDF)", url: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1785248415107", type: "result" },
+      { label: "Selection notifications with cut-offs of 16 Sep 2026 - ten specialties (PDF)", url: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1789557918177", type: "result" },
       { label: "MHSRB Telangana notice board", url: "https://mhsrb.telangana.gov.in/", type: "website" },
     ],
-    sourceTitle: "MHSRB Telangana web notice of 11 Aug 2026 under Notification No.04/2025, read with the selection notification of 28 Jul 2026",
-    sourceUrl: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1786454361292",
-    sourcePublished: "Web notice dated 11 Aug 2026 and selection notification dated 28 Jul 2026; the Board's notice list re-read 10 Sep 2026",
-    lastVerified: "10 Sep 2026, 22:20 IST",
+    sourceTitle: "MHSRB Telangana selection notifications of 16 Sep 2026 under Notification No.04/2025, read with the web notice of 11 Aug 2026",
+    sourceUrl: "https://mhsrb.telangana.gov.in/mhsrb/v2/apis/api/view/notif/NTF-1789557918177",
+    sourcePublished: "Selection notifications dated 16 Sep 2026, web notice dated 11 Aug 2026 and selection notification dated 28 Jul 2026; the Board's notice list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:41 IST",
     changeLog: [
       {
         date: "2026-09-10",
         displayDate: "10 Sep 2026",
         text: "The selection has moved on to ten more specialties. The Board's web notice of 11 Aug 2026 released provisional merit lists for Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology, and called shortlisted applicants for certificate verification on 13 and 14 Aug 2026 with 17 Aug 2026 as the reserve day. The Board's selection notification of 28 Jul 2026 also names the parent notice - Notification No.04/2025 dated 22 Aug 2025, for 1,623 posts across 24 specialties - so the record now carries that total.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The Board's notice list now carries selection notifications with cut-offs dated 16 Sep 2026 for Ophthalmology, ENT, Pathology, Dermatology, Psychiatry, Pulmonary Medicine, Forensic Medicine, Hospital Administration, Biochemistry and Microbiology, so all 17 TVVP specialties have selections; none is listed yet for the seven TGSRTC specialties.",
       },
     ],
     keywords: [
@@ -3484,9 +3614,9 @@ export const exams: Exam[] = [
     status: {
       label: "General merit list published; deputation orders awaited",
       tone: "violet",
-      nextAction: "Check the general merit list linked from the School Education Department site and complete certificate verification",
+      nextAction: "Check the general merit list linked from the School Education Department site and watch it for deputation orders",
       detail:
-        "Notification No.33/N1/TSCERT/2026 dated 28 Jun 2026 held the computer-based written test from 25 to 31 Jul 2026 at Hyderabad. Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026 rescheduled certificate verification and interview cum demonstration institution-wise - SCERT on 5 Aug, CTE/IASE on 6 Aug and DIETs on 7 Aug 2026 - and moved the issue of deputation orders to on or before 11 Aug 2026. The department has since published the general merit list of DIET, CTE, IASE and SCERT candidates selected by deputation under foreign-service terms, together with a certificate-verification proforma; no deputation order has been published on the department's site.",
+        "Notification No.33/N1/TSCERT/2026 dated 28 Jun 2026 held the computer-based written test from 25 to 31 Jul 2026 at Hyderabad. Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026 rescheduled certificate verification and interview cum demonstration institution-wise - SCERT on 5 Aug, CTE/IASE on 6 Aug and DIETs on 7 Aug 2026 - and moved the issue of deputation orders to on or before 11 Aug 2026. The department has since published the general merit list of DIET, CTE, IASE and SCERT candidates selected by deputation under foreign-service terms. Re-read on 3 Oct 2026, the department's site still links that list and shows no deputation order.",
     },
     summary:
       "Selection of in-service Gazetted Headmasters and School Assistants for Lecturer and Professor posts in Telangana's DIETs, CTEs, IASE and SCERT, as stop-gap arrangements on deputation for one year or until regular staff are appointed.",
@@ -3512,7 +3642,7 @@ export const exams: Exam[] = [
       { label: "Application edit option", date: "2026-07-17", displayDate: "17 Jul 2026", state: "completed" },
       { label: "Computer-based written test", date: "2026-07-25", displayDate: "25 to 31 Jul 2026", state: "completed", note: "Held at Hyderabad" },
       { label: "Interview cum demonstration", date: "2026-08-05", displayDate: "5 to 7 Aug 2026 (institution-wise: SCERT 5 Aug, CTE/IASE 6 Aug, DIETs 7 Aug)", state: "completed", note: "Rescheduled from the earlier common 6-8 Aug window to per-institution dates by Proc.Rc.No.33/N1/TSCERT/2026 dated 1 Aug 2026." },
-      { label: "General merit list and certificate-verification proforma", displayDate: "Published on the department site — publication date not announced", state: "current" },
+      { label: "General merit list", displayDate: "Published on the department site — publication date not announced", state: "current" },
       { label: "Issue of deputation orders", displayDate: "Date not announced — the notified target of 11 Aug 2026 has passed", state: "tentative" },
     ],
     eligibility: [
@@ -3534,8 +3664,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Notification No.33/N1/TSCERT/2026, Director of School Education, Telangana",
     sourceUrl: "https://schooledu.telangana.gov.in/SCHOOLEDUCATION/downloadDocs.do?mode=downloadDocuments&manualName=Notification%20-DIET,CTE,IASE,SCERT.pdf",
-    sourcePublished: "Notification dated 28 Jun 2026; interview schedule revised 1 Aug 2026; department site re-read 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 14:59 IST",
+    sourcePublished: "Notification dated 28 Jun 2026; interview schedule revised 1 Aug 2026; department site re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:47 IST",
     changeLog: [
       {
         date: "2026-08-20",

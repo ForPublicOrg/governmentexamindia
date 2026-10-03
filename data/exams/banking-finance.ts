@@ -101,10 +101,10 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      detail: "The preliminary examination was held on 22 and 23 Aug 2026 as scheduled; IBPS had released the call letter and information handouts on 14 Aug 2026. On 27 Aug 2026 IBPS issued a corrigendum raising the indicative vacancies to 7,565. The preliminary result is awaited and the main examination is on 4 Oct 2026, per the IBPS 2026-27 calendar.",
-      label: "Prelims held; result awaited",
+      detail: "The preliminary examination was held on 22 and 23 Aug 2026 and IBPS has published its result: main-exam call letters went out on 24 Sep 2026, and a notice and candidates' scores followed on 29 Sep 2026. That notice says the online main examination is expected on 4 Oct 2026. Indicative vacancies stand at 7,565 after the corrigendum of 27 Aug 2026.",
+      label: "Prelims result out; main exam on 4 Oct 2026",
       tone: "violet",
-      nextAction: "Watch the IBPS CRP PO/MT-XVI page for the preliminary result and the main exam call letter; the main examination is on 4 Oct 2026",
+      nextAction: "Take the main-exam call letter and the stamped prelims call letter to the main examination on 4 Oct 2026, then watch the IBPS page for the result",
     },
     summary:
       "A common recruitment process for Probationary Officer and Management Trainee posts in participating public-sector banks.",
@@ -131,8 +131,15 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Indicative vacancies updated to 7,565 in Annexure I; all other terms of the 1 Jul 2026 notification unchanged.",
       },
-      { label: "Preliminary result", displayDate: "Awaited", state: "current" },
-      { label: "Main exam", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled" },
+      { label: "Main exam call letter released", date: "2026-09-24", displayDate: "24 Sep 2026", state: "completed" },
+      {
+        label: "Preliminary result and scores",
+        date: "2026-09-29",
+        displayDate: "29 Sep 2026",
+        state: "completed",
+        note: "Dates as listed on the IBPS CRP PO/MT-XVI page; its notice says the preliminary result is being made available to candidates.",
+      },
+      { label: "Main exam", date: "2026-10-04", displayDate: "4 Oct 2026", state: "scheduled", note: "Expected on 4 Oct 2026 per the IBPS notice listed on 29 Sep 2026." },
       { label: "Provisional allotment", sortMonth: "2027-01", displayDate: "Jan 2027", state: "tentative" },
     ],
     eligibility: [
@@ -147,17 +154,23 @@ export const exams: Exam[] = [
       "Negative marking applies to wrong objective answers; use the official notice for the exact scheme.",
     ],
     officialLinks: [
+      { label: "Notice: preliminary result and main exam on 04.10.2026", url: "https://www.ibps.in/index.php/notification-under-crp-po-mt-xvi-29sep26/", type: "result" },
       { label: "Corrigendum dated 27.08.2026 (vacancy update)", url: "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-PO_MT-XVI_Vacancy_Update2.pdf", type: "notice" },
       { label: "Updated vacancy annexure as on 27.08.2026", url: "https://www.ibps.in/wp-content/uploads/ANNEXURE-I_updated_25.08.2026.pdf", type: "notice" },
       { label: "Official recruitment page", url: "https://www.ibps.in/index.php/management-trainees-xvi/", type: "notice" },
       { label: "IBPS exam calendar", url: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf", type: "calendar" },
       { label: "IBPS home", url: "https://www.ibps.in/", type: "website" },
     ],
-    sourceTitle: "IBPS CRP PO/MT-XVI recruitment page and 2026–27 calendar",
-    sourceUrl: "https://www.ibps.in/index.php/management-trainees-xvi/",
-    sourcePublished: "Notification 1 Jul 2026; preliminary call letter 14 Aug 2026; vacancy corrigendum dated 27 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:12 IST",
+    sourceTitle: "IBPS CRP PO/MT-XVI notice on the preliminary result and main examination",
+    sourceUrl: "https://www.ibps.in/index.php/notification-under-crp-po-mt-xvi-29sep26/",
+    sourcePublished: "Notification 1 Jul 2026; vacancy corrigendum 27 Aug 2026; main-exam call letters 24 Sep 2026; result notice and scores listed 29 Sep 2026; page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:35 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "IBPS has published the preliminary result: main-exam call letters went out on 24 Sep 2026 and scores followed on 29 Sep 2026. Its notice says the online main examination is expected on 4 Oct 2026.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -212,7 +225,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the IBPS site for the preliminary exam result and scorecard; the main examination is on 1 Nov 2026",
       detail:
-        "Applications are closed and the preliminary examination was held on 29 Aug 2026, the date IBPS issued call letters for on 20 Aug 2026. A corrigendum of 27 Aug 2026 raised the indicative vacancies to 1,043. The main examination follows on 1 Nov 2026. Qualification rules differ for each specialist post. The IBPS website could not be re-read on 9 Sep 2026 — both www.ibps.in pages timed out repeatedly — so no preliminary result had been confirmed as published at the time of this check.",
+        "Applications are closed and the preliminary examination was held on 29 Aug 2026, the date IBPS issued call letters for on 20 Aug 2026. A corrigendum of 27 Aug 2026 raised the indicative vacancies to 1,043. The main examination follows on 1 Nov 2026. Qualification rules differ for each specialist post. The SPL-XVI page, re-read on 3 Oct 2026, lists nothing newer than that corrigendum, so no preliminary result has been published yet.",
     },
     summary:
       "Recruitment for specialist roles including IT, agriculture, law, Rajbhasha, HR and marketing in public-sector banks.",
@@ -282,8 +295,8 @@ export const exams: Exam[] = [
     sourceTitle: "IBPS CRP SPL-XVI official notification and update page",
     sourceUrl: "https://www.ibps.in/index.php/specialist-officers-xvi/",
     sourcePublished:
-      "Notification 1 Jul 2026; call letter and handouts 20 Aug 2026; vacancy corrigendum dated 27 Aug 2026; www.ibps.in unreachable when re-checked on 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 21:52 IST",
+      "Notification 1 Jul 2026; call letter and handouts 20 Aug 2026; vacancy corrigendum dated 27 Aug 2026; SPL-XVI page re-read 3 Oct 2026 with no preliminary result listed",
+    lastVerified: "3 Oct 2026, 16:37 IST",
     changeLog: [
       {
         date: "2026-09-09",
@@ -340,16 +353,16 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Applications closed; preliminary examination 10-11 Oct 2026",
+      label: "Call letters out; preliminary examination 10-11 Oct 2026",
       tone: "blue",
-      nextAction: "Download the preliminary call letter from the IBPS site when it opens; the preliminary examination is on 10-11 Oct 2026",
-      detail: "IBPS published the detailed CRP CSA-XVI notification on 1 Aug 2026. Online registration and fee payment ran to 21 Aug 2026, followed by a two-day edit window.",
+      nextAction: "Download the preliminary call letter from the IBPS CRP CSA-XVI page; the preliminary examination is on 10-11 Oct 2026",
+      detail: "IBPS published the CRP CSA-XVI notification on 1 Aug 2026 and registration closed on 21 Aug 2026. A corrigendum of 29 Sep 2026 updated the indicative vacancies, leaving all other terms unchanged, and IBPS released the preliminary call letters and information handouts on 1 Oct 2026.",
     },
     summary:
       "Common recruitment for Customer Service Associate (clerical cadre) positions in eleven participating public-sector banks, against the 2027-28 indent.",
     vacancyLabel: "Indicative State/UT-wise vacancies published in Annexure I",
     vacancyNote:
-      "The notification publishes bank-wise and State/UT-wise indicative vacancies for the 2027-28 indent in Annexure I and prints no all-India total, so none is asserted here. Union Bank of India's figures are shown as 'NR' in that annexure, and provisional allotment is made against the vacancies actually reported by the participating banks.",
+      "The notification publishes bank-wise and State/UT-wise indicative vacancies for the 2027-28 indent in Annexure I, last updated as on 29 Sep 2026, and prints no all-India total, so none is asserted here. Union Bank of India's figures are shown as 'NR' in that annexure, and provisional allotment is made against the vacancies actually reported by the participating banks.",
     age: "20–28 years as on 1 Aug 2026 — born not earlier than 2 Aug 1998 and not later than 1 Aug 2006, both dates inclusive.",
     qualification:
       "A degree (graduation) in any discipline from a University recognised by the Government of India, already held on the day of registration and with the result declared on or before 21 Aug 2026. Operating and working knowledge of computer systems is mandatory, and the candidate must be proficient in the specified local language of the State/UT applied for.",
@@ -370,6 +383,14 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Registration and online fee payment close together; an edit window opens for two days afterwards.",
       },
+      {
+        label: "Vacancy corrigendum",
+        date: "2026-09-29",
+        displayDate: "29 Sep 2026",
+        state: "completed",
+        note: "Indicative vacancies updated in Annexure I as on 29 Sep 2026; all other terms of the 1 Aug 2026 notification unchanged.",
+      },
+      { label: "Preliminary exam call letter released", date: "2026-10-01", displayDate: "1 Oct 2026", state: "completed" },
       {
         label: "Preliminary examination",
         date: "2026-10-10",
@@ -413,18 +434,25 @@ export const exams: Exam[] = [
     ],
     documents: ibpsCalendarDocuments,
     officialLinks: [
+      { label: "Corrigendum dated 29.09.2026 (vacancy update)", url: "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-CSA_XVI_29.09.2026.pdf", type: "notice" },
+      { label: "Updated vacancies as on 29.09.2026 (Annexure I)", url: "https://www.ibps.in/wp-content/uploads/Annexure_Corrigendum_29.09.2026.pdf", type: "notice" },
       { label: "CRP CSA-XVI detailed notification (PDF)", url: "https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf", type: "notice" },
-      { label: "CRP CSA-XVI application page", url: "https://www.ibps.in/index.php/clerical-cadre-xvi/", type: "apply" },
+      { label: "CRP CSA-XVI page (call letters)", url: "https://www.ibps.in/index.php/clerical-cadre-xvi/", type: "notice" },
       { label: "CRP CSA-XVI window notification", url: "https://www.ibps.in/wp-content/uploads/Window-Advt_CRP_CSA_XVI_for_Website.pdf", type: "notice" },
       { label: "IBPS 2026–27 calendar", url: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf", type: "calendar" },
       { label: "IBPS recruitment index", url: "https://www.ibps.in/index.php/recruitment/", type: "website" },
     ],
-    sourceTitle: "IBPS CRP CSA-XVI detailed notification and the 2026–27 tentative calendar",
-    sourceUrl: "https://www.ibps.in/wp-content/uploads/Notification_CRP_CSA_XVI-Final.pdf",
+    sourceTitle: "IBPS CRP CSA-XVI notification, vacancy corrigendum of 29 Sep 2026 and the 2026–27 calendar",
+    sourceUrl: "https://www.ibps.in/wp-content/uploads/Corrigendum-CRP-CSA_XVI_29.09.2026.pdf",
     sourcePublished:
-      "Detailed notification published 1 Aug 2026; calendar dated 16 Jan 2026; CRP CSA-XVI page re-checked 29 Aug 2026 with no corrigendum or window extension posted",
-    lastVerified: "29 Aug 2026, 15:16 IST",
+      "Detailed notification published 1 Aug 2026; calendar dated 16 Jan 2026; vacancy corrigendum 29 Sep 2026; preliminary call letters 1 Oct 2026; CRP CSA-XVI page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 16:20 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "IBPS issued a corrigendum on 29 Sep 2026 updating the indicative vacancies in Annexure I, with all other terms unchanged, and released the preliminary examination call letters on 1 Oct 2026. The preliminary examination stays on 10-11 Oct 2026.",
+      },
       { date: "2026-08-01", displayDate: "1 Aug 2026", text: "IBPS released the detailed CRP CSA-XVI notification and opened online registration." },
       { date: "2026-07-31", displayDate: "31 Jul 2026", text: "IBPS issued the window notification for CRP CSA-XVI." },
     ],
@@ -441,7 +469,7 @@ export const exams: Exam[] = [
       "bank clerical cadre exam",
     ],
   }),
-  listedExam({
+  exam({
     slug: "ibps-rrb-officers-xv-2026",
     title: "IBPS Regional Rural Banks Officers Scale I, II & III XV",
     shortTitle: "IBPS RRB Officers XV",
@@ -451,62 +479,106 @@ export const exams: Exam[] = [
     jurisdiction: "Participating Regional Rural Banks",
     cycle: "2026–27",
     year: 2026,
+    verification: "verified",
     sector: "Regional rural banking",
     examTypes: ["Banking & Finance"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "Exam dates planned",
+      label: "Applications closed; Scale I prelims 21–22 Nov 2026",
       tone: "blue",
-      nextAction: "Officer Scale I prelims 21–22 Nov 2026",
+      nextAction: "Download the preliminary call letter from the IBPS site when it opens; Officer Scale I prelims are on 21–22 Nov 2026",
       detail:
-        "Scale I has preliminary and main exams; Scale II/III use the single-examination date in the official calendar. The CRP RRBs-XV notification itself had not been published when this record was reviewed.",
+        "IBPS published the CRP RRBs-XV notification on 1 Sep 2026. Online registration, extended by the corrigendum of 21 Sep 2026, closed on 27 Sep 2026, and the vacancy annexure was last updated on 25 Sep 2026. The notification schedules the preliminary examination for November/December 2026, the main or single examination for December 2026 to February 2027 and interviews for January/February 2027; the IBPS calendar gives 21–22 Nov 2026 for Scale I prelims and 20 Dec 2026 for the Scale I main and Scale II/III single exam.",
     },
     summary: "Common recruitment for officer posts across participating Regional Rural Banks.",
-    age: "Officer Scale I was above 18 and below 30 years, Scale II above 21 and below 32 years and Scale III above 21 and below 40 years, all as on 1 Sep 2025, in the previous cycle (CRP RRBs-XIV); the XV notification will fix its own cut-off date. Relaxation there was 5 years for SC/ST, 3 for OBC-NCL, 10 for PwBD and 5 for eligible ex-servicemen commissioned officers.",
+    vacancyLabel: "Indicative bank-wise vacancies published in Annexure I",
+    vacancyNote:
+      "Annexure I, last updated on 25 Sep 2026, lists indicative vacancies bank-wise for each officer post and prints no all-India total, so none is asserted here. Provisional allotment follows the vacancies the RRBs actually report.",
+    age: "As on 1 Sep 2026: Officer Scale I above 18 and below 30 years (born 2 Sep 1996 to 1 Sep 2008), Scale II above 21 and below 32 (born 2 Sep 1994 to 1 Sep 2005) and Scale III above 21 and below 40 (born 2 Sep 1986 to 1 Sep 2005). Relaxation is 5 years for SC/ST, 3 for OBC-NCL, 10 for PwBD and 5 for eligible ex-servicemen commissioned officers.",
     qualification:
-      "In the previous cycle (CRP RRBs-XIV), Officer Scale I needed a Bachelor's degree in any discipline with preference for agriculture, horticulture, forestry, animal husbandry, veterinary science, agricultural engineering, pisciculture, agricultural marketing and cooperation, IT, management, law, economics or accountancy, plus proficiency in the local language prescribed by the participating RRB. Officer Scale II (General Banking) needed a Bachelor's degree with at least 50% in aggregate and two years as an officer in a bank or financial institution; the Scale II specialist posts (IT, Chartered Accountant, Law, Treasury, Marketing, Agriculture) each carried their own degree and experience conditions; Officer Scale III needed a Bachelor's degree with at least 50% and five years as an officer.",
-    fee: "₹175 inclusive of GST for SC/ST/PwBD candidates and ₹850 inclusive of GST for all others in the previous cycle (CRP RRBs-XIV); the current cycle's fee is not published yet.",
+      "As on 21 Sep 2026, the notification's eligibility date: Officer Scale I needs a Bachelor's degree in any discipline, with preference for agriculture, horticulture, forestry, animal husbandry, veterinary science, agricultural engineering, pisciculture, agricultural marketing and cooperation, IT, management, law, economics or accountancy, plus proficiency in the local language prescribed by the participating RRB. Officer Scale II (General Banking) needs a Bachelor's degree with at least 50% in aggregate and two years as an officer in a bank or financial institution; the Scale II specialist posts (IT, Chartered Accountant, Law, Treasury, Marketing, Agriculture) carry their own degree and experience conditions; Officer Scale III needs a Bachelor's degree with at least 50% and five years as an officer.",
+    fee: "₹175 inclusive of GST for SC/ST/PwBD candidates and ₹850 inclusive of GST for all others (CRP RRBs-XV); bank transaction charges are borne by the candidate.",
+    pay: "Not stated in the CRP RRBs-XV notification.",
     timeline: [
-      { label: "Officer Scale I prelims", date: "2026-11-21", displayDate: "21–22 Nov 2026", state: "scheduled" },
-      { label: "Officer Scale I main / Scale II & III single exam", date: "2026-12-20", displayDate: "20 Dec 2026", state: "scheduled" },
+      {
+        label: "Notification and online registration open",
+        date: "2026-09-01",
+        displayDate: "1 Sep 2026",
+        state: "completed",
+        note: "A window notification was issued on 31 Aug 2026.",
+      },
+      {
+        label: "Applications close (original last date)",
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026",
+        state: "completed",
+        note: "Superseded by the corrigendum of 21 Sep 2026, which extended registration.",
+      },
+      {
+        label: "Applications close (extended last date)",
+        date: "2026-09-27",
+        displayDate: "27 Sep 2026",
+        state: "completed",
+        note: "Closed as extended; no further extension on the CRP RRBs-XV page when re-read on 3 Oct 2026.",
+      },
+      {
+        label: "Officer Scale I prelims",
+        date: "2026-11-21",
+        displayDate: "21–22 Nov 2026",
+        state: "scheduled",
+        note: "Dates from the IBPS 2026–27 calendar; the notification's tentative schedule says November/December 2026.",
+      },
+      {
+        label: "Officer Scale I main / Scale II & III single exam",
+        date: "2026-12-20",
+        displayDate: "20 Dec 2026",
+        state: "scheduled",
+        note: "Date from the IBPS 2026–27 calendar; the notification's tentative schedule says December 2026 to February 2027.",
+      },
+      { label: "Interviews", sortMonth: "2027-02", displayDate: "January/February 2027", state: "tentative", note: "Tentative window per the notification." },
     ],
     eligibility: [
-      "Confirm education, age, nationality, domicile and category rules in the official current-cycle notice.",
       "Registration is a single online process covering both the Preliminary and Main examination, per the IBPS 2026–27 calendar.",
-      "Proficiency in the local language prescribed by the participating RRB is an essential qualification for Officer Scale I; a candidate who studied that language at standard VIII or above is treated as proficient, and anyone else gets six months from joining to acquire it (CRP RRBs-XIV).",
-      "Officer Scale II and III are experienced-entry posts — two years as a bank or financial-institution officer for Scale II General Banking and five years for Scale III in the previous cycle.",
-      "The previous cycle also asked candidates to maintain a healthy credit history at the time of joining, to a minimum score set by each participating RRB; it was not a pre-condition to apply.",
+      "Proficiency in the local language prescribed by the participating RRB is an essential qualification for Officer Scale I; a candidate who studied that language at standard VIII or above is treated as proficient, and anyone else gets six months from joining to acquire it.",
+      "Officer Scale II and III are experienced-entry posts — two years as a bank or financial-institution officer for Scale II General Banking and five years for Scale III.",
     ],
     selectionStages: [
       "Officer Scale I: Preliminary examination",
       "Officer Scale I: Main examination",
       "Officer Scale II & III: Single examination",
-      "Common interview coordinated by the Nodal RRB with NABARD and IBPS — 100 marks, minimum 40% (35% for SC/ST/OBC/PwBD), weighted 80:20 with the online examination in the previous cycle (CRP RRBs-XIV)",
+      "Common interview coordinated by the Nodal RRB with NABARD and IBPS — 100 marks, minimum 40% (35% for SC/ST/OBC/PwBD), weighted 80:20 with the online examination",
       "Provisional allotment",
     ],
     syllabus: [
-      "The previous cycle's Officer Scale I preliminary paper carried 80 questions and 80 marks in 45 minutes — Reasoning 40 marks in 25 minutes and Quantitative Aptitude 40 marks in 20 minutes (CRP RRBs-XIV).",
-      "The Scale I main paper carried 200 questions and 200 marks in 120 minutes — Reasoning 50, Computer Knowledge 20, General Awareness 40, English or Hindi Language 40 and Quantitative Aptitude & Data Interpretation 50.",
-      "The Scale II General Banking and Scale III single papers followed the same 200-mark structure with Financial Awareness in place of General Awareness; the Scale II specialist paper carried 240 questions for 200 marks in 150 minutes and added a 40-mark Professional Knowledge test.",
-      "One fourth of the marks assigned to a question was deducted for each wrong objective answer in every paper.",
-      "Use only the official current-cycle syllabus when it is published.",
+      "The Officer Scale I preliminary paper carries 80 questions and 80 marks in 45 minutes — Reasoning 40 marks in 25 minutes and Quantitative Aptitude 40 marks in 20 minutes.",
+      "The Scale I main paper carries 200 questions and 200 marks in 120 minutes — Reasoning 50, Computer Knowledge 20, General Awareness 40, English or Hindi Language 40 and Quantitative Aptitude 50.",
+      "The Scale II General Banking and Scale III single papers follow the same 200-mark structure with Financial Awareness in place of General Awareness; the Scale II specialist paper carries 240 questions for 200 marks in 150 minutes and adds a 40-mark Professional Knowledge test.",
+      "One fourth of the marks assigned to a question is deducted for each wrong objective answer in every paper.",
     ],
     documents: ibpsCalendarDocuments,
     officialLinks: [
-      { label: "IBPS 2026–27 calendar", url: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf", type: "calendar" },
+      { label: "CRP RRBs-XV notification (PDF)", url: "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf", type: "notice" },
       {
-        label: "Previous cycle notification (CRP RRBs-XIV)",
-        url: "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD_1.9.25.pdf",
+        label: "Corrigendum extending registration to 27.09.2026",
+        url: "https://www.ibps.in/wp-content/uploads/Approved_Corrigendum-for-Extension_CRP-RRBs-XV-002.pdf",
         type: "notice",
       },
-      { label: "CRP RRBs cycle index", url: "https://www.ibps.in/index.php/regional-rural-bank/", type: "website" },
-      { label: "IBPS recruitment index", url: "https://www.ibps.in/index.php/recruitment/", type: "website" },
+      { label: "Updated vacancies as on 25.09.2026 (Annexure I)", url: "https://www.ibps.in/wp-content/uploads/Annexure-I_updated_25.09.2026.pdf", type: "notice" },
+      { label: "CRP RRBs-XV page", url: "https://www.ibps.in/index.php/rural-bank-xv/", type: "website" },
+      { label: "IBPS 2026–27 calendar", url: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf", type: "calendar" },
     ],
-    sourceTitle: "IBPS Tentative Calendar of Online CRP for PSBs & RRBs 2026–27 and the CRP RRBs-XIV notification",
-    sourceUrl: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf",
+    sourceTitle: "IBPS CRP RRBs-XV notification, corrigenda and the 2026–27 calendar",
+    sourceUrl: "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf",
     sourcePublished:
-      "Calendar dated 16 Jan 2026; previous-cycle notification dated 1 Sep 2025; CRP RRBs cycle index re-checked 29 Aug 2026, which still lists CRP RRBs-XIV as the latest published cycle",
-    lastVerified: "29 Aug 2026, 15:18 IST",
+      "Notification dated 1 Sep 2026; registration extended to 27 Sep 2026 by the corrigendum of 21 Sep 2026; vacancies updated 25 Sep 2026; CRP RRBs-XV page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 16:16 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Now a verified record: IBPS published the CRP RRBs-XV notification on 1 Sep 2026, and registration, extended by corrigendum, closed on 27 Sep 2026. Age, qualification and fee now come from the XV notification; the exam dates are unchanged and an interview window of January/February 2027 is added.",
+      },
+    ],
     keywords: [
       "IBPS RRB PO",
       "regional rural bank officer",
@@ -519,7 +591,7 @@ export const exams: Exam[] = [
       "gramin bank po exam",
     ],
   }),
-  listedExam({
+  exam({
     slug: "ibps-rrb-office-assistants-xv-2026",
     title: "IBPS Regional Rural Banks Office Assistants XV",
     shortTitle: "IBPS RRB Office Assistants XV",
@@ -529,58 +601,102 @@ export const exams: Exam[] = [
     jurisdiction: "Participating Regional Rural Banks",
     cycle: "2026–27",
     year: 2026,
+    verification: "verified",
     sector: "Regional rural banking",
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Exam dates planned",
+      label: "Applications closed; prelims 6, 12 & 13 Dec 2026",
       tone: "blue",
-      nextAction: "Prelims 6, 12 & 13 Dec 2026",
+      nextAction: "Download the preliminary call letter from the IBPS site when it opens; the preliminary examination is on 6, 12 & 13 Dec 2026",
       detail:
-        "The official IBPS calendar lists the preliminary and main examination dates. The CRP RRBs-XV notification itself had not been published when this record was reviewed, so vacancies and the application window remain unannounced.",
+        "IBPS published the CRP RRBs-XV notification on 1 Sep 2026. Online registration, extended by the corrigendum of 21 Sep 2026, closed on 27 Sep 2026, and the vacancy annexure was last updated on 25 Sep 2026. The notification schedules the preliminary examination for November/December 2026 and the main examination for December 2026 to February 2027; the IBPS calendar gives 6, 12 and 13 Dec 2026 and 30 Jan 2027.",
     },
     summary: "Common recruitment for Office Assistant positions across participating Regional Rural Banks.",
-    age: "18–28 years as on 1 Sep 2025 in the previous cycle (CRP RRBs-XIV) — born between 2 Sep 1997 and 1 Sep 2007 — with 5 years' relaxation for SC/ST, 3 for OBC-NCL, 10 for PwBD and service plus 3 years (8 for disabled SC/ST ex-servicemen) up to 50 years for ESM/DESM. The current cycle's notice will fix its own cut-off date.",
+    vacancyLabel: "Indicative bank-wise vacancies published in Annexure I",
+    vacancyNote:
+      "Annexure I, last updated on 25 Sep 2026, lists indicative Office Assistant vacancies bank-wise and prints no all-India total, so none is asserted here. Provisional allotment follows the vacancies the RRBs actually report.",
+    age: "18–28 years as on 1 Sep 2026 — born between 2 Sep 1998 and 1 Sep 2008, both dates inclusive — with 5 years' relaxation for SC/ST, 3 for OBC-NCL, 10 for PwBD and service plus 3 years (8 for disabled SC/ST ex-servicemen) up to 50 years for ESM/DESM (CRP RRBs-XV).",
     qualification:
-      "A Bachelor's degree in any discipline from a recognised University or its equivalent, plus proficiency in the local language prescribed by the participating RRB, with working knowledge of computers desirable, in the previous cycle (CRP RRBs-XIV). The current cycle's notice will restate the requirement.",
-    fee: "₹175 inclusive of GST for SC/ST/PwBD/ESM/DESM candidates and ₹850 inclusive of GST for all others in the previous cycle (CRP RRBs-XIV); the current cycle's fee is not published yet.",
+      "A Bachelor's degree in any discipline from a recognised University or its equivalent as on 21 Sep 2026, the notification's eligibility date, plus proficiency in the local language prescribed by the participating RRB; working knowledge of computers is desirable.",
+    fee: "₹175 inclusive of GST for SC/ST/PwBD/ESM/DESM candidates and ₹850 inclusive of GST for all others (CRP RRBs-XV); bank transaction charges are borne by the candidate.",
+    pay: "Not stated in the CRP RRBs-XV notification.",
     timeline: [
-      { label: "Preliminary examination", date: "2026-12-06", displayDate: "6, 12 & 13 Dec 2026", state: "scheduled" },
-      { label: "Main examination", date: "2027-01-30", displayDate: "30 Jan 2027", state: "scheduled" },
+      {
+        label: "Notification and online registration open",
+        date: "2026-09-01",
+        displayDate: "1 Sep 2026",
+        state: "completed",
+        note: "A window notification was issued on 31 Aug 2026.",
+      },
+      {
+        label: "Applications close (original last date)",
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026",
+        state: "completed",
+        note: "Superseded by the corrigendum of 21 Sep 2026, which extended registration.",
+      },
+      {
+        label: "Applications close (extended last date)",
+        date: "2026-09-27",
+        displayDate: "27 Sep 2026",
+        state: "completed",
+        note: "Closed as extended; no further extension on the CRP RRBs-XV page when re-read on 3 Oct 2026.",
+      },
+      {
+        label: "Preliminary examination",
+        date: "2026-12-06",
+        displayDate: "6, 12 & 13 Dec 2026",
+        state: "scheduled",
+        note: "Dates from the IBPS 2026–27 calendar; the notification's tentative schedule says November/December 2026.",
+      },
+      {
+        label: "Main examination",
+        date: "2027-01-30",
+        displayDate: "30 Jan 2027",
+        state: "scheduled",
+        note: "Date from the IBPS 2026–27 calendar; the notification's tentative schedule says December 2026 to February 2027.",
+      },
+      { label: "Provisional allotment", sortMonth: "2027-03", displayDate: "February/March 2027", state: "tentative", note: "Tentative window per the notification." },
     ],
     eligibility: [
-      "Confirm education, age, nationality, domicile and category rules in the official current-cycle notice.",
       "Registration is a single online process covering both the Preliminary and Main examination, per the IBPS 2026–27 calendar.",
-      "Proficiency in the local language prescribed by the participating RRB is an essential qualification; a candidate who studied that language at standard VIII or above is treated as proficient, and anyone else gets six months from joining to acquire it (CRP RRBs-XIV).",
-      "The previous cycle also asked candidates to maintain a healthy credit history at the time of joining, to a minimum score set by each participating RRB; it was not a pre-condition to apply.",
+      "Proficiency in the local language prescribed by the participating RRB is an essential qualification; a candidate who studied that language at standard VIII or above is treated as proficient, and anyone else gets six months from joining to acquire it.",
     ],
     selectionStages: [
       "Preliminary examination",
-      "Main examination — only the main-examination marks counted for final merit in the previous cycle (CRP RRBs-XIV); there is no interview for this post",
+      "Main examination — there is no interview for this post",
       "Provisional allotment",
     ],
     syllabus: [
-      "The previous cycle's preliminary paper carried 80 questions and 80 marks in 45 minutes — Reasoning 40 marks in 25 minutes and Numerical Ability 40 marks in 20 minutes (CRP RRBs-XIV).",
-      "The main paper carried 200 questions and 200 marks in 120 minutes — Reasoning 50, Computer Knowledge 20, General Awareness 40, English or Hindi Language 40 (candidate's choice) and Numerical Ability 50.",
-      "One fourth of the marks assigned to a question was deducted for each wrong objective answer in both papers.",
-      "Use only the official current-cycle syllabus when it is published.",
+      "The preliminary paper carries 80 questions and 80 marks in 45 minutes — Reasoning 40 marks in 25 minutes and Numerical Ability 40 marks in 20 minutes; candidates must clear the cut-off in both tests.",
+      "The main paper carries 200 questions and 200 marks in 120 minutes — Reasoning 50, Computer Knowledge 20, General Awareness 40, English or Hindi Language 40 (candidate's choice) and Numerical Ability 50.",
+      "One fourth of the marks assigned to a question is deducted for each wrong objective answer in both papers.",
     ],
     documents: ibpsCalendarDocuments,
     officialLinks: [
-      { label: "IBPS 2026–27 calendar", url: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf", type: "calendar" },
+      { label: "CRP RRBs-XV notification (PDF)", url: "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf", type: "notice" },
       {
-        label: "Previous cycle notification (CRP RRBs-XIV)",
-        url: "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XIV_Final_AD_1.9.25.pdf",
+        label: "Corrigendum extending registration to 27.09.2026",
+        url: "https://www.ibps.in/wp-content/uploads/Approved_Corrigendum-for-Extension_CRP-RRBs-XV-002.pdf",
         type: "notice",
       },
-      { label: "CRP RRBs cycle index", url: "https://www.ibps.in/index.php/regional-rural-bank/", type: "website" },
-      { label: "IBPS recruitment index", url: "https://www.ibps.in/index.php/recruitment/", type: "website" },
+      { label: "Updated vacancies as on 25.09.2026 (Annexure I)", url: "https://www.ibps.in/wp-content/uploads/Annexure-I_updated_25.09.2026.pdf", type: "notice" },
+      { label: "CRP RRBs-XV page", url: "https://www.ibps.in/index.php/rural-bank-xv/", type: "website" },
+      { label: "IBPS 2026–27 calendar", url: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf", type: "calendar" },
     ],
-    sourceTitle: "IBPS Tentative Calendar of Online CRP for PSBs & RRBs 2026–27 and the CRP RRBs-XIV notification",
-    sourceUrl: "https://www.ibps.in/wp-content/uploads/IBPS_CALENDAR_2026-27_final.pdf",
+    sourceTitle: "IBPS CRP RRBs-XV notification, corrigenda and the 2026–27 calendar",
+    sourceUrl: "https://www.ibps.in/wp-content/uploads/CRP-RRBs-XV-notification.pdf",
     sourcePublished:
-      "Calendar dated 16 Jan 2026; previous-cycle notification dated 1 Sep 2025; CRP RRBs cycle index re-checked 29 Aug 2026, which still lists CRP RRBs-XIV as the latest published cycle",
-    lastVerified: "29 Aug 2026, 15:19 IST",
+      "Notification dated 1 Sep 2026; registration extended to 27 Sep 2026 by the corrigendum of 21 Sep 2026; vacancies updated 25 Sep 2026; CRP RRBs-XV page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 16:16 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Now a verified record: IBPS published the CRP RRBs-XV notification on 1 Sep 2026, and registration, extended by corrigendum, closed on 27 Sep 2026. Age, qualification and fee now come from the XV notification; the exam dates are unchanged and a provisional-allotment window of February/March 2027 is added.",
+      },
+    ],
     keywords: [
       "IBPS RRB clerk",
       "regional rural bank office assistant",
@@ -610,11 +726,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Main examination due 12 Sep 2026",
+      label: "Main examination held; result awaited",
       tone: "violet",
-      nextAction: "Download the Main Examination call letter from the SBI careers page — the main exam is due on 12 Sep 2026",
+      nextAction: "Watch the SBI careers page for the Main Examination result; Phase-III is tentatively in October/November 2026",
       detail:
-        "SBI has announced the Phase-I preliminary examination result and published the roll numbers of candidates shortlisted for the Main Examination, which the result document dates tentatively to 12 Sep 2026. SBI's acquaint-yourself booklet for the main examination under CRPD/PO/2026-27/09 also gives the online main exam as 12 Sep 2026. Shortlisted candidates are advised separately by SMS and e-mail. The SBI careers page could not be re-opened on 9 Sep 2026 — sbi.bank.in timed out — so any call-letter or postponement notice issued since 29 Aug 2026 is not reflected here.",
+        "SBI held the online Main Examination under CRPD/PO/2026-27/09 on 12 Sep 2026, the date given in the acquaint-yourself booklet of 2 Sep 2026 posted with the main-exam call letters; the SBI careers page carried no postponement and no Main Examination result when re-read on 3 Oct 2026. The advertisement's tentative schedule gives September/October 2026 for that result, October/November 2026 for Phase-III (psychometric test, group exercise and interview) and November/December 2026 for the final result.",
     },
     summary:
       "Recruitment of Probationary Officers in State Bank of India through a three-phase online examination, psychometric test and interview process.",
@@ -642,12 +758,19 @@ export const exams: Exam[] = [
       {
         label: "Main Examination",
         date: "2026-09-12",
-        displayDate: "12 Sep 2026 (tentative)",
-        state: "scheduled",
-        note: "Tentative date printed on the preliminary result document; SBI will advise shortlisted candidates separately.",
+        displayDate: "12 Sep 2026",
+        state: "completed",
+        note: "Held as notified on 12 Sep 2026, the date in the main-exam booklet of 2 Sep 2026; SBI published no postponement when re-read on 3 Oct 2026.",
       },
-      { label: "Psychometric Test, Group Exercise & Interview", sortMonth: "2026-10", displayDate: "September/October 2026", state: "scheduled" },
-      { label: "Final result", sortMonth: "2026-11", displayDate: "October/November 2026", state: "tentative", note: "Tentative month per the recruitment schedule." },
+      { label: "Main Examination result", displayDate: "Awaited", state: "current", note: "Tentatively September/October 2026 per the advertisement." },
+      {
+        label: "Psychometric Test, Group Exercise & Interview",
+        sortMonth: "2026-11",
+        displayDate: "October/November 2026",
+        state: "tentative",
+        note: "Tentative window per the advertisement's schedule of events.",
+      },
+      { label: "Final result", sortMonth: "2026-12", displayDate: "November/December 2026", state: "tentative", note: "Tentative window per the advertisement's schedule of events." },
     ],
     eligibility: [
       "Graduation in any discipline from a recognised university; final-year candidates may apply provisionally subject to producing proof of passing by 30 Sep 2026.",
@@ -673,15 +796,25 @@ export const exams: Exam[] = [
         url: "https://sbi.bank.in/webfiles/uploads/files_2627/08/SBIPO2026-Prelims-WTRESULT-15_columns.pdf",
         type: "result",
       },
+      {
+        label: "Main examination acquaint-yourself booklet (2 Sep 2026)",
+        url: "https://sbi.bank.in/documents/77530/59067274/02092026SBIPOMainsEnglish.pdf",
+        type: "notice",
+      },
       { label: "SBI current openings", url: "https://sbi.bank.in/web/careers/current-openings", type: "notice" },
       { label: "SBI careers home", url: "https://sbi.bank.in/web/careers", type: "website" },
     ],
-    sourceTitle: "SBI CRPD/PO/2026-27/09 detailed advertisement and preliminary examination result",
+    sourceTitle: "SBI CRPD/PO/2026-27/09 detailed advertisement, preliminary result and main-exam booklet",
     sourceUrl: "https://sbi.bank.in/csfile/18062026_1_Detailed_Adv.2026.pdf",
     sourcePublished:
-      "Detailed advertisement dated 18 Jun 2026; preliminary result and Main Examination shortlist published on the SBI careers page by 29 Aug 2026; sbi.bank.in unreachable when re-checked on 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 21:54 IST",
+      "Detailed advertisement dated 18 Jun 2026; preliminary result published by 29 Aug 2026; main-exam booklet of 2 Sep 2026; careers page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 14:05 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The Main Examination was held on 12 Sep 2026 as notified and its result is awaited. Phase-III (psychometric test, group exercise and interview) is corrected to October/November 2026 and the final result to November/December 2026, per the advertisement's tentative schedule; they were shown a month early.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -703,38 +836,64 @@ export const exams: Exam[] = [
     ],
     featured: true,
   }),
-  listedExam({
+  exam({
     slug: "sbi-junior-associate-2026-27",
-    title: "State Bank of India Junior Associate (Customer Support & Sales) - Next Cycle",
-    shortTitle: "SBI Junior Associate",
+    title: "State Bank of India Junior Associate (Customer Support & Sales) 2026-27",
+    shortTitle: "SBI Junior Associate 2026-27",
     aliases: ["SBI Clerk", "SBI Junior Associate 2026"],
     organisation: "State Bank of India",
     governmentLevel: "Central",
     jurisdiction: "All India",
-    cycle: "Next cycle",
+    cycle: "2026-27",
     year: 2026,
+    verification: "verified",
+    notificationNumber: "CRPD/CR/2026-27/17",
     sector: "Banking",
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      detail: "Advertisement CRPD/CR/2026-27/17 for Junior Associates (Customer Support & Sales) opened online registration on 11 Aug 2026 and closes on 31 Aug 2026 — still shown as open on the SBI careers page on 29 Aug 2026. The detailed advertisement says the preliminary examination will be conducted tentatively in September 2026 and the main examination tentatively in November 2026. The separate SC/ST/OBC backlog advertisement CRPD/CR/SPLDRIVE/2026-27/16 closed on 27 Aug 2026.",
-      label: "Applications open until 31 August 2026",
-      tone: "blue",
-      nextAction: "Apply on the SBI careers page before 31 Aug 2026; the preliminary examination is tentatively in September 2026",
+      detail: "Registration under advertisement CRPD/CR/2026-27/17 ran from 11 to 31 Aug 2026 with no extension. SBI then posted the preliminary examination call letters and acquaint-yourself booklet; the advertisement set that examination tentatively for September 2026, and the careers page carried no postponement and no result when re-read on 3 Oct 2026. The main examination is tentatively in November 2026. The separate SC/ST/OBC backlog drive CRPD/CR/SPLDRIVE/2026-27/16 set its preliminary examination tentatively for 16 Sep 2026.",
+      label: "Preliminary examination held; result awaited",
+      tone: "violet",
+      nextAction: "Watch the SBI careers page for the preliminary result; the main examination is tentatively in November 2026",
     },
     summary: "Common recruitment for Junior Associate (Customer Support & Sales) clerical posts in State Bank of India branches nationwide.",
+    vacancies: 7680,
+    vacancyLabel: "7,680 regular vacancies plus backlog posts",
     vacancyNote:
-      "Vacancies will be added only after an official notice publishes them. The previous cycle (Advt. No. CRPD/CR/2025-26/06) advertised 5,180 regular vacancies State/UT-wise, plus backlog posts.",
-    age: "20–28 years as on 1 Apr 2025 in the previous cycle (Advt. No. CRPD/CR/2025-26/06), with three years' relaxation for OBC, five for SC/ST and ten to fifteen for PwBD candidates; the next cycle's notice will fix its own cut-off date.",
+      "State/UT-wise regular vacancies under advertisement CRPD/CR/2026-27/17. It separately lists 287 SC/ST/OBC backlog vacancies, net of the special drive CRPD/CR/SPLDRIVE/2026-27/16, and backlog vacancies for PwBD and ex-servicemen. All figures are provisional and may vary with the Bank's requirement.",
+    vacancyBreakdown: [
+      { label: "Regular vacancies (all States/UTs)", ur: 3253, ews: 760, obc: 1716, sc: 1114, st: 837, total: 7680 },
+    ],
+    age: "20–28 years as on 1 Apr 2026 — born between 2 Apr 1998 and 1 Apr 2006, both days inclusive — with 3 years' relaxation for OBC, 5 for SC/ST, 10 to 15 for PwBD and service plus 3 years (8 for disabled SC/ST ex-servicemen) up to 50 for ex-servicemen; widows, divorced women and trained SBI apprentices have their own relaxations in the advertisement.",
     qualification:
-      "Graduation in any discipline from a recognised University, with final-year and final-semester candidates allowed to apply provisionally, in the previous cycle (Advt. No. CRPD/CR/2025-26/06). Proficiency in the specified local language of the State/UT applied for is a separate requirement tested before joining.",
-    fee: "₹750 for General, OBC and EWS candidates and nil for SC/ST/PwBD/ex-servicemen in the previous cycle (Advt. No. CRPD/CR/2025-26/06); the next cycle's fee is not published yet.",
-    pay: "Pay scale ₹24050-1340/3-28070-1650/3-33020-2000/4-41020-2340/7-57400-4400/1-61800-2680/1-64480 with a starting basic pay of ₹26,730 including two advance increments for graduates, and total starting emoluments of about ₹46,000 a month at a metro such as Mumbai, per the previous cycle's advertisement.",
+      "Graduation in any discipline from a recognised University, or an equivalent qualification recognised by the Central Government, as on 31 Dec 2026; final-year or final-semester candidates may apply provisionally and, if selected, must prove they passed by that date. Proficiency in the specified local language of the State/UT applied for is tested before joining.",
+    fee: "₹750 for General, OBC and EWS candidates and nil for SC/ST/PwBD/ex-servicemen/disabled ex-servicemen (Advt. No. CRPD/CR/2026-27/17); fee and intimation charges are non-refundable.",
+    pay: "Pay scale ₹24050-1340/3-28070-1650/3-33020-2000/4-41020-2340/7-57400-4400/1-61800-2680/1-64480 with a starting basic pay of ₹26,730 including two advance increments for graduates, and total starting emoluments of about ₹46,000 a month at a metro such as Mumbai, per the advertisement. Probation is at least six months.",
+    timeline: [
+      { label: "Online registration opens", date: "2026-08-11", displayDate: "11 Aug 2026", state: "completed" },
+      {
+        label: "Applications close",
+        date: "2026-08-31",
+        displayDate: "31 Aug 2026",
+        state: "completed",
+        note: "Registration and fee payment closed as advertised; no extension on the SBI careers page when re-read on 3 Oct 2026.",
+      },
+      {
+        label: "Preliminary examination",
+        sortMonth: "2026-09",
+        displayDate: "September 2026",
+        state: "completed",
+        note: "Call letters were issued; the careers page's notice, still in its page source though no longer shown, set it tentatively for 26 and 27 Sep 2026; no postponement when re-read on 3 Oct 2026.",
+      },
+      { label: "Preliminary result", displayDate: "Awaited", state: "current" },
+      { label: "Main examination", sortMonth: "2026-11", displayDate: "November 2026 (tentative)", state: "tentative", note: "Tentative month per the advertisement." },
+    ],
     eligibility: [
       "Candidates may apply for vacancies in one State/UT only and must be proficient in reading, writing, speaking and understanding the specified local language of that State/UT — tested after the main examination and before joining.",
-      "Candidates who produce a 10th or 12th standard mark sheet showing they studied the specified local language are exempt from the language test (Advt. No. CRPD/CR/2025-26/06).",
-      "Graduation in any discipline is required, with final-year candidates applying provisionally against proof of passing by the notified date.",
-      "Confirm education, age, nationality, domicile and category rules in the official current-cycle notice.",
+      "Candidates who produce a 10th or 12th standard mark sheet showing they studied the specified local language are exempt from the language test (Advt. No. CRPD/CR/2026-27/17).",
+      "Graduation in any discipline is required as on 31 Dec 2026, with final-year candidates applying provisionally against proof of passing by that date.",
+      "Serving SBI clerical staff, and former clerical staff who resigned from SBI, cannot apply; there is no inter-State transfer in the first five years of service.",
     ],
     selectionStages: [
       "Phase-I preliminary examination",
@@ -742,26 +901,36 @@ export const exams: Exam[] = [
       "Phase-III local language proficiency test — stages set by SBI's Junior Associate advertisement, with the merit list drawn State-wise and category-wise",
     ],
     syllabus: [
-      "The previous cycle's preliminary examination carried 100 marks in one hour — English Language 30, Numerical Ability 35 and Reasoning Ability 35, each separately timed.",
-      "The main examination carried 200 marks over 2 hours 40 minutes — General/Financial Awareness 50, General English 40, Quantitative Aptitude 50 and Reasoning Ability & Computer Aptitude 60.",
+      "Preliminary examination: 100 marks in one hour — English Language 30, Numerical Ability 35 and Reasoning Ability 35, each separately timed at 20 minutes.",
+      "Main examination: 190 questions for 200 marks over 2 hours 40 minutes — General/Financial Awareness 50, General English 40, Quantitative Aptitude 50 and Reasoning Ability & Computer Aptitude 60 marks.",
       "A quarter of the marks is deducted for each wrong objective answer, and preliminary marks are not added to the final merit list.",
-      "Use only the official current-cycle syllabus when it is published.",
+      "About ten times the vacancies in each category are shortlisted for the main examination, in descending order of preliminary aggregate marks.",
     ],
     officialLinks: [
-      { label: "SBI current openings", url: "https://sbi.bank.in/web/careers/current-openings", type: "notice" },
       {
-        label: "Previous cycle advertisement (CRPD/CR/2025-26/06)",
-        url: "https://sbi.bank.in/documents/77530/52947104/JA+2025+-Detailed+Advt.pdf/8f7ff18f-1972-21c8-9212-5a8cf85a7099",
+        label: "Detailed advertisement (CRPD/CR/2026-27/17)",
+        url: "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf",
         type: "notice",
       },
+      {
+        label: "Preliminary examination acquaint-yourself booklet",
+        url: "https://sbi.bank.in/webfiles/uploads/files_2627/09/SBI_JA-Customer_Support_Sales-IH_Pre-2026-27_Eng.pdf",
+        type: "notice",
+      },
+      { label: "SBI current openings", url: "https://sbi.bank.in/web/careers/current-openings", type: "notice" },
       { label: "SBI careers home", url: "https://sbi.bank.in/web/careers", type: "website" },
     ],
-    sourceTitle: "SBI current-openings recruitment index and the Junior Associate 2025-26 detailed advertisement",
-    sourceUrl: "https://sbi.bank.in/web/careers/current-openings",
+    sourceTitle: "SBI Junior Associate advertisement CRPD/CR/2026-27/17 and preliminary-exam booklet",
+    sourceUrl: "https://sbi.bank.in/webfiles/uploads/files_2627/08/JA_2026_Detailed_Advt_Eng.pdf",
     sourcePublished:
-      "Advertisement CRPD/CR/2026-27/17, online application window 11-31 Aug 2026; current-openings list re-checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:24 IST",
+      "Advertisement CRPD/CR/2026-27/17, registration 11-31 Aug 2026; careers-page notice (now only in the page source) of tentative exam dates 26-27 Sep 2026; call letters and booklet posted in Sep 2026; re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:37 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Now a verified record built from advertisement CRPD/CR/2026-27/17: 7,680 regular vacancies plus backlog posts, with age, fee and pay taken from it. Applications closed on 31 Aug 2026, SBI issued preliminary call letters for September 2026 and the preliminary result is awaited; the main examination is tentatively in November 2026.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -800,15 +969,15 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      detail: "A new advertisement, CRPD/SCO/2026-27/15, opened for online registration on 29 August 2026 and closes on 19 September 2026. It invites applications for Trade Finance Officer - IBG posts on a regular basis — 14 in JMGS-I and 21 in MMGS-II, 35 in all — with a suggested posting at Hyderabad or Kolkata and selection by shortlisting and interview. The three August advertisements /11, /12 and /13 closed on 27 August 2026, and the online written examination for the earlier /02 (Law) and /03 (Bank Medical Officer) advertisements was held on 23 August 2026.",
-      label: "Advertisement /15 open until 19 September 2026",
+      detail: "When re-read on 3 Oct 2026 the SBI careers page listed contract advertisements CRPD/SCO/2026-27/24 and /25 open from 30 Sep to 21 Oct 2026, /20 (Dean, Faculty and Marketing Executive) and /22 open until 6 Oct 2026, and /23 (Wealth Management and Premier Banking) extended until 5 Oct 2026. Regular advertisement /15 for 35 Trade Finance Officer - IBG posts closed on 28 Sep 2026 after an extension, /21 (Group CISO) closed on 24 Sep 2026, and /12 has published its interview schedule.",
+      label: "Advertisements /24 and /25 open until 21 October 2026",
       tone: "blue",
-      nextAction: "Apply on the SBI careers page before 19 Sep 2026 for advertisement CRPD/SCO/2026-27/15 (Trade Finance Officer - IBG)",
+      nextAction: "Check the closing date of each advertisement on the SBI careers page before applying; /24 and /25 are open until 21 Oct 2026",
     },
     summary:
       "State Bank of India's continuing programme of Specialist Cadre Officer recruitment across law, medical, IT and other professional roles, each advertised separately.",
     vacancyNote:
-      "Vacancies will be added only after an official notice publishes them, and each Specialist Cadre Officer advertisement carries its own count. The current advertisement, No. CRPD/SCO/2026-27/15, advertises 14 Trade Finance Officer - IBG posts in JMGS-I and 21 in MMGS-II. Advertisement No. CRPD/SCO/2026-27/02 advertised 20 Assistant Manager (Law) and 27 Deputy Manager (Law) regular posts plus 2 backlog posts.",
+      "Vacancies will be added only after an official notice publishes them, and each Specialist Cadre Officer advertisement carries its own count. Advertisement No. CRPD/SCO/2026-27/15 advertised 14 Trade Finance Officer - IBG posts in JMGS-I and 21 in MMGS-II. Advertisement No. CRPD/SCO/2026-27/02 advertised 20 Assistant Manager (Law) and 27 Deputy Manager (Law) regular posts plus 2 backlog posts.",
     age: "Fixed separately by each advertisement. Advertisement No. CRPD/SCO/2026-27/15 sets 21–30 years for Trade Finance Officer - IBG in JMGS-I and 23–32 years for the MMGS-II post, both as on 31 Jul 2026, with upper-age relaxation for reserved categories as per Government of India guidelines. In Advertisement No. CRPD/SCO/2026-27/02 the band was 25–32 years for Assistant Manager (Law) and 25–35 years for Deputy Manager (Law), both as on 31 May 2026.",
     qualification:
       "Post-specific, and always paired with mandatory post-qualification experience. Advertisement No. CRPD/SCO/2026-27/15 requires a graduate degree in any discipline from a Government-recognised university or institution together with a Certification in Forex Operations from IIBF dated on or before 31 Jul 2026, plus one year (JMGS-I) or three years (MMGS-II) of officer-level experience in trade finance processing in a scheduled commercial bank. Advertisement No. CRPD/SCO/2026-27/02 required a law degree from a recognised Indian university (a five-year integrated course preferred) together with two years' experience for Assistant Manager (Law) and four years' for Deputy Manager (Law), counted after enrolment as an advocate with a Bar Council or as a Law Officer in the legal department of a scheduled commercial bank. Read the qualification and experience clauses of the specific post's advertisement.",
@@ -840,7 +1009,7 @@ export const exams: Exam[] = [
       {
         label: "Advertisement CRPD/SCO/2026-27/15 — Trade Finance Officer (IBG)",
         url: "https://sbi.bank.in/documents/77530/57941334/29082026_FINAL+ADVT+TFO+IBG_SCO+15.pdf",
-        type: "apply",
+        type: "notice",
       },
       {
         label: "Advertisement CRPD/SCO/2026-27/02 — Assistant & Deputy Manager (Law)",
@@ -857,9 +1026,14 @@ export const exams: Exam[] = [
     sourceTitle: "SBI current-openings recruitment index and the CRPD/SCO/2026-27/15, /02 and /03 advertisements",
     sourceUrl: "https://sbi.bank.in/web/careers/current-openings",
     sourcePublished:
-      "Openings list checked 29 Aug 2026; advertisement CRPD/SCO/2026-27/15 opened registration on 29 Aug 2026 and the /02 and /03 advertisements opened on 24 Jun 2026",
-    lastVerified: "29 Aug 2026, 15:27 IST",
+      "Openings list re-read 3 Oct 2026; advertisement /15 ran from 29 Aug to 28 Sep 2026 as extended, /24 and /25 opened on 30 Sep 2026, and /02 and /03 opened on 24 Jun 2026",
+    lastVerified: "3 Oct 2026, 21:37 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Advertisement CRPD/SCO/2026-27/15 was extended to 28 Sep 2026 and has closed, as has /21 (Group CISO) on 24 Sep 2026. SBI has since opened contract advertisements /20 and /22 (to 6 Oct 2026), /23 (extended to 5 Oct 2026) and /24 and /25 (30 Sep to 21 Oct 2026).",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -903,11 +1077,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Applications open until 17 September 2026",
-      tone: "green",
-      nextAction: "Apply on the Bank of Baroda careers page before 17 Sep 2026 (23:59), the extended last date",
+      label: "Online test held on 3 Oct 2026; result awaited",
+      tone: "violet",
+      nextAction: "Watch the Bank of Baroda careers page for the online test result and the next selection stages",
       detail:
-        "Bank of Baroda opened online registration for 2,482 Local Bank Officer posts in JMG/S-I on 18 Aug 2026. An addendum to advertisement BOB/HRM/REC/ADVT/2026/16, dated 7 Sep 2026, extended the last date for the online application and fee payment to 17 Sep 2026 (23:59 hours) and said the online test will be scheduled tentatively in the first week of October 2026; all other terms of the 18 Aug 2026 advertisement are unchanged. This is an experienced-entry post — a year as an officer in a scheduled commercial bank is mandatory — and a candidate may apply for one State only.",
+        "Registration for 2,482 Local Bank Officer posts in JMG/S-I under advertisement BOB/HRM/REC/ADVT/2026/16 closed on 17 Sep 2026, the last date as extended by the addendum of 7 Sep 2026. A notification of 23 Sep 2026 set the online test for 3 Oct 2026, and one of 27 Sep 2026 released the IBPS call letters; the recruitment page showed no postponement when re-read on the evening of 3 Oct 2026, and the result is awaited. Shortlisted candidates then face a psychometric or other test, a local language proficiency test and a group discussion and/or interview.",
     },
     summary:
       "Recruitment of Local Bank Officers in Junior Management Grade / Scale-I at Bank of Baroda, filled State-wise against a local-language requirement and a minimum of one year's officer experience in a scheduled commercial bank.",
@@ -936,16 +1110,17 @@ export const exams: Exam[] = [
         label: "Applications close (extended last date)",
         date: "2026-09-17",
         displayDate: "17 Sep 2026",
-        state: "current",
-        note: "Extended by the addendum of 7 Sep 2026; registration is complete only when the fee is paid online by 23:59 hours on this date.",
+        state: "completed",
+        note: "Extended by the addendum of 7 Sep 2026. Closed as extended; no further extension on the Bank of Baroda careers page when re-read on 3 Oct 2026.",
       },
       {
         label: "Online test",
-        sortMonth: "2026-10",
-        displayDate: "First week of October 2026 (tentative)",
-        state: "tentative",
-        note: "The addendum of 7 Sep 2026 says the online test will be scheduled tentatively in the first week of October 2026; call letters and an information handout follow on the Bank's website.",
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        state: "completed",
+        note: "Held as notified (notifications of 23 and 27 Sep 2026, conducted by IBPS); no postponement on the recruitment page when re-read at 21:38 IST that day.",
       },
+      { label: "Online test result", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
       "A candidate may apply for one State only, and candidature is considered solely against that State's vacancies; the merit list is drawn State-wise and category-wise.",
@@ -969,6 +1144,16 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       {
+        label: "Notification dated 27.09.2026 — online exam call letters",
+        url: "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-09/Notification-27-02.pdf",
+        type: "notice",
+      },
+      {
+        label: "Notification dated 23.09.2026 — online exam date",
+        url: "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-09/Notification-23-21.pdf",
+        type: "notice",
+      },
+      {
         label: "Detailed advertisement (BOB/HRM/REC/ADVT/2026/16)",
         url: "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-08/Advertisement-18-04.pdf",
         type: "notice",
@@ -976,16 +1161,26 @@ export const exams: Exam[] = [
       {
         label: "Local Bank Officer recruitment page",
         url: "https://bankofbaroda.bank.in/career/current-opportunities/recruitment-of-local-bank-officers-on-regular-basis-07-09",
-        type: "apply",
+        type: "notice",
       },
       { label: "Bank of Baroda current opportunities", url: "https://bankofbaroda.bank.in/career/current-opportunities", type: "website" },
     ],
-    sourceTitle: "Bank of Baroda Local Bank Officer advertisement BOB/HRM/REC/ADVT/2026/16",
-    sourceUrl: "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-08/Advertisement-18-04.pdf",
+    sourceTitle: "Bank of Baroda LBO advertisement BOB/HRM/REC/ADVT/2026/16 and online-exam notifications of 23 and 27 Sep 2026",
+    sourceUrl: "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-09/Notification-27-02.pdf",
     sourcePublished:
-      "Advertisement opened registration 18 Aug 2026; addendum dated 7 Sep 2026 extended the last date to 17 Sep 2026; all eligibility is reckoned as on the cut-off date of 1 Aug 2026",
-    lastVerified: "9 Sep 2026, 21:56 IST",
+      "Advertisement of 18 Aug 2026; addendum of 7 Sep 2026 extended the last date to 17 Sep 2026; online-exam notifications of 23 and 27 Sep 2026; recruitment page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:38 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The online test was held as notified on 3 Oct 2026; the recruitment page carried no postponement that evening. The result is awaited.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Registration closed on 17 Sep 2026, the extended last date, so the record no longer shows applications as open. A notification of 23 Sep 2026 set the online test for 3 Oct 2026 in place of the tentative first week of October, and the notification of 27 Sep 2026 confirmed that IBPS conducts it and released the call letters.",
+      },
       {
         date: "2026-09-07",
         displayDate: "7 Sep 2026",
@@ -1027,11 +1222,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate"],
     status: {
-      label: "Phase-I result declared; later stages under way",
+      label: "Phase-II result declared; interviews next",
       tone: "violet",
-      nextAction: "Shortlisted candidates should follow the Phase-II and interview schedule on the Opportunities@RBI portal",
+      nextAction: "Shortlisted candidates should watch their registered e-mail for the interview call letter and personality-assessment link",
       detail:
-        "The Reserve Bank of India Services Board held the Phase-I examination for Officers in Grade 'B' (DR) — General Cadre, Panel Year 2026 on 13 Jun 2026 and declared the result on 25 Jun 2026, publishing test-wise and aggregate cut-off marks and shortlisting candidates for Phase-II. Phase-II, interview and final-result announcements are published on the Opportunities@RBI portal and are not restated here until they can be read off a reachable official page.",
+        "For Officers in Grade 'B' (DR) — General Cadre, Panel Year 2026 (Advt. No. RBISB/DA/01/2026-27 of 29 Apr 2026), the Reserve Bank of India Services Board held Phase-I on 13 Jun 2026 and Phase-II on 25 Jul 2026. Its Phase-II result on rbi.org.in lists the roll numbers shortlisted for interview, asked for biodata by 2 Sep 2026 and says call letters go out by e-mail; it gave no interview dates when re-read on 3 Oct 2026, and the Opportunities@RBI portal showed a bot check.",
     },
     summary:
       "Direct recruitment of Reserve Bank of India Officers in Grade B across General, DEPR and DSIM streams through a multi-phase examination and interview.",
@@ -1054,11 +1249,15 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Test-wise and aggregate cut-off marks published category-wise by the Reserve Bank of India Services Board.",
       },
+      { label: "Phase-II examination (General cadre)", date: "2026-07-25", displayDate: "25 Jul 2026", state: "completed" },
       {
-        label: "Phase-II examination, interview and final result",
-        displayDate: "Awaited — announced on the Opportunities@RBI portal",
-        state: "current",
+        label: "Phase-II result and interview shortlist",
+        sortMonth: "2026-08",
+        displayDate: "August 2026",
+        state: "completed",
+        note: "Result page on rbi.org.in is undated; its attached files are stamped 22 Aug 2026, and biodata and documents were due by 2 Sep 2026.",
       },
+      { label: "Interview and final result", displayDate: "Awaited — call letters are sent by e-mail", state: "current" },
     ],
     age: "21–30 years under the Reserve Bank of India Services Board's standing eligibility for Officers in Grade 'B' (DR); the Panel Year 2026 advertisement fixes its own cut-off date and relaxations.",
     qualification:
@@ -1082,19 +1281,30 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       {
+        label: "Phase-II result and interview shortlist — Grade 'B' (DR) General, PY 2026",
+        url: "https://www.rbi.org.in/scripts/Bs_viewcontent.aspx?Id=5147",
+        type: "result",
+      },
+      {
         label: "Phase-I result and cut-off marks — Officers in Grade 'B' (DR) General, PY 2026",
         url: "https://www.rbi.org.in/scripts/Result_Officers_Grade_B_General_DR_PY_2026.aspx",
         type: "result",
       },
+      { label: "Advertisement RBISB/DA/01/2026-27 (29 Apr 2026)", url: "https://opportunities.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=4997", type: "notice" },
       { label: "RBI official website", url: "https://www.rbi.org.in/", type: "website" },
       { label: "Opportunities@RBI portal", url: "https://opportunities.rbi.org.in/scripts/index.aspx", type: "website" },
     ],
     sourceTitle:
-      "Reserve Bank of India Services Board Phase-I result for Officers in Grade 'B' (DR) — General Cadre, Panel Year 2026",
-    sourceUrl: "https://www.rbi.org.in/scripts/Result_Officers_Grade_B_General_DR_PY_2026.aspx",
-    sourcePublished: "Phase-I examination held 13 Jun 2026; result page dated 25 Jun 2026",
-    lastVerified: "29 Aug 2026, 15:35 IST",
+      "Reserve Bank of India Services Board Phase-II result for Officers in Grade 'B' (DR) — General Cadre, Panel Year 2026",
+    sourceUrl: "https://www.rbi.org.in/scripts/Bs_viewcontent.aspx?Id=5147",
+    sourcePublished: "Phase-I result dated 25 Jun 2026; Phase-II result and interview shortlist on rbi.org.in (files stamped 22 Aug 2026), biodata due 2 Sep 2026; re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:38 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Added the later stages: the General cadre Phase-II examination was held on 25 Jul 2026, and the RBI Services Board has published its result with the roll numbers shortlisted for interview. Interview call letters go to shortlisted candidates by e-mail; the final result is awaited.",
+      },
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
@@ -1116,51 +1326,102 @@ export const exams: Exam[] = [
       "central bank officer exam",
     ],
   }),
-  listedExam({
+  exam({
     slug: "rbi-assistant-2026",
-    title: "Reserve Bank of India Assistant - Next Panel",
-    shortTitle: "RBI Assistant",
-    aliases: ["RBI Assistant recruitment"],
+    title: "Reserve Bank of India Assistant - Panel Year 2025",
+    shortTitle: "RBI Assistant PY 2025",
+    aliases: ["RBI Assistant recruitment", "RBI Assistant 2026"],
     organisation: "Reserve Bank of India",
     governmentLevel: "Central",
-    jurisdiction: "All India",
-    cycle: "Next cycle",
+    jurisdiction: "All India, with office-wise vacancies",
+    cycle: "Panel Year 2025",
     year: 2026,
+    verification: "verified",
     sector: "Central banking",
     examTypes: ["Banking & Finance"],
     education: ["Graduate"],
     status: {
-      label: "Watch Opportunities@RBI for the next notification",
-      tone: "amber",
-      nextAction: "Check the Opportunities@RBI portal for the next Assistant panel notification",
+      label: "LPT shortlist published; language test next",
+      tone: "violet",
+      nextAction: "Shortlisted candidates should send the forms and certificates listed in RBI's shortlist notice to their Regional Office as it instructs, then take the Language Proficiency Test",
       detail:
-        "RBI recruits Assistants for its regional offices against an annual panel; this portal could not independently confirm the current panel's dates or vacancies from a dated official notice.",
+        "RBI advertised 650 Assistant posts for Panel Year 2025 on 16 Feb 2026 and extended applications to 10 Mar 2026. The preliminary examination was held on 11, 13 and 30 Apr 2026 (the last for Imphal and Kakching centres) and the main examination on 7 Jun 2026. In a notice whose files are stamped 24 Sep 2026, RBI published office-wise roll numbers provisionally shortlisted on the main examination, subject to the Language Proficiency Test, medical fitness and documents, which go to the Regional Office applied for.",
     },
     summary:
       "Recruitment of Assistants in the Reserve Bank of India's regional offices through a competitive examination and language proficiency test.",
-    age: "20–28 years in the Reserve Bank's last Assistant recruitment advertisement (2023 panel); the next panel's notice will fix its own cut-off date and relaxations.",
+    vacancies: 650,
+    vacancyLabel: "650 posts",
+    vacancyNote: "Office-wise vacancies in the advertisement of 16 Feb 2026, including one ST backlog post; the Bank may increase or decrease them as required.",
+    vacancyBreakdown: [
+      { label: "All recruiting offices", ur: 346, ews: 58, obc: 99, sc: 110, st: 37, total: 650 },
+    ],
+    age: "20–28 years as on 1 Feb 2026 — born between 2 Feb 1998 and 1 Feb 2006, both days inclusive — with relaxation of 5 years for SC/ST, 3 for OBC, 10/13/15 for PwBD, service plus 3 years (up to 50) for ex-servicemen, up to 35 (40 for SC/ST) for widows and divorced or judicially separated women, and up to 3 years for RBI work experience.",
     qualification:
-      "Under the Reserve Bank's Assistant recruitment advertisement (2023 panel), at least a Bachelor's degree in any discipline with a minimum of 50% marks in the aggregate (pass class for SC/ST/PwBD applicants) together with knowledge of word processing on a PC; the next notice will restate the requirement.",
+      "A bachelor's degree in any discipline with at least 50% marks in the aggregate (pass class for SC/ST/PwBD) and knowledge of word processing on a PC, as on 1 Feb 2026; ex-servicemen may instead qualify with matriculation and 15 years' defence service. Candidates must be proficient in the language of the state under the Recruiting Office applied for.",
+    fee: "₹450 plus 18% GST for General, OBC and EWS candidates and ₹50 plus 18% GST intimation charges for SC/ST/PwBD/ex-servicemen; non-refundable.",
+    pay: "Starting basic pay ₹29,000 a month in the scale 29000-1700(3)-34100-2040(4)-42260-2720(6)-58580-2950(2)-64480-3370(3)-74590-4050(1)-78640; initial gross emoluments about ₹58,514 a month without HRA, which is 15% of pay when not in Bank accommodation.",
+    timeline: [
+      { label: "Applications open", date: "2026-02-16", displayDate: "16 Feb 2026", state: "completed" },
+      {
+        label: "Applications close (extended last date)",
+        date: "2026-03-10",
+        displayDate: "10 Mar 2026",
+        state: "completed",
+        note: "Extended from 8 Mar 2026 by corrigendum after candidates faced technical difficulties.",
+      },
+      {
+        label: "Preliminary examination",
+        date: "2026-04-11",
+        displayDate: "11 & 13 Apr 2026; 30 Apr 2026 for Imphal and Kakching",
+        state: "completed",
+      },
+      { label: "Main examination", date: "2026-06-07", displayDate: "7 Jun 2026", state: "completed" },
+      {
+        label: "Provisional shortlist for the Language Proficiency Test",
+        sortMonth: "2026-09",
+        displayDate: "September 2026",
+        state: "completed",
+        note: "RBI's notice is undated; its roll-number files are stamped 24 Sep 2026. Selection is subject to the LPT, medical fitness and documents.",
+      },
+      { label: "Language Proficiency Test", displayDate: "Awaited — arranged by the Recruiting Office", state: "current" },
+    ],
     eligibility: [
-      "The Reserve Bank's Assistant advertisement requires a Bachelor's degree in any discipline with at least 50% marks in the aggregate — pass class for SC/ST/PwBD applicants — plus knowledge of word processing on a PC (2023 panel wording).",
-      "Age was 20–28 years in that advertisement, with relaxations for reserved and other eligible categories.",
-      "Assistants are recruited office-wise, and admission to the online tests and the Language Proficiency Test is always provisional pending eligibility verification.",
-      "Confirm education, age, nationality, domicile and category rules in the official current-cycle notice.",
+      "A bachelor's degree in any discipline with at least 50% marks in the aggregate — pass class for SC/ST/PwBD — plus knowledge of word processing on a PC, as on 1 Feb 2026.",
+      "Age 20–28 years as on 1 Feb 2026, with relaxations for reserved and other eligible categories.",
+      "Assistants are recruited office-wise, and a candidate must know the official or local language of the state under the Recruiting Office applied for.",
+      "Every shortlist is provisional until the LPT, medical fitness and verification of original documents are cleared.",
     ],
     selectionStages: [
       "Online preliminary examination",
       "Online main examination",
-      "Language Proficiency Test — stages set by the Reserve Bank's Assistant recruitment advertisement",
+      "Language Proficiency Test in the official or local language of the state concerned (qualifying)",
+      "Medical fitness and document verification before appointment",
+    ],
+    syllabus: [
+      "Preliminary examination: 100 objective questions for 100 marks in 60 minutes — English Language 30, Numerical Ability 35 and Reasoning Ability 35, each timed at 20 minutes.",
+      "Main examination: 200 questions for 200 marks in 135 minutes — Reasoning, English Language, Numerical Ability, General Awareness and Computer Knowledge, 40 marks each.",
+      "Candidates not proficient in the official or local language at the LPT are disqualified.",
     ],
     officialLinks: [
+      { label: "Notice: roll numbers provisionally shortlisted for the LPT", url: "https://www.rbi.org.in/scripts/Bs_viewcontent.aspx?Id=5179", type: "result" },
+      { label: "Advertisement — Assistant, Panel Year 2025 (16 Feb 2026)", url: "https://www.rbi.org.in/scripts/Bs_viewcontent.aspx?Id=4912", type: "notice" },
+      { label: "Corrigendum extending applications to 10 Mar 2026", url: "https://www.rbi.org.in/scripts/Bs_viewcontent.aspx?Id=4930", type: "notice" },
+      { label: "Preliminary examination call letter notice", url: "https://www.rbi.org.in/scripts/Bs_viewcontent.aspx?Id=4946", type: "notice" },
       { label: "RBI official website", url: "https://www.rbi.org.in/", type: "website" },
       { label: "Opportunities@RBI portal", url: "https://opportunities.rbi.org.in/scripts/index.aspx", type: "website" },
     ],
-    sourceTitle: "Reserve Bank of India official website and its Assistant recruitment advertisement",
-    sourceUrl: "https://www.rbi.org.in/",
+    sourceTitle: "Reserve Bank of India LPT-shortlist notice and advertisement for Assistant — Panel Year 2025",
+    sourceUrl: "https://www.rbi.org.in/scripts/Bs_viewcontent.aspx?Id=5179",
     sourcePublished:
-      "Website re-checked 29 Aug 2026, which carries no Assistant vacancy detail of its own; the Opportunities@RBI portal that publishes Assistant notices blocked automated access on that date. Eligibility and selection stages are taken from the Reserve Bank's 2023 Assistant advertisement.",
-    lastVerified: "29 Aug 2026, 15:37 IST",
+      "Advertisement of 16 Feb 2026; corrigendum extending applications to 10 Mar 2026; prelims notices of 10 and 20 Apr 2026; main-exam PDFs on RBI's document server; LPT-shortlist notice, files stamped 24 Sep 2026; re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:40 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Now a verified record of RBI's Assistant recruitment for Panel Year 2025, advertised on 16 Feb 2026 for 650 posts, replacing the note that no current-panel notice could be confirmed. The preliminary and main examinations were held in April and June 2026, and candidates shortlisted for the Language Proficiency Test have been listed.",
+      },
+    ],
     keywords: [
       "RBI assistant",
       "RBI office assistant",
@@ -1193,7 +1454,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the NABARD career notices page for the next Grade A notification",
       detail:
-        "The most recent cycle, Advertisement No. 05/Grade A/2025-26, has run through its select and wait lists; NABARD's career notices page listed no new Grade A (Assistant Manager) advertisement as of this review.",
+        "The most recent cycle, Advertisement No. 05/Grade A/2025-26, has run through its select and wait lists; NABARD's career notices page listed no new Grade A (Assistant Manager) advertisement when re-read on 3 Oct 2026.",
     },
     summary: "Recruitment of Assistant Managers (Grade A) at NABARD across RDBS, Legal, Rajbhasha and Protocol & Security disciplines.",
     vacancyNote:
@@ -1233,8 +1494,8 @@ export const exams: Exam[] = [
     sourceTitle: "NABARD career notices page and the Grade A 2025-26 advertisement",
     sourceUrl: "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
     sourcePublished:
-      "Career notices re-checked 29 Aug 2026, still showing no new Grade A advertisement; previous-cycle advertisement dated 7 Nov 2025",
-    lastVerified: "29 Aug 2026, 15:39 IST",
+      "Career notices re-checked 3 Oct 2026, still showing no new Grade A advertisement; previous-cycle advertisement dated 7 Nov 2025",
+    lastVerified: "3 Oct 2026, 16:27 IST",
     keywords: [
       "NABARD grade A",
       "assistant manager NABARD",
@@ -1266,7 +1527,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the NABARD career notices page for the next Grade B notification",
       detail:
-        "NABARD's career notices page listed no current or recent Grade B (Manager) direct recruitment as of this review; its last Grade B (RDBS) advertisement invited applications between 17 July and 7 August 2021.",
+        "NABARD's career notices page, re-read on 3 Oct 2026, listed no current or recent Grade B (Manager) direct recruitment; its last Grade B (RDBS) advertisement invited applications between 17 July and 7 August 2021.",
     },
     summary: "Recruitment of Managers (Grade B) at NABARD, typically filled through promotion with limited direct-recruitment cycles.",
     age: "25–32 years as on 1 Jul 2021 in NABARD's last Grade B (RDBS) direct-recruitment advertisement; the next cycle's notice will fix its own age band and cut-off date.",
@@ -1298,8 +1559,8 @@ export const exams: Exam[] = [
     sourceTitle: "NABARD career notices page and its last Grade B (RDBS) advertisement",
     sourceUrl: "https://www.nabard.org/careers-notices1.aspx?cid=693&id=26",
     sourcePublished:
-      "Career notices re-checked 29 Aug 2026, still showing no Grade B direct recruitment; last Grade B advertisement issued July 2021",
-    lastVerified: "29 Aug 2026, 15:40 IST",
+      "Career notices re-checked 3 Oct 2026, still showing no Grade B direct recruitment; last Grade B advertisement issued July 2021",
+    lastVerified: "3 Oct 2026, 16:27 IST",
     keywords: [
       "NABARD grade B",
       "manager NABARD",
@@ -1332,7 +1593,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch NABARD's career notices for the final select list and appointment letters",
       detail:
-        "Both online phases are over. NABARD published provisional select and wait lists for the two posts, held the Language Proficiency Test on 31 Jul 2026 and has since published the roll numbers of the sixteen candidates disqualified or absent in that test, whose names stand deleted from the select and wait lists. A final select list was not shown on the career-notices page as of this review.",
+        "Both online phases are over. NABARD published provisional select and wait lists for the two posts, held the Language Proficiency Test on 31 Jul 2026 and has since published the roll numbers of the sixteen candidates disqualified or absent in that test, whose names stand deleted from the select and wait lists. A final select list was not shown on the career-notices page when it was re-read on 3 Oct 2026.",
     },
     summary:
       "Recruitment of Development Assistants and Development Assistants (Hindi) in Group B at NABARD's head office and regional offices, through a two-phase online examination and a state Language Proficiency Test.",
@@ -1409,8 +1670,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "NABARD Development Assistant advertisement (Advt. No. 08/DA/2025-26) and career notices page",
     sourceUrl: "https://www.nabard.org/auth/writereaddata/CareerNotices/332096187Advertisement.pdf",
-    sourcePublished: "Advertisement opened registration 17 Jan 2026; career notices re-checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:42 IST",
+    sourcePublished: "Advertisement opened registration 17 Jan 2026; career notices re-checked 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 16:27 IST",
     changeLog: [
       {
         date: "2026-08",
@@ -1452,7 +1713,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the SEBI careers page for the next Grade A (Assistant Manager) notification",
       detail:
-        "The SEBI vacancies page, re-read on 9 Sep 2026, showed the Officer Grade A 2025 cycle at its interview stage — interview call letters posted 17 Apr 2026 — and separate Executive Director and Security Coordinator engagements. Its newest entry is dated 14 Aug 2026 and no new Grade A notification is listed.",
+        "The SEBI vacancies page, re-read on 3 Oct 2026, showed the Officer Grade A 2025 cycle at its interview stage — interview call letters posted 17 Apr 2026 — and separate Executive Director and Security Coordinator engagements. Its newest entry is still dated 14 Aug 2026 and no new Grade A notification is listed.",
     },
     summary: "Recruitment of Assistant Managers (Grade A) at SEBI across General, Legal, IT, Research, Engineering and Official Language streams.",
     vacancyNote:
@@ -1490,8 +1751,8 @@ export const exams: Exam[] = [
     sourceTitle: "SEBI careers page and the Officer Grade A 2025 detailed advertisement",
     sourceUrl: "https://www.sebi.gov.in/sebiweb/about/AboutAction.do?doVacancies=yes",
     sourcePublished:
-      "Vacancies page re-read 9 Sep 2026, whose newest entries remain a Security Coordinator engagement on contract dated 14 Aug 2026 and an Executive Director recruitment dated 26 Jun 2026 — no new Grade A notification; previous-cycle advertisement opened applications 30 Oct 2025",
-    lastVerified: "9 Sep 2026, 21:58 IST",
+      "Vacancies page re-read 3 Oct 2026, whose newest entries remain a Security Coordinator engagement on contract dated 14 Aug 2026 and an Executive Director recruitment dated 26 Jun 2026 — no new Grade A notification; previous-cycle advertisement opened applications 30 Oct 2025",
+    lastVerified: "3 Oct 2026, 16:27 IST",
     keywords: [
       "SEBI grade A",
       "assistant manager SEBI",
@@ -1522,11 +1783,11 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Selection process at post-medical stage",
-      tone: "violet",
-      nextAction: "Watch for the final allotment communication",
+      label: "Recruitment complete; cut-offs and marks out",
+      tone: "slate",
+      nextAction: "Watch the LIC careers page for the next AAO notification",
       detail:
-        "Prelims and mains are complete and post-medical-examination shortlists have been published for the Generalist and specialist streams; a final result was still not shown when the LIC careers page was re-read on 9 Sep 2026, whose newest entry for this cycle is dated 3 Aug 2026.",
+        "LIC has published, for every stream, the lists of candidates found eligible after the pre-recruitment medical examination, and then the category-wise cut-offs and marks, which its notice of 22 Apr 2026 said would come only once the whole process was finalised. Nothing newer was shown when the AAO page was re-read on 3 Oct 2026.",
     },
     summary:
       "Recruitment of Assistant Administrative Officers (Generalist, Specialist and Assistant Engineer streams) in the Life Insurance Corporation of India.",
@@ -1547,7 +1808,20 @@ export const exams: Exam[] = [
       { label: "Applications closed", date: "2025-09-08", displayDate: "8 Sep 2025", state: "completed" },
       { label: "Preliminary Examination", date: "2025-10-03", displayDate: "3 & 7 Oct 2025 (tentative)", state: "completed" },
       { label: "Main Examination", date: "2025-11-08", displayDate: "8 Nov 2025 (tentative)", state: "completed" },
-      { label: "Interview and medical examination", displayDate: "Provisional lists published; final result awaited", state: "current" },
+      {
+        label: "Medical examination shortlists",
+        date: "2026-04-09",
+        displayDate: "9 Apr 2026",
+        state: "completed",
+        note: "Stream-wise lists after interview, dated in LIC's file names; the Generalist post-medical eligibility list followed in May 2026.",
+      },
+      {
+        label: "Final cut-offs and marks",
+        sortMonth: "2026-06",
+        displayDate: "June 2026",
+        state: "completed",
+        note: "Undated cut-off files created 25 Jun 2026, released once the process was finalised.",
+      },
     ],
     eligibility: [
       "Bachelor's degree in any discipline from a University recognised by the Government of India (Generalist stream).",
@@ -1561,16 +1835,23 @@ export const exams: Exam[] = [
       "Marks scored in the Preliminary Examination are not added to the final merit list.",
     ],
     officialLinks: [
+      { label: "Cut-offs — AAO Generalist 2025", url: "https://www.licindia.in/documents/d/guest/cut-off-marks-gen", type: "result" },
+      { label: "Cut-offs — AAO Specialist and AE 2025", url: "https://www.licindia.in/documents/d/guest/cut-off-marks-specialist", type: "result" },
       { label: "AAO Generalist notification (PDF)", url: "https://www.licindia.in/documents/d/guest/aao-generalist-notification-2025-final", type: "notice" },
       { label: "AAO recruitment page", url: "https://www.licindia.in/recruitment-of-aao-generalists/-specialists/-assistant-engineers-2025", type: "notice" },
       { label: "LIC careers", url: "https://www.licindia.in/web/guest/careers", type: "website" },
     ],
-    sourceTitle: "LIC AAO Generalist 32nd batch notification",
-    sourceUrl: "https://www.licindia.in/documents/d/guest/aao-generalist-notification-2025-final",
+    sourceTitle: "LIC AAO 32nd batch cut-offs (Generalist) and recruitment page",
+    sourceUrl: "https://www.licindia.in/documents/d/guest/cut-off-marks-gen",
     sourcePublished:
-      "Notification dated 16 Aug 2025; the LIC careers page was re-read on 9 Sep 2026 and still shows post-medical shortlists as the latest stage with no final allotment, its AAO 2025 entry carrying the date 3 Aug 2026",
-    lastVerified: "9 Sep 2026, 21:59 IST",
+      "Cut-off file created 25 Jun 2026 (no printed date); AAO recruitment page, last updated 24 Aug 2026, re-read 3 Oct 2026; notification dated 16 Aug 2025",
+    lastVerified: "3 Oct 2026, 16:50 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Marked complete: LIC has published the post-medical eligibility lists for every stream and the category-wise cut-offs and marks, which its notice of 22 Apr 2026 said would follow only once the whole process was finalised.",
+      },
       { date: "2025-08-16", displayDate: "16 Aug 2025", text: "Notification released for AAO Generalist, Specialist and Assistant Engineer posts." },
     ],
     keywords: [
@@ -1604,7 +1885,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the LIC careers page for the next Apprentice Development Officer notification",
       detail:
-        "The LIC careers page, re-read on 9 Sep 2026, still lists the AAO 2025 cycle as its newest recruitment entry and shows no current Apprentice Development Officer (ADO) notification; the last ADO cycle was notified zone-wise in January 2023.",
+        "The LIC careers page, re-read on 3 Oct 2026, lists only the AAO 2025 cycle and a Chief Financial Officer engagement, with no Apprentice Development Officer (ADO) notification; the last ADO cycle was notified zone-wise in January 2023.",
     },
     summary: "Recruitment of Apprentice Development Officers (ADO) at LIC, a field-sales role recruited on an irregular cycle.",
     vacancyNote:
@@ -1642,8 +1923,8 @@ export const exams: Exam[] = [
     sourceTitle: "LIC careers page and the 2022-23 Apprentice Development Officer employment notices",
     sourceUrl: "https://www.licindia.in/web/guest/careers",
     sourcePublished:
-      "Careers page re-read 9 Sep 2026, whose newest recruitment entry is still the AAO 2025 exercise dated 3 Aug 2026 with no ADO notice; last ADO employment notices opened registration 21 Jan 2023",
-    lastVerified: "9 Sep 2026, 22:00 IST",
+      "Careers page re-read 3 Oct 2026, listing only the AAO 2025 exercise and a Chief Financial Officer engagement, with no ADO notice; last ADO employment notices opened registration 21 Jan 2023",
+    lastVerified: "3 Oct 2026, 16:35 IST",
     keywords: [
       "LIC ADO",
       "apprentice development officer",
@@ -1674,15 +1955,17 @@ export const exams: Exam[] = [
     examTypes: ["Banking & Finance", "Specialist & Professional"],
     education: ["Graduate", "Postgraduate", "Professional degree"],
     status: {
-      label: "Interview stage; final result awaited",
+      label: "Provisional selection and contingency list out",
       tone: "violet",
-      nextAction: "Watch for the interview outcome and final allotment",
-      detail: "Interview call letters were issued for the January 2026 batch; the recruitment page did not show a final result as of this review.",
+      nextAction: "Follow NIACL's intimations if selected; watch for any further contingency list",
+      detail:
+        "Interviews ran 21 Jan–17 Feb 2026. On 2 Apr 2026 NIACL withdrew the 75 Business Analyst vacancies and listed the candidates provisionally selected, on mains and interview, for the pre-employment medical examination; a contingency list against unfilled vacancies followed on 23 Jul 2026. Nothing newer was shown when the recruitment page was re-read on 3 Oct 2026.",
     },
     summary: "Recruitment of 550 Administrative Officers (Generalists & Specialists) in Scale-I cadre at The New India Assurance Company.",
     vacancies: 550,
-    vacancyLabel: "550 vacancies (provisional)",
-    vacancyNote: "Category-wise vacancies are provisional and may vary with the Company's actual requirement.",
+    vacancyLabel: "550 advertised; 75 Business Analyst posts withdrawn",
+    vacancyNote:
+      "Category-wise figures are as advertised on 7 Aug 2025. A notice of 2 Apr 2026 withdrew the 75 Business Analyst vacancies; NIACL has not published a revised category-wise table.",
     vacancyBreakdown: [
       { label: "All disciplines", ur: 222, ews: 55, obc: 148, sc: 83, st: 42, total: 550 },
     ],
@@ -1696,7 +1979,27 @@ export const exams: Exam[] = [
       { label: "Applications closed", date: "2025-08-30", displayDate: "30 Aug 2025", state: "completed" },
       { label: "Preliminary Examination", date: "2025-09-14", displayDate: "14 Sep 2025", state: "completed" },
       { label: "Main Examination", date: "2025-10-29", displayDate: "29 Oct 2025", state: "completed" },
-      { label: "Interview", displayDate: "Provisional interview call letters issued; final result awaited", state: "current" },
+      {
+        label: "Interviews",
+        date: "2026-01-21",
+        displayDate: "21 Jan–17 Feb 2026",
+        state: "completed",
+        note: "Per NIACL's interview schedule dated 9 Jan 2026.",
+      },
+      {
+        label: "Provisional selection for medical examination",
+        date: "2026-04-02",
+        displayDate: "2 Apr 2026",
+        state: "completed",
+        note: "Selected on mains and interview; medical examination 6–10 Apr 2026. The 75 Business Analyst vacancies were withdrawn the same day.",
+      },
+      {
+        label: "Contingency list for medical examination",
+        date: "2026-07-23",
+        displayDate: "23 Jul 2026",
+        state: "completed",
+        note: "Against unfilled vacancies; medical examination 27–30 Jul 2026.",
+      },
     ],
     eligibility: [
       "Graduation in any discipline from a recognised University (Generalist stream); post-specific degrees apply to specialist streams.",
@@ -1710,19 +2013,39 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       {
+        label: "Contingency list for medical examination (23 Jul 2026)",
+        url: "https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/PEMTSchedule-2025ContingencyList.pdf",
+        type: "result",
+      },
+      {
+        label: "Provisional selection for medical examination (2 Apr 2026)",
+        url: "https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/PEMT%20Schedule%20-%202025.pdf",
+        type: "result",
+      },
+      {
+        label: "Notice withdrawing Business Analyst vacancies (2 Apr 2026)",
+        url: "https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/Notice%20-%20AO%20DR%20RE%202025.pdf",
+        type: "notice",
+      },
+      {
         label: "Detailed advertisement (CORP.HRM/AO/2025)",
         url: "https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/RECRUITMENT%20OF%20_5_50%20ADMINISTRATIVE%20OFFICERS%20(GENERALISTS%20%26%20SPECIALISTS)%20(SCALE-I)%20202_5.pdf",
         type: "notice",
       },
       { label: "NIACL recruitment index", url: "https://www.newindia.co.in/recruitment/list", type: "website" },
     ],
-    sourceTitle: "New India Assurance AO 2025 detailed advertisement",
+    sourceTitle: "NIACL AO 2025 contingency list for medical examination and recruitment index",
     sourceUrl:
-      "https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/RECRUITMENT%20OF%20_5_50%20ADMINISTRATIVE%20OFFICERS%20(GENERALISTS%20%26%20SPECIALISTS)%20(SCALE-I)%20202_5.pdf",
+      "https://www.newindia.co.in/assets/docs/recruitment/RECRUITMENT%20OF%20ADMINISTRATIVE%20OFFICERS%202025/PEMTSchedule-2025ContingencyList.pdf",
     sourcePublished:
-      "Detailed advertisement dated 7 Aug 2025 (REF NO CORP.HRM/AO/2025); recruitment index re-checked 29 Aug 2026, still showing the interview stage with pre-interview declaration and travel-reimbursement forms and no final result",
-    lastVerified: "29 Aug 2026, 15:49 IST",
+      "Contingency list dated 23 Jul 2026 (REF NO CORP.HRM/AO/2026), after the selection list and Business Analyst withdrawal notice of 2 Apr 2026; advertisement dated 7 Aug 2025; recruitment index re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 16:52 IST",
     changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Updated past the interview stage: on 2 Apr 2026 NIACL withdrew the 75 Business Analyst vacancies and listed the candidates provisionally selected for the pre-employment medical examination, and on 23 Jul 2026 it issued a contingency list against unfilled vacancies.",
+      },
       { date: "2025-08-07", displayDate: "7 Aug 2025", text: "Detailed advertisement released for 550 Administrative Officer vacancies." },
     ],
     keywords: [
@@ -1755,7 +2078,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the NIACL recruitment index for the next Assistant notification",
       detail:
-        "The 2024 cycle (500 Assistants, REF NO CORP.HRM/ASST/2024) is at an advanced contingency-selection and pre-employment-medical stage; a new Assistant cycle had not been announced as of this review.",
+        "The 2024 cycle (500 Assistants, REF NO CORP.HRM/ASST/2024) has reached its fourth contingency list for the pre-employment medical examination; no new Assistant cycle was listed when the recruitment page was re-read on 3 Oct 2026.",
     },
     summary: "Recruitment of Assistants (Class III) at The New India Assurance Company, including a state/UT-wise vacancy and regional-language requirement.",
     vacancyNote:
@@ -1794,8 +2117,8 @@ export const exams: Exam[] = [
     sourceTitle: "NIACL recruitment index and the Assistant Recruitment Exercise 2024 detailed advertisement",
     sourceUrl: "https://www.newindia.co.in/recruitment/list",
     sourcePublished:
-      "Recruitment index re-checked 29 Aug 2026, still showing the 2024 exercise at its contingency and pre-employment-medical stage and no new Assistant cycle; previous-cycle advertisement dated 16 Dec 2024",
-    lastVerified: "29 Aug 2026, 15:50 IST",
+      "Recruitment index re-checked 3 Oct 2026, still showing the 2024 exercise at its contingency and pre-employment-medical stage (contingency list 4) and no new Assistant cycle; previous-cycle advertisement dated 16 Dec 2024",
+    lastVerified: "3 Oct 2026, 16:36 IST",
     keywords: [
       "NIACL assistant",
       "New India Assurance assistant",
@@ -1828,7 +2151,7 @@ export const exams: Exam[] = [
       label: "Phase-I examination held; Phase-II on 30 Oct 2026",
       tone: "violet",
       nextAction: "Watch the NICL recruitment page for the Phase-I result and the Phase-II call letter; the Phase-II examination is on 30 Oct 2026",
-      detail: "Online pre-recruitment training for SC/ST/OBC and PwBD candidates ran from 19 to 22 Aug 2026 under the notice dated 14 Aug 2026, and NICL released the Phase-I preliminary examination call letter on 20 Aug 2026. The Phase-I online examination was held on 27 Aug 2026 as advertised — the recruitment page carried no postponement notice — and Phase-II follows on 30 Oct 2026.",
+      detail: "Online pre-recruitment training for SC/ST/OBC and PwBD candidates ran from 19 to 22 Aug 2026, and NICL released the Phase-I call letter on 20 Aug 2026. The Phase-I online examination was held on 27 Aug 2026 as advertised, and Phase-II follows on 30 Oct 2026. When the recruitment page was re-read on 3 Oct 2026 it carried no Phase-I result, Phase-II call letter or postponement notice.",
     },
     summary: "Recruitment of 500 Assistants (Class III) at National Insurance Company Limited through a two-phase online examination and Regional Language Test.",
     vacancies: 500,
@@ -1875,14 +2198,19 @@ export const exams: Exam[] = [
         url: "https://nationalinsurance.nic.co.in/sites/default/files/2026-07/NICL%20ASSISTANT%20-%20Recuritment%20Advertisment%202026-27%20%28Final%29.pdf",
         type: "notice",
       },
+      {
+        label: "Notice: state-wise and category-wise count of applications (3 Sep 2026)",
+        url: "https://nationalinsurance.nic.co.in/sites/default/files/2026-09/State-wise%20%26%20Categorywise%20count%20of%20applications%20%28Recruitment%20of%20%20500%20Assistants%202026-27%29.pdf",
+        type: "notice",
+      },
       { label: "NICL recruitment index", url: "https://nationalinsurance.nic.co.in/recruitment", type: "website" },
     ],
     sourceTitle: "NICL Assistant 2026-27 detailed advertisement",
     sourceUrl:
       "https://nationalinsurance.nic.co.in/sites/default/files/2026-07/NICL%20ASSISTANT%20-%20Recuritment%20Advertisment%202026-27%20%28Final%29.pdf",
     sourcePublished:
-      "Detailed advertisement for 500 Assistants dated 17 Jul 2026; pre-recruitment training notice dated 14 Aug 2026; Phase-I call letter posted 20 Aug 2026; recruitment index re-checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:52 IST",
+      "Detailed advertisement for 500 Assistants dated 17 Jul 2026; pre-recruitment training notice dated 14 Aug 2026; Phase-I call letter posted 20 Aug 2026; application-count notice dated 3 Sep 2026; recruitment index re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:36 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1932,7 +2260,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the NICL recruitment index for further contingency lists and the final appointment communication",
       detail:
-        "The interview stage is complete and NICL is working through contingency lists: the third list of candidates provisionally selected for the pre-employment medical examination is dated 11 Aug 2026. No final result was shown on the recruitment index.",
+        "The interview stage is complete and NICL is working through contingency lists: the third list of candidates provisionally selected for the pre-employment medical examination is dated 11 Aug 2026. Nothing newer and no final result was shown when the recruitment index was re-read on 3 Oct 2026.",
     },
     summary: "Recruitment of 266 Administrative Officers (Generalists & Specialists) in Scale I cadre at National Insurance Company Limited.",
     vacancies: 266,
@@ -1985,8 +2313,8 @@ export const exams: Exam[] = [
     sourceTitle: "NICL AO 2024-25 detailed advertisement and recruitment index",
     sourceUrl:
       "https://nationalinsurance.nic.co.in/sites/default/files/2025-06/NICL%20AO%20Recruitment%20Advertisment%202024-25%20%28Final%29.pdf",
-    sourcePublished: "Detailed advertisement; Company recruitment index re-checked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:54 IST",
+    sourcePublished: "Detailed advertisement; Company recruitment index re-checked 3 Oct 2026, its newest AO item still the third contingency list of 11 Aug 2026",
+    lastVerified: "3 Oct 2026, 16:47 IST",
     changeLog: [
       {
         date: "2026-08-11",

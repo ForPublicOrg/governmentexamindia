@@ -44,12 +44,13 @@
     "level": "Central",
     "allowedHosts": [
       "asrb.org.in",
-      "www.asrb.org.in"
+      "www.asrb.org.in",
+      "asrb.gov.in"
     ],
     "watchUrls": [
       {
         "id": "asrb-1",
-        "url": "https://asrb.org.in/",
+        "url": "https://asrb.gov.in/",
         "cadenceHours": 24
       }
     ]
@@ -145,11 +146,6 @@
     "watchUrls": [
       {
         "id": "andhra-pradesh-grama-ward-sachivalayam-1",
-        "url": "https://gramawardsachivalayam.ap.gov.in/GSWS/Home/Main",
-        "cadenceHours": 24
-      },
-      {
-        "id": "andhra-pradesh-grama-ward-sachivalayam-2",
         "url": "https://sgsw.ap.gov.in/GSWS/Home/Main",
         "cadenceHours": 24
       }
@@ -496,7 +492,8 @@
       "BR"
     ],
     "allowedHosts": [
-      "bpsc.bihar.gov.in"
+      "bpsc.bihar.gov.in",
+      "bpsconline.bihar.gov.in"
     ],
     "watchUrls": [
       {
@@ -858,7 +855,7 @@
       },
       {
         "id": "karnataka-health-family-welfare-services-2",
-        "url": "https://hfwcom.karnataka.gov.in/page/Recruitment+(DRC)/Direct+Recruitment+Cell+(DRC)/en",
+        "url": "https://hfwcom.karnataka.gov.in/17/direct-recruitment-cell-%28drc%29/en",
         "cadenceHours": 24
       }
     ]
@@ -1618,12 +1615,13 @@
     ],
     "allowedHosts": [
       "bombayhighcourt.nic.in",
-      "www.bombayhighcourt.nic.in"
+      "www.bombayhighcourt.nic.in",
+      "bombayhighcourt.gov.in"
     ],
     "watchUrls": [
       {
         "id": "bombay-high-court-1",
-        "url": "https://bombayhighcourt.nic.in/recruitment.php",
+        "url": "https://bombayhighcourt.gov.in/bhc/front/search-notifications?search=&flag=T",
         "cadenceHours": 24
       }
     ]
@@ -2439,11 +2437,16 @@
     "watchUrls": [
       {
         "id": "kerala-pareeksha-bhavan-1",
-        "url": "https://ktet.kerala.gov.in/notification.php",
+        "url": "https://ktet.kerala.gov.in/",
         "cadenceHours": 24
       },
       {
         "id": "kerala-pareeksha-bhavan-2",
+        "url": "https://ktet.kerala.gov.in/notification.php",
+        "cadenceHours": 24
+      },
+      {
+        "id": "kerala-pareeksha-bhavan-3",
         "url": "https://ktet.kerala.gov.in/results.php",
         "cadenceHours": 24
       }
@@ -3842,12 +3845,18 @@
     ],
     "allowedHosts": [
       "www.apspdcl.in",
-      "apspdcl.in"
+      "apspdcl.in",
+      "apvidyutrecruitment.apcfss.in"
     ],
     "watchUrls": [
       {
         "id": "apspdcl-1",
         "url": "https://www.apspdcl.in/careers.php",
+        "cadenceHours": 24
+      },
+      {
+        "id": "apspdcl-2",
+        "url": "https://apvidyutrecruitment.apcfss.in/",
         "cadenceHours": 24
       }
     ]
@@ -4309,12 +4318,13 @@
     "name": "Territorial Army",
     "level": "Central",
     "allowedHosts": [
-      "territorialarmy.in"
+      "territorialarmy.in",
+      "indianarmy.nic.in"
     ],
     "watchUrls": [
       {
         "id": "territorial-army-1",
-        "url": "https://territorialarmy.in/",
+        "url": "https://indianarmy.nic.in/news/bulletins/",
         "cadenceHours": 24
       }
     ]
@@ -4425,11 +4435,17 @@
       "UP"
     ],
     "allowedHosts": [
-      "upbasiceduboard.gov.in"
+      "upbasiceduboard.gov.in",
+      "updeled.gov.in"
     ],
     "watchUrls": [
       {
         "id": "upbeb-1",
+        "url": "https://updeled.gov.in/",
+        "cadenceHours": 24
+      },
+      {
+        "id": "upbeb-2",
         "url": "https://upbasiceduboard.gov.in/",
         "cadenceHours": 24
       }
@@ -4454,6 +4470,24 @@
       {
         "id": "upcisb-2",
         "url": "https://upcisb.upsdc.gov.in/UPCIBS/ViewRecruitment",
+        "cadenceHours": 24
+      }
+    ]
+  },
+  {
+    "id": "upessc",
+    "name": "Uttar Pradesh Education Service Selection Commission",
+    "level": "State",
+    "regionCodes": [
+      "UP"
+    ],
+    "allowedHosts": [
+      "upessc.up.gov.in"
+    ],
+    "watchUrls": [
+      {
+        "id": "upessc-1",
+        "url": "https://upessc.up.gov.in/",
         "cadenceHours": 24
       }
     ]

@@ -132,7 +132,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Wait for the mains written result and the interview notice",
       detail:
-        "The mains sittings of 21–23 and 29–30 Aug 2026 have been held: UPSC uploaded every mains question paper to the official page on 1 Sep 2026, and the question-paper representation portal announced in the press note of 19 Aug 2026 ran from 31 Aug to 4 Sep 2026. The official page re-read on 9 Sep 2026 shows nothing newer — no written result, Detailed Application Form-II notice or interview schedule yet. Only candidates declared qualified in Civil Services Prelims 2026 appeared at this stage.",
+        "The mains sittings of 21–23 and 29–30 Aug 2026 have been held: UPSC uploaded every mains question paper to the official page on 1 Sep 2026, and the question-paper representation portal announced in the press note of 19 Aug 2026 ran from 31 Aug to 4 Sep 2026. The official page re-read on 3 Oct 2026 shows nothing newer — no written result, Detailed Application Form-II notice or interview schedule yet. Only candidates declared qualified in Civil Services Prelims 2026 appeared at this stage.",
     },
     summary:
       "The written mains stage of the Civil Services Examination for services including IAS, IPS and central Group A/B services.",
@@ -180,8 +180,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Civil Services (Main) Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Civil%20Services%20%28Main%29%20Examination%2C%202026",
-    sourcePublished: "Mains question papers uploaded 1 Sep 2026; press note dated 19 Aug 2026; page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Mains question papers uploaded 1 Sep 2026; press note dated 19 Aug 2026; page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -229,11 +229,11 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces"],
     education: ["Graduate", "Professional degree"],
     status: {
-      label: "e-Admit card released",
-      tone: "blue",
-      nextAction: "Download the e-admit card from upsconline.nic.in; exam on 13 Sep 2026",
+      label: "Written exam held; result awaited",
+      tone: "violet",
+      nextAction: "Wait for the written result; qualified candidates go on to the SSB",
       detail:
-        "UPSC's press note of 3 Sep 2026 confirms the examination on Sunday 13 Sep 2026 and says the e-admit cards of admitted candidates are uploaded on upsconline.nic.in; no paper admit card is issued. Carry the printout, the photo ID named on it and three recent passport-size photographs (one per session). Entry closes 30 minutes before each session — 08:30 AM for English, 12:00 PM for General Knowledge and 03:30 PM for Elementary Mathematics — and the OMR sheet must be filled with a black ball-point pen. Official page re-read on 9 Sep 2026.",
+        "The examination was held as notified on Sunday 13 Sep 2026: UPSC uploaded the English, General Knowledge and Elementary Mathematics question papers to the official page on 14 Sep 2026 and published no postponement. The page, re-read on 3 Oct 2026, carries no written result yet; UPSC's written-result listing has none either. Candidates declared qualified then face the Services Selection Board interview and the medical examination before the final merit list.",
     },
     summary: "Officer-entry examination for IMA, INA, Air Force Academy and Officers’ Training Academy courses.",
     vacancies: 451,
@@ -248,8 +248,14 @@ export const exams: Exam[] = [
       { label: "Applications closed", date: "2026-06-11", displayDate: "11 Jun 2026, 6 PM", state: "completed" },
       { label: "Examination time table", date: "2026-08-10", displayDate: "10 Aug 2026", state: "completed" },
       { label: "e-Admit card and press note", date: "2026-09-03", displayDate: "3 Sep 2026", state: "completed" },
-      { label: "Written exam", date: "2026-09-13", displayDate: "13 Sep 2026", state: "scheduled" },
-      { label: "Written result", displayDate: "To be announced", state: "tentative" },
+      {
+        label: "Written exam",
+        date: "2026-09-13",
+        displayDate: "13 Sep 2026",
+        state: "completed",
+        note: "Held as notified; UPSC uploaded the question papers on 14 Sep 2026 and published no postponement.",
+      },
+      { label: "Written result", displayDate: "To be announced", state: "current" },
     ],
     eligibility: [
       "Qualification, date-of-birth window and marital status depend on the academy selected.",
@@ -272,8 +278,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Combined Defence Services Examination (II), 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28II%29%2C%202026",
-    sourcePublished: "Press note and e-admit card of 3 Sep 2026; page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Question papers uploaded 14 Sep 2026; press note of 3 Sep 2026; page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-10",
@@ -284,6 +290,11 @@ export const exams: Exam[] = [
         date: "2026-09-03",
         displayDate: "3 Sep 2026",
         text: "UPSC's press note of 3 Sep 2026 confirms the CDS II 2026 examination on 13 Sep 2026 and the upload of e-admit cards on upsconline.nic.in.",
+      },
+      {
+        date: "2026-09-13",
+        displayDate: "13 Sep 2026",
+        text: "The CDS II 2026 written examination was held as notified on 13 Sep 2026; UPSC uploaded the question papers on 14 Sep 2026. The written result is awaited.",
       },
     ],
     keywords: [
@@ -317,11 +328,11 @@ export const exams: Exam[] = [
     examTypes: ["Armed Forces"],
     education: ["12th"],
     status: {
-      label: "e-Admit card released",
-      tone: "blue",
-      nextAction: "Download the e-admit card from upsconline.nic.in; exam on 13 Sep 2026",
+      label: "Written exam held; result awaited",
+      tone: "violet",
+      nextAction: "Wait for the written result; qualified candidates go on to the SSB",
       detail:
-        "UPSC's press note of 3 Sep 2026 confirms the examination on Sunday 13 Sep 2026 and says the e-admit cards of admitted candidates are uploaded on upsconline.nic.in; no paper admit card is issued. Carry the printout and the photo ID named on it to both sessions (plus two passport-size photographs if the photograph on the card is unclear). Entry closes 30 minutes before each session — 09:30 AM for the forenoon session and 01:30 PM for the afternoon session — and the OMR sheet must be filled with a black ball-point pen. Official page re-read on 9 Sep 2026.",
+        "The examination was held as notified on Sunday 13 Sep 2026: UPSC uploaded the Mathematics and General Ability Test question papers to the official page on 14 Sep 2026 and published no postponement. The page, re-read on 3 Oct 2026, carries no written result yet; UPSC's written-result listing has none either. Candidates declared qualified then face the SSB test/interview and the medical examination before the final merit list and academy allocation.",
     },
     summary: "Entry examination after Class 12 for the Army, Navy and Air Force wings of NDA and the Naval Academy.",
     vacancies: 394,
@@ -336,7 +347,14 @@ export const exams: Exam[] = [
       { label: "Applications closed", date: "2026-06-11", displayDate: "11 Jun 2026, 6 PM", state: "completed" },
       { label: "Examination time table", date: "2026-08-12", displayDate: "12 Aug 2026", state: "completed" },
       { label: "e-Admit card and press note", date: "2026-09-03", displayDate: "3 Sep 2026", state: "completed" },
-      { label: "Written exam", date: "2026-09-13", displayDate: "13 Sep 2026", state: "scheduled" },
+      {
+        label: "Written exam",
+        date: "2026-09-13",
+        displayDate: "13 Sep 2026",
+        state: "completed",
+        note: "Held as notified; UPSC uploaded the question papers on 14 Sep 2026 and published no postponement.",
+      },
+      { label: "Written result", displayDate: "To be announced", state: "current" },
       { label: "SSB", displayDate: "To be announced", state: "tentative" },
     ],
     eligibility: [
@@ -360,8 +378,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC National Defence Academy and Naval Academy Examination (II), 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
-    sourcePublished: "Press note and e-admit card of 3 Sep 2026; page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Question papers uploaded 14 Sep 2026; press note of 3 Sep 2026; page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-12",
@@ -372,6 +390,11 @@ export const exams: Exam[] = [
         date: "2026-09-03",
         displayDate: "3 Sep 2026",
         text: "UPSC's press note of 3 Sep 2026 confirms the NDA & NA II 2026 examination on 13 Sep 2026 and the upload of e-admit cards on upsconline.nic.in.",
+      },
+      {
+        date: "2026-09-13",
+        displayDate: "13 Sep 2026",
+        text: "The NDA & NA II 2026 written examination was held as notified on 13 Sep 2026; UPSC uploaded both question papers on 14 Sep 2026. The written result is awaited.",
       },
     ],
     keywords: [
@@ -397,15 +420,15 @@ export const exams: Exam[] = [
     sector: "Health services",
     examTypes: ["Health & Medical", "Specialist & Professional"],
     education: ["Professional degree"],
-    nextAction: "Update and submit the application form on upsconline.nic.in by 21 Sep 2026, 6 PM",
+    nextAction: "Download the e-Summon Letter; Personality Tests run 12 Oct – 17 Dec 2026",
     summary: "Recruitment examination for medical officer posts in central health services and participating organisations.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Medical%20Services%20Examination%2C%202026",
     status: {
-      label: "Written result declared",
+      label: "Interview schedule released",
       tone: "blue",
-      nextAction: "Update and submit the application form on upsconline.nic.in by 21 Sep 2026, 6 PM",
+      nextAction: "Download the e-Summon Letter; Personality Tests run 12 Oct – 17 Dec 2026",
       detail:
-        "UPSC declared the written result on 1 Sep 2026: the roll numbers in the press note have qualified, provisionally, for the Personality Test. The notice of 8 Sep 2026 opens the mandatory application-form window on upsconline.nic.in up to 21 Sep 2026, 6 PM — every written-qualified candidate must update their details and qualifying-examination status, upload the proof and finally submit the form, even if nothing changes, or they will not be allowed to appear at the Personality Test. No interview schedule is published yet; official page re-read on 9 Sep 2026.",
+        "UPSC's notice of 25 Sep 2026 starts the Personality Tests (Interviews) from Monday 12 Oct 2026 and gives the roll-number-wise date and session of all 2,842 candidates, with the last listed sitting on 17 Dec 2026; forenoon sessions are at 9 AM and afternoon sessions at 1 PM. e-Summon Letters will be made available shortly on upsconline.nic.in, and a change of the allotted date or time is not ordinarily entertained. The application-form window closed on 21 Sep 2026; a candidate who did not finally submit the form by then gets no e-Summon Letter. Official page re-read on 3 Oct 2026.",
     },
     timeline: [
       { label: "Notification", date: "2026-03-11", displayDate: "11 Mar 2026", state: "completed" },
@@ -413,10 +436,23 @@ export const exams: Exam[] = [
       { label: "e-Admit card", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
       { label: "Written examination", date: "2026-08-02", displayDate: "2 Aug 2026", state: "completed" },
       { label: "Written result", date: "2026-09-01", displayDate: "1 Sep 2026", state: "completed" },
-      { label: "Application form update window closes", date: "2026-09-21", displayDate: "21 Sep 2026, 6 PM", state: "scheduled" },
-      { label: "Personality Test", displayDate: "To be announced", state: "tentative" },
+      {
+        label: "Application form update window closes",
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026, 6 PM",
+        state: "completed",
+        note: "Closed as notified; no extension on UPSC's CMS page when re-read on 3 Oct 2026.",
+      },
+      { label: "Interview schedule notice", date: "2026-09-25", displayDate: "25 Sep 2026", state: "completed" },
+      { label: "Personality Test", date: "2026-10-12", displayDate: "12 Oct – 17 Dec 2026 (roll-number-wise schedule)", state: "scheduled" },
+      { label: "Final result", displayDate: "To be announced", state: "tentative" },
     ],
     extraLinks: [
+      {
+        label: "Personality Test schedule notice dated 25 Sep 2026",
+        url: "https://www.upsc.gov.in/sites/default/files/Intv-CMSE-2026-Engl-250926.pdf",
+        type: "notice",
+      },
       {
         label: "Application-form notice for written-qualified candidates dated 8 Sep 2026",
         url: "https://www.upsc.gov.in/sites/default/files/NoticeAFupdationCMSE-26-engl-080926.pdf",
@@ -443,10 +479,10 @@ export const exams: Exam[] = [
         type: "notice",
       },
     ],
-    sourceTitle: "UPSC Combined Medical Services Examination, 2026 page",
-    sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Medical%20Services%20Examination%2C%202026",
-    sourcePublished: "Application-form notice dated 8 Sep 2026; written result declared 1 Sep 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourceTitle: "UPSC Combined Medical Services Examination, 2026 — Personality Test schedule notice",
+    sourceUrl: "https://www.upsc.gov.in/sites/default/files/Intv-CMSE-2026-Engl-250926.pdf",
+    sourcePublished: "Personality Test schedule notice dated 25 Sep 2026; official page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -457,6 +493,11 @@ export const exams: Exam[] = [
         date: "2026-09-08",
         displayDate: "8 Sep 2026",
         text: "UPSC declared the CMS 2026 written result on 1 Sep 2026 and, by its notice of 8 Sep 2026, requires every written-qualified candidate to update and finally submit the application form on upsconline.nic.in by 21 Sep 2026, 6 PM, before the Personality Test.",
+      },
+      {
+        date: "2026-09-25",
+        displayDate: "25 Sep 2026",
+        text: "UPSC's notice of 25 Sep 2026 schedules the CMS 2026 Personality Tests of 2,842 candidates from 12 Oct to 17 Dec 2026; e-Summon Letters follow on upsconline.nic.in. The application-form window closed on 21 Sep 2026.",
       },
     ],
     keywords: [
@@ -504,15 +545,15 @@ export const exams: Exam[] = [
     sector: "Central armed police forces",
     examTypes: ["Police & CAPF"],
     education: ["Graduate"],
-    nextAction: "Update your details on upsconline.nic.in by 21 Sep 2026, 6 PM, for the PST/PET",
+    nextAction: "Keep the printed application form for the PST/PET; track the PST/PET dates",
     summary: "Officer recruitment for Assistant Commandant posts in the central armed police forces.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026",
     status: {
-      label: "Detail-update window open until 21 Sep 2026",
-      tone: "blue",
-      nextAction: "Update your details on upsconline.nic.in by 21 Sep 2026, 6 PM, for the PST/PET",
+      label: "PST/PET schedule awaited",
+      tone: "amber",
+      nextAction: "Keep the printed application form for the PST/PET; track the PST/PET dates",
       detail:
-        "UPSC declared the written result on 25 Aug 2026 and published the name list on 8 Sep 2026. The notice of 8 Sep 2026 fixes the fifteen-day window the press note promised: candidates who qualified for the Physical Standards Test and Physical Efficiency Test must log in to upsconline.nic.in between 7 and 21 Sep 2026 (6 PM), update their details, upload the documents and finally submit the application form — even if nothing needs changing — to print the form for the PST/PET and to generate the e-Summon Letter for the interview; those who do not are ineligible for the later stages. PST/PET dates are not announced; official page re-read on 9 Sep 2026.",
+        "UPSC declared the written result on 25 Aug 2026 and published the name list on 8 Sep 2026. The fifteen-day window of the notice of 8 Sep 2026 — for candidates qualified for the Physical Standards Test and Physical Efficiency Test to update their details, upload documents and finally submit the application form on upsconline.nic.in — closed as notified on 21 Sep 2026, 6 PM; those who did not submit are ineligible for the later stages. The printed form is to be submitted at the PST/PET, and final submission is also needed to generate the interview e-Summon Letter. No PST/PET dates are published: the official page re-read on 3 Oct 2026 lists nothing newer than the 8 Sep 2026 notice.",
     },
     timeline: [
       { label: "Notification", date: "2026-02-20", displayDate: "20 Feb 2026", state: "completed" },
@@ -525,15 +566,15 @@ export const exams: Exam[] = [
         label: "Detail update window closes",
         date: "2026-09-21",
         displayDate: "21 Sep 2026, 6 PM",
-        state: "scheduled",
-        note: "Open on upsconline.nic.in from 7 Sep 2026 under the notice of 8 Sep 2026.",
+        state: "completed",
+        note: "Opened 7 Sep 2026 under the notice of 8 Sep 2026; closed as notified, with no extension on UPSC's page when re-read on 3 Oct 2026.",
       },
-      { label: "Physical Standards Test / Physical Efficiency Test", displayDate: "To be announced", state: "tentative" },
+      { label: "Physical Standards Test / Physical Efficiency Test", displayDate: "To be announced", state: "current" },
     ],
     extraLinks: [
       {
         label: "Detail-update window notice dated 8 Sep 2026",
-        url: "https://www.upsc.gov.in/sites/default/files/Notice-AFWindow-CAPF-26-Engl-080926.pdf",
+        url: "https://www.upsc.gov.in/sites/default/files/NoticeAF-CAPF-26-Engl-090926R.pdf",
         type: "notice",
       },
       {
@@ -559,8 +600,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Central Armed Police Forces (ACs) Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Central%20Armed%20Police%20Forces%20%28ACs%29%20Examination%2C%202026",
-    sourcePublished: "Detail-update window notice dated 8 Sep 2026; written result press note dated 25 Aug 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Detail-update window notice dated 8 Sep 2026; written result press note dated 25 Aug 2026; page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-09-08",
@@ -576,6 +617,11 @@ export const exams: Exam[] = [
         date: "2026-08-19",
         displayDate: "19 Aug 2026",
         text: "Added the dated stages from UPSC's own CAPF (ACs) 2026 page, including the 19 Jul 2026 written examination; the result is still awaited.",
+      },
+      {
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026",
+        text: "The detail-update window for PST/PET-qualified candidates closed on 21 Sep 2026, 6 PM, with no extension; the PST/PET schedule is now awaited.",
       },
     ],
     keywords: [
@@ -631,7 +677,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Track the Personality Test schedule and e-Summon Letter",
       detail:
-        "The written result was declared on 4 Aug 2026, and the application-form update window for written-qualified candidates under the notice of 11 Aug 2026 closed on 25 Aug 2026, 6 PM. The official page re-read on 9 Sep 2026 lists nothing newer — no Personality Test schedule or e-Summon Letter notice has been published yet.",
+        "The written result was declared on 4 Aug 2026, and the application-form update window for written-qualified candidates under the notice of 11 Aug 2026 closed on 25 Aug 2026, 6 PM. The official page and UPSC's interview-schedule listing, re-read on 3 Oct 2026, show nothing newer — no Personality Test schedule or e-Summon Letter notice has been published yet.",
     },
     timeline: [
       { label: "Notification", date: "2026-02-11", displayDate: "11 Feb 2026", state: "completed" },
@@ -660,8 +706,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Indian Economic Service / Indian Statistical Service Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Indian%20Economic%20Service%20-%20Indian%20Statistical%20Service%20Examination%2C%202026",
-    sourcePublished: "Application-form notice dated 11 Aug 2026; page re-read 9 Sep 2026 with nothing newer",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Application-form notice dated 11 Aug 2026; page re-read 3 Oct 2026 with nothing newer",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -718,22 +764,28 @@ export const exams: Exam[] = [
     sector: "Engineering services",
     examTypes: ["Technical & Trades", "Specialist & Professional"],
     education: ["Professional degree"],
-    nextAction: "Download the e-Summon Letter; Personality Tests run from 21 Sep 2026",
+    nextAction: "Attend on your allotted date with the e-Summon Letter; tests run until 30 Oct 2026",
     summary: "Recruitment to civil, mechanical, electrical and electronics engineering services of the Union.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Main%29%20Examination%2C%202026",
     status: {
-      label: "Interview schedule released",
-      tone: "blue",
-      nextAction: "Download the e-Summon Letter; Personality Tests run from 21 Sep 2026",
+      label: "Personality Tests in progress",
+      tone: "violet",
+      nextAction: "Attend on your allotted date with the e-Summon Letter; tests run until 30 Oct 2026",
       detail:
-        "UPSC's notice of 7 Sep 2026 starts the Personality Tests (Interviews) from Monday 21 Sep 2026 and gives the roll-number-wise date and session of all 1,336 written-qualified candidates, with the last listed sitting on 30 Oct 2026; reporting time is 9 AM for the forenoon session and 1 PM for the afternoon session. e-Summon Letters will be made available shortly on upsconline.nic.in, and no request to change the allotted date or session is entertained. The application-form update window closed on 21 Aug 2026. Official page re-read on 9 Sep 2026.",
+        "The Personality Tests (Interviews) began on Monday 21 Sep 2026 under UPSC's notice of 7 Sep 2026, which gives the roll-number-wise date and session of all 1,336 written-qualified candidates, with the last listed sitting on 30 Oct 2026; reporting time is 9 AM for the forenoon session and 1 PM for the afternoon session. e-Summon Letters are to be downloaded from upsconline.nic.in, and no request to change the allotted date or session is entertained. The official page and UPSC's interview-schedule listing, re-read on 3 Oct 2026, show no revised schedule; the final result follows the interviews.",
     },
     timeline: [
       { label: "Mains examination", date: "2026-06-21", displayDate: "21 Jun 2026", state: "completed" },
       { label: "Mains result", date: "2026-07-24", displayDate: "24 Jul 2026", state: "completed" },
       { label: "Application form update window closes", date: "2026-08-21", displayDate: "21 Aug 2026, 6 PM", state: "completed" },
       { label: "Interview schedule notice", date: "2026-09-07", displayDate: "7 Sep 2026", state: "completed" },
-      { label: "Personality Test", date: "2026-09-21", displayDate: "21 Sep – 30 Oct 2026 (roll-number-wise schedule)", state: "scheduled" },
+      {
+        label: "Personality Test",
+        date: "2026-09-21",
+        displayDate: "21 Sep – 30 Oct 2026 (roll-number-wise schedule)",
+        state: "current",
+        note: "Under way since 21 Sep 2026 as notified; UPSC published no change when re-read on 3 Oct 2026.",
+      },
       { label: "Final result", displayDate: "To be announced", state: "tentative" },
     ],
     extraLinks: [
@@ -755,8 +807,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Engineering Services (Main) Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Engineering%20Services%20%28Main%29%20Examination%2C%202026",
-    sourcePublished: "Personality Test schedule notice dated 7 Sep 2026; mains result declared 24 Jul 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Personality Test schedule notice dated 7 Sep 2026; page re-read 3 Oct 2026 with no revision",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -767,6 +819,11 @@ export const exams: Exam[] = [
         date: "2026-09-07",
         displayDate: "7 Sep 2026",
         text: "UPSC's notice of 7 Sep 2026 schedules the ESE 2026 Personality Tests of 1,336 candidates from 21 Sep 2026, with the last listed sitting on 30 Oct 2026; e-Summon Letters follow on upsconline.nic.in.",
+      },
+      {
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026",
+        text: "The ESE 2026 Personality Tests began on 21 Sep 2026 as scheduled and run until 30 Oct 2026; the final result follows.",
       },
     ],
     keywords: [
@@ -814,23 +871,29 @@ export const exams: Exam[] = [
     sector: "Geoscience",
     examTypes: ["Specialist & Professional"],
     education: ["Postgraduate", "Professional degree"],
-    nextAction: "Download the e-Summon Letter; Personality Tests run 15–18 Sep 2026",
+    nextAction: "Wait for the final result on upsc.gov.in",
     summary: "Specialist recruitment for geology, geophysics, chemistry and hydrogeology posts in central services.",
     examPageUrl: "https://www.upsc.gov.in/examinations/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026",
     status: {
-      label: "Interview schedule released",
-      tone: "blue",
-      nextAction: "Download the e-Summon Letter; Personality Tests run 15–18 Sep 2026",
+      label: "Interviews over; final result awaited",
+      tone: "violet",
+      nextAction: "Wait for the final result on upsc.gov.in",
       detail:
-        "UPSC's notice of 2 Sep 2026 schedules the Personality Tests (Interviews) of the 200 written-qualified candidates from 15 to 18 Sep 2026, roll-number-wise across the Geologist, Hydrogeology, Geophysics and Chemistry streams; reporting time is 9 AM for the forenoon session and 1 PM for the afternoon session. e-Summon Letters will be made available shortly on upsc.gov.in and upsconline.nic.in, and a change of the allotted date or session is not ordinarily entertained. Official page re-read on 9 Sep 2026.",
+        "The Personality Tests (Interviews) of the 200 written-qualified candidates were scheduled from 15 to 18 Sep 2026 by UPSC's notice of 2 Sep 2026, roll-number-wise across the Geologist, Hydrogeology, Geophysics and Chemistry streams, and UPSC published no postponement, so they are taken as held. The official page and UPSC's final-result listing, re-read on 3 Oct 2026, carry no final result yet.",
     },
     timeline: [
       { label: "Mains time table", date: "2026-05-11", displayDate: "11 May 2026", state: "completed" },
       { label: "Mains examination", date: "2026-06-20", displayDate: "20–21 Jun 2026", state: "completed" },
       { label: "Mains written result", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
       { label: "Interview schedule notice", date: "2026-09-02", displayDate: "2 Sep 2026", state: "completed" },
-      { label: "Personality Test", date: "2026-09-15", displayDate: "15–18 Sep 2026", state: "scheduled" },
-      { label: "Final result", displayDate: "To be announced", state: "tentative" },
+      {
+        label: "Personality Test",
+        date: "2026-09-15",
+        displayDate: "15–18 Sep 2026",
+        state: "completed",
+        note: "Held as notified; UPSC published no postponement when re-read on 3 Oct 2026.",
+      },
+      { label: "Final result", displayDate: "To be announced", state: "current" },
     ],
     extraLinks: [
       {
@@ -846,8 +909,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Combined Geo-Scientist (Main) Examination, 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Geo-Scientist%20%28Main%29%20Examination%2C%202026",
-    sourcePublished: "Personality Test schedule notice dated 2 Sep 2026; mains written result declared 20 Jul 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Personality Test schedule notice dated 2 Sep 2026; page re-read 3 Oct 2026 with no final result",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -858,6 +921,11 @@ export const exams: Exam[] = [
         date: "2026-09-02",
         displayDate: "2 Sep 2026",
         text: "UPSC's notice of 2 Sep 2026 schedules the Combined Geo-Scientist 2026 Personality Tests of 200 candidates from 15 to 18 Sep 2026; e-Summon Letters follow on upsconline.nic.in.",
+      },
+      {
+        date: "2026-09-18",
+        displayDate: "18 Sep 2026",
+        text: "The Combined Geo-Scientist 2026 Personality Tests of 15–18 Sep 2026 were held as scheduled, with no postponement published; the final result is awaited.",
       },
     ],
     keywords: [
@@ -904,15 +972,15 @@ export const exams: Exam[] = [
     sector: "Forest services",
     examTypes: ["Civil Services & Administration", "Specialist & Professional"],
     education: ["Graduate", "Professional degree"],
-    nextAction: "Prepare for the forest-service mains from 22 Nov 2026 (UPSC Annual Calendar 2026)",
+    nextAction: "Prepare for the mains of 22–29 Nov 2026 (UPSC time table of 17 Sep 2026)",
     summary: "Recruitment to the Indian Forest Service through the common Civil Services preliminary examination and a separate mains process.",
-    examPageUrl: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Preliminary%29%20Examination%2C%202026%20through%20CS%28P%29%20Examination%2C%202026",
+    examPageUrl: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Main%29%20Examination%2C%202026",
     status: {
-      label: "Mains scheduled from 22 Nov 2026",
+      label: "Mains scheduled 22–29 Nov 2026",
       tone: "blue",
-      nextAction: "Prepare for the forest-service mains from 22 Nov 2026 (UPSC Annual Calendar 2026)",
+      nextAction: "Prepare for the mains of 22–29 Nov 2026 (UPSC time table of 17 Sep 2026)",
       detail:
-        "UPSC declared the Indian Forest Service (Preliminary) 2026 result on 15 Jun 2026, and its notice of 13 Jul 2026 required every mains-qualified candidate to update or reconfirm the common application form on upsconline.nic.in between 13 and 22 Jul 2026 (6 PM); that window has closed. UPSC's Annual Calendar 2026 lists the Indian Forest Service (Main) Examination, 2026 as commencing on Sunday 22 Nov 2026 over seven days, and the calendar notes that its dates are liable to alteration. No mains time table has been published yet — the preliminary page re-read on 9 Sep 2026 shows nothing newer than the 15 Jun 2026 result.",
+        "UPSC declared the Indian Forest Service (Preliminary) 2026 result on 15 Jun 2026, and its notice of 13 Jul 2026 required every mains-qualified candidate to update or reconfirm the common application form on upsconline.nic.in between 13 and 22 Jul 2026 (6 PM); that window has closed. The mains time table uploaded on 17 Sep 2026 runs the papers from Sunday 22 Nov to Sunday 29 Nov 2026, with no paper on Tuesday 24 Nov (gazetted holiday); sessions are 9 AM–12 noon and 2:30–5:30 PM, opening with General English and General Knowledge on 22 Nov. The mains page re-read on 3 Oct 2026 lists nothing newer — no e-admit card yet.",
     },
     timeline: [
       { label: "Notification", date: "2026-02-04", displayDate: "4 Feb 2026", state: "completed" },
@@ -926,35 +994,36 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Opened by UPSC's notice of 13 Jul 2026 on upsconline.nic.in; mandatory for candidates qualified for the mains.",
       },
+      { label: "Mains time table", date: "2026-09-17", displayDate: "17 Sep 2026", state: "completed" },
       {
         label: "Mains examination",
         date: "2026-11-22",
-        displayDate: "From 22 Nov 2026 (seven days, per Annual Calendar 2026)",
+        displayDate: "22–29 Nov 2026 (no paper on 24 Nov)",
         state: "scheduled",
-        note: "Date from UPSC's Annual Calendar 2026; the mains time table is not yet published.",
+        note: "Per UPSC's mains time table of 17 Sep 2026, which keeps the Annual Calendar 2026 start date.",
       },
     ],
     extraLinks: [
+      {
+        label: "Mains time table uploaded 17 Sep 2026",
+        url: "https://www.upsc.gov.in/sites/default/files/TT-IFSM-26-Engl-170926.pdf",
+        type: "notice",
+      },
       {
         label: "Application form update notice for the mains dated 13 Jul 2026",
         url: "https://www.upsc.gov.in/sites/default/files/Ticker-IFSM-2026-UpdateDetail-Engl-130726.pdf",
         type: "notice",
       },
       {
-        label: "UPSC Annual Calendar 2026 (IFoS Main from 22 Nov 2026)",
-        url: "https://www.upsc.gov.in/sites/default/files/Calendar-2026-Engl-150525_5.pdf",
-        type: "notice",
-      },
-      {
-        label: "Preliminary result (roll number list)",
-        url: "https://www.upsc.gov.in/sites/default/files/WR-IFoSP-2026-RollList-Engl-150626.pdf",
+        label: "Preliminary page and result",
+        url: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Preliminary%29%20Examination%2C%202026%20through%20CS%28P%29%20Examination%2C%202026",
         type: "result",
       },
     ],
-    sourceTitle: "UPSC Indian Forest Service (Preliminary) Examination, 2026 page",
-    sourceUrl: "https://www.upsc.gov.in/examinations/Indian%20Forest%20Service%20%28Preliminary%29%20Examination%2C%202026%20through%20CS%28P%29%20Examination%2C%202026",
-    sourcePublished: "Mains application-form notice dated 13 Jul 2026; preliminary result declared 15 Jun 2026; Annual Calendar 2026 and preliminary page re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourceTitle: "UPSC Indian Forest Service (Main) Examination, 2026 time table",
+    sourceUrl: "https://www.upsc.gov.in/sites/default/files/TT-IFSM-26-Engl-170926.pdf",
+    sourcePublished: "Mains time table uploaded 17 Sep 2026; mains page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -965,6 +1034,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "Added the mains date from UPSC's Annual Calendar 2026: the Indian Forest Service (Main) Examination, 2026 commences on 22 Nov 2026 over seven days. Also recorded UPSC's notice of 13 Jul 2026, which ran the mandatory common-application-form update window for mains-qualified candidates from 13 to 22 Jul 2026. No mains time table is published yet.",
+      },
+      {
+        date: "2026-09-17",
+        displayDate: "17 Sep 2026",
+        text: "UPSC uploaded the Indian Forest Service (Main) 2026 time table: the papers run from 22 to 29 Nov 2026, with no paper on 24 Nov.",
       },
     ],
     keywords: [
@@ -1017,7 +1091,7 @@ export const exams: Exam[] = [
       label: "SSB stage in progress",
       tone: "violet",
       nextAction: "Track SSB and final-result notices after the written result",
-      detail: "The written result was declared on 8 May 2026 and the name list followed on 20 May 2026. Qualified candidates are called by the Services Selection Boards; the official page re-read on 9 Sep 2026 lists nothing newer, and no final result has been published.",
+      detail: "The written result was declared on 8 May 2026 and the name list followed on 20 May 2026. Qualified candidates are called by the Services Selection Boards; the official page and UPSC's final-result listing, re-read on 3 Oct 2026, list nothing newer, and no final result has been published.",
     },
     timeline: [
       { label: "Notification", date: "2025-12-10", displayDate: "10 Dec 2025", state: "completed" },
@@ -1040,8 +1114,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC Combined Defence Services Examination (I), 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/Combined%20Defence%20Services%20Examination%20%28I%29%2C%202026",
-    sourcePublished: "Written result name list published 20 May 2026; page re-read 9 Sep 2026 with nothing newer",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Written result name list published 20 May 2026; page re-read 3 Oct 2026 with nothing newer",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",
@@ -1102,7 +1176,7 @@ export const exams: Exam[] = [
       label: "SSB stage in progress",
       tone: "violet",
       nextAction: "Track SSB and final-result notices after the written result",
-      detail: "The written result was declared on 8 May 2026 and the name list followed on 13 May 2026. Qualified candidates are called by the Services Selection Boards; the official page re-read on 9 Sep 2026 lists nothing newer, and no final result has been published.",
+      detail: "The written result was declared on 8 May 2026 and the name list followed on 13 May 2026. Qualified candidates are called by the Services Selection Boards; the official page and UPSC's final-result listing, re-read on 3 Oct 2026, list nothing newer, and no final result has been published.",
     },
     timeline: [
       { label: "Notification", date: "2025-12-10", displayDate: "10 Dec 2025", state: "completed" },
@@ -1125,8 +1199,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "UPSC National Defence Academy and Naval Academy Examination (I), 2026 page",
     sourceUrl: "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28I%29%2C%202026",
-    sourcePublished: "Written result name list published 13 May 2026; page re-read 9 Sep 2026 with nothing newer",
-    lastVerified: "9 Sep 2026, 11:25 IST",
+    sourcePublished: "Written result name list published 13 May 2026; page re-read 3 Oct 2026 with nothing newer",
+    lastVerified: "3 Oct 2026, 13:05 IST",
     changeLog: [
       {
         date: "2026-08-19",

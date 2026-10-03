@@ -48,8 +48,8 @@ export const authorities: Authority[] = [
     name: "High Court of Judicature at Bombay",
     level: "State",
     regionCodes: ["MH"],
-    allowedHosts: ["bombayhighcourt.nic.in", "www.bombayhighcourt.nic.in"],
-    watchUrls: ["https://bombayhighcourt.nic.in/recruitment.php"],
+    allowedHosts: ["bombayhighcourt.nic.in", "www.bombayhighcourt.nic.in", "bombayhighcourt.gov.in"],
+    watchUrls: ["https://bombayhighcourt.gov.in/bhc/front/search-notifications?search=&flag=T"],
   },
   {
     id: "madras-high-court",
@@ -225,7 +225,7 @@ export const exams: Exam[] = [
       label: "Interview held; reserve pool / wait list published",
       tone: "violet",
       nextAction: "Wait-listed candidates should watch the judicial-clerkship page for engagement and joining notices",
-      detail: "The written tests were held on 7 March 2026 and the interview process is over. A Registry list dated 19 August 2026 places 201 candidates in the reserve pool / wait list. The judicial-clerkship page published nothing newer when it was re-read on 10 September 2026.",
+      detail: "The written tests were held on 7 March 2026 and the interview process is over. A Registry list dated 19 August 2026 places 201 candidates in the reserve pool / wait list. The judicial-clerkship page published nothing newer when it was re-read on 3 October 2026.",
     },
     summary: "Competitive short-term contractual engagement of law graduates as Law Clerk-cum-Research Associates to assist the Supreme Court.",
     qualification: "Law graduate/final-year law student conditions and enrolment requirements under the 2026 advertisement and clerkship scheme.",
@@ -294,8 +294,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Law Clerk-cum-Research Associates Examination 2026 — list of 201 candidates placed in the reserve pool / wait list",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/08/2026081951.pdf",
-    sourcePublished: "Reserve pool / wait list dated 19 Aug 2026; judicial-clerkship page re-read 10 Sep 2026 with nothing newer for the 2026 cycle",
-    lastVerified: "10 Sep 2026, 22:12 IST",
+    sourcePublished: "Reserve pool / wait list dated 19 Aug 2026; judicial-clerkship page re-read 3 Oct 2026 with nothing newer for the 2026 cycle",
+    lastVerified: "3 Oct 2026, 13:25 IST",
     changeLog: [
       {
         date: "2026-09-10",
@@ -328,7 +328,7 @@ export const exams: Exam[] = [
       tone: "blue",
       nextAction: "Sit the Mains on the revised dates of 10 and 11 October 2026, and watch delhihighcourt.nic.in job openings for the admit card and centre notice.",
       detail:
-        "The preliminary result of 26 July 2026 was declared by notice dated 14 August 2026, and exactly 400 candidates were shortlisted for provisional admission to the Mains (Written) Examination across four papers — General Knowledge and Language, Law-I, Law-II and Law-III. A notice dated 31 August 2026, posted on the Job Openings page on 1 September 2026, postpones the Mains from 12 and 13 September 2026 to 10 and 11 October 2026 respectively, to avoid inconvenience to candidates from the likely traffic advisories for the 18th BRICS Summit at Bharat Mandapam. No admit-card or centre notice had been posted when the page was read on 9 September 2026.",
+        "The preliminary result of 26 July 2026 was declared by notice dated 14 August 2026, and exactly 400 candidates were shortlisted for provisional admission to the Mains (Written) Examination across four papers — General Knowledge and Language, Law-I, Law-II and Law-III. A notice dated 31 August 2026, posted on the Job Openings page on 1 September 2026, postpones the Mains from 12 and 13 September 2026 to 10 and 11 October 2026 respectively, to avoid inconvenience to candidates from the likely traffic advisories for the 18th BRICS Summit at Bharat Mandapam. No admit-card or centre notice had been posted when the pages were re-read on 3 October 2026.",
     },
     summary: "Direct recruitment to the Delhi Higher Judicial Service through preliminary, mains and viva-voce stages.",
     vacancies: 27,
@@ -392,8 +392,8 @@ export const exams: Exam[] = [
     sourceTitle: "Notice dated 31 August 2026 re-scheduling the Delhi Higher Judicial Service Mains Examination (Written) 2026",
     sourceUrl: "https://delhihighcourt.nic.in/files/2026-09/recuritment/dhjs2026.pdf",
     sourcePublished:
-      "Re-scheduling notice dated 31 Aug 2026, posted on the Job Openings page 1 Sep 2026; job-openings and recruitment-results pages re-read 9 Sep 2026, no admit-card or centre notice yet",
-    lastVerified: "9 Sep 2026, 17:12 IST",
+      "Re-scheduling notice dated 31 Aug 2026, posted on the Job Openings page 1 Sep 2026; job-openings and recruitment-results pages re-read 3 Oct 2026, no admit-card or centre notice yet",
+    lastVerified: "3 Oct 2026, 13:39 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -432,10 +432,10 @@ export const exams: Exam[] = [
     examTypes: ["Judiciary & Legal"],
     education: ["Graduate"],
     status: {
-      label: "Stage-II Mains (Descriptive) on 4 Oct 2026",
+      label: "Admit cards out; Stage-II Mains on 4 Oct 2026",
       tone: "blue",
-      nextAction: "Sit the Stage-II Mains (Descriptive) Examination on 4 October 2026 in Delhi-NCR; reporting time, examination time and centre will be on the admit card.",
-      detail: "The Stage-II Main (Descriptive) Examination fixed for 24 May 2026 was cancelled by notice No. 51/Exams-NJ/DHC dated 15 May 2026 for administrative reasons. Notice No. 83/Exams-NJ/DHC dated 8 September 2026 publishes the revised schedule: the Stage-II Mains (Descriptive) Examination will be held on Sunday, 4 October 2026, with Delhi-NCR as the city of examination, and the reporting time, examination time, centre and instructions to candidates will be as per the admit card. The recruitment-results page also carried a further notice dated 8 September 2026 on the Stage-I Preliminary (CBT) result of 22 March 2026 when it was read on 9 September 2026.",
+      nextAction: "Download the admit card through the link on the Job Openings page and sit the Stage-II Mains (Descriptive) Examination on 4 October 2026 in Delhi-NCR; reporting time and centre are on the admit card.",
+      detail: "The Stage-II Main (Descriptive) Examination fixed for 24 May 2026 was cancelled by notice No. 51/Exams-NJ/DHC dated 15 May 2026 for administrative reasons. Notice No. 83/Exams-NJ/DHC dated 8 September 2026 reset it for Sunday, 4 October 2026, with Delhi-NCR as the city of examination, and Notice No. 84/Exams-NJ/DHC of 15 September 2026 on scribe facilities for PwBD candidates repeats that date. The admit cards were posted on the Job Openings page on 29 September 2026; reporting time, examination time and centre are as per the admit card. No change of date was posted when the pages were re-read on 3 October 2026.",
     },
     summary: "Open recruitment examination for Junior Judicial Assistant/Restorer posts on the Delhi High Court establishment.",
     qualification: "Graduate qualification and computer/typing conditions under the 2026 open-examination advertisement.",
@@ -450,6 +450,7 @@ export const exams: Exam[] = [
         displayDate: "8 Sep 2026",
         state: "completed",
       },
+      { label: "Admit cards for Stage-II released", date: "2026-09-29", displayDate: "29 Sep 2026", state: "completed" },
       {
         label: "Stage-II Mains (Descriptive) Examination",
         date: "2026-10-04",
@@ -470,6 +471,11 @@ export const exams: Exam[] = [
     syllabus: ["Language, general aptitude and court-establishment examination components in the JJA/Restorer 2026 scheme."],
     officialLinks: [
       {
+        label: "Admit cards for the Stage-II Main (Descriptive) Examination — posted 29 Sep 2026",
+        url: "https://delhihighcourt.nic.in/files/2026-09/recuritment/admit_card_jja_2026.pdf",
+        type: "notice",
+      },
+      {
         label: "Notice No. 83/Exams-NJ/DHC dated 8 Sep 2026 — Stage-II Mains (Descriptive) schedule",
         url: "https://delhihighcourt.nic.in/files/2026-09/recuritment/83-exams-nj.pdf",
         type: "calendar",
@@ -477,10 +483,10 @@ export const exams: Exam[] = [
       { label: "Official Delhi High Court job openings", url: "https://www.delhihighcourt.nic.in/web/job-openings", type: "result" },
       { label: "Delhi High Court recruitment results", url: "https://delhihighcourt.nic.in/web/recruitment-results-current", type: "result" },
     ],
-    sourceTitle: "Notice No. 83/Exams-NJ/DHC dated 8 September 2026 — Stage-II Mains (Descriptive) Examination schedule",
-    sourceUrl: "https://delhihighcourt.nic.in/files/2026-09/recuritment/83-exams-nj.pdf",
-    sourcePublished: "Notice No. 83/Exams-NJ/DHC dated 8 Sep 2026; job-openings and recruitment-results pages re-read 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:14 IST",
+    sourceTitle: "Admit cards for the Stage-II Main (Descriptive) Examination of the JJA/Restorer (Open) Examination-2026 — posted 29 September 2026",
+    sourceUrl: "https://delhihighcourt.nic.in/files/2026-09/recuritment/admit_card_jja_2026.pdf",
+    sourcePublished: "Admit cards posted 29 Sep 2026; Notice No. 83 of 8 Sep and Notice No. 84 of 15 Sep 2026; job-openings page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:40 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -491,6 +497,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "Revised date published. Notice No. 83/Exams-NJ/DHC dated 8 Sep 2026 fixes the Stage-II Mains (Descriptive) Examination for Sunday, 4 Oct 2026, with Delhi-NCR as the city of examination; the centre and reporting time will be on the admit card.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Admit cards released. The High Court posted the admit cards for the Stage-II Mains (Descriptive) Examination on 29 Sep 2026; the exam stays on Sunday, 4 Oct 2026 in Delhi-NCR, as Notice No. 84 of 15 Sep 2026 on scribe facilities for PwBD candidates also confirms.",
       },
     ],
     keywords: ["JJA Delhi High Court", "restorer exam Delhi", "junior judicial assistant recruitment"],
@@ -513,11 +524,19 @@ export const exams: Exam[] = [
     sector: "Court establishment",
     examTypes: ["Judiciary & Legal", "Specialist & Professional"],
     education: ["Graduate"],
+    vacancyLabel: "Minimum 138 RO, 380 ARO and 25 CA posts",
+    vacancyNote:
+      "Advertisement No. 02/Review Officer/Assistant Review Officer/Computer Assistant/2026 of 1 June 2026 lists 138 Review Officer, 380 Assistant Review Officer and 25 Computer Assistant posts as minimum vacancies, subject to increase. The category rows are from the detailed advertisement on the NTA portal; its ARO heading says 378, but the ARO table and the abridged advertisement say 380.",
+    vacancyBreakdown: [
+      { label: "Review Officer", ur: 58, ews: 13, obc: 37, sc: 28, st: 2, total: 138 },
+      { label: "Assistant Review Officer", ur: 154, ews: 38, obc: 102, sc: 79, st: 7, total: 380 },
+      { label: "Computer Assistant", ur: 12, ews: 2, obc: 6, sc: 5, st: 0, total: 25 },
+    ],
     status: {
       label: "Applications closed; examination schedule awaited",
       tone: "violet",
       nextAction: "Track the High Court recruitment diary for the examination and admit-card notice",
-      detail: "The court diary lists the combined recruitment advertisement on 1 June 2026 with a 21 June closing date. The diary carried no examination date, admit-card notice or result for this advertisement as of 29 August 2026.",
+      detail: "The court diary lists the combined recruitment advertisement on 1 June 2026 with a 21 June closing date. The advertisement says the examination date, time and venue will be intimated through online admit cards only; neither the diary nor the application portal it names carried an examination date, admit card or result when re-read on 3 October 2026.",
     },
     summary: "Combined court-establishment recruitment for Review Officer, Assistant Review Officer and Computer Assistant posts.",
     qualification: "Post-specific graduate, computer and typing qualifications in the 2026 advertisement.",
@@ -535,11 +554,25 @@ export const exams: Exam[] = [
     ],
     selectionStages: ["Written/computer-based examination", "Computer/typing stage where prescribed", "Document verification and final selection"],
     syllabus: ["Post-wise examination scheme and computer/typing standard in the official advertisement."],
-    officialLinks: [{ label: "Official recruitment diary", url: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7&page=3", type: "notice" }],
+    officialLinks: [
+      {
+        label: "Advertisement No. 02/RO/ARO/Computer Assistant/2026 dated 1 Jun 2026",
+        url: "https://www.allahabadhighcourt.in/event/event_25859_01-06-2026.pdf",
+        type: "notice",
+      },
+      { label: "Official recruitment diary", url: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7", type: "website" },
+    ],
     sourceTitle: "Advertisement for Review Officer / Assistant Review Officer / Computer Assistant Examination 2026",
-    sourceUrl: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7&page=3",
-    sourcePublished: "Advertisement 1 Jun 2026; recruitment diary rechecked 29 Aug 2026, no examination or admit-card entry posted",
-    lastVerified: "29 Aug 2026, 15:24 IST",
+    sourceUrl: "https://www.allahabadhighcourt.in/event/event_25859_01-06-2026.pdf",
+    sourcePublished: "Advertisement 1 Jun 2026; recruitment diary re-read 3 Oct 2026, no examination or admit-card entry posted",
+    lastVerified: "3 Oct 2026, 21:50 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Added the vacancies published in the 1 Jun 2026 advertisement — a minimum of 138 Review Officer, 380 Assistant Review Officer and 25 Computer Assistant posts, which may increase or decrease — with the category rows of the detailed advertisement. The examination date is still not announced.",
+      },
+    ],
     keywords: ["UP High Court RO ARO", "review officer Allahabad", "assistant review officer UP", "computer assistant Allahabad HC"],
   }),
   exam({
@@ -561,11 +594,11 @@ export const exams: Exam[] = [
     examTypes: ["Judiciary & Legal"],
     education: ["Professional degree"],
     status: {
-      label: "2026 departmental cycle in progress",
+      label: "LDCE written exam held 1–2 Aug 2026; result awaited",
       tone: "violet",
-      nextAction: "Eligible judicial officers should follow the official pattern, syllabus and examination notice",
+      nextAction: "Officers who sat the LDCE should watch the High Court recruitment diary for the result",
       detail:
-        "The High Court issued the LDCE notice on 20 May and the pattern/syllabus/application instructions on 21 May 2026, with a 5 June closing date. No LDCE examination date or result had been posted to the court diary as of 29 August 2026. The separate regular-promotion Suitability Test for U.P. Higher Judicial Service-2023, notified on 14 August 2026, is a different stream and is tracked as its own record.",
+        "The LDCE notice of 20 May and the instructions of 21 May 2026 set a 5 June closing date. Notice No. 17 of 12 May 2026 had fixed the Main Written Examination of Direct Recruitment and the LDCE of UPHJS-2023 for 1 and 2 August 2026; lists of officers provisionally permitted to appear followed on 9 and 13 July, and Notice No. 102 of 14 July released admit cards from 20 July for the examination at Prayagraj. The recruitment diary showed no postponement and no LDCE result when re-read on 3 October 2026. The separate regular-promotion Suitability Test of the same cycle is tracked as its own record.",
     },
     summary: "Limited departmental competitive promotion route into the U.P. Higher Judicial Service for eligible serving judicial officers.",
     qualification: "Serving Uttar Pradesh judicial officers meeting the qualifying-service and other rules for the LDCE stream.",
@@ -575,7 +608,22 @@ export const exams: Exam[] = [
       { label: "LDCE notice", date: "2026-05-20", displayDate: "20 May 2026", state: "completed" },
       { label: "Pattern / application instructions", date: "2026-05-21", displayDate: "21 May 2026", state: "completed" },
       { label: "Applications closed", date: "2026-06-05", displayDate: "5 Jun 2026", state: "completed" },
-      { label: "Examination / result", displayDate: "Exact official date awaited", state: "current" },
+      { label: "List of officers provisionally permitted to appear", date: "2026-07-09", displayDate: "9 Jul 2026 (revised 13 Jul)", state: "completed" },
+      {
+        label: "Admit cards on the Court's website",
+        date: "2026-07-20",
+        displayDate: "20 Jul 2026",
+        state: "completed",
+        note: "Notice No. 102 of 14 Jul 2026; duplicate admit cards from 28 Jul 2026 until the morning of 1 Aug 2026.",
+      },
+      {
+        label: "LDCE written examination (with the Direct Recruitment mains)",
+        date: "2026-08-01",
+        displayDate: "1–2 Aug 2026",
+        state: "completed",
+        note: "Held as notified at Prayagraj; the recruitment diary carried no postponement when re-read on 3 Oct 2026.",
+      },
+      { label: "LDCE result", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
       "Notice No. 27/S & A Cell/2026 dated 20 May 2026 opens the Limited Departmental Competitive Examination of U.P. Higher Judicial Service, 2023 to serving judicial officers only; there is no direct-from-Bar route in this stream.",
@@ -586,11 +634,35 @@ export const exams: Exam[] = [
     ],
     selectionStages: ["Limited departmental competitive written examination", "Assessment under the U.P. HJS rules", "Select list and appointment/promotion"],
     syllabus: ["Pattern and syllabus published by the High Court on 21 May 2026."],
-    officialLinks: [{ label: "Official recruitment diary", url: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7&page=3", type: "notice" }],
-    sourceTitle: "U.P. Higher Judicial Service 2023 LDCE notices and instructions",
-    sourceUrl: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7&page=3",
-    sourcePublished: "LDCE notices 20–21 May 2026; recruitment diary rechecked 29 Aug 2026, no LDCE examination date posted",
-    lastVerified: "29 Aug 2026, 15:26 IST",
+    officialLinks: [
+      {
+        label: "Notice No. 17 of 12 May 2026 — Direct Recruitment mains and LDCE timetable, 1 and 2 Aug 2026",
+        url: "https://www.allahabadhighcourt.in/event/event_25649_12-05-2026.pdf",
+        type: "calendar",
+      },
+      {
+        label: "Notice No. 102 of 14 Jul 2026 — admit cards for the Direct Recruitment mains and LDCE on 1 and 2 Aug 2026",
+        url: "https://www.allahabadhighcourt.in/event/event_26212_14-07-2026.pdf",
+        type: "notice",
+      },
+      {
+        label: "Revised list of officers provisionally permitted to appear in the LDCE (13 Jul 2026)",
+        url: "https://www.allahabadhighcourt.in/event/event_26196_13-07-2026.pdf",
+        type: "result",
+      },
+      { label: "Official recruitment diary", url: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7", type: "website" },
+    ],
+    sourceTitle: "Notice No. 102/S & A Cell/2026 dated 14 July 2026 — Main Written Examination of Direct Recruitment and LDCE, UPHJS-2023",
+    sourceUrl: "https://www.allahabadhighcourt.in/event/event_26212_14-07-2026.pdf",
+    sourcePublished: "Notice No. 102 of 14 Jul 2026, after the LDCE notices of 20–21 May and the permitted-officer lists of 9 and 13 Jul 2026; recruitment diary re-read 3 Oct 2026, no postponement or LDCE result",
+    lastVerified: "3 Oct 2026, 21:50 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Correction: the LDCE date had been published. Notice No. 17 of 12 May 2026 fixed the Main Written Examination of Direct Recruitment and the LDCE of UPHJS-2023 for 1 and 2 Aug 2026, and Notice No. 102 of 14 Jul 2026 released admit cards from 20 Jul for the examination at Prayagraj. The diary shows no postponement, so the examination is marked held; the LDCE result is awaited.",
+      },
+    ],
     keywords: ["UP HJS LDCE", "departmental judiciary exam UP", "Allahabad higher judicial service promotion"],
   }),
   exam({
@@ -615,11 +687,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "The notification published on 14 August 2026 states the number of vacancies as 180 (One Hundred Eighty) for regular promotion to the U.P. Higher Judicial Service-2023 by way of the Suitability Test. Four per cent of the regular-promotion posts are reserved for Persons with Benchmark Disabilities under rule 7 of the UPHJS Rules, 1975; no other category break-up is published.",
     status: {
-      label: "Applications closed; written test on 27 Sep 2026",
-      tone: "blue",
-      nextAction: "Applicants must ensure the hard copy of their judgments reaches the Court by 10 September 2026, then download the admit card from the Court's website from 21 September 2026",
+      label: "Written test held 27 Sep 2026; result awaited",
+      tone: "violet",
+      nextAction: "Newly admitted officers who sat the test must send hard copies of five contested judgments to reach the Court by 9 October 2026; all candidates should watch the recruitment diary for the result and viva-voce",
       detail:
-        "The High Court published the notification, instructions, eligible-officer list and pattern for the U.P. Higher Judicial Service-2023 Suitability Test on 14 August 2026. Online application forms opened on 17 August and closed on 31 August 2026; the recruitment diary, re-read on 9 September 2026, carries no extension of that date. The next steps are the hard copies of judgments reaching the Court by 10 September 2026, admit cards on the Court's website from 21 September 2026, duplicate admit cards from the office on 24 September 2026 and the written examination on 27 September 2026, all unchanged. The diary also carries a further notice dated 1 September 2026 titled \"Notice regarding criteria regarding allocation of marks for Suitability Test of UPHJS-2023\". This is the regular-promotion stream and is separate from the Limited Departmental Competitive Examination of the same 2023 cycle.",
+        "The written examination of the U.P. Higher Judicial Service-2023 Suitability Test was held on 27 September 2026 at Prayagraj, as fixed by Notice No. 161 of 19 September 2026, with admit cards from 21 September. Notice No. 163 of 25 September admitted the U.P. PCS (J) 2015 batch and Notice No. 167 of 26 September admitted Civil Judges (Senior Division) with five years' service as on 4 July 2025, both provisionally under the order of 25 September 2026 in Writ-A No. 14469 of 2026 (annexed to Notice No. 166). Notice No. 169 of 1 October asks these newly eligible officers who sat the test to send hard copies of five contested judgments through the District Judge by special messenger by 9 October 2026. No result or viva-voce date was posted when the recruitment diary was re-read on 3 October 2026. The LDCE of the same cycle is a separate record.",
     },
     summary:
       "Regular promotion of serving Civil Judges (Senior Division) of the Uttar Pradesh Nyayik Sewa into the U.P. Higher Judicial Service through a Suitability Test held by the High Court of Judicature at Allahabad.",
@@ -637,18 +709,58 @@ export const exams: Exam[] = [
         displayDate: "1 Sep 2026",
         state: "completed",
       },
-      { label: "Last date for receiving the hard copy of judgments in the Court", date: "2026-09-10", displayDate: "10 Sep 2026", state: "scheduled" },
-      { label: "Admit card available on the Court's website", date: "2026-09-21", displayDate: "21 Sep 2026", state: "scheduled" },
-      { label: "Duplicate admit cards issued from the office", date: "2026-09-24", displayDate: "24 Sep 2026", state: "scheduled" },
-      { label: "Written examination of the Suitability Test", date: "2026-09-27", displayDate: "27 Sep 2026", state: "scheduled" },
+      {
+        label: "Hard copy of judgments to reach the Court",
+        date: "2026-09-10",
+        displayDate: "10 Sep 2026",
+        state: "completed",
+        note: "Closed as notified; no extension on the recruitment diary when re-read on 3 Oct 2026. The 9 Oct 2026 date applies only to newly eligible officers.",
+      },
+      {
+        label: "Admit card available on the Court's website",
+        date: "2026-09-21",
+        displayDate: "21 Sep 2026",
+        state: "completed",
+        note: "Issued as notified; Notice No. 161 of 19 Sep 2026 confirmed the date.",
+      },
+      {
+        label: "Duplicate admit cards issued from the office",
+        date: "2026-09-24",
+        displayDate: "24 Sep 2026",
+        state: "completed",
+        note: "Issued from 24 Sep 2026 until 10 a.m. on 27 Sep 2026 under Notice No. 161.",
+      },
+      {
+        label: "Additional officers provisionally admitted (Notices 163 and 167)",
+        date: "2026-09-25",
+        displayDate: "25–26 Sep 2026",
+        state: "completed",
+        note: "No. 163 admitted the U.P. PCS (J) 2015 batch and No. 167 officers with five years' service as on 4 Jul 2025, under the order of 25 Sep 2026 in Writ-A No. 14469 of 2026; subject to the pending petitions.",
+      },
+      {
+        label: "Written examination of the Suitability Test",
+        date: "2026-09-27",
+        displayDate: "27 Sep 2026",
+        state: "completed",
+        note: "Held at Prayagraj, 11 a.m. to 1 p.m.; Notice No. 169 of 1 Oct 2026 refers to the written examination held on that date.",
+      },
+      {
+        label: "Hard copies of five contested judgments due from newly eligible officers",
+        date: "2026-10-09",
+        displayDate: "9 Oct 2026",
+        state: "scheduled",
+        note: "Notice No. 169 of 1 Oct 2026: sent through the District & Sessions Judge by special messenger only.",
+      },
+      { label: "Result and viva-voce", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
       "The notification published on 14 August 2026 opens the regular promotion to the U.P. Higher Judicial Service-2023 by way of Suitability Test only to serving judicial officers; there is no route from the Bar in this stream.",
       "An officer must have qualifying service of at least 05 years in the cadre of Civil Judge (Senior Division) of the Uttar Pradesh Nyayik Sewa as on 31 December 2024.",
+      "Under the order of 25 September 2026 in Writ-A No. 14469 of 2026, Notice No. 163 provisionally admitted the U.P. PCS (J) 2015 batch and Notice No. 167 officers with five years' qualifying service as on 4 July 2025, subject to the final outcome of the pending petitions.",
       "The High Court published a list of eligible officers along with the notification, and separate documents carrying the instructions and the 'how to apply' procedure.",
       "No fee is payable for the Suitability Test.",
       "Four per cent reservation is provided to Persons with Benchmark Disabilities among the candidates of regular promotion by way of Suitability Test, subject to the rule of reservation for Persons with Benchmark Disabilities under rule 7 of the UPHJS Rules, 1975.",
-      "Every candidate must send the hard copy of the judgments relied upon to reach the Court by 10 September 2026, because the quality of judgments carries separate weightage in the final list.",
+      "Hard copies of the judgments relied upon had to reach the Court by 10 September 2026, as their quality carries separate weightage in the final list; officers admitted under Notices No. 163 and 167 send theirs by 9 October 2026.",
     ],
     selectionStages: [
       "Written Examination of the Suitability Test under Rule 20(1) of the U.P. Higher Judicial Service Rules, 1975 — one subjective paper of two hours, all questions compulsory",
@@ -683,13 +795,28 @@ export const exams: Exam[] = [
         url: "https://www.allahabadhighcourt.in/event/event_26729_01-09-2026.pdf",
         type: "notice",
       },
+      {
+        label: "Notice No. 161 of 19 Sep 2026 — written examination on 27 Sep 2026 and admit cards",
+        url: "https://www.allahabadhighcourt.in/event/event_26920_19-09-2026.pdf",
+        type: "notice",
+      },
+      {
+        label: "Notice No. 167 of 26 Sep 2026 — officers with five years' service as on 4 Jul 2025 admitted provisionally",
+        url: "https://www.allahabadhighcourt.in/event/event_27062_26-09-2026.pdf",
+        type: "notice",
+      },
+      {
+        label: "Notice No. 169 of 1 Oct 2026 — contested judgments due from newly eligible officers by 9 Oct 2026",
+        url: "https://www.allahabadhighcourt.in/event/event_27132_01-10-2026.pdf",
+        type: "notice",
+      },
       { label: "Official recruitment diary", url: "https://www.allahabadhighcourt.in/calendar/itemWiseList.jsp?group=7", type: "website" },
     ],
-    sourceTitle: "U.P. Higher Judicial Service-2023, Regular Promotion by way of Suitability Test — notification published 14 August 2026",
-    sourceUrl: "https://www.allahabadhighcourt.in/event/event_26612_14-08-2026.pdf",
+    sourceTitle: "Notice No. 169/S & A Cell/2026 dated 1 October 2026 — Suitability Test of U.P. Higher Judicial Service-2023",
+    sourceUrl: "https://www.allahabadhighcourt.in/event/event_27132_01-10-2026.pdf",
     sourcePublished:
-      "Notification, instructions and pattern published on the recruitment diary 14 Aug 2026; diary re-read 9 Sep 2026, which also lists a marks-allocation notice of 1 Sep 2026 and no extension of the 31 Aug 2026 closing date",
-    lastVerified: "9 Sep 2026, 17:22 IST",
+      "Notice No. 169 of 1 Oct 2026, after Notices No. 161 (19 Sep), 163 and 166 (25 Sep) and 167 (26 Sep 2026); recruitment diary re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:50 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -700,6 +827,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "Applications closed on 31 Aug 2026 and the recruitment diary shows no extension, so the record moves off the applications-open status. The remaining dates stand: judgments in hard copy by 10 Sep 2026, admit cards from 21 Sep 2026 and the written examination on 27 Sep 2026. The diary added a notice dated 1 Sep 2026 on the criteria for allocation of marks for the Suitability Test.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Written test held on 27 Sep 2026 at Prayagraj, as fixed by Notice No. 161 of 19 Sep 2026. Under the High Court's order of 25 Sep 2026 in Writ-A No. 14469 of 2026 (annexed to Notice No. 166), Notice No. 163 provisionally admitted the U.P. PCS (J) 2015 batch and Notice No. 167 Civil Judges (Senior Division) with five years' service as on 4 Jul 2025; Notice No. 169 of 1 Oct 2026 asks those officers to send hard copies of five contested judgments by 9 Oct 2026. The result is awaited.",
       },
     ],
     keywords: [
@@ -736,7 +868,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Track the Court's District Judge (Entry Level), Direct from Bar-2026 page for the eligible list, admit card and examination date",
       detail:
-        "Advertisement BSJS/1/2026 was dated 30 March 2026 and the application window ran from 16 April to 15 May, extended to 25 May 2026. A notice dated 17 July 2026 reopened the portal for already-registered candidates only, from 21 to 28 July 2026 for correcting the form and paying the fee and up to 30 July 2026 for uploading documents; the same notice rejected requests to refund the examination fee under clause 10(b) of the advertisement. No eligible list, admit card or examination date has followed.",
+        "Advertisement BSJS/1/2026 was dated 30 March 2026 and the application window ran from 16 April to 15 May, extended to 25 May 2026. A notice dated 17 July 2026 reopened the portal for already-registered candidates only, from 21 to 28 July 2026 for correcting the form and paying the fee and up to 30 July 2026 for uploading documents; the same notice rejected requests to refund the examination fee under clause 10(b) of the advertisement. No eligible list, admit card or examination date had followed when the recruitment notices were re-read on 3 October 2026.",
     },
     summary: "Direct-from-Bar recruitment to entry-level District Judge posts in the Bihar Superior Judicial Service.",
     qualification: "Advocate/practice and other eligibility conditions under Advertisement BSJS/1/2026.",
@@ -785,8 +917,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "District Judge (Entry Level), Direct from Bar Exam-2026 — notice dated 17 July 2026",
     sourceUrl: "https://patnahighcourt.gov.in/Exam/BSJS2026/Notice_17072026.pdf",
-    sourcePublished: "Advertisement 30 Mar 2026; extension notice 14 May 2026; portal-reopening notice 17 Jul 2026",
-    lastVerified: "29 Aug 2026, 15:30 IST",
+    sourcePublished: "Advertisement 30 Mar 2026; extension notice 14 May 2026; portal-reopening notice 17 Jul 2026; recruitment notices re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 13:44 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -880,11 +1012,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "Advertisement No. RC/B/1320/2026 (LA), dated 29 June 2026, invites online applications for 65 Legal Assistant posts. The advertisement states that the reservation policy does not apply because the appointments are contractual, so no category break-up is published.",
     status: {
-      label: "Written test held 9 August 2026; viva-voce awaited",
+      label: "Viva-voce held 21–25 Sep 2026; select list awaited",
       tone: "violet",
-      nextAction: "Track the High Court recruitment page for the written-test result and the viva-voce call letter",
+      nextAction: "Candidates who attended the viva-voce should watch the High Court results page for the select list",
       detail:
-        "Advertisement No. RC/B/1320/2026 (LA), dated 29 June 2026, closed on 20 July 2026. The High Court published the provisional list of candidates for the written test on 31 July 2026 and held the objective (MCQ) written test on 9 August 2026 as scheduled. Neither the current-openings page nor the results page carried a written-test result, viva-voce call letter or postponement notice as of 29 August 2026, so the viva-voce date is still awaited.",
+        "Advertisement No. RC/B/1320/2026 (LA), dated 29 June 2026, closed on 20 July 2026, and the objective (MCQ) written test was held on 9 August 2026. A list dated 3 September 2026 called 103 candidates who secured at least 50 per cent in the written test to the viva-voce, scheduled from 21 to 25 September 2026 at the Recruitment Cell, High Court of Gujarat, Sola, Ahmedabad. The current-openings page carried no postponement and the results page no select list when both were re-read on 3 October 2026.",
     },
     summary:
       "Contractual legal-research engagement of 65 fresh law graduates as Legal Assistants on the establishment of the High Court of Gujarat.",
@@ -898,7 +1030,15 @@ export const exams: Exam[] = [
       { label: "Online applications closed", date: "2026-07-20", displayDate: "20 Jul 2026", state: "completed" },
       { label: "Provisional list for the written test", date: "2026-07-31", displayDate: "31 Jul 2026", state: "completed" },
       { label: "Written test (objective type — MCQs)", date: "2026-08-09", displayDate: "9 Aug 2026 (Sunday)", state: "completed" },
-      { label: "Viva-voce test", displayDate: "Tentatively August/September 2026; exact date awaited", state: "tentative" },
+      { label: "Written-test result: 103 candidates called for viva-voce", date: "2026-09-03", displayDate: "3 Sep 2026", state: "completed" },
+      {
+        label: "Viva-voce test",
+        date: "2026-09-21",
+        displayDate: "21–25 Sep 2026",
+        state: "completed",
+        note: "Held as scheduled at the Recruitment Cell, High Court of Gujarat, Sola, Ahmedabad; no postponement on the current-openings page when re-read on 3 Oct 2026.",
+      },
+      { label: "Select list", displayDate: "Awaited", state: "current" },
     ],
     eligibility: [
       "Advertisement No. RC/B/1320/2026 (LA) fixes the age limit at not more than 26 years on the last date for the online application, 20 July 2026.",
@@ -921,6 +1061,11 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       {
+        label: "List of 103 candidates called for the viva-voce on 21–25 Sep 2026 (dated 3 Sep 2026)",
+        url: "https://gujarathighcourt.nic.in/hccms/sites/default/files/Recruitment_files/128_202627_2026_9_3_723.pdf",
+        type: "result",
+      },
+      {
         label: "Detailed advertisement — Legal Assistant, No. RC/B/1320/2026 (LA)",
         url: "https://gujarathighcourt.nic.in/hccms/sites/default/files/Recruitment_files/999_999_2026_6_29_645.pdf",
         type: "notice",
@@ -931,17 +1076,23 @@ export const exams: Exam[] = [
         type: "result",
       },
       { label: "Official Gujarat High Court current openings", url: "https://gujarathighcourt.nic.in/currentopenings", type: "website" },
+      { label: "Gujarat High Court recruitment results", url: "https://gujarathighcourt.nic.in/results", type: "result" },
     ],
-    sourceTitle: "Detailed advertisement for Legal Assistant, No. RC/B/1320/2026 (LA)",
-    sourceUrl: "https://gujarathighcourt.nic.in/hccms/sites/default/files/Recruitment_files/999_999_2026_6_29_645.pdf",
+    sourceTitle: "List of candidates called for the viva-voce test, No. RC/B/1320/2026 (LA) — dated 3 September 2026",
+    sourceUrl: "https://gujarathighcourt.nic.in/hccms/sites/default/files/Recruitment_files/128_202627_2026_9_3_723.pdf",
     sourcePublished:
-      "Advertisement 29 Jun 2026; provisional written-test list 31 Jul 2026; current-openings and results pages rechecked 29 Aug 2026, no result or viva-voce notice posted yet",
-    lastVerified: "29 Aug 2026, 15:36 IST",
+      "Viva-voce call list dated 3 Sep 2026; current-openings and results pages re-read 3 Oct 2026, no postponement or select list posted",
+    lastVerified: "3 Oct 2026, 13:55 IST",
     changeLog: [
       {
         date: "2026-08-10",
         displayDate: "10 Aug 2026",
         text: "Written test held 9 Aug 2026 as originally scheduled; the High Court recruitment page carried no postponement or result notice. Marked the written-test event completed and moved status from written-test-scheduled (blue) to viva-voce-awaited (violet) rather than leaving a stale pre-test claim.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Written-test result and viva-voce. A list dated 3 Sep 2026 called 103 candidates who secured at least 50 per cent in the 9 Aug 2026 written test to the viva-voce, scheduled from 21 to 25 Sep 2026 at Sola, Ahmedabad. No postponement was posted, so the viva-voce is marked held; the select list is awaited.",
       },
     ],
     keywords: [
@@ -952,7 +1103,7 @@ export const exams: Exam[] = [
       "Gujarat High Court contractual law graduate",
     ],
   }),
-  listedExam({
+  exam({
     slug: "bombay-high-court-district-judge-nomination-2025",
     title: "Bombay High Court District Judge by Nomination Recruitment 2025",
     shortTitle: "Bombay HC District Judge 2025",
@@ -963,23 +1114,91 @@ export const exams: Exam[] = [
     state: "Maharashtra",
     stateCode: "MH",
     regionCodes: ["MH"],
-    cycle: "2025 recruitment, active in 2026",
+    cycle: "Selection Process 2025 (Press Advertisement No. A.5504/2025)",
     year: 2025,
+    verification: "verified",
+    notificationNumber: "A.5504/2025",
     sector: "Higher judiciary",
     examTypes: ["Judiciary & Legal"],
     education: ["Professional degree"],
+    vacancies: 89,
+    vacancyLabel: "89 vacancies",
+    vacancyNote:
+      "Press Advertisement No. A.5504/2025 dated 30 January 2026 notifies 89 vacancies for District Judge by Nomination (25%) and says the number may vary, with any change notified only on the High Court's website. No category break-up is asserted here.",
     status: {
-      label: "Eligibility-list stage active",
+      label: "Main written exam held; result awaited",
       tone: "violet",
-      nextAction: "Check the court recruitment page for the preliminary examination notice and candidate list",
-      detail: "The official page lists the 2025 District Judge by Nomination recruitment, a 2026 addendum, and provisional eligible/ineligible lists. Exact later dates are not inferred.",
+      nextAction: "Candidates who sat the main written examination should watch the High Court's recruitment page for the result and the viva-voce call",
+      detail:
+        "Press Advertisement No. A.5504/2025 (30 January 2026) took online applications until 17 February 2026. The preliminary written examination was held on 10 May 2026, and after a revised answer key the High Court listed the candidates and judicial officers eligible for the main written examination, held at Mumbai on 27 and 28 June 2026 under its venue notice of 16 June 2026. The cycle's page on the High Court's new website (bombayhighcourt.gov.in), last updated 18 June 2026, showed no postponement, main-examination result or viva-voce schedule when re-read on 3 Oct 2026.",
     },
-    summary: "Direct nomination recruitment to District Judge posts in Maharashtra for eligible advocates/in-service candidates under the advertisement.",
-    officialLinks: [{ label: "Official Bombay High Court recruitments", url: "https://bombayhighcourt.nic.in/recruitment.php", type: "notice" }],
-    sourceTitle: "Recruitment for District Judge by Nomination 2025 — current eligibility notices",
-    sourceUrl: "https://bombayhighcourt.nic.in/recruitment.php",
-    sourcePublished: "Recruitment page and 2026 eligibility notices checked 4 Aug 2026",
-    lastVerified: "4 Aug 2026, 18:15 IST",
+    summary: "Direct nomination recruitment (25% quota) of District Judges in Maharashtra from advocates, public prosecutors and serving judicial officers with seven years' standing — 89 posts in the 2025 selection process.",
+    age: "At least 35 and below 45 years on 30 January 2026, the date of the advertisement, or below 48 for persons with disability and candidates from backward communities. An Addendum of 26 March 2026 covers in-service M.J.S. judicial officers who were age-barred on that date, and SEBC relaxations are subject to PIL No. 30 of 2024.",
+    qualification: "A law degree and, on 30 January 2026, at least seven years' practice as an Advocate in the Bombay High Court or its subordinate courts or service as a Maharashtra Judicial Service officer — counting time as a Public Prosecutor, Government Advocate, Judicial Officer or Law Clerk — or seven years as a Public Prosecutor or Government Advocate; plus sufficient knowledge of Marathi.",
+    fee: "₹500 for candidates from communities recognised as backward, persons with disability and transgender candidates, and ₹1,000 for others, paid online through SBCollect; the fee is non-refundable (Press Advertisement No. A.5504/2025).",
+    pay: "₹1,44,840–1,94,660 plus dearness and other admissible allowances, with two years' probation on appointment (Press Advertisement No. A.5504/2025).",
+    timeline: [
+      { label: "Press Advertisement No. A.5504/2025 published; online applications opened", date: "2026-01-30", displayDate: "30 Jan 2026", state: "completed" },
+      {
+        label: "Last date for online applications",
+        date: "2026-02-17",
+        displayDate: "17 Feb 2026, 4:30 p.m.",
+        state: "completed",
+        note: "Closed as notified; no extension on the High Court's recruitment page when re-read on 3 Oct 2026",
+      },
+      { label: "Documents to reach the Registrar (Legal & Research)", date: "2026-02-25", displayDate: "25 Feb 2026", state: "completed" },
+      { label: "Addendum for age-barred in-service M.J.S. officers", date: "2026-03-26", displayDate: "26 Mar 2026", state: "completed" },
+      {
+        label: "Preliminary written examination",
+        date: "2026-05-10",
+        displayDate: "10 May 2026",
+        state: "completed",
+        note: "Held on 10 May 2026, as the High Court's key-of-answers notice of that day records",
+      },
+      {
+        label: "Main written examination (Papers I and II)",
+        date: "2026-06-27",
+        displayDate: "27–28 Jun 2026",
+        state: "completed",
+        note: "Held as notified at Mumbai; the High Court published no postponement when re-read on 3 Oct 2026",
+      },
+      { label: "Main written result and viva-voce", displayDate: "Awaited", state: "current" },
+    ],
+    eligibility: [
+      "Open to Indian citizens holding a law degree under the Maharashtra Judicial Service Rules, 2008 and the High Court's approved amendments, for District Judge posts filled by nomination (25%).",
+      "Seven years' standing on 30 January 2026 as an Advocate in the Bombay High Court or its subordinate courts, as a Maharashtra Judicial Service officer, or as a Public Prosecutor or Government Advocate, counted as the advertisement sets out.",
+      "Age 35 to below 45 on 30 January 2026 (below 48 for persons with disability and backward communities), and enough Marathi to speak, read, write and translate to and from English.",
+      "Confirm documents, disqualifications and category rules in Press Advertisement No. A.5504/2025 and its Addendum of 26 March 2026.",
+    ],
+    selectionStages: [
+      "Preliminary written examination of objective multiple-choice questions, used to shortlist about ten candidates per vacancy for the main examination",
+      "Main written examination — two papers of 100 marks each, three hours each, in English",
+      "Viva-voce of 50 marks for candidates with at least 50 per cent in each main paper (45 per cent for backward-community and disabled candidates), called at about three per vacancy",
+      "Selection on the cumulative marks of the main written examination and viva-voce, with two years' probation",
+    ],
+    syllabus: [
+      "Main written examination — two papers on Civil Law and Criminal Law, 100 marks and three hours each (High Court notice of 16 June 2026).",
+      "Use the advertisement and the High Court's instructions to candidates for the detailed scheme; the preliminary examination marks are used only for shortlisting.",
+    ],
+    officialLinks: [
+      {
+        label: "Recruitment for District Judge, by Nomination - 2025 — Bombay High Court",
+        url: "https://bombayhighcourt.gov.in/bhc/view-notification/eyJpdiI6ImcvbUlwWXdUT1ptYTF4ODc0QmhpaFE9PSIsInZhbHVlIjoibFVGVkVESkVkVjRCbkRwR1krbUdkdz09IiwibWFjIjoiZmI4YzBlYTY1YTZlZDUxMzAwOGMwMmYwOGRhNjBjMTcwY2M0Mjc2MTc2OGU0ZGU5ODQwZGIyZDM4MDMyN2M3MSIsInRhZyI6IiJ9",
+        type: "notice",
+      },
+      { label: "Bombay High Court — official website", url: "https://bombayhighcourt.gov.in/bhc/", type: "website" },
+    ],
+    sourceTitle: "Bombay High Court recruitment page — District Judge, by Nomination - 2025 (Press Advertisement No. A.5504/2025 and later notices)",
+    sourceUrl: "https://bombayhighcourt.gov.in/bhc/view-notification/eyJpdiI6ImcvbUlwWXdUT1ptYTF4ODc0QmhpaFE9PSIsInZhbHVlIjoibFVGVkVESkVkVjRCbkRwR1krbUdkdz09IiwibWFjIjoiZmI4YzBlYTY1YTZlZDUxMzAwOGMwMmYwOGRhNjBjMTcwY2M0Mjc2MTc2OGU0ZGU5ODQwZGIyZDM4MDMyN2M3MSIsInRhZyI6IiJ9",
+    sourcePublished: "Advertisement 30 Jan 2026; main written examination venue notice 16 Jun 2026; cycle page (updated 18 Jun 2026) re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:52 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Moved to the High Court's new website and filled in the cycle from its notices: 89 vacancies under Press Advertisement No. A.5504/2025, preliminary examination held 10 May 2026 and main written examination 27–28 Jun 2026; the result and viva-voce are awaited.",
+      },
+    ],
     keywords: ["Maharashtra district judge", "Bombay HC nomination", "district judge direct bar Maharashtra"],
   }),
   exam({
@@ -1008,7 +1227,7 @@ export const exams: Exam[] = [
       label: "Applications closed; preliminary examination date awaited",
       tone: "violet",
       nextAction: "Watch judiciary.karnataka.gov.in for the preliminary examination date and admit card under HCRB/CJR-9/2026.",
-      detail: "Notification HCRB/CJR-9/2026 of 16 Apr 2026 invites applications for 90 posts (15 fresh, 75 backlog) and fixes 15 May 2026 as the last date for the online application and fee. That window has closed and no preliminary examination date had been published on the High Court's recruitment notice board as of 29 August 2026.",
+      detail: "Notification HCRB/CJR-9/2026 of 16 Apr 2026 invites applications for 90 posts (15 fresh, 75 backlog) and fixes 15 May 2026 as the last date for the online application and fee. That window has closed and no preliminary examination date had been published when the High Court's recruitment notice board and notification listing were re-read on 3 October 2026.",
     },
     summary: "Direct recruitment of 90 Civil Judges to the Karnataka State Judicial Service under Notification HCRB/CJR-09/2026.",
     timeline: [
@@ -1034,8 +1253,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Civil Judge Recruitment 2026 — Notification HCRB/CJR-09/2026",
     sourceUrl: "https://judiciary.karnataka.gov.in/recsubnotify.php?p=1188&stateNM=",
-    sourcePublished: "Karnataka Gazette notification No. HCRB/CJR-9/2026 dated 16 Apr 2026; recruitment notice board rechecked 29 Aug 2026, no preliminary examination date posted",
-    lastVerified: "29 Aug 2026, 15:38 IST",
+    sourcePublished: "Karnataka Gazette notification No. HCRB/CJR-9/2026 dated 16 Apr 2026; recruitment notice board re-read 3 Oct 2026, no preliminary examination date posted",
+    lastVerified: "3 Oct 2026, 14:05 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -1079,11 +1298,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "Notification No. GOB(I) 47(1)/2026 dated 28 August 2026 invites applications for filling up 79 posts under the 25 per cent LDCE category of the District Judge cadre. The notification adds that the number of posts may get altered in accordance with the outcome of the Supreme Court's decision in Writ Petition (Civil) No. 1022/1989, All India Judges' Association v. Union of India. No category break-up is published.",
     status: {
-      label: "Applications close 15 Sep 2026; LDCE on 18 October 2026",
-      tone: "green",
-      nextAction: "Eligible Senior Civil Judges must apply online through judiciary.karnataka.gov.in by 11.59 p.m. on 15 September 2026",
+      label: "LDCE on 18 Oct 2026 at Bengaluru; 240 eligible",
+      tone: "blue",
+      nextAction: "Eligible officers should download the admission card when the High Court posts it and sit the LDCE on 18 October 2026 at the Principal Bench, Bengaluru",
       detail:
-        "Notification No. GOB(I) 47(1)/2026, issued by the Registrar General on 28 August 2026, invites applications from Senior Civil Judges for 79 District Judge posts under the 25 per cent Limited Departmental Competitive Examination category. Applications are made online on the High Court website and close at 11.59 p.m. on 15 September 2026. An intimation dated 8 September 2026 under the same notification number, read on 9 September 2026, fixes the Limited Departmental Competitive Examination for Sunday, 18 October 2026 from 10.30 a.m. to 1.30 p.m.; the venue is to be intimated in due course.",
+        "Notification No. GOB(I) 47(1)/2026 of 28 August 2026 invited applications from Senior Civil Judges for 79 District Judge posts under the 25 per cent LDCE category; applications closed at 11.59 p.m. on 15 September 2026 and the listing shows no extension. An intimation dated 1 October 2026 lists 240 eligible applicants and holds the examination, as notified on 8 September, on Sunday, 18 October 2026 from 10.30 a.m. to 1.30 p.m. at the Principal Bench of the High Court of Karnataka at Bengaluru. Admission cards are to be posted for download in due course; none had been posted when the listing was re-read on 3 October 2026.",
     },
     summary:
       "Promotion of serving Senior Civil Judges to the District Judge cadre of the Karnataka State Judicial Service, strictly on merit, through the 25 per cent Limited Departmental Competitive Examination quota.",
@@ -1099,14 +1318,17 @@ export const exams: Exam[] = [
         label: "Last date for the online application",
         date: "2026-09-15",
         displayDate: "15 Sep 2026, 11.59 p.m.",
-        state: "current",
+        state: "completed",
+        note: "Closed as notified; no extension on the High Court's notification listing when re-read on 3 Oct 2026.",
       },
+      { label: "List of 240 eligible applicants and venue (Intimation of 1 Oct 2026)", date: "2026-10-01", displayDate: "1 Oct 2026", state: "completed" },
+      { label: "Admission cards for download", displayDate: "To be announced", state: "tentative" },
       {
         label: "Limited Departmental Competitive Examination",
         date: "2026-10-18",
         displayDate: "18 Oct 2026 (Sunday), 10.30 a.m. to 1.30 p.m.",
         state: "scheduled",
-        note: "The venue will be intimated in due course.",
+        note: "At the Principal Bench of the High Court of Karnataka, Bengaluru (Intimation of 1 Oct 2026).",
       },
     ],
     eligibility: [
@@ -1114,7 +1336,7 @@ export const exams: Exam[] = [
       "An applicant must have put in not less than 3 years of service as a Senior Civil Judge and completed a minimum of 7 years of total service in the cadre of Civil Judge and Senior Civil Judge, and must have attained the age of 35 years, all reckoned as on the date of the notification.",
       "The maximum number of attempts to appear in the LDCE is 3 (three).",
       "The number of posts may get altered in accordance with the outcome of the decision of the Supreme Court in Writ Petition (Civil) No. 1022/1989, All India Judges' Association and others v. Union of India and others.",
-      "Eligible Senior Civil Judges apply online through the High Court website until 11.59 p.m. on 15 September 2026; the notification was circulated to all Principal District and Sessions Judges and Unit Heads for circulation among the Senior Civil Judges in their units.",
+      "Eligible Senior Civil Judges applied online through the High Court website until 11.59 p.m. on 15 September 2026; the notification was circulated to all Principal District and Sessions Judges and Unit Heads for circulation among the Senior Civil Judges in their units.",
     ],
     selectionStages: [
       "Limited Departmental Competitive Examination conducted under Rule 4-B of the Karnataka Judicial Service (Recruitment) (Amendment) Rules, 2025",
@@ -1122,6 +1344,11 @@ export const exams: Exam[] = [
     ],
     syllabus: ["The scheme and syllabus follow Rule 4-B of the Karnataka Judicial Service (Recruitment) (Amendment) Rules, 2025; use the High Court's official examination notice when it is published."],
     officialLinks: [
+      {
+        label: "Intimation dated 1 Oct 2026 — 240 eligible applicants; LDCE on 18 Oct 2026 at the Principal Bench, Bengaluru",
+        url: "https://judiciary.karnataka.gov.in/common_folder/notification/Intimation_01.10.2026_List%20of%20Eligible%20Applicants_Sd-Copy.pdf",
+        type: "notice",
+      },
       {
         label: "Notification No. GOB(I) 47(1)/2026 — 79 District Judge posts under the 25% LDCE category",
         url: "https://judiciary.karnataka.gov.in/common_folder/notification/Notification_28.08.2026_SD.pdf",
@@ -1132,14 +1359,14 @@ export const exams: Exam[] = [
         url: "https://judiciary.karnataka.gov.in/common_folder/notification/Intimation_08.09.2026.pdf",
         type: "calendar",
       },
-      { label: "District Judge LDCE application portal", url: "https://judiciary.karnataka.gov.in/recruitment/hck/djpr/home.php", type: "apply" },
+      { label: "District Judge LDCE candidate portal (applications closed)", url: "https://judiciary.karnataka.gov.in/recruitment/hck/djpr/home.php", type: "website" },
       { label: "Notification listing on the High Court website", url: "https://judiciary.karnataka.gov.in/recsubnotify.php?p=1300&stateNM=", type: "website" },
       { label: "High Court of Karnataka recruitment notices", url: "https://judiciary.karnataka.gov.in/main_notify.php?p=106&stateNM=", type: "website" },
     ],
-    sourceTitle: "Notification No. GOB(I) 47(1)/2026 dated 28 August 2026 — District Judges under the 25% LDCE category",
-    sourceUrl: "https://judiciary.karnataka.gov.in/common_folder/notification/Notification_28.08.2026_SD.pdf",
-    sourcePublished: "Notification 28 Aug 2026; examination-date intimation of 8 Sep 2026 read on the notification listing 9 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:31 IST",
+    sourceTitle: "Intimation No. GOB(I) 47(1)/2026 dated 1 October 2026 — eligible applicants and venue of the District Judge LDCE",
+    sourceUrl: "https://judiciary.karnataka.gov.in/common_folder/notification/Intimation_01.10.2026_List%20of%20Eligible%20Applicants_Sd-Copy.pdf",
+    sourcePublished: "Intimation of 1 Oct 2026, after the notification of 28 Aug and the intimation of 8 Sep 2026; notification listing re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:49 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1150,6 +1377,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "Examination date announced. An intimation dated 8 Sep 2026 under Notification No. GOB(I) 47(1)/2026 fixes the Limited Departmental Competitive Examination for Sunday, 18 Oct 2026 from 10.30 a.m. to 1.30 p.m.; the venue is to be intimated in due course. The 15 Sep 2026 application deadline is unchanged.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Applications closed on 15 Sep 2026 with no extension, so the record moves off the applications-open status. An intimation dated 1 Oct 2026 lists 240 eligible applicants and holds the LDCE on Sunday, 18 Oct 2026 from 10.30 a.m. to 1.30 p.m. at the Principal Bench of the High Court of Karnataka, Bengaluru; admission cards will follow.",
       },
     ],
     keywords: [
@@ -1183,7 +1415,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Check the Madras High Court recruitment portal for the specific notification and stage before applying",
       detail:
-        "The High Court's Centralised Recruitment Cell handles judicial officers in the District Judge and Civil Judge cadres, staff of the subordinate judiciary in Tamil Nadu and Puducherry, and staff of the Madras High Court Service. Read again on 9 September 2026, the portal is still showing later-stage notices rather than a fresh open notification: under Notification No. 171/2025 the Assistant Programmer written examination was held on 6 September 2026 and the proposed key answers for the \"A\" and \"E1\" series were posted on 8 September 2026, following the hall tickets of 7 August 2026 and the document-upload intimation to PwD/PwBD candidates of 17 August 2026; the District Judge (Entry Level) viva-voce marks under Notification No. 1/2023 were published on 12 August 2026. No current vacancy count is asserted here.",
+        "The High Court's Centralised Recruitment Cell handles judicial officers in the District Judge and Civil Judge cadres, staff of the subordinate judiciary in Tamil Nadu and Puducherry, and staff of the Madras High Court Service. Read again on 3 October 2026, the portal is still showing later-stage notices rather than a fresh open notification: under Notification No. 171/2025 the Assistant Programmer written examination of 6 September 2026 was followed by the final key answers on 11 September and the marks on 17 September 2026, when qualified candidates were asked to upload their certificates between 18 and 21 September 2026; its newest item is the law-intern guidelines of 23 September 2026. No current vacancy count is asserted here.",
     },
     summary: "Non-judicial and court-staff recruitment across the Madras High Court Service and Tamil Nadu's district judiciary establishment, run by the High Court's Centralised Recruitment Cell.",
     timeline: [
@@ -1224,8 +1456,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Madras High Court recruitment portal, read with the previous establishment notification No. 56/2018 under the Madras High Court Service Rules, 2015",
     sourceUrl: "https://www.mhc.tn.gov.in/recruitment/",
-    sourcePublished: "Previous establishment notification No. 56/2018; recruitment portal re-read 9 Sep 2026, latest notices are the proposed key answers of 8 Sep 2026 under Notification No. 171/2025",
-    lastVerified: "9 Sep 2026, 17:26 IST",
+    sourcePublished: "Previous establishment notification No. 56/2018; recruitment portal re-read 3 Oct 2026, latest recruitment notices are the marks and certificate-upload call of 17 Sep 2026 under Notification No. 171/2025",
+    lastVerified: "3 Oct 2026, 21:03 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1236,6 +1468,11 @@ export const exams: Exam[] = [
         date: "2026-09-09",
         displayDate: "9 Sep 2026",
         text: "The Assistant Programmer written examination under Notification No. 171/2025 was held on 6 Sep 2026, and the recruitment portal published the proposed key answers for the \"A\" and \"E1\" series on 8 Sep 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "The portal posted the final key answers (11 Sep 2026) and the marks (17 Sep 2026) of the Assistant Programmer written examination under Notification No. 171/2025, with a certificate-upload window of 18 to 21 Sep 2026 for qualified candidates. No fresh open notification is listed.",
       },
     ],
     keywords: [
@@ -1277,7 +1514,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Selected and waitlisted candidates should follow the High Court recruitment portal for the appointment notices",
       detail:
-        "Notification No. 71/2025, dated 6 April 2025, covered Personal Assistant to the Hon'ble Judges, Private Secretary to the Registrar General, Personal Assistant (to the Registrars) and Personal Clerk (to the Deputy Registrars) in the Madras High Court Service. The provisionally selected and waitlisted list was published on 13 July 2026 and certificate verification was held on 27 July 2026. The recruitment portal carried no further notice for this notification as of 29 August 2026.",
+        "Notification No. 71/2025, dated 6 April 2025, covered Personal Assistant to the Hon'ble Judges, Private Secretary to the Registrar General, Personal Assistant (to the Registrars) and Personal Clerk (to the Deputy Registrars) in the Madras High Court Service. The provisionally selected and waitlisted list was published on 13 July 2026 and certificate verification was held on 27 July 2026. The recruitment portal carried no further notice for this notification when re-read on 3 Oct 2026.",
     },
     summary:
       "Direct recruitment to the stenographic cadre of the Madras High Court Service — Personal Assistant to the Hon'ble Judges, Private Secretary to the Registrar General, Personal Assistant (to the Registrars) and Personal Clerk (to the Deputy Registrars).",
@@ -1325,8 +1562,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Madras High Court recruitment portal — Notification No. 71/2025 selection notices, read with the previous cycle's Notification No. 56/2018",
     sourceUrl: "https://www.mhc.tn.gov.in/recruitment/docs/NOTIFICATION%20No.71%20OF%202025%20PROVISIONALLY%20SELECTED%20AND%20WAITLISTED%20CANDIDATES_13.07.2026.pdf",
-    sourcePublished: "Notification No. 71/2025 dated 6 Apr 2025; selection list published 13 Jul 2026; recruitment portal rechecked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:48 IST",
+    sourcePublished: "Notification No. 71/2025 dated 6 Apr 2025; selection list published 13 Jul 2026; recruitment portal re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 19:59 IST",
     keywords: [
       "Madras High Court personal assistant",
       "MHC private secretary recruitment",
@@ -1360,7 +1597,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Check your viva-voce marks on the High Court recruitment portal and await the selection list",
       detail:
-        "The High Court's recruitment portal published the viva-voce call letter on 30 July 2026 for the post of District Judge (Entry Level) in the Tamil Nadu State Judicial Service under Notification No. 1/2023, dated 1 July 2023, in consequence of the Supreme Court's order dated 19 February 2026 in S.L.P. (C) No. 21281 of 2024. The viva-voce was held on 11 August 2026 and the marks secured by the candidates were published on the portal on 12 August 2026. No selection list had followed as of 29 August 2026.",
+        "The High Court's recruitment portal published the viva-voce call letter on 30 July 2026 for the post of District Judge (Entry Level) in the Tamil Nadu State Judicial Service under Notification No. 1/2023, dated 1 July 2023, in consequence of the Supreme Court's order dated 19 February 2026 in S.L.P. (C) No. 21281 of 2024. The viva-voce was held on 11 August 2026 and the marks secured by the candidates were published on the portal on 12 August 2026. No selection list had followed when the portal's announcements were re-read on 3 October 2026.",
     },
     summary:
       "Direct recruitment of eligible advocates to entry-level District Judge posts in the Tamil Nadu State Judicial Service, conducted by the Madras High Court's Centralised Recruitment Cell.",
@@ -1430,8 +1667,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Notification No. 1/2023 for District Judge (Entry Level), read with the viva-voce call letter published on the High Court recruitment portal",
     sourceUrl: "https://www.mhc.tn.gov.in/recruitment/docs/NOTIFICATION_01_2023.pdf",
-    sourcePublished: "Notification No. 1/2023 dated 1 Jul 2023; viva-voce marks published on the recruitment portal 12 Aug 2026; portal rechecked 29 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:42 IST",
+    sourcePublished: "Notification No. 1/2023 dated 1 Jul 2023; viva-voce marks published on the recruitment portal 12 Aug 2026; portal announcements re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 15:54 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1473,7 +1710,7 @@ export const exams: Exam[] = [
       label: "Notification awaited",
       tone: "amber",
       nextAction: "Watch the TNPSC exam dashboard for the next Civil Judge (District Munsif) notification",
-      detail: "TNPSC recruits direct-entry Civil Judges for the Tamil Nadu State Judicial Service in coordination with the Madras High Court. The Commission's notification list carried no Civil Judge (District Munsif) notification as of 29 August 2026.",
+      detail: "TNPSC recruits direct-entry Civil Judges for the Tamil Nadu State Judicial Service in coordination with the Madras High Court. The Commission's exam dashboard (Notifications 01/2026 to 08/2026) carried no Civil Judge (District Munsif) notification when re-read on 3 Oct 2026.",
     },
     summary: "Direct recruitment of Civil Judges (District Munsifs) to the Tamil Nadu State Judicial Service through the Tamil Nadu Public Service Commission.",
     age: "In the previous cycle (TNPSC Notification 12/2023) practising advocates, pleaders and Assistant Public Prosecutors had to be 25 to 37 years old, or 25 to 42 for SC, SC(A), ST, MBC/DC, BC, BCM and destitute widows, while fresh law graduates had to be 22 to 29 in every category, with a further ten years for persons with benchmark disabilities; the current cycle's age band and cut-off date are not published yet.",
@@ -1511,8 +1748,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Tamil Nadu Public Service Commission — official website and the previous Civil Judge notification 12/2023",
     sourceUrl: "https://tnpsc.gov.in/",
-    sourcePublished: "Previous cycle notification dated 1 Jun 2023; Commission's notification list rechecked 29 Aug 2026, no Civil Judge notification listed",
-    lastVerified: "29 Aug 2026, 15:50 IST",
+    sourcePublished: "Previous cycle notification dated 1 Jun 2023; exam dashboard and press releases re-read 3 Oct 2026, no Civil Judge notification listed",
+    lastVerified: "3 Oct 2026, 20:02 IST",
     keywords: [
       "TNPSC civil judge",
       "district munsif exam",
@@ -1546,7 +1783,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Check the High Court's recruitment-notice board for the specific post and stage before applying",
       detail:
-        "The Calcutta High Court's recruitment-notice page lists several concurrent establishment recruitments at different stages. As read on 29 August 2026 the live notices are the System Manager Phase-I written competitive test of 5 September 2026 under Notification No. 7609-RG dated 20 November 2025, with the viva-voce full marks fixed at 30 by Notification No. 4388-R(R&M) of 28 August 2026; the merit-wise result of the contractual Translator recruitment published on 25 August 2026; the merit-wise result for the Stamp Reporter vacancy on the Original Side, also 25 August 2026; the Phase-I written result of the Deputy Registrar (General Branch) promotional examination on 24 August 2026; and a Stenographer/P.A. notice of 28 July 2026 for the Circuit Bench at Port Blair. This umbrella record does not assert a single vacancy count.",
+        "The Calcutta High Court's recruitment-notice page lists several concurrent recruitments at different stages. As re-read on 3 October 2026 the newest notice is Notification No. 4857-R.G. of 28 September 2026 declaring vacancies in the District Judge (Entry Level) cadre of the West Bengal Judicial Service for 2025. Before it came the final merit-wise results of the Deputy Registrar (General Branch) and Original Side Record Arranger promotional examinations on 31 August 2026; Notification No. 4388-R(R&M) of 28 August 2026 fixing the System Manager viva-voce at 30 marks, after the Phase-I written test fixed for 5 September 2026 under Notification No. 7609-RG (no written-test result is posted yet); and the merit-wise Translator and Original Side Stamp Reporter results of 25 August 2026. This umbrella record does not assert a single vacancy count.",
     },
     summary: "Non-judicial staff and establishment recruitment on the Calcutta High Court's Appellate Side, Original Side, Circuit Bench and district courts.",
     age: "Post-specific. In the current System Analyst and System Manager recruitment (Notification No. 7609-RG dated 20 November 2025) the band as on 1 January 2025 was not less than 26 and not more than 40 years for System Analyst (Hardware and Networking) and not less than 31 and not more than 45 years for System Manager, relaxable for Scheduled Caste, Scheduled Tribe, Other Backward Classes (Group A and Group B), physically handicapped and ex-servicemen candidates under the extant Government rules. Every other post's band is in that post's own employment notice.",
@@ -1582,13 +1819,18 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Calcutta High Court recruitment-notice board, read with Notification No. 7609-RG dated 20 November 2025",
     sourceUrl: "https://www.calcuttahighcourt.gov.in/Notices/recruiment-notice",
-    sourcePublished: "Notification No. 7609-RG dated 20 Nov 2025; recruitment-notice board rechecked 29 Aug 2026, newest notice dated 28 Aug 2026",
-    lastVerified: "29 Aug 2026, 15:52 IST",
+    sourcePublished: "Notification No. 7609-RG dated 20 Nov 2025; recruitment-notice board re-read 3 Oct 2026, newest notice dated 28 Sep 2026",
+    lastVerified: "3 Oct 2026, 20:03 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Refreshed the list of what is actually live on the recruitment-notice board: the Translator merit-wise result and the Original Side Stamp Reporter result were published on 25 Aug 2026, the Deputy Registrar promotional Phase-I result on 24 Aug 2026, and the System Manager viva-voce full marks were fixed at 30 on 28 Aug 2026.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Added the newer board notices: final merit-wise results of the Deputy Registrar (General Branch) and Original Side Record Arranger promotional examinations on 31 Aug 2026, and the West Bengal Judicial Service District Judge (Entry Level) vacancy declaration of 28 Sep 2026.",
       },
     ],
     keywords: [
@@ -1634,7 +1876,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Watch the Calcutta High Court recruitment notices for the Phase-I result and the Viva-voce (Phase-II) call",
       detail:
-        "The High Court fixed the System Manager Phase-I written competitive test for 5 September 2026 at 12 noon in the Training Centre and Examination Hall on the 9th floor of the New Administrative Block (Notification No. 3806-R(R&M) of 3 August 2026), with duplicate admit cards collectable on 1 September 2026. Notification No. 4388-R(R&M) of 28 August 2026 fixed the full marks for the Viva-voce (Phase-II) at 30, to which the candidates who qualify in the written test will be called. The recruitment-notice board was re-read on 9 September 2026: no postponement or cancellation notice was ever issued for the 5 September test, and the Court has published nothing about the result or the viva-voce date since — its newest recruitment notice is dated 3 September 2026.",
+        "The High Court fixed the System Manager Phase-I written competitive test for 5 September 2026 at 12 noon in the Training Centre and Examination Hall on the 9th floor of the New Administrative Block (Notification No. 3806-R(R&M) of 3 August 2026), with duplicate admit cards collectable on 1 September 2026. Notification No. 4388-R(R&M) of 28 August 2026 fixed the full marks for the Viva-voce (Phase-II) at 30, to which the candidates who qualify in the written test will be called. The recruitment-notice board was re-read on 3 October 2026: no postponement or cancellation notice was ever issued for the 5 September test, and the Court has published nothing about the result or the viva-voce date since — its newest recruitment notice, of 28 September 2026, concerns another cadre.",
     },
     summary:
       "Open recruitment of technical officers — System Analyst (Hardware and Networking) and System Manager — to the Appellate Side establishment of the High Court at Calcutta.",
@@ -1664,7 +1906,7 @@ export const exams: Exam[] = [
         date: "2026-09-05",
         displayDate: "5 Sep 2026 (Saturday), 12 noon",
         state: "completed",
-        note: "No postponement notice was issued, and the Court had published no result for the test as of 9 Sep 2026.",
+        note: "No postponement notice was issued, and the Court had published no result for the test as of 3 Oct 2026.",
       },
       { label: "Viva-voce (Phase-II), 30 marks", displayDate: "Date to be announced; only Phase-I qualifiers are called", state: "tentative" },
     ],
@@ -1705,8 +1947,8 @@ export const exams: Exam[] = [
     sourceTitle: "Notification No. 7609-RG dated 20 November 2025, read with Notification Nos. 3806-R(R&M) and 4388-R(R&M)",
     sourceUrl: "https://www.calcuttahighcourt.gov.in/Notice-Files/recruiment-notice/15628",
     sourcePublished:
-      "Notification 20 Nov 2025; Phase-I test notification 3 Aug 2026; viva-voce full-marks notification 28 Aug 2026; recruitment-notice board re-read 9 Sep 2026, newest notice dated 3 Sep 2026",
-    lastVerified: "9 Sep 2026, 17:38 IST",
+      "Notification 20 Nov 2025; Phase-I test notification 3 Aug 2026; viva-voce full-marks notification 28 Aug 2026; recruitment-notice board re-read 3 Oct 2026, nothing newer on this recruitment",
+    lastVerified: "3 Oct 2026, 21:04 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -1892,7 +2134,7 @@ export const exams: Exam[] = [
       tone: "red",
       nextAction: "Watch the High Court's recruitment portal for the fresh notification promised after the Special Rules are amended",
       detail:
-        "Notification HCKL/115/2026-REC 4-HC KERALA, dated 30 March 2026, invited online applications for Civil Judge (Junior Division). The High Court called it off on 5 June 2026 in view of the Supreme Court's interim order dated 22 May 2026 in W.P.(C) No. 1110/2025 and because the amendment to the Special Rules adding the three years' practice requirement had not been formally effected. Fees already paid will be adjusted against the fresh notification. No fresh notification had appeared on the High Court's site as of 29 August 2026; anything you read elsewhere about a live Kerala Civil Judge application window still refers to the called-off notification.",
+        "Notification HCKL/115/2026-REC 4-HC KERALA, dated 30 March 2026, invited online applications for Civil Judge (Junior Division). The High Court called it off on 5 June 2026 in view of the Supreme Court's interim order dated 22 May 2026 in W.P.(C) No. 1110/2025 and because the amendment to the Special Rules adding the three years' practice requirement had not been formally effected. Fees already paid will be adjusted against the fresh notification. No fresh notification appeared on the High Court's recruitment portal when re-read on 3 Oct 2026; anything you read elsewhere about a live Kerala Civil Judge application window still refers to the called-off notification.",
     },
     summary:
       "Direct recruitment of Civil Judges (Junior Division) — Munsiff-Magistrates — to the Kerala Judicial Service through the High Court of Kerala; the 2026 notification was called off and a fresh one is promised.",
@@ -1951,8 +2193,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Cancellation notification, Kerala Judicial Service Examination 2026 (No. HCKL/115/2026-REC 4-HC KERALA)",
     sourceUrl: "https://hckrecruitment.keralacourts.in/hckrecruitment/Recruitment/viewFile?token=MzIy",
-    sourcePublished: "Notification 30 Mar 2026; cancellation notification 5 Jun 2026; High Court site rechecked 29 Aug 2026, no fresh notification",
-    lastVerified: "29 Aug 2026, 16:02 IST",
+    sourcePublished: "Notification 30 Mar 2026; cancellation notification 5 Jun 2026; recruitment portal re-read 3 Oct 2026, no fresh notification",
+    lastVerified: "3 Oct 2026, 20:03 IST",
     keywords: [
       "Munsiff Magistrate exam",
       "Kerala Judicial Service Examination",
@@ -1985,7 +2227,7 @@ export const exams: Exam[] = [
       label: "Notification awaited",
       tone: "amber",
       nextAction: "Watch the High Court of Punjab and Haryana's official site for the next Punjab Civil Judge (Junior Division) notification",
-      detail: "The High Court of Punjab and Haryana conducts direct recruitment to the Punjab Civil Service (Judicial Branch). Its notice board carried no Punjab Civil Judge (Junior Division) notification as of 29 August 2026, so no current-cycle dates or vacancy count are asserted here.",
+      detail: "The High Court of Punjab and Haryana conducts direct recruitment to the Punjab Civil Service (Judicial Branch). Its judicial-officers recruitment page listed no open job and no Punjab Civil Judge (Junior Division) notification when re-read on 3 Oct 2026, so no current-cycle dates or vacancy count are asserted here.",
     },
     summary: "Direct recruitment of Civil Judges (Junior Division) to the Punjab Civil Service (Judicial Branch) through the High Court of Punjab and Haryana.",
     age: "Rule 2 of Part A of the Punjab Civil Service (Judicial Branch) Rules fixes the band at not less than 21 and not more than 35 years on the last date for submitting the application form, with an upper limit of 40 years for Scheduled Caste, Scheduled Tribe and Backward Class candidates; the current cycle's notice will restate the cut-off date.",
@@ -2022,8 +2264,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "High Court of Punjab and Haryana — official website and Punjab Civil Service (Judicial Branch) Rules",
     sourceUrl: "https://highcourtchd.gov.in/",
-    sourcePublished: "Service rules as updated to 9 Aug 2024; official website rechecked 29 Aug 2026, no judicial-branch notification listed",
-    lastVerified: "29 Aug 2026, 16:04 IST",
+    sourcePublished: "Service rules as updated to 9 Aug 2024; judicial-officers recruitment page re-read 3 Oct 2026, no judicial-branch notification listed",
+    lastVerified: "3 Oct 2026, 20:04 IST",
     keywords: [
       "PCS-J",
       "PCS J Punjab",
@@ -2058,7 +2300,7 @@ export const exams: Exam[] = [
       label: "Notification awaited",
       tone: "amber",
       nextAction: "Watch the High Court of Punjab and Haryana's official site for the next Haryana Civil Judge (Junior Division) notification",
-      detail: "The High Court of Punjab and Haryana conducts direct recruitment to the Haryana Civil Service (Judicial Branch). Its notice board carried no Haryana Civil Judge (Junior Division) notification as of 29 August 2026, so no current-cycle dates or vacancy count are asserted here.",
+      detail: "The High Court of Punjab and Haryana conducts direct recruitment to the Haryana Civil Service (Judicial Branch). Its judicial-officers recruitment page listed no open job and no Haryana Civil Judge (Junior Division) notification when re-read on 3 Oct 2026, so no current-cycle dates or vacancy count are asserted here.",
     },
     summary: "Direct recruitment of Civil Judges (Junior Division) to the Haryana Civil Service (Judicial Branch) through the High Court of Punjab and Haryana.",
     age: "Rule 2 of Part A of the Punjab Civil Service (Judicial Branch) Rules as applicable to Haryana fixes the band at not less than 21 and not more than 40 years on the last date for submitting the application form, with 45 years for Scheduled Caste, Scheduled Tribe and Backward Class candidates; the current cycle's notice will restate the cut-off date.",
@@ -2094,8 +2336,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "High Court of Punjab and Haryana — official website and the PCS (Judicial Branch) Rules as applicable to Haryana",
     sourceUrl: "https://highcourtchd.gov.in/",
-    sourcePublished: "Service rules as updated to 14 Feb 2025; official website rechecked 29 Aug 2026, no judicial-branch notification listed",
-    lastVerified: "29 Aug 2026, 16:05 IST",
+    sourcePublished: "Service rules as updated to 14 Feb 2025; judicial-officers recruitment page re-read 3 Oct 2026, no judicial-branch notification listed",
+    lastVerified: "3 Oct 2026, 20:04 IST",
     keywords: [
       "HCS-J",
       "HCS judicial",
@@ -2130,7 +2372,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Rajasthan High Court's recruitment section for the next RJS Civil Judge Cadre notification",
       detail:
-        "The High Court of Judicature for Rajasthan conducts direct recruitment to the Civil Judge cadre of the Rajasthan Judicial Service. Its latest-updates page showed no open Civil Judge Cadre notification as of 29 August 2026; the previous cycle, the Civil Judge Cadre Examination-2025, has reached the appointment-order stage, with an appointment order issued on 25 August 2026. No current-cycle dates or vacancy count are asserted here.",
+        "The High Court of Judicature for Rajasthan conducts direct recruitment to the Civil Judge cadre of the Rajasthan Judicial Service. Its latest-updates and recruitment pages showed no Civil Judge Cadre notification newer than the 2025 examination when re-read on 3 Oct 2026; the previous cycle, the Civil Judge Cadre Examination-2025, has reached the appointment-order stage, with an appointment order issued on 25 August 2026. No current-cycle dates or vacancy count are asserted here.",
     },
     summary: "Direct recruitment of Civil Judges to the Rajasthan Judicial Service through the High Court of Judicature for Rajasthan.",
     age: "Rule 17 of the Rajasthan Judicial Service Rules, 2010 requires a candidate to have attained 21 years and not attained 40 years on the first day of January following the last date for receipt of applications, with five years' relaxation for SC, ST, OBC, MBC, EWS and women candidates; the current cycle's notice will restate the cut-off date.",
@@ -2167,9 +2409,9 @@ export const exams: Exam[] = [
       },
     ],
     sourceTitle: "Rajasthan Judicial Service Rules, 2010 as amended, and the High Court's latest-updates page",
-    sourcePublished: "Service rules as amended to 1 Jul 2021; latest-updates page rechecked 29 Aug 2026",
+    sourcePublished: "Service rules as amended to 1 Jul 2021; latest-updates and recruitment pages re-read 3 Oct 2026",
     sourceUrl: "https://hcraj.nic.in/",
-    lastVerified: "29 Aug 2026, 16:08 IST",
+    lastVerified: "3 Oct 2026, 20:05 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2212,7 +2454,7 @@ export const exams: Exam[] = [
       label: "Eligible-candidates list published; examination stage awaited",
       tone: "violet",
       nextAction: "Eligible candidates should track the High Court's recruitment-results page for the examination and result",
-      detail: "The High Court advertised the District Judge (Entry Level) examination under the M.P.H.J.S. (Recruitment & Conditions of Service) Rules, 2017 as a Suitability Test, publishing the eligible-candidates list on 13 February 2026. The recruitment-results page carried no examination date or result for this advertisement as of 29 August 2026, so neither is asserted here.",
+      detail: "The High Court advertised the District Judge (Entry Level) examination under the M.P.H.J.S. (Recruitment & Conditions of Service) Rules, 2017 as a Suitability Test, publishing the eligible-candidates list on 13 February 2026. The recruitment-results page carried no examination date or result for this advertisement when re-read on 3 Oct 2026, so neither is asserted here.",
     },
     summary: "Recruitment to entry-level District Judge posts in the Madhya Pradesh Higher Judicial Service through a Suitability Test/Limited Competitive Examination route.",
     qualification: "Advocate/judicial-officer eligibility under the M.P.H.J.S. (Recruitment & Conditions of Service) Rules, 2017 for the District Judge (Entry Level) stream.",
@@ -2232,8 +2474,8 @@ export const exams: Exam[] = [
     officialLinks: [{ label: "High Court of Madhya Pradesh recruitment results", url: "https://mphc.gov.in/recruitment-results", type: "notice" }],
     sourceTitle: "District Judge (Entry Level) Examination — advertisement and eligible-candidates list",
     sourceUrl: "https://mphc.gov.in/recruitment-results",
-    sourcePublished: "Eligible-candidates list 13 Feb 2026; recruitment-results page rechecked 29 Aug 2026, no examination date or result posted",
-    lastVerified: "29 Aug 2026, 16:11 IST",
+    sourcePublished: "Eligible-candidates list 13 Feb 2026; recruitment-results page re-read 3 Oct 2026, no examination date or result posted",
+    lastVerified: "3 Oct 2026, 20:06 IST",
     keywords: [
       "MPHJS entry level",
       "MP district judge exam",
@@ -2272,7 +2514,7 @@ export const exams: Exam[] = [
       tone: "violet",
       nextAction: "Eligible officers who applied should watch the High Court's recruitment page for the written examination date",
       detail:
-        "Advertisement No. 01/S & A Cell/2026, dated 23 July 2026, invited applications from serving Civil Judges (Junior Division) with at least three years' qualifying service for 5 posts of Civil Judge (Senior Division) through the limited competitive examination under Rule 5(2)(b). Applications had to be routed through the Principal District Judge and to reach the Registry by 5:00 p.m. on 5 August 2026; that window has closed and no examination date has been notified.",
+        "Advertisement No. 01/S & A Cell/2026, dated 23 July 2026, invited applications from serving Civil Judges (Junior Division) with at least three years' qualifying service for 5 posts of Civil Judge (Senior Division) through the limited competitive examination under Rule 5(2)(b). Applications had to be routed through the Principal District Judge and to reach the Registry by 5:00 p.m. on 5 August 2026; that window has closed, and the High Court's recruitment page showed no eligible list or examination date when re-read on 3 Oct 2026.",
     },
     summary: "Limited departmental competitive promotion route from Civil Judge (Junior Division) to Civil Judge (Senior Division) in Chhattisgarh.",
     timeline: [
@@ -2324,8 +2566,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Advertisement No. 01/S & A Cell/2026 dated 23 July 2026 for Civil Judge (Senior Division) through the Limited Competitive Examination",
     sourceUrl: "https://highcourt.cg.gov.in/recruit/srec/2026/senior_civil_judge_5(2)(b).pdf",
-    sourcePublished: "Advertisement dated 23 Jul 2026; recruitment page rechecked 29 Aug 2026, no examination date posted",
-    lastVerified: "29 Aug 2026, 16:14 IST",
+    sourcePublished: "Advertisement dated 23 Jul 2026; recruitment page re-read 3 Oct 2026, no examination date posted",
+    lastVerified: "3 Oct 2026, 20:07 IST",
     changeLog: [
       {
         date: "2026-08-29",
@@ -2367,7 +2609,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Eligible advocates should track the High Court's recruitment page for the next District Judge advertisement",
       detail:
-        "Advertisement No. 01/2024/Apptt. invited online applications from the Bar for 15 District Judge posts, with the application window from 15 to 30 November 2024. The High Court's recruitment page has since published the main-examination result, the final marks and the list of successful candidates for that advertisement. That page carried no fresh District Judge advertisement as of 29 August 2026 — its newest entries are final results for court-staff cycles — so no vacancy count or date for a next cycle is asserted here.",
+        "Advertisement No. 01/2024/Apptt. invited online applications from the Bar for 15 District Judge posts, with the application window from 15 to 30 November 2024. The High Court's recruitment page has since published the main-examination result, the final marks and the list of successful candidates for that advertisement. That page carried no fresh District Judge advertisement when re-read on 3 Oct 2026 — its newest entry is a 5 Sep 2026 advertisement for contractual Law Researchers — so no vacancy count or date for a next cycle is asserted here.",
     },
     summary: "Direct recruitment of District Judges (Entry Level) from the Bar to the Jharkhand Superior Judicial Service.",
     vacancyNote:
@@ -2413,8 +2655,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "District Judge recruitment from the legal profession — Advertisement No. 01/2024/Apptt.",
     sourceUrl: "https://jharkhandhighcourt.nic.in/display_pdf/recruitment/vacancy_district_judges_adv_01_2024_12112024.pdf",
-    sourcePublished: "Advertisement published 12 Nov 2024; recruitment page rechecked 29 Aug 2026, no fresh District Judge advertisement listed",
-    lastVerified: "29 Aug 2026, 16:16 IST",
+    sourcePublished: "Advertisement published 12 Nov 2024; recruitment page re-read 3 Oct 2026, no fresh District Judge advertisement listed",
+    lastVerified: "3 Oct 2026, 20:07 IST",
     keywords: [
       "Jharkhand district judge exam",
       "JHC district judge recruitment",
@@ -2426,39 +2668,74 @@ export const exams: Exam[] = [
       "JPSC civil judge Jharkhand",
     ],
   }),
-  listedExam({
+  exam({
     slug: "odisha-judicial-service-civil-judge-2026",
-    title: "Odisha Judicial Service — Civil Judge (Junior Division) Recruitment",
+    title: "Odisha Judicial Service, 2025 — Civil Judge (Junior Division) Recruitment",
     shortTitle: "Odisha Civil Judge (Junior Division)",
-    aliases: ["OPSC Civil Judge", "Odisha Judiciary Exam", "OJS Civil Judge Junior Division"],
+    aliases: ["OPSC Civil Judge", "Odisha Judiciary Exam", "OJS Civil Judge Junior Division", "OPSC Advertisement 02 of 2026-27"],
     organisation: "Odisha Public Service Commission",
     governmentLevel: "State",
     jurisdiction: "Odisha Judicial Service",
     state: "Odisha",
     stateCode: "OD",
     regionCodes: ["OD"],
-    cycle: "Next cycle",
+    cycle: "Odisha Judicial Service, 2025 (Advertisement No. 02 of 2026-27)",
     year: 2026,
+    verification: "verified",
+    notificationNumber: "02 of 2026-27",
     sector: "State judiciary",
     examTypes: ["Judiciary & Legal"],
     education: ["Professional degree"],
+    vacancies: 78,
+    vacancyLabel: "78 vacancies",
+    vacancyNote:
+      "Advertisement No. 02 of 2026-27 gives the Law Department's vacancy position as 78, of which 26 are for women: 35 Unreserved (12 women), 9 SEBC (3), 13 SC (4), 18 ST (6) and 3 for persons with benchmark disabilities (1).",
     status: {
-      label: "Recruitment awaited; current-cycle detail not confirmed here",
+      label: "Last date extended; preliminary exam date awaited",
       tone: "amber",
-      nextAction: "Watch the Odisha Public Service Commission's advertisements page for the current Civil Judge (Junior Division) notice",
-      detail: "The Odisha Public Service Commission conducts direct recruitment of Civil Judges (Junior Division) to the Odisha Judicial Service in coordination with the Orissa High Court. The Commission's advertisement and notice list carried no Civil Judge (Junior Division) recruitment as of 29 August 2026, so no current-cycle dates or vacancy count are asserted here.",
+      nextAction: "The last date stands extended until further instruction; watch OPSC's notices for the new closing date and the preliminary examination date",
+      detail:
+        "OPSC Advertisement No. 02 of 2026-27 (Notice No. 2387/PSC, 30 April 2026) invited online applications from 8 May 2026 for 78 posts of Civil Judge (Junior Division) in the Odisha Judicial Service, 2025, closing on 8 June 2026. Its 1st Corrigendum of 30 May 2026, issued under the Supreme Court's orders of 22 May 2026 in WP(C) No. 1110 of 2025 (Bhumika Trust v. Union of India), extended the last date until further instruction and called off the preliminary examination fixed for 5 July 2026. OPSC's 2026 recruitment calendar, re-read on 3 Oct 2026, notes that judgment in that case has since been delivered, gives no new closing date and puts the preliminary examination tentatively in November 2026, pending the Government's communication.",
     },
-    summary: "Direct recruitment of Civil Judges (Junior Division) to the Odisha Judicial Service through the Odisha Public Service Commission.",
-    age: "Rule 18(1)(b) of the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 requires a candidate to be not below 23 and not above 35 years on the first day of August of the year for which the vacancy is determined, with five years' relaxation for SC, ST, SEBC, women and ex-servicemen candidates and ten years for persons with disabilities; the current cycle's notice will restate the cut-off.",
-    qualification: "Rule 18(1)(a) of the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 requires a graduate degree in law of a recognised University or institution, and Rule 18(1)(c) requires the candidate to speak, read and write Oriya fluently and to have passed an Oriya language examination of Middle English School standard.",
+    summary: "Direct recruitment of Civil Judges (Junior Division) to the Odisha Judicial Service through the Odisha Public Service Commission — 78 posts in the 2025 cycle.",
+    age: "23 to 42 years on 1 April 2025 under Advertisement No. 02 of 2026-27 — born not earlier than 2 April 1983 and not later than 1 April 2002. Confirm any category relaxation in the full advertisement on the OPSC website.",
+    qualification: "As originally notified in Advertisement No. 02 of 2026-27: a law graduate with at least three years' practice as an advocate on 1 April 2025, counting time as a Law Clerk/Research Assistant to any Judge, Judicial Officer or Constitutional Authority, plus fluency in Oriya and a pass in a Middle English School standard Oriya examination (Rule 18(1)(c)). OPSC has not yet said how the Supreme Court's judgment in WP(C) No. 1110 of 2025 affects the practice condition.",
+    fee: "₹700, paid online with the application, for candidates other than SC, ST and PwD; it is refunded only to candidates who actually appear in the preliminary written examination, and an application without the fee (other than SC/ST/PwD) is rejected outright.",
+    pay: "₹77,840–1,36,520 with the usual dearness and other allowances sanctioned by the Government of Odisha (Advertisement No. 02 of 2026-27).",
+    timeline: [
+      { label: "Advertisement No. 02 of 2026-27 published", date: "2026-04-30", displayDate: "30 Apr 2026", state: "completed" },
+      { label: "Online registration opened", date: "2026-05-08", displayDate: "8 May 2026", state: "completed" },
+      {
+        label: "Originally notified closing of online applications (since extended)",
+        date: "2026-06-08",
+        displayDate: "8 Jun 2026, 5:00 p.m.",
+        state: "completed",
+        note: "Extended until further instruction by the 1st Corrigendum of 30 May 2026; no new closing date was published when OPSC was re-read on 3 Oct 2026",
+      },
+      { label: "Extended closing date for applications", displayDate: "To be announced", state: "current" },
+      {
+        label: "Preliminary written examination",
+        date: "2026-07-05",
+        displayDate: "5 Jul 2026",
+        state: "postponed",
+        note: "Not held on this day under the 1st Corrigendum of 30 May 2026; the new date is to be intimated in due course",
+      },
+      {
+        label: "Preliminary written examination (rescheduled)",
+        sortMonth: "2026-11",
+        displayDate: "November 2026 (tentative)",
+        state: "tentative",
+        note: "OPSC's tentative 2026 recruitment calendar; the exact date will be announced after the Government's communication",
+      },
+    ],
     eligibility: [
-      "Under Rule 18 of the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 a candidate must be a law graduate of a recognised University and aged between 23 and 35 years on 1 August of the year for which the vacancy is determined.",
-      "The same rule requires fluency in Oriya and a pass in an Oriya language examination equivalent to Middle English School standard, good character, and sound health free from organic defect.",
-      "Rule 15 places direct recruitment to the Civil Judge (Junior Division) cadre with the Odisha Public Service Commission through a competitive examination held under the rules and the Appendix D syllabus.",
-      "These are the standing service rules. Confirm the cut-off date, reservation and category rules in the official current-cycle advertisement.",
+      "Advertisement No. 02 of 2026-27 (OPSC Notice No. 2387/PSC dated 30 April 2026) recruits 78 Civil Judges (Junior Division) to the Odisha Judicial Service, 2025 under the Law Department by direct recruitment.",
+      "As originally notified, a candidate must be 23 to 42 years old on 1 April 2025 and a law graduate with at least three years' practice as an advocate on that date, counting time as a Law Clerk/Research Assistant to a Judge, Judicial Officer or Constitutional Authority; the cycle has been on hold under the Supreme Court's orders in WP(C) No. 1110 of 2025.",
+      "Rule 18 of the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 also requires fluency in Oriya, a pass in an Oriya language examination of Middle English School standard, good character and sound health.",
+      "Applications are made online through the proforma on the OPSC website; confirm category relaxations and the remaining conditions in the full advertisement and its corrigendum.",
     ],
     selectionStages: [
-      "Preliminary written examination — Rule 15 read with Appendix D",
+      "Preliminary written examination — Rule 15 read with Appendix D of the 2007 rules",
       "Main written examination of two compulsory and three optional papers",
       "Interview carrying 100 marks",
       "Merit list, document verification and appointment under the 2007 rules",
@@ -2471,11 +2748,21 @@ export const exams: Exam[] = [
       "Interview of 100 marks, ordinarily within the mains syllabus but also covering broad national and international issues.",
       "The standard of the papers is that of the LLB course; use the official current-cycle syllabus when it is published.",
     ],
-    officialLinks: [{ label: "Odisha Public Service Commission — official website", url: "https://opsc.gov.in/", type: "website" }],
-    sourceTitle: "Odisha Public Service Commission — official website, read with the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007",
-    sourceUrl: "https://opsc.gov.in/",
-    sourcePublished: "Service rules as amended to 2023; Commission's notice list rechecked 29 Aug 2026, no Civil Judge advertisement listed",
-    lastVerified: "29 Aug 2026, 16:18 IST",
+    officialLinks: [
+      { label: "OPSC current notices and advertisements", url: "https://opsc.gov.in/public/opsc/default.aspx", type: "notice" },
+      { label: "Odisha Public Service Commission — official website", url: "https://opsc.gov.in/", type: "website" },
+    ],
+    sourceTitle: "OPSC Advertisement No. 02 of 2026-27 (Notice No. 2387/PSC, 30 Apr 2026) and its 1st Corrigendum (Notice No. 2920/PSC, 30 May 2026), read with OPSC's tentative 2026 recruitment calendar",
+    sourceUrl: "https://opsc.gov.in/public/opsc/default.aspx",
+    sourcePublished: "Advertisement 30 Apr 2026; 1st Corrigendum 30 May 2026; advertisements page and tentative recruitment calendar re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:56 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Replaced the placeholder with the live cycle: OPSC Advertisement No. 02 of 2026-27 (30 Apr 2026) for 78 posts. The 1st Corrigendum of 30 May 2026 extended the last date until further instruction and called off the 5 Jul 2026 preliminary, which OPSC's calendar now shows tentatively for November 2026.",
+      },
+    ],
     keywords: [
       "OJS civil judge",
       "Odisha judiciary exam",
@@ -2488,56 +2775,101 @@ export const exams: Exam[] = [
       "civil judge exam Odisha",
     ],
   }),
-  listedExam({
+  exam({
+    ...legalUnknowns,
     slug: "andhra-pradesh-judicial-service-civil-judge",
     title: "Andhra Pradesh Judicial Service — Civil Judge (Junior Division) Recruitment",
     shortTitle: "AP Civil Judge (Junior Division)",
-    aliases: ["APJS Civil Judge", "AP Judiciary Exam", "Andhra Pradesh Civil Judge Junior Division"],
+    aliases: ["APJS Civil Judge", "AP Judiciary Exam", "Andhra Pradesh Civil Judge Junior Division", "APHC Notification 118/2026-RC"],
     organisation: "High Court of Andhra Pradesh",
     governmentLevel: "State",
     jurisdiction: "Andhra Pradesh Judicial Service",
     state: "Andhra Pradesh",
     stateCode: "AP",
     regionCodes: ["AP"],
-    cycle: "Next cycle",
+    cycle: "Notification No. 118/2026-RC (recruitment for the year 2026)",
     year: 2026,
+    verification: "verified",
+    notificationNumber: "118/2026-RC",
     sector: "State judiciary",
     examTypes: ["Judiciary & Legal"],
     education: ["Professional degree"],
+    vacancies: 119,
+    vacancyLabel: "119 posts",
+    vacancyNote:
+      "Notification No. 118/2026-RC lists 96 Direct Recruitment vacancies (Open Competition 39, EWS 9, BC-A 7, BC-B 10, BC-C 1, BC-D 6, BC-E 4, SC Group-I 1, SC Group-II 7, SC Group-III 6, ST 6) and 23 by Recruitment by Transfer (Open Competition 18, SC Group-I 1, SC Group-III 1, ST 3). The High Court may increase or decrease the number.",
+    vacancyBreakdown: [
+      { label: "Direct Recruitment", total: 96 },
+      { label: "Recruitment by Transfer", total: 23 },
+    ],
     status: {
-      label: "Recruitment awaited; current-cycle detail not confirmed here",
-      tone: "amber",
-      nextAction: "Watch the High Court of Andhra Pradesh's recruitment-notifications page for the current Civil Judge (Junior Division) notice",
-      detail: "The High Court of Andhra Pradesh conducts direct recruitment of Civil Judges (Junior Division) to the Andhra Pradesh Judicial Service. Its recruitment notifications as of 29 August 2026 cover Law Clerks, district-judiciary Copyists and the empanelment of Assistant Editors, not Civil Judges, so no current-cycle dates or vacancy count are asserted here.",
+      label: "Applications open to 26 Oct 2026; screening test date to be notified",
+      tone: "green",
+      nextAction: "Apply online through the link on the High Court's recruitment page by 11.59 p.m. on 26 Oct 2026",
+      detail:
+        "The High Court of Andhra Pradesh issued Notification No. 118/2026-RC on 25 September 2026 for 119 posts of Civil Judge (Junior Division) — 96 by Direct Recruitment and 23 by Recruitment by Transfer — under the A.P. State Judicial (Service & Cadre) Rules, 2026. Online applications run from 1 to 26 October 2026; the computer based screening test will be notified in due course, with hall tickets a week before it. The recruitment page, re-read on 3 Oct 2026, carries the application link posted on 1 Oct 2026 and no change to these dates.",
     },
     summary: "Direct recruitment of Civil Judges (Junior Division) to the Andhra Pradesh Judicial Service through the High Court of Andhra Pradesh.",
-    age: "Rule 5(2)(a) of the Andhra Pradesh State Judicial Service Rules, 2007 requires a direct-recruitment candidate for the Civil Judge category not to have completed 35 years, relaxable by five years for Scheduled Caste, Scheduled Tribe and Backward Class candidates, with service in the defence forces excluded from the computation; the current cycle's notice will restate the cut-off date.",
-    qualification: "Rule 5(2)(a) of the Andhra Pradesh State Judicial Service Rules, 2007 requires a degree in law awarded by any University established by law in India, and sound health free from bodily defect or infirmity that would make the candidate unfit.",
+    age: "Direct Recruitment: must not have completed 35 years on 1 September 2026, relaxable by five years for SC, ST, BC and EWS applicants and by ten years for persons with benchmark disabilities, with defence service excluded from the computation. Recruitment by Transfer: must not have completed 48 years on 1 September 2026 (Notification No. 118/2026-RC, part III).",
+    qualification:
+      "Direct Recruitment: a law degree obtained \"preceding one year as on the date of Notification\", as the notification records under the Supreme Court's judgment of 21 August 2026 in W.P.(C) No. 1110/2025 pending amendment of the 2026 rules. Recruitment by Transfer: a law degree and confirmed or approved-probationer service in one of the posts the notification lists.",
+    fee: "₹1,500 for Open Category, EWS and BC applicants and ₹750 for SC, ST and persons with benchmark disabilities (the SC/ST concession only for communities recognised in Andhra Pradesh), paid online and not refundable.",
+    pay: "Civil Judge (Junior Division) pay scale ₹77,840–1,36,520. Selected candidates first serve a year as Trainee Judicial Officers at the Judicial Academy and a year of structured Law Clerkship on half the post's remuneration.",
+    timeline: [
+      { label: "Notification No. 118/2026-RC issued for 119 posts", date: "2026-09-25", displayDate: "25 Sep 2026", state: "completed" },
+      {
+        label: "Online applications open",
+        date: "2026-10-01",
+        displayDate: "1 Oct 2026",
+        state: "completed",
+        note: "The application link was posted on the High Court's recruitment page on 1 Oct 2026.",
+      },
+      { label: "Online applications close", date: "2026-10-26", displayDate: "26 Oct 2026, 11.59 p.m.", state: "current" },
+      {
+        label: "Computer based screening test",
+        displayDate: "To be announced",
+        state: "tentative",
+        note: "The notification says the date will be notified in due course, with hall tickets a week before the test.",
+      },
+      { label: "Written examination and viva-voce", displayDate: "To be announced", state: "tentative" },
+    ],
     eligibility: [
-      "Under Rule 5(2)(a) of the Andhra Pradesh State Judicial Service Rules, 2007 a direct recruit to the Civil Judge category must hold a law degree from a University established by law in India, must not have completed 35 years, and must be of sound health.",
-      "The same rule relaxes the upper age limit by five years for Scheduled Caste, Scheduled Tribe and Backward Class candidates and excludes defence service from the age computation.",
-      "The rules also disqualify a candidate who is not an Indian citizen, who has been dismissed by a High Court or Government, convicted of an offence involving moral turpitude, permanently debarred by a High Court or a Public Service Commission, or who has more than one spouse living.",
-      "These are the standing service rules. Confirm the cut-off date, reservation and category rules in the official current-cycle notification.",
+      "Direct Recruitment is for law graduates not in the service of the Government of India or a State; the degree condition follows the Supreme Court's judgment of 21 August 2026 in Bhumika Trust v. Union of India, as the notification records.",
+      "Recruitment by Transfer is open to law graduates who are confirmed members or approved probationers in listed posts of the High Court, the district judiciary, the State prosecution service, the Law and Legislature departments and allied offices.",
+      "A candidate dismissed or compulsorily retired from service, convicted of an offence involving moral turpitude, debarred by a High Court or Public Service Commission, or with more than one living spouse is ineligible; selection against BC-E vacancies is subject to Civil Appeal Nos. 2628–2637/2010 in the Supreme Court.",
+      "BC and EWS claims need a non-creamy-layer or EWS certificate issued in 2025 or 2026; without it the application is considered under Open Competition.",
     ],
     selectionStages: [
-      "Objective screening test where the High Court decides to hold one — Rule 6(1) proviso of the Andhra Pradesh State Judicial Service Rules, 2007",
-      "Written examination carrying 80 marks",
-      "Viva-voce carrying 20 marks, testing communication, ability to handle court situations and general knowledge",
-      "Merit list and appointment under the 2007 rules",
+      "Computer based screening test of 100 multiple-choice questions (100 marks, two hours) at Guntur, Kurnool, Rajamahendravaram, Tirupati, Vijayawada or Visakhapatnam; those scoring 40 per cent or more are shortlisted 1:10, and screening marks do not count for merit",
+      "Written examination of three papers of 100 marks and three hours each — Paper-I Civil Laws, Paper-II Criminal Laws and Paper-III English (translation and essay writing)",
+      "Viva-voce of 50 marks for candidates called 1:3 of the vacancies in each category, after the category minimums in Papers I and II and in aggregate (55/60 per cent for OC, EWS and transfer candidates, 50/55 for BC, 45/50 for SC, ST and PwBD)",
+      "Final selection on Papers I and II and the viva-voce, with a minimum aggregate of 60, 55 or 50 per cent by category; Paper-III is qualifying at 40 per cent in each part",
     ],
     syllabus: [
-      "Rule 6(3) of the Andhra Pradesh State Judicial Service Rules, 2007 draws the written-examination syllabus from procedural and substantive laws, local laws and the Constitution of India.",
-      "Rule 6(4) fixes the written examination at 80 marks and the viva-voce at 20 marks, with minimum qualifying marks in the written examination of 40 per cent for OC, 35 per cent for BC and 30 per cent for SC and ST candidates.",
-      "The detailed subject list and marks split are notified by the High Court for each recruitment; use the official current-cycle syllabus when it is published.",
+      "Civil laws — Code of Civil Procedure, Contract, Hindu Marriage and Succession, Easements, Specific Relief, Limitation, Transfer of Property, Civil Rules of Practice, Registration and Stamp Acts, A.P. Land Encroachment Act, Indian Evidence Act and Bharatiya Sakshya Adhiniyam, 2023.",
+      "Criminal laws — Code of Criminal Procedure, Indian Penal Code, Indian Evidence Act, BNSS, BSA and BNS 2023, Negotiable Instruments Act, Domestic Violence Act, Criminal Rules of Practice, A.P. Excise and Gaming Acts, Juvenile Justice Act, Food Safety and Standards Act, IT Act, POCSO Act and A.P. Forest Act.",
+      "Paper-III English — Part-I (40 marks) translation from English to Telugu and Telugu to English; Part-II (60 marks) an essay on legal subjects.",
     ],
     officialLinks: [
+      {
+        label: "Notification No. 118/2026-RC of 25 Sep 2026 — 119 Civil Judge (Junior Division) posts",
+        url: "https://aphc.gov.in/docs/notification_1790338711_0.pdf",
+        type: "notice",
+      },
+      { label: "High Court of Andhra Pradesh — recruitment page with the online application link", url: "https://aphc.gov.in/recruitments.php", type: "website" },
       { label: "High Court of Andhra Pradesh — official website", url: "https://aphc.gov.in/", type: "website" },
-      { label: "High Court of Andhra Pradesh — rules", url: "https://aphc.gov.in/rules.php?type=3", type: "website" },
     ],
-    sourceTitle: "High Court of Andhra Pradesh — official website, read with the Andhra Pradesh State Judicial Service Rules, 2007",
-    sourceUrl: "https://aphc.gov.in/",
-    sourcePublished: "Service rules notified 2 Aug 2008 (G.O. Ms. No. 119, Law); recruitment notifications rechecked 29 Aug 2026, no Civil Judge notification listed",
-    lastVerified: "29 Aug 2026, 16:21 IST",
+    sourceTitle: "High Court of Andhra Pradesh Notification No. 118/2026-RC dated 25 September 2026 — 119 posts of Civil Judge (Junior Division)",
+    sourceUrl: "https://aphc.gov.in/docs/notification_1790338711_0.pdf",
+    sourcePublished: "Notification 25 Sep 2026; application link posted 1 Oct 2026; recruitment page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:57 IST",
+    changeLog: [
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Replaced the placeholder with the live cycle: Notification No. 118/2026-RC of 25 Sep 2026 for 119 Civil Judge (Junior Division) posts (96 direct, 23 by transfer), with online applications from 1 to 26 Oct 2026 and the screening test date to be notified.",
+      },
+    ],
     keywords: [
       "APJS civil judge",
       "AP judiciary exam",
@@ -2574,11 +2906,11 @@ export const exams: Exam[] = [
     vacancyNote:
       "Notification No. 45/2025-RC, dated 1 December 2025, was issued for recruitment to 94 posts of Civil Judge (Junior Division) by Direct Recruitment and by Recruitment by Transfer. The category break-up is in the notification itself and is not repeated here.",
     status: {
-      label: "Written examinations held 20–21 Jun 2026; result awaited",
-      tone: "violet",
-      nextAction: "Watch tshc.gov.in for the written examination result and the viva-voce call",
+      label: "Written results out; viva-voce 5–8 Oct 2026",
+      tone: "blue",
+      nextAction: "Qualified candidates download the viva-voce call letter from tshc.gov.in and report at 2.00 p.m. on their interview day",
       detail:
-        "The High Court held the computer based screening test on 8 March 2026 and placed its result on the website on 28 March 2026 in the ratio of 1:10 of the notified vacancies. Notification R.O.C. No. 45/2025-RC dated 20 April 2026 fixed the written examinations at Hyderabad on 20 and 21 June 2026, and hall tickets were released on 10 June 2026. No written-examination result or viva-voce call had been published as of 29 August 2026.",
+        "The written examinations were held at Hyderabad on 20 and 21 June 2026. On 17 September 2026 the High Court declared the hall-ticket numbers qualified for viva-voce for the 66 direct-recruitment and 28 recruitment-by-transfer posts and scheduled the oral interviews at the High Court from 5 to 8 October 2026. The recruitment page, re-read on 3 Oct 2026, carries the call-letter download link and no change to that schedule.",
     },
     summary: "Direct recruitment of Civil Judges (Junior Division) to the Telangana State Judicial Service through the High Court for the State of Telangana.",
     timeline: [
@@ -2601,7 +2933,21 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Paper-I Civil Laws and Paper-III English on 20 Jun; Paper-II Criminal Laws on 21 Jun.",
       },
-      { label: "Written examination result and viva-voce", displayDate: "To be announced", state: "current" },
+      {
+        label: "Written examination results and viva-voce schedule",
+        date: "2026-09-17",
+        displayDate: "17 Sep 2026",
+        state: "completed",
+        note: "Separate hall-ticket lists for the 66 direct-recruitment and 28 recruitment-by-transfer posts.",
+      },
+      {
+        label: "Viva-voce (oral interview) at the High Court, Hyderabad",
+        date: "2026-10-05",
+        displayDate: "5–8 Oct 2026",
+        state: "scheduled",
+        note: "20 candidates a day on 5–7 Oct and 21 on 8 Oct, including the recruitment-by-transfer candidates; reporting time 2.00 p.m.",
+      },
+      { label: "Final selection list", displayDate: "To be announced", state: "tentative" },
     ],
     qualification:
       "Law degree and the other conditions prescribed in Notification No. 45/2025-RC for Direct Recruitment and for Recruitment by Transfer to the Civil Judge (Junior Division) category of the Telangana State Judicial Service. The notification is the document to rely on; the notices cited here do not repeat the eligibility conditions.",
@@ -2609,13 +2955,23 @@ export const exams: Exam[] = [
       "Computer based screening test, held on 8 March 2026, with the result placed in the ratio of 1:10 of the notified vacancies",
       "Written examination — Paper-I Civil Laws (9.30 a.m. to 12.30 p.m.) and Paper-III English, covering translation, essay writing and grammar/vocabulary (2.30 p.m. to 5.30 p.m.), on 20 June 2026",
       "Written examination — Paper-II Criminal Laws (9.30 a.m. to 12.30 p.m.) on 21 June 2026",
-      "Viva-voce and final selection under the Telangana State Judicial Service rules",
+      "Viva-voce at the High Court, Hyderabad, from 5 to 8 October 2026, and final selection under the Telangana State Judicial Service rules",
     ],
     syllabus: [
       "The written examination is set in three papers — Paper-I Civil Laws, Paper-II Criminal Laws and Paper-III English (Translation, Essay Writing and Grammar Vocabulary), as Notification R.O.C. No. 45/2025-RC dated 20 April 2026 records.",
       "Use the subject syllabus published with Notification No. 45/2025-RC dated 1 December 2025.",
     ],
     officialLinks: [
+      {
+        label: "Notification of 17 Sep 2026 — written examination results and viva-voce dates",
+        url: "https://tshc.gov.in/documents/NORMAL_Recruitment_2026_09_17T19_23_50.pdf",
+        type: "result",
+      },
+      {
+        label: "Notification of 17 Sep 2026 — oral interview schedule",
+        url: "https://tshc.gov.in/documents/NORMAL_Recruitment_2026_09_17T19_26_33.pdf",
+        type: "calendar",
+      },
       {
         label: "Notification of 20 Apr 2026 — schedule of the written examinations",
         url: "https://tshc.gov.in/documents/NORMAL_Recruitment_2026_04_20T15_50_07.pdf",
@@ -2629,15 +2985,20 @@ export const exams: Exam[] = [
       { label: "High Court for the State of Telangana — recruitment notifications", url: "https://tshc.gov.in/showChildDocTypes?id=95", type: "website" },
       { label: "High Court for the State of Telangana — official website", url: "https://tshc.gov.in/", type: "website" },
     ],
-    sourceTitle: "Notification R.O.C. No. 45/2025-RC dated 20 April 2026 — schedule of the written examinations for 94 posts of Civil Judge (Junior Division)",
-    sourceUrl: "https://tshc.gov.in/documents/NORMAL_Recruitment_2026_04_20T15_50_07.pdf",
-    sourcePublished: "Notification 1 Dec 2025; written-examination schedule 20 Apr 2026; recruitment list rechecked 29 Aug 2026, no result posted",
-    lastVerified: "29 Aug 2026, 16:24 IST",
+    sourceTitle: "Notification R.O.C. No. 45/2025-RC dated 17 September 2026 — written examination results and viva-voce for 94 posts of Civil Judge (Junior Division)",
+    sourceUrl: "https://tshc.gov.in/documents/NORMAL_Recruitment_2026_09_17T19_23_50.pdf",
+    sourcePublished: "Notification 1 Dec 2025; written results and viva-voce schedule 17 Sep 2026; recruitment list re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 21:57 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Replaced the placeholder \"current-cycle detail not confirmed\" record with the actual cycle read off the High Court's own notifications: Notification No. 45/2025-RC of 1 Dec 2025 for 94 posts, the computer based screening test of 8 Mar 2026, its 1:10 result of 28 Mar 2026, and the written examinations held at Hyderabad on 20 and 21 Jun 2026. The result is still awaited.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Written examination results declared on 17 Sep 2026; the qualified candidates for the direct-recruitment and recruitment-by-transfer posts are called for viva-voce at the High Court from 5 to 8 Oct 2026.",
       },
     ],
     keywords: [
@@ -2677,7 +3038,7 @@ export const exams: Exam[] = [
       label: "Main written examination held; result awaited",
       tone: "violet",
       nextAction: "Watch the Gauhati High Court recruitment page for the main written result",
-      detail: "The Gauhati High Court's notification of 13 Feb 2026 fixed the main written examination for 28 and 29 Mar 2026 at Guwahati, with admit cards from 23 Mar 2026: Paper-I on 28 Mar from 09:00 to 12:00 and Paper-II the same afternoon from 13:00 to 16:00, Paper-III on 29 Mar from 09:00. Those dates have passed and the recruitment page still carried no main written result, viva-voce call or postponement for this Grade-I cycle as of 29 Aug 2026.",
+      detail: "The Gauhati High Court's notification of 13 Feb 2026 fixed the main written examination for 28 and 29 Mar 2026 at Guwahati, with admit cards from 23 Mar 2026: Paper-I on 28 Mar from 09:00 to 12:00 and Paper-II the same afternoon from 13:00 to 16:00, Paper-III on 29 Mar from 09:00. Those dates have passed and the recruitment page, re-read on 3 Oct 2026, still carried no main written result, viva-voce call or postponement for this Grade-I cycle.",
     },
     summary: "Direct recruitment to Assam Judicial Service Grade-I (District Judge entry level) through the Gauhati High Court.",
     timeline: [
@@ -2705,8 +3066,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Assam Judicial Service Grade-I Direct Recruitment 2026 — official notice",
     sourceUrl: "https://ghconline.gov.in/index.php/recruitment-judicial-officer/",
-    sourcePublished: "Main examination notification 13 Feb 2026; Gauhati High Court recruitment page rechecked 29 Aug 2026, newest entry dated 24 Aug 2026 and unrelated to this cycle",
-    lastVerified: "29 Aug 2026, 16:26 IST",
+    sourcePublished: "Main examination notification 13 Feb 2026; Gauhati High Court recruitment page re-read 3 Oct 2026, newest entry dated 23 Sep 2026 and unrelated to this cycle",
+    lastVerified: "3 Oct 2026, 20:59 IST",
     changeLog: [
       {
         date: "2026-08-20",
@@ -2744,11 +3105,11 @@ export const exams: Exam[] = [
     examTypes: ["Judiciary & Legal"],
     education: ["Professional degree"],
     status: {
-      label: "Viva-voce held 3–7 Aug 2026; final result awaited",
-      tone: "violet",
-      nextAction: "Watch the Gauhati High Court recruitment page for the final result of this Grade-III cycle",
+      label: "Final result declared 23 Sep 2026; 22 candidates recommended",
+      tone: "slate",
+      nextAction: "Recommended candidates await appointment orders; others can see their marks on the Gauhati High Court recruitment page",
       detail:
-        "Notification No. HC.XXXVII-30/2025/219/R.Cell dated 25 June 2026 declared the main written examination result — 46 candidates qualified — and fixed the viva-voce for 3, 4, 5, 6 and 7 August 2026 at the precincts of the Gauhati High Court (New Block), Guwahati, with candidates reporting at 2:00 p.m. Call letters were downloadable from 28 July 2026 and the recruitment page posted the call-letter link on 29 July 2026. Those interview dates have passed and no final result has been published.",
+        "After the main written examination of 24 to 26 October 2025 and the viva-voce of 3 to 7 August 2026, the Gauhati High Court's notification of 23 September 2026 recommended 22 candidates, in order of merit, for appointment in Grade-III of the Assam Judicial Service. Six ST(H) vacancies left unfilled are carried forward to the next selection, and the list stays valid for a year or until the next select list. Final and written marks were uploaded with it; the recruitment page was re-read on 3 Oct 2026.",
     },
     summary: "Direct recruitment to Assam Judicial Service Grade-III (entry-level Civil Judge/Munsiff) through the Gauhati High Court.",
     timeline: [
@@ -2767,7 +3128,13 @@ export const exams: Exam[] = [
         state: "completed",
         note: "Candidates reported at 2:00 p.m. on their allotted date.",
       },
-      { label: "Final result", displayDate: "To be announced", state: "current" },
+      {
+        label: "Final result — 22 candidates recommended",
+        date: "2026-09-23",
+        displayDate: "23 Sep 2026",
+        state: "completed",
+        note: "Six unfilled ST(H) vacancies are carried forward to the next selection.",
+      },
     ],
     eligibility: [
       "Advertisement No. HC.XXXVII-30/2025/37/R. Cell dated 7 February 2025, under which this Grade-III cycle is being run, requires a candidate to be a citizen of India as defined in Articles 5 and 6 of the Constitution of India.",
@@ -2780,22 +3147,32 @@ export const exams: Exam[] = [
     syllabus: ["Law and procedure papers under the Assam Judicial Service Grade-III 2026 recruitment scheme."],
     officialLinks: [
       {
+        label: "Notification of 23 Sep 2026 — final result",
+        url: "https://ghconline.gov.in/Recruitment/Notification-23-09-2026-1.pdf",
+        type: "result",
+      },
+      { label: "Final marks, 23 Sep 2026", url: "https://ghconline.gov.in/Recruitment/Notification-23-09-2026-1-FM.pdf", type: "result" },
+      {
         label: "Notification of 25 Jun 2026 — main written result and viva-voce schedule",
         url: "https://ghconline.gov.in/Recruitment/Notification-25-06-2026.pdf",
         type: "result",
       },
       { label: "Gauhati High Court — recruitment (judicial officers)", url: "https://ghconline.gov.in/index.php/recruitment-judicial-officer/", type: "website" },
-      { label: "AJS viva-voce call-letter portal", url: "https://ghcrec.assam.gov.in/AJSVivaCallLetter/Home.htm", type: "apply" },
     ],
-    sourceTitle: "Notification No. HC.XXXVII-30/2025/219/R.Cell dated 25 June 2026 — main written result and viva-voce schedule",
-    sourceUrl: "https://ghconline.gov.in/Recruitment/Notification-25-06-2026.pdf",
-    sourcePublished: "Notification 25 Jun 2026; recruitment page rechecked 29 Aug 2026, no final result posted",
-    lastVerified: "29 Aug 2026, 16:28 IST",
+    sourceTitle: "Gauhati High Court notification dated 23 September 2026 — final result of direct recruitment to Grade-III of the Assam Judicial Service",
+    sourceUrl: "https://ghconline.gov.in/Recruitment/Notification-23-09-2026-1.pdf",
+    sourcePublished: "Final result notification 23 Sep 2026; recruitment page re-read 3 Oct 2026",
+    lastVerified: "3 Oct 2026, 20:59 IST",
     changeLog: [
       {
         date: "2026-08-29",
         displayDate: "29 Aug 2026",
         text: "Read the 25 Jun 2026 notification itself. It declared 46 candidates qualified in the main written examination and fixed the viva-voce for 3 to 7 Aug 2026 at the Gauhati High Court (New Block), Guwahati, reporting at 2:00 p.m. Those interviews have been held, so the record moves from \"download your call letter\" to final result awaited.",
+      },
+      {
+        date: "2026-10-03",
+        displayDate: "3 Oct 2026",
+        text: "Final result declared on 23 Sep 2026: 22 candidates recommended for appointment in Grade-III, with six unfilled ST(H) vacancies carried forward. The cycle is complete.",
       },
     ],
     keywords: [
@@ -2913,7 +3290,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the High Court of Uttarakhand's recruitment section and the Uttarakhand Public Service Commission for the next Civil Judge (Junior Division) notification",
       detail:
-        "The High Court of Uttarakhand's own recruitment listing still returned no notice in that category when rechecked on 29 August 2026. Rule 5 of the Uttarakhand Judicial Service Rules, 2005 places direct recruitment to the Civil Judge (Junior Division) cadre with the Uttarakhand Public Service Commission on the basis of a competitive examination, and Rule 13 requires the Governor to determine the vacancies in consultation with the Court first.",
+        "The High Court of Uttarakhand's own recruitment listing still returned no notice in that category when re-read on 3 October 2026. Rule 5 of the Uttarakhand Judicial Service Rules, 2005 places direct recruitment to the Civil Judge (Junior Division) cadre with the Uttarakhand Public Service Commission on the basis of a competitive examination, and Rule 13 requires the Governor to determine the vacancies in consultation with the Court first.",
     },
     summary: "Direct recruitment of Civil Judges (Junior Division) to the Uttarakhand Judicial Service, a State Service governed by the Uttarakhand Judicial Service Rules, 2005.",
     age: "Rule 9 of the Uttarakhand Judicial Service Rules, 2005 requires a candidate to have attained 22 years and not to have attained more than 35 years on the first day of January of the year in which recruitment is made, with the upper limit raised for Scheduled Castes, Scheduled Tribes, Other Backward Classes and such other categories as the Government notifies; the current cycle's notice will restate the cut-off date.",
@@ -2956,8 +3333,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Uttarakhand Judicial Service Rules, 2005 as amended, from the High Court's Service Matter document library",
     sourceUrl: "https://cdnbbsr.s3waas.gov.in/s3bc7f621451b4f5df308a8e098112185d/uploads/2025/07/202507231389898741.pdf",
-    sourcePublished: "Rules as amended to the Amendment Rules, 2025 (21 Feb 2025); recruitment section rechecked 29 Aug 2026, still no notice in that category",
-    lastVerified: "29 Aug 2026, 16:30 IST",
+    sourcePublished: "Rules as amended to the Amendment Rules, 2025 (21 Feb 2025); recruitment section re-read 3 Oct 2026, still no notice in that category",
+    lastVerified: "3 Oct 2026, 21:03 IST",
     keywords: [
       "Uttarakhand PCS J",
       "UKPSC civil judge",
@@ -2990,7 +3367,7 @@ export const exams: Exam[] = [
       label: "Recruitment series active; current-cycle detail not confirmed here",
       tone: "amber",
       nextAction: "Eligible advocates should track the High Court's official notifications page for the current District Judge (Entry Level) notice",
-      detail: "The High Court of Jammu & Kashmir and Ladakh advertised direct recruitment of District Judges (Entry Level) from eligible advocates under Notification No. 03 of 2024/RG/GS, per the Jammu and Kashmir Higher Judicial Service Rules, 2009. Its notifications page carried no fresh judicial recruitment as of 29 August 2026, so no current-cycle vacancy count or dates are asserted here.",
+      detail: "The High Court of Jammu & Kashmir and Ladakh advertised direct recruitment of District Judges (Entry Level) from eligible advocates under Notification No. 03 of 2024/RG/GS, per the Jammu and Kashmir Higher Judicial Service Rules, 2009. Its notifications page carried no fresh judicial recruitment when re-read on 3 October 2026, so no current-cycle vacancy count or dates are asserted here.",
     },
     summary: "Direct-from-Bar recruitment to entry-level District Judge posts in the Jammu and Kashmir Higher Judicial Service, serving both Jammu & Kashmir and Ladakh.",
     age: "Rule 5(2)(c) of the Jammu and Kashmir Higher Judicial Service Rules, 2009 requires a direct recruit to have attained 35 years and not to be above 45 years, relaxable by two years for Scheduled Caste, Scheduled Tribe and Other Backward Class candidates, as on the date of receipt of applications; the current cycle's notice will restate the cut-off date.",
@@ -3021,8 +3398,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "District Judges (Entry Level) direct recruitment — Notification No. 03 of 2024/RG/GS, read with the J&K Higher Judicial Service Rules, 2009",
     sourceUrl: "https://jkhighcourt.nic.in/noti.php",
-    sourcePublished: "Rules notified 27 Oct 2009 and consolidated to 23 Jan 2025; notifications page rechecked 29 Aug 2026, no fresh judicial recruitment listed",
-    lastVerified: "29 Aug 2026, 16:31 IST",
+    sourcePublished: "Rules notified 27 Oct 2009 and consolidated to 23 Jan 2025; notifications page re-read 3 Oct 2026, no fresh judicial recruitment listed",
+    lastVerified: "3 Oct 2026, 21:03 IST",
     keywords: [
       "JKHJS district judge",
       "J&K judiciary exam",
@@ -3054,7 +3431,7 @@ export const exams: Exam[] = [
       label: "Notification awaited",
       tone: "amber",
       nextAction: "Watch the High Court of Punjab and Haryana's judicial-officer recruitment section for the next Punjab Superior Judicial Service notification",
-      detail: "The High Court fills the 25 per cent direct-recruitment quota of Additional District and Sessions Judge posts in the Punjab Superior Judicial Service from the Bar under Rule 7(3)(c) of the Punjab Superior Judicial Service Rules, 2007. Its notice board carried no fresh Punjab Superior Judicial Service notification as of 29 August 2026, so no current-cycle dates or vacancy count are asserted here.",
+      detail: "The High Court fills the 25 per cent direct-recruitment quota of Additional District and Sessions Judge posts in the Punjab Superior Judicial Service from the Bar under Rule 7(3)(c) of the Punjab Superior Judicial Service Rules, 2007. Its judicial-officer recruitment page carried no fresh Punjab Superior Judicial Service notification when re-read on 3 October 2026, so no current-cycle dates or vacancy count are asserted here.",
     },
     summary: "Direct recruitment of eligible advocates to Additional District and Sessions Judge posts in the Punjab Superior Judicial Service, conducted by the High Court of Punjab and Haryana.",
     age: "In the previous cycle (Notification No. 111 Gaz.I/VI.F.2 dated 1 June 2025) candidates had to be not less than 35 and not more than 45 years old on the closing date, with five years' relaxation for SC, BC and PwBD (blindness and low vision) candidates of Punjab; the current cycle's age band and cut-off date are not published yet.",
@@ -3084,6 +3461,7 @@ export const exams: Exam[] = [
     ],
     officialLinks: [
       { label: "High Court of Punjab and Haryana — official website", url: "https://highcourtchd.gov.in/", type: "website" },
+      { label: "Recruitments — judicial officers", url: "https://highcourtchd.gov.in/?mod=recr_judicial", type: "website" },
       {
         label: "Previous cycle advertisement — Punjab Superior Judicial Service 2025",
         url: "https://highcourtchd.gov.in/sub_pages/left_menu/recruitments/judicialofficers/openings/advts_psjs_01062025_94d03.pdf",
@@ -3092,8 +3470,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Direct Recruitment to Punjab Superior Judicial Service — Notification No. 111 Gaz.I/VI.F.2",
     sourceUrl: "https://highcourtchd.gov.in/",
-    sourcePublished: "Previous cycle advertisement dated 1 Jun 2025; official website rechecked 29 Aug 2026, no fresh notification listed",
-    lastVerified: "29 Aug 2026, 16:32 IST",
+    sourcePublished: "Previous cycle advertisement dated 1 Jun 2025; judicial-officer recruitment page re-read 3 Oct 2026, no fresh notification listed",
+    lastVerified: "3 Oct 2026, 21:03 IST",
     keywords: [
       "PSJS exam",
       "Punjab district judge exam",
@@ -3125,7 +3503,7 @@ export const exams: Exam[] = [
       label: "Notification awaited",
       tone: "amber",
       nextAction: "Watch the Rajasthan High Court's recruitment section for the next District Judge Cadre notification",
-      detail: "Rule 31(3) of the Rajasthan Judicial Service Rules, 2010 reserves 25 per cent of District Judge cadre posts for direct recruitment from eligible advocates through a written examination and interview conducted by the High Court. The High Court's latest-updates page carried no District Judge Cadre notification as of 29 August 2026, so no current-cycle dates or vacancy count are asserted here.",
+      detail: "Rule 31(3) of the Rajasthan Judicial Service Rules, 2010 reserves 25 per cent of District Judge cadre posts for direct recruitment from eligible advocates through a written examination and interview conducted by the High Court. The High Court's latest-updates and recruitment pages carried no District Judge Cadre notification newer than the 2024 cycle when re-read on 3 Oct 2026, so no current-cycle dates or vacancy count are asserted here.",
     },
     summary: "Direct recruitment of eligible advocates to the District Judge cadre of the Rajasthan Judicial Service through the High Court of Judicature for Rajasthan.",
     age: "Rule 33(i) of the Rajasthan Judicial Service Rules, 2010 requires a candidate to have attained 35 years and not attained 45 years on the first day of January following the last date for receipt of applications, with five years' relaxation for SC, ST, OBC, MBC, EWS and women candidates; the current cycle's notice will restate the cut-off date.",
@@ -3159,8 +3537,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Rajasthan Judicial Service Rules, 2010 as amended — District Judge cadre direct recruitment",
     sourceUrl: "https://hcraj.nic.in/",
-    sourcePublished: "Service rules as amended to 1 Jul 2021; latest-updates page rechecked 29 Aug 2026, no District Judge Cadre notification listed",
-    lastVerified: "29 Aug 2026, 16:09 IST",
+    sourcePublished: "Service rules as amended to 1 Jul 2021; latest-updates and recruitment pages re-read 3 Oct 2026, no District Judge Cadre notification listed",
+    lastVerified: "3 Oct 2026, 20:05 IST",
     keywords: [
       "Rajasthan district judge exam",
       "RJS DJ cadre",
@@ -3192,7 +3570,7 @@ export const exams: Exam[] = [
       tone: "amber",
       nextAction: "Watch the Orissa High Court's recruitment corner for the next District Judge direct-recruitment advertisement",
       detail:
-        "Rule 6(4) of the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 reserves 25 per cent of District Judge posts for direct recruitment from the Bar through a competitive examination conducted by the High Court. The recruitment corner carried no District Judge advertisement as of 29 August 2026 — the live entries are the establishment cycles under Advertisement Nos. 01 and 02 of 2026, whose Computer Application Test results were published on 19 and 18 August 2026. No current-cycle dates or vacancy count are asserted here.",
+        "Rule 6(4) of the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 reserves 25 per cent of District Judge posts for direct recruitment from the Bar through a competitive examination conducted by the High Court. The recruitment corner carried no new District Judge advertisement when re-read on 3 October 2026 — its only District Judge item is a 3 September 2026 notice closing the 2023 cycle (Advertisement No. 05 of 2023) after a court-ordered interview held on 31 August 2026. No current-cycle dates or vacancy count are asserted here.",
     },
     summary: "Direct recruitment of eligible advocates to District Judge posts in the Odisha Superior Judicial Service through a competitive examination held by the High Court of Orissa.",
     age: "Rule 9(c) of the Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 requires a candidate to be not below 35 and not above 45 years of age on 1 April of the recruitment year for which the vacancy is determined, with five years' relaxation for SC, ST, SEBC and women candidates and ten years for persons with disabilities; the current cycle's notice will restate the cut-off.",
@@ -3227,8 +3605,8 @@ export const exams: Exam[] = [
     ],
     sourceTitle: "Orissa Superior Judicial Service and Orissa Judicial Service Rules, 2007 — District Judge direct recruitment",
     sourceUrl: "https://www.orissahighcourt.nic.in/recruitment-corner/",
-    sourcePublished: "Rules notified 17 Aug 2007 and amended to 2023; recruitment corner rechecked 29 Aug 2026, no District Judge advertisement listed",
-    lastVerified: "29 Aug 2026, 16:19 IST",
+    sourcePublished: "Rules notified 17 Aug 2007 and amended to 2023; recruitment corner re-read 3 Oct 2026, no new District Judge advertisement listed",
+    lastVerified: "3 Oct 2026, 20:48 IST",
     keywords: [
       "OSJS district judge",
       "Odisha district judge exam",
