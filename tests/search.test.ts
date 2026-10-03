@@ -112,6 +112,27 @@ test("the compact document includes qualification language", () => {
   }
 });
 
+test("the compact document leaves out only wording that is already searchable", () => {
+  for (const [index, item] of exams.entries()) {
+    const doc = docs[index];
+    // What rank() searches besides the title, composed the same way.
+    const searched = normalise(`${doc.h} ${doc.o} ${doc.sn ?? ""} ${doc.e.join(" ")} ${doc.x.join(" ")} ${doc.g} ${doc.y}`);
+    const words = new Set(searched.split(" "));
+    const phrases = [searched, normalise(`${doc.st} ${doc.t}`)].map((text) => ` ${text} `);
+    for (const part of [...item.aliases, ...(item.keywords ?? []), item.jurisdiction, item.notificationNumber, item.sector, item.qualification, item.cycle]) {
+      const text = part ? normalise(String(part)) : "";
+      if (!text) continue;
+      // Every word stays matchable as a substring, and every phrase stays contiguous somewhere searched.
+      assert.deepEqual(text.split(" ").filter((word) => !words.has(word)), [], `${item.slug} lost words of "${text}"`);
+      assert.ok(phrases.some((haystack) => haystack.includes(` ${text} `)), `${item.slug} lost the phrase "${text}"`);
+    }
+  }
+});
+
+test("a query word that names an Object.prototype member does not throw", () => {
+  assert.doesNotThrow(() => rank(docs, "constructor engineer"));
+});
+
 test("ranking never returns the same recruitment twice", () => {
   const item = docs.find((doc) => doc.s.includes("ssc-cgl")) ?? docs[0];
   const results = rank([item, item, ...docs], item.st);

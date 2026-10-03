@@ -271,7 +271,8 @@ export default async function ExamDetailPage({ params }: PageProps) {
           {item.changeLog.length > 0 && (
             <div className="change-card">
               <span>Recent changes</span>
-              {item.changeLog.map((change) => (
+              {/* Newest first whatever order the record stores them in, as /updates does. */}
+              {[...item.changeLog].sort((a, b) => b.date.localeCompare(a.date)).map((change) => (
                 <div key={`${change.date}-${change.text}`}><time>{change.date}</time><p>{change.text}</p></div>
               ))}
             </div>

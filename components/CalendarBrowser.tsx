@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useMemo, useState } from "react";
+import { useId, useMemo, useState, useSyncExternalStore } from "react";
 import {
   calendarFilterCount,
   calendarStageOptions,
@@ -22,6 +22,28 @@ const MONTH_NAMES = [
   "January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December",
 ];
+
+/**
+ * How far ahead the shipped HTML lists upcoming milestones. Every milestone is
+ * still in the feed the page carries; rendering all of them as HTML as well
+ * doubled the page once the catalogue gained dated stages, so the server and
+ * hydration renders list this window and the browser renders the rest the
+ * moment it takes over.
+ */
+const SERVER_WINDOW_DAYS = 30;
+
+const subscribeNever = () => () => {};
+
+/** False for the server render and hydration, true once the browser owns the page. */
+function useHydrated() {
+  return useSyncExternalStore(subscribeNever, () => true, () => false);
+}
+
+function shiftIsoDate(date: string, days: number) {
+  const value = new Date(`${date}T00:00:00Z`);
+  value.setUTCDate(value.getUTCDate() + days);
+  return value.toISOString().slice(0, 10);
+}
 
 /** "2026-08" → "August 2026", without depending on browser locale data. */
 function monthTitle(key: string) {
@@ -93,6 +115,9 @@ export function CalendarBrowser({ feed, buildDate }: { feed: CalendarFeed; build
   // The build's split is only right on the day it ran, so it is made again here
   // against the reader's own date.
   const { upcoming, history } = useMemo(() => splitCalendar(matches, today), [matches, today]);
+  const hydrated = useHydrated();
+  const windowEnd = shiftIsoDate(buildDate, SERVER_WINDOW_DAYS);
+  const renderedUpcoming = hydrated ? upcoming : upcoming.filter((event) => event.d < windowEnd);
   const activeCount = calendarFilterCount(filters);
 
   const update = (patch: Partial<CalendarFilterState>) => setFilters((current) => ({ ...current, ...patch }));
@@ -183,7 +208,15 @@ export function CalendarBrowser({ feed, buildDate }: { feed: CalendarFeed; build
           </p>
         </div>
         {upcoming.length ? (
-          <CalendarEventGroups events={upcoming} exams={exams} idPrefix="current" />
+          <>
+            <CalendarEventGroups events={renderedUpcoming} exams={exams} idPrefix="current" />
+            {renderedUpcoming.length < upcoming.length && (
+              <p className="calendar-window-note">
+                Showing the next {SERVER_WINDOW_DAYS} days. The remaining {upcoming.length - renderedUpcoming.length}{" "}
+                milestones appear once the page finishes loading, and every date is on its exam page.
+              </p>
+            )}
+          </>
         ) : (
           <div className="missing-data">
             <span aria-hidden="true">i</span>

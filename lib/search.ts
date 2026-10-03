@@ -73,26 +73,53 @@ export function phaseOfDoc(doc: SearchDoc): LifecyclePhase {
   return lifecyclePhases[doc.p] ?? "past";
 }
 
-export function toSearchDoc(item: Exam): SearchDoc {
-  const haystack = [
-    ...item.aliases,
-    ...(item.keywords ?? []),
-    item.jurisdiction,
-    item.notificationNumber,
-    item.sector,
-    item.qualification,
-    item.cycle,
-  ]
+/**
+ * The free-text half of a search document. Aliases and keywords mostly restate
+ * the title, so one is left out when its exact wording is already searchable:
+ * in another alias or keyword, in the descriptive parts below, or in the other
+ * fields `rank` searches (`fields`: organisation, state, education, exam types,
+ * level, year). One found only in the title keeps just the words nothing else
+ * searchable contains, because the title is matched by whole word and prefix
+ * but not by substring. Jurisdiction, notification number, sector,
+ * qualification and cycle are always kept, verbatim and in order, so phrases
+ * that run across them ("madhya pradesh police") still match. Word matches are
+ * unchanged and the index is about a tenth smaller.
+ */
+function searchHaystack(item: Exam, fields: string) {
+  const title = ` ${normalise(`${item.shortTitle} ${item.title}`)} `;
+  const descriptive = [item.jurisdiction, item.notificationNumber, item.sector, item.qualification, item.cycle]
+    .map((part) => (part ? normalise(part) : ""))
     .filter(Boolean)
-    .join(" · ");
+    .join(" ");
+  const searchable = ` ${descriptive} ${fields} `;
+  const present = new Set(searchable.split(" "));
+  const names: string[] = [];
+  for (const name of [...item.aliases, ...(item.keywords ?? [])]) {
+    const words = normalise(name);
+    if (!words) continue;
+    const padded = ` ${words} `;
+    if (` ${names.join(" ")} `.includes(padded) || searchable.includes(padded)) continue;
+    const kept = title.includes(padded) ? words.split(" ").filter((word) => !present.has(word)).join(" ") : words;
+    if (!kept) continue;
+    names.push(kept);
+    for (const word of kept.split(" ")) present.add(word);
+  }
+  return [...names, descriptive].filter(Boolean).join(" ");
+}
+
+export function toSearchDoc(item: Exam): SearchDoc {
   const closing = applicationCloseDate(item);
+  // The other fields `rank` searches alongside `h`, composed the way it composes them.
+  const fields = normalise(
+    `${item.organisation} ${item.state ?? ""} ${item.education.join(" ")} ${item.examTypes.join(" ")} ${item.governmentLevel} ${item.year}`,
+  );
 
   return {
     s: item.slug,
     t: item.title,
     st: item.shortTitle,
     o: item.organisation,
-    h: normalise(haystack),
+    h: searchHaystack(item, fields),
     e: item.education,
     x: item.examTypes,
     g: item.governmentLevel,
@@ -288,7 +315,10 @@ export function rank(docs: SearchDoc[], query: string, at = todayIso()): Ranked[
     let matchedAll = true;
 
     for (const token of tokens) {
-      const variants = [token, ...(SYNONYMS[token] ?? []).map(normalise)];
+      // Own keys only: a query word like "constructor" would otherwise pick up
+      // Object.prototype's function and throw.
+      const synonyms = Object.prototype.hasOwnProperty.call(SYNONYMS, token) ? SYNONYMS[token] : [];
+      const variants = [token, ...synonyms.map(normalise)];
       let best = 0;
 
       for (const variant of variants) {
