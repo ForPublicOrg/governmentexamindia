@@ -41,3 +41,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# automated data sweep scratch (work-list, prompt, agent log)
+/.sweep/

@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: "17 1 * * *"
   workflow_dispatch:
+    inputs:
+      limit:
+        description: Most records the sweep re-checks in this run (default vars.SWEEP_LIMIT, else 30)
+        required: false
 
 permissions:
   contents: read
@@ -47,16 +51,120 @@ jobs:
           name: source-watch-report
           path: source-watch-report.json
           retention-days: 14
-      # Freshness is a hard failure here and only here. This job exists to tell
-      # somebody the data needs re-checking, so it is the right place to gate on
-      # expired stages and stale reviews -- unlike the build, which must keep
-      # working so the site can actually be redeployed.
-      #
-      # It runs last on purpose. Gating before the watch step meant one expired
-      # deadline killed the job before it polled a single source, so the run
-      # that was supposed to say WHICH pages had moved produced no report at
-      # all -- exactly when the data most needed re-checking. The failure is
-      # unchanged; it now lands after the watch report has been summarised and
-      # uploaded, so whoever opens the red run has something to act on.
-      - name: Report data that needs re-checking
-        run: npm run --silent data:validate:fresh
+
+  # Re-verify what the watch and the freshness rules flag, land whatever passes
+  # every check, and only then gate on freshness. Before this job the gate was
+  # the whole system: it went red every morning (from 17 Oct 2026 on) and no
+  # data changed until somebody ran a sweep by hand and remembered to push it.
+  # Now red means the automation could not settle something -- a host that
+  # stays down, a change that failed a check -- and a person has to look.
+  #
+  # Needs an ANTHROPIC_API_KEY secret; without one the job only runs the gate.
+  # The agent brief is docs/SWEEP-AGENT.md. vars.SWEEP_LIMIT (or the dispatch
+  # input) caps records per run: each costs minutes of fetching and API spend.
+  sweep:
+    needs: watch
+    # Stale records are found from the data alone, so a watch that failed or
+    # timed out must not stop the sweep; its report only adds to the list.
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      contents: write
+    concurrency: data-sweep
+    env:
+      HAS_CLAUDE: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+    steps:
+      # No stored credentials: the agent reads untrusted web pages, so the token
+      # reaches git only in the landing step, after the agent has exited.
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v8
+        # Uploaded only when a watched page moved.
+        continue-on-error: true
+        with:
+          name: source-watch-report
+          path: .sweep
+      - id: worklist
+        name: Pick the records to re-check
+        run: |
+          npx tsx tools/data/sweep-worklist.ts --watch-report .sweep/source-watch-report.json \
+            --limit "${{ inputs.limit || vars.SWEEP_LIMIT || 30 }}" --out .sweep/worklist.md >> "$GITHUB_OUTPUT"
+          cat .sweep/worklist.md >> "$GITHUB_STEP_SUMMARY"
+      - if: steps.worklist.outputs.count != '0' && env.HAS_CLAUDE != 'true'
+        run: echo "::warning::${{ steps.worklist.outputs.count }} records need re-checking. Add an ANTHROPIC_API_KEY repository secret so this job can sweep them."
+      - id: agent
+        name: Re-verify them with Claude Code
+        if: steps.worklist.outputs.count != '0' && env.HAS_CLAUDE == 'true'
+        # Whatever the agent finished still goes through every check below.
+        continue-on-error: true
+        timeout-minutes: 240
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils > /dev/null
+          npx -y @anthropic-ai/claude-code@2.1.308 -p "$(cat docs/SWEEP-AGENT.md)" \
+            --model claude-opus-5-5 --dangerously-skip-permissions \
+            --output-format stream-json --verbose > .sweep/claude.jsonl
+      - if: always() && steps.agent.outcome != 'skipped'
+        name: Summarise the agent's report
+        run: |
+          node --input-type=module -e 'import { readFileSync } from "node:fs"; const result = readFileSync(".sweep/claude.jsonl", "utf8").split("\n").flatMap((line) => { try { return [JSON.parse(line)]; } catch { return []; } }).findLast(({ type }) => type === "result"); console.log(result ? `## Sweep report\n\n${result.result ?? result.subtype}\n\n_${result.num_turns} turns, $${(result.total_cost_usd ?? 0).toFixed(2)}_` : "The agent produced no report.")' >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v7
+        if: always() && steps.agent.outcome != 'skipped'
+        with:
+          name: sweep-agent-log
+          path: .sweep/
+          include-hidden-files: true
+          retention-days: 14
+      - id: land
+        name: Land the changes that pass every check
+        if: steps.agent.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ steps.worklist.outputs.failing }}
+        run: |
+          # Only data may change; anything else the agent touched is dropped.
+          git diff --name-only | grep -v '^data/exams/' | xargs -r git checkout --
+          git ls-files --others --exclude-standard | grep -v '^data/exams/' | xargs -r rm -f
+          if git diff --quiet; then echo "No record changed." >> "$GITHUB_STEP_SUMMARY"; exit 0; fi
+          npm run --silent data:registry
+          npm run check
+          after=$(npx tsx tools/data/sweep-worklist.ts --out .sweep/after.md | sed -n 's/^failing=//p')
+          : "${after:?could not count freshness-gate errors after the sweep}"
+          if [ "$after" -gt "$BEFORE" ]; then
+            echo "::error::The sweep left more freshness-gate errors ($after) than it started with ($BEFORE); not landing it."
+            exit 1
+          fi
+          records=$(git diff -U0 -- data/exams | grep -c '^+ *lastVerified:' || true)
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/exams data/source-registry.json
+          git commit -q -F - <<EOF
+          Re-verify $records records against their recruiting bodies for $(TZ=Asia/Kolkata date '+%-d %B')
+
+          Automated sweep, run ${{ github.run_id }}. Freshness-gate errors went
+          from $BEFORE to $after.
+
+          Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+          EOF
+          git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
+          echo "Landed $records re-verified records; freshness-gate errors $BEFORE → $after." >> "$GITHUB_STEP_SUMMARY"
+      # Freshness is a hard failure here and only here: the build must keep
+      # working so the site can be redeployed, while this job exists to say the
+      # data needs a person. It runs last so a red run still carries the watch
+      # report and the sweep's summary, and it judges what is now on main --
+      # a sweep that did not land is discarded first.
+      - name: Report data that still needs re-checking
+        if: ${{ !cancelled() }}
+        run: |
+          git fetch -q --depth 1 origin main && git reset -q --hard FETCH_HEAD && git clean -fdq -- data
+          npm run --silent data:validate:fresh
