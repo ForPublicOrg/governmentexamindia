@@ -42,5 +42,5 @@ next-env.d.ts
 /outputs/
 /work/
 
-# automated data sweep scratch (work-list, prompt, agent log)
+# daily re-check list scratch (tools/data/sweep-worklist.ts)
 /.sweep/

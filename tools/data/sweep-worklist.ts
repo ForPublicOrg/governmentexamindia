@@ -4,13 +4,13 @@ import { authorities, exams } from "../../lib/exams";
 import { validateRecords } from "./rules";
 
 /**
- * Pick the records the automated sweep re-checks today, most urgent first:
- * records failing the strict freshness gate, records whose recruiting body's
- * watched page changed, then time-sensitive records whose review is getting
- * old. The last group is what keeps a whole sweep's worth of reviews from
- * expiring on the same day; it starts at REVIEW_AHEAD_DAYS so they are picked
- * up well before the 45-day gate. Capped, because every record costs minutes
- * of fetching official sites; whatever does not fit rolls over to tomorrow.
+ * List the records a person should re-check against their official notices,
+ * most urgent first: records failing the strict freshness gate, records whose
+ * recruiting body's watched page changed, then time-sensitive records whose
+ * review is getting old. The last group starts at REVIEW_AHEAD_DAYS so a whole
+ * sweep's worth of reviews is picked up well before the 45-day gate instead of
+ * expiring on one day. The daily watch posts this list as an issue; capped so
+ * it stays readable and fits an issue body.
  *
  *   npx tsx tools/data/sweep-worklist.ts [--watch-report file] [--limit 30] [--out .sweep/worklist.md]
  *
@@ -85,9 +85,9 @@ for (const [slug, { notes }] of picked) {
 }
 
 const lines = [
-  `# Sweep work-list (${picked.length} records${ranked.length > picked.length ? `, ${ranked.length - picked.length} more wait for a later run` : ""})`,
+  `## Records to re-check (${picked.length}${ranked.length > picked.length ? `, ${ranked.length - picked.length} more not listed` : ""})`,
   "",
-  ...[...byModule.entries()].flatMap(([name, items]) => [`## ${name} (data/exams/${name}.ts)`, ...items, ""]),
+  ...[...byModule.entries()].flatMap(([name, items]) => [`### ${name} (data/exams/${name}.ts)`, ...items, ""]),
 ];
 mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, `${lines.join("\n")}\n`, "utf8");
